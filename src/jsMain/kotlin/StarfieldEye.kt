@@ -3,12 +3,14 @@ import kotlinx.browser.window
 import kotlinx.html.dom.append
 import kotlinx.html.js.div
 
-//TODO - add labels and notes
+
+//TODO - add star parallax background
 fun main() {
     window.onload = {
         document.body!!.append {
-            div { +"Hello world" }
+            div { +"The Eye" }
         }
+        loadAll().then { renderGalaxy() }
     }
 
 }

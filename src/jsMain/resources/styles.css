@@ -1,0 +1,13 @@
+:root {
+  --background-blue: #0d1727;
+  --red: #c82337;
+  --orange: #e06236;
+  --yellow: #e06236;
+  --blue: #2f4c79;
+}
+
+body {
+    color: white;
+    background-color: var(--background-blue);
+
+}

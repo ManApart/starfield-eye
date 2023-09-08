@@ -1,5 +1,7 @@
 import kotlinx.serialization.Serializable
 
+//TODO - add labels and notes
+
 @Serializable
 data class Star(
     val id: Int,
