@@ -4,7 +4,6 @@ import kotlinx.serialization.json.decodeFromJsonElement
 import org.w3c.xhr.JSON
 import org.w3c.xhr.XMLHttpRequest
 import org.w3c.xhr.XMLHttpRequestResponseType
-import kotlin.js.Json
 import kotlin.js.Promise
 
 val jsonMapper = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }

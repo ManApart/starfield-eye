@@ -11,3 +11,47 @@ body {
     background-color: var(--background-blue);
 
 }
+
+
+
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    view-transition-name: stars;
+}
+
+.star-layer {
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#star-layer-0 {
+    animation: stars-anim-0 linear;
+    animation-timeline: scroll(root block);
+}
+#star-layer-1 {
+    animation: stars-anim-1 linear;
+    animation-timeline: scroll(root block);
+    -webkit-filter: blur(1px);
+}
+#star-layer-2 {
+    animation: stars-anim-2 linear;
+    animation-timeline: scroll(root block);
+    -webkit-filter: blur(1px);
+    opacity: .8;
+}
+
+.star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
