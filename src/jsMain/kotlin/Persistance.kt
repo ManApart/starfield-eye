@@ -1,10 +1,10 @@
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
-import kotlinx.serialization.json.decodeFromJsonElement
 import org.w3c.xhr.JSON
 import org.w3c.xhr.XMLHttpRequest
 import org.w3c.xhr.XMLHttpRequestResponseType
 import kotlin.js.Promise
+import kotlin.js.Promise.Companion.resolve
 
 val jsonMapper = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
 
@@ -18,8 +18,8 @@ var inMemoryStorage = InMemoryStorage()
 fun loadAll(): Promise<*>{
     return loadMemory().then {
         if (inMemoryStorage.systems.isEmpty()){
-            loadGalaxy()
-        }
+            return@then loadGalaxy()
+        } else resolve("Loaded")
     }
 }
 

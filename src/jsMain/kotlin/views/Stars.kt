@@ -1,3 +1,5 @@
+package views
+
 import kotlinx.html.*
 import kotlin.random.Random
 
