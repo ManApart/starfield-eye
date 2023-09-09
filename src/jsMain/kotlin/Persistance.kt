@@ -6,6 +6,8 @@ import org.w3c.xhr.XMLHttpRequestResponseType
 import kotlin.js.Promise
 import kotlin.js.Promise.Companion.resolve
 
+//TODO - save loaded systems?
+
 val jsonMapper = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
 
 @Serializable
