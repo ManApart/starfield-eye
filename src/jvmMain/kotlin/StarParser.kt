@@ -35,7 +35,7 @@ private fun parseSystem(rawStar: RawStar, rawPlanets: List<RawPlanet>, rawBiomes
         rawPlanet.planetId to planet
     }
     val nestedPlanets = planets.values.filter { it.parentId == 0 }.associate { it.id to mutableListOf<Int>() }
-    planets.values.forEach { moon ->
+    planets.values.filter { it.parentId != 0 }.forEach { moon ->
         nestedPlanets[moon.parentId]?.add(moon.id)
     }
     return StarSystem(star, pos, planets, nestedPlanets)

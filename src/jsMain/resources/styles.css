@@ -46,6 +46,36 @@ body {
 }
 
 
+.system-star-circle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.planet-row {
+    margin-bottom: 10px;
+}
+
+.system-planet-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.system-moon-circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
 .stars {
     position: absolute;
     top: 0;
