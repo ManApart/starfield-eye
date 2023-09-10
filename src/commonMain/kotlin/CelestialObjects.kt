@@ -13,6 +13,7 @@ data class Star(
 @Serializable
 data class Planet(
     val id: Int,
+    val parentId: Int,
     val name: String,
     val planetClass: String,
     val bodyType: Int,
@@ -38,5 +39,25 @@ data class Pos(val x: Float, val y: Float, val z: Float)
 data class StarSystem(
     val star: Star,
     val pos: Pos,
-    val planets: Map<Int, Planet>
+    val planets: Map<Int, Planet>,
+    val planetChildren: Map<Int, List<Int>>
+)
+
+@Serializable
+data class Galaxy(
+    val systems: Map<Int, StarSystem> = mapOf(),
+    val summary: GalaxySummary = GalaxySummary()
+)
+
+@Serializable
+data class GalaxySummary(
+    val minX: Float = 0f,
+    val maxX: Float = 0f,
+    val minY: Float = 0f,
+    val maxY: Float = 0f,
+    val minZ: Float = 0f,
+    val maxZ: Float = 0f,
+    val distX: Float = 0f,
+    val distY: Float = 0f,
+    val distZ: Float = 0f,
 )

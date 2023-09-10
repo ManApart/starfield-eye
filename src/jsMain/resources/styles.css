@@ -25,16 +25,24 @@ body {
 }
 
 .system-circle {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 7px;
     display: block;
     margin: auto;
 }
 
 .system-name {
     text-align: center;
+    font-size: 14px;
+}
+
+.system-name-above {
+    margin-top: -30px;
+}
+
+#system-title {
 }
 
 

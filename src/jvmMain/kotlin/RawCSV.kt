@@ -1,6 +1,7 @@
 data class RawPlanet(
     val starId: Int,
     val planetId: Int,
+    val parentId: Int,
     val name: String,
     val planetClass: String,
     val bodyType: Int,
@@ -24,6 +25,7 @@ fun String.toPlanet(): RawPlanet {
     return RawPlanet(
         parts[4].toInt(),
         parts[3].toInt(),
+        parts[11].toInt(),
         parts[8],
         parts[7],
         bodyType = parts[10].toInt(),

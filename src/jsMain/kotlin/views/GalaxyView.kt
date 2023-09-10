@@ -10,26 +10,18 @@ import kotlinx.html.style
 import org.w3c.dom.HTMLElement
 
 fun renderGalaxy() {
-    val systems = inMemoryStorage.systems
+    val systems = inMemoryStorage.galaxy.systems
+    val summary = inMemoryStorage.galaxy.summary
     println("Found ${systems.keys.size} systems")
     val root = el("root")
-    val maxX = systems.values.maxOf { it.pos.x }
-    val maxY = systems.values.maxOf { it.pos.y }
-    val maxZ = systems.values.maxOf { it.pos.z }
-    val minX = systems.values.minOf { it.pos.x }
-    val minY = systems.values.minOf { it.pos.y }
-    val minZ = systems.values.minOf { it.pos.z }
-    val distX = maxX - minX
-    val distY = maxY - minY
-    val distZ = maxZ - minZ
 
     root.innerHTML = ""
     root.append {
         div {
             id = "galaxy"
             systems.values.forEach { system ->
-                val x = ((system.pos.x - minX) / distX) * 90 + 2
-                val y = ((system.pos.y - minY) / distY) * 90 + 2
+                val x = 95-(((system.pos.x - summary.minX) / summary.distX) * 90 + 2)
+                val y = ((system.pos.y - summary.minY) / summary.distY) * 90 + 2
                 div("galaxy-system") {
                     id = system.star.name
                     style = "top: ${y}%; left: ${x}vw;"
@@ -37,6 +29,7 @@ fun renderGalaxy() {
                     div("system-name") { +system.star.name }
                     onClickFunction = {
                         println("Clicked ${system.star.name}")
+                        systemView(system)
                     }
                 }
             }

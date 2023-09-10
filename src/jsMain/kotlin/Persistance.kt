@@ -12,14 +12,14 @@ val jsonMapper = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
 
 @Serializable
 data class InMemoryStorage(
-    var systems: Map<String, StarSystem> = mapOf()
+    var galaxy: Galaxy = Galaxy()
 )
 
 var inMemoryStorage = InMemoryStorage()
 
 fun loadAll(): Promise<*>{
     return loadMemory().then {
-        if (inMemoryStorage.systems.isEmpty()){
+        if (inMemoryStorage.galaxy.systems.isEmpty()){
             return@then loadGalaxy()
         } else resolve("Loaded")
     }
@@ -29,8 +29,8 @@ fun loadAll(): Promise<*>{
 fun loadMemory(): Promise<*> {
     return LocalForage.getItem("memory").then { persisted ->
         if (persisted != null && persisted != undefined) {
-            inMemoryStorage.systems = jsonMapper.decodeFromString(persisted as String)
-            println("Read ${inMemoryStorage.systems.keys.size} systems from storage")
+            inMemoryStorage.galaxy = jsonMapper.decodeFromString(persisted as String)
+            println("Read ${inMemoryStorage.galaxy.systems.keys.size} systems from storage")
         }
     }
 }
@@ -38,8 +38,8 @@ fun loadMemory(): Promise<*> {
 
 fun loadGalaxy(): Promise<*> {
     return loadJson("data.json").then { json ->
-        inMemoryStorage.systems = jsonMapper.decodeFromString(json)
-        println("Read ${inMemoryStorage.systems.keys.size} systems from json")
+        inMemoryStorage.galaxy = jsonMapper.decodeFromString(json)
+        println("Read ${inMemoryStorage.galaxy.systems.keys.size} systems from json")
     }
 }
 
