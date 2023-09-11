@@ -51,6 +51,7 @@ body {
 #system-view-parts{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .system-view-box{
@@ -61,6 +62,7 @@ body {
     padding-left: 10px;
     margin-bottom: 20px;
     margin-right: 20px;
+    background-color: var(--background-blue);
 }
 
 .system-view-box td{

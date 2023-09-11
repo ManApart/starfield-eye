@@ -17,6 +17,7 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
     root.append {
         div {
             id = "system-view"
+            backgroundStars()
             h3 {
                 +"Back to Galaxy"
                 onClickFunction = {
@@ -95,7 +96,7 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
                 "Moons" to system.planetChildren.values.sumOf { it.size },
                 "Outposts" to "",
 
-            ).forEach { (title, data) ->
+                ).forEach { (title, data) ->
                 tr {
                     td { +title }
                     td { +data.toString() }
@@ -131,7 +132,7 @@ private fun TagConsumer<HTMLElement>.detailView(planet: Planet) {
                 "Rings" to rings,
                 "Resources" to "Unknown",
 
-            ).forEach { (title, data) ->
+                ).forEach { (title, data) ->
                 tr {
                     td { +title }
                     td { +data.toString() }
