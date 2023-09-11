@@ -26,7 +26,7 @@ fun main() {
 }
 
 private fun parseSystem(rawStar: RawStar, rawPlanets: List<RawPlanet>, rawBiomes: List<RawBiome>): StarSystem {
-    val star = with(rawStar) { Star(starId, name, spectral, temp) }
+    val star = with(rawStar) { Star(starId, catalogueId, name, spectral, temp, mass, radius, magnitude) }
     val pos = with(rawStar) { Pos(x, y, z) }
     val planets = rawPlanets.associate { rawPlanet ->
         val biomes = rawBiomes.filter { it.planetId == rawPlanet.planetId }.map { it.name }

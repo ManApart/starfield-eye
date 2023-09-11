@@ -45,35 +45,66 @@ body {
 #system-title {
 }
 
+#system-view{
+    margin-left: 15%;
+}
+#system-view-parts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.system-view-box{
+    display: block;
+    width: 20%;
+    min-width: 300px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.system-view-box td{
+    padding-right: 15px;
+}
+
+#orrery {
+
+}
+
+#detail-view {
+}
 
 .system-star-circle {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.planet-row {
+    margin-bottom: 25px;
+}
+
+.system-planet-circle {
     width: 30px;
     height: 30px;
     background-color: white;
     border-radius: 15px;
-    margin-bottom: 10px;
-}
-
-.planet-row {
-    margin-bottom: 10px;
-}
-
-.system-planet-circle {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 10px;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: 15px;
 }
 
 .system-moon-circle {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 7px;
     display: inline-block;
-    margin-right: 5px;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-top: 7px;
 }
 
 .stars {

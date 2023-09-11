@@ -53,28 +53,37 @@ data class RawBiome(
 
 fun String.toBiome(): RawBiome {
     val parts = this.split(",")
-    return RawBiome(parts[1].toInt(), parts[0].toInt(), parts[3])
+    val name = parts[3].replace("-", " ").replace("_", ": ")
+    return RawBiome(parts[1].toInt(), parts[0].toInt(), name)
 }
 
 data class RawStar(
     val starId: Int,
     val name: String,
+    val catalogueId: String,
     val x: Float,
     val y: Float,
     val z: Float,
     val spectral: String,
-    val temp: Int
-)
+    val temp: Int,
+    val mass: Float,
+    val radius: Float,
+    val magnitude: Float,
+    )
 
 fun String.toStar(): RawStar {
     val parts = this.split(",")
     return RawStar(
         parts[0].toInt(),
         parts[6],
+        parts[4],
         parts[17].toFloat(),
         parts[18].toFloat(),
         parts[19].toFloat(),
         parts[15],
-        parts[42].toInt()
-    )
+        parts[42].toInt(),
+        parts[38].toFloat(),
+        radius = parts[7].toFloat(),
+        parts[13].toFloat(),
+        )
 }

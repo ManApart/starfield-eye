@@ -15,18 +15,21 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
     val root = el("root")
     root.innerHTML = ""
     root.append {
-        h1 {
-            id = "system-title"
-            +"Designation ${system.star.name}"
-        }
-        h2 {
-            +"Back to Galaxy"
-            onClickFunction = {
-                renderGalaxy()
+        div {
+            id = "system-view"
+            h3 {
+                +"Back to Galaxy"
+                onClickFunction = {
+                    renderGalaxy()
+                }
+            }
+
+            div {
+                id = "system-view-parts"
+                orrery(system)
+                div("system-view-box") { id = "detail-view" }
             }
         }
-        orrery(system)
-        div { id = "detail-view" }
     }
     detailView(system, planetId)
 }
@@ -36,8 +39,14 @@ private fun updateUrl(system: StarSystem, planetId: Int) {
 }
 
 private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
-    div {
+    div("system-view-box") {
         id = "orrery"
+
+        h2 {
+            id = "system-title"
+            +"Designation ${system.star.name}"
+        }
+
         div("system-star-circle") {
             onClickFunction = { detailView(system, 0) }
         }
@@ -46,14 +55,14 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                 id = "planet-$planetId"
                 div("system-planet-circle") {
                     onClickFunction = { detailView(system, planetId) }
-                    onMouseOverFunction = {detailView(system, planetId) }
+                    onMouseOverFunction = { detailView(system, planetId) }
                 }
                 if (moons.isNotEmpty()) {
                     moons.forEach { moonId ->
                         div("system-moon-circle") {
                             id = "moon-$moonId"
                             onClickFunction = { detailView(system, moonId) }
-                            onMouseOverFunction = {detailView(system, moonId) }
+                            onMouseOverFunction = { detailView(system, moonId) }
                         }
                     }
                 }
@@ -67,17 +76,30 @@ private fun detailView(system: StarSystem, planetId: Int) {
     val root = el("detail-view")
     root.innerHTML = ""
     root.append {
-        if (planetId == 0) detailView(system.star) else detailView(system.planets[planetId]!!)
+        if (planetId == 0) detailView(system.star, system) else detailView(system.planets[planetId]!!)
     }
 }
 
-private fun TagConsumer<HTMLElement>.detailView(star: Star) {
+private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) {
     with(star) {
         h2 { +name }
         table {
-            tr {
-                td { +"Spectral Class" }
-                td { +spectral }
+            listOf(
+                "Spectral Class" to spectral,
+                "Catalogue Id" to catalogueId,
+                "Mass" to mass,
+                "Radius" to radius,
+                "Magnitude" to magnitude,
+                "Temperature" to temp,
+                "Planets" to system.planetChildren.size,
+                "Moons" to system.planetChildren.values.sumOf { it.size },
+                "Outposts" to "",
+
+            ).forEach { (title, data) ->
+                tr {
+                    td { +title }
+                    td { +data.toString() }
+                }
             }
         }
     }
@@ -87,9 +109,33 @@ private fun TagConsumer<HTMLElement>.detailView(planet: Planet) {
     with(planet) {
         h2 { +name }
         table {
-            tr {
-                td { +"Type" }
-                td { +type }
+            listOf(
+                "Type" to type,
+                "Body Type" to bodyType,
+                "Class" to planetClass,
+                "Mass" to mass,
+                "Radius" to radius,
+                "Density" to density,
+                "Gravity" to gravity,
+                "Temperature" to heat,
+                "Atmosphere" to "",
+                "Magnetosphere" to magneticField,
+                "Biomes" to biomes.joinToString(),
+                "Life" to life,
+                "Fauna" to "",
+                "Flora" to "",
+                "Water" to "",
+                "Year" to year,
+                "Day" to day,
+                "Asteroids" to asteroids,
+                "Rings" to rings,
+                "Resources" to "Unknown",
+
+            ).forEach { (title, data) ->
+                tr {
+                    td { +title }
+                    td { +data.toString() }
+                }
             }
         }
     }

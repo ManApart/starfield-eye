@@ -2,6 +2,7 @@ package views
 
 import inMemoryStorage
 import kotlinx.browser.document
+import kotlinx.browser.window
 import kotlinx.html.div
 import kotlinx.html.dom.append
 import kotlinx.html.id
@@ -10,9 +11,9 @@ import kotlinx.html.style
 import org.w3c.dom.HTMLElement
 
 fun renderGalaxy() {
+    window.history.pushState(null, "null", "")
     val systems = inMemoryStorage.galaxy.systems
     val summary = inMemoryStorage.galaxy.summary
-    println("Found ${systems.keys.size} systems")
     val root = el("root")
 
     root.innerHTML = ""

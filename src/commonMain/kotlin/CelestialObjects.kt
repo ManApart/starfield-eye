@@ -5,9 +5,13 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Star(
     val id: Int,
+    val catalogueId: String,
     val name: String,
     val spectral: String,
-    val temp: Int
+    val temp: Int,
+    val mass: Float,
+    val radius: Float,
+    val magnitude: Float,
 )
 
 @Serializable
