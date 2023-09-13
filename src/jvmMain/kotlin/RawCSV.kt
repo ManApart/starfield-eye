@@ -21,7 +21,7 @@ data class RawPlanet(
 )
 
 fun String.toPlanet(): RawPlanet {
-    val parts = this.split(",")
+    val parts = this.split(",").map { it.trim() }
     return RawPlanet(
         parts[4].toInt(),
         parts[3].toInt(),
@@ -52,7 +52,7 @@ data class RawBiome(
 )
 
 fun String.toBiome(): RawBiome {
-    val parts = this.split(",")
+    val parts = this.split(",").map { it.trim() }
     val name = parts[3].replace("-", " ").replace("_", ": ")
     return RawBiome(parts[1].toInt(), parts[0].toInt(), name)
 }
@@ -72,7 +72,7 @@ data class RawStar(
     )
 
 fun String.toStar(): RawStar {
-    val parts = this.split(",")
+    val parts = this.split(",").map { it.trim() }
     return RawStar(
         parts[0].toInt(),
         parts[6],

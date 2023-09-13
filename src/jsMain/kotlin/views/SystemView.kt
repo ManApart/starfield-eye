@@ -95,6 +95,7 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
                 "Planets" to system.planetChildren.size,
                 "Moons" to system.planetChildren.values.sumOf { it.size },
                 "Outposts" to "",
+                "Resources" to system.planets.values.flatMap { it.resources }.toSet()
 
                 ).forEach { (title, data) ->
                 tr {
@@ -130,7 +131,7 @@ private fun TagConsumer<HTMLElement>.detailView(planet: Planet) {
                 "Day" to day,
                 "Asteroids" to asteroids,
                 "Rings" to rings,
-                "Resources" to "Unknown",
+                "Resources" to if(resources.isEmpty()) "None" else resources.joinToString(),
 
                 ).forEach { (title, data) ->
                 tr {

@@ -2,6 +2,11 @@ import kotlinx.serialization.Serializable
 
 //TODO - add labels and notes
 
+enum class ResourceType {
+    H20,He3,U,Cl,Fe,Pb,Ni,Cu,Al,Ar,Ir,C6Hn,Pd,Pu,F,Be,W,IL,Co,Ne,SiH3Cl,Nd,V,Ag,RCOC,HnCn,Eu,Hg,xF4,Pt,Au,Ti,Ta,Cs,Yb,Sb,Xe,Li,Dy,Vy,Rc,Vr,Ad,Ie
+}
+
+
 @Serializable
 data class Star(
     val id: Int,
@@ -34,7 +39,8 @@ data class Planet(
     val magneticField: String,
     val life: String,
     val settled: String,
-    val biomes: List<String>
+    val biomes: List<String>,
+    val resources: List<ResourceType>,
 )
 
 @Serializable
