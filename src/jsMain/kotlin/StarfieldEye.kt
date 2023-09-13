@@ -1,4 +1,5 @@
 import kotlinx.browser.window
+import views.catalogueView
 import views.renderGalaxy
 import views.systemView
 
@@ -28,6 +29,9 @@ fun doRouting(windowHash: String) {
                 val planet = parts.last().toIntOrNull() ?: 0
                 systemView(system, planet)
             }
+        }
+        windowHash.startsWith("#catalogue") -> {
+            catalogueView()
         }
         else -> renderGalaxy()
     }

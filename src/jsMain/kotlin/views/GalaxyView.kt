@@ -3,6 +3,7 @@ package views
 import inMemoryStorage
 import kotlinx.browser.document
 import kotlinx.browser.window
+import kotlinx.html.button
 import kotlinx.html.div
 import kotlinx.html.dom.append
 import kotlinx.html.id
@@ -11,13 +12,20 @@ import kotlinx.html.style
 import org.w3c.dom.HTMLElement
 
 fun renderGalaxy() {
-    window.history.pushState(null, "null", "")
+    window.history.pushState(null, "null", "#galaxy")
     val systems = inMemoryStorage.galaxy.systems
     val summary = inMemoryStorage.galaxy.summary
     val root = el("root")
 
     root.innerHTML = ""
     root.append {
+        div {
+            id = "nav"
+            button {
+                +"Catalogue"
+                onClickFunction = { catalogueView()}
+            }
+        }
         div {
             id = "galaxy"
             systems.values.forEach { system ->
