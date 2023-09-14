@@ -1,0 +1,29 @@
+#galaxy{
+    position: relative;
+    width: 98vw;
+    height: 98vh;
+    overflow: hidden;
+    margin: auto;
+}
+
+.galaxy-system {
+    position: absolute;
+}
+
+.system-circle {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 7px;
+    display: block;
+    margin: auto;
+}
+
+.system-name {
+    text-align: center;
+    font-size: 14px;
+}
+
+.system-name-above {
+    margin-top: -30px;
+}
