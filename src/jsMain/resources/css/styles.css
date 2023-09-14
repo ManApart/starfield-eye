@@ -11,3 +11,15 @@ body {
     background-color: var(--background-blue);
 
 }
+
+.hidden {
+    display: none;
+}
+
+.visible-block {
+    display: block;
+}
+
+.visible-inline-block {
+    display: inline-block;
+}

@@ -3,8 +3,6 @@ import views.catalogueView
 import views.renderGalaxy
 import views.systemView
 
-//TODO - url for star and for planet
-
 fun main() {
     window.onload = {
         loadAll().then { doRouting() }

@@ -1,5 +1,6 @@
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
+import org.w3c.dom.HTMLElement
 import org.w3c.xhr.JSON
 import org.w3c.xhr.XMLHttpRequest
 import org.w3c.xhr.XMLHttpRequestResponseType
@@ -16,6 +17,12 @@ data class InMemoryStorage(
 )
 
 var inMemoryStorage = InMemoryStorage()
+var planetDivs: Map<String, HTMLElement> = mapOf()
+val planetSearchOptions = PlanetSearchOptions()
+
+fun getPlanets(): List<Planet> {
+    return inMemoryStorage.galaxy.systems.values.flatMap { it.planets.values }
+}
 
 fun loadAll(): Promise<*>{
     return loadMemory().then {

@@ -51,6 +51,7 @@ private fun parseSystem(rawStar: RawStar, rawPlanets: List<RawPlanet>, rawBiomes
             with(rawPlanet) {
                 Planet(
                     planetId,
+                    starId,
                     parentId,
                     name,
                     planetClass,

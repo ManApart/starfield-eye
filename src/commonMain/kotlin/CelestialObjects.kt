@@ -1,4 +1,5 @@
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.Transient
 
 //TODO - add labels and notes
 
@@ -22,6 +23,7 @@ data class Star(
 @Serializable
 data class Planet(
     val id: Int,
+    val starId: Int,
     val parentId: Int,
     val name: String,
     val planetClass: String,
@@ -41,7 +43,10 @@ data class Planet(
     val settled: String,
     val biomes: List<String>,
     val resources: List<ResourceType>,
-)
+) {
+    @Transient
+    val uniqueId = "$starId-$id"
+}
 
 @Serializable
 data class Pos(val x: Float, val y: Float, val z: Float)
