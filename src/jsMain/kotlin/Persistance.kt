@@ -17,6 +17,7 @@ data class InMemoryStorage(
 )
 
 var inMemoryStorage = InMemoryStorage()
+var starDivs: Map<String, HTMLElement> = mapOf()
 var planetDivs: Map<String, HTMLElement> = mapOf()
 val planetSearchOptions = PlanetSearchOptions()
 

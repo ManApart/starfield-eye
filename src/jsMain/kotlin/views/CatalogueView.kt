@@ -2,6 +2,7 @@ package views
 
 import Planet
 import getPlanets
+import inMemoryStorage
 import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.dom.addClass
@@ -17,6 +18,7 @@ import org.w3c.dom.HTMLInputElement
 import planetDivs
 import planetSearchOptions
 import searchPlanets
+import starDivs
 
 fun catalogueView() {
     window.history.pushState(null, "null", "#catalogue")
@@ -57,26 +59,34 @@ fun catalogueView() {
 fun buildPlanets() {
     val parent = el("planet-list")
     parent.append {
-        getPlanets().forEach { planet ->
-            div("planet-catalogue-item") {
-                id = planet.uniqueId
-                +planet.name
+        inMemoryStorage.galaxy.systems.values.forEach { system ->
+            div("system-catalogue-item"){
+                id = system.star.id.toString()
+                +system.star.name
+            }
+            system.planets.values.forEach { planet ->
+                div("planet-catalogue-item") {
+                    id = planet.uniqueId
+                    +planet.name
+                }
             }
         }
     }
     planetDivs = getPlanets().associate { it.uniqueId to el(it.uniqueId) }
+    starDivs = inMemoryStorage.galaxy.systems.values.associate { it.star.id.toString() to el(it.star.id.toString()) }
 }
-
-//TODO Also filter stars
 
 fun filterPlanets(shown: List<Planet>) {
     val shownMap = shown.associateBy { it.uniqueId }
     val (shownHtml, hiddenHtml) = planetDivs.entries.partition { (id, _) -> shownMap.containsKey(id) }
-    shownHtml.forEach { (_, html) ->
+    val shownStars = shown.groupBy { it.starId.toString() }.keys
+    val (shownStarHtml, hiddenStarHtml) = starDivs.entries.partition { (id, _) -> shownStars.contains(id) }
+
+    (shownStarHtml + shownHtml).forEach { (_, html) ->
         html.addClass("visible-block")
         html.removeClass("hidden")
     }
-    hiddenHtml.forEach { (_, html) ->
+    (hiddenStarHtml + hiddenHtml).forEach { (_, html) ->
         html.addClass("hidden")
         html.removeClass("visible-block")
     }
