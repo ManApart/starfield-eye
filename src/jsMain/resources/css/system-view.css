@@ -18,6 +18,10 @@
 #detail-view {
 }
 
+.resource-td {
+    vertical-align: top;
+}
+
 .system-star-circle {
     width: 60px;
     height: 60px;

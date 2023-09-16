@@ -1,6 +1,7 @@
 package views
 
 import Planet
+import ResourceType
 import Star
 import StarSystem
 import kotlinx.browser.window
@@ -101,14 +102,13 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
                 "Planets" to system.planetChildren.size,
                 "Moons" to system.planetChildren.values.sumOf { it.size },
                 "Outposts" to "",
-                "Resources" to system.planets.values.flatMap { it.resources }.toSet()
-
             ).forEach { (title, data) ->
                 tr {
                     td { +title }
                     td { +data.toString() }
                 }
             }
+            resourceRow(system.planets.values.flatMap { it.resources }.toSet().toList())
         }
     }
 }
@@ -137,12 +137,29 @@ private fun TagConsumer<HTMLElement>.detailView(planet: Planet) {
                 "Day" to day,
                 "Asteroids" to asteroids,
                 "Rings" to rings,
-                "Resources" to if (resources.isEmpty()) "None" else resources.joinToString(),
 
                 ).forEach { (title, data) ->
                 tr {
                     td { +title }
                     td { +data.toString() }
+                }
+            }
+            resourceRow(resources)
+        }
+    }
+}
+
+private fun TABLE.resourceRow(resources: List<ResourceType>) {
+    tr {
+        td("resource-td") { +"Resources" }
+        td {
+            if (resources.isEmpty()) {
+                +"None"
+            } else {
+                resources.forEach { resource ->
+                    div("resource") {
+                        +"${resource.name} (${resource.readableName})"
+                    }
                 }
             }
         }

@@ -1,5 +1,6 @@
 import kotlinx.serialization.encodeToString
 import java.io.File
+import java.lang.IllegalArgumentException
 
 val jsonMapper = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
 
@@ -82,15 +83,22 @@ private fun parseSystem(rawStar: RawStar, rawPlanets: List<RawPlanet>, rawBiomes
     return StarSystem(star, pos, planets, nestedPlanets)
 }
 
-
 private fun parseResourceLookup(lines: List<String>): Map<String, Map<String, List<ResourceType>>> {
+    val columnToResource = lines.first().split(",").subList(4, 48).mapIndexed { i, name ->
+        val lookupName = name.lowercase().replace("-", "")
+        val resourceType = ResourceType.entries.firstOrNull { resourceType ->
+            resourceType.name.lowercase() == lookupName || resourceType.aliases.any { it.lowercase() == lookupName }
+        } ?: throw IllegalArgumentException("Could not find resource for $lookupName at $i")
+        i to resourceType
+    }.toMap()
+
     val lookup = mutableMapOf<String, MutableMap<String, List<ResourceType>>>()
     lines.forEach { line ->
         val parts = line.split(",").map { it.trim() }
         val system = parts.first()
         val planetName = parts[1]
         val resourcesPresent = parts.subList(4, 48)
-        val resources = ResourceType.entries.filterIndexed { i, _ -> resourcesPresent[i].isNotBlank() }
+        val resources = resourcesPresent.mapIndexedNotNull { i, content -> if (content.isNotBlank()) columnToResource[i] else null }
 
         lookup.putIfAbsent(system, mutableMapOf())
         lookup[system]?.put(planetName, resources)
