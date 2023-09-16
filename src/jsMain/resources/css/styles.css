@@ -23,3 +23,28 @@ body {
 .visible-inline-block {
     display: inline-block;
 }
+
+.section-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.section-view-box{
+    display: block;
+    width: 20%;
+    min-width: 300px;
+    max-height: 80vh;
+    border: 1px solid gray;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: var(--background-blue);
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.section-view-box::-webkit-scrollbar{
+    display: none;
+  }

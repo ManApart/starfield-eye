@@ -6,22 +6,6 @@
 #system-view{
     margin-left: 15%;
 }
-#system-view-parts{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-.system-view-box{
-    display: block;
-    width: 20%;
-    min-width: 300px;
-    border: 1px solid gray;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    background-color: var(--background-blue);
-}
 
 .system-view-box td{
     padding-right: 15px;

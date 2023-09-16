@@ -37,7 +37,6 @@ fun renderGalaxy() {
                     div("system-circle") { }
                     div("system-name") { +system.star.name }
                     onClickFunction = {
-                        println("Clicked ${system.star.name}")
                         systemView(system)
                     }
                 }

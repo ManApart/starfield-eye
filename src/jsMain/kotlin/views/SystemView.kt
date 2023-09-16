@@ -25,10 +25,9 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
                 }
             }
 
-            div {
-                id = "system-view-parts"
+            div("section-wrapper") {
                 orrery(system)
-                div("system-view-box") { id = "detail-view" }
+                div("section-view-box") { id = "detail-view" }
             }
         }
     }
@@ -40,7 +39,7 @@ private fun updateUrl(system: StarSystem, planetId: Int) {
 }
 
 private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
-    div("system-view-box") {
+    div("section-view-box") {
         id = "orrery"
 
         h2 {
@@ -72,11 +71,18 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
     }
 }
 
-private fun detailView(system: StarSystem, planetId: Int) {
-    updateUrl(system, planetId)
+fun detailView(system: StarSystem, planetId: Int, updateUrl: Boolean = true, linkToSystem: Boolean = false) {
+    if (updateUrl) updateUrl(system, planetId)
     val root = el("detail-view")
     root.innerHTML = ""
     root.append {
+        if (linkToSystem) {
+            button {
+                +"View System"
+                onClickFunction = { systemView(system, planetId) }
+            }
+        }
+
         if (planetId == 0) detailView(system.star, system) else detailView(system.planets[planetId]!!)
     }
 }
@@ -97,7 +103,7 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
                 "Outposts" to "",
                 "Resources" to system.planets.values.flatMap { it.resources }.toSet()
 
-                ).forEach { (title, data) ->
+            ).forEach { (title, data) ->
                 tr {
                     td { +title }
                     td { +data.toString() }
@@ -131,7 +137,7 @@ private fun TagConsumer<HTMLElement>.detailView(planet: Planet) {
                 "Day" to day,
                 "Asteroids" to asteroids,
                 "Rings" to rings,
-                "Resources" to if(resources.isEmpty()) "None" else resources.joinToString(),
+                "Resources" to if (resources.isEmpty()) "None" else resources.joinToString(),
 
                 ).forEach { (title, data) ->
                 tr {

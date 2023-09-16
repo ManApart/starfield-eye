@@ -7,13 +7,12 @@ import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
-import kotlinx.html.div
+import kotlinx.html.*
 import kotlinx.html.dom.append
-import kotlinx.html.h3
-import kotlinx.html.id
-import kotlinx.html.input
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.js.onKeyUpFunction
+import kotlinx.html.js.onMouseOverFunction
+import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import planetDivs
 import planetSearchOptions
@@ -47,31 +46,44 @@ fun catalogueView() {
                 }
             }
 
-            div {
-                id = "planet-list"
-
-            }
-        }
-    }
-    buildPlanets()
-}
-
-fun buildPlanets() {
-    val parent = el("planet-list")
-    parent.append {
-        inMemoryStorage.galaxy.systems.values.forEach { system ->
-            div("system-catalogue-item"){
-                id = system.star.id.toString()
-                +system.star.name
-            }
-            system.planets.values.forEach { planet ->
-                div("planet-catalogue-item") {
-                    id = planet.uniqueId
-                    +planet.name
+            div("section-wrapper") {
+                div("section-view-box") {
+                    id = "planet-list"
+                    planetList()
+                }
+                div("section-view-box") {
+                    id = "detail-view"
                 }
             }
         }
     }
+    saveHtmlRefs()
+}
+
+private fun TagConsumer<HTMLElement>.planetList() {
+    inMemoryStorage.galaxy.systems.values.forEach { system ->
+        div("system-catalogue-item") {
+            id = system.star.id.toString()
+            span {
+                +system.star.name
+                onClickFunction = { detailView(system, 0, false, true) }
+                onMouseOverFunction = { detailView(system, 0, false, true) }
+            }
+        }
+        system.planets.values.forEach { planet ->
+            div("planet-catalogue-item") {
+                id = planet.uniqueId
+                span {
+                    +planet.name
+                    onClickFunction = { detailView(system, planet.id, false, true) }
+                    onMouseOverFunction = { detailView(system, planet.id, false, true) }
+                }
+            }
+        }
+    }
+}
+
+private fun saveHtmlRefs() {
     planetDivs = getPlanets().associate { it.uniqueId to el(it.uniqueId) }
     starDivs = inMemoryStorage.galaxy.systems.values.associate { it.star.id.toString() to el(it.star.id.toString()) }
 }
