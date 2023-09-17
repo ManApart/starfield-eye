@@ -1,7 +1,18 @@
 # Starfield Eye
 
-An Ad free searchable starmap with labels and bookmarks
+An Ad free searchable starmap with labels and bookmarks.
 
+Extremely wip at this point.
+
+https://manapart.github.io/starfield-eye/#galaxy
+
+## Deploying
+```
+gradlew jsBrowserDistribution
+#Switch to deploy branch in separate folder
+cd ../starfield-eye-deploy
+cp -r ../starfield-eye/build/dist/js/productionExecutable/* .
+```
 
 ## Crew
 
