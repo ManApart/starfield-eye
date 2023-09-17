@@ -16,18 +16,27 @@ private fun List<Planet>.filterSearch(searchText: String): List<Planet> {
 
 private fun filterPlanet(initial: List<Planet>, searchText: String): List<Planet> {
     return initial.filter { planet ->
-        val info = inMemoryStorage.planetNotes[planet.uniqueId]
+        planetMatches(planet, searchText) || planetInfoMatches(planet, searchText)
+    }
+}
 
-        planet.name.lowercase().contains(searchText)
-                || planet.bodyType == searchText.toIntOrNull()
-                || planet.type.lowercase().contains(searchText)
-                || planet.planetClass.lowercase().contains(searchText)
-                || planet.magneticField.lowercase().contains(searchText)
-                || planet.biomes.any { it.lowercase().contains(searchText) }
-                || planet.resources.any { it.name.lowercase().contains(searchText) || it.readableName.lowercase().contains(searchText) }
-                || (info != null && (
-                info.labels.any { it.name.lowercase().contains(searchText) }
-                        || info.outPosts.any { it.lowercase().contains(searchText) }
-                ))
+private fun planetMatches(planet: Planet, searchText: String): Boolean {
+    return with(planet) {
+        name.lowercase().contains(searchText)
+                || bodyType == searchText.toIntOrNull()
+                || type.lowercase().contains(searchText)
+                || planetClass.lowercase().contains(searchText)
+                || magneticField.lowercase().contains(searchText)
+                || biomes.any { it.lowercase().contains(searchText) }
+                || resources.any { it.name.lowercase().contains(searchText) || it.readableName.lowercase().contains(searchText) }
+    }
+}
+
+private fun planetInfoMatches(planet: Planet, searchText: String): Boolean {
+    val info = inMemoryStorage.planetUserInfo[planet.uniqueId]
+    return info != null && with(info) {
+        labels.any { it.name.lowercase().contains(searchText) }
+                || searchText == "outpost" && outPosts.isNotEmpty()
+                || outPosts.any { it.lowercase().contains(searchText) }
     }
 }

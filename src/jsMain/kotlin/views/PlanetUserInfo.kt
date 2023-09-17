@@ -16,7 +16,7 @@ fun userInfo(planet: Planet) {
     val root = el("user-info")
     root.innerHTML = ""
     root.append {
-        val info = inMemoryStorage.planetNotes[planet.uniqueId] ?: PlanetInfo()
+        val info = inMemoryStorage.planetUserInfo[planet.uniqueId] ?: PlanetInfo()
         table {
             tr {
                 td { +"Labels" }
@@ -111,7 +111,7 @@ private fun TagConsumer<HTMLElement>.outpostInfo(info: PlanetInfo, planet: Plane
 }
 
 private fun savePlanetInfo(planet: Planet, info: PlanetInfo) {
-    inMemoryStorage.planetNotes[planet.uniqueId] = info
+    inMemoryStorage.planetUserInfo[planet.uniqueId] = info
     userInfo(planet)
     persistMemory()
 }
