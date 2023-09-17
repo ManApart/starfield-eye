@@ -1,15 +1,20 @@
 package views
 
+import Label
 import Planet
+import PlanetInfo
 import ResourceType
 import Star
 import StarSystem
+import inMemoryStorage
 import kotlinx.browser.window
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.js.onMouseOverFunction
 import org.w3c.dom.HTMLElement
+import org.w3c.dom.HTMLSelectElement
+import persistMemory
 
 fun systemView(system: StarSystem, planetId: Int = 0) {
     updateUrl(system, planetId)
@@ -86,6 +91,9 @@ fun detailView(system: StarSystem, planetId: Int, updateUrl: Boolean = true, lin
 
         if (planetId == 0) detailView(system.star, system) else detailView(system.planets[planetId]!!)
     }
+    if (planetId != 0) {
+        system.planets[planetId]?.let { userInfo(it) }
+    }
 }
 
 private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) {
@@ -146,6 +154,7 @@ private fun TagConsumer<HTMLElement>.detailView(planet: Planet) {
             }
             resourceRow(resources)
         }
+        div { id = "user-info" }
     }
 }
 
@@ -164,4 +173,59 @@ private fun TABLE.resourceRow(resources: List<ResourceType>) {
             }
         }
     }
+}
+
+private fun userInfo(planet: Planet) {
+    val root = el("user-info")
+    root.innerHTML = ""
+    root.append {
+        val info = inMemoryStorage.planetNotes[planet.uniqueId] ?: PlanetInfo()
+        div {
+            id = "info-labels"
+            div {
+                id = "existing-labels"
+                info.labels.forEach { label ->
+                    span("planet-label") {
+                        +label.name
+                        button(classes = "remove-info-button") {
+                            +"-"
+                            onClickFunction = {
+                                info.labels.remove(label)
+                                savePlanetInfo(planet, info)
+                            }
+                        }
+                    }
+                }
+            }
+            Label.entries.filter { !info.labels.contains(it) }.takeIf { it.isNotEmpty() }?.let { newLabels ->
+                div {
+                    id = "add-labels"
+                    select {
+                        id = "label-select"
+                        newLabels.forEach { newLabel ->
+                            option {
+                                value = newLabel.name
+                                +newLabel.name
+                            }
+                        }
+                    }
+                    button(classes = "add-info-button") {
+                        +"+"
+                        onClickFunction = {
+                            val select = el<HTMLSelectElement>("label-select")
+                            val selected = newLabels[select.selectedIndex]
+                            info.labels.add(selected)
+                            savePlanetInfo(planet, info)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+private fun savePlanetInfo(planet: Planet, info: PlanetInfo) {
+    inMemoryStorage.planetNotes[planet.uniqueId] = info
+    userInfo(planet)
+    persistMemory()
 }
