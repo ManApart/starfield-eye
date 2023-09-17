@@ -1,1 +1,14 @@
 
+#search {
+    width: 20%;
+    min-width: 300px;
+    margin-bottom: 5px;
+}
+
+.system-catalogue-item {
+    font-size: large;
+}
+
+.planet-catalogue-item {
+    margin-left: 5%;
+}

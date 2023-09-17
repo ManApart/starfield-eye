@@ -58,6 +58,7 @@ fun catalogueView() {
         }
     }
     saveHtmlRefs()
+    detailView(inMemoryStorage.galaxy.systems.values.first(), 0)
 }
 
 private fun TagConsumer<HTMLElement>.planetList() {
