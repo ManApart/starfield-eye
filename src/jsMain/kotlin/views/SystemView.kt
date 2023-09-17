@@ -52,23 +52,29 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
             id = "system-title"
             +"Designation ${system.star.name}"
         }
+        div {
+            id = "current-hover"
+            +system.star.name
+        }
 
         div("system-star-circle") {
             onClickFunction = { detailView(system, 0) }
+            onMouseOverFunction = { el("current-hover").innerText = system.star.name }
         }
         system.planetChildren.entries.forEach { (planetId, moons) ->
             div("planet-row") {
                 id = "planet-$planetId"
                 div("system-planet-circle") {
+                    title = "Stuff"
                     onClickFunction = { detailView(system, planetId) }
-                    onMouseOverFunction = { detailView(system, planetId) }
+                    onMouseOverFunction = { el("current-hover").innerText = system.planets[planetId]?.name ?: "" }
                 }
                 if (moons.isNotEmpty()) {
                     moons.forEach { moonId ->
                         div("system-moon-circle") {
                             id = "moon-$moonId"
                             onClickFunction = { detailView(system, moonId) }
-                            onMouseOverFunction = { detailView(system, moonId) }
+                            onMouseOverFunction = { el("current-hover").innerText = system.planets[planetId]?.name ?: "" }
                         }
                     }
                 }
@@ -173,59 +179,4 @@ private fun TABLE.resourceRow(resources: List<ResourceType>) {
             }
         }
     }
-}
-
-private fun userInfo(planet: Planet) {
-    val root = el("user-info")
-    root.innerHTML = ""
-    root.append {
-        val info = inMemoryStorage.planetNotes[planet.uniqueId] ?: PlanetInfo()
-        div {
-            id = "info-labels"
-            div {
-                id = "existing-labels"
-                info.labels.forEach { label ->
-                    span("planet-label") {
-                        +label.name
-                        button(classes = "remove-info-button") {
-                            +"-"
-                            onClickFunction = {
-                                info.labels.remove(label)
-                                savePlanetInfo(planet, info)
-                            }
-                        }
-                    }
-                }
-            }
-            Label.entries.filter { !info.labels.contains(it) }.takeIf { it.isNotEmpty() }?.let { newLabels ->
-                div {
-                    id = "add-labels"
-                    select {
-                        id = "label-select"
-                        newLabels.forEach { newLabel ->
-                            option {
-                                value = newLabel.name
-                                +newLabel.name
-                            }
-                        }
-                    }
-                    button(classes = "add-info-button") {
-                        +"+"
-                        onClickFunction = {
-                            val select = el<HTMLSelectElement>("label-select")
-                            val selected = newLabels[select.selectedIndex]
-                            info.labels.add(selected)
-                            savePlanetInfo(planet, info)
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-private fun savePlanetInfo(planet: Planet, info: PlanetInfo) {
-    inMemoryStorage.planetNotes[planet.uniqueId] = info
-    userInfo(planet)
-    persistMemory()
 }

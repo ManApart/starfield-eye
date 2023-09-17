@@ -9,7 +9,10 @@
 body {
     color: white;
     background-color: var(--background-blue);
+}
 
+td {
+    vertical-align: top;
 }
 
 .hidden {
@@ -32,9 +35,8 @@ body {
 
 .section-view-box{
     display: block;
-    width: 20%;
+    max-width: 40%;
     min-width: 300px;
-    max-height: 80vh;
     border: 1px solid gray;
     padding-left: 10px;
     margin-bottom: 20px;
