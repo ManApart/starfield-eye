@@ -1,6 +1,7 @@
 package views
 
 import Planet
+import galaxy
 import getPlanets
 import inMemoryStorage
 import kotlinx.browser.document
@@ -15,7 +16,6 @@ import kotlinx.html.js.onMouseOverFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import planetDivs
-import planetSearchOptions
 import searchPlanets
 import starDivs
 
@@ -38,9 +38,9 @@ fun catalogueView() {
                 input {
                     id = "search"
                     placeholder = "Filter: Name, Resources etc. Comma separated"
-                    value = planetSearchOptions.searchText
+                    value = inMemoryStorage.planetSearchOptions.searchText
                     onKeyUpFunction = {
-                        planetSearchOptions.searchText = (document.getElementById("search") as HTMLInputElement).value
+                        inMemoryStorage.planetSearchOptions.searchText = (document.getElementById("search") as HTMLInputElement).value
                         searchPlanets()
                     }
                 }
@@ -58,11 +58,12 @@ fun catalogueView() {
         }
     }
     saveHtmlRefs()
-    detailView(inMemoryStorage.galaxy.systems.values.first(), 0)
+    detailView(galaxy.systems.values.first(), 0, false, true)
+    searchPlanets()
 }
 
 private fun TagConsumer<HTMLElement>.planetList() {
-    inMemoryStorage.galaxy.systems.values.forEach { system ->
+    galaxy.systems.values.forEach { system ->
         div("system-catalogue-item") {
             id = system.star.id.toString()
             span {
@@ -86,7 +87,7 @@ private fun TagConsumer<HTMLElement>.planetList() {
 
 private fun saveHtmlRefs() {
     planetDivs = getPlanets().associate { it.uniqueId to el(it.uniqueId) }
-    starDivs = inMemoryStorage.galaxy.systems.values.associate { it.star.id.toString() to el(it.star.id.toString()) }
+    starDivs = galaxy.systems.values.associate { it.star.id.toString() to el(it.star.id.toString()) }
 }
 
 fun filterPlanets(shown: List<Planet>) {

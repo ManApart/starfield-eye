@@ -1,5 +1,6 @@
 package views
 
+import galaxy
 import inMemoryStorage
 import kotlinx.browser.document
 import kotlinx.browser.window
@@ -13,8 +14,8 @@ import org.w3c.dom.HTMLElement
 
 fun renderGalaxy() {
     window.history.pushState(null, "null", "#galaxy")
-    val systems = inMemoryStorage.galaxy.systems
-    val summary = inMemoryStorage.galaxy.summary
+    val systems = galaxy.systems
+    val summary = galaxy.summary
     val root = el("root")
 
     root.innerHTML = ""
