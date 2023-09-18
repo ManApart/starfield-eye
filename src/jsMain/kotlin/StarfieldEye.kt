@@ -22,7 +22,6 @@ fun main() {
 
 
 fun doRouting() {
-    println("Doing routing")
     doRouting(window.location.hash)
 }
 

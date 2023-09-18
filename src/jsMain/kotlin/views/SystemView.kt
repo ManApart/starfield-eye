@@ -1,20 +1,16 @@
 package views
 
-import Label
 import Planet
-import PlanetInfo
 import ResourceType
 import Star
 import StarSystem
-import inMemoryStorage
+import exportPlayerInfo
 import kotlinx.browser.window
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.js.onMouseOverFunction
 import org.w3c.dom.HTMLElement
-import org.w3c.dom.HTMLSelectElement
-import persistMemory
 
 fun systemView(system: StarSystem, planetId: Int = 0) {
     updateUrl(system, planetId)
@@ -29,6 +25,13 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
                 onClickFunction = {
                     renderGalaxy()
                 }
+            }
+
+            button(classes = "nav-button") {
+                id = "export-button"
+                +"Export"
+                title = "Download user entered data"
+                onClickFunction = { exportPlayerInfo() }
             }
 
             div("section-wrapper") {

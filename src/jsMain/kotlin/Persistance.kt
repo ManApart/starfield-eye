@@ -1,4 +1,5 @@
 import LocalForage.config
+import kotlinx.browser.document
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
@@ -67,4 +68,13 @@ fun loadMemory(): Promise<*> {
             inMemoryStorage = jsonMapper.decodeFromString(persisted as String)
         }
     }
+}
+
+fun exportPlayerInfo() {
+    val download = document.createElement("a") as HTMLElement
+    download.setAttribute("href", "data:text/plain;charset=utf-8," + jsonMapper.encodeToString(inMemoryStorage))
+    download.setAttribute("download", "StarfieldEye.json")
+    document.body?.append(download)
+    download.click()
+    document.body?.removeChild(download)
 }

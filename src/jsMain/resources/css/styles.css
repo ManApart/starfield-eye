@@ -50,3 +50,7 @@ td {
 .section-view-box::-webkit-scrollbar{
     display: none;
   }
+
+.nav-button {
+    margin-bottom: 10px;
+}
