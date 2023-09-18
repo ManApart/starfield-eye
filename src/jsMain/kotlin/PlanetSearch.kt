@@ -2,13 +2,12 @@ import views.filterPlanets
 
 fun searchPlanets() {
     val planets = getPlanets().filterSearch(inMemoryStorage.planetSearchOptions.searchText)
-    println("Filtered to ${planets.size}")
+    println("${planets.size} planets match ${inMemoryStorage.planetSearchOptions.searchText}")
     filterPlanets(planets)
     persistMemory()
 }
 
 private fun List<Planet>.filterSearch(searchText: String): List<Planet> {
-    println("Search $searchText")
     return if (searchText.isBlank()) this else {
         searchText.lowercase().split(",").fold(this) { acc, s -> filterPlanet(acc, s.trim()) }
     }
@@ -36,7 +35,7 @@ private fun planetInfoMatches(planet: Planet, searchText: String): Boolean {
     val info = inMemoryStorage.planetUserInfo[planet.uniqueId]
     return info != null && with(info) {
         labels.any { it.name.lowercase().contains(searchText) }
-                || searchText == "outpost" && outPosts.isNotEmpty()
+                || outPosts.isNotEmpty() && "outposts".contains(searchText)
                 || outPosts.any { it.lowercase().contains(searchText) }
     }
 }

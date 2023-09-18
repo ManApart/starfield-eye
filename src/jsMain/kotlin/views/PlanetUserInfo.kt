@@ -5,10 +5,12 @@ import PlanetInfo
 import inMemoryStorage
 import kotlinx.html.*
 import kotlinx.html.dom.append
+import kotlinx.html.js.onChangeFunction
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.HTMLSelectElement
+import org.w3c.dom.HTMLTextAreaElement
 import persistMemory
 
 
@@ -25,6 +27,10 @@ fun userInfo(planet: Planet) {
             tr {
                 td { +"Outposts" }
                 td { outpostInfo(info, planet) }
+            }
+            tr {
+                td { +"Notes" }
+                td { playerNotes(info, planet) }
             }
         }
     }
@@ -105,6 +111,19 @@ private fun TagConsumer<HTMLElement>.outpostInfo(info: PlanetInfo, planet: Plane
                     info.outPosts.add(outpost)
                     savePlanetInfo(planet, info)
                 }
+            }
+        }
+    }
+}
+private fun TagConsumer<HTMLElement>.playerNotes(info: PlanetInfo, planet: Planet) {
+    div {
+        id = "info-notes"
+        textArea {
+            id = "player-info-notes"
+            +info.notes
+            onChangeFunction = {
+                info.notes = el<HTMLTextAreaElement>("player-info-notes").value
+                savePlanetInfo(planet, info)
             }
         }
     }
