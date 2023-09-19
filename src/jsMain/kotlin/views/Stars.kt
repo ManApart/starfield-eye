@@ -1,11 +1,19 @@
 package views
 
 import kotlinx.html.*
+import kotlinx.html.js.onMouseOverFunction
+import org.w3c.dom.events.MouseEvent
 import kotlin.random.Random
 
 private val rand = Random(0)
 fun DIV.backgroundStars() {
     div("stars") {
+//        onMouseOverFunction = { e ->
+//            e as MouseEvent
+//            println("${e.x}, ${e.y}")
+//
+//        }
+
         (0..2).forEach { layer ->
             div("star-layer") {
                 id = "star-layer-$layer"

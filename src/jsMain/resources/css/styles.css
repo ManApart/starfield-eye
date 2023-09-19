@@ -1,3 +1,7 @@
+@font-face { font-family: Montserrat; src: url('/assets/fonts/Architekt-Light.ttf'); }
+@font-face { font-family: JetBrainsMono; src: url('/assets/Grotesk-R-Semibold.ttf'); }
+
+
 :root {
   --background-blue: #0d1727;
   --red: #c82337;
@@ -9,6 +13,8 @@
 body {
     color: white;
     background-color: var(--background-blue);
+    /* NB Architekt Light*/
+    /* NB Grotesk R Semibold*/
 }
 
 td {
