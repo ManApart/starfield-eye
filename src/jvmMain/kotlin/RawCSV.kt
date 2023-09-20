@@ -53,7 +53,7 @@ data class RawBiome(
 
 fun String.toBiome(): RawBiome {
     val parts = this.split(",").map { it.trim() }
-    val name = parts[3].replace("-", " ").replace("_", ": ")
+    val name = parts[3].replace("-", " ").replace("_", ": ").replace(": Base", "")
     return RawBiome(parts[1].toInt(), parts[0].toInt(), name)
 }
 
