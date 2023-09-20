@@ -12,7 +12,8 @@
 }
 
 #orrery {
-
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 
 #current-hover {
@@ -27,34 +28,58 @@
 }
 
 .system-star-circle {
-    width: 60px;
-    height: 60px;
-    background-color: white;
-    border-radius: 30px;
-    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background-color: var(--background-blue);
+    border: 3px solid white;
 }
 
 .planet-row {
-    margin-bottom: 25px;
 }
 
 .system-planet-circle {
-    width: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: var(--background-blue);
+    border: 3px solid white;
+    display: inline-block;
+    margin-left: 32px;
+    margin-bottom: -5px;
+}
+
+.orrery-line {
+    width: 1px;
     height: 30px;
     background-color: white;
-    border-radius: 15px;
-    display: inline-block;
-    margin-right: 20px;
-    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-right: auto;
 }
 
 .system-moon-circle {
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border-radius: 7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--background-blue);
+    border: 3px solid white;
     display: inline-block;
     vertical-align: top;
-    margin-right: 10px;
-    margin-top: 7px;
+    margin-top: 10px;
+}
+
+.moon-spacer {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    margin-top: 19px;
+}
+
+.selected-circle {
+    background-color: white;
 }
