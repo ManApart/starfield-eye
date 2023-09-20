@@ -47,6 +47,12 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
         }
     }
     detailView(system, planetId)
+    val planetType = when {
+        planetId == 0 -> "star"
+        system.planetChildren.keys.contains(planetId) -> "planet"
+        else -> "moon"
+    }
+    setSelected(planetType, planetId)
 }
 
 private fun updateUrl(system: StarSystem, planetId: Int) {
