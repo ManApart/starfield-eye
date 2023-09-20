@@ -1,5 +1,5 @@
-@font-face { font-family: Architekt; src: url('/fonts/Architekt-Light.ttf'); }
-@font-face { font-family: Grotesk; src: url('/fonts/Grotesk-R-Semibold.ttf'); }
+@font-face { font-family: Architekt; src: url('fonts/Architekt-Light.ttf'),  url('/fonts/Architekt-Light.ttf'); }
+@font-face { font-family: Grotesk; src: url('fonts/Grotesk-R-Semibold.ttf'),  url('/fonts/Grotesk-R-Semibold.ttf'); }
 
 
 :root {
