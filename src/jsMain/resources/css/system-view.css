@@ -29,7 +29,9 @@
 .system-star-circle {
     width: 60px;
     height: 60px;
-    background-color: white;
+    box-sizing: border-box;
+    background-color: var(--background-blue);
+    border: 3px solid white;
     border-radius: 30px;
     margin-bottom: 50px;
 }
@@ -41,7 +43,9 @@
 .system-planet-circle {
     width: 30px;
     height: 30px;
-    background-color: white;
+    box-sizing: border-box;
+    background-color: var(--background-blue);
+    border: 3px solid white;
     border-radius: 15px;
     display: inline-block;
     margin-right: 20px;
@@ -51,7 +55,9 @@
 .system-moon-circle {
     width: 15px;
     height: 15px;
-    background-color: white;
+    box-sizing: border-box;
+    background-color: var(--background-blue);
+    border: 3px solid white;
     border-radius: 7px;
     display: inline-block;
     vertical-align: top;

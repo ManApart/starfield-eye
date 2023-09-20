@@ -9,8 +9,11 @@ import kotlinx.browser.window
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
+import kotlinx.html.js.onMouseOutFunction
 import kotlinx.html.js.onMouseOverFunction
 import org.w3c.dom.HTMLElement
+
+private var currentPlanet = 0
 
 fun systemView(system: StarSystem, planetId: Int = 0) {
     updateUrl(system, planetId)
@@ -55,29 +58,37 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
             id = "system-title"
             +"Designation ${system.star.name}"
         }
-        div {
-            id = "current-hover"
-            +system.star.name
-        }
 
         div("system-star-circle") {
-            onClickFunction = { detailView(system, 0) }
-            onMouseOverFunction = { el("current-hover").innerText = system.star.name }
+            onClickFunction = {
+                currentPlanet = 0
+                detailView(system, 0)
+            }
+            onMouseOverFunction = { detailView(system, 0) }
+            onMouseOutFunction = { detailView(system, currentPlanet) }
         }
         system.planetChildren.entries.forEach { (planetId, moons) ->
             div("planet-row") {
                 id = "planet-$planetId"
                 div("system-planet-circle") {
                     title = "Stuff"
-                    onClickFunction = { detailView(system, planetId) }
-                    onMouseOverFunction = { el("current-hover").innerText = system.planets[planetId]?.name ?: "" }
+                    onClickFunction = {
+                        currentPlanet = planetId
+                        detailView(system, planetId)
+                    }
+                    onMouseOverFunction = { detailView(system, planetId) }
+                    onMouseOutFunction = { detailView(system, currentPlanet) }
                 }
                 if (moons.isNotEmpty()) {
                     moons.forEach { moonId ->
                         div("system-moon-circle") {
                             id = "moon-$moonId"
-                            onClickFunction = { detailView(system, moonId) }
-                            onMouseOverFunction = { el("current-hover").innerText = system.planets[planetId]?.name ?: "" }
+                            onClickFunction = {
+                                currentPlanet = moonId
+                                detailView(system, moonId)
+                            }
+                            onMouseOverFunction = { detailView(system, moonId) }
+                            onMouseOutFunction = { detailView(system, currentPlanet) }
                         }
                     }
                 }

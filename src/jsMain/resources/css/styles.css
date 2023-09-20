@@ -1,5 +1,5 @@
-@font-face { font-family: Montserrat; src: url('/assets/fonts/Architekt-Light.ttf'); }
-@font-face { font-family: JetBrainsMono; src: url('/assets/Grotesk-R-Semibold.ttf'); }
+@font-face { font-family: Architekt; src: url('/fonts/Architekt-Light.ttf'); }
+@font-face { font-family: Grotesk; src: url('/fonts/Grotesk-R-Semibold.ttf'); }
 
 
 :root {
@@ -13,8 +13,15 @@
 body {
     color: white;
     background-color: var(--background-blue);
-    /* NB Architekt Light*/
-    /* NB Grotesk R Semibold*/
+    font-family: Grotesk;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+h1, h2, h3 {
+    font-family: Architekt;
 }
 
 td {
@@ -52,10 +59,6 @@ td {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
-.section-view-box::-webkit-scrollbar{
-    display: none;
-  }
 
 .nav-button {
     margin-bottom: 10px;
