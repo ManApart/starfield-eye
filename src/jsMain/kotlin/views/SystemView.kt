@@ -6,6 +6,8 @@ import Star
 import StarSystem
 import exportPlayerInfo
 import kotlinx.browser.window
+import kotlinx.dom.addClass
+import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
@@ -14,6 +16,7 @@ import kotlinx.html.js.onMouseOverFunction
 import org.w3c.dom.HTMLElement
 
 private var currentPlanet = 0
+private var currentPlanetType = "star"
 
 fun systemView(system: StarSystem, planetId: Int = 0) {
     updateUrl(system, planetId)
@@ -60,20 +63,23 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
         }
 
         div("system-star-circle") {
+            id = "star-0"
             onClickFunction = {
-                currentPlanet = 0
+                setSelected("star", 0)
                 detailView(system, 0)
             }
             onMouseOverFunction = { detailView(system, 0) }
             onMouseOutFunction = { detailView(system, currentPlanet) }
         }
         system.planetChildren.entries.forEach { (planetId, moons) ->
+            hr("orrery-line")
             div("planet-row") {
-                id = "planet-$planetId"
+                id = "planet-$planetId-row"
                 div("system-planet-circle") {
-                    title = "Stuff"
+                    id = "planet-$planetId"
+                    title = system.planets[planetId]!!.name
                     onClickFunction = {
-                        currentPlanet = planetId
+                        setSelected("planet", planetId)
                         detailView(system, planetId)
                     }
                     onMouseOverFunction = { detailView(system, planetId) }
@@ -81,10 +87,12 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                 }
                 if (moons.isNotEmpty()) {
                     moons.forEach { moonId ->
+                        hr("moon-spacer")
                         div("system-moon-circle") {
                             id = "moon-$moonId"
+                            title = system.planets[moonId]!!.name
                             onClickFunction = {
-                                currentPlanet = moonId
+                                setSelected("moon", moonId)
                                 detailView(system, moonId)
                             }
                             onMouseOverFunction = { detailView(system, moonId) }
@@ -95,6 +103,13 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
             }
         }
     }
+}
+
+private fun setSelected(prefix: String, planetId: Int){
+    el<HTMLElement?>("$currentPlanetType-$currentPlanet")?.removeClass("selected-circle")
+    currentPlanetType = prefix
+    currentPlanet = planetId
+    el<HTMLElement?>("$prefix-$planetId")?.addClass("selected-circle")
 }
 
 fun detailView(system: StarSystem, planetId: Int, updateUrl: Boolean = true, linkToSystem: Boolean = false) {
