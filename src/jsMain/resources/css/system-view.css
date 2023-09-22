@@ -97,12 +97,31 @@
 
 }
 
-#detail-view table, #player-info-notes table {
-    width: 100%;
+.detail-view-table {
+    width: 98%;
+    border-spacing: 0px 5px;
+    border-collapse: separate;
 }
 
-#detail-view td, #user-info td {
+.detail-view-table tr{
+}
+
+.detail-view-table td:first-child{
+    background-color: var(--menu-gray);
+    border-left: 1px solid gray;
+    padding-left: 5px;
+}
+
+.detail-view-table td:last-child{
+    text-align: right;
+    border-right: 1px solid gray;
+    padding-right: 5px;
+}
+
+.detail-view-table td {
     width: 50%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 .add-info-button, .remove-info-button {

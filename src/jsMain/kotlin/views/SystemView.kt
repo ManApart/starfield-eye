@@ -134,7 +134,7 @@ fun detailView(system: StarSystem, planetId: Int, updateUrl: Boolean = true, lin
 private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) {
     with(star) {
         h2 { +name }
-        table {
+        table("detail-view-table") {
             listOf(
                 "Spectral Class" to spectral,
                 "Catalogue Id" to catalogueId,
@@ -161,7 +161,7 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
 private fun TagConsumer<HTMLElement>.detailView(planet: Planet) {
     with(planet) {
         h2 { +name }
-        table {
+        table("detail-view-table") {
             listOf(
                 "Type" to type,
                 "Body Type" to bodyType,
