@@ -67,42 +67,44 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
             id = "system-title"
             +"Designation ${system.star.name}"
         }
-
-        div("system-star-circle") {
-            id = "star-0"
-            onClickFunction = {
-                setSelected("star", 0)
-                detailView(system, 0)
-            }
-            onMouseOverFunction = { detailView(system, 0) }
-            onMouseOutFunction = { detailView(system, currentPlanet) }
-        }
-        system.planetChildren.entries.forEach { (planetId, moons) ->
-            hr("orrery-line")
-            div("planet-row") {
-                id = "planet-$planetId-row"
-                div("system-planet-circle") {
-                    id = "planet-$planetId"
-                    title = system.planets[planetId]!!.name
-                    onClickFunction = {
-                        setSelected("planet", planetId)
-                        detailView(system, planetId)
-                    }
-                    onMouseOverFunction = { detailView(system, planetId) }
-                    onMouseOutFunction = { detailView(system, currentPlanet) }
+        div {
+            id = "system-map"
+            div("system-star-circle") {
+                id = "star-0"
+                onClickFunction = {
+                    setSelected("star", 0)
+                    detailView(system, 0)
                 }
-                if (moons.isNotEmpty()) {
-                    moons.forEach { moonId ->
-                        hr("moon-spacer")
-                        div("system-moon-circle") {
-                            id = "moon-$moonId"
-                            title = system.planets[moonId]!!.name
-                            onClickFunction = {
-                                setSelected("moon", moonId)
-                                detailView(system, moonId)
+                onMouseOverFunction = { detailView(system, 0) }
+                onMouseOutFunction = { detailView(system, currentPlanet) }
+            }
+            system.planetChildren.entries.forEach { (planetId, moons) ->
+                hr("planet-spacer")
+                div("planet-column") {
+                    id = "planet-$planetId-row"
+                    div("system-planet-circle") {
+                        id = "planet-$planetId"
+                        title = system.planets[planetId]!!.name
+                        onClickFunction = {
+                            setSelected("planet", planetId)
+                            detailView(system, planetId)
+                        }
+                        onMouseOverFunction = { detailView(system, planetId) }
+                        onMouseOutFunction = { detailView(system, currentPlanet) }
+                    }
+                    if (moons.isNotEmpty()) {
+                        moons.forEach { moonId ->
+                            hr("orrery-line")
+                            div("system-moon-circle") {
+                                id = "moon-$moonId"
+                                title = system.planets[moonId]!!.name
+                                onClickFunction = {
+                                    setSelected("moon", moonId)
+                                    detailView(system, moonId)
+                                }
+                                onMouseOverFunction = { detailView(system, moonId) }
+                                onMouseOutFunction = { detailView(system, currentPlanet) }
                             }
-                            onMouseOverFunction = { detailView(system, moonId) }
-                            onMouseOutFunction = { detailView(system, currentPlanet) }
                         }
                     }
                 }
@@ -111,7 +113,7 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
     }
 }
 
-private fun setSelected(prefix: String, planetId: Int){
+private fun setSelected(prefix: String, planetId: Int) {
     el<HTMLElement?>("$currentPlanetType-$currentPlanet")?.removeClass("selected-circle")
     currentPlanetType = prefix
     currentPlanet = planetId
