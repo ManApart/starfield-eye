@@ -145,12 +145,14 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
                 "Planets" to system.planetChildren.size,
                 "Moons" to system.planetChildren.values.sumOf { it.size },
                 "Outposts" to "",
-            ).forEach { (title, data) ->
-                tr {
-                    td { +title }
-                    td { +data.toString() }
+            )
+                .filter { (_, data) -> data.toString().isNotBlank() && data.toString() != "0" }
+                .forEach { (title, data) ->
+                    tr {
+                        td { +title }
+                        td { +data.toString() }
+                    }
                 }
-            }
             resourceRow(system.planets.values.flatMap { it.resources }.toSet().toList())
         }
     }
@@ -181,12 +183,14 @@ private fun TagConsumer<HTMLElement>.detailView(planet: Planet) {
                 "Asteroids" to asteroids,
                 "Rings" to rings,
 
-                ).forEach { (title, data) ->
-                tr {
-                    td { +title }
-                    td { +data.toString() }
+                )
+                .filter { (_, data) -> data.toString().isNotBlank() && data.toString() != "0" }
+                .forEach { (title, data) ->
+                    tr {
+                        td { +title }
+                        td { +data.toString() }
+                    }
                 }
-            }
             resourceRow(resources)
         }
         div { id = "user-info" }
