@@ -1,0 +1,6 @@
+@media (max-width: 800px) {
+    .section-wrapper{
+        display: inherit;
+        flex-wrap: inherit;
+    }
+}

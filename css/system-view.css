@@ -12,6 +12,7 @@
 }
 
 #orrery {
+    text-align: center;
     padding-right: 10px;
     padding-bottom: 10px;
 }
@@ -27,7 +28,13 @@
     vertical-align: top;
 }
 
+#system-map {
+
+}
+
 .system-star-circle {
+    display: inline-block;
+    vertical-align: top;
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -36,7 +43,10 @@
     border: 3px solid white;
 }
 
-.planet-row {
+.planet-column {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 28px;
 }
 
 .system-planet-circle {
@@ -47,18 +57,16 @@
     background-color: var(--background-blue);
     border: 3px solid white;
     display: inline-block;
-    margin-left: 32px;
-    margin-bottom: -5px;
+    margin: auto;
+    margin-bottom: -3px;
 }
 
 .orrery-line {
     width: 1px;
     height: 30px;
     background-color: white;
-    margin-top: 0px;
+    margin-top: -3px;
     margin-bottom: 0px;
-    margin-left: 50px;
-    margin-right: auto;
 }
 
 .system-moon-circle {
@@ -68,16 +76,15 @@
     box-sizing: border-box;
     background-color: var(--background-blue);
     border: 3px solid white;
-    display: inline-block;
     vertical-align: top;
-    margin-top: 10px;
+    margin: auto;
 }
 
-.moon-spacer {
+.planet-spacer {
     display: inline-block;
     vertical-align: top;
     width: 20px;
-    margin-top: 19px;
+    margin-top: 47px;
 }
 
 .selected-circle {
