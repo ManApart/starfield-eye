@@ -66,6 +66,10 @@ select {
     background-color: var(--background-blue);
 }
 
+a {
+    color: white;
+}
+
 .hidden {
     display: none;
 }

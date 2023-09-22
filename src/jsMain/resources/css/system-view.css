@@ -31,6 +31,7 @@
 #system-map {
     white-space: nowrap;
     overflow-x: scroll;
+    overflow-y: scroll;
 }
 
 .system-star-circle {
@@ -95,6 +96,15 @@
 .selected-circle {
     background-color: white;
 
+}
+
+#moons-detail {
+    overflow-wrap: break-word;
+}
+
+#moons-detail a {
+    margin-left: 10px;
+    display: inline-block;
 }
 
 .detail-view-table {

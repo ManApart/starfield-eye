@@ -124,7 +124,7 @@ fun detailView(system: StarSystem, planetId: Int, updateUrl: Boolean = true, lin
             }
         }
 
-        if (planetId == 0) detailView(system.star, system) else detailView(system.planets[planetId]!!)
+        if (planetId == 0) detailView(system.star, system) else detailView(system, system.planets[planetId]!!)
     }
     if (planetId != 0) {
         system.planets[planetId]?.let { userInfo(it) }
@@ -158,7 +158,7 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
     }
 }
 
-private fun TagConsumer<HTMLElement>.detailView(planet: Planet) {
+private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet) {
     with(planet) {
         h2 { +name }
         table("detail-view-table") {
@@ -169,7 +169,7 @@ private fun TagConsumer<HTMLElement>.detailView(planet: Planet) {
                 "Mass" to mass,
                 "Radius" to radius,
                 "Density" to density,
-                "Gravity" to gravity,
+                "Gravity" to "$gravity G",
                 "Temperature" to heat,
                 "Atmosphere" to "",
                 "Magnetosphere" to magneticField,
@@ -180,9 +180,9 @@ private fun TagConsumer<HTMLElement>.detailView(planet: Planet) {
                 "Water" to "",
                 "Year" to year,
                 "Day" to day,
+                "Traits" to "",
                 "Asteroids" to asteroids,
                 "Rings" to rings,
-
                 )
                 .filter { (_, data) -> data.toString().isNotBlank() && data.toString() != "0" }
                 .forEach { (title, data) ->
@@ -191,6 +191,16 @@ private fun TagConsumer<HTMLElement>.detailView(planet: Planet) {
                         td { +data.toString() }
                     }
                 }
+           system.planetChildren[planet.id]?.let { moons ->
+               tr {
+                   td { +"Moons" }
+                   td("moons-detail") { moons.forEach { moonId ->
+                       id = "moons-detail"
+                       val moon = system.planets[moonId]!!
+                       a("#system/${system.star.id}/$moonId") { +"${moon.name}"}
+                   } }
+               }
+           }
             resourceRow(resources)
         }
         div { id = "user-info" }
