@@ -45,6 +45,7 @@ kotlin {
         }
         val jvmMain by getting {
             dependencies {
+                implementation("org.jsoup:jsoup:1.16.1")
             }
         }
         val jvmTest by getting
