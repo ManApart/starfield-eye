@@ -29,7 +29,8 @@
 }
 
 #system-map {
-
+    white-space: nowrap;
+    overflow-x: scroll;
 }
 
 .system-star-circle {
@@ -41,6 +42,7 @@
     box-sizing: border-box;
     background-color: var(--background-blue);
     border: 3px solid white;
+    transition: .5s;
 }
 
 .planet-column {
@@ -59,10 +61,12 @@
     display: inline-block;
     margin: auto;
     margin-bottom: -3px;
+    transition: .5s;
 }
 
 .orrery-line {
-    width: 1px;
+    width: 2px;
+    border: none;
     height: 30px;
     background-color: white;
     margin-top: -3px;
@@ -78,6 +82,7 @@
     border: 3px solid white;
     vertical-align: top;
     margin: auto;
+    transition: .5s;
 }
 
 .planet-spacer {
@@ -89,5 +94,5 @@
 
 .selected-circle {
     background-color: white;
-    transition: .5s;
+
 }
