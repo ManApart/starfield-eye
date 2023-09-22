@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-aspect-ratio: 3/4) {
     .section-wrapper{
         display: initial;
         flex-wrap: initial;
