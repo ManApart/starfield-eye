@@ -86,8 +86,6 @@ select {
 
 .section-view-box{
     display: block;
-    max-width: 90%;
-    min-width: 300px;
     border: 1px solid gray;
     padding-left: 10px;
     margin-bottom: 20px;
@@ -96,4 +94,6 @@ select {
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: auto;
+    width: 90%;
+    max-width: 600px;
 }

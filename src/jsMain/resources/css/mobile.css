@@ -3,4 +3,9 @@
         display: initial;
         flex-wrap: initial;
     }
+
+    .section-view-box {
+        width: 100%;
+        max-width: unset;
+    }
 }
