@@ -104,3 +104,8 @@
 #detail-view td, #user-info td {
     width: 50%;
 }
+
+.add-info-button, .remove-info-button {
+    margin: 5px;
+    border: none;
+}

@@ -1,8 +1,16 @@
+#catalogue-view {
+}
 
 #search {
-    width: 20%;
+    position: relative;
+    width: 80%;
     min-width: 300px;
-    margin-bottom: 5px;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+#search-icon {
+    height: 40px;
 }
 
 .system-catalogue-item {

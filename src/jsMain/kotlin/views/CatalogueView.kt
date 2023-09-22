@@ -35,6 +35,7 @@ fun catalogueView() {
             }
             div {
                 id = "search-span"
+                img("Search Icon", "images/search.svg") { id = "search-icon" }
                 input {
                     id = "search"
                     placeholder = "Filter: Name, Resources etc. Comma separated"

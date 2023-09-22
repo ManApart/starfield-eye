@@ -47,7 +47,7 @@ private fun TagConsumer<HTMLElement>.labelInfo(info: PlanetInfo, planet: Planet)
                 span("planet-label") {
                     +label.name
                     button(classes = "remove-info-button") {
-                        +"-"
+                        +"x"
                         onClickFunction = {
                             info.labels.remove(label)
                             savePlanetInfo(planet, info)
@@ -92,7 +92,7 @@ private fun TagConsumer<HTMLElement>.outpostInfo(info: PlanetInfo, planet: Plane
                 span("planet-outpost") {
                     +outpost
                     button(classes = "remove-info-button") {
-                        +"-"
+                        +"x"
                         onClickFunction = {
                             info.outPosts.remove(outpost)
                             savePlanetInfo(planet, info)
