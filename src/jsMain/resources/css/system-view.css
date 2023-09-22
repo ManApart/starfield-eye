@@ -96,3 +96,11 @@
     background-color: white;
 
 }
+
+#detail-view table, #player-info-notes table {
+    width: 100%;
+}
+
+#detail-view td, #user-info td {
+    width: 50%;
+}

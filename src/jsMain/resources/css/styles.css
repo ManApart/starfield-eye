@@ -46,6 +46,23 @@ button:hover{
     transition: 1s;
 }
 
+textarea {
+    color: white;
+    background-color: var(--background-blue);
+    width: 95%;
+    height: 80px;
+}
+
+input {
+    color: white;
+    background-color: var(--background-blue);
+}
+
+select {
+    color: white;
+    background-color: var(--background-blue);
+}
+
 .hidden {
     display: none;
 }
