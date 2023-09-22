@@ -1,15 +1,13 @@
 package views
 
+import exportPlayerInfo
 import galaxy
 import inMemoryStorage
 import kotlinx.browser.document
 import kotlinx.browser.window
-import kotlinx.html.button
-import kotlinx.html.div
+import kotlinx.html.*
 import kotlinx.html.dom.append
-import kotlinx.html.id
 import kotlinx.html.js.onClickFunction
-import kotlinx.html.style
 import org.w3c.dom.HTMLElement
 
 fun renderGalaxy() {
@@ -25,6 +23,12 @@ fun renderGalaxy() {
             button {
                 +"Catalogue"
                 onClickFunction = { catalogueView()}
+            }
+            button {
+                id = "export-button"
+                +"Export"
+                title = "Download user entered data"
+                onClickFunction = { exportPlayerInfo() }
             }
         }
         div {

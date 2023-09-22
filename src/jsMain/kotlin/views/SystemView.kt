@@ -4,7 +4,6 @@ import Planet
 import ResourceType
 import Star
 import StarSystem
-import exportPlayerInfo
 import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
@@ -26,18 +25,11 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
         div {
             id = "system-view"
             backgroundStars()
-            h3 {
+            button {
                 +"Back to Galaxy"
                 onClickFunction = {
                     renderGalaxy()
                 }
-            }
-
-            button(classes = "nav-button") {
-                id = "export-button"
-                +"Export"
-                title = "Download user entered data"
-                onClickFunction = { exportPlayerInfo() }
             }
 
             div("section-wrapper") {

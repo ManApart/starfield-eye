@@ -1,7 +1,6 @@
 package views
 
 import Planet
-import exportPlayerInfo
 import galaxy
 import getPlanets
 import inMemoryStorage
@@ -28,17 +27,11 @@ fun catalogueView() {
         div {
             id = "catalogue-view"
             backgroundStars()
-            h3 {
+            button {
                 +"Back to Galaxy"
                 onClickFunction = {
                     renderGalaxy()
                 }
-            }
-            button(classes = "nav-button") {
-                id = "export-button"
-                +"Export"
-                title = "Download user entered data"
-                onClickFunction = { exportPlayerInfo() }
             }
             div {
                 id = "search-span"

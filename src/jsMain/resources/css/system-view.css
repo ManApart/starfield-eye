@@ -89,4 +89,5 @@
 
 .selected-circle {
     background-color: white;
+    transition: .5s;
 }

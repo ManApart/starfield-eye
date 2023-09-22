@@ -8,6 +8,7 @@
   --orange: #e06236;
   --yellow: #e06236;
   --blue: #2f4c79;
+  --menu-gray: #2d343c;
 }
 
 body {
@@ -26,6 +27,23 @@ h1, h2, h3 {
 
 td {
     vertical-align: top;
+}
+
+button {
+    color: white;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, var(--background-blue) 50%, var(--menu-gray) 50%);
+	border: 1px solid gray;
+	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	font-family: Architekt;
+}
+
+button:hover{
+    background-position: -100% 0%;
+    transition: 1s;
 }
 
 .hidden {
