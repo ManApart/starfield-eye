@@ -31,12 +31,18 @@ data class Planet(
     val day: Float,
     val asteroids: Int,
     val rings: Int,
+    val atmosphere: String,
     val heat: Int,
+    val temperature: String,
     val type: String,
     val magneticField: String,
+    val water: String,
     val life: String,
     val settled: String,
+    val flora: String,
+    val fauna: String,
     val biomes: List<String>,
+    val traits: List<String>,
     val resources: List<ResourceType>,
 ) {
     @Transient

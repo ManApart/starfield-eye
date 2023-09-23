@@ -1,4 +1,6 @@
+import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
+import wikiScraper.WikiData
 import java.io.File
 import java.lang.IllegalArgumentException
 
@@ -12,7 +14,10 @@ fun main() {
     val rawStars = File("./raw-data/stars.csv").readLines().drop(2).map { it.toStar() }
     val rawPlanets = File("./raw-data/galaxy.csv").readLines().drop(2).map { it.toPlanet() }.groupBy { it.starId }
     val resourceLookup = parseResourceLookup(File("./raw-data/raw-resources.csv").readLines())
-
+    val wikiDataFile = File("raw-data/wiki-data.json")
+    val wikiData = if (wikiDataFile.exists()) {
+        jsonMapper.decodeFromString<Map<String, WikiData>>(wikiDataFile.readText()).toMutableMap()
+    } else mapOf()
 
     val galaxySummary = with(rawStars) {
         val maxX = maxOf { it.x }
@@ -33,7 +38,7 @@ fun main() {
         val resources = resourceLookup[star.name] ?: emptyMap<String, List<ResourceType>>().also {
             failedSystemResourceLookups.add(star.name)
         }
-        star.starId to parseSystem(star, planets, biomes, resources)
+        star.starId to parseSystem(star, planets, biomes, resources, wikiData)
     }
 
     println("Failed to find resources for ${failedSystemResourceLookups.size} systems: ${failedSystemResourceLookups.joinToString()}.")
@@ -42,12 +47,27 @@ fun main() {
     File("src/jsMain/resources/data.json").writeText(jsonMapper.encodeToString(Galaxy(systems, galaxySummary)))
 }
 
-private fun parseSystem(rawStar: RawStar, rawPlanets: List<RawPlanet>, rawBiomes: List<RawBiome>, systemResources: Map<String, List<ResourceType>>): StarSystem {
+private fun parseSystem(
+    rawStar: RawStar,
+    rawPlanets: List<RawPlanet>,
+    rawBiomes: List<RawBiome>,
+    systemResources: Map<String, List<ResourceType>>,
+    wikiDataMap: Map<String, WikiData>
+): StarSystem {
     val star = with(rawStar) { Star(starId, catalogueId, name, spectral, temp, mass, radius, magnitude) }
     val pos = with(rawStar) { Pos(x, y, z) }
     val planets = rawPlanets.associate { rawPlanet ->
         val biomes = rawBiomes.filter { it.planetId == rawPlanet.planetId }.map { it.name }
-        val resources = systemResources[rawPlanet.name] ?: emptyList<ResourceType>().also { failedPlanetResourceLookups.add(rawPlanet.name) }
+
+        //TODO - resource matchup
+        val resources = systemResources[rawPlanet.name] ?: emptyList<ResourceType>().also {
+            failedPlanetResourceLookups.add(rawPlanet.name)
+        }
+        val wikiData = wikiDataMap[rawPlanet.name] ?: WikiData()
+
+        val flora = wikiData.flora.replace("[[#Flora|]]", "")
+        val fauna = wikiData.fauna.replace("[[#Fauna|]]", "")
+
         val planet =
             with(rawPlanet) {
                 Planet(
@@ -65,12 +85,18 @@ private fun parseSystem(rawStar: RawStar, rawPlanets: List<RawPlanet>, rawBiomes
                     day,
                     asteroids,
                     rings,
+                    wikiData.atmosphere,
                     heat,
-                    type,
-                    magneticField,
+                    wikiData.temperature,
+                    type collapse wikiData.type,
+                    magneticField collapse wikiData.magnetosphere,
+                    wikiData.water,
                     life,
                     settled,
+                    flora,
+                    fauna,
                     biomes,
+                    wikiData.traits,
                     resources
                 )
             }
@@ -98,11 +124,16 @@ private fun parseResourceLookup(lines: List<String>): Map<String, Map<String, Li
         val system = parts.first()
         val planetName = parts[1]
         val resourcesPresent = parts.subList(4, 48)
-        val resources = resourcesPresent.mapIndexedNotNull { i, content -> if (content.isNotBlank()) columnToResource[i] else null }
+        val resources =
+            resourcesPresent.mapIndexedNotNull { i, content -> if (content.isNotBlank()) columnToResource[i] else null }
 
         lookup.putIfAbsent(system, mutableMapOf())
         lookup[system]?.put(planetName, resources)
     }
 
     return lookup
+}
+
+private infix fun String.collapse(other: String): String {
+    return if (this == other) this else listOf(this, other).filter { it.isNotBlank() }.joinToString(" ")
 }
