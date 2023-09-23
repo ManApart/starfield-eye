@@ -151,6 +151,10 @@ fun detailView(system: StarSystem, planetId: Int, updateUrl: Boolean = true, lin
 private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) {
     with(star) {
         h2 { +name }
+        a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
+            id = "wiki-link"
+            +"View on Wiki"
+        }
         table("detail-view-table") {
             listOf(
                 "Spectral Class" to spectral,
@@ -180,6 +184,10 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
 private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet) {
     with(planet) {
         h2 { +name }
+        a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
+            id = "wiki-link"
+            +"View on Wiki"
+        }
         table("detail-view-table") {
             listOf(
                 "Type" to "$bodyTypeDescription ($bodyType)",
@@ -275,9 +283,10 @@ private fun selectNextPlanet(system: StarSystem, shift: Int = 1) {
 private fun selectNextMoon(system: StarSystem, shift: Int = 1) {
     val planetIds = listOf(0) + system.planetChildren.keys.toList()
     var parentId = planetIds.indexOf(currentPlanet)
-    if (parentId == -1) parentId = system.planetChildren.entries.first { (_, moons) -> moons.contains(currentPlanet) }.key
+    if (parentId == -1) parentId =
+        system.planetChildren.entries.first { (_, moons) -> moons.contains(currentPlanet) }.key
 
-    val moons =  listOf(parentId) + (system.planetChildren[parentId] ?: listOf())
+    val moons = listOf(parentId) + (system.planetChildren[parentId] ?: listOf())
 
     var i = moons.indexOf(currentPlanet) + shift
 

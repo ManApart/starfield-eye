@@ -8,6 +8,12 @@
     width: 90%;
 }
 
+#detail-view a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
 .system-view-box td{
     padding-right: 15px;
 }
