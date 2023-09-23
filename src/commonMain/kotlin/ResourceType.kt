@@ -1,4 +1,4 @@
-enum class ResourceType(val readableName: String, val aliases: List<String> = listOf()) {
+enum class ResourceType(val readableName: String, val color: String = "2d343c", val aliases: List<String> = listOf()) {
     Ad("Aldumite"),
     Ag("Silver"),
     Al("Aluminum"),
@@ -6,7 +6,7 @@ enum class ResourceType(val readableName: String, val aliases: List<String> = li
     Au("Gold"),
     Be("Beryllium"),
     C6Hn("Benzene"),
-    Cl("Chlorine"),
+    Cl("Chlorine", "404753"),
     Co("Cobalt"),
     Cs("Caesium"),
     Ct("Caelumite"),
@@ -15,9 +15,9 @@ enum class ResourceType(val readableName: String, val aliases: List<String> = li
     Eu("Europium"),
     F("Fluorine"),
     Fe("Iron"),
-    H2O("Water", listOf("H20")),
-    He3("Helium-3", listOf("He-3")),
-    Hg("Mercury"),
+    H2O("Water", "63a39d", listOf("H20")),
+    He3("Helium-3", "2d343c", listOf("He-3")),
+    Hg("Mercury", "808080"),
     HnCn("Alkanes"),
     IL("Ionic Liquids"),
     Ie("Indicite"),
@@ -26,15 +26,15 @@ enum class ResourceType(val readableName: String, val aliases: List<String> = li
     Nd("Neodymium"),
     Ne("Neon"),
     Ni("Nickel"),
-    Pb("Lead"),
+    Pb("Lead", "454b51"),
     Pd("Palladium"),
     Pt("Platinum"),
     Pu("Plutonium"),
     RCOC("R-Coclaurine"),
-    RCOOH("Carboxylic Acids", listOf("R-COOH")),
+    RCOOH("Carboxylic Acids", "2d343c", listOf("R-COOH")),
     Rc("Rothicite"),
     Sb("Antimony"),
-    SiH3Cl("Chlorosilanes"),
+    SiH3Cl("Chlorosilanes", "808080"),
     Ta("Tantalum"),
     Ti("Titanium"),
     Tsn("Tasine"),
@@ -50,9 +50,9 @@ enum class ResourceType(val readableName: String, val aliases: List<String> = li
 
     fun matches(searchText: String): Boolean {
         if (searchText in listOf("Unknown", "None")) return false
-            return name == searchText
-                    || readableName == searchText
-                    || aliases.any { it == searchText }
+        return name == searchText
+                || readableName == searchText
+                || aliases.any { it == searchText }
     }
 
     fun contains(searchText: String): Boolean {
