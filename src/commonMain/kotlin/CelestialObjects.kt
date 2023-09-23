@@ -23,6 +23,7 @@ data class Planet(
     val name: String,
     val planetClass: String,
     val bodyType: Int,
+    val bodyTypeDescription: String,
     val radius: Float,
     val density: Float,
     val mass: Float,

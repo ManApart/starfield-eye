@@ -167,15 +167,13 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
         h2 { +name }
         table("detail-view-table") {
             listOf(
-                "Type" to type,
-                "Body Type" to bodyType,
+                "Type" to "$bodyTypeDescription ($bodyType)",
                 "Class" to planetClass,
                 "Mass" to mass,
                 "Radius" to radius,
                 "Density" to density,
                 "Gravity" to "$gravity G",
-                "Heat" to heat,
-                "Temperature" to temperature,
+                "Temperature" to "$temperature ($heat C)",
                 "Atmosphere" to atmosphere,
                 "Magnetosphere" to magneticField,
                 "Biomes" to biomes.joinToString(),
@@ -183,9 +181,9 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
                 "Fauna" to fauna,
                 "Flora" to flora,
                 "Water" to water,
-                "Year" to year,
-                "Day" to day,
-                "Traits" to "",
+                "Year" to "$year days",
+                "Day" to "$day hours",
+                "Traits" to traits,
                 "Asteroids" to asteroids,
                 "Rings" to rings,
             )
