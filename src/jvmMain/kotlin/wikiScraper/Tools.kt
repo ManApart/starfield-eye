@@ -5,7 +5,7 @@ import java.net.URLConnection
 import java.nio.charset.StandardCharsets
 import java.util.*
 
-fun getPage(url: String, headers: Map<String, String> = mapOf()): String {
+fun getPage(url: String, headers: Map<String, String> = mapOf()): String? {
     val connection: URLConnection = URL(url).openConnection()
     with(connection) {
         //fake we're a browser for https
@@ -23,6 +23,6 @@ fun getPage(url: String, headers: Map<String, String> = mapOf()): String {
         StandardCharsets.UTF_8.toString()
     ).use { scanner ->
         scanner.useDelimiter("\\A")
-        return if (scanner.hasNext()) scanner.next() else ""
+        return if (scanner.hasNext()) scanner.next() else null.also { println("Unable to fetch $url") }
     }
 }

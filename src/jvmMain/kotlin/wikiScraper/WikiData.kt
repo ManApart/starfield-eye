@@ -4,6 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class WikiData(
+    val name: String,
     val type: String,
     val temperature: String,
     val atmosphere: String,
