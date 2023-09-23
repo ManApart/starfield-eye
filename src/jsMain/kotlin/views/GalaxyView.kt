@@ -31,6 +31,12 @@ fun renderGalaxy() {
                 title = "Download user entered data"
                 onClickFunction = { exportPlayerInfo() }
             }
+            button {
+                id = "crew-button"
+                +"Crew"
+                title = "View crew"
+                onClickFunction = { crewView() }
+            }
         }
         div {
             id = "galaxy"

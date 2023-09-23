@@ -59,6 +59,9 @@ fun doRouting(windowHash: String) {
         windowHash.startsWith("#catalogue") -> {
             catalogueView()
         }
+        windowHash.startsWith("#crew") -> {
+            crewView()
+        }
         else -> renderGalaxy()
     }
 }
