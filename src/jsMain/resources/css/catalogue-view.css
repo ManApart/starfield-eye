@@ -11,6 +11,13 @@
 
 #search-icon {
     height: 40px;
+    margin-right: 10px;
+}
+
+#planet-list {
+    max-height: 800px;
+    overflow-y: scroll;
+
 }
 
 .system-catalogue-item {

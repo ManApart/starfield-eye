@@ -21,7 +21,7 @@ fun userInfo(planet: Planet) {
     root.innerHTML = ""
     root.append {
         val info = inMemoryStorage.planetUserInfo[planet.uniqueId] ?: PlanetInfo()
-        table {
+        table("detail-view-table") {
             tr {
                 td { +"Labels" }
                 td { labelInfo(info, planet) }

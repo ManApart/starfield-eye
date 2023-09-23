@@ -1,9 +1,11 @@
 package views
 
 import Planet
+import PlanetInfo
 import ResourceType
 import Star
 import StarSystem
+import inMemoryStorage
 import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
@@ -144,7 +146,9 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
                 "Temperature" to temp,
                 "Planets" to system.planetChildren.size,
                 "Moons" to system.planetChildren.values.sumOf { it.size },
-                "Outposts" to "",
+                "Outposts" to system.planets.values.sumOf {
+                    (inMemoryStorage.planetUserInfo[it.uniqueId] ?: PlanetInfo()).outPosts.size
+                },
             )
                 .filter { (_, data) -> data.toString().isNotBlank() && data.toString() != "0" }
                 .forEach { (title, data) ->
@@ -183,7 +187,7 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
                 "Traits" to "",
                 "Asteroids" to asteroids,
                 "Rings" to rings,
-                )
+            )
                 .filter { (_, data) -> data.toString().isNotBlank() && data.toString() != "0" }
                 .forEach { (title, data) ->
                     tr {
@@ -191,16 +195,20 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
                         td { +data.toString() }
                     }
                 }
-           system.planetChildren[planet.id]?.let { moons ->
-               tr {
-                   td { +"Moons" }
-                   td("moons-detail") { moons.forEach { moonId ->
-                       id = "moons-detail"
-                       val moon = system.planets[moonId]!!
-                       a("#system/${system.star.id}/$moonId") { +"${moon.name}"}
-                   } }
-               }
-           }
+            system.planetChildren[planet.id]?.let { moons ->
+                if (moons.isNotEmpty()) {
+                    tr {
+                        td { +"Moons" }
+                        td("moons-detail") {
+                            moons.forEach { moonId ->
+                                id = "moons-detail"
+                                val moon = system.planets[moonId]!!
+                                a("#system/${system.star.id}/$moonId") { +moon.name }
+                            }
+                        }
+                    }
+                }
+            }
             resourceRow(resources)
         }
         div { id = "user-info" }

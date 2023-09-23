@@ -138,3 +138,8 @@
     margin: 5px;
     border: none;
 }
+
+#add-outpost-input {
+    border: none;
+    outline: none;
+}

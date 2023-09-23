@@ -1,5 +1,5 @@
-@font-face { font-family: Architekt; src: url('fonts/Architekt-Light.ttf'),  url('/fonts/Architekt-Light.ttf'); }
-@font-face { font-family: Grotesk; src: url('fonts/Grotesk-R-Semibold.ttf'),  url('/fonts/Grotesk-R-Semibold.ttf'); }
+@font-face { font-family: Architekt; src: url('../fonts/Architekt-Light.ttf'),  url('/fonts/Architekt-Light.ttf'); }
+@font-face { font-family: Grotesk; src: url('../fonts/Grotesk-R-Semibold.ttf'),  url('/fonts/Grotesk-R-Semibold.ttf'); }
 
 
 :root {
@@ -13,6 +13,7 @@
 
 body {
     color: white;
+    font-size: large;
     background-color: var(--background-blue);
     font-family: Grotesk;
 }
@@ -52,6 +53,8 @@ textarea {
     background-color: var(--background-blue);
     width: 95%;
     height: 80px;
+    border: none;
+    outline: none;
 }
 
 input {
