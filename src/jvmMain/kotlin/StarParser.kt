@@ -6,8 +6,9 @@ import java.lang.IllegalArgumentException
 
 val jsonMapper = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
 
-private val failedPlanetResourceLookups = mutableListOf<String>()
-private val failedSystemResourceLookups = mutableListOf<String>()
+private val failedPlanetResourceLookups = mutableSetOf<String>()
+private val failedSystemResourceLookups = mutableSetOf<String>()
+private val failedWikiResourceLookups = mutableSetOf<String>()
 
 fun main() {
     val rawBiomes = File("./raw-data/biomedata.csv").readLines().drop(2).map { it.toBiome() }.groupBy { it.starId }
@@ -43,6 +44,7 @@ fun main() {
 
     println("Failed to find resources for ${failedSystemResourceLookups.size} systems: ${failedSystemResourceLookups.joinToString()}.")
     println("Failed to find resources for ${failedPlanetResourceLookups.size} planets: ${failedPlanetResourceLookups.joinToString()}.")
+    println("Failed to find resources for ${failedWikiResourceLookups.size} wiki resources: ${failedWikiResourceLookups.joinToString()}.")
 
     File("src/jsMain/resources/data.json").writeText(jsonMapper.encodeToString(Galaxy(systems, galaxySummary)))
 }
@@ -60,10 +62,8 @@ private fun parseSystem(
         val biomes = rawBiomes.filter { it.planetId == rawPlanet.planetId }.map { it.name }
 
         //TODO - resource matchup
-        val resources = systemResources[rawPlanet.name] ?: emptyList<ResourceType>().also {
-            failedPlanetResourceLookups.add(rawPlanet.name)
-        }
         val wikiData = wikiDataMap[rawPlanet.name] ?: WikiData()
+        val resources = determineResources(rawPlanet, systemResources, wikiData)
 
         val flora = wikiData.flora.replace("[[#Flora|]]", "")
         val fauna = wikiData.fauna.replace("[[#Fauna|]]", "")
@@ -108,6 +108,22 @@ private fun parseSystem(
         nestedPlanets[moon.parentId]?.add(moon.id)
     }
     return StarSystem(star, pos, planets, nestedPlanets)
+}
+
+private fun determineResources(
+    rawPlanet: RawPlanet,
+    systemResources: Map<String, List<ResourceType>>,
+    wikiData: WikiData
+): List<ResourceType> {
+    val wikiResources = wikiData.resources.mapNotNull { rawName ->
+        ResourceType.entries.firstOrNull { resource -> resource.matches(rawName) }
+            .also { if (it == null) failedWikiResourceLookups.add(rawName) }
+    }
+
+    val resources = systemResources[rawPlanet.name] ?: emptyList<ResourceType>().also {
+        failedPlanetResourceLookups.add(rawPlanet.name)
+    }
+    return (resources + wikiResources).toSet().toList()
 }
 
 private fun parseResourceLookup(lines: List<String>): Map<String, Map<String, List<ResourceType>>> {

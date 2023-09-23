@@ -16,7 +16,7 @@ enum class ResourceType(val readableName: String, val aliases: List<String> = li
     F("Fluorine"),
     Fe("Iron"),
     H2O("Water", listOf("H20")),
-    He3("Helium-3"),
+    He3("Helium-3", listOf("He-3")),
     Hg("Mercury"),
     HnCn("Alkanes"),
     IL("Ionic Liquids"),
@@ -31,7 +31,7 @@ enum class ResourceType(val readableName: String, val aliases: List<String> = li
     Pt("Platinum"),
     Pu("Plutonium"),
     RCOC("R-Coclaurine"),
-    RCOOH("Carboxylic Acids"),
+    RCOOH("Carboxylic Acids", listOf("R-COOH")),
     Rc("Rothicite"),
     Sb("Antimony"),
     SiH3Cl("Chlorosilanes"),
@@ -46,4 +46,19 @@ enum class ResourceType(val readableName: String, val aliases: List<String> = li
     Xe("Xenon"),
     Yb("Ytterbium"),
     xF4("Tetrafluorides"),
+    ;
+
+    fun matches(searchText: String): Boolean {
+        if (searchText in listOf("Unknown", "None")) return false
+            return name == searchText
+                    || readableName == searchText
+                    || aliases.any { it == searchText }
+    }
+
+    fun contains(searchText: String): Boolean {
+        val search = searchText.lowercase()
+        return name.lowercase().contains(search)
+                || readableName.lowercase().contains(search)
+                || aliases.any { it.contains(search) }
+    }
 }
