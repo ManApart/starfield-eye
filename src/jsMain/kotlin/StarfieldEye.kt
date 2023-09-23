@@ -22,13 +22,12 @@ fun main() {
 
     window.addEventListener("keyup", { event ->
         val key = (event as KeyboardEvent)
-        if (document.activeElement !is HTMLTextAreaElement || document.activeElement !is HTMLInputElement) {
+        if (document.activeElement !is HTMLTextAreaElement && document.activeElement !is HTMLInputElement) {
             navigateOrrery(key)
         }
     })
     window.addEventListener("keydown", { event ->
-        val key = (event as KeyboardEvent)
-        if (document.activeElement !is HTMLTextAreaElement || document.activeElement !is HTMLInputElement) {
+        if (document.activeElement !is HTMLTextAreaElement && document.activeElement !is HTMLInputElement) {
             event.preventDefault()
         }
     })

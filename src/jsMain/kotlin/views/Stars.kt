@@ -48,7 +48,6 @@ fun panStars(x: Float, y: Float) {
         val offsetY = (1-y) * (1 + i * layerOffset)
         layer.style.top = "$offsetY%"
         layer.style.left = "$offsetX%"
-        println("$offsetX, $offsetY")
     }
 
 }
