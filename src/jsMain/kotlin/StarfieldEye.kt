@@ -1,5 +1,10 @@
+import kotlinx.browser.document
 import kotlinx.browser.window
+import org.w3c.dom.HTMLInputElement
+import org.w3c.dom.HTMLTextAreaElement
+import org.w3c.dom.events.KeyboardEvent
 import views.catalogueView
+import views.navigateOrrery
 import views.renderGalaxy
 import views.systemView
 
@@ -16,6 +21,13 @@ fun main() {
     }
     window.addEventListener("popstate", { e ->
         doRouting()
+    })
+
+    window.addEventListener("keyup", { event ->
+        val key = (event as KeyboardEvent)
+        if (document.activeElement !is HTMLTextAreaElement || document.activeElement !is HTMLInputElement) {
+            navigateOrrery(key)
+        }
     })
 
 }

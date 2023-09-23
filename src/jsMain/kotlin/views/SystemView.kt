@@ -10,16 +10,21 @@ import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
+import kotlinx.html.button
+import kotlinx.html.div
 import kotlinx.html.dom.append
-import kotlinx.html.js.onClickFunction
-import kotlinx.html.js.onMouseOutFunction
-import kotlinx.html.js.onMouseOverFunction
+import kotlinx.html.h2
+import kotlinx.html.js.*
+import kotlinx.html.table
 import org.w3c.dom.HTMLElement
+import org.w3c.dom.events.KeyboardEvent
 
 private var currentPlanet = 0
 private var currentPlanetType = "star"
+private var currentSystem: StarSystem? = null
 
 fun systemView(system: StarSystem, planetId: Int = 0) {
+    currentSystem = system
     updateUrl(system, planetId)
     val root = el("root")
     root.innerHTML = ""
@@ -105,6 +110,15 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
             }
         }
     }
+}
+
+private fun setSelected(system: StarSystem, planetId: Int) {
+    val prefix = when {
+        planetId == 0 -> "star"
+        system.planetChildren.keys.contains(planetId) -> "planet"
+        else -> "moon"
+    }
+    setSelected(prefix, planetId)
 }
 
 private fun setSelected(prefix: String, planetId: Int) {
@@ -229,4 +243,24 @@ private fun TABLE.resourceRow(resources: List<ResourceType>) {
             }
         }
     }
+}
+
+fun navigateOrrery(key: KeyboardEvent) {
+    if (window.location.hash.contains("system") && currentSystem != null) {
+        when (key.key) {
+            "ArrowRight" -> selectNextPlanet(currentSystem!!)
+            "ArrowLeft" -> selectNextPlanet(currentSystem!!, -1)
+            else -> println("Key: ${key.key}")
+        }
+    }
+}
+
+private fun selectNextPlanet(system: StarSystem, shift: Int = 1) {
+    val planetIds = listOf(0) + system.planetChildren.keys.toList()
+    var i = planetIds.indexOf(currentPlanet) + shift
+    if (i >= planetIds.size) i = 0
+    if (i < 0) i = planetIds.size - 1
+    val planetId = planetIds[i]
+    setSelected(system, planetId)
+    detailView(system, planetId)
 }
