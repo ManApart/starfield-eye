@@ -1,6 +1,11 @@
-@media (max-width: 800px) {
+@media (max-aspect-ratio: 3/4) {
     .section-wrapper{
-        display: inherit;
-        flex-wrap: inherit;
+        display: initial;
+        flex-wrap: initial;
+    }
+
+    .section-view-box {
+        width: 100%;
+        max-width: unset;
     }
 }

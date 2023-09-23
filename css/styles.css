@@ -1,5 +1,5 @@
-@font-face { font-family: Architekt; src: url('fonts/Architekt-Light.ttf'),  url('/fonts/Architekt-Light.ttf'); }
-@font-face { font-family: Grotesk; src: url('fonts/Grotesk-R-Semibold.ttf'),  url('/fonts/Grotesk-R-Semibold.ttf'); }
+@font-face { font-family: Architekt; src: url('../fonts/Architekt-Light.ttf'),  url('/fonts/Architekt-Light.ttf'); }
+@font-face { font-family: Grotesk; src: url('../fonts/Grotesk-R-Semibold.ttf'),  url('/fonts/Grotesk-R-Semibold.ttf'); }
 
 
 :root {
@@ -8,6 +8,7 @@
   --orange: #e06236;
   --yellow: #e06236;
   --blue: #2f4c79;
+  --menu-gray: #2d343c;
 }
 
 body {
@@ -26,6 +27,47 @@ h1, h2, h3 {
 
 td {
     vertical-align: top;
+}
+
+button {
+    color: white;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, var(--background-blue) 50%, var(--menu-gray) 50%);
+	border: 1px solid gray;
+	padding: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	font-family: Architekt;
+}
+
+button:hover{
+    background-position: -100% 0%;
+    transition: 1s;
+}
+
+textarea {
+    color: white;
+    background-color: var(--background-blue);
+    width: 95%;
+    height: 80px;
+}
+
+input {
+    color: white;
+    background-color: var(--background-blue);
+    border: 1px solid gray;
+    height: 30px;
+}
+
+select {
+    color: white;
+    background-color: var(--background-blue);
+}
+
+a {
+    color: white;
 }
 
 .hidden {
@@ -48,8 +90,6 @@ td {
 
 .section-view-box{
     display: block;
-    max-width: 90%;
-    min-width: 300px;
     border: 1px solid gray;
     padding-left: 10px;
     margin-bottom: 20px;
@@ -58,8 +98,6 @@ td {
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-.nav-button {
-    margin-bottom: 10px;
+    width: 90%;
+    max-width: 600px;
 }

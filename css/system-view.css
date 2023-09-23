@@ -4,7 +4,8 @@
 }
 
 #system-view{
-    margin-left: 15%;
+    margin-left: 5%;
+    width: 90%;
 }
 
 .system-view-box td{
@@ -13,7 +14,6 @@
 
 #orrery {
     text-align: center;
-    padding-right: 10px;
     padding-bottom: 10px;
 }
 
@@ -29,7 +29,9 @@
 }
 
 #system-map {
-
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
 
 .system-star-circle {
@@ -41,6 +43,7 @@
     box-sizing: border-box;
     background-color: var(--background-blue);
     border: 3px solid white;
+    transition: .5s;
 }
 
 .planet-column {
@@ -59,10 +62,12 @@
     display: inline-block;
     margin: auto;
     margin-bottom: -3px;
+    transition: .5s;
 }
 
 .orrery-line {
-    width: 1px;
+    width: 2px;
+    border: none;
     height: 30px;
     background-color: white;
     margin-top: -3px;
@@ -78,6 +83,7 @@
     border: 3px solid white;
     vertical-align: top;
     margin: auto;
+    transition: .5s;
 }
 
 .planet-spacer {
@@ -89,4 +95,46 @@
 
 .selected-circle {
     background-color: white;
+
+}
+
+#moons-detail {
+    overflow-wrap: break-word;
+}
+
+#moons-detail a {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.detail-view-table {
+    width: 98%;
+    border-spacing: 0px 5px;
+    border-collapse: separate;
+}
+
+.detail-view-table tr{
+}
+
+.detail-view-table td:first-child{
+    background-color: var(--menu-gray);
+    border-left: 1px solid gray;
+    padding-left: 5px;
+}
+
+.detail-view-table td:last-child{
+    text-align: right;
+    border-right: 1px solid gray;
+    padding-right: 5px;
+}
+
+.detail-view-table td {
+    width: 50%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.add-info-button, .remove-info-button {
+    margin: 5px;
+    border: none;
 }
