@@ -250,6 +250,8 @@ fun navigateOrrery(key: KeyboardEvent) {
         when (key.key) {
             "ArrowRight" -> selectNextPlanet(currentSystem!!)
             "ArrowLeft" -> selectNextPlanet(currentSystem!!, -1)
+            "ArrowUp" -> selectNextMoon(currentSystem!!, -1)
+            "ArrowDown" -> selectNextMoon(currentSystem!!)
             else -> println("Key: ${key.key}")
         }
     }
@@ -257,10 +259,31 @@ fun navigateOrrery(key: KeyboardEvent) {
 
 private fun selectNextPlanet(system: StarSystem, shift: Int = 1) {
     val planetIds = listOf(0) + system.planetChildren.keys.toList()
-    var i = planetIds.indexOf(currentPlanet) + shift
+    var i = planetIds.indexOf(currentPlanet)
+    if (i == -1) {
+        i = system.planetChildren.entries.first { (_, moons) -> moons.contains(currentPlanet) }.key
+    }
+    i += shift
     if (i >= planetIds.size) i = 0
     if (i < 0) i = planetIds.size - 1
     val planetId = planetIds[i]
+    setSelected(system, planetId)
+    detailView(system, planetId)
+}
+
+private fun selectNextMoon(system: StarSystem, shift: Int = 1) {
+    val planetIds = listOf(0) + system.planetChildren.keys.toList()
+    var parentId = planetIds.indexOf(currentPlanet)
+    if (parentId == -1) parentId = system.planetChildren.entries.first { (_, moons) -> moons.contains(currentPlanet) }.key
+
+    val moons =  listOf(parentId) + (system.planetChildren[parentId] ?: listOf())
+
+    var i = moons.indexOf(currentPlanet) + shift
+
+    if (i >= moons.size) i = 0
+    if (i < 0) i = moons.size - 1
+    val planetId = moons[i]
+
     setSelected(system, planetId)
     detailView(system, planetId)
 }

@@ -29,6 +29,12 @@ fun main() {
             navigateOrrery(key)
         }
     })
+    window.addEventListener("keydown", { event ->
+        val key = (event as KeyboardEvent)
+        if (document.activeElement !is HTMLTextAreaElement || document.activeElement !is HTMLInputElement) {
+            event.preventDefault()
+        }
+    })
 
 }
 
