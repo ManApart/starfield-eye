@@ -20,6 +20,7 @@ fun renderGalaxy() {
     root.append {
         div {
             id = "nav"
+            backgroundStars()
             button {
                 +"Catalogue"
                 onClickFunction = { catalogueView()}
@@ -48,6 +49,7 @@ fun renderGalaxy() {
             }
         }
     }
+    readyStars()
 }
 
 fun el(id: String) = document.getElementById(id) as HTMLElement

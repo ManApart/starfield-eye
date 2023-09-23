@@ -52,6 +52,7 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
         else -> "moon"
     }
     setSelected(planetType, planetId)
+    readyStars()
 }
 
 private fun updateUrl(system: StarSystem, planetId: Int) {

@@ -3,10 +3,7 @@ import kotlinx.browser.window
 import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.HTMLTextAreaElement
 import org.w3c.dom.events.KeyboardEvent
-import views.catalogueView
-import views.navigateOrrery
-import views.renderGalaxy
-import views.systemView
+import views.*
 
 var galaxy: Galaxy = Galaxy()
 
@@ -35,6 +32,12 @@ fun main() {
             event.preventDefault()
         }
     })
+
+    document.onmousemove = { e ->
+        val x = e.clientX / window.innerWidth.toFloat()
+        val y = e.clientY / window.innerHeight.toFloat()
+        panStars(x, y)
+    }
 
 }
 

@@ -61,6 +61,7 @@ fun catalogueView() {
     saveHtmlRefs()
     detailView(galaxy.systems.values.first(), 0, false, true)
     searchPlanets()
+    readyStars()
 }
 
 private fun TagConsumer<HTMLElement>.planetList() {
