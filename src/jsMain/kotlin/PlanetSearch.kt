@@ -24,9 +24,17 @@ private fun planetMatches(planet: Planet, searchText: String): Boolean {
         name.lowercase().contains(searchText)
                 || bodyType == searchText.toIntOrNull()
                 || type.lowercase().contains(searchText)
+                || bodyTypeDescription.lowercase().contains(searchText)
+                || atmosphere.lowercase().contains(searchText)
+                || temperature.lowercase().contains(searchText)
+                || water.lowercase().contains(searchText)
                 || planetClass.lowercase().contains(searchText)
                 || magneticField.lowercase().contains(searchText)
+                || life.lowercase().contains(searchText)
                 || biomes.any { it.lowercase().contains(searchText) }
+                || traits.any { it.lowercase().contains(searchText) }
+                || flora.any { it.lowercase().contains(searchText) }
+                || fauna.any { it.lowercase().contains(searchText) }
                 || resources.any { it.name.lowercase().contains(searchText) || it.readableName.lowercase().contains(searchText) }
     }
 }
