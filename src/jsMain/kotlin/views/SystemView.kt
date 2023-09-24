@@ -240,13 +240,17 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
 private fun TABLE.resourceRow(resources: List<ResourceType>) {
     tr {
         td("resource-td") { +"Resources" }
-        td {
+        td("resource-value-td") {
             if (resources.isEmpty()) {
                 +"None"
             } else {
                 resources.forEach { resource ->
                     div("resource") {
-                        +"${resource.name} (${resource.readableName})"
+                        style = "background-color: #${resource.color}"
+                        div("resource-inner") {
+                            +resource.name
+                        }
+                        title = resource.readableName
                     }
                 }
             }
