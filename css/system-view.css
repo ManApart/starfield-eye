@@ -45,6 +45,7 @@
     height: 50px;
     border: 1px solid gray;
     margin: 2px;
+    font-size: medium;
 }
 
 .resource-inner {

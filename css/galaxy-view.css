@@ -6,6 +6,11 @@
     margin: auto;
 }
 
+#nav {
+    position: relative;
+}
+
+
 .galaxy-system {
     position: absolute;
 }

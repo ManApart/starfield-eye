@@ -1,0 +1,13 @@
+
+#crew-view{
+    position: relative;
+}
+
+#sections {
+    position: relative;
+    margin-left: 20%
+}
+
+#sections .section-view-box {
+    max-width: 900px;
+}
