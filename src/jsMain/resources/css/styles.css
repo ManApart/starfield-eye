@@ -6,7 +6,7 @@
   --background-blue: #0d1727;
   --red: #c82337;
   --orange: #e06236;
-  --yellow: #e06236;
+  --yellow: #d7ab61;
   --blue: #2f4c79;
   --menu-gray: #2d343c;
 }
@@ -24,6 +24,10 @@ body {
 
 h1, h2, h3 {
     font-family: Architekt;
+}
+
+h3 {
+    margin-top: 50px;
 }
 
 td {
@@ -95,6 +99,7 @@ a {
     display: block;
     border: 1px solid gray;
     padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 20px;
     margin-right: 20px;
     background-color: var(--background-blue);

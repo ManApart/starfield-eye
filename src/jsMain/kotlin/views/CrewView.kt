@@ -5,6 +5,7 @@ import kotlinx.browser.window
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
+import org.w3c.dom.HTMLElement
 
 fun crewView() {
     window.history.pushState(null, "null", "#crew")
@@ -30,20 +31,24 @@ fun crewView() {
                     h2 { +"How to Use" }
 
                     h3 { +"About" }
+                    div("accent-line")
                     p { +"The Eye is a free, searchable map for Starfield." }
                     p { +"The Eye is open source, ad free, and doesn't track you or require a login." }
 
                     h3 { +"Galaxy View" }
+                    div("accent-line")
                     p { +"Search the galaxy by name of the star or planets to see the system on the map." }
                     p { +"Click a system to view that system's star, planets, and resources" }
                     p { +"User data is stored on your browser. Use Export to save any user data you've added (outposts, labels, notes etc). Use Import to load your data back into the site (or onto another browser)." }
 
                     h3 { +"Catalogue View" }
+                    div("accent-line")
                     p { +"The catalogue gives you access to a powerful search. Here you can search for systems and planets using a large number of criteria." }
                     p { +"Comma separated, you can search for things like planet names, available resources (by symbol or name), planet outposts, and more. Comma separated terms are considered an \"AND\", so you can filter for planets with a warm temperature that include iron." }
                     p { +"Search results display the system and any matching planets. By hovering/tapping a result, you'll see a detailed view of that star or planet. You can then view it's system to see more information about that system" }
 
                     h3 { +"System View" }
+                    div("accent-line")
                     p { +"Clicking on a system sends you to the system view. This view includes an interactive orrery that lets you browse the various bodies of the system." }
                     p { +"Navigate by clicking the star, planets, or moons, or use the arrow keys." }
                     p { +"You can add your own data to any planet, or moon. This includes labels that can be searched for, adding your outposts names (that can be searched by name or by searching for \"outpost\", or even notes for a specific planet." }
