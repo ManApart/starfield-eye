@@ -2,6 +2,7 @@ package views
 
 import Planet
 import PlanetInfo
+import el
 import inMemoryStorage
 import kotlinx.html.*
 import kotlinx.html.dom.append

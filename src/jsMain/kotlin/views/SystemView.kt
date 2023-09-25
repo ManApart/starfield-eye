@@ -5,6 +5,7 @@ import PlanetInfo
 import ResourceType
 import Star
 import StarSystem
+import el
 import inMemoryStorage
 import kotlinx.browser.window
 import kotlinx.dom.addClass

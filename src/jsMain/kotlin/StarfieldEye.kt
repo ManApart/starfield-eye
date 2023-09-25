@@ -1,5 +1,6 @@
 import kotlinx.browser.document
 import kotlinx.browser.window
+import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.HTMLTextAreaElement
 import org.w3c.dom.events.KeyboardEvent
@@ -64,3 +65,7 @@ fun doRouting(windowHash: String) {
         else -> renderGalaxy()
     }
 }
+
+
+fun el(id: String) = document.getElementById(id) as HTMLElement
+fun <T> el(id: String) = document.getElementById(id) as T

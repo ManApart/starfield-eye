@@ -1,6 +1,7 @@
 package views
 
 import Planet
+import el
 import galaxy
 import getPlanets
 import inMemoryStorage
@@ -41,7 +42,7 @@ fun catalogueView() {
                     placeholder = "Filter: Name, Resources etc. Comma separated"
                     value = inMemoryStorage.planetSearchOptions.searchText
                     onKeyUpFunction = {
-                        inMemoryStorage.planetSearchOptions.searchText = (document.getElementById("search") as HTMLInputElement).value
+                        inMemoryStorage.planetSearchOptions.searchText = el<HTMLInputElement>("search").value
                         searchPlanets()
                     }
                 }
@@ -67,7 +68,7 @@ fun catalogueView() {
 private fun TagConsumer<HTMLElement>.planetList() {
     galaxy.systems.values.forEach { system ->
         div("system-catalogue-item") {
-            id = system.star.id.toString()
+            id = system.star.name
             span {
                 +system.star.name
                 onClickFunction = { detailView(system, 0, false, true) }
@@ -89,7 +90,7 @@ private fun TagConsumer<HTMLElement>.planetList() {
 
 private fun saveHtmlRefs() {
     planetDivs = getPlanets().associate { it.uniqueId to el(it.uniqueId) }
-    starDivs = galaxy.systems.values.associate { it.star.id.toString() to el(it.star.id.toString()) }
+    starDivs = galaxy.systems.values.associate { it.star.id.toString() to el(it.star.name) }
 }
 
 fun filterPlanets(shown: List<Planet>) {

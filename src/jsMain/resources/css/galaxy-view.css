@@ -6,6 +6,12 @@
     margin: auto;
 }
 
+#galaxy-search {
+    display: inline-block;
+    height: 25px;
+    width: 50%;
+}
+
 .galaxy-system {
     position: absolute;
 }
