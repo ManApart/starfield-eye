@@ -4,6 +4,11 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import org.w3c.dom.HTMLElement
+import org.w3c.dom.HTMLInputElement
+import org.w3c.dom.events.Event
+import org.w3c.dom.events.MouseEvent
+import org.w3c.files.FileReader
+import org.w3c.files.get
 import org.w3c.xhr.JSON
 import org.w3c.xhr.XMLHttpRequest
 import org.w3c.xhr.XMLHttpRequestResponseType
@@ -77,4 +82,24 @@ fun exportPlayerInfo() {
     document.body?.append(download)
     download.click()
     document.body?.removeChild(download)
+}
+
+fun importPlayerInfo() {
+    val fileInput = document.createElement("input") as HTMLInputElement
+    fileInput.apply {
+        type = "file"
+        accept = "*.json"
+        addEventListener("change", { e: Event ->
+            if (files != null){
+                val file = files!![0]!!
+                val reader = FileReader()
+                reader.onloadend = {
+                    jsonMapper.decodeFromString<InMemoryStorage>(reader.result as String).also { inMemoryStorage = it }
+                    println("Imported ${inMemoryStorage.planetUserInfo.size} user info pieces")
+                }
+                reader.readAsText(file)
+            }
+        })
+        dispatchEvent(MouseEvent("click"))
+    }
 }

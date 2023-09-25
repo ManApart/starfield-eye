@@ -4,6 +4,7 @@ import el
 import exportPlayerInfo
 import galaxy
 import getPlanets
+import importPlayerInfo
 import inMemoryStorage
 import kotlinx.browser.document
 import kotlinx.browser.window
@@ -35,12 +36,6 @@ fun renderGalaxy() {
                 onClickFunction = { catalogueView() }
             }
             button {
-                id = "export-button"
-                +"Export"
-                title = "Download user entered data"
-                onClickFunction = { exportPlayerInfo() }
-            }
-            button {
                 id = "crew-button"
                 +"Crew"
                 title = "View crew"
@@ -52,6 +47,18 @@ fun renderGalaxy() {
                 onKeyUpFunction = {
                     highlightStar(el<HTMLInputElement>("galaxy-search").value.lowercase())
                 }
+            }
+            button {
+                id = "export-button"
+                +"Export"
+                title = "Download user entered data"
+                onClickFunction = { exportPlayerInfo() }
+            }
+            button {
+                id = "import-button"
+                +"Import"
+                title = "Import saved user data"
+                onClickFunction = { importPlayerInfo() }
             }
         }
 
