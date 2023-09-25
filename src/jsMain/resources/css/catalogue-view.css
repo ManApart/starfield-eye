@@ -1,9 +1,12 @@
 #catalogue-view {
 }
 
-#search {
+
+.search {
+    display: inline-block;
     position: relative;
-    width: 80%;
+    height: 25px;
+    width: 43%;
     min-width: 300px;
     vertical-align: top;
     margin-top: 5px;

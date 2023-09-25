@@ -27,9 +27,9 @@ fun renderGalaxy() {
 
     root.innerHTML = ""
     root.append {
+        div { backgroundStars() }
         div {
             id = "nav"
-            backgroundStars()
             button {
                 +"Catalogue"
                 onClickFunction = { catalogueView() }
@@ -46,7 +46,7 @@ fun renderGalaxy() {
                 title = "View crew"
                 onClickFunction = { crewView() }
             }
-            input {
+            input(classes = "search") {
                 id = "galaxy-search"
                 placeholder = "Highlight star by name of star or planets"
                 onKeyUpFunction = {

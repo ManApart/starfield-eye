@@ -28,16 +28,15 @@ fun catalogueView() {
         div {
             id = "catalogue-view"
             backgroundStars()
-            button {
-                +"Back to Galaxy"
-                onClickFunction = {
-                    renderGalaxy()
-                }
-            }
             div {
-                id = "search-span"
-                img("Search Icon", "images/search.svg") { id = "search-icon" }
-                input {
+                id = "nav"
+                button {
+                    +"Back to Galaxy"
+                    onClickFunction = {
+                        renderGalaxy()
+                    }
+                }
+                input(classes = "search") {
                     id = "search"
                     placeholder = "Filter: Name, Resources etc. Comma separated"
                     value = inMemoryStorage.planetSearchOptions.searchText

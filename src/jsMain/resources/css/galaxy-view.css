@@ -6,11 +6,10 @@
     margin: auto;
 }
 
-#galaxy-search {
-    display: inline-block;
-    height: 25px;
-    width: 50%;
+#nav {
+    position: relative;
 }
+
 
 .galaxy-system {
     position: absolute;
