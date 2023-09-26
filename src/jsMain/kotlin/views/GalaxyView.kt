@@ -74,10 +74,18 @@ fun renderGalaxy() {
 
                     val offset = starOffsets[system.star.name]
 
-                    div("system-circle") { onClickFunction = { systemView(system) } }
+                    div("system-circle") {
+                        onClickFunction = {
+                            println("Clicked ${system.star.name}")
+//                        systemView(system)
+                        }
+                    }
                     div("system-name") {
                         +system.star.name
-                        onClickFunction = { systemView(system) }
+                        onClickFunction = {
+                            println("Clicked ${system.star.name}")
+//                        systemView(system)
+                        }
                         offset?.let { (offsetX, offsetY) ->
                             style = "top: ${offsetY}px; left: ${offsetX}px"
 
@@ -85,13 +93,15 @@ fun renderGalaxy() {
                     }
                     if (offset != null && starLines.contains(system.star.name)) {
                         val (offsetX, offsetY) = offset
-                        unsafe {
-                            val lineX = (offsetX / 3).let { if (it != 0) it - 4 else it }
-                            val lineY = (offsetY / 3).let { if (it != 0) it + 4 else it }
-                            val topAdjust = (offsetY/10).let { if (offsetY > 0) it * -1 + 15 else it}
-                            +"""<svg width="10" height="10" class="star-line" style="top: ${topAdjust}px">
+                        div {
+                            unsafe {
+                                val lineX = (offsetX / 3).let { if (it != 0) it - 4 else it }
+                                val lineY = (offsetY / 3).let { if (it != 0) it + 4 else it }
+                                val topAdjust = (offsetY / 10).let { if (offsetY > 0) it * -1 + 15 else it }
+                            +"""<svg width="10" height="10" class="star-line" style="top: ${topAdjust}px;">
                                 |<line x1="0" y1="0" x2="$lineX" y2="$lineY" stroke="white"/>
                                 |</svg>""".trimMargin()
+                            }
                         }
                     }
                 }
