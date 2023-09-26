@@ -21,14 +21,15 @@ fun main() {
         doRouting()
     })
 
-    window.addEventListener("keyup", { event ->
-        val key = (event as KeyboardEvent)
-        if (document.activeElement !is HTMLTextAreaElement && document.activeElement !is HTMLInputElement) {
-            navigateOrrery(key)
+    window.addEventListener("keyup", { e ->
+        val event = (e as KeyboardEvent)
+        if (document.activeElement !is HTMLTextAreaElement && document.activeElement !is HTMLInputElement && event.key in listOf("ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown")) {
+            navigateOrrery(event)
         }
     })
-    window.addEventListener("keydown", { event ->
-        if (document.activeElement !is HTMLTextAreaElement && document.activeElement !is HTMLInputElement) {
+    window.addEventListener("keydown", { e ->
+        val event = (e as KeyboardEvent)
+        if (document.activeElement !is HTMLTextAreaElement && document.activeElement !is HTMLInputElement && event.key in listOf("ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown")) {
             event.preventDefault()
         }
     })

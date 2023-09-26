@@ -70,7 +70,7 @@ fun renderGalaxy() {
                 val y = ((system.pos.y - summary.minY) / summary.distY) * 90 + 2
                 div("galaxy-system") {
                     id = system.star.name
-                    style = "top: ${y}%; left: ${x}vw;"
+                    style = "top: ${y}%; left: ${x}%;"
 
                     val offset = starOffsets[system.star.name]
 
@@ -127,11 +127,16 @@ private fun highlightStar(searchText: String) {
 }
 
 private val starOffsets = mapOf(
+    "Alpha Ternion" to Pair(-40, -30),
+    "Beta Ternion" to Pair(60, -30),
+    "Arcturus" to Pair(0, -30),
     "Bohr" to Pair(0, -30),
     "Copernicus" to Pair(0, 10),
     "Copernicus Minor" to Pair(0, -40),
+    "Enlil" to Pair(0, -30),
     "Feynman" to Pair(0, -30),
     "Foucault" to Pair(0, -30),
+    "Gamma Vulpes" to Pair(0, -30),
     "Hawking" to Pair(0, -30),
 )
 
