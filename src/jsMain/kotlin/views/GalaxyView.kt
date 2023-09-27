@@ -93,12 +93,13 @@ fun renderGalaxy() {
                     }
                     if (offset != null && starLines.contains(system.star.name)) {
                         val (offsetX, offsetY) = offset
+                        val lineX = (offsetX / 3).let { if (it != 0) it - 4 else it }
+                        val lineY = (offsetY / 3).let { if (it != 0) it + 4 else it }
+                        val topAdjust = (offsetY / 10).let { if (offsetY > 0) it * -1 + 15 else it }
+
                         div {
                             unsafe {
-                                val lineX = (offsetX / 3).let { if (it != 0) it - 4 else it }
-                                val lineY = (offsetY / 3).let { if (it != 0) it + 4 else it }
-                                val topAdjust = (offsetY / 10).let { if (offsetY > 0) it * -1 + 15 else it }
-                            +"""<svg width="10" height="10" class="star-line" style="top: ${topAdjust}px;">
+                                +"""<svg width="10" height="10" class="star-line" style="top: ${topAdjust}px;">
                                 |<line x1="0" y1="0" x2="$lineX" y2="$lineY" stroke="white"/>
                                 |</svg>""".trimMargin()
                             }
@@ -137,7 +138,7 @@ private fun highlightStar(searchText: String) {
 }
 
 private val starOffsets = mapOf(
-    "Aranae" to Pair(35, 0),
+    "Aranae" to Pair(-30, 0),
     "Alpha Ternion" to Pair(-60, -30),
     "Alpha Centauri" to Pair(60, -30),
     "Alpha Andraste" to Pair(-45, -30),
@@ -149,12 +150,12 @@ private val starOffsets = mapOf(
     "Beta Andraste" to Pair(-45, 0),
     "Beta Tirna" to Pair(-45, 0),
     "Beta Marae" to Pair(-30, -60),
-    "Bannoc Prime" to Pair(-60, -15),
+    "Bannoc Prime" to Pair(-60, -30),
     "Bannoc Secondus" to Pair(0, 30),
     "Barnard's Star" to Pair(55, -10),
     "Bel" to Pair(10, 0),
     "Bohr" to Pair(0, -30),
-    "Bessel" to Pair(-40, -35),
+    "Bessel" to Pair(20, -35),
     "Copernicus" to Pair(0, 10),
     "Charybdis" to Pair(0, -40),
     "Cheyenne" to Pair(30, -40),
@@ -176,11 +177,11 @@ private val starOffsets = mapOf(
     "Maheo" to Pair(-30, -40),
     "McClure" to Pair(30, -30),
     "Narion" to Pair(0, -30),
-    "Olympus" to Pair(-35, 0),
+    "Olympus" to Pair(35, 0),
     "Oborum Prime" to Pair(0, -30),
     "Oborum Secondus" to Pair(50, -45),
     "Porrima" to Pair(0, -30),
-    "Piazzi" to Pair(20, -35),
+    "Piazzi" to Pair(-40, -35),
     "Proxima Ternion" to Pair(60, -30),
     "Procyon A" to Pair(0, -45),
     "Procyon B" to Pair(60, -30),
@@ -193,7 +194,6 @@ private val starOffsets = mapOf(
 )
 
 private val starLines = listOf(
-    "Aranae",
     "Alpha Ternion",
     "Alpha Centauri",
     "Alpha Marae",
@@ -209,7 +209,6 @@ private val starLines = listOf(
     "Eta Cassiopeiae",
     "Groombridge 1830",
     "Maheo",
-    "Olympus",
     "Oborum Secondus",
     "Proxima Ternion",
     "Procyon A",
