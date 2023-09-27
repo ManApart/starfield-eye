@@ -1,6 +1,7 @@
-#catalogue-view {
+#catalogue-view #nav {
+    position: relative;
+    top: unset;
 }
-
 
 .search {
     display: inline-block;

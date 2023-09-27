@@ -1,11 +1,44 @@
 @media (max-aspect-ratio: 3/4) {
+
+
+
+    button, input {
+        font-size: 2em;
+    }
+
+    button {
+        margin: 1%;
+    }
+
+    #galaxy {
+        width: 250vw;
+        height: 180vh;
+        margin-top: 20%;
+    }
+
+    .search {
+        display: block;
+        height: 50px;
+        width: 90%;
+        margin-left: 1%;
+    }
+
+    #crew-view #nav {
+        position: relative;
+    }
+
+    #sections {
+        margin: 5%;
+        margin-top: 1%;
+    }
+
     .section-wrapper{
         display: initial;
         flex-wrap: initial;
     }
 
     .section-view-box {
-        width: 100%;
+        width: 99%;
         max-width: unset;
     }
 }
