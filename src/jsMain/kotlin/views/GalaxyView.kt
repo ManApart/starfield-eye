@@ -23,94 +23,101 @@ import starDivs
 
 fun renderGalaxy() {
     window.history.pushState(null, "null", "#galaxy")
-    val systems = galaxy.systems
-    val summary = galaxy.summary
     val root = el("root")
 
     root.innerHTML = ""
     root.append {
         div { backgroundStars() }
-        div {
-            id = "nav"
-            button {
-                +"Catalogue"
-                onClickFunction = { catalogueView() }
-            }
-            button {
-                id = "crew-button"
-                +"Crew"
-                title = "View crew"
-                onClickFunction = { crewView() }
-            }
-            input(classes = "search") {
-                id = "galaxy-search"
-                placeholder = "Highlight star by name of star or planets"
-                onKeyUpFunction = {
-                    highlightStar(el<HTMLInputElement>("galaxy-search").value.lowercase())
-                }
-            }
-            button {
-                id = "export-button"
-                +"Export"
-                title = "Download user entered data"
-                onClickFunction = { exportPlayerInfo() }
-            }
-            button {
-                id = "import-button"
-                +"Import"
-                title = "Import saved user data"
-                onClickFunction = { importPlayerInfo() }
+        galaxy()
+        nav()
+    }
+    saveHtmlRefs()
+    readyStars()
+}
+
+private fun TagConsumer<HTMLElement>.nav() {
+    div {
+        id = "nav"
+        button {
+            +"Catalogue"
+            onClickFunction = { catalogueView() }
+        }
+        button {
+            id = "crew-button"
+            +"Crew"
+            title = "View crew"
+            onClickFunction = { crewView() }
+        }
+        input(classes = "search") {
+            id = "galaxy-search"
+            placeholder = "Highlight star by name of star or planets"
+            onKeyUpFunction = {
+                highlightStar(el<HTMLInputElement>("galaxy-search").value.lowercase())
             }
         }
+        button {
+            id = "import-button"
+            +"Import"
+            title = "Import saved user data"
+            onClickFunction = { importPlayerInfo() }
+        }
+        button {
+            id = "export-button"
+            +"Export"
+            title = "Download user entered data"
+            onClickFunction = { exportPlayerInfo() }
+        }
+    }
+}
 
-        div {
-            id = "galaxy"
-            systems.values.forEach { system ->
-                val x = 95 - (((system.pos.x - summary.minX) / summary.distX) * 90 + 2)
-                val y = ((system.pos.y - summary.minY) / summary.distY) * 90 + 2
-                div("galaxy-system") {
-                    id = system.star.name
-                    style = "top: ${y}%; left: ${x}%;"
+private fun TagConsumer<HTMLElement>.galaxy() {
+    val systems = galaxy.systems
+    val summary = galaxy.summary
+    div {
+        id = "galaxy"
+        systems.values.forEach { system ->
+            val x = 95 - (((system.pos.x - summary.minX) / summary.distX) * 90 + 2)
+            val y = ((system.pos.y - summary.minY) / summary.distY) * 90 + 2
+            div("galaxy-system") {
+                id = system.star.name
+                style = "top: ${y}%; left: ${x}%;"
 
-                    val offset = starOffsets[system.star.name]
+                val offset = starOffsets[system.star.name]
 
-                    div("system-circle") {
-                        onClickFunction = {
-                            println("Clicked ${system.star.name}")
+                div("system-circle") {
+                    onClickFunction = {
+                        println("Clicked ${system.star.name}")
 //                        systemView(system)
-                        }
                     }
-                    div("system-name") {
-                        +system.star.name
-                        onClickFunction = {
-                            println("Clicked ${system.star.name}")
+                }
+                div("system-name") {
+                    +system.star.name
+                    onClickFunction = {
+                        println("Clicked ${system.star.name}")
 //                        systemView(system)
-                        }
-                        offset?.let { (offsetX, offsetY) ->
-                            style = "top: ${offsetY}px; left: ${offsetX}px"
-
-                        }
                     }
-                    if (offset != null && starLines.contains(system.star.name)) {
-                        val (offsetX, offsetY) = offset
-                        val lineX = (offsetX / 3).let { if (it != 0) it - 4 else it }
-                        val lineY = (offsetY / 3).let { if (it != 0) it + 4 else it }
-                        val topAdjust = (offsetY / 10).let { if (offsetY > 0) it * -1 + 15 else it }
+                    offset?.let { (offsetX, offsetY) ->
+                        style = "top: ${offsetY}px; left: ${offsetX}px"
 
-                        div {
-                            unsafe {
-                                +"""<svg width="10" height="10" class="star-line" style="top: ${topAdjust}px;">
+                    }
+                }
+                if (offset != null && starLines.contains(system.star.name)) {
+                    val (offsetX, offsetY) = offset
+                    val lineX = (offsetX / 3).let { if (it != 0) it - 4 else it }
+                    val lineY = (offsetY / 3).let { if (it != 0) it + 4 else it }
+                    val topAdjust = (offsetY / 10).let { if (offsetY > 0) it * -1 + 15 else it }
+
+                    div {
+                        unsafe {
+                            +"""<svg width="10" height="10" class="star-line" style="top: ${topAdjust}px;">
                                 |<line x1="0" y1="0" x2="$lineX" y2="$lineY" stroke="white"/>
                                 |</svg>""".trimMargin()
-                            }
                         }
                     }
                 }
             }
         }
     }
-    saveHtmlRefs()
-    readyStars()
 }
 
 private fun saveHtmlRefs() {
