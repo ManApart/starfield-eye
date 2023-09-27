@@ -48,13 +48,6 @@ private fun TagConsumer<HTMLElement>.nav() {
             title = "View crew"
             onClickFunction = { crewView() }
         }
-        input(classes = "search") {
-            id = "galaxy-search"
-            placeholder = "Highlight star by name of star or planets"
-            onKeyUpFunction = {
-                highlightStar(el<HTMLInputElement>("galaxy-search").value.lowercase())
-            }
-        }
         button {
             id = "import-button"
             +"Import"
@@ -66,6 +59,13 @@ private fun TagConsumer<HTMLElement>.nav() {
             +"Export"
             title = "Download user entered data"
             onClickFunction = { exportPlayerInfo() }
+        }
+        input(classes = "search") {
+            id = "galaxy-search"
+            placeholder = "Highlight star by name of star or planets"
+            onKeyUpFunction = {
+                highlightStar(el<HTMLInputElement>("galaxy-search").value.lowercase())
+            }
         }
     }
 }
