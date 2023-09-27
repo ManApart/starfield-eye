@@ -1,26 +1,8 @@
 @media (max-aspect-ratio: 3/4) {
 
-
-
-    button, input {
-        font-size: 2em;
-    }
-
-    button {
-        margin: 1%;
-    }
-
-    #galaxy {
-        width: 250vw;
-        height: 180vh;
-        margin-top: 20%;
-    }
-
     .search {
         display: block;
-        height: 50px;
-        width: 90%;
-        margin-left: 1%;
+        width: 20%;
     }
 
     #crew-view #nav {
@@ -37,8 +19,14 @@
         flex-wrap: initial;
     }
 
-    .section-view-box {
-        width: 99%;
-        max-width: unset;
+    #galaxy-wrapper {
+        width: 98vw;
+        height: 98vh;
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+
+    #planet-list{
+        max-height: 500px;
     }
 }
