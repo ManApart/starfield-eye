@@ -2,7 +2,10 @@
     position: relative;
     width: 98vw;
     height: 98vh;
-    overflow: hidden;
+    min-width: 1500px;
+    min-height: 1000px;
+    overflow-x: scroll;
+    overflow-y: scroll;
     margin: auto;
 }
 
@@ -13,23 +16,25 @@
 
 .galaxy-system {
     position: absolute;
+    height: 0px;
 }
 
-.galaxy-system:hover .system-name{
+.system-name:hover{
     background-position: -100% 0%;
     transition: 1s;
 }
 
 .system-circle {
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
     background-color: white;
-    border-radius: 7px;
+    border-radius: 5px;
     display: block;
     margin: auto;
 }
 
 .system-name {
+    position: relative;
     text-align: center;
     font-size: 14px;
     background-size: 200% 100%;
@@ -39,4 +44,12 @@
 
 .system-name-above {
     margin-top: -30px;
+}
+
+.star-line {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    overflow: visible;
+    pointer-events: none;
 }
