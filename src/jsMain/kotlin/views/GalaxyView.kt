@@ -74,44 +74,41 @@ private fun TagConsumer<HTMLElement>.galaxy() {
     val systems = galaxy.systems
     val summary = galaxy.summary
     div {
-        id = "galaxy"
-        systems.values.forEach { system ->
-            val x = 95 - (((system.pos.x - summary.minX) / summary.distX) * 90 + 2)
-            val y = ((system.pos.y - summary.minY) / summary.distY) * 90 + 2
-            div("galaxy-system") {
-                id = system.star.name
-                style = "top: ${y}%; left: ${x}%;"
+        id = "galaxy-wrapper"
+        div {
+            id = "galaxy"
+            systems.values.forEach { system ->
+                val x = 95 - (((system.pos.x - summary.minX) / summary.distX) * 90 + 2)
+                val y = ((system.pos.y - summary.minY) / summary.distY) * 90 + 2
+                div("galaxy-system") {
+                    id = system.star.name
+                    style = "top: ${y}%; left: ${x}%;"
 
-                val offset = starOffsets[system.star.name]
+                    val offset = starOffsets[system.star.name]
 
-                div("system-circle") {
-                    onClickFunction = {
-                        println("Clicked ${system.star.name}")
-//                        systemView(system)
+                    div("system-circle") {
+                        onClickFunction = { systemView(system) }
                     }
-                }
-                div("system-name") {
-                    +system.star.name
-                    onClickFunction = {
-                        println("Clicked ${system.star.name}")
-//                        systemView(system)
-                    }
-                    offset?.let { (offsetX, offsetY) ->
-                        style = "top: ${offsetY}px; left: ${offsetX}px"
+                    div("system-name") {
+                        +system.star.name
+                        onClickFunction = { systemView(system) }
+                        offset?.let { (offsetX, offsetY) ->
+                            style = "top: ${offsetY}px; left: ${offsetX}px"
 
+                        }
                     }
-                }
-                if (offset != null && starLines.contains(system.star.name)) {
-                    val (offsetX, offsetY) = offset
-                    val lineX = (offsetX / 3).let { if (it != 0) it - 4 else it }
-                    val lineY = (offsetY / 3).let { if (it != 0) it + 4 else it }
-                    val topAdjust = (offsetY / 10).let { if (offsetY > 0) it * -1 + 15 else it }
+                    if (offset != null && starLines.contains(system.star.name)) {
+                        val (offsetX, offsetY) = offset
+                        val lineX = (offsetX / 3).let { if (it != 0) it - 4 else it }
+                        val lineY = (offsetY / 3).let { if (it != 0) it + 4 else it }
+                        val topAdjust = (offsetY / 10).let { if (offsetY > 0) it * -1 + 15 else it }
 
-                    div {
-                        unsafe {
-                            +"""<svg width="10" height="10" class="star-line" style="top: ${topAdjust}px;">
+                        div {
+                            unsafe {
+                                +"""<svg width="10" height="10" class="star-line" style="top: ${topAdjust}px;">
                                 |<line x1="0" y1="0" x2="$lineX" y2="$lineY" stroke="white"/>
                                 |</svg>""".trimMargin()
+                            }
                         }
                     }
                 }
