@@ -77,6 +77,12 @@ a {
     color: white;
 }
 
+blockquote {
+    background-color: gray;
+    margin-left: 0;
+    padding-left: 1%;
+}
+
 .hidden {
     display: none;
 }
