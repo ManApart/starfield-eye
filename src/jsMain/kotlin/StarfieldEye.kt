@@ -49,19 +49,22 @@ fun doRouting() {
 
 fun doRouting(windowHash: String) {
     when {
-        windowHash.startsWith("#system/") -> {
-            val parts = windowHash.replace("#system/", "").split("/")
-            if (parts.size == 2){
-                val system = galaxy.systems[parts.first().toInt()]!!
-                val planet = parts.last().toIntOrNull() ?: 0
-                systemView(system, planet)
-            }
+        windowHash.startsWith("#about") -> {
+            aboutView()
         }
         windowHash.startsWith("#catalogue") -> {
             catalogueView()
         }
         windowHash.startsWith("#crew") -> {
             crewView()
+        }
+        windowHash.startsWith("#system/") -> {
+            val parts = windowHash.replace("#system/", "").split("/")
+            if (parts.size == 2) {
+                val system = galaxy.systems[parts.first().toInt()]!!
+                val planet = parts.last().toIntOrNull() ?: 0
+                systemView(system, planet)
+            }
         }
         else -> renderGalaxy()
     }

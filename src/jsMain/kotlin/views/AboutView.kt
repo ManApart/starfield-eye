@@ -1,0 +1,76 @@
+package views
+
+import el
+import kotlinx.browser.window
+import kotlinx.html.*
+import kotlinx.html.dom.append
+import kotlinx.html.js.onClickFunction
+
+fun aboutView() {
+    window.history.pushState(null, "null", "#about")
+    val root = el("root")
+    root.innerHTML = ""
+    root.append {
+        div {
+            id = "about-view"
+            backgroundStars()
+            div {
+                id = "nav"
+                button {
+                    +"Back to Galaxy"
+                    onClickFunction = {
+                        renderGalaxy()
+                    }
+                }
+            }
+            div {
+                id = "sections"
+                div("section-view-box") {
+                    id = "how-to-use"
+                    h2 { +"About" }
+                    div("accent-line") { +"The winks and the nods" }
+
+                    p { +"Starfield Eye is an Ad Free, Searchable Starmap for Starfield." }
+
+                    p { +"Open it on a second monitor while playing, or on your phone to plane your next adventure." }
+
+                    p { +"Search for planets based on any combination of resources, traits, features, name and more. Easily find a planet for your outpost that contains Aluminum, Iron, and a mountain view." }
+
+                    p { +"Browse system by system with an Orrery that matches the in game UI." }
+
+                    p { +"Save your favorite planets or the ones you want to explore. Add the name of your outposts and then see them all by searching \"outpost\". All data is stored locally on your browser, so no login is required and nothing is tracked, but you can import and export data to back it up or share it between devices." }
+
+                    p { +"The Crew page also links to similar sites made by others, so you can pick the one that works best for you." }
+
+                    p { +"Please report any issues as "
+                        a(href = "https://github.com/ManApart/starfield-eye/"){+"github issues."}
+                    }
+
+                }
+                div("section-view-box") {
+                    h2 { +"Galaxy View" }
+                    div("accent-line") { +"Blinks in a sea of black" }
+
+                    p { +"Search the galaxy by name of the star or planets to see the system on the map." }
+                    p { +"Click a system to view that system's star, planets, and resources" }
+                    p { +"User data is stored on your browser. Use Export to save any user data you've added (outposts, labels, notes etc). Use Import to load your data back into the site (or onto another browser)." }
+                }
+                div("section-view-box") {
+                    h2 { +"Catalogue View" }
+                    div("accent-line"){+"Time dances its years forward"}
+                    p { +"The catalogue gives you access to a powerful search. Here you can search for systems and planets using a large number of criteria." }
+                    p { +"Comma separated, you can search for things like planet names, available resources (by symbol or name), planet outposts, and more. Comma separated terms are considered an \"AND\", so you can filter for planets with a warm temperature that include iron." }
+                    p { +"Search results display the system and any matching planets. By hovering/tapping a result, you'll see a detailed view of that star or planet. You can then view it's system to see more information about that system" }
+                }
+                div("section-view-box") {
+                    h2 { +"System View" }
+                    div("accent-line"){+"Do the meet and greets later"}
+                    p { +"Clicking on a system sends you to the system view. This view includes an interactive orrery that lets you browse the various bodies of the system." }
+                    p { +"Navigate by clicking the star, planets, or moons, or use the arrow keys." }
+                    p { +"You can add your own data to any planet, or moon. This includes labels that can be searched for, adding your outposts names (that can be searched by name or by searching for \"outpost\", or even notes for a specific planet." }
+                    p { +"Data is saved locally to the browser and can be imported or exported from the Galaxy View." }
+                }
+            }
+        }
+    }
+}

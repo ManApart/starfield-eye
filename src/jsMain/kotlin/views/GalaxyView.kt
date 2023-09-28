@@ -38,6 +38,14 @@ fun renderGalaxy() {
 private fun TagConsumer<HTMLElement>.nav() {
     div {
         id = "nav"
+
+        button {
+            id = "about-button"
+            +"About"
+            title = "How this site works"
+            onClickFunction = { aboutView() }
+        }
+
         button {
             +"Catalogue"
             onClickFunction = { catalogueView() }
