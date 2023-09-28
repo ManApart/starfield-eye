@@ -32,7 +32,7 @@ fun aboutView() {
 
                     p { +"Starfield Eye is an Ad Free, Searchable Starmap for Starfield." }
 
-                    p { +"Open it on a second monitor while playing, or on your phone to plane your next adventure." }
+                    p { +"Open it on a second monitor while playing, or on your phone to plan your next adventure." }
 
                     p { +"Search for planets based on any combination of resources, traits, features, name and more. Easily find a planet for your outpost that contains Aluminum, Iron, and a mountain view." }
 
