@@ -49,7 +49,7 @@ fun aboutView() {
                 }
                 div("section-view-box") {
                     h2 { +"Galaxy View" }
-                    div("accent-line") { +"Blinks in a sea of black" }
+                    div("accent-line") { +"Blinks in the blackest sea" }
 
                     p { +"Search the galaxy by name of the star or planets to see the system on the map." }
                     p { +"Click a system to view that system's star, planets, and resources" }
@@ -73,4 +73,5 @@ fun aboutView() {
             }
         }
     }
+    readyStars()
 }
