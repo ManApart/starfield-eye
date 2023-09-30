@@ -13,10 +13,16 @@ private suspend fun postToConsole(body: String): String {
 }
 
 suspend fun healthCheck(): Boolean {
-    val raw = postToConsole("GetSFSEVersion")
-    val versionLine = raw.split("\n").last { it.isNotBlank() }
-    println(versionLine)
-    return versionLine.contains("SFSE version")
+    val versionLine = try {
+        val raw = postToConsole("GetSFSEVersion")
+        raw.split("\n").last { it.isNotBlank() }
+    } catch (e: Error){
+        println(e)
+        println(e.stackTraceToString())
+        null
+    }
+    println(versionLine ?: "Disconnected")
+    return versionLine?.contains("SFSE version") ?: false
 }
 
 suspend fun getQuests(): List<Quest> {
@@ -25,7 +31,7 @@ suspend fun getQuests(): List<Quest> {
     return lines
         .asSequence()
         .mapIndexedNotNull { i, line ->
-            if(line.startsWith("==")) i else null
+            if (line.startsWith("==")) i else null
         }
         .windowed(2, 1, true) {
             val end = if (it.size > 1) it.last() else lines.size

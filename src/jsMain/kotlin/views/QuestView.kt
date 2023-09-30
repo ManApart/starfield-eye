@@ -51,7 +51,7 @@ fun needsDocking() {
         div("section-view-box") {
             id = "quest-explanation"
             h2 { +"Quests" }
-            div("accent-line") { +"" }
+            div("accent-line") { +"Time dances its years forward" }
 
             p { +"Use dock to connect to the game and see near realtime updates to your quests page, or track your quest progress even when not playing!" }
             button {
@@ -78,7 +78,7 @@ fun displayQuests(quests: List<Quest>) {
         div("section-view-box") {
             id = "quests"
             h2 { +"Quests" }
-            div("accent-line") { +"" }
+            div("accent-line") { +"Time dances its years forward" }
         }
         val groupedQuests = quests.groupBy { it.completed }
         quests(groupedQuests[false] ?: listOf())

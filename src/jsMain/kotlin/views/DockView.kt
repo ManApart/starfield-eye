@@ -19,7 +19,7 @@ import org.w3c.dom.HTMLDivElement
 import persistMemory
 import pollHook
 
-const val pollRateSeconds = 0
+const val pollRateSeconds = 10
 
 fun dockView() {
     window.history.pushState(null, "null", "#dock")
@@ -56,6 +56,8 @@ private fun DIV.connectToGame() {
         div("accent-line") { +"You two will be foot to foot" }
 
         p { +"Unlock additional functionality by \"docking\" this site to your game. " }
+
+        p { +"Note that docking functionality is beta and under heavy construction. Things that require docking will likely be broken and often not yet be styled. Proceed at your own risk. " }
 
         input {
             id = "dock-host"
@@ -122,6 +124,7 @@ fun attemptConnection() {
         pollData = true
     }
     persistMemory()
+    setStatusDiv("Status: Docking")
     CoroutineScope(Dispatchers.Default).launch {
         if (healthCheck()) {
             setStatusDiv("Status: Docked")
@@ -144,9 +147,7 @@ fun pollData() {
                 getQuests().also { if (it.isNotEmpty()) inMemoryStorage.quests = it }
                 persistMemory()
                 pollHook(true)
-            } catch (e: Exception) {
-                println(e)
-                println(e.stackTraceToString())
+            } catch (e: Error) {
                 pollHook(false)
             }
         }
