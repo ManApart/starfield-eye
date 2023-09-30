@@ -20,11 +20,15 @@ data class Quest(
 ) {
     @Transient
     val completed = stages.entries.maxBy { it.key }.value.completed
+
+    @Transient
+    val displayed = stages.entries.maxBy { it.key }.value.dormant
 }
 
 @Serializable
 data class QuestStage(
     val id: Int,
     val name: String,
-    val completed: Boolean
+    val completed: Boolean,
+    val dormant: Boolean,
 )

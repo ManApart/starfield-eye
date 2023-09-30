@@ -65,10 +65,8 @@ fun needsDocking() {
 }
 
 private fun receivePoll(success: Boolean) {
-    println("Received Poll")
     if (oldQuests != inMemoryStorage.quests) {
         oldQuests = inMemoryStorage.quests
-        println("Displaying ${inMemoryStorage.quests.size} quests")
         displayQuests(inMemoryStorage.quests)
     }
 }
@@ -88,18 +86,21 @@ fun displayQuests(quests: List<Quest>) {
     }
 }
 
-private fun TagConsumer<HTMLElement>.quests(quests: List<Quest>){
+private fun TagConsumer<HTMLElement>.quests(quests: List<Quest>) {
     quests.forEach { quest ->
         div("section-view-box") {
             val completedClass = if (quest.completed) "quest-completed" else "quest-incomplete"
             div("quest $completedClass") {
-                h3 { +quest.name }
-                ul {
-                    quest.stages.values.sortedByDescending { it.id }.forEach { stage ->
-                        val stageCompletedClass = if (stage.completed) "quest-stage-completed" else "quest-stage-incomplete"
-                        li("quest-stage $stageCompletedClass") {
-                            title = "${stage.id}"
-                            +stage.name
+                details {
+                    open = !quest.completed
+                    summary { h3 { +quest.name } }
+                    ul {
+                        quest.stages.values.sortedByDescending { it.id }.forEach { stage ->
+                            val stageCompletedClass = if (stage.completed) "quest-stage-completed" else "quest-stage-incomplete"
+                            li("quest-stage $stageCompletedClass") {
+                                title = "${stage.id}"
+                                +stage.name
+                            }
                         }
                     }
                 }
