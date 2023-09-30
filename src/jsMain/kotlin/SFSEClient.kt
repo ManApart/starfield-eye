@@ -21,13 +21,12 @@ suspend fun healthCheck(): Boolean {
 
 suspend fun getQuests(): List<Quest> {
     val lines = postToConsole("sqo").split("\n").drop(1)
+
     return lines
         .asSequence()
-        .filter { it.startsWith("==") }
-        //Ignore quests with duplicate names
-        .toSet()
-        .asSequence()
-        .map { lines.indexOf(it) }
+        .mapIndexedNotNull { i, line ->
+            if(line.startsWith("==")) i else null
+        }
         .windowed(2, 1, true) {
             val end = if (it.size > 1) it.last() else lines.size
             lines.subList(it.first(), end)
@@ -51,6 +50,9 @@ private fun parseQuest(lines: List<String>): Quest {
                 words.last() == "DISPLAYED"
             )
         }.associateBy { it.id }
-    return Quest(title, stages)
+
+    val cleanTitle = title.ifBlank { stages.values.firstOrNull()?.name ?: "" }
+
+    return Quest(cleanTitle, stages)
 }
 

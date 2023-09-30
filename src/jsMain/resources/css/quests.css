@@ -2,6 +2,10 @@
     margin-top: 10px;
 }
 
+.quest ul {
+    margin-top: 0px;
+}
+
 #quests {
     padding-bottom: 20px;
 }

@@ -81,8 +81,8 @@ fun displayQuests(quests: List<Quest>) {
             div("accent-line") { +"" }
         }
         val groupedQuests = quests.groupBy { it.completed }
-        quests(groupedQuests[false]!!)
-        quests(groupedQuests[true]!!)
+        quests(groupedQuests[false] ?: listOf())
+        quests(groupedQuests[true] ?: listOf())
     }
 }
 
