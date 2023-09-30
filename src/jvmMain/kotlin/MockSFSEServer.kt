@@ -34,7 +34,7 @@ fun main() {
 }
 
 private fun mockResponse(command: String): String {
-    println("Command: $command")
+//    println("Command: $command")
     return when (command) {
         "GetSFSEVersion" -> """
             |GetSFSEVersion
@@ -64,7 +64,7 @@ private fun mockResponse(command: String): String {
             | 
             |== Companion - Barrett ==
             |( Instance: 1 )
-            |900 Talk with Barrett COMPLETED
+            |900 Talk with Barrett DISPLAYED
  
         """.trimMargin()
         else -> command

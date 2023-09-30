@@ -45,7 +45,12 @@ private fun TagConsumer<HTMLElement>.nav() {
             title = "How this site works"
             onClickFunction = { aboutView() }
         }
-
+        button {
+            id = "crew-button"
+            +"Crew"
+            title = "View Credits"
+            onClickFunction = { crewView() }
+        }
         button {
             +"Catalogue"
             onClickFunction = { catalogueView() }
@@ -57,10 +62,10 @@ private fun TagConsumer<HTMLElement>.nav() {
             onClickFunction = { dockView() }
         }
         button {
-            id = "crew-button"
-            +"Crew"
-            title = "View Credits"
-            onClickFunction = { crewView() }
+            id = "quest-button"
+            +"Quests"
+            title = "View Quests"
+            onClickFunction = { questView() }
         }
         input(classes = "search") {
             id = "galaxy-search"

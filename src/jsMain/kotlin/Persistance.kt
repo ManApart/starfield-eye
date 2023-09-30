@@ -22,6 +22,7 @@ data class InMemoryStorage(
     val planetSearchOptions: PlanetSearchOptions = PlanetSearchOptions(),
     val planetUserInfo: MutableMap<String, PlanetInfo> = mutableMapOf(),
     val connectionSettings: GameConnectionSettings = GameConnectionSettings(),
+    var quests: List<Quest> = listOf(),
 )
 
 var inMemoryStorage = InMemoryStorage()

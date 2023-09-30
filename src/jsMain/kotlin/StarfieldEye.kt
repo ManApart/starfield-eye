@@ -8,6 +8,7 @@ import views.*
 
 var galaxy: Galaxy = Galaxy()
 var pageIsVisible = true
+var pollHook: (Boolean) -> Unit = {}
 
 fun getPlanets(): List<Planet> {
     return galaxy.systems.values.flatMap { it.planets.values }
@@ -69,6 +70,9 @@ fun doRouting(windowHash: String) {
         }
         windowHash.startsWith("#dock") -> {
             dockView()
+        }
+        windowHash.startsWith("#quests") -> {
+            questView()
         }
         windowHash.startsWith("#system/") -> {
             val parts = windowHash.replace("#system/", "").split("/")

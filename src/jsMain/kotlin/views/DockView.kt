@@ -2,6 +2,7 @@ package views
 
 import el
 import exportPlayerInfo
+import getQuests
 import healthCheck
 import importPlayerInfo
 import inMemoryStorage
@@ -16,8 +17,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.w3c.dom.HTMLDivElement
 import persistMemory
+import pollHook
 
-const val pollRateSeconds = 5
+const val pollRateSeconds = 0
 
 fun dockView() {
     window.history.pushState(null, "null", "#dock")
@@ -102,6 +104,7 @@ fun dockView() {
         }
     }
     readyStars()
+    pollHook = ::receivePoll
 }
 
 fun attemptConnection() {
@@ -124,17 +127,27 @@ fun attemptConnection() {
 fun pollData() {
     if (pageIsVisible && inMemoryStorage.connectionSettings.pollData) {
         CoroutineScope(Dispatchers.Default).launch {
-            window.setTimeout({
-                pollData()
-            }, pollRateSeconds * 1000)
-            println("Polling data")
+            if (pollRateSeconds != 0) {
+                window.setTimeout({
+                    pollData()
+                }, pollRateSeconds * 1000)
+            }
             try {
-
-                setStatusDiv("Status: Docked")
+                getQuests().also { if (it.isNotEmpty()) inMemoryStorage.quests = it }
+                persistMemory()
+                pollHook(true)
             } catch (e: Exception) {
-                setStatusDiv("Status: Docking Unsuccessful. Please check console and follow installation instructions.")
+                pollHook(false)
             }
         }
+    }
+}
+
+private fun receivePoll(success: Boolean) {
+    if (success) {
+        setStatusDiv("Status: Docked")
+    } else {
+        setStatusDiv("Status: Docking Unsuccessful. Please check console and follow installation instructions.")
     }
 }
 
