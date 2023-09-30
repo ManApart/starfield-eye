@@ -7,6 +7,7 @@ import org.w3c.dom.events.KeyboardEvent
 import views.*
 
 var galaxy: Galaxy = Galaxy()
+var pageIsVisible = true
 
 fun getPlanets(): List<Planet> {
     return galaxy.systems.values.flatMap { it.planets.values }
@@ -40,6 +41,13 @@ fun main() {
         panStars(x, y)
     }
 
+    window.addEventListener("visibilitychange", {
+        val state = js("document.visibilityState") as String
+        pageIsVisible = (state == "visible")
+        if (pageIsVisible) pollData()
+    })
+
+    pollData()
 }
 
 
@@ -57,6 +65,9 @@ fun doRouting(windowHash: String) {
         }
         windowHash.startsWith("#crew") -> {
             crewView()
+        }
+        windowHash.startsWith("#dock") -> {
+            dockView()
         }
         windowHash.startsWith("#system/") -> {
             val parts = windowHash.replace("#system/", "").split("/")

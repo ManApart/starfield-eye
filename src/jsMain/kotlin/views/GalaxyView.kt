@@ -51,22 +51,16 @@ private fun TagConsumer<HTMLElement>.nav() {
             onClickFunction = { catalogueView() }
         }
         button {
+            id = "dock-button"
+            +"Dock"
+            title = "Change Settings"
+            onClickFunction = { dockView() }
+        }
+        button {
             id = "crew-button"
             +"Crew"
-            title = "View crew"
+            title = "View Credits"
             onClickFunction = { crewView() }
-        }
-        button {
-            id = "import-button"
-            +"Import"
-            title = "Import saved user data"
-            onClickFunction = { importPlayerInfo() }
-        }
-        button {
-            id = "export-button"
-            +"Export"
-            title = "Download user entered data"
-            onClickFunction = { exportPlayerInfo() }
         }
         input(classes = "search") {
             id = "galaxy-search"
