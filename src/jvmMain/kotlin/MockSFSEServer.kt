@@ -11,7 +11,7 @@ import io.ktor.server.plugins.cors.routing.*
 import io.ktor.server.request.*
 
 fun main() {
-    val usedPort = System.getenv("PORT")?.toInt() ?: 9090
+    val usedPort = System.getenv("PORT")?.toInt() ?: 55555
     embeddedServer(Netty, port = usedPort) {
         install(ContentNegotiation) {
             json()

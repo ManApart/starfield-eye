@@ -16,7 +16,10 @@ fun getPlanets(): List<Planet> {
 fun main() {
     window.onload = {
         createDB()
-        loadAll().then { doRouting() }
+        loadAll().then {
+            doRouting()
+            pollData()
+        }
     }
     window.addEventListener("popstate", { e ->
         doRouting()
@@ -46,8 +49,6 @@ fun main() {
         pageIsVisible = (state == "visible")
         if (pageIsVisible) pollData()
     })
-
-    pollData()
 }
 
 

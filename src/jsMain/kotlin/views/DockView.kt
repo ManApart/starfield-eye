@@ -14,8 +14,10 @@ import pageIsVisible
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import org.w3c.dom.HTMLDivElement
+import persistMemory
 
-const val pollRateSeconds = 1
+const val pollRateSeconds = 5
 
 fun dockView() {
     window.history.pushState(null, "null", "#dock")
@@ -90,7 +92,10 @@ fun dockView() {
                         id = "undock-button"
                         +"Undock"
                         title = "Stop polling the game"
-                        onClickFunction = { inMemoryStorage.connectionSettings.pollData = false }
+                        onClickFunction = {
+                            inMemoryStorage.connectionSettings.pollData = false
+                            setStatusDiv("Status: Undocked")
+                        }
                     }
                 }
             }
@@ -105,26 +110,34 @@ fun attemptConnection() {
         port = el<HTMLInputElement>("dock-port").value
         pollData = true
     }
-    if (healthCheck()){
-        el("dock-status").textContent = "Status: Docked"
-        pollData()
-    } else {
-        el("dock-status").textContent = "Status: Docking Unsuccessful. Please check console and follow installation instructions."
+    persistMemory()
+    CoroutineScope(Dispatchers.Default).launch {
+        if (healthCheck()) {
+            setStatusDiv("Status: Docked")
+            pollData()
+        } else {
+            setStatusDiv("Status: Docking Unsuccessful. Please check console and follow installation instructions.")
+        }
     }
 }
 
 fun pollData() {
-    if(pageIsVisible && inMemoryStorage.connectionSettings.pollData){
+    if (pageIsVisible && inMemoryStorage.connectionSettings.pollData) {
         CoroutineScope(Dispatchers.Default).launch {
             window.setTimeout({
                 pollData()
-            }, pollRateSeconds*1000)
+            }, pollRateSeconds * 1000)
             println("Polling data")
             try {
 
-            } catch (e: Exception){
-                el("dock-status").textContent = "Status: Docking Unsuccessful. Please check console and follow installation instructions."
+                setStatusDiv("Status: Docked")
+            } catch (e: Exception) {
+                setStatusDiv("Status: Docking Unsuccessful. Please check console and follow installation instructions.")
             }
         }
     }
+}
+
+private fun setStatusDiv(message: String) {
+    el<HTMLDivElement?>("dock-status")?.textContent = message
 }
