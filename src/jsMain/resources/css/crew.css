@@ -11,13 +11,3 @@
 #sections .section-view-box {
     max-width: 900px;
 }
-
-.accent-line {
-    width: 95%;
-    height: 30px;
-    background-image: linear-gradient(140deg, var(--blue) 10%, var(--red) 10%, var(--red) 13%, var(--orange) 13%, var(--orange) 15%, var(--yellow) 15%, var(--yellow) 16.5%, white 16.5%);
-    text-align: center;
-    color: black;
-    font-family: Architekt;
-    font-weight: bold;
-}
