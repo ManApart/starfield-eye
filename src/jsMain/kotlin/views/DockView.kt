@@ -19,8 +19,6 @@ import org.w3c.dom.HTMLDivElement
 import persistMemory
 import pollHook
 
-const val pollRateSeconds = 10
-
 fun dockView() {
     window.history.pushState(null, "null", "#dock")
     val root = el("root")
@@ -55,19 +53,34 @@ private fun DIV.connectToGame() {
         h2 { +"Dock" }
         div("accent-line") { +"You two will be foot to foot" }
 
-        p { +"Unlock additional functionality by \"docking\" this site to your game. " }
+        p { +"Unlock additional functionality by \"docking\" this site to your game. Data gleaned from the game will persist in the site even after the game is ended, and can be exported/imported into other browsers." }
 
         p { +"Note that docking functionality is beta and under heavy construction. Things that require docking will likely be broken and often not yet be styled. Proceed at your own risk. " }
 
-        input {
+        p {
+            +"Docking requires that you have"
+            a(
+                "https://www.nexusmods.com/starfield/mods/4280",
+                target = "_blank"
+            ) { +" Console API and Web Application " }
+            +"installed and working."
+        }
+        p { +"Once installed, enter your host and port and attempt to dock. The docking status should update after you attempt to dock." }
+
+        input(classes = "connection-input") {
             id = "dock-host"
-            placeholder = "Host to connect to (likely \"localhost\")"
+            placeholder = "Host (default: \"localhost\")"
             value = inMemoryStorage.connectionSettings.host
         }
-        input {
+        input(classes = "connection-input") {
             id = "dock-port"
-            placeholder = "Port to connect to (defaults to \"55555\")"
+            placeholder = "Port (default: \"55555\")"
             value = inMemoryStorage.connectionSettings.port
+        }
+        input(classes = "connection-input") {
+            id = "dock-poll-rate"
+            placeholder = "Poll rate (default: \"10\" seconds)"
+            value = inMemoryStorage.connectionSettings.pollRateInSeconds.toString()
         }
 
         div {
@@ -121,6 +134,7 @@ fun attemptConnection() {
     with(inMemoryStorage.connectionSettings) {
         host = el<HTMLInputElement>("dock-host").value
         port = el<HTMLInputElement>("dock-port").value
+        pollRateInSeconds = el<HTMLInputElement>("dock-poll-rate").value.toIntOrNull() ?: 10
         pollData = true
     }
     persistMemory()
@@ -138,10 +152,10 @@ fun attemptConnection() {
 fun pollData() {
     if (pageIsVisible && inMemoryStorage.connectionSettings.pollData) {
         CoroutineScope(Dispatchers.Default).launch {
-            if (pollRateSeconds != 0) {
+            if (inMemoryStorage.connectionSettings.pollRateInSeconds != 0) {
                 window.setTimeout({
                     pollData()
-                }, pollRateSeconds * 1000)
+                }, inMemoryStorage.connectionSettings.pollRateInSeconds * 1000)
             }
             try {
                 getQuests().also { if (it.isNotEmpty()) inMemoryStorage.quests = it }

@@ -11,6 +11,7 @@ data class GameConnectionSettings(
     var host: String = "localhost",
     var port: String = "55555",
     var pollData: Boolean = false,
+    var pollRateInSeconds: Int = 10,
 )
 
 @Serializable
