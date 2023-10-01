@@ -27,7 +27,6 @@ fun catalogueView() {
     root.append {
         div {
             id = "catalogue-view"
-            backgroundStars()
             div {
                 id = "nav"
                 button {
@@ -61,7 +60,6 @@ fun catalogueView() {
     saveHtmlRefs()
     detailView(galaxy.systems.values.first(), 0, false, true)
     searchPlanets()
-    readyStars()
 }
 
 private fun TagConsumer<HTMLElement>.planetList() {

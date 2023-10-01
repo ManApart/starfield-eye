@@ -21,7 +21,6 @@ fun questView() {
     root.append {
         div {
             id = "quest-view"
-            backgroundStars()
             div {
                 id = "nav"
                 button {
@@ -39,7 +38,6 @@ fun questView() {
     } else {
         displayQuests(inMemoryStorage.quests)
     }
-    readyStars()
     pollHook = ::receivePoll
     pollData()
 }

@@ -27,12 +27,10 @@ fun renderGalaxy() {
 
     root.innerHTML = ""
     root.append {
-        div { backgroundStars() }
         galaxy()
         nav()
     }
     saveHtmlRefs()
-    readyStars()
 }
 
 private fun TagConsumer<HTMLElement>.nav() {

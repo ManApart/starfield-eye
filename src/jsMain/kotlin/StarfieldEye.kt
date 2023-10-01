@@ -21,6 +21,7 @@ fun main() {
             doRouting()
             pollData()
         }
+        genStars()
     }
     window.addEventListener("popstate", { e ->
         doRouting()

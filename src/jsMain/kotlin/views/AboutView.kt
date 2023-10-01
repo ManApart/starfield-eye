@@ -13,7 +13,6 @@ fun aboutView() {
     root.append {
         div {
             id = "about-view"
-            backgroundStars()
             div {
                 id = "nav"
                 button {
@@ -80,5 +79,4 @@ fun aboutView() {
             }
         }
     }
-    readyStars()
 }

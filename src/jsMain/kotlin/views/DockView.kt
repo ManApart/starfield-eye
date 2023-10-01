@@ -26,7 +26,6 @@ fun dockView() {
     root.append {
         div {
             id = "dock-view"
-            backgroundStars()
             div {
                 id = "dock-nav"
                 button {
@@ -43,7 +42,6 @@ fun dockView() {
             }
         }
     }
-    readyStars()
     pollHook = ::receivePoll
 }
 

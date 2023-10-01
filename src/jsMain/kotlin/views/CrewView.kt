@@ -14,7 +14,6 @@ fun crewView() {
     root.append {
         div {
             id = "crew-view"
-            backgroundStars()
             div {
                 id = "nav"
                 button {
@@ -75,5 +74,4 @@ fun crewView() {
 
         }
     }
-    readyStars()
 }

@@ -32,7 +32,6 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
     root.append {
         div {
             id = "system-view"
-            backgroundStars()
             button {
                 +"Back to Galaxy"
                 onClickFunction = {
@@ -53,7 +52,6 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
         else -> "moon"
     }
     setSelected(planetType, planetId)
-    readyStars()
 }
 
 private fun updateUrl(system: StarSystem, planetId: Int) {
