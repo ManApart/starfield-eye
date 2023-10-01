@@ -1,0 +1,27 @@
+.quest h3 {
+    margin-top: 10px;
+}
+
+.quest ul {
+    margin-top: 0px;
+}
+
+#quests {
+    padding-bottom: 20px;
+}
+
+.quest {
+}
+.quest-completed {
+    color: gray;
+}
+.quest-incomplete {
+}
+
+.quest-stage {
+}
+.quest--stage-completed {
+    color: gray;
+}
+.quest-stage-incomplete {
+}

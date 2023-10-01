@@ -18,12 +18,33 @@ body {
     font-family: Grotesk;
 }
 
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+::-webkit-scrollbar-corner {
+  background: var(--background-blue);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
 
 h1, h2, h3 {
     font-family: Architekt;
+}
+
+h2 {
+    margin-top: 10px;
 }
 
 h3 {
@@ -83,6 +104,19 @@ blockquote {
     padding-left: 1%;
 }
 
+details {
+  user-select: none;
+}
+
+summary {
+  display: flex;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
 .hidden {
     display: none;
 }
@@ -104,8 +138,7 @@ blockquote {
 .section-view-box{
     display: block;
     border: 1px solid gray;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     margin-bottom: 20px;
     margin-right: 20px;
     background-color: var(--background-blue);
@@ -114,4 +147,15 @@ blockquote {
     overflow-y: auto;
     width: 90%;
     max-width: 600px;
+}
+
+.accent-line {
+    width: 95%;
+    height: 30px;
+    background-image: linear-gradient(140deg, var(--blue) 10%, var(--red) 10%, var(--red) 13%, var(--orange) 13%, var(--orange) 15%, var(--yellow) 15%, var(--yellow) 16.5%, white 16.5%);
+    text-align: center;
+    color: black;
+    font-family: Architekt;
+    font-weight: bold;
+    padding-top: 5px;
 }
