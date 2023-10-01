@@ -8,6 +8,9 @@ import StarSystem
 import el
 import inMemoryStorage
 import kotlinx.browser.window
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
@@ -19,6 +22,7 @@ import kotlinx.html.js.*
 import kotlinx.html.table
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.events.KeyboardEvent
+import setCourse
 
 private var currentPlanet = 0
 private var currentPlanetType = "star"
@@ -183,6 +187,12 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
 private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet) {
     with(planet) {
         h2 { +name }
+        button {
+            id = "travel-button"
+            +"Travel (Alpha)"
+            title = "Set course (requires docking, must have game map open)"
+            onClickFunction = { attemptTravel(planet.name) }
+        }
         a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
             id = "wiki-link"
             +"View on Wiki"
@@ -299,4 +309,10 @@ private fun selectNextMoon(system: StarSystem, shift: Int = 1) {
 
     setSelected(system, planetId)
     detailView(system, planetId)
+}
+
+private fun attemptTravel(destination: String) {
+    CoroutineScope(Dispatchers.Default).launch {
+        setCourse(destination)
+    }
 }

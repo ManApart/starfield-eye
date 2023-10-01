@@ -131,7 +131,7 @@ private fun DIV.manageData() {
     }
 }
 
-fun attemptConnection() {
+private fun attemptConnection() {
     with(inMemoryStorage.connectionSettings) {
         host = el<HTMLInputElement>("dock-host").value
         port = el<HTMLInputElement>("dock-port").value
