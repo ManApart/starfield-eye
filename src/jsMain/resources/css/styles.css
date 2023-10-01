@@ -26,6 +26,10 @@ h1, h2, h3 {
     font-family: Architekt;
 }
 
+h2 {
+    margin-top: 10px;
+}
+
 h3 {
     margin-top: 50px;
 }

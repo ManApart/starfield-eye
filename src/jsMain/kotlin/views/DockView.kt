@@ -82,7 +82,7 @@ private fun DIV.connectToGame() {
         input(classes = "connection-input") {
             id = "dock-poll-rate"
             placeholder = "Poll rate (default: \"10\" seconds)"
-            title = "How often to check the game for more data. Lower is more responsive but may affect game performance."
+            title = "How often to check the game for more data. Lower is more responsive but may affect game performance. 0 Prevents polling but still checks on page load."
             value = inMemoryStorage.connectionSettings.pollRateInSeconds.toString()
         }
 
@@ -162,6 +162,7 @@ fun pollData() {
             }
             try {
                 getQuests().also { if (it.isNotEmpty()) inMemoryStorage.quests = it }
+                println("Quests: ${inMemoryStorage.quests.size}")
                 persistMemory()
                 pollHook(true)
             } catch (e: Error) {
