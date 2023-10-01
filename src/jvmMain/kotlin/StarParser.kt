@@ -1,6 +1,6 @@
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
-import wikiScraper.WikiData
+import wikiScraper.PlanetWikiData
 import java.io.File
 import java.lang.IllegalArgumentException
 
@@ -17,7 +17,7 @@ fun main() {
     val resourceLookup = parseResourceLookup(File("./raw-data/raw-resources.csv").readLines())
     val wikiDataFile = File("raw-data/wiki-data.json")
     val wikiData = if (wikiDataFile.exists()) {
-        jsonMapper.decodeFromString<Map<String, WikiData>>(wikiDataFile.readText()).toMutableMap()
+        jsonMapper.decodeFromString<Map<String, PlanetWikiData>>(wikiDataFile.readText()).toMutableMap()
     } else mapOf()
 
     val galaxySummary = with(rawStars) {
@@ -54,7 +54,7 @@ private fun parseSystem(
     rawPlanets: List<RawPlanet>,
     rawBiomes: List<RawBiome>,
     systemResources: Map<String, List<ResourceType>>,
-    wikiDataMap: Map<String, WikiData>
+    wikiDataMap: Map<String, PlanetWikiData>
 ): StarSystem {
     val star = with(rawStar) { Star(starId, catalogueId, name, spectral, temp, mass, radius, magnitude) }
     val pos = with(rawStar) { Pos(x, y, z) }
@@ -62,7 +62,7 @@ private fun parseSystem(
         val biomes = rawBiomes.filter { it.planetId == rawPlanet.planetId }.map { it.name }
 
         //TODO - resource matchup
-        val wikiData = wikiDataMap[rawPlanet.name] ?: WikiData()
+        val wikiData = wikiDataMap[rawPlanet.name] ?: PlanetWikiData()
         val resources = determineResources(rawPlanet, systemResources, wikiData)
 
         val flora = wikiData.flora.replace("[[#Flora|]]", "")
@@ -113,7 +113,7 @@ private fun parseSystem(
 private fun determineResources(
     rawPlanet: RawPlanet,
     systemResources: Map<String, List<ResourceType>>,
-    wikiData: WikiData
+    wikiData: PlanetWikiData
 ): List<ResourceType> {
     val wikiResources = wikiData.resources.mapNotNull { rawName ->
         ResourceType.entries.firstOrNull { resource -> resource.matches(rawName) }

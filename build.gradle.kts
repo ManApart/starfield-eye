@@ -1,4 +1,4 @@
-val ktorVersion = "2.2.4"
+val ktor_version = "2.2.4"
 
 plugins {
     kotlin("multiplatform") version "1.9.0"
@@ -48,13 +48,13 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 implementation("org.jsoup:jsoup:1.16.1")
-                implementation("io.ktor:ktor-serialization:$ktorVersion")
-                implementation("io.ktor:ktor-server-content-negotiation:$ktorVersion")
-                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
-                implementation("io.ktor:ktor-server-cors:$ktorVersion")
-                implementation("io.ktor:ktor-server-compression:$ktorVersion")
-                implementation("io.ktor:ktor-server-core-jvm:$ktorVersion")
-                implementation("io.ktor:ktor-server-netty:$ktorVersion")
+                implementation("io.ktor:ktor-serialization:$ktor_version")
+                implementation("io.ktor:ktor-server-content-negotiation:$ktor_version")
+                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
+                implementation("io.ktor:ktor-server-cors:$ktor_version")
+                implementation("io.ktor:ktor-server-compression:$ktor_version")
+                implementation("io.ktor:ktor-server-core-jvm:$ktor_version")
+                implementation("io.ktor:ktor-server-netty:$ktor_version")
             }
         }
         val jvmTest by getting
@@ -62,9 +62,9 @@ kotlin {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-html-js:0.8.0")
                 implementation(npm("localforage", "1.10.0"))
-                implementation("io.ktor:ktor-client-js:$ktorVersion")
-                implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
-                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+                implementation("io.ktor:ktor-client-js:$ktor_version")
+                implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
+                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
             }
         }
         val jsTest by getting

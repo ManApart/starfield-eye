@@ -3,7 +3,7 @@ package wikiScraper
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class WikiData(
+data class PlanetWikiData(
     val name: String = "",
     val type: String = "",
     val temperature: String = "",
@@ -15,3 +15,16 @@ data class WikiData(
     val resources: List<String> = listOf(),
     val traits: List<String> = listOf(),
 )
+
+
+@Serializable
+data class MissionWikiData(
+    val name: String = "",
+    val id: String = "",
+)
+
+enum class MissionType {MAIN, MISC, OTHER}
+
+fun String.toMissionType() : MissionType {
+    return MissionType.OTHER
+}

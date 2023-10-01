@@ -13,9 +13,9 @@ private const val limit = 0
 private const val chunkSize = 100
 
 fun main() {
-    val output = File("raw-data/wiki-data.json")
+    val output = File("raw-data/planet-wiki-data.json")
     val existing = (if (output.exists()) {
-        jsonMapper.decodeFromString<Map<String, WikiData>>(output.readText()).toMutableMap()
+        jsonMapper.decodeFromString<Map<String, PlanetWikiData>>(output.readText()).toMutableMap()
     } else mapOf()).toMutableMap()
 
     getPlanetNames()
@@ -41,7 +41,7 @@ private fun getPlanetNames(): List<String> {
     }
 }
 
-private fun parseWikiData(name: String, pageString: String): WikiData? {
+private fun parseWikiData(name: String, pageString: String): PlanetWikiData? {
     return try {
         attemptParseWikiData(name, pageString)
     } catch (e: Exception) {
@@ -50,7 +50,7 @@ private fun parseWikiData(name: String, pageString: String): WikiData? {
     }
 }
 
-private fun attemptParseWikiData(name: String, pageString: String): WikiData {
+private fun attemptParseWikiData(name: String, pageString: String): PlanetWikiData {
     val data: Map<String, List<String>> = Jsoup.parse(pageString).select(".infobox").select("tr").mapNotNull { row ->
         val title = row.selectFirst("th")?.text()?.trim()
         val cols = row.select("td")
@@ -60,7 +60,7 @@ private fun attemptParseWikiData(name: String, pageString: String): WikiData {
         }
     }.toMap()
     val resources = data["Resources"]?.flatMap { it.replace("  ", " ").split(" ") } ?: listOf()
-    return WikiData(
+    return PlanetWikiData(
         name.replace("_", " "),
         data["Type"]?.first() ?: "",
         data["Temperature"]?.first() ?: "",
