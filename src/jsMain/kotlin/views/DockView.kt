@@ -162,7 +162,6 @@ fun pollData() {
             }
             try {
                 getQuests().also { if (it.isNotEmpty()) inMemoryStorage.quests = it }
-                println("Quests: ${inMemoryStorage.quests.size}")
                 persistMemory()
                 pollHook(true)
             } catch (e: Error) {
