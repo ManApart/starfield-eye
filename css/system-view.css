@@ -56,6 +56,7 @@
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: scroll;
+    min-height: 90%
 }
 
 .system-star-circle {
@@ -169,4 +170,12 @@
 }
 
 .planet-label {
+}
+
+#detail-view #wiki-link {
+    display: inline-block;
+}
+
+#travel-button {
+    display: inline-block;
 }

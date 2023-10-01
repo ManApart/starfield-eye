@@ -1,9 +1,11 @@
-.quest h3 {
-    margin-top: 10px;
+.quest h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .quest ul {
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #quests {

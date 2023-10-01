@@ -19,7 +19,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-corner {
@@ -39,7 +40,7 @@ body {
 }
 
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: Architekt;
 }
 
