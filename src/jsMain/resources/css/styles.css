@@ -18,9 +18,26 @@ body {
     font-family: Grotesk;
 }
 
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+::-webkit-scrollbar-corner {
+  background: var(--background-blue);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
 
 h1, h2, h3 {
     font-family: Architekt;

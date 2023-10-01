@@ -12,7 +12,6 @@ private suspend fun postToConsole(body: String): String {
         client.post("http://$host:$port/console") {
             setBody(body)
         }.bodyAsText()
-            .also { println("Result: $it") }
     }
 }
 
