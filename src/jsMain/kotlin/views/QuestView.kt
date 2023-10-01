@@ -78,7 +78,7 @@ fun displayQuests(quests: List<Quest>) {
             h2 { +"Quests" }
             div("accent-line") { +"Time dances its years forward" }
         }
-        val groupedQuests = quests.groupBy { it.completed }
+        val groupedQuests = quests.groupBy { it.latestState == QuestStageState.COMPLETED }
         quests(groupedQuests[false] ?: listOf())
         quests(groupedQuests[true] ?: listOf())
     }
@@ -86,15 +86,16 @@ fun displayQuests(quests: List<Quest>) {
 
 private fun TagConsumer<HTMLElement>.quests(quests: List<Quest>) {
     quests.forEach { quest ->
+        val completed = quest.latestState == QuestStageState.COMPLETED
         div("section-view-box") {
-            val completedClass = if (quest.completed) "quest-completed" else "quest-incomplete"
+            val completedClass = if (completed) "quest-completed" else "quest-incomplete"
             div("quest $completedClass") {
                 details {
-                    open = !quest.completed
+                    open = !completed
                     summary { h3 { +quest.name } }
                     ul {
-                        quest.stages.values.sortedByDescending { it.id }.forEach { stage ->
-                            val stageCompletedClass = if (stage.completed) "quest-stage-completed" else "quest-stage-incomplete"
+                        quest.stages.sortedByDescending { it.id }.forEach { stage ->
+                            val stageCompletedClass = if (stage.state == QuestStageState.COMPLETED) "quest-stage-completed" else "quest-stage-incomplete"
                             li("quest-stage $stageCompletedClass") {
                                 title = "${stage.id}"
                                 +stage.name

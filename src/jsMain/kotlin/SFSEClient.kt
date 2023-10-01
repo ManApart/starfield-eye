@@ -52,7 +52,7 @@ suspend fun healthCheck(): Boolean {
 suspend fun getQuests(): List<Quest> {
     val lines = try {
         postToConsoleJs("sqo")?.split("\n")?.drop(2) ?: listOf()
-    } catch (e: Error){
+    } catch (e: Error) {
         listOf()
     }
     return lines
@@ -65,7 +65,7 @@ suspend fun getQuests(): List<Quest> {
             lines.subList(it.first(), end)
         }.toList()
         .map { parseQuest(it) }
-        .filter { it.completed || it.displayed }
+        .filter { it.latestState == QuestStageState.COMPLETED || it.latestState == QuestStageState.DISPLAYED }
         .toList()
 }
 
@@ -76,15 +76,13 @@ private fun parseQuest(lines: List<String>): Quest {
         .map { it.split(" ").map { word -> word.trim() } }
         .filter { it.first().toIntOrNull() != null }
         .map { words ->
-            QuestStage(
-                words.first().toInt(),
-                words.subList(1, words.size - 1).joinToString(" "),
-                words.last() == "COMPLETED",
-                words.last() == "DISPLAYED"
-            )
-        }.associateBy { it.id }
+            val id = words.first().toInt()
+            val name = words.subList(1, words.size - 1).joinToString(" ")
+            val state = QuestStageState.entries.firstOrNull { it.name == words.last() } ?: QuestStageState.OTHER
+            QuestStage(id, name, state)
+        }.toList()
 
-    val cleanTitle = title.ifBlank { stages.values.firstOrNull()?.name ?: "" }
+    val cleanTitle = title.ifBlank { stages.firstOrNull()?.name ?: "" }
 
     return Quest(cleanTitle, stages)
 }

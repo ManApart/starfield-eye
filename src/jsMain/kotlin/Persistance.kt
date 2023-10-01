@@ -30,10 +30,9 @@ var starDivs: Map<String, HTMLElement> = mapOf()
 var planetDivs: Map<String, HTMLElement> = mapOf()
 
 
-
-fun loadAll(): Promise<*>{
+fun loadAll(): Promise<*> {
     return loadMemory().then {
-        if (galaxy.systems.isEmpty()){
+        if (galaxy.systems.isEmpty()) {
             return@then loadGalaxy()
         } else resolve("Loaded")
     }
@@ -72,7 +71,13 @@ fun persistMemory() {
 fun loadMemory(): Promise<*> {
     return LocalForage.getItem("memory").then { persisted ->
         if (persisted != null && persisted != undefined) {
-            inMemoryStorage = jsonMapper.decodeFromString(persisted as String)
+            try {
+                println("Read Memory")
+                inMemoryStorage = jsonMapper.decodeFromString(persisted as String)
+                println("Read Memory Done")
+            } catch (e: Exception) {
+                println("Failed to parse memory. Try deleting user data and rebuilding it.")
+            }
         }
     }
 }
@@ -92,7 +97,7 @@ fun importPlayerInfo() {
         type = "file"
         accept = "*.json"
         addEventListener("change", { e: Event ->
-            if (files != null){
+            if (files != null) {
                 val file = files!![0]!!
                 val reader = FileReader()
                 reader.onloadend = {

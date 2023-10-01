@@ -17,19 +17,17 @@ data class GameConnectionSettings(
 @Serializable
 data class Quest(
     val name: String,
-    val stages: Map<Int, QuestStage>,
+    val stages: List<QuestStage>,
 ) {
     @Transient
-    val completed = stages.entries.maxBy { it.key }.value.completed
-
-    @Transient
-    val displayed = stages.entries.maxBy { it.key }.value.dormant
+    val latestState = stages.maxBy { it.id }.state
 }
+
+enum class QuestStageState{COMPLETED, DISPLAYED, DORMANT, OTHER}
 
 @Serializable
 data class QuestStage(
     val id: Int,
     val name: String,
-    val completed: Boolean,
-    val dormant: Boolean,
+    val state: QuestStageState
 )

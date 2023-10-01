@@ -3,4 +3,5 @@ enum class Label {
     EXPLORE,
     VISITED,
     SURVEYED,
+    QUEST,
 }
