@@ -71,15 +71,18 @@ private fun DIV.connectToGame() {
             id = "dock-host"
             placeholder = "Host (default: \"localhost\")"
             value = inMemoryStorage.connectionSettings.host
+            title = "Host to connect to. Should match the settings in your Console Api Ini. Almost always either localhost or 127.0.0.1"
         }
         input(classes = "connection-input") {
             id = "dock-port"
             placeholder = "Port (default: \"55555\")"
+            title = "Port to connect to. Should match the settings in your Console Api Ini"
             value = inMemoryStorage.connectionSettings.port
         }
         input(classes = "connection-input") {
             id = "dock-poll-rate"
             placeholder = "Poll rate (default: \"10\" seconds)"
+            title = "How often to check the game for more data. Lower is more responsive but may affect game performance."
             value = inMemoryStorage.connectionSettings.pollRateInSeconds.toString()
         }
 
@@ -144,7 +147,7 @@ fun attemptConnection() {
             setStatusDiv("Status: Docked")
             pollData()
         } else {
-            setStatusDiv("Status: Docking Unsuccessful. Please check console and follow installation instructions.")
+            setStatusDiv("Status: Docking Aborted. Please check console and follow installation instructions.")
         }
     }
 }
@@ -172,7 +175,7 @@ private fun receivePoll(success: Boolean) {
     if (success) {
         setStatusDiv("Status: Docked")
     } else {
-        setStatusDiv("Status: Docking Unsuccessful. Please check console and follow installation instructions.")
+        setStatusDiv("Status: Docking Aborted. Please check console and follow installation instructions.")
     }
 }
 

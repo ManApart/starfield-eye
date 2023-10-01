@@ -48,7 +48,7 @@ private fun TagConsumer<HTMLElement>.labelInfo(info: PlanetInfo, planet: Planet)
                 span("planet-label") {
                     +label.name
                     button(classes = "remove-info-button") {
-                        +"x"
+                        +"Del"
                         onClickFunction = {
                             info.labels.remove(label)
                             savePlanetInfo(planet, info)
@@ -70,7 +70,7 @@ private fun TagConsumer<HTMLElement>.labelInfo(info: PlanetInfo, planet: Planet)
                     }
                 }
                 button(classes = "add-info-button") {
-                    +"+"
+                    +"Add"
                     onClickFunction = {
                         val select = el<HTMLSelectElement>("label-select")
                         val selected = newLabels[select.selectedIndex]
@@ -93,7 +93,7 @@ private fun TagConsumer<HTMLElement>.outpostInfo(info: PlanetInfo, planet: Plane
                 span("planet-outpost") {
                     +outpost
                     button(classes = "remove-info-button") {
-                        +"x"
+                        +"Del"
                         onClickFunction = {
                             info.outPosts.remove(outpost)
                             savePlanetInfo(planet, info)
@@ -115,7 +115,7 @@ private fun TagConsumer<HTMLElement>.outpostInfo(info: PlanetInfo, planet: Plane
                 }
             }
             button(classes = "add-info-button") {
-                +"+"
+                +"Add"
                 onClickFunction = {
                     val outpost = el<HTMLInputElement>("add-outpost-input").value
                     info.outPosts.add(outpost)

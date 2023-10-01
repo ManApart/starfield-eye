@@ -117,8 +117,7 @@ summary::-webkit-details-marker {
 .section-view-box{
     display: block;
     border: 1px solid gray;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     margin-bottom: 20px;
     margin-right: 20px;
     background-color: var(--background-blue);

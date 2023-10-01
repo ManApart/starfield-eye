@@ -53,6 +53,10 @@ fun crewView() {
                         +"Inorganic Resource Data from "
                         a("https://starfieldwiki.net/wiki/Starfield:Resources", target = "_blank") { +"Starfield Wiki" }
                     }
+                    li {
+                        +"Optional Live Game Connection (Docking) by "
+                        a("https://www.nexusmods.com/starfield/mods/4280", target = "_blank") { +"stonegdi" }
+                    }
                     li { +"Quotes from Vladimir Sall, who runs The Eye in Starfield. The Eye is used to gaze at the heavens and \"see what's out there\"" }
                 }
                 }
