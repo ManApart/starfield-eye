@@ -91,8 +91,8 @@ private fun TagConsumer<HTMLElement>.quests(quests: List<Quest>) {
             val completedClass = if (completed) "quest-completed" else "quest-incomplete"
             div("quest $completedClass") {
                 details {
-                    open = !completed
-                    summary { h3 { +quest.name } }
+                    open = false
+                    summary { h4 { +quest.name } }
                     ul {
                         quest.stages.sortedByDescending { it.id }.forEach { stage ->
                             val stageCompletedClass = if (stage.state == QuestStageState.COMPLETED) "quest-stage-completed" else "quest-stage-incomplete"
