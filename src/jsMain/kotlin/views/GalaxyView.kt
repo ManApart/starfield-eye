@@ -35,7 +35,7 @@ fun renderGalaxy() {
 
 private fun TagConsumer<HTMLElement>.nav() {
     div {
-        id = "nav"
+        id = "galaxy-nav"
 
         button {
             id = "about-button"

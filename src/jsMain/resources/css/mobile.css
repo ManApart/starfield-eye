@@ -29,4 +29,8 @@
     #planet-list{
         max-height: 500px;
     }
+
+    .accent-line {
+        font-size: smaller;
+    }
 }
