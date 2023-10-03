@@ -1,3 +1,6 @@
+package docking
+
+import inMemoryStorage
 import io.ktor.client.*
 import io.ktor.client.fetch.*
 import io.ktor.client.request.*
@@ -9,7 +12,7 @@ private val client = HttpClient()
 
 suspend fun postToConsole(body: String): String {
     return with(inMemoryStorage.connectionSettings) {
-        client.post("http://$host:$port/console") {
+        docking.client.post("http://$host:$port/console") {
             setBody(body)
         }.bodyAsText()
     }

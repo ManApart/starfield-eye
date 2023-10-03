@@ -2,8 +2,8 @@ package views
 
 import el
 import exportPlayerInfo
-import getQuests
-import healthCheck
+import docking.getQuests
+import docking.healthCheck
 import importPlayerInfo
 import inMemoryStorage
 import kotlinx.browser.window

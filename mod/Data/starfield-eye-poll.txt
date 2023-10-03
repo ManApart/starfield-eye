@@ -1,0 +1,4 @@
+;Get quests
+sqo
+
+;Get Misc Stats

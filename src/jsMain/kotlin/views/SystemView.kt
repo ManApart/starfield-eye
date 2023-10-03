@@ -22,7 +22,7 @@ import kotlinx.html.js.*
 import kotlinx.html.table
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.events.KeyboardEvent
-import setCourse
+import docking.setCourse
 
 private var currentPlanet = 0
 private var currentPlanetType = "star"
