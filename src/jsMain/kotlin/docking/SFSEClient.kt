@@ -4,32 +4,18 @@ import PollResponse
 import Quest
 
 suspend fun healthCheck(): Boolean {
-    val versionLine = try {
-        val raw = postToConsole("GetSFSEVersion")
-        raw.split("\n").last { it.isNotBlank() }
-    } catch (e: Error) {
-        println(e)
-        println(e.stackTraceToString())
-        null
-    }
+    val versionLine = postToConsole("GetSFSEVersion")?.split("\n")?.last { it.isNotBlank() }
     println(versionLine ?: "Disconnected")
     return versionLine?.contains("SFSE version") ?: false
 }
 
 suspend fun getQuests(): List<Quest> {
-    val lines = try {
-        postToConsoleJs("sqo")?.split("\n")?.drop(2) ?: listOf()
-    } catch (e: Error) {
-        listOf()
-    }
+    val lines = postToConsoleJs("sqo")
     return parseQuests(lines)
 }
+
 suspend fun poll(): PollResponse {
-    val lines = try {
-        postToConsoleJs("bat starfield-eye-poll")?.split("\n")?.drop(2) ?: listOf()
-    } catch (e: Error) {
-        listOf()
-    }
+    val lines = postToConsoleJs("bat starfield-eye-poll")
     return parsePollResponse(lines)
 }
 

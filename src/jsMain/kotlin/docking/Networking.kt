@@ -10,19 +10,29 @@ import kotlin.js.Promise
 
 private val client = HttpClient()
 
-suspend fun postToConsole(body: String): String {
-    return with(inMemoryStorage.connectionSettings) {
-        docking.client.post("http://$host:$port/console") {
-            setBody(body)
-        }.bodyAsText()
+suspend fun postToConsole(body: String): String? {
+    return try {
+        with(inMemoryStorage.connectionSettings) {
+            docking.client.post("http://$host:$port/console") {
+                setBody(body)
+            }.bodyAsText()
+        }
+    }catch (e: Error){
+        println(e)
+        println(e.stackTraceToString())
+        null
     }
 }
 
-suspend fun postToConsoleJs(body: String): String? {
-    with(inMemoryStorage.connectionSettings) {
-        val options = js("""{method: "POST", body:body}""")
-        val raw = promise { fetch("http://$host:$port/console", options) }
-        return raw?.let { promise { raw.text() } }
+suspend fun postToConsoleJs(body: String): List<String> {
+    return try {
+        with(inMemoryStorage.connectionSettings) {
+            val options = js("""{method: "POST", body:body}""")
+            val raw = promise { fetch("http://$host:$port/console", options) }
+            raw?.let { promise { raw.text() } }?.split("\n")?.drop(2) ?: listOf()
+        }
+    } catch (e: Error) {
+        listOf()
     }
 }
 

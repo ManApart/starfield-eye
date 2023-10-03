@@ -54,6 +54,7 @@ private fun mockResponse(command: String): String {
             |Command: bat starfield-eye-poll
             |> ;Get quests
             |> sqo
+            |$questData
             |> ;Get Misc Stats
             |> ;General
             |> getpcmiscstat "locations discovered"
@@ -65,56 +66,60 @@ private fun mockResponse(command: String): String {
             |
         """.trimMargin()
         "sqo" -> """
-sqo
-Command: sqo
-== One Small Step ==
-( Instance: 1 )
-5 Follow Supervisor Lin COMPLETED
-10 Get the Cutter COMPLETED
-20 Collect Mineral Deposits COMPLETED
-25 Return to Supervisor Lin COMPLETED
-30 Follow Supervisor Lin COMPLETED
-40 Explore the Cavern COMPLETED
-42 Break Up the Deposits COMPLETED
-43 Take the Strange Object COMPLETED
-45 Talk to Heller and Lin COMPLETED
-50 Follow Lin COMPLETED
-60 Equip a Helmet COMPLETED
- 
-== Companion - Barrett ==
-( Instance: 1 )
-900 Talk with Barrett DISPLAYED
- 
-== One Small Step ==
-( Instance: 1 )
-65 Meet with the Client COMPLETED
-70 Hold off the Pirates COMPLETED
-75 (Optional) Grab a Weapon COMPLETED
-80 Talk to Barrett COMPLETED
-85 Take the Watch COMPLETED
-90 Board the Ship COMPLETED
-100 Take off from Vectera COMPLETED
-101 Learn to Fly COMPLETED
-102 (Optional) Power Up All Systems to Skip Tutorial COMPLETED
-104 Allocate Power to Thrusters COMPLETED
-103 Allocate Power to Engines COMPLETED
-105 Allocate Power to Shields COMPLETED
-106 Allocate Power to a Weapon COMPLETED
-110 Deal with the Crimson Fleet COMPLETED
-115 Loot a Ship COMPLETED
-120 Travel to Kreet COMPLETED
-117 Repair the Hull COMPLETED
-125 Land at the Kreet Research Base COMPLETED
- 
-== Handles various systems for Followers ==
-( Instance: 1 )
-100 Retrieve waiting followers DORMANT
- 
-==  ==
-( Instance: 4 )
-100 Evacuate the Survivalist COMPLETED
-
-        """.trimIndent()
+        |sqo
+        |Command: sqo
+        |$questData
+        """.trimMargin()
         else -> command
     }
 }
+
+private val questData = """
+    == One Small Step ==
+    ( Instance: 1 )
+    5 Follow Supervisor Lin COMPLETED
+    10 Get the Cutter COMPLETED
+    20 Collect Mineral Deposits COMPLETED
+    25 Return to Supervisor Lin COMPLETED
+    30 Follow Supervisor Lin COMPLETED
+    40 Explore the Cavern COMPLETED
+    42 Break Up the Deposits COMPLETED
+    43 Take the Strange Object COMPLETED
+    45 Talk to Heller and Lin COMPLETED
+    50 Follow Lin COMPLETED
+    60 Equip a Helmet COMPLETED
+     
+    == Companion - Barrett ==
+    ( Instance: 1 )
+    900 Talk with Barrett DISPLAYED
+     
+    == One Small Step ==
+    ( Instance: 1 )
+    65 Meet with the Client COMPLETED
+    70 Hold off the Pirates COMPLETED
+    75 (Optional) Grab a Weapon COMPLETED
+    80 Talk to Barrett COMPLETED
+    85 Take the Watch COMPLETED
+    90 Board the Ship COMPLETED
+    100 Take off from Vectera COMPLETED
+    101 Learn to Fly COMPLETED
+    102 (Optional) Power Up All Systems to Skip Tutorial COMPLETED
+    104 Allocate Power to Thrusters COMPLETED
+    103 Allocate Power to Engines COMPLETED
+    105 Allocate Power to Shields COMPLETED
+    106 Allocate Power to a Weapon COMPLETED
+    110 Deal with the Crimson Fleet COMPLETED
+    115 Loot a Ship COMPLETED
+    120 Travel to Kreet COMPLETED
+    117 Repair the Hull COMPLETED
+    125 Land at the Kreet Research Base COMPLETED
+     
+    == Handles various systems for Followers ==
+    ( Instance: 1 )
+    100 Retrieve waiting followers DORMANT
+     
+    ==  ==
+    ( Instance: 4 )
+    100 Evacuate the Survivalist COMPLETED
+
+""".trimIndent()
