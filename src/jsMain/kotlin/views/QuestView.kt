@@ -1,14 +1,13 @@
 package views
 
 import Quest
+import QuestStageState
 import el
 import inMemoryStorage
-import kotlinx.atomicfu.TraceBase.None.append
 import kotlinx.browser.window
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
-import org.w3c.dom.HTMLDivElement
 import org.w3c.dom.HTMLElement
 import pollHook
 
@@ -42,7 +41,7 @@ fun questView() {
     pollData()
 }
 
-fun needsDocking() {
+private fun needsDocking() {
     val root = el<HTMLElement?>("sections")
     root?.innerHTML = ""
     root?.append {
@@ -69,7 +68,7 @@ private fun receivePoll(success: Boolean) {
     }
 }
 
-fun displayQuests(quests: List<Quest>) {
+private fun displayQuests(quests: List<Quest>) {
     val root = el<HTMLElement?>("sections")
     root?.innerHTML = ""
     root?.append {

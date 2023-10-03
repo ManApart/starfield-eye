@@ -1,0 +1,13 @@
+#sections .misc-stat-box {
+    max-width: 440px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.stat-table {
+    width: 100%
+}
+
+.stat-table td:last-child{
+    text-align: right;
+}

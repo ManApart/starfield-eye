@@ -1,24 +1,16 @@
 package views
 
 import el
-import exportPlayerInfo
 import galaxy
-import getPlanets
-import importPlayerInfo
-import inMemoryStorage
-import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.dom.append
-import kotlinx.html.js.html
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.js.onKeyUpFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
-import planetDivs
-import searchPlanets
 import starDivs
 
 fun renderGalaxy() {
@@ -64,6 +56,12 @@ private fun TagConsumer<HTMLElement>.nav() {
             +"Quests"
             title = "View Quests"
             onClickFunction = { questView() }
+        }
+        button {
+            id = "misc-stat-button"
+            +"Stats"
+            title = "View Misc Stats"
+            onClickFunction = { miscStatView() }
         }
         input(classes = "search") {
             id = "galaxy-search"

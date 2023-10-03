@@ -12,6 +12,7 @@
     #sections {
         margin: 5%;
         margin-top: 1%;
+        max-width: unset;
     }
 
     .section-wrapper{

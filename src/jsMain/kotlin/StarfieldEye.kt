@@ -75,6 +75,9 @@ fun doRouting(windowHash: String) {
         windowHash.startsWith("#quests") -> {
             questView()
         }
+        windowHash.startsWith("#misc-stats") -> {
+            miscStatView()
+        }
         windowHash.startsWith("#system/") -> {
             val parts = windowHash.replace("#system/", "").split("/")
             if (parts.size == 2) {

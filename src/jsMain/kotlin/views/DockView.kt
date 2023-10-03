@@ -163,7 +163,6 @@ fun pollData() {
             }
             try {
                 val data = poll()
-                println("Polled ${data.quests.size} quests")
                 if (data.quests.isNotEmpty()) inMemoryStorage.quests = data.quests
                 data.stats?.let { inMemoryStorage.stats = it }
                 persistMemory()
