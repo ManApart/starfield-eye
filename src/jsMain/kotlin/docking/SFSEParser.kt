@@ -1,21 +1,30 @@
 package docking
 
+import GeneralStats
+import MiscStats
+import PollResponse
 import Quest
 import QuestStage
 import QuestStageState
+import jsonMapper
+import kotlinx.serialization.encodeToString
 
-fun parseQuests(lines: List<String>): List<Quest>{
-    return lines.asSequence()
-        .mapIndexedNotNull { i, line ->
-            if (line.startsWith("==")) i else null
-        }
-        .windowed(2, 1, true) {
-            val end = if (it.size > 1) it.last() else lines.size
-            lines.subList(it.first(), end)
-        }.toList()
+fun parseQuests(lines: List<String>): List<Quest> {
+    return lines.chunkedBy("==")
         .map { parseQuest(it) }
         .filter { it.latestState == QuestStageState.COMPLETED || it.latestState == QuestStageState.DISPLAYED }
         .toList()
+}
+
+private fun List<String>.chunkedBy(delimiter: String): List<List<String>> {
+    return asSequence()
+        .mapIndexedNotNull { i, line ->
+            if (line.startsWith(delimiter)) i else null
+        }
+        .windowed(2, 1, true) {
+            val end = if (it.size > 1) it.last() else this.size
+            this.subList(it.first(), end)
+        }.toList()
 }
 
 private fun parseQuest(lines: List<String>): Quest {
@@ -36,3 +45,24 @@ private fun parseQuest(lines: List<String>): Quest {
     return Quest(cleanTitle, stages)
 }
 
+fun parsePollResponse(lines: List<String>): PollResponse {
+    println("Parsing strings ")
+    val commands = lines.chunkedBy(">")
+        .filter { it.size != 1 }
+        .associate { it.first().replace(">",  "").trim() to it.drop(1) }
+        .let { RawPollResponse(it) }
+
+    //parse through map doing sections by sections
+    println(jsonMapper.encodeToString(commands))
+
+    return PollResponse(
+        parseQuests(commands.getQuests()),
+        MiscStats(
+            GeneralStats(
+                commands.getMiscStatInt("locations discovered"),
+                commands.getMiscStatInt("locations explored"),
+                commands.getMiscStatInt("days passed"),
+            )
+        )
+    )
+}

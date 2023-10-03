@@ -11,7 +11,12 @@ data class GameConnectionSettings(
     var host: String = "localhost",
     var port: String = "55555",
     var pollData: Boolean = false,
-    var pollRateInSeconds: Int = 10,
+    var pollRateInSeconds: Int = 60 * 5,
+)
+
+data class PollResponse(
+    val quests: List<Quest>,
+    val stats: MiscStats,
 )
 
 @Serializable
@@ -23,7 +28,7 @@ data class Quest(
     val latestState = stages.maxBy { it.id }.state
 }
 
-enum class QuestStageState{COMPLETED, DISPLAYED, DORMANT, OTHER}
+enum class QuestStageState { COMPLETED, DISPLAYED, DORMANT, OTHER }
 
 @Serializable
 data class QuestStage(

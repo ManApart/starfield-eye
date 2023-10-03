@@ -4,6 +4,7 @@ import el
 import exportPlayerInfo
 import docking.getQuests
 import docking.healthCheck
+import docking.poll
 import importPlayerInfo
 import inMemoryStorage
 import kotlinx.browser.window
@@ -159,7 +160,8 @@ fun pollData() {
                 }, inMemoryStorage.connectionSettings.pollRateInSeconds * 1000)
             }
             try {
-                getQuests().also { if (it.isNotEmpty()) inMemoryStorage.quests = it }
+                val data = poll()
+                if (data.quests.isNotEmpty()) inMemoryStorage.quests = data.quests
                 persistMemory()
                 pollHook(true)
             } catch (e: Error) {

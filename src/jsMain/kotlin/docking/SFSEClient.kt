@@ -1,5 +1,6 @@
 package docking
 
+import PollResponse
 import Quest
 
 suspend fun healthCheck(): Boolean {
@@ -17,11 +18,19 @@ suspend fun healthCheck(): Boolean {
 
 suspend fun getQuests(): List<Quest> {
     val lines = try {
-        postToConsoleJs("bat starfield-eye-poll")?.split("\n")?.drop(2) ?: listOf()
+        postToConsoleJs("sqo")?.split("\n")?.drop(2) ?: listOf()
     } catch (e: Error) {
         listOf()
     }
     return parseQuests(lines)
+}
+suspend fun poll(): PollResponse {
+    val lines = try {
+        postToConsoleJs("bat starfield-eye-poll")?.split("\n")?.drop(2) ?: listOf()
+    } catch (e: Error) {
+        listOf()
+    }
+    return parsePollResponse(lines)
 }
 
 

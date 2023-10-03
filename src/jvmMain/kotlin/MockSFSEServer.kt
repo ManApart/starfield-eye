@@ -48,6 +48,21 @@ private fun mockResponse(command: String): String {
             |Player Home Ship >> 0.00
             |
         """.trimMargin()
+        "bat starfield-eye-poll" -> """
+            |bat starfield-eye-poll
+            |Command: bat starfield-eye-poll
+            |> ;Get quests
+            |> sqo
+            |> ;Get Misc Stats
+            |> ;General
+            |> getpcmiscstat "locations discovered"
+            |Player misc stat value 0.00
+            |> getpcmiscstat "locations explored"
+            |Player misc stat value 0.00
+            |> getpcmiscstat "days passed"
+            |Player misc stat value 0.00
+            |
+        """.trimMargin()
         "sqo" -> """
 sqo
 Command: sqo

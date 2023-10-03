@@ -1,4 +1,107 @@
+;For use with https://manapart.github.io/starfield-eye/#galaxy
+;Commented out stat gets are ones that I don't have the right name for yet
+
 ;Get quests
 sqo
 
 ;Get Misc Stats
+;General
+getpcmiscstat "locations discovered"
+getpcmiscstat "locations explored"
+getpcmiscstat "days passed"
+getpcmiscstat "hours slept"
+;getpcmiscstat "hours waited"
+getpcmiscstat "credits found"
+getpcmiscstat "most credits carried"
+;getpcmiscstat "containers looted"
+getpcmiscstat "magazines found"
+getpcmiscstat "persuasion successes"
+getpcmiscstat "afflictions suffered"
+getpcmiscstat "food eaten"
+getpcmiscstat "data slates read"
+getpcmiscstat "skill challenges completed"
+getpcmiscstat "snow globes collected"
+
+;Exploration
+getpcmiscstat "systems visited"
+getpcmiscstat "planets scanned"
+getpcmiscstat "planets fully surveyed"
+getpcmiscstat "planets landed on"
+getpcmiscstat "flora fully scanned"
+getpcmiscstat "fauna fully scanned"
+getpcmiscstat "stations docked with"
+getpcmiscstat "ships docked with"
+getpcmiscstat "unique creatures scanned"
+getpcmiscstat "temples found"
+
+;Ship
+getpcmiscstat "grav jumps"
+getpcmiscstat "farthest grav jump"
+getpcmiscstat "ships registered"
+getpcmiscstat "max ships owned"
+getpcmiscstat "most expensive ship owned"
+getpcmiscstat "largest ship owned"
+getpcmiscstat "largest crew size"
+getpcmiscstat "ships customized"
+getpcmiscstat "ship builder credits spent"
+getpcmiscstat "ships sold"
+getpcmiscstat "ships painted"
+getpcmiscstat "ship modules built"
+
+;Mission
+getpcmiscstat "quests completed"
+getpcmiscstat "activities completed"
+getpcmiscstat "main quests completed"
+getpcmiscstat "crimson fleet collective quests completed"
+getpcmiscstat "freestar collective quests completed"
+getpcmiscstat "ryujin industries quests completed"
+getpcmiscstat "united colonies quests completed"
+getpcmiscstat "side quests completed"
+
+;Combat
+getpcmiscstat "people killed"
+getpcmiscstat "creatures killed"
+getpcmiscstat "robots killed"
+getpcmiscstat "turrets killed"
+getpcmiscstat "elite enemies killed"
+getpcmiscstat "critical strikes"
+getpcmiscstat "sneak attacks"
+getpcmiscstat "boost packs exploded"
+getpcmiscstat "zero g kills"
+getpcmiscstat "powers used"
+getpcmiscstat "scoped kills"
+getpcmiscstat "max damage shot"
+getpcmiscstat "melee kills"
+getpcmiscstat "laser kills"
+getpcmiscstat "ballistic kills"
+getpcmiscstat "head shots"
+getpcmiscstat "explosive kills"
+getpcmiscstat "starborn killed"
+getpcmiscstat "ships destroyed"
+getpcmiscstat "favorite weapon"
+getpcmiscstat "favorite power"
+
+;Crafting
+getpcmiscstat "weapon mods crafted"
+getpcmiscstat "armor mods crafted"
+getpcmiscstat "organic resources gathered"
+getpcmiscstat "inorganic resources gathered"
+getpcmiscstat "chems crafted"
+getpcmiscstat "food cooked"
+getpcmiscstat "outposts built"
+getpcmiscstat "objects built"
+getpcmiscstat "cargo links established"
+
+;Crime
+getpcmiscstat "locks picked"
+getpcmiscstat "pockets picked"
+getpcmiscstat "items stolen"
+getpcmiscstat "assaults"
+getpcmiscstat "murders"
+getpcmiscstat "trespasses"
+getpcmiscstat "times arrested"
+getpcmiscstat "most contraband carried"
+getpcmiscstat "times caught with contraband"
+getpcmiscstat "acts of piracy"
+getpcmiscstat "total lifetime bounty"
+getpcmiscstat "largest bounty"
