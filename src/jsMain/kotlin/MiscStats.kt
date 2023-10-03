@@ -91,8 +91,8 @@ data class CombatStats(
     val explosiveKills: Int = 0,
     val starbornKilled: Int = 0,
     val shipsDestroyed: Int = 0,
-    val favoriteWeapon: Int = 0,
-    val favoritePower: Int = 0,
+    val favoriteWeapon: String = "",
+    val favoritePower: String = "",
 )
 @Serializable
 data class CraftingStats(
