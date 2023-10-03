@@ -1,3 +1,4 @@
+
 import LocalForage.config
 import kotlinx.browser.document
 import kotlinx.serialization.Serializable
@@ -13,7 +14,6 @@ import org.w3c.xhr.JSON
 import org.w3c.xhr.XMLHttpRequest
 import org.w3c.xhr.XMLHttpRequestResponseType
 import kotlin.js.Promise
-import kotlin.js.Promise.Companion.resolve
 
 val jsonMapper = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
 
@@ -33,9 +33,11 @@ var planetDivs: Map<String, HTMLElement> = mapOf()
 
 fun loadAll(): Promise<*> {
     return loadMemory().then {
-        if (galaxy.systems.isEmpty()) {
-            return@then loadGalaxy()
-        } else resolve("Loaded")
+        loadGalaxy().then {
+            loadMissionReference().then {
+                return@then
+            }
+        }
     }
 }
 
@@ -43,6 +45,12 @@ fun loadGalaxy(): Promise<*> {
     return loadJson("data.json").then { json ->
         galaxy = jsonMapper.decodeFromString(json)
         println("Read ${galaxy.systems.keys.size} systems from json")
+    }
+}
+fun loadMissionReference(): Promise<*> {
+    return loadJson("mission-wiki-data.json").then { json ->
+        missionReference = jsonMapper.decodeFromString<List<MissionWikiData>>(json).associateBy { it.name }
+        println("Read ${missionReference.keys.size} missions from json")
     }
 }
 
@@ -73,9 +81,7 @@ fun loadMemory(): Promise<*> {
     return LocalForage.getItem("memory").then { persisted ->
         if (persisted != null && persisted != undefined) {
             try {
-                println("Read Memory")
                 inMemoryStorage = jsonMapper.decodeFromString(persisted as String)
-                println("Read Memory Done")
             } catch (e: Exception) {
                 println("Failed to parse memory. Try deleting user data and rebuilding it.")
             }

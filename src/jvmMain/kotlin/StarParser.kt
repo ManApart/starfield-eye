@@ -1,10 +1,12 @@
+
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
-import wikiScraper.PlanetWikiData
 import java.io.File
-import java.lang.IllegalArgumentException
 
-val jsonMapper = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
+val jsonMapper = kotlinx.serialization.json.Json {
+    ignoreUnknownKeys = true
+    prettyPrint = true
+}
 
 private val failedPlanetResourceLookups = mutableSetOf<String>()
 private val failedSystemResourceLookups = mutableSetOf<String>()

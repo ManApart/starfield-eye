@@ -1,5 +1,6 @@
 package wikiScraper
 
+import PlanetWikiData
 import jsonMapper
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString

@@ -9,6 +9,7 @@ import views.*
 var galaxy: Galaxy = Galaxy()
 var pageIsVisible = true
 var pollHook: (Boolean) -> Unit = {}
+var missionReference: Map<String, MissionWikiData> = mapOf()
 
 fun getPlanets(): List<Planet> {
     return galaxy.systems.values.flatMap { it.planets.values }

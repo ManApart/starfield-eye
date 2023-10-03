@@ -1,0 +1,885 @@
+[
+  {
+    "name": "--( LD Master Quest )--",
+    "id": "LDMasterQuest"
+  },
+  {
+    "name": "3 NPC + Scene",
+    "id": "OE_KT_Trait_Wanted_BountyHunters"
+  },
+  {
+    "name": "A Break at Dawn",
+    "id": "FFNewAtlantis04",
+    "type": "NEW_ATLANTIS"
+  },
+  {
+    "name": "A Light in the Darkness",
+    "id": "RAD02 (29EF60)",
+    "type": "RADIANT"
+  },
+  {
+    "name": "A New Narrative",
+    "id": "RIR02",
+    "type": "RYUJIN_INDUSTRIES"
+  },
+  {
+    "name": "A Parting Gift",
+    "id": "City_NewAtlantis_Z_PartingGift",
+    "type": "NEW_ATLANTIS"
+  },
+  {
+    "name": "A Shipment for Salinas",
+    "id": "City_NewAtlantis_Z_AShipmentForSalinas",
+    "type": "NEW_ATLANTIS"
+  },
+  {
+    "name": "A Tree Grows in New Atlantis",
+    "id": "City_NA_Botany01",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "About Face",
+    "id": "FFNeonZ12",
+    "type": "NEON"
+  },
+  {
+    "name": "Absolute Power",
+    "id": "CF06",
+    "type": "CRIMSON_FLEET"
+  },
+  {
+    "name": "Access is Key",
+    "id": "RIR03",
+    "type": "RYUJIN_INDUSTRIES"
+  },
+  {
+    "name": "Accidents Happen",
+    "id": "RIR04",
+    "type": "RYUJIN_INDUSTRIES"
+  },
+  {
+    "name": "Aceles Poachers",
+    "id": "OE_BryanB_AcelesPoachers"
+  },
+  {
+    "name": "Aceles Vanguard vs Terrormorph",
+    "id": "OE_BryanB_AcelesVanguardVSTerrormorph"
+  },
+  {
+    "name": "Adoring Fan (mission)",
+    "id": "CREW_EliteCrew_AdoringFan"
+  },
+  {
+    "name": "Akila: Bookstore Browsing",
+    "id": "City_AC_FAB_Quest04",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Coe Statue",
+    "id": "City_AC_FAB_Quest18",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Considering LIST",
+    "id": "City_AC_FAB_Quest12",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Dunlop Disease",
+    "id": "City_AC_FAB_Quest19",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Earl Shilling",
+    "id": "City_AC_FAB_Quest07",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Gardener",
+    "id": "City_AC_FAB_Quest10",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Gate Guard",
+    "id": "City_AC_FAB_Quest13",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Graffitti Problems",
+    "id": "City_AC_FAB_Quest11",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: House Incoming",
+    "id": "City_AC_FAB_Quest09",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Inventory",
+    "id": "City_AC_FAB_Quest08",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Museum Scouting",
+    "id": "City_AC_FAB_Quest03",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Power Inspector",
+    "id": "City_AC_FAB_Quest05",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Ship Tech",
+    "id": "City_AC_FAB_Quest01",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Shooting Range",
+    "id": "City_AC_FAB_Quest14",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Space Chitchat",
+    "id": "City_AC_FAB_Quest15",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Stetch Welcome",
+    "id": "City_AC_FAB_Quest06",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: The Real Founder",
+    "id": "City_AC_FAB_Quest16",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: UC Real Estate",
+    "id": "City_AC_FAB_Quest17",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Akila: Wright Apprentice",
+    "id": "City_AC_FAB_Quest02",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Aliases for the Player's Current Ship",
+    "id": "SQ_PlayerShip"
+  },
+  {
+    "name": "Aliases with scripts that define various groups. Can pass these around and use in properties, etc.",
+    "id": "SQ_Groups"
+  },
+  {
+    "name": "Alien Extermination",
+    "id": "RQ_Settlement_KillCreature_01",
+    "type": "RADIANT"
+  },
+  {
+    "name": "All Basic and Default Options",
+    "id": "SpeechChallenge"
+  },
+  {
+    "name": "All for One",
+    "id": "FFNeonZ04",
+    "type": "NEON"
+  },
+  {
+    "name": "Alternating Currents",
+    "id": "City_NA_Well02",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Alternating Currents Post Quest",
+    "id": "City_NA_Well02_Post",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Always on Hellos",
+    "id": "MQ206B_AlwaysOn",
+    "type": "MAIN"
+  },
+  {
+    "name": "Always On Quest - Entangled",
+    "id": "MQ207C_AlwaysOn",
+    "type": "MAIN"
+  },
+  {
+    "name": "Ambush",
+    "id": "SE_JP01"
+  },
+  {
+    "name": "Among the Stars",
+    "id": "MQ402",
+    "type": "MAIN"
+  },
+  {
+    "name": "An Invitation (mission)",
+    "id": "City_NewAtlantis_Z_AnInvitation",
+    "type": "NEW_ATLANTIS"
+  },
+  {
+    "name": "Andreja NPC Chat",
+    "id": "COM_Companion_Andreja_Convo_NewAtlantis04",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Andreja Speech Challenges",
+    "id": "COM_Companion_Andreja_SpeechChallenges",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Andromeda Kepler (mission)",
+    "id": "CREW_EliteCrew_AndromedaKepler"
+  },
+  {
+    "name": "Apex Predator (Base)",
+    "id": "UCR04",
+    "type": "UNITED_COLONIES"
+  },
+  {
+    "name": "Apex Predator (Dupe)",
+    "id": "UCR04_Dupe00",
+    "type": "UNITED_COLONIES"
+  },
+  {
+    "name": "Apollo Landmark Quest",
+    "id": "Landmark_Apollo"
+  },
+  {
+    "name": "Automated Facility",
+    "id": "OE_KT_AutomatedFacility"
+  },
+  {
+    "name": "Autumn MacMillan (mission)",
+    "id": "CREW_EliteCrew_AutumnMacMillan"
+  },
+  {
+    "name": "Balancing the Books",
+    "id": "FFNeonZ09",
+    "type": "NEON"
+  },
+  {
+    "name": "Bare Metal",
+    "id": "FFNeonZ03",
+    "type": "NEON"
+  },
+  {
+    "name": "Barrett NPC Chat",
+    "id": "COM_Companion_Barrett_Convo_Neon02",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Barrett NPC Chat (Diana Brackenridge)",
+    "id": "COM_Companion_Barrett_Convo_ECSConstant01",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Barrett NPC Chat (Jack)",
+    "id": "COM_Companion_Barrett_Convo_Cydonia01",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Barrett NPC Chat (Maurice Lyon)",
+    "id": "COM_Companion_Barrett_Convo_NewHomestead01",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Barrett NPC Chat (Sati Chandra)",
+    "id": "COM_Companion_Barrett_Convo_RedMile01",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Barrett Speech Challenges",
+    "id": "COM_Companion_Barrett_SpeechChallenges",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Basic grunts and death gargle",
+    "id": "DialogueGenericUnique_Combat"
+  },
+  {
+    "name": "Basic Hostile Space Encounter (Pirate)",
+    "id": "RAD05_Space_PirateEnc",
+    "type": "RADIANT"
+  },
+  {
+    "name": "Basic Hostile Space Encounter (Quest)",
+    "id": "FC03_SpaceEncounterQuest",
+    "type": "FREESTAR_RANGERS"
+  },
+  {
+    "name": "BE - Bargaining",
+    "id": "BE_SC04"
+  },
+  {
+    "name": "BE - Bargaining Misc Objective",
+    "id": "BE_SC04_Misc"
+  },
+  {
+    "name": "BE - Being Boarded?",
+    "id": "BE_SC01"
+  },
+  {
+    "name": "BE - Custom Derelict (0)",
+    "id": "BE_CustomDerelict_00"
+  },
+  {
+    "name": "BE - Custom Derelict (1)",
+    "id": "BE_CustomDerelict_01"
+  },
+  {
+    "name": "BE - Custom Derelict (2)",
+    "id": "BE_CustomDerelict_02"
+  },
+  {
+    "name": "BE - Custom Derelict (3)",
+    "id": "BE_CustomDerelict_03"
+  },
+  {
+    "name": "BE - Custom Derelict (4)",
+    "id": "BE_CustomDerelict_04"
+  },
+  {
+    "name": "BE - Custom Derelict (Base)",
+    "id": "BE_CustomDerelict"
+  },
+  {
+    "name": "BE - Debug Quest",
+    "id": "BEDebug"
+  },
+  {
+    "name": "BE - Empty (0)",
+    "id": "BE_Empty_00"
+  },
+  {
+    "name": "BE - Empty (1)",
+    "id": "BE_Empty_01"
+  },
+  {
+    "name": "BE - Empty (10)",
+    "id": "BE_Empty_10"
+  },
+  {
+    "name": "BE - Empty (11)",
+    "id": "BE_Empty_11"
+  },
+  {
+    "name": "BE - Empty (12)",
+    "id": "BE_Empty_12"
+  },
+  {
+    "name": "BE - Empty (13)",
+    "id": "BE_Empty_13"
+  },
+  {
+    "name": "BE - Empty (14)",
+    "id": "BE_Empty_14"
+  },
+  {
+    "name": "BE - Empty (15)",
+    "id": "BE_Empty_15"
+  },
+  {
+    "name": "BE - Empty (16)",
+    "id": "BE_Empty_16"
+  },
+  {
+    "name": "BE - Empty (17)",
+    "id": "BE_Empty_17"
+  },
+  {
+    "name": "BE - Empty (18)",
+    "id": "BE_Empty_18"
+  },
+  {
+    "name": "BE - Empty (19)",
+    "id": "BE_Empty_19"
+  },
+  {
+    "name": "BE - Empty (2)",
+    "id": "BE_Empty_02"
+  },
+  {
+    "name": "BE - Empty (20)",
+    "id": "BE_Empty_20"
+  },
+  {
+    "name": "BE - Empty (21)",
+    "id": "BE_Empty_21"
+  },
+  {
+    "name": "BE - Empty (22)",
+    "id": "BE_Empty_22"
+  },
+  {
+    "name": "BE - Empty (23)",
+    "id": "BE_Empty_23"
+  },
+  {
+    "name": "BE - Empty (24)",
+    "id": "BE_Empty_24"
+  },
+  {
+    "name": "BE - Empty (3)",
+    "id": "BE_Empty_03"
+  },
+  {
+    "name": "BE - Empty (4)",
+    "id": "BE_Empty_04"
+  },
+  {
+    "name": "BE - Empty (5)",
+    "id": "BE_Empty_05"
+  },
+  {
+    "name": "BE - Empty (6)",
+    "id": "BE_Empty_06"
+  },
+  {
+    "name": "BE - Empty (7)",
+    "id": "BE_Empty_07"
+  },
+  {
+    "name": "BE - Empty (8)",
+    "id": "BE_Empty_08"
+  },
+  {
+    "name": "BE - Empty (9)",
+    "id": "BE_Empty_09"
+  },
+  {
+    "name": "BE - Empty (Base)",
+    "id": "BE_Empty"
+  },
+  {
+    "name": "BE - Empty (FC)",
+    "id": "FC02_BE_Quest",
+    "type": "FREESTAR_RANGERS"
+  },
+  {
+    "name": "BE - Generic (0)",
+    "id": "BE_Generic_00"
+  },
+  {
+    "name": "BE - Generic (1)",
+    "id": "BE_Generic_01"
+  },
+  {
+    "name": "BE - Generic (10)",
+    "id": "BE_Generic_10"
+  },
+  {
+    "name": "BE - Generic (11)",
+    "id": "BE_Generic_11"
+  },
+  {
+    "name": "BE - Generic (12)",
+    "id": "BE_Generic_12"
+  },
+  {
+    "name": "BE - Generic (13)",
+    "id": "BE_Generic_13"
+  },
+  {
+    "name": "BE - Generic (14)",
+    "id": "BE_Generic_14"
+  },
+  {
+    "name": "BE - Generic (15)",
+    "id": "BE_Generic_15"
+  },
+  {
+    "name": "BE - Generic (16)",
+    "id": "BE_Generic_16"
+  },
+  {
+    "name": "BE - Generic (17)",
+    "id": "BE_Generic_17"
+  },
+  {
+    "name": "BE - Generic (18)",
+    "id": "BE_Generic_18"
+  },
+  {
+    "name": "BE - Generic (19)",
+    "id": "BE_Generic_19"
+  },
+  {
+    "name": "BE - Generic (2)",
+    "id": "BE_Generic_02"
+  },
+  {
+    "name": "BE - Generic (20)",
+    "id": "BE_Generic_20"
+  },
+  {
+    "name": "BE - Generic (21)",
+    "id": "BE_Generic_21"
+  },
+  {
+    "name": "BE - Generic (22)",
+    "id": "BE_Generic_22"
+  },
+  {
+    "name": "BE - Generic (23)",
+    "id": "BE_Generic_23"
+  },
+  {
+    "name": "BE - Generic (24)",
+    "id": "BE_Generic_24"
+  },
+  {
+    "name": "BE - Generic (3)",
+    "id": "BE_Generic_03"
+  },
+  {
+    "name": "BE - Generic (4)",
+    "id": "BE_Generic_04"
+  },
+  {
+    "name": "BE - Generic (5)",
+    "id": "BE_Generic_05"
+  },
+  {
+    "name": "BE - Generic (6)",
+    "id": "BE_Generic_06"
+  },
+  {
+    "name": "BE - Generic (7)",
+    "id": "BE_Generic_07"
+  },
+  {
+    "name": "BE - Generic (8)",
+    "id": "BE_Generic_08"
+  },
+  {
+    "name": "BE - Generic (9)",
+    "id": "BE_Generic_09"
+  },
+  {
+    "name": "BE - Generic (Base)",
+    "id": "BE_Generic"
+  },
+  {
+    "name": "BE - Generic (Rescue)",
+    "id": "BE_MB_Rescue01"
+  },
+  {
+    "name": "BE - Generic (Specific)",
+    "id": "BE_Generic_SpecificTargets"
+  },
+  {
+    "name": "BE - Generic (Starborn)",
+    "id": "BE_Generic_Starborn"
+  },
+  {
+    "name": "BE - KT07",
+    "id": "BE_KT07"
+  },
+  {
+    "name": "BE - Landing Handler",
+    "id": "BE_Landing_24"
+  },
+  {
+    "name": "BE - Married Couple",
+    "id": "BE_KT06"
+  },
+  {
+    "name": "BE - Mayday",
+    "id": "BE_KT01"
+  },
+  {
+    "name": "BE - Mutiny",
+    "id": "BE_SC02"
+  },
+  {
+    "name": "BE - No Life Support",
+    "id": "BE_Derelict_NoLifeSupport"
+  },
+  {
+    "name": "BE - Objective Quest",
+    "id": "BE_Objective"
+  },
+  {
+    "name": "BE - Party Cruise",
+    "id": "BE_KT02"
+  },
+  {
+    "name": "BE - Reversal",
+    "id": "BE_SC05_DoNotUse"
+  },
+  {
+    "name": "BE - Robot Survey Team",
+    "id": "BE_KT03"
+  },
+  {
+    "name": "BE - Survey Says",
+    "id": "BE_KT05"
+  },
+  {
+    "name": "BE - Template (Base)",
+    "id": "BE_Template"
+  },
+  {
+    "name": "BE - Template (FAB 3)",
+    "id": "BE_FAB03"
+  },
+  {
+    "name": "BE - Template (Galbank)",
+    "id": "BE_TradeShip_Galbank"
+  },
+  {
+    "name": "BE - Template (List)",
+    "id": "BE_LIST"
+  },
+  {
+    "name": "BE - The Pale Lady",
+    "id": "BE_KT04"
+  },
+  {
+    "name": "BE - ZeroG",
+    "id": "BE_Derelict_ZeroG"
+  },
+  {
+    "name": "BE -Generic Derelic",
+    "id": "BE_DerelictShip_Generic"
+  },
+  {
+    "name": "BE for RI03: Malai Liskova's Ship",
+    "id": "BE_RI03"
+  },
+  {
+    "name": "Beautiful Secrets",
+    "id": "City_NewAtlantis_Z_BeautifulSecrets",
+    "type": "NEW_ATLANTIS"
+  },
+  {
+    "name": "Beer Run",
+    "id": "City_AkilaLife04",
+    "type": "AKILA"
+  },
+  {
+    "name": "Betty Howser (mission)",
+    "id": "CREW_EliteCrew_BettyHowser"
+  },
+  {
+    "name": "Blast Zone",
+    "id": "City_AkilaLife05",
+    "type": "AKILA"
+  },
+  {
+    "name": "Board and Lodging",
+    "id": "FFLodge01"
+  },
+  {
+    "name": "Boarding Aftermath",
+    "id": "SE_FAB03"
+  },
+  {
+    "name": "Bounty Guards",
+    "id": "OE_KT_RepoMen"
+  },
+  {
+    "name": "Bounty Hunters vs Defenders",
+    "id": "SE_Player_KT_Trait_Wanted_BountyHigh"
+  },
+  {
+    "name": "Bounty On Planet",
+    "id": "RQ_OE_BountyHunter_01",
+    "type": "RADIANT"
+  },
+  {
+    "name": "Breach of Contract",
+    "id": "COM_Quest_Barrett_Q01",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Breaking the Bank",
+    "id": "CF04",
+    "type": "CRIMSON_FLEET"
+  },
+  {
+    "name": "Brownout",
+    "id": "FFNewHomesteadR04"
+  },
+  {
+    "name": "Burden of Proof",
+    "id": "CFSD01",
+    "type": "CRIMSON_FLEET"
+  },
+  {
+    "name": "Cairo Landmark Quest",
+    "id": "Landmark_Cairo"
+  },
+  {
+    "name": "Captain's Bounty",
+    "id": "Hope02"
+  },
+  {
+    "name": "Castillo's Revenge (CF03)",
+    "id": "SE_Player_FAB20"
+  },
+  {
+    "name": "CF03 Escape Shuttle",
+    "id": "BE_CF03_Shuttle"
+  },
+  {
+    "name": "CF04GalbankArchivesAmbush",
+    "id": "CF04_GalbankArchivesAmbush",
+    "type": "CRIMSON_FLEET"
+  },
+  {
+    "name": "CF08 Post Quest Encounter",
+    "id": "SE_Player_ZW11"
+  },
+  {
+    "name": "Change Location OE Trigger",
+    "id": "OE_ChangeLocationTrigger"
+  },
+  {
+    "name": "Charity of the Wolf",
+    "id": "City_AkilaLife08",
+    "type": "AKILA"
+  },
+  {
+    "name": "Chow Time",
+    "id": "OE_KT_ChowTime"
+  },
+  {
+    "name": "Chunks To Go",
+    "id": "SE_FAB12"
+  },
+  {
+    "name": "Chunks To Go BE",
+    "id": "BE_FAB12"
+  },
+  {
+    "name": "Clear the Skies",
+    "id": "RQ_Settlement_KillShips_01",
+    "type": "RADIANT"
+  },
+  {
+    "name": "Clear the TargetLocation on TargetPlanetLocation (0)",
+    "id": "MB_Hunt01Local00",
+    "type": "MISSION_BOARD"
+  },
+  {
+    "name": "Clear the TargetLocation on TargetPlanetLocation (1)",
+    "id": "MB_Hunt01Local01",
+    "type": "MISSION_BOARD"
+  },
+  {
+    "name": "Clear the TargetLocation on TargetPlanetLocation (2)",
+    "id": "MB_Hunt01Local02",
+    "type": "MISSION_BOARD"
+  },
+  {
+    "name": "Clear the TargetLocation on TargetPlanetLocation (Base)",
+    "id": "MB_Hunt01Local",
+    "type": "MISSION_BOARD"
+  },
+  {
+    "name": "Clinic Post-Intro Scene",
+    "id": "DialogueFCClinic_IntroPost"
+  },
+  {
+    "name": "Coffee Run",
+    "id": "City_NewAtlantis_Z_CoffeeRun",
+    "type": "NEW_ATLANTIS"
+  },
+  {
+    "name": "Combat lines for unique NPCs",
+    "id": "DialogueGenericStarborn_Unique"
+  },
+  {
+    "name": "Comfort Food",
+    "id": "FFClinicZ01"
+  },
+  {
+    "name": "Commercial: Barron Fangirl",
+    "id": "City_NA_FAB_Quest17",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Commercial: Burned Out",
+    "id": "City_NA_FAB_Quest22",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Commercial: Corpo Romeo & Juliet",
+    "id": "City_NA_FAB_Quest25",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Commercial: Enhance Partygirl",
+    "id": "City_NA_FAB_Quest19",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Commercial: Fancy Dinner",
+    "id": "City_NA_FAB_Quest23",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Commercial: Gardener",
+    "id": "City_NA_FAB_Quest18",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Commercial: Loan Pitch at GalBank",
+    "id": "City_NA_FAB_Quest20",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Commercial: New Infinity Employee",
+    "id": "City_NA_FAB_Quest16",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Commercial: Outland Trackers",
+    "id": "City_NA_FAB_Quest21",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Commercial: Red Mile Fans",
+    "id": "City_NA_FAB_Quest24",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Commercial: Terrabrew Franchise",
+    "id": "City_NA_FAB_Quest15",
+    "type": "CITY_OTHER"
+  },
+  {
+    "name": "Commitment: Andreja",
+    "id": "COM_Quest_Andreja_Commitment",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Commitment: Barrett",
+    "id": "COM_Quest_Barrett_Commitment",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Commitment: Sam Coe",
+    "id": "COM_Quest_SamCoe_Commitment",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Commitment: Sarah Morgan",
+    "id": "COM_Quest_SarahMorgan_Commitment",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Companion - Andreja",
+    "id": "COM_Companion_Andreja",
+    "type": "COMPANION"
+  },
+  {
+    "name": "Companion - Barrett",
+    "id": "Com_Companion_Barrett"
+  }
+]

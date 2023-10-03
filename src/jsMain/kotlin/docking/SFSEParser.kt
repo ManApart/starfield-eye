@@ -7,15 +7,17 @@ import ExplorationStats
 import GeneralStats
 import MiscStats
 import MissionStats
+import MissionType
+import MissionWikiData
 import PollResponse
 import Quest
 import QuestStage
 import QuestStageState
 import ShipStats
 
-fun parseQuests(lines: List<String>): List<Quest> {
+fun parseQuests(lines: List<String>, missionReference: Map<String, MissionWikiData>): List<Quest> {
     return lines.chunkedBy("==")
-        .map { parseQuest(it) }
+        .map { parseQuest(it, missionReference) }
         .filter { it.latestState == QuestStageState.COMPLETED || it.latestState == QuestStageState.DISPLAYED }
         .toList()
 }
@@ -31,7 +33,7 @@ private fun List<String>.chunkedBy(delimiter: String): List<List<String>> {
         }.toList()
 }
 
-private fun parseQuest(lines: List<String>): Quest {
+private fun parseQuest(lines: List<String>, missionReference: Map<String, MissionWikiData>): Quest {
     val title = lines.first().replace("==", "").trim()
     val stages = lines.asSequence().drop(2)
         .filter { it.isNotBlank() }
@@ -45,17 +47,20 @@ private fun parseQuest(lines: List<String>): Quest {
         }.toList()
 
     val cleanTitle = title.ifBlank { stages.firstOrNull()?.name ?: "" }
+    val wikiRef = missionReference[cleanTitle]
+    val id = wikiRef?.id ?: ""
+    val type = wikiRef?.type ?: MissionType.OTHER
 
-    return Quest(cleanTitle, stages)
+    return Quest(cleanTitle, id, type, stages)
 }
 
-fun parsePollResponse(lines: List<String>): PollResponse {
+fun parsePollResponse(lines: List<String>, missionReference: Map<String, MissionWikiData>): PollResponse {
     val commands = lines.chunkedBy(">")
         .filter { it.size != 1 }
         .associate { it.first().replace(">", "").trim() to it.drop(1) }
         .let { RawPollResponse(it) }
 
-    return PollResponse(parseQuests(commands.getQuests()), parseMiscStats(commands))
+    return PollResponse(parseQuests(commands.getQuests(), missionReference), parseMiscStats(commands))
 }
 
 private fun parseMiscStats(commands: RawPollResponse): MiscStats? {

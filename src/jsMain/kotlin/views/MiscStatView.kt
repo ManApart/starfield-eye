@@ -47,7 +47,7 @@ private fun needsDocking() {
         div("section-view-box") {
             id = "misc-stat-explanation"
             h2 { +"Misc Stats" }
-            div("accent-line") { +"" }
+            div("accent-line") { +"See if he'll play the good man's game" }
 
             p { +"Use dock to connect to the game and see near realtime updates to your miscellaneous stats, or track your stats even when not playing!" }
             button {
@@ -71,7 +71,7 @@ private fun displayStats(stats: MiscStats) {
         div("section-view-box") {
             id = "misc-stats"
             h2 { +"Miscellaneous Stats" }
-            div("accent-line") { +"" }
+            div("accent-line") { +"See if he'll play the good man's game" }
         }
         with(stats.general) {
             statsSection(

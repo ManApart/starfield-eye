@@ -1,5 +1,6 @@
 package docking
 
+import MissionWikiData
 import PollResponse
 import Quest
 
@@ -9,14 +10,14 @@ suspend fun healthCheck(): Boolean {
     return versionLine?.contains("SFSE version") ?: false
 }
 
-suspend fun getQuests(): List<Quest> {
+suspend fun getQuests(missionReference: Map<String, MissionWikiData>): List<Quest> {
     val lines = postToConsoleJs("sqo")
-    return parseQuests(lines)
+    return parseQuests(lines, missionReference)
 }
 
-suspend fun poll(): PollResponse {
+suspend fun poll(missionReference: Map<String, MissionWikiData>): PollResponse {
     val lines = postToConsoleJs("bat starfield-eye-poll")
-    return parsePollResponse(lines)
+    return parsePollResponse(lines, missionReference)
 }
 
 

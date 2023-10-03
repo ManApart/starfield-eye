@@ -13,6 +13,7 @@ import kotlinx.coroutines.launch
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
+import missionReference
 import org.w3c.dom.HTMLDivElement
 import org.w3c.dom.HTMLInputElement
 import pageIsVisible
@@ -162,7 +163,7 @@ fun pollData() {
                 }, inMemoryStorage.connectionSettings.pollRateInSeconds * 1000)
             }
             try {
-                val data = poll()
+                val data = poll(missionReference)
                 if (data.quests.isNotEmpty()) inMemoryStorage.quests = data.quests
                 data.stats?.let { inMemoryStorage.stats = it }
                 persistMemory()
