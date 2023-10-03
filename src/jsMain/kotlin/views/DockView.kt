@@ -1,22 +1,21 @@
 package views
 
-import el
-import exportPlayerInfo
-import docking.getQuests
 import docking.healthCheck
 import docking.poll
+import el
+import exportPlayerInfo
 import importPlayerInfo
 import inMemoryStorage
 import kotlinx.browser.window
-import kotlinx.html.*
-import kotlinx.html.dom.append
-import kotlinx.html.js.onClickFunction
-import org.w3c.dom.HTMLInputElement
-import pageIsVisible
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.html.*
+import kotlinx.html.dom.append
+import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLDivElement
+import org.w3c.dom.HTMLInputElement
+import pageIsVisible
 import persistMemory
 import pollHook
 
@@ -44,6 +43,7 @@ fun dockView() {
         }
     }
     pollHook = ::receivePoll
+    if (inMemoryStorage.connectionSettings.pollData) pollData()
 }
 
 private fun DIV.connectToGame() {
@@ -70,7 +70,8 @@ private fun DIV.connectToGame() {
             id = "dock-host"
             placeholder = "Host (default: \"localhost\")"
             value = inMemoryStorage.connectionSettings.host
-            title = "Host to connect to. Should match the settings in your Console Api Ini. Almost always either localhost or 127.0.0.1"
+            title =
+                "Host to connect to. Should match the settings in your Console Api Ini. Almost always either localhost or 127.0.0.1"
         }
         input(classes = "connection-input") {
             id = "dock-port"
@@ -81,7 +82,8 @@ private fun DIV.connectToGame() {
         input(classes = "connection-input") {
             id = "dock-poll-rate"
             placeholder = "Poll rate (default: \"10\" seconds)"
-            title = "How often to check the game for more data. Lower is more responsive but may affect game performance. 0 Prevents polling but still checks on page load."
+            title =
+                "How often to check the game for more data. Lower is more responsive but may affect game performance. 0 Prevents polling but still checks on page load."
             value = inMemoryStorage.connectionSettings.pollRateInSeconds.toString()
         }
 
@@ -161,7 +163,9 @@ fun pollData() {
             }
             try {
                 val data = poll()
+                println("Polled ${data.quests.size} quests")
                 if (data.quests.isNotEmpty()) inMemoryStorage.quests = data.quests
+                data.stats?.let { inMemoryStorage.stats = it }
                 persistMemory()
                 pollHook(true)
             } catch (e: Error) {

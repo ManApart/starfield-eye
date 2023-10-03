@@ -2,13 +2,13 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class MiscStats(
-    val general: GeneralStats,
-    val exploration: ExplorationStats,
-    val ship: ShipStats,
-    val mission: MissionStats,
-    val combat: CombatStats,
-    val crafting: CraftingStats,
-    val crime: CrimeStats,
+    val general: GeneralStats = GeneralStats(),
+    val exploration: ExplorationStats = ExplorationStats(),
+    val ship: ShipStats = ShipStats(),
+    val mission: MissionStats = MissionStats(),
+    val combat: CombatStats = CombatStats(),
+    val crafting: CraftingStats = CraftingStats(),
+    val crime: CrimeStats = CrimeStats(),
 )
 
 @Serializable

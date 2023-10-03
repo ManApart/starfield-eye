@@ -52,12 +52,15 @@ private fun parseQuest(lines: List<String>): Quest {
 fun parsePollResponse(lines: List<String>): PollResponse {
     val commands = lines.chunkedBy(">")
         .filter { it.size != 1 }
-        .associate { it.first().replace(">",  "").trim() to it.drop(1) }
+        .associate { it.first().replace(">", "").trim() to it.drop(1) }
         .let { RawPollResponse(it) }
 
-    with(commands) {
-        return PollResponse(
-            parseQuests(getQuests()),
+    return PollResponse(parseQuests(commands.getQuests()), parseMiscStats(commands))
+}
+
+private fun parseMiscStats(commands: RawPollResponse): MiscStats? {
+    return if (!commands.hasMiscStats()) null else {
+        with(commands) {
             MiscStats(
                 GeneralStats(
                     getMiscStatInt("locations discovered"),
@@ -102,7 +105,7 @@ fun parsePollResponse(lines: List<String>): PollResponse {
                     getMiscStatInt("ships painted"),
                     getMiscStatInt("ship modules built"),
                 ),
-                  MissionStats(
+                MissionStats(
                     getMiscStatInt("quests completed"),
                     getMiscStatInt("activities completed"),
                     getMiscStatInt("main quests completed"),
@@ -111,7 +114,7 @@ fun parsePollResponse(lines: List<String>): PollResponse {
                     getMiscStatInt("ryujin industries quests completed"),
                     getMiscStatInt("united colonies quests completed"),
                     getMiscStatInt("side quests completed"),
-                  ),
+                ),
                 CombatStats(
                     getMiscStatInt("people killed"),
                     getMiscStatInt("creatures killed"),
@@ -135,7 +138,7 @@ fun parsePollResponse(lines: List<String>): PollResponse {
                     getMiscStatString("favorite weapon"),
                     getMiscStatString("favorite power"),
                 ),
-                    CraftingStats(
+                CraftingStats(
                     getMiscStatInt("weapon mods crafted"),
                     getMiscStatInt("armor mods crafted"),
                     getMiscStatInt("organic resources gathered"),
@@ -145,7 +148,7 @@ fun parsePollResponse(lines: List<String>): PollResponse {
                     getMiscStatInt("outposts built"),
                     getMiscStatInt("objects built"),
                     getMiscStatInt("cargo links established"),
-                    ),
+                ),
                 CrimeStats(
                     getMiscStatInt("locks picked"),
                     getMiscStatInt("pockets picked"),
@@ -161,6 +164,6 @@ fun parsePollResponse(lines: List<String>): PollResponse {
                     getMiscStatInt("largest bounty"),
                 ),
             )
-        )
+        }
     }
 }

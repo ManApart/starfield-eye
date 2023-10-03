@@ -16,7 +16,7 @@ data class GameConnectionSettings(
 
 data class PollResponse(
     val quests: List<Quest>,
-    val stats: MiscStats,
+    val stats: MiscStats? = null,
 )
 
 @Serializable
