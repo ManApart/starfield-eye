@@ -48,9 +48,6 @@ h2 {
     margin-top: 10px;
 }
 
-h3 {
-    margin-top: 50px;
-}
 
 td {
     vertical-align: top;
@@ -119,7 +116,7 @@ summary::-webkit-details-marker {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .visible-block {
@@ -159,4 +156,14 @@ summary::-webkit-details-marker {
     font-family: Architekt;
     font-weight: bold;
     padding-top: 5px;
+}
+
+#sections {
+    position: relative;
+    margin-left: 20%;
+    max-width: 75%;
+}
+
+#sections .section-view-box {
+    max-width: 900px;
 }
