@@ -10,7 +10,9 @@ class RawPollResponse(private val commandMap: Map<String, List<String>>) {
     }
 
     fun getInt(command: String): Int {
-        return commandMap[command]?.first()?.split(" ")?.last()?.toIntOrNull() ?: 0
+        val raw = commandMap[command]?.first()
+        return raw?.split(" ")?.last()?.toFloatOrNull()?.toInt() ?: 0
+//            .also { println("$command returned \"$raw\"") }
     }
 
     fun hasMiscStats(): Boolean {

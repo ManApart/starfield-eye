@@ -58,6 +58,7 @@ fun parsePollResponse(lines: List<String>, missionReference: Map<String, Mission
     val commands = lines.chunkedBy(">")
         .filter { it.size != 1 }
         .associate { it.first().replace(">", "").trim() to it.drop(1) }
+//        .also { raw -> println(JSON.stringify(raw.toMutableMap().also { it.remove("sqo") }.values)) }
         .let { RawPollResponse(it) }
 
     return PollResponse(parseQuests(commands.getQuests(), missionReference), parseMiscStats(commands))
