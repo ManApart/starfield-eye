@@ -1,6 +1,7 @@
 
 import LocalForage.config
 import kotlinx.browser.document
+import kotlinx.browser.window
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
@@ -115,5 +116,12 @@ fun importPlayerInfo() {
             }
         })
         dispatchEvent(MouseEvent("click"))
+    }
+}
+
+fun deleteUserData(){
+    if (window.confirm("Are you sure you want to delete data? Make sure you've exported a backup first!")){
+        inMemoryStorage = InMemoryStorage()
+        persistMemory()
     }
 }

@@ -1,5 +1,6 @@
 package views
 
+import deleteUserData
 import docking.healthCheck
 import docking.poll
 import el
@@ -58,12 +59,22 @@ private fun DIV.connectToGame() {
         p { +"Note that docking functionality is beta and under heavy construction. Things that require docking will likely be broken and often not yet be styled. Proceed at your own risk. " }
 
         p {
-            +"Docking requires that you have"
+            +"Docking requires that you have two mods installed. First, you need to have"
             a(
                 "https://www.nexusmods.com/starfield/mods/4280",
                 target = "_blank"
             ) { +" Console API and Web Application " }
-            +"installed and working."
+            +"installed and working. Make sure that in the "
+            code { +"sfse_plugin_console_api.ini " }
+            +"you set "
+            code { +"bDisableCORS=true" }
+        }
+        p {
+            +"Second, you need to install my companion app mod that polls data from the game. Once things are more polished I'll release it on Nexus, but for now or to get bleeding edge changes, you can get it "
+            a(
+                "https://github.com/ManApart/starfield-eye/blob/master/mod/Data/starfield-eye-poll.txt",
+                target = "_blank"
+            ) { +"on Github." }
         }
         p { +"Once installed, enter your host and port and attempt to dock. The docking status should update after you attempt to dock." }
 
@@ -119,6 +130,7 @@ private fun DIV.manageData() {
 
         p { +"User data is only stored on the browser. (I don't track anything you do)." }
         p { +"You can export data here to either back it up, or import it into another browser." }
+        p { +"If you're having issues with the site, it's possible that deleting your user data may fix them. Make sure to export your data first so you have a backup." }
 
         button {
             id = "import-button"
@@ -131,6 +143,12 @@ private fun DIV.manageData() {
             +"Export Data"
             title = "Download user entered data"
             onClickFunction = { exportPlayerInfo() }
+        }
+        button {
+            id = "delete-button"
+            +"Delete Data"
+            title = "Delete user entered data"
+            onClickFunction = { deleteUserData() }
         }
     }
 }
