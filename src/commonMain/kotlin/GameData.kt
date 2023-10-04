@@ -84,14 +84,17 @@ fun String.toMissionType(): MissionType {
     }
 }
 
-
 @Serializable
 data class Quest(
     val name: String,
     val id: String = "",
+    val batIndex: Int = 0,
+    val instance: Int = 0,
     val type: MissionType = MissionType.OTHER,
     val stages: List<QuestStage>,
 ) {
+    @Transient
+    val uniqueId = "$name-$id-$instance-$batIndex"
     @Transient
     val latestState = stages.maxBy { it.id }.state
 }

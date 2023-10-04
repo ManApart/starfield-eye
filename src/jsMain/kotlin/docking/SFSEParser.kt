@@ -17,7 +17,7 @@ import ShipStats
 
 fun parseQuests(lines: List<String>, missionReference: Map<String, MissionWikiData>): List<Quest> {
     return lines.chunkedBy("==")
-        .map { parseQuest(it, missionReference) }
+        .mapIndexed { i, q -> parseQuest(i, q, missionReference) }
         .filter { it.latestState == QuestStageState.COMPLETED || it.latestState == QuestStageState.DISPLAYED }
         .toList()
 }
@@ -33,8 +33,13 @@ private fun List<String>.chunkedBy(delimiter: String): List<List<String>> {
         }.toList()
 }
 
-private fun parseQuest(lines: List<String>, missionReference: Map<String, MissionWikiData>): Quest {
+private fun parseQuest(i: Int, lines: List<String>, missionReference: Map<String, MissionWikiData>): Quest {
     val title = lines.first().replace("==", "").trim()
+    val instance = lines[1]
+        .replace("( Instance:", "")
+        .replace(")", "").trim()
+        .toIntOrNull() ?: 0
+
     val stages = lines.asSequence().drop(2)
         .filter { it.isNotBlank() }
         .map { it.split(" ").map { word -> word.trim() } }
@@ -51,7 +56,7 @@ private fun parseQuest(lines: List<String>, missionReference: Map<String, Missio
     val id = wikiRef?.id ?: ""
     val type = wikiRef?.type ?: MissionType.OTHER
 
-    return Quest(cleanTitle, id, type, stages)
+    return Quest(cleanTitle, id, i, instance, type, stages)
 }
 
 fun parsePollResponse(lines: List<String>, missionReference: Map<String, MissionWikiData>): PollResponse {

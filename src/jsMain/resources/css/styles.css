@@ -116,7 +116,7 @@ summary::-webkit-details-marker {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .visible-block {

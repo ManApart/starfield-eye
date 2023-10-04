@@ -2,7 +2,6 @@ import views.filterPlanets
 
 fun searchPlanets() {
     val planets = getPlanets().filterSearch(inMemoryStorage.planetSearchOptions.searchText)
-    println("${planets.size} planets match ${inMemoryStorage.planetSearchOptions.searchText}")
     filterPlanets(planets)
     persistMemory()
 }

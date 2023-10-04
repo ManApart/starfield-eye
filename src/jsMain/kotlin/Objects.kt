@@ -6,6 +6,13 @@ data class PlanetSearchOptions(
 )
 
 @Serializable
+data class MissionSearchOptions(
+    var searchText: String = "",
+    var showCompleted: Boolean = false,
+    var types: List<MissionType> = listOf()
+)
+
+@Serializable
 data class GameConnectionSettings(
     var host: String = "localhost",
     var port: String = "55555",
