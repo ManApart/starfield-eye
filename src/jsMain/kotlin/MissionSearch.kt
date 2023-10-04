@@ -13,7 +13,6 @@ fun searchMissions() {
 }
 
 private fun Quest.matches(types: List<MissionType>): Boolean {
-    if (this.type == MissionType.MAIN) println("Main")
     return this.type in types
 }
 

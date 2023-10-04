@@ -27,3 +27,11 @@
 }
 .quest-stage-incomplete {
 }
+
+#quest-search {
+    margin-bottom: 10px;
+}
+
+#quest-search #search {
+    display: block;
+}

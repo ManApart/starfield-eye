@@ -103,7 +103,7 @@ private fun saveHtmlRefs(quests: List<Quest>) {
 
 private fun TagConsumer<HTMLElement>.filterControls() {
     div {
-        id = "mission-search"
+        id = "quest-search"
         missionButton("toggle-completed", "Toggle Completed", ::toggleCompleted)
         missionButton("show-all", "All", ::showAll)
         missionButton("show-main", "Main Quests", ::showMain)
