@@ -103,17 +103,16 @@ private fun displayStats(stats: MiscStats) {
         with(stats.exploration) {
             statsSection(
                 "Exploration",
-                //TODO -these are off by one
-                MiscStatItem("Systems Visited", locationsDiscovered, "Stellar Cartography", 20),
-                MiscStatItem("Planets Scanned", systemsVisited),
-                MiscStatItem("Planets Fully Surveyed", planetsScanned),
-                MiscStatItem("Planets Landed On", planetsFullySurveyed, "Boots on the Ground", 100),
-                MiscStatItem("Flora Fully Scanned", planetsLandedOn),
-                MiscStatItem("Fauna Fully Scanned", floraFullyScanned),
-                MiscStatItem("Stations Docked With", faunaFullyScanned),
-                MiscStatItem("Ships Docked With", stationsDockedWith),
-                MiscStatItem("Unique Creatures Scanned", shipsDockedWith),
-                MiscStatItem("Temples Found", uniqueCreaturesScanned),
+                MiscStatItem("Systems Visited", systemsVisited, "Stellar Cartography", 20),
+                MiscStatItem("Planets Scanned", planetsScanned),
+                MiscStatItem("Planets Fully Surveyed", planetsFullySurveyed),
+                MiscStatItem("Planets Landed On", planetsLandedOn, "Boots on the Ground", 100),
+                MiscStatItem("Flora Fully Scanned", floraFullyScanned),
+                MiscStatItem("Fauna Fully Scanned", faunaFullyScanned),
+                MiscStatItem("Stations Docked With", stationsDockedWith),
+                MiscStatItem("Ships Docked With", shipsDockedWith),
+                MiscStatItem("Unique Creatures Scanned", uniqueCreaturesScanned),
+                MiscStatItem("Temples Found", templesFound),
             )
         }
         with(stats.ship) {
@@ -143,7 +142,7 @@ private fun displayStats(stats: MiscStats) {
                 MiscStatItem("Freestar Collective Quests Completed", freestarCollectiveQuestsCompleted),
                 MiscStatItem("Ryujin Industries Quests Completed", ryujinIndustriesQuestsCompleted),
                 MiscStatItem("United Colonies Quests Completed", unitedColoniesQuestsCompleted),
-                MiscStatItem("Side Quests Completed", sideQuestsCompleted, "Privaateer", 30),
+                MiscStatItem("Side Quests Completed", sideQuestsCompleted, "Privateer", 30),
             )
         }
         with(stats.combat) {
