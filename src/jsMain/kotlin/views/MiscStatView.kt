@@ -64,6 +64,13 @@ private fun receivePoll(success: Boolean) {
     if (success) displayStats(inMemoryStorage.stats)
 }
 
+private data class MiscStatItem(
+    val name: String,
+    val value: Any,
+    val achievementName: String? = null,
+    val achievementTotal: Int? = null,
+)
+
 private fun displayStats(stats: MiscStats) {
     val root = el<HTMLElement?>("sections")
     root?.innerHTML = ""
@@ -76,139 +83,151 @@ private fun displayStats(stats: MiscStats) {
         with(stats.general) {
             statsSection(
                 "General",
-                "Locations Discovered" to locationsDiscovered,
-                "Locations Explored" to locationsExplored,
-                "Days Passed" to daysPassed,
-                "Hours Slept" to hoursSlept,
-                "Hours Waited" to hoursWaited,
-                "Credits Found" to creditsFound,
-                "Most Credits Carried" to mostCreditsCarried,
-                "Containers Looted" to containersLooted,
-                "Magazines Found" to magazinesFound,
-                "Persuasion Successes" to persuasionSuccesses,
-                "Afflictions Suffered" to afflictionsSuffered,
-                "Food Eaten" to foodEaten,
-                "Data Slates Read" to dataSlatesRead,
-                "Skill Challenges Completed" to skillChallengesCompleted,
-                "Snow Globes Collected" to snowGlobesCollected,
+                MiscStatItem("Locations Discovered", locationsDiscovered),
+                MiscStatItem("Locations Explored", locationsExplored),
+                MiscStatItem("Days Passed", daysPassed),
+                MiscStatItem("Hours Slept", hoursSlept),
+                MiscStatItem("Hours Waited", hoursWaited),
+                MiscStatItem("Credits Found", creditsFound),
+                MiscStatItem("Most Credits Carried", mostCreditsCarried),
+                MiscStatItem("Containers Looted", containersLooted),
+                MiscStatItem("Magazines Found", magazinesFound, "Thirst for Knowledge", 20),
+                MiscStatItem("Persuasion Successes", persuasionSuccesses),
+                MiscStatItem("Afflictions Suffered", afflictionsSuffered),
+                MiscStatItem("Food Eaten", foodEaten),
+                MiscStatItem("Data Slates Read", dataSlatesRead),
+                MiscStatItem("Skill Challenges Completed", skillChallengesCompleted),
+                MiscStatItem("Snow Globes Collected", snowGlobesCollected),
             )
         }
         with(stats.exploration) {
             statsSection(
                 "Exploration",
-                "Systems Visited" to locationsDiscovered,
-                "Planets Scanned" to systemsVisited,
-                "Planets Fully Surveyed" to planetsScanned,
-                "Planets Landed On" to planetsFullySurveyed,
-                "Flora Fully Scanned" to planetsLandedOn,
-                "Fauna Fully Scanned" to floraFullyScanned,
-                "Stations Docked With" to faunaFullyScanned,
-                "Ships Docked With" to stationsDockedWith,
-                "Unique Creatures Scanned" to shipsDockedWith,
-                "Temples Found" to uniqueCreaturesScanned,
+                //TODO -these are off by one
+                MiscStatItem("Systems Visited", locationsDiscovered, "Stellar Cartography", 20),
+                MiscStatItem("Planets Scanned", systemsVisited),
+                MiscStatItem("Planets Fully Surveyed", planetsScanned),
+                MiscStatItem("Planets Landed On", planetsFullySurveyed, "Boots on the Ground", 100),
+                MiscStatItem("Flora Fully Scanned", planetsLandedOn),
+                MiscStatItem("Fauna Fully Scanned", floraFullyScanned),
+                MiscStatItem("Stations Docked With", faunaFullyScanned),
+                MiscStatItem("Ships Docked With", stationsDockedWith),
+                MiscStatItem("Unique Creatures Scanned", shipsDockedWith),
+                MiscStatItem("Temples Found", uniqueCreaturesScanned),
             )
         }
         with(stats.ship) {
             statsSection(
                 "Ship",
-                "Grav Jumps" to gravJumps,
-                "Farthest Grav Jump" to farthestGravJump,
-                "Ships Registered" to shipsRegistered,
-                "Max Ships Owned" to maxShipsOwned,
-                "Most Expensive Ship Owned" to mostExpensiveShipOwned,
-                "Largest Ship Owned" to largestShipOwned,
-                "Largest Crew Size" to largestCrewSize,
-                "Ships Customized" to shipsCustomized,
-                "Ship Builder Credits Spent" to shipBuilderCreditsSpent,
-                "Ships Sold" to shipsSold,
-                "Ships Painted" to shipsPainted,
-                "Ship Modules Built" to shipModulesBuilt,
+                MiscStatItem("Grav Jumps", gravJumps),
+                MiscStatItem("Farthest Grav Jump", farthestGravJump),
+                MiscStatItem("Ships Registered", shipsRegistered),
+                MiscStatItem("Max Ships Owned", maxShipsOwned),
+                MiscStatItem("Most Expensive Ship Owned", mostExpensiveShipOwned),
+                MiscStatItem("Largest Ship Owned", largestShipOwned),
+                MiscStatItem("Largest Crew Size", largestCrewSize),
+                MiscStatItem("Ships Customized", shipsCustomized),
+                MiscStatItem("Ship Builder Credits Spent", shipBuilderCreditsSpent),
+                MiscStatItem("Ships Sold", shipsSold),
+                MiscStatItem("Ships Painted", shipsPainted),
+                MiscStatItem("Ship Modules Built", shipModulesBuilt),
             )
         }
         with(stats.mission) {
             statsSection(
                 "Mission",
-                "Quests Completed" to questsCompleted,
-                "Activities Completed" to activitiesCompleted,
-                "Main Quests Completed" to mainQuestsCompleted,
-                "Crimson Fleet Collective Quests Completed" to crimsonFleetCollectiveQuestsCompleted,
-                "Freestar Collective Quests Completed" to freestarCollectiveQuestsCompleted,
-                "Ryujin Industries Quests Completed" to ryujinIndustriesQuestsCompleted,
-                "United Colonies Quests Completed" to unitedColoniesQuestsCompleted,
-                "Side Quests Completed" to sideQuestsCompleted,
+                MiscStatItem("Quests Completed", questsCompleted),
+                MiscStatItem("Activities Completed", activitiesCompleted, "Fixer", 30),
+                MiscStatItem("Main Quests Completed", mainQuestsCompleted),
+                MiscStatItem("Crimson Fleet Collective Quests Completed", crimsonFleetCollectiveQuestsCompleted),
+                MiscStatItem("Freestar Collective Quests Completed", freestarCollectiveQuestsCompleted),
+                MiscStatItem("Ryujin Industries Quests Completed", ryujinIndustriesQuestsCompleted),
+                MiscStatItem("United Colonies Quests Completed", unitedColoniesQuestsCompleted),
+                MiscStatItem("Side Quests Completed", sideQuestsCompleted, "Privaateer", 30),
             )
         }
         with(stats.combat) {
             statsSection(
                 "Combat",
-                "People Killed" to peopleKilled,
-                "Creatures Killed" to creaturesKilled,
-                "Robots Killed" to robotsKilled,
-                "Turrets Killed" to turretsKilled,
-                "Elite Enemies Killed" to eliteEnemiesKilled,
-                "Critical Strikes" to criticalStrikes,
-                "Sneak Attacks" to sneakAttacks,
-                "Boost Packs Exploded" to boostPacksExploded,
-                "Zero G Kills" to zeroGKills,
-                "Powers Used" to powersUsed,
-                "Scoped Kills" to scopedKills,
-                "Max Damage Shot" to maxDamageShot,
-                "Melee Kills" to meleeKills,
-                "Laser Kills" to laserKills,
-                "Ballistic Kills" to ballisticKills,
-                "Head Shots" to headShots,
-                "Explosive Kills" to explosiveKills,
-                "Starborn Killed" to starbornKilled,
-                "Ships Destroyed" to shipsDestroyed,
-                "Favorite Weapon" to favoriteWeapon,
-                "Favorite Power" to favoritePower,
+                MiscStatItem("People Killed", peopleKilled, "Dark Matter", 300),
+                MiscStatItem("Creatures Killed", creaturesKilled, "Another Bug Hunt", 300),
+                MiscStatItem("Robots Killed", robotsKilled),
+                MiscStatItem("Turrets Killed", turretsKilled),
+                MiscStatItem("Elite Enemies Killed", eliteEnemiesKilled),
+                MiscStatItem("Critical Strikes", criticalStrikes),
+                MiscStatItem("Sneak Attacks", sneakAttacks),
+                MiscStatItem("Boost Packs Exploded", boostPacksExploded),
+                MiscStatItem("Zero G Kills", zeroGKills),
+                MiscStatItem("Powers Used", powersUsed),
+                MiscStatItem("Scoped Kills", scopedKills),
+                MiscStatItem("Max Damage Shot", maxDamageShot),
+                MiscStatItem("Melee Kills", meleeKills),
+                MiscStatItem("Laser Kills", laserKills),
+                MiscStatItem("Ballistic Kills", ballisticKills),
+                MiscStatItem("Head Shots", headShots),
+                MiscStatItem("Explosive Kills", explosiveKills),
+                MiscStatItem("Starborn Killed", starbornKilled, "War of Angels", 20),
+                MiscStatItem("Ships Destroyed", shipsDestroyed),
+                MiscStatItem("Favorite Weapon", favoriteWeapon),
+                MiscStatItem("Favorite Power", favoritePower),
             )
         }
         with(stats.crafting) {
             statsSection(
                 "Crafting",
-                "Weapon Mods Crafted" to weaponModsCrafted,
-                "Armor Mods Crafted" to armorModsCrafted,
-                "Organic Resources Gathered" to organicResourcesGathered,
-                "Inorganic Resources Gathered" to inorganicResourcesGathered,
-                "Chems Crafted" to chemsCrafted,
-                "Food Cooked" to foodCooked,
-                "Outposts Built" to outpostsBuilt,
-                "Objects Built" to objectsBuilt,
-                "Cargo Links Established" to cargoLinksEstablished,
+                MiscStatItem("Weapon Mods Crafted", weaponModsCrafted, "Soldier of Fortune", 50),
+                MiscStatItem("Armor Mods Crafted", armorModsCrafted),
+                MiscStatItem("Organic Resources Gathered", organicResourcesGathered, "Life Begets Life", 500),
+                MiscStatItem("Inorganic Resources Gathered", inorganicResourcesGathered, "Rock Collection", 500),
+                MiscStatItem("Chems Crafted", chemsCrafted),
+                MiscStatItem("Food Cooked", foodCooked),
+                MiscStatItem("Outposts Built", outpostsBuilt),
+                MiscStatItem("Objects Built", objectsBuilt),
+                MiscStatItem("Cargo Links Established", cargoLinksEstablished, "Shipping Magnate", 5),
             )
         }
         with(stats.crime) {
             statsSection(
                 "Crime",
-                "Locks Picked" to locksPicked,
-                "Pockets Picked" to pocketsPicked,
-                "Items Stolen" to itemsStolen,
-                "Assaults" to assaults,
-                "Murders" to murders,
-                "Trespasses" to trespasses,
-                "Times Arrested" to timesArrested,
-                "Most Contraband Carried" to mostContrabandCarried,
-                "Times Caught With Contraband" to timesCaughtWithContraband,
-                "Acts Of Piracy" to actsOfPiracy,
-                "Total Lifetime Bounty" to totalLifetimeBounty,
-                "Largest Bounty" to largestBounty,
+                MiscStatItem("Locks Picked", locksPicked, "Cyber Jockey", 50),
+                MiscStatItem("Pockets Picked", pocketsPicked),
+                MiscStatItem("Items Stolen", itemsStolen),
+                MiscStatItem("Assaults", assaults),
+                MiscStatItem("Murders", murders),
+                MiscStatItem("Trespasses", trespasses),
+                MiscStatItem("Times Arrested", timesArrested),
+                MiscStatItem("Most Contraband Carried", mostContrabandCarried),
+                MiscStatItem("Times Caught With Contraband", timesCaughtWithContraband),
+                MiscStatItem("Acts Of Piracy", actsOfPiracy),
+                MiscStatItem("Total Lifetime Bounty", totalLifetimeBounty),
+                MiscStatItem("Largest Bounty", largestBounty),
             )
         }
     }
 }
 
-private fun TagConsumer<HTMLElement>.statsSection(title: String, vararg data: Pair<String, Any>) {
+private fun TagConsumer<HTMLElement>.statsSection(title: String, vararg data: MiscStatItem) {
     div("section-view-box misc-stat-box") {
         id = "$title-stats"
         details {
             open = true
             summary { h3 { +title } }
             table("stat-table") {
-                data.forEach { (name, value) ->
-                    tr {
-                        td { +name }
-                        td { +value.toString() }
+                data.forEach { stat ->
+                    with(stat) {
+                        tr {
+                            td { +name }
+                            td { +value.toString() }
+                        }
+                        if (value is Int && achievementName != null && achievementTotal != null) {
+                            val progress = minOf(achievementTotal, value)/achievementTotal.toFloat()*100
+                            tr {
+                                td("progress-bar") {
+                                    this.title = "Achievement: $achievementName: $value/$achievementTotal"
+                                    style = "background-image: linear-gradient(to right, var(--blue) $progress%, gray $progress%);"
+                                }
+                            }
+                        }
                     }
                 }
             }
