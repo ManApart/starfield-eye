@@ -23,4 +23,6 @@ data class GameConnectionSettings(
 data class PollResponse(
     val quests: List<Quest>,
     val stats: MiscStats? = null,
-)
+) {
+    val success = quests.isNotEmpty() && stats != null
+}

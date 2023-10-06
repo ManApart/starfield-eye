@@ -41,6 +41,7 @@ fun dockView() {
                 id = "sections"
                 connectToGame()
                 manageData()
+                prepareToDock()
             }
         }
     }
@@ -59,23 +60,10 @@ private fun DIV.connectToGame() {
         p { +"Note that docking functionality is beta and under heavy construction. Things that require docking will likely be broken and often not yet be styled. Proceed at your own risk. " }
 
         p {
-            +"Docking requires that you have two mods installed. First, you need to have"
-            a(
-                "https://www.nexusmods.com/starfield/mods/4280",
-                target = "_blank"
-            ) { +" Console API and Web Application " }
-            +"installed and working. Make sure that in the "
-            code { +"sfse_plugin_console_api.ini " }
-            +"you set "
-            code { +"bDisableCORS=true" }
+            +"Docking setup is fairly complicated. See the "
+            a(href = "#docking-install") { +"instructions below." }
         }
-        p {
-            +"Second, you need to install my companion app mod that polls data from the game. Once things are more polished I'll release it on Nexus, but for now or to get bleeding edge changes, you can get it "
-            a(
-                "https://github.com/ManApart/starfield-eye/blob/master/mod/Data/starfield-eye-poll.txt",
-                target = "_blank"
-            ) { +"on Github." }
-        }
+
         p { +"Once installed, enter your host and port and attempt to dock. The docking status should update after you attempt to dock." }
 
         input(classes = "connection-input") {
@@ -153,6 +141,64 @@ private fun DIV.manageData() {
     }
 }
 
+private fun DIV.prepareToDock() {
+    div("section-view-box") {
+        id = "docking-install"
+        h2 { +"Preparing to Dock" }
+        div("accent-line") { +"" }
+
+        h3 { +"Installing Mods" }
+        p { +"Docking requires that you have two mods installed. First, you need to have Console API and Web Application so we can get data from the game. Second, you need to install my companion app mod that polls data from the game. (Once things are more polished I'll release it on Nexus, but for now or to get bleeding edge changes)." }
+        ul {
+            li {
+                a(
+                    "https://www.nexusmods.com/starfield/mods/4280",
+                    target = "_blank"
+                ) { +"Install Console API and Web Application" }
+            }
+            li {
+                +"Open "
+                code { +"sfse_plugin_console_api.ini " }
+            }
+            li {
+                +"Set "
+                code { +"bDisableCORS=true" }
+            }
+            li {
+                +"Set your host to your local IP address; something like: "
+                code { +"host=192.168.0.X" }
+            }
+            li {
+                a(
+                    "https://github.com/ManApart/starfield-eye/blob/master/mod/Data/starfield-eye-poll.txt",
+                    target = "_blank"
+                ) { +"Install Companion App" }
+            }
+            li {
+                a(
+                    "",
+                    target = "_blank"
+                ) { +"Clone the repo and checkout the deploy branch" }
+            }
+            li {
+                a(
+                    "",
+                    target = "_blank"
+                ) { +"Install NPM" }
+            }
+            li {
+                +"Install browser-sync: "
+                code { +"npm -i browser-sync" }
+            }
+            li {
+                +"Run browser-sync in the deploy folder: "
+                code { +"browser-sync ." }
+            }
+        }
+
+    }
+}
+
 private fun attemptConnection() {
     with(inMemoryStorage.connectionSettings) {
         host = el<HTMLInputElement>("dock-host").value
@@ -185,7 +231,7 @@ fun pollData() {
                 if (data.quests.isNotEmpty()) inMemoryStorage.quests = data.quests
                 data.stats?.let { inMemoryStorage.stats = it }
                 persistMemory()
-                pollHook(true)
+                pollHook(data.success)
             } catch (e: Error) {
                 pollHook(false)
             }
