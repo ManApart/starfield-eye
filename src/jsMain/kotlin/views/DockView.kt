@@ -149,24 +149,27 @@ private fun DIV.prepareToDock() {
 
         h3 { +"Installing Mods" }
         p { +"Docking requires that you have two mods installed. First, you need to have Console API and Web Application so we can get data from the game. Second, you need to install my companion app mod that polls data from the game. (Once things are more polished I'll release it on Nexus, but for now or to get bleeding edge changes)." }
+        p { +"If you'll only access the site from the same computer that the game is running on, you can skip self hosting the site. If you'd like to dock your phone as well, you'll need to self host this site." }
         ul {
             li {
                 a(
                     "https://www.nexusmods.com/starfield/mods/4280",
                     target = "_blank"
                 ) { +"Install Console API and Web Application" }
-            }
-            li {
-                +"Open "
-                code { +"sfse_plugin_console_api.ini " }
-            }
-            li {
-                +"Set "
-                code { +"bDisableCORS=true" }
-            }
-            li {
-                +"Set your host to your local IP address; something like: "
-                code { +"host=192.168.0.X" }
+                ul {
+                    li {
+                        +"Open "
+                        code { +"sfse_plugin_console_api.ini " }
+                    }
+                    li {
+                        +"Set "
+                        code { +"bDisableCORS=true" }
+                    }
+                    li {
+                        +"Set your host to your local IP address; something like: "
+                        code { +"host=192.168.0.100" }
+                    }
+                }
             }
             li {
                 a(
@@ -174,29 +177,27 @@ private fun DIV.prepareToDock() {
                     target = "_blank"
                 ) { +"Install Companion App" }
             }
+        }
+        p { +"Host the site from the companion app mod" }
+        ul {
             li {
-                a(
-                    "",
-                    target = "_blank"
-                ) { +"Clone the repo and checkout the deploy branch" }
+                +"In the companion app, open server.bat and change "
+                code { +"127.0.0.1" }
+                +" to your local ip address, and then run the bat file."
             }
             li {
-                a(
-                    "",
-                    target = "_blank"
-                ) { +"Install NPM" }
+                +"Access the site from the local url and port, something like: "
+                code { +"192.168.0.100:55551" }
             }
             li {
-                +"Install browser-sync: "
-                code { +"npm -i browser-sync" }
+                +"Dock using the IP and port in "
+                code { +"sfse_plugin_console_api.ini " }
             }
-            li {
-                +"Run browser-sync in the deploy folder: "
-                code { +"browser-sync ." }
-            }
+            li { +"You can also import and export data to share across browsers without self hosting the site." }
         }
 
     }
+
 }
 
 private fun attemptConnection() {

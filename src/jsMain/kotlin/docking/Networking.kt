@@ -13,7 +13,7 @@ private val client = HttpClient()
 suspend fun postToConsole(body: String): String? {
     return try {
         with(inMemoryStorage.connectionSettings) {
-            docking.client.post("http://$host:$port/console") {
+            docking.client.post("https://$host:$port/console") {
                 setBody(body)
             }.bodyAsText()
         }
