@@ -117,7 +117,7 @@ private fun DIV.manageData() {
         div("accent-line") { +"The mind's long con: forgetfulness" }
 
         p { +"User data is only stored on the browser. (I don't track anything you do)." }
-        p { +"You can export data here to either back it up, or import it into another browser." }
+        p { +"You can export data here to either back it up, or import it into another browser, or from the github site to the locally hosted one." }
         p { +"If you're having issues with the site, it's possible that deleting your user data may fix them. Make sure to export your data first so you have a backup." }
 
         button {
@@ -145,7 +145,7 @@ private fun DIV.prepareToDock() {
     div("section-view-box") {
         id = "docking-install"
         h2 { +"Preparing to Dock" }
-        div("accent-line") { +"" }
+        div("accent-line") { +"Burning helium out there" }
 
         h3 { +"Installing Mods" }
         p { +"Docking requires that you have two mods installed. First, you need to have Console API and Web Application so we can get data from the game. Second, you need to install my companion app mod that polls data from the game. (Once things are more polished I'll release it on Nexus, but for now or to get bleeding edge changes)." }

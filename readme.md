@@ -8,6 +8,8 @@ https://manapart.github.io/starfield-eye/#galaxy
 
 ## Deploying
 ```
+./scripts/stage.sh
+or
 gradlew jsBrowserDistribution
 #Switch to deploy branch in separate folder
 cd ../starfield-eye-deploy
