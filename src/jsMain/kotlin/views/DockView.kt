@@ -179,11 +179,11 @@ private fun DIV.prepareToDock() {
                             li {
                                 code { +"bDisableStaticFiles=false" }
                             }
+                            li {
+                                +"Set your host to your local IP address; something like: "
+                                code { +"host=192.168.0.100" }
+                            }
                         }
-                    }
-                    li {
-                        +"Set your host to your local IP address; something like: "
-                        code { +"host=192.168.0.100" }
                     }
                 }
             }
@@ -214,9 +214,10 @@ private fun DIV.prepareToDock() {
 
 }
 
-private fun submitForDocking(event: KeyboardEvent){
+private fun submitForDocking(event: KeyboardEvent) {
     if (event.key == "Enter") attemptConnection()
 }
+
 private fun attemptConnection() {
     with(inMemoryStorage.connectionSettings) {
         host = el<HTMLInputElement>("dock-host").value
