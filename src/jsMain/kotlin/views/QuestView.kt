@@ -15,6 +15,7 @@ import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.js.onKeyUpFunction
+import org.w3c.dom.HTMLButtonElement
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import pollHook
@@ -22,6 +23,7 @@ import searchMissions
 
 private var oldQuests: List<Quest> = listOf()
 var missionDivs: Map<String, HTMLElement> = mapOf()
+private var navButtons: List<HTMLButtonElement> = listOf()
 
 fun questView() {
     window.history.pushState(null, "null", "#quests")
@@ -98,13 +100,17 @@ private fun displayQuests(quests: List<Quest>) {
 
 private fun saveHtmlRefs(quests: List<Quest>) {
     missionDivs = quests.associate { it.uniqueId to el(it.uniqueId) }
+    navButtons = listOf("show-all", "show-main", "show-faction", "show-city", "show-misc", "show-other").mapNotNull {
+        el<HTMLButtonElement?>(it)
+    }
 }
 
 
 private fun TagConsumer<HTMLElement>.filterControls() {
     div {
         id = "quest-search"
-        missionButton("toggle-completed", "Toggle Completed", ::toggleCompleted)
+        val toggleClass = "button-pushed".takeIf {  inMemoryStorage.missionSearchOptions.showCompleted}
+        missionButton("toggle-completed", "Toggle Completed", ::toggleCompleted, toggleClass)
         missionButton("show-all", "All", ::showAll)
         missionButton("show-main", "Main Quests", ::showMain)
         missionButton("show-faction", "Faction", ::showFaction)
@@ -123,8 +129,8 @@ private fun TagConsumer<HTMLElement>.filterControls() {
     }
 }
 
-private fun DIV.missionButton(id: String, title: String, onClick: () -> Unit) {
-    button {
+private fun DIV.missionButton(id: String, title: String, onClick: () -> Unit, classes: String? = null) {
+    button(classes = classes) {
         this.id = id
         +title
         onClickFunction = { onClick() }
@@ -150,7 +156,11 @@ private fun TagConsumer<HTMLElement>.quests(quests: List<Quest>) {
                     open = false
                     summary {
                         h4 { +quest.name }
-                        a(href="https://starfieldwiki.net/wiki/Starfield:${quest.name.replace(" ", "_")}", "_blank", "quest-wiki-link"){+"Wiki"}
+                        a(
+                            href = "https://starfieldwiki.net/wiki/Starfield:${quest.name.replace(" ", "_")}",
+                            "_blank",
+                            "quest-wiki-link"
+                        ) { +"Wiki" }
                     }
                     ul {
                         quest.stages.sortedByDescending { it.id }.forEach { stage ->
@@ -182,38 +192,58 @@ fun filterMissions(shown: List<Quest>) {
     }
 }
 
+private fun pushButton(id: String) {
+    navButtons.forEach {
+        it.removeClass("button-pushed")
+    }
+    el(id).addClass("button-pushed")
+}
+
 
 private fun showAll() {
     inMemoryStorage.missionSearchOptions.types = MissionType.entries
+    pushButton("show-all")
     searchMissions()
 }
 
 private fun showMain() {
     inMemoryStorage.missionSearchOptions.types = listOf(MissionType.MAIN)
+    pushButton("show-main")
     searchMissions()
 }
 
 private fun toggleCompleted() {
     inMemoryStorage.missionSearchOptions.showCompleted = !inMemoryStorage.missionSearchOptions.showCompleted
+    el("toggle-completed").let {
+        if (inMemoryStorage.missionSearchOptions.showCompleted) {
+            it.addClass("button-pushed")
+        } else {
+            it.removeClass("button-pushed")
+        }
+    }
     searchMissions()
 }
 
 private fun showCity() {
     inMemoryStorage.missionSearchOptions.types = MissionType.entries.filter { it.isCity() }
+    pushButton("show-city")
     searchMissions()
 }
 
 private fun showFaction() {
     inMemoryStorage.missionSearchOptions.types = MissionType.entries.filter { it.isFaction() }
+    pushButton("show-faction")
     searchMissions()
 }
 
 private fun showMisc() {
     inMemoryStorage.missionSearchOptions.types = MissionType.entries.filter { it.isMisc() }
+    pushButton("show-misc")
     searchMissions()
 }
 
 private fun showOther() {
     inMemoryStorage.missionSearchOptions.types = listOf(MissionType.OTHER)
+    pushButton("show-other")
     searchMissions()
 }
