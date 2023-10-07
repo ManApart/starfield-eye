@@ -150,6 +150,8 @@ private fun DIV.prepareToDock() {
         h3 { +"Installing Mods" }
         p { +"Docking requires that you have two mods installed. First, you need to have Console API and Web Application so we can get data from the game. Second, you need to install my companion app mod that polls data from the game. (Once things are more polished I'll release it on Nexus, but for now or to get bleeding edge changes)." }
         p { +"If you'll only access the site from the same computer that the game is running on, you can skip self hosting the site. If you'd like to dock your phone as well, you'll need to self host this site." }
+
+        h4 { +"Installing" }
         ul {
             li {
                 a(
@@ -166,6 +168,10 @@ private fun DIV.prepareToDock() {
                         code { +"bDisableCORS=true" }
                     }
                     li {
+                        +"If self hosting the app, set "
+                        code { +"bDisableStaticFiles=false" }
+                    }
+                    li {
                         +"Set your host to your local IP address; something like: "
                         code { +"host=192.168.0.100" }
                     }
@@ -178,16 +184,14 @@ private fun DIV.prepareToDock() {
                 ) { +"Install Companion App" }
             }
         }
-        p { +"Host the site from the companion app mod" }
+        h4 { +"Self Hosting" }
+        p { +"Host the site from the companion app mod. Only needed for things like your phone to get live access." }
         ul {
-            li {
-                +"In the companion app, open server.bat and change "
-                code { +"127.0.0.1" }
-                +" to your local ip address, and then run the bat file."
-            }
+            li { +"The local site will only be up when the game is running" }
+            li { +"Data fetched while the site is up should persist once you close the game" }
             li {
                 +"Access the site from the local url and port, something like: "
-                code { +"192.168.0.100:55551" }
+                code { +"192.168.0.100:55555/starfield-eye.html" }
             }
             li {
                 +"Dock using the IP and port in "

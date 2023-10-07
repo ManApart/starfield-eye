@@ -3,4 +3,5 @@ build/
 .idea/
 kotlin-js-store
 raw-data
-mod/Starfield-Eye-Server/public
+mod/Data/SFSE/plugins/sfse_plugin_console_web/
+mod/starfield-eye.zip
