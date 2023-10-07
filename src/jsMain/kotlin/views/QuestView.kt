@@ -155,6 +155,7 @@ private fun TagConsumer<HTMLElement>.quests(quests: List<Quest>) {
                 details {
                     open = false
                     summary {
+                        img(src = "images/missions/city.svg", classes = "quest-icon")
                         h4 { +quest.name }
                         a(
                             href = "https://starfieldwiki.net/wiki/Starfield:${quest.name.replace(" ", "_")}",
