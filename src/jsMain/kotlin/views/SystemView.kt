@@ -5,8 +5,10 @@ import PlanetInfo
 import ResourceType
 import Star
 import StarSystem
+import docking.setCourse
 import el
 import inMemoryStorage
+import keyPressedHook
 import kotlinx.browser.window
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -14,15 +16,13 @@ import kotlinx.coroutines.launch
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
-import kotlinx.html.button
-import kotlinx.html.div
 import kotlinx.html.dom.append
-import kotlinx.html.h2
-import kotlinx.html.js.*
-import kotlinx.html.table
+import kotlinx.html.js.a
+import kotlinx.html.js.onClickFunction
+import kotlinx.html.js.onMouseOutFunction
+import kotlinx.html.js.onMouseOverFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.events.KeyboardEvent
-import docking.setCourse
 
 private var currentPlanet = 0
 private var currentPlanetType = "star"
@@ -56,6 +56,7 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
         else -> "moon"
     }
     setSelected(planetType, planetId)
+    keyPressedHook = ::navigateOrrery
 }
 
 private fun updateUrl(system: StarSystem, planetId: Int) {
@@ -267,7 +268,7 @@ private fun TABLE.resourceRow(resources: List<ResourceType>) {
     }
 }
 
-fun navigateOrrery(key: KeyboardEvent) {
+private fun navigateOrrery(key: KeyboardEvent) {
     if (window.location.hash.contains("system") && currentSystem != null) {
         when (key.key) {
             "ArrowRight" -> selectNextPlanet(currentSystem!!)

@@ -9,6 +9,7 @@ import views.*
 var galaxy: Galaxy = Galaxy()
 var pageIsVisible = true
 var pollHook: (Boolean) -> Unit = {}
+var keyPressedHook: (KeyboardEvent) -> Unit = {}
 var missionReference: Map<String, MissionWikiData> = mapOf()
 
 fun getPlanets(): List<Planet> {
@@ -31,7 +32,9 @@ fun main() {
     window.addEventListener("keyup", { e ->
         val event = (e as KeyboardEvent)
         if (document.activeElement !is HTMLTextAreaElement && document.activeElement !is HTMLInputElement && event.key in listOf("ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown")) {
-            navigateOrrery(event)
+            keyPressedHook(event)
+        } else if (document.activeElement is HTMLInputElement && event.key == "Enter"){
+            keyPressedHook(event)
         }
     })
     window.addEventListener("keydown", { e ->
@@ -60,6 +63,8 @@ fun doRouting() {
 }
 
 fun doRouting(windowHash: String) {
+    pollHook = {}
+    keyPressedHook = {}
     when {
         windowHash.startsWith("#about") -> {
             aboutView()

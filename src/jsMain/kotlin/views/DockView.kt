@@ -7,6 +7,7 @@ import el
 import exportPlayerInfo
 import importPlayerInfo
 import inMemoryStorage
+import keyPressedHook
 import kotlinx.browser.window
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -17,6 +18,7 @@ import kotlinx.html.js.onClickFunction
 import missionReference
 import org.w3c.dom.HTMLDivElement
 import org.w3c.dom.HTMLInputElement
+import org.w3c.dom.events.KeyboardEvent
 import pageIsVisible
 import persistMemory
 import pollHook
@@ -46,6 +48,7 @@ fun dockView() {
         }
     }
     pollHook = ::receivePoll
+    keyPressedHook = ::submitForDocking
     if (inMemoryStorage.connectionSettings.pollData) pollData()
 }
 
@@ -168,8 +171,15 @@ private fun DIV.prepareToDock() {
                         code { +"bDisableCORS=true" }
                     }
                     li {
-                        +"If self hosting the app, set "
-                        code { +"bDisableStaticFiles=false" }
+                        +"If self hosting the app"
+                        ul {
+                            li {
+                                code { +"bEnableWebConsole=true" }
+                            }
+                            li {
+                                code { +"bDisableStaticFiles=false" }
+                            }
+                        }
                     }
                     li {
                         +"Set your host to your local IP address; something like: "
@@ -204,6 +214,9 @@ private fun DIV.prepareToDock() {
 
 }
 
+private fun submitForDocking(event: KeyboardEvent){
+    if (event.key == "Enter") attemptConnection()
+}
 private fun attemptConnection() {
     with(inMemoryStorage.connectionSettings) {
         host = el<HTMLInputElement>("dock-host").value

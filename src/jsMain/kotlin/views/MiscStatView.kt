@@ -218,7 +218,7 @@ private fun TagConsumer<HTMLElement>.statsSection(title: String, vararg data: Mi
                             td { +name }
                             td { +value.toString() }
                         }
-                        if (value is Int && achievementName != null && achievementTotal != null) {
+                        if (value is Int && achievementName != null && achievementTotal != null && value != 0) {
                             val progress = minOf(achievementTotal, value)/achievementTotal.toFloat()*100
                             tr {
                                 td("progress-bar") {
