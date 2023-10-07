@@ -1,6 +1,15 @@
+.quest summary {
+    display: flex;
+}
+
+.quest-icon {
+    height: 35px;
+}
+
 .quest h4 {
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom: 0px;
+    margin-left: 10px;
 }
 
 .quest ul {
@@ -18,6 +27,10 @@
     color: gray;
 }
 .quest-incomplete {
+}
+
+.quest-wiki-link{
+    margin-left: auto;
 }
 
 .quest-stage {

@@ -64,11 +64,15 @@ button {
 	margin-bottom: 5px;
 	cursor: pointer;
 	font-family: Architekt;
+    transition: 1s;
 }
 
 button:hover{
     background-position: -100% 0%;
-    transition: 1s;
+}
+
+.button-pushed{
+    background-position: -100% 0%;
 }
 
 textarea {
@@ -107,7 +111,7 @@ details {
 }
 
 summary {
-  display: flex;
+  display: block;
   cursor: pointer;
 }
 
