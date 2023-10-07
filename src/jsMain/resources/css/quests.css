@@ -1,4 +1,5 @@
 .quest h4 {
+    display: inline;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -18,6 +19,10 @@
     color: gray;
 }
 .quest-incomplete {
+}
+
+.quest-wiki-link{
+    float: right;
 }
 
 .quest-stage {

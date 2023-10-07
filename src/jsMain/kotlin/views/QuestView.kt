@@ -148,7 +148,10 @@ private fun TagConsumer<HTMLElement>.quests(quests: List<Quest>) {
             div("quest $completedClass $missionTypeCategory-category $missionTypeClass-quest") {
                 details {
                     open = false
-                    summary { h4 { +quest.name } }
+                    summary {
+                        h4 { +quest.name }
+                        a(href="https://starfieldwiki.net/wiki/Starfield:${quest.name.replace(" ", "_")}", "_blank", "quest-wiki-link"){+"Wiki"}
+                    }
                     ul {
                         quest.stages.sortedByDescending { it.id }.forEach { stage ->
                             val stageCompletedClass =

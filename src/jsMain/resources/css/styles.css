@@ -107,7 +107,7 @@ details {
 }
 
 summary {
-  display: flex;
+  display: block;
   cursor: pointer;
 }
 
