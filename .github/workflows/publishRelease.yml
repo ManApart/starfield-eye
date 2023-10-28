@@ -1,0 +1,39 @@
+name: Publish Release
+
+on:
+  push:
+    tags:
+      - '*.*.*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 19
+        uses: actions/setup-java@v2
+        with:
+          java-version: '19'
+          distribution: 'adopt'
+      - name: Cache Gradle packages
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+      - name: Build with Gradle
+        run: |
+          ./gradlew build jsBrowserDistribution \
+          mkdirs -p mod/Data/SFSE/plugins/sfse_plugin_console_web
+          cp -r build/dist/js/productionExecutable/* mod/Data/SFSE/plugins/sfse_plugin_console_web \
+          cp build/dist/js/productionExecutable/index.html mod/Data/SFSE/plugins/sfse_plugin_console_web/starfield-eye.html \
+          zip -q -r mod/starfield-eye.zip mod/Data \
+      - name: Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: ./mod/starfield-eye.zip

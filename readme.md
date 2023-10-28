@@ -1,5 +1,8 @@
 # Starfield Eye
 
+[![Build and Test](https://github.com/ManApart/starfield-eye/actions/workflows/runTests.yml/badge.svg)](https://github.com/ManApart/starfield-eye/actions/workflows/runTests.yml)
+
+
 An Ad free searchable starmap with labels and bookmarks.
 
 Extremely wip at this point.
