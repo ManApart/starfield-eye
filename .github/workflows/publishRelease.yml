@@ -28,7 +28,7 @@ jobs:
             ${{ runner.os }}-gradle-
       - name: Build with Gradle
         run: |
-          mkdirs -p mod/Data/SFSE/plugins/sfse_plugin_console_web \
+          mkdir -p mod/Data/SFSE/plugins/sfse_plugin_console_web \
           ./gradlew build jsBrowserDistribution \
           cp -r build/dist/js/productionExecutable/* mod/Data/SFSE/plugins/sfse_plugin_console_web \
           cp build/dist/js/productionExecutable/index.html mod/Data/SFSE/plugins/sfse_plugin_console_web/starfield-eye.html \
