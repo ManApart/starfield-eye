@@ -1,28 +1,6 @@
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
 
-
-@Serializable
-data class PlanetWikiData(
-    val name: String = "",
-    val type: String = "",
-    val temperature: String = "",
-    val atmosphere: String = "",
-    val magnetosphere: String = "",
-    val fauna: String = "",
-    val flora: String = "",
-    val water: String = "",
-    val resources: List<String> = listOf(),
-    val traits: List<String> = listOf(),
-)
-
-@Serializable
-data class MissionWikiData(
-    val name: String = "",
-    val id: String = "",
-    val type: MissionType = MissionType.OTHER,
-)
-
 enum class MissionType {
     MAIN,
     NEW_ATLANTIS,
@@ -37,30 +15,30 @@ enum class MissionType {
     RYUJIN_INDUSTRIES,
     MISSION_BOARD,
     RADIANT,
-    OTHER
-}
+    OTHER;
 
-fun MissionType.isMisc(): Boolean {
-    return this in listOf(MissionType.COMPANION, MissionType.MISSION_BOARD, MissionType.RADIANT)
-}
+    fun isMisc(): Boolean {
+        return this in listOf(COMPANION, MISSION_BOARD, RADIANT)
+    }
 
-fun MissionType.isFaction(): Boolean {
-    return this in listOf(
-        MissionType.CRIMSON_FLEET,
-        MissionType.UNITED_COLONIES,
-        MissionType.RYUJIN_INDUSTRIES,
-        MissionType.FREESTAR_RANGERS
-    )
-}
+    fun isFaction(): Boolean {
+        return this in listOf(
+            CRIMSON_FLEET,
+            UNITED_COLONIES,
+            RYUJIN_INDUSTRIES,
+            FREESTAR_RANGERS
+        )
+    }
 
-fun MissionType.isCity(): Boolean {
-    return this in listOf(
-        MissionType.AKILA,
-        MissionType.CYDONIA,
-        MissionType.NEW_ATLANTIS,
-        MissionType.NEON,
-        MissionType.CITY_OTHER
-    )
+    fun isCity(): Boolean {
+        return this in listOf(
+            AKILA,
+            CYDONIA,
+            NEW_ATLANTIS,
+            NEON,
+            CITY_OTHER
+        )
+    }
 }
 
 fun String.toMissionType(): MissionType {
@@ -95,6 +73,7 @@ data class Quest(
 ) {
     @Transient
     val uniqueId = "$name-$id-$instance-$batIndex"
+
     @Transient
     val latestState = stages.maxBy { it.id }.state
 }
@@ -108,3 +87,4 @@ data class QuestStage(
     val state: QuestStageState
 )
 
+enum class Temperament { PEACEFUL, SKITTISH, WARY, DEFENSIVE, TERRITORIAL, FEARLESS, AGGRESSIVE, UNKNOWN }

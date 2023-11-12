@@ -1,5 +1,6 @@
 package wikiScraper
 
+import org.jsoup.Jsoup
 import java.net.URL
 import java.net.URLConnection
 import java.nio.charset.StandardCharsets
@@ -25,4 +26,21 @@ fun getPage(url: String, headers: Map<String, String> = mapOf()): String? {
         scanner.useDelimiter("\\A")
         return if (scanner.hasNext()) scanner.next() else null.also { println("Unable to fetch $url") }
     }
+}
+
+fun crawl(baseUrl: String, onlyOne: Boolean): List<String> {
+    val cleanBase = if (baseUrl.startsWith("/")) "https://starfieldwiki.net$baseUrl" else baseUrl
+    println("Crawling $cleanBase")
+    val page = Jsoup.connect(cleanBase).get()
+    val urls = page.select("li")
+        .flatMap { li ->
+            li.select("a").mapNotNull { it.attr("href") }
+        }
+        .map { if (it.startsWith("/")) "https://starfieldwiki.net$it" else it }
+        .filter { it.startsWith("https://starfieldwiki.net/wiki/Starfield:") }
+
+    val nextUrl = page.select("a").firstOrNull { it.text() == "next page" }?.attr("href")?.let { "https://starfieldwiki.net$it" }
+    val nextUrls = if (onlyOne) listOf() else urls.filter { it.contains("Category") } + listOfNotNull(nextUrl)
+
+    return urls + nextUrls.flatMap { crawl(it, onlyOne) }
 }

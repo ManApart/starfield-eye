@@ -5,9 +5,6 @@ import Quest
 import QuestStageState
 import el
 import inMemoryStorage
-import isCity
-import isFaction
-import isMisc
 import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass

@@ -50,27 +50,10 @@ private fun fetchMissionPagesIfEmpty(missions: File) {
             "https://starfieldwiki.net/wiki/Starfield:Freestar_Rangers_Missions",
             "https://starfieldwiki.net/wiki/Starfield:Ryujin_Industries_Missions",
             "https://starfieldwiki.net/wiki/Starfield:UC_Vanguard_Missions",
-        ).flatMap { crawl(it) }.toSet()
+        ).flatMap { crawl(it, onlyOne) }.toSet()
 
         missions.writeText(urls.joinToString("\n"))
     }
-}
-
-private fun crawl(baseUrl: String): List<String> {
-    val cleanBase = if (baseUrl.startsWith("/")) "https://starfieldwiki.net$baseUrl" else baseUrl
-    println("Crawling $cleanBase")
-    val page = Jsoup.connect(cleanBase).get()
-    val urls = page.select("li")
-        .flatMap { li ->
-            li.select("a").mapNotNull { it.attr("href") }
-        }
-        .map { if (it.startsWith("/")) "https://starfieldwiki.net$it" else it }
-        .filter { it.startsWith("https://starfieldwiki.net/wiki/Starfield:") }
-
-    val nextUrl = page.select("a").firstOrNull { it.text() == "next page" }?.attr("href")?.let { "https://starfieldwiki.net$it" }
-    val nextUrls = if (onlyOne) listOf() else urls.filter { it.contains("Category") } + listOfNotNull(nextUrl)
-
-    return urls + nextUrls.flatMap { crawl(it) }
 }
 
 private fun fetchAndParseMission(url: String): MissionWikiData? {
