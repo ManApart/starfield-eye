@@ -20,6 +20,7 @@ fun main() {
     } else mapOf()).toMutableMap()
 
     getPlanetNames()
+        .also { println("Reading ${it.size} Planets") }
         .chunked(chunkSize)
         .flatMap { chunk ->
             chunk.mapNotNull { name -> getPage("https://starfieldwiki.net/wiki/Starfield:$name")?.let { name to it } }.also {

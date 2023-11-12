@@ -4389,5 +4389,24 @@
         "name": "A Legacy Forged",
         "id": "UC09",
         "type": "UNITED_COLONIES"
+    },
+    {
+        "name": "Due in Full",
+        "id": "002AD3D5"
+    },
+    {
+        "name": "Late Bloomer",
+        "id": "City_NA_Botany03 (00270717)",
+        "type": "CITY_OTHER"
+    },
+    {
+        "name": "Media Sponge",
+        "id": "FFCydoniaR03 2400",
+        "type": "CYDONIA"
+    },
+    {
+        "name": "Runaway",
+        "id": "City_CY_Runaway01(0022686C)",
+        "type": "CITY_OTHER"
     }
 ]

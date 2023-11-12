@@ -23,6 +23,7 @@ fun main() {
         jsonMapper.decodeFromString<List<MissionWikiData>>(output.readText())
     } else listOf()).associateBy { it.id }.toMutableMap()
 
+    println("Reading Missions")
     missionUrlFile.readLines()
         .also { println("Found a total of ${it.size} urls") }
         .let { if (onlyOne) it.take(1) else it.drop(start) }
