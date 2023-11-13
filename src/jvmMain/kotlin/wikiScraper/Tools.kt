@@ -1,6 +1,7 @@
 package wikiScraper
 
 import org.jsoup.Jsoup
+import org.jsoup.nodes.Element
 import java.net.URL
 import java.net.URLConnection
 import java.nio.charset.StandardCharsets
@@ -43,4 +44,12 @@ fun crawl(baseUrl: String, onlyOne: Boolean): List<String> {
     val nextUrls = if (onlyOne) listOf() else urls.filter { it.contains("Category") } + listOfNotNull(nextUrl)
 
     return urls + nextUrls.flatMap { crawl(it, onlyOne) }
+}
+
+fun Element?.cleanText(): String? {
+    return this?.text()?.replace("(?)", "")?.ifBlank { null }
+}
+
+fun Element.select(row: Int, cell: Int): Element? {
+    return select("tr")[row].select("td")[cell]
 }

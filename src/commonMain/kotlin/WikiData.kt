@@ -28,7 +28,6 @@ data class FaunaWikiData(
     val planets: List<String> = listOf(),
     val biomes: List<String> = listOf(),
     val resource: String,
-    val drops: List<String> = listOf(),
     val abilities: List<String> = listOf(),
     val other: Map<String, String> = mapOf()
 )

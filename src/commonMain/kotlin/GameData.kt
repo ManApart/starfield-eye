@@ -88,3 +88,7 @@ data class QuestStage(
 )
 
 enum class Temperament { PEACEFUL, SKITTISH, WARY, DEFENSIVE, TERRITORIAL, FEARLESS, AGGRESSIVE, UNKNOWN }
+
+fun String?.toTemperament(): Temperament {
+    return this?.let { Temperament.entries.firstOrNull { it.name.lowercase() == lowercase() } } ?: Temperament.UNKNOWN
+}
