@@ -76,26 +76,24 @@ private fun parseSingleTable(singleTable: Element): List<FaunaWikiData> {
 }
 
 private fun parseVariants(singleTable: Element, variantTables: MutableList<Element>): List<FaunaWikiData> {
-    val name = singleTable.select("th").first()!!.text()
-    val planets = singleTable.select(1, 0)!!.select("a").map { it.text() }
     val generalDifficulty = singleTable.select(3, 0)?.cleanText()
     val generalHealth = singleTable.select(5, 0)?.cleanText()
     val generalTemperament = singleTable.select(5, 1)?.cleanText()
 
     return variantTables.map {
-        parseVariant(it, name, planets, generalDifficulty, generalHealth, generalTemperament)
+        parseVariant(it, generalDifficulty, generalHealth, generalTemperament)
     }
 }
 
 private fun parseVariant(
     table: Element,
-    generalName: String,
-    planets: List<String>,
     generalDifficulty: String?,
     generalHealth: String?,
     generalTemperament: String?
 ): FaunaWikiData {
-    val name = table.select("th").first()?.text() ?: generalName
+    val titleBox = table.select("th").first()!!
+    val name = parseName(titleBox)
+    val planet = parsePlanet(titleBox)
     val biomes = table.select(1, 0)?.select("li")?.map { it.text() } ?: listOf()
     val resource = table.select(2, 0)?.cleanText() ?: ""
     val temperament = (table.select(3, 0)?.text() ?: generalTemperament).toTemperament()
@@ -124,5 +122,13 @@ private fun parseVariant(
         schedule?.let { "Schedule" to it },
         combatStyle?.let { "Combat Style" to it },
     ).toMap()
-    return FaunaWikiData(name, temperament, planets, biomes, resource, abilities, other)
+    return FaunaWikiData(name, temperament, planet, biomes, resource, abilities, other)
+}
+
+private fun parseName(box: Element): String {
+    return box.text().let { it.substring(0, it.indexOf(")")+1) }.trim()
+}
+
+private fun parsePlanet(box: Element): String {
+    return box.select("a").first()!!.text().trim()
 }

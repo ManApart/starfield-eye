@@ -25,7 +25,7 @@ data class MissionWikiData(
 data class FaunaWikiData(
     val name: String = "",
     val temperament: Temperament = Temperament.UNKNOWN,
-    val planets: List<String> = listOf(),
+    val planet: String? = null,
     val biomes: List<String> = listOf(),
     val resource: String,
     val abilities: List<String> = listOf(),
