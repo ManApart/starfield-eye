@@ -10,7 +10,7 @@ import org.jsoup.nodes.Element
 import toTemperament
 import java.io.File
 
-private const val onlyOne = true
+private const val onlyOne = false
 private const val useCache = true
 private const val start = 0
 private const val limit = 0
@@ -29,7 +29,7 @@ fun main() {
     println("Reading Fauna")
     faunaUrlFile.readLines()
         .also { println("Found a total of ${it.size} urls") }
-//        .filter { it.contains("Ankylosaurus_Herbivore") }
+//        .filter { it.contains("Beetle_Filterer") }
         .let { if (onlyOne) it.take(1) else it.drop(start) }
         .let { if (limit > 0) it.take(limit) else it }
         .also { println("Crawling ${it.size} urls") }
@@ -64,110 +64,63 @@ private fun fetch(url: String, useCache: Boolean): Document {
 private fun parseFauna(page: Document): List<FaunaWikiData> {
     return try {
         val allTables = page.select(".wikitable")
-        val singleTable = allTables.first { it.hasClass("infobox") }
+        val singleTable = allTables.firstOrNull { it.hasClass("infobox") }
         val variantTables = allTables.toMutableList().also { it.remove(singleTable) }
 
-        return if (variantTables.isEmpty()) {
-            parseSingleTable(singleTable)
-        } else parseVariants(singleTable, variantTables)
-    } catch (e: Exception){
+        return when {
+            singleTable == null && variantTables.isEmpty() -> {
+                println("Skipping ${page.baseUri()}")
+                listOf()
+            }
+
+            variantTables.isEmpty() -> listOf(parseTable(singleTable!!))
+            else -> variantTables.map { parseTable(it) }
+        }
+    } catch (e: Exception) {
         println("Failed to parse ${page.baseUri()}")
         listOf()
     }
 }
 
-private fun parseSingleTable(table: Element): List<FaunaWikiData> {
-    val name = table.select("th").first()!!.text()
-    val planet = table.select(1, 0)!!.text()
-    val harvestable = table.select(3, 0).cleanText()
-    val domesticable = table.select(3, 1).cleanText()
-    val predation = table.select(4, 0).cleanText()
-    val diet = table.select(4, 1).cleanText()
-    val schedule = table.select(5, 0).cleanText()
-    val size = table.select(5, 1).cleanText()
-    val difficulty = table.select(6, 0).cleanText()
-
-    val combatStyle = table.select(9, 0).cleanText()
-    val abilities = table.select(11, 0)?.cleanText()?.split(",") ?: emptyList()
-    val weaknesses = table.select(13, 0).cleanText()
-
-    val healthMultiplier = table.select(15, 0).cleanText()
-    val temperament = table.select(15, 1)?.text().toTemperament()
-    val biomes = table.select(16, 0)?.select("li")?.map { it.text() } ?: listOf()
-    val behavior = table.select(16, 1).cleanText()
-    val resource = table.select(17, 0)?.cleanText() ?: ""
-
+private fun parseTable(table: Element): FaunaWikiData {
+    val name = parseName(table.select("th").first()!!)
+    val planet = table.selectHeaderClean("Planet") ?: parsePlanet(table.select("th").first()!!)
+    val abilities = table.selectHeaderClean("Abilities")?.split(",") ?: emptyList()
+    val temperament = table.selectHeaderClean("Temperament").toTemperament()
+    val biomes = table.selectHeader("Biomes")?.select("li")?.map { it.text() } ?: listOf()
+    val resource = table.selectHeaderClean("Resource") ?: ""
 
     val other: Map<String, String> = listOfNotNull(
-        harvestable?.let { "Harvestable" to it },
-        domesticable?.let { "Domesticable" to it },
-        predation?.let { "Predation" to it },
-        weaknesses?.let { "Weaknesses" to it },
-        behavior?.let { "Behavior" to it },
-        difficulty?.let { "Difficulty" to it },
-        healthMultiplier?.let { "Health Multiplier" to it },
-        size?.let { "Size" to it },
-        diet?.let { "Diet" to it },
-        schedule?.let { "Schedule" to it },
-        combatStyle?.let { "Combat Style" to it },
-    ).toMap()
-    return listOf(FaunaWikiData(name, temperament, planet, biomes, resource, abilities, other))
-}
-
-private fun parseVariants(singleTable: Element, variantTables: MutableList<Element>): List<FaunaWikiData> {
-    val generalDifficulty = singleTable.select(3, 0)?.cleanText()
-    val generalHealth = singleTable.select(5, 0)?.cleanText()
-    val generalTemperament = singleTable.select(5, 1)?.cleanText()
-
-    return variantTables.map {
-        parseVariant(it, generalDifficulty, generalHealth, generalTemperament)
-    }
-}
-
-private fun parseVariant(
-    table: Element,
-    generalDifficulty: String?,
-    generalHealth: String?,
-    generalTemperament: String?
-): FaunaWikiData {
-    val titleBox = table.select("th").first()!!
-    val name = parseName(titleBox)
-    val planet = parsePlanet(titleBox)
-    val biomes = table.select(1, 0)?.select("li")?.map { it.text() } ?: listOf()
-    val resource = table.select(2, 0)?.cleanText() ?: ""
-    val temperament = (table.select(3, 0)?.text() ?: generalTemperament).toTemperament()
-    val abilities = table.select(4, 0)?.cleanText()?.split(",") ?: emptyList()
-    val harvestable = table.select(5, 0).cleanText()
-    val domesticable = table.select(5, 1).cleanText()
-    val resistances = table.select(6, 0).cleanText()
-    val weaknesses = table.select(6, 1).cleanText()
-    val behavior = table.select(7, 0).cleanText()
-    val difficulty = table.select(8, 0).cleanText() ?: generalDifficulty
-    val healthMultiplier = table.select(8, 1).cleanText() ?: generalHealth
-    val size = table.select(9, 0).cleanText()
-    val diet = table.select(9, 1).cleanText()
-    val schedule = table.select(10, 0).cleanText()
-    val combatStyle = table.select(10, 1).cleanText()
-    val other: Map<String, String> = listOfNotNull(
-        harvestable?.let { "Harvestable" to it },
-        domesticable?.let { "Domesticable" to it },
-        resistances?.let { "Resistances" to it },
-        weaknesses?.let { "Weaknesses" to it },
-        behavior?.let { "Behavior" to it },
-        difficulty?.let { "Difficulty" to it },
-        healthMultiplier?.let { "Health Multiplier" to it },
-        size?.let { "Size" to it },
-        diet?.let { "Diet" to it },
-        schedule?.let { "Schedule" to it },
-        combatStyle?.let { "Combat Style" to it },
+        table.tablePair("Harvestable"),
+        table.tablePair("Domesticable"),
+        table.tablePair("Predation"),
+        table.tablePair("Weaknesses"),
+        table.tablePair("Resistances"),
+        table.tablePair("Behavior"),
+        table.tablePair("Difficulty"),
+        table.tablePair("Health Multiplier"),
+        table.tablePair("Difficulty"),
+        table.tablePair("Size"),
+        table.tablePair("Diet"),
+        table.tablePair("Schedule"),
+        table.tablePair("Combat Style"),
     ).toMap()
     return FaunaWikiData(name, temperament, planet, biomes, resource, abilities, other)
 }
 
+
 private fun parseName(box: Element): String {
-    return box.text().let { it.substring(0, it.indexOf(")") + 1) }.trim()
+    return if (box.text().contains(")")) {
+        box.text().let { it.substring(0, it.indexOf(")") + 1) }.trim()
+    } else {
+        box.text()
+    }
 }
 
 private fun parsePlanet(box: Element): String {
-    return box.select("a").first()!!.text().trim()
+    return if (box.select("a").isNotEmpty()) {
+        box.select("a").first()!!.text().trim()
+    } else {
+        box.text()
+    }
 }

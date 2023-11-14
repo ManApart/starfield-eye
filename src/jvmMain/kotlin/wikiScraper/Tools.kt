@@ -40,7 +40,8 @@ fun crawl(baseUrl: String, onlyOne: Boolean): List<String> {
         .map { if (it.startsWith("/")) "https://starfieldwiki.net$it" else it }
         .filter { it.startsWith("https://starfieldwiki.net/wiki/Starfield:") }
 
-    val nextUrl = page.select("a").firstOrNull { it.text() == "next page" }?.attr("href")?.let { "https://starfieldwiki.net$it" }
+    val nextUrl =
+        page.select("a").firstOrNull { it.text() == "next page" }?.attr("href")?.let { "https://starfieldwiki.net$it" }
     val nextUrls = if (onlyOne) listOf() else urls.filter { it.contains("Category") } + listOfNotNull(nextUrl)
 
     return urls + nextUrls.flatMap { crawl(it, onlyOne) }
@@ -52,4 +53,39 @@ fun Element?.cleanText(): String? {
 
 fun Element.select(row: Int, cell: Int): Element? {
     return select("tr")[row].select("td")[cell]
+}
+
+fun Element.tablePair(headerText: String): Pair<String, String>? {
+    return selectHeaderClean(headerText)?.let { headerText to it }
+}
+
+fun Element.selectHeaderClean(headerText: String): String? {
+    return selectHeader(headerText).cleanText()
+}
+fun Element.selectHeader(headerText: String): Element? {
+    return selectRight(headerText) ?: selectBelow(headerText)
+}
+
+fun Element.selectRightClean(headerText: String): String? {
+    return selectRight(headerText).cleanText()
+}
+
+fun Element.selectRight(headerText: String): Element? {
+    return select("tr").firstOrNull { row -> row.select("th").any { it.text() == headerText } }?.let { row ->
+        val headers = row.select("th")
+        val right = headers.first { it.text() == headerText }.let { headers.indexOf(it) }
+        select("td")[right]
+    }
+}
+
+fun Element.selectBelowClean(headerText: String): String? {
+    return selectBelow(headerText).cleanText()
+}
+
+fun Element.selectBelow(headerText: String): Element? {
+    val rows = select("tr")
+    return rows.firstOrNull { row -> row.select("th").any { it.text() == headerText } }?.let { row ->
+        val i = rows.indexOf(row)+1
+        rows[i]
+    }
 }
