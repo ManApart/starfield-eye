@@ -9,6 +9,7 @@ import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import toTemperament
 import java.io.File
+import java.lang.IllegalStateException
 
 private const val onlyOne = false
 private const val useCache = true
@@ -22,9 +23,7 @@ fun main() {
     fetchFaunaPagesIfEmpty(faunaUrlFile)
 
     val output = File("src/jsMain/resources/fauna-wiki-data.json")
-    val existing = (if (output.exists()) {
-        jsonMapper.decodeFromString<List<FaunaWikiData>>(output.readText())
-    } else listOf()).associateBy { it.name }.toMutableMap()
+    val existing = mutableMapOf<String, FaunaWikiData>()
 
     println("Reading Fauna")
     faunaUrlFile.readLines()
@@ -85,10 +84,11 @@ private fun parseFauna(page: Document): List<FaunaWikiData> {
 private fun parseTable(table: Element): FaunaWikiData {
     val name = parseName(table.select("th").first()!!)
     val planet = table.selectHeaderClean("Planet") ?: parsePlanet(table.select("th").first()!!)
+    if (name == planet) throw IllegalStateException("Non-fauna table detected")
     val abilities = table.selectHeaderClean("Abilities")?.split(",") ?: emptyList()
     val temperament = table.selectHeaderClean("Temperament").toTemperament()
     val biomes = table.selectHeader("Biomes")?.select("li")?.map { it.text() } ?: listOf()
-    val resource = table.selectHeaderClean("Resource") ?: ""
+    val resource = table.selectHeaderClean("Resource") ?: "None"
 
     val other: Map<String, String> = listOfNotNull(
         table.tablePair("Harvestable"),
