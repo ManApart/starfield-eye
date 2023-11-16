@@ -67,8 +67,7 @@ fun crawl(baseUrl: String, onlyOne: Boolean): List<String> {
     return urls + nextUrls.flatMap { crawl(it, onlyOne) }
 }
 
-
-fun <T : WikiData> readFromUrls(
+inline fun <reified T : WikiData> readFromUrls(
     urlFile: File,
     output: File,
     parse: (Document) -> List<T>,
@@ -97,7 +96,7 @@ fun <T : WikiData> readFromUrls(
     output.writeText(jsonMapper.encodeToString(existing.values))
 }
 
-private fun fetch(url: String, useCache: Boolean): Document {
+fun fetch(url: String, useCache: Boolean): Document {
     return if (useCache) {
         val file = File("raw-data/cache/${url.substring(url.lastIndexOf("/"))}.html").also { it.parentFile.mkdirs() }
         if (!file.exists()) {
