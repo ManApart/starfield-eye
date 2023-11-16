@@ -1,11 +1,24 @@
 package wikiScraper
 
+import WikiData
+import jsonMapper
+import kotlinx.serialization.encodeToString
 import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
+import java.io.File
 import java.net.URL
 import java.net.URLConnection
 import java.nio.charset.StandardCharsets
 import java.util.*
+
+data class ScraperOptions(
+    val onlyOne: Boolean = false,
+    val useCache: Boolean = true,
+    val start: Int = 0,
+    val limit: Int = 0,
+    val chunkSize: Int = 100
+)
 
 fun getPage(url: String, headers: Map<String, String> = mapOf()): String? {
     val connection: URLConnection = URL(url).openConnection()
@@ -29,6 +42,13 @@ fun getPage(url: String, headers: Map<String, String> = mapOf()): String? {
     }
 }
 
+fun fetchPagesIfEmpty(urlFile: File, baseUrls: List<String>, onlyOne: Boolean) {
+    if (urlFile.readLines().isEmpty()) {
+        val urls = baseUrls.flatMap { crawl(it, onlyOne) }.toSet()
+        urlFile.writeText(urls.joinToString("\n"))
+    }
+}
+
 fun crawl(baseUrl: String, onlyOne: Boolean): List<String> {
     val cleanBase = if (baseUrl.startsWith("/")) "https://starfieldwiki.net$baseUrl" else baseUrl
     println("Crawling $cleanBase")
@@ -47,6 +67,47 @@ fun crawl(baseUrl: String, onlyOne: Boolean): List<String> {
     return urls + nextUrls.flatMap { crawl(it, onlyOne) }
 }
 
+
+fun <T : WikiData> readFromUrls(
+    urlFile: File,
+    output: File,
+    parse: (Document) -> List<T>,
+    options: ScraperOptions,
+) {
+    val existing = mutableMapOf<String, T>()
+    urlFile.readLines()
+        .also { println("Found a total of ${it.size} urls") }
+//        .filter { it.contains("Seahag") }
+        .let { if (options.onlyOne) it.take(1) else it.drop(options.start) }
+        .let { if (options.limit > 0) it.take(options.limit) else it }
+        .also { println("Crawling ${it.size} urls") }
+        .chunked(options.chunkSize).flatMap { chunk ->
+            println("Processing next ${options.chunkSize}, starting with ${chunk.first()}")
+            chunk.flatMap {
+                try {
+                parse(fetch(it, options.useCache))
+                } catch (e: Exception){
+                    println("Unable to parse $it")
+                    emptyList()
+                }
+            }
+        }
+        .forEach { existing[it.name] = it }
+
+    output.writeText(jsonMapper.encodeToString(existing.values))
+}
+
+private fun fetch(url: String, useCache: Boolean): Document {
+    return if (useCache) {
+        val file = File("raw-data/cache/${url.substring(url.lastIndexOf("/"))}.html").also { it.parentFile.mkdirs() }
+        if (!file.exists()) {
+            file.writeText(getPage(url)!!)
+        }
+        Jsoup.parse(file)
+    } else Jsoup.connect(url).get()
+}
+
+
 fun Element?.cleanText(): String? {
     return this?.text()?.replace("(?)", "")?.ifBlank { null }
 }
@@ -62,6 +123,7 @@ fun Element.tablePair(headerText: String): Pair<String, String>? {
 fun Element.selectHeaderClean(headerText: String): String? {
     return selectHeader(headerText).cleanText()
 }
+
 fun Element.selectHeader(headerText: String): Element? {
     return selectRight(headerText) ?: selectBelow(headerText)
 }
@@ -85,7 +147,24 @@ fun Element.selectBelowClean(headerText: String): String? {
 fun Element.selectBelow(headerText: String): Element? {
     val rows = select("tr")
     return rows.firstOrNull { row -> row.select("th").any { it.text() == headerText } }?.let { row ->
-        val i = rows.indexOf(row)+1
+        val i = rows.indexOf(row) + 1
         rows[i]
+    }
+}
+
+
+fun parseName(box: Element): String {
+    return if (box.text().contains(")")) {
+        box.text().let { it.substring(0, it.indexOf(")") + 1) }.trim()
+    } else {
+        box.text()
+    }
+}
+
+fun parsePlanet(box: Element): String {
+    return if (box.select("a").isNotEmpty()) {
+        box.select("a").first()!!.text().trim()
+    } else {
+        box.text()
     }
 }
