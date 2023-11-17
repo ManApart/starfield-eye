@@ -83,9 +83,10 @@ inline fun <reified T : WikiData> readFromUrls(
         .chunked(options.chunkSize).flatMap { chunk ->
             println("Processing next ${options.chunkSize}, starting with ${chunk.first()}")
             chunk.flatMap {
+//                parse(fetch(it, options.useCache))
                 try {
-                parse(fetch(it, options.useCache))
-                } catch (e: Exception){
+                    parse(fetch(it, options.useCache))
+                } catch (e: Exception) {
                     println("Unable to parse $it")
                     emptyList()
                 }
@@ -151,6 +152,9 @@ fun Element.selectBelow(headerText: String): Element? {
     }
 }
 
+fun Element.selectTdClean(col: Int): String? {
+    return select("td").takeIf { it.size > col }?.get(col).cleanText()
+}
 
 fun parseName(box: Element): String {
     return if (box.text().contains(")")) {

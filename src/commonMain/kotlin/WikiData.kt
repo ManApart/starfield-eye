@@ -39,4 +39,8 @@ data class FaunaWikiData(
 @Serializable
 data class FloraWikiData(
     override val name: String = "",
+    val planet: String? = null,
+    val biomes: List<String> = listOf(),
+    val resource: String,
+    val other: Map<String, String> = mapOf()
 ): WikiData

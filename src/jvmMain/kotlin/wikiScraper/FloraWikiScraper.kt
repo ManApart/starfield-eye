@@ -2,7 +2,9 @@ package wikiScraper
 
 import FloraWikiData
 import org.jsoup.nodes.Document
+import org.jsoup.nodes.Element
 import java.io.File
+import java.lang.IllegalStateException
 
 fun main() {
     val options = ScraperOptions()
@@ -16,51 +18,28 @@ fun main() {
 }
 
 private fun parseFlora(page: Document): List<FloraWikiData> {
-//    return try {
-//        val allTables = page.select(".wikitable")
-//        val singleTable = allTables.firstOrNull { it.hasClass("infobox") }
-//        val variantTables = allTables.toMutableList().also { it.remove(singleTable) }
-//
-//        return when {
-//            singleTable == null && variantTables.isEmpty() -> {
-//                println("Skipping ${page.baseUri()}")
-//                listOf()
-//            }
-//
-//            variantTables.isEmpty() -> listOf(parseTable(singleTable!!))
-//            else -> variantTables.map { parseTable(it) }
-//        }
-//    } catch (e: Exception) {
-//        println("Failed to parse ${page.baseUri()}")
-//        listOf()
-//    }
-    return listOf()
+    val allTables = page.select(".wikitable")
+    val singleTable = allTables.firstOrNull { it.hasClass("infobox") }!!
+    val variantTables = allTables.toMutableList().also { it.remove(singleTable) }
+    val species = page.baseUri().let { it.substring(it.lastIndexOf(":")+1) }.replace("_", " ").replace("%27s", "'").replace(".html", "")
+    return variantTables.flatMap { parseTable(it, species) }
 }
-//
-//private fun parseTable(table: Element): FaunaWikiData {
-//    val name = parseName(table.select("th").first()!!)
-//    val planet = table.selectHeaderClean("Planet") ?: parsePlanet(table.select("th").first()!!)
-//    if (name == planet) throw IllegalStateException("Non-fauna table detected")
-//    val abilities = table.selectHeaderClean("Abilities")?.split(",") ?: emptyList()
-//    val temperament = table.selectHeaderClean("Temperament").toTemperament()
-//    val biomes = table.selectHeader("Biomes")?.select("li")?.map { it.text() } ?: listOf()
-//    val resource = table.selectHeaderClean("Resource") ?: "None"
-//
-//    val other: Map<String, String> = listOfNotNull(
-//        table.tablePair("Harvestable"),
-//        table.tablePair("Domesticable"),
-//        table.tablePair("Predation"),
-//        table.tablePair("Weaknesses"),
-//        table.tablePair("Resistances"),
-//        table.tablePair("Behavior"),
-//        table.tablePair("Difficulty"),
-//        table.tablePair("Health Multiplier"),
-//        table.tablePair("Difficulty"),
-//        table.tablePair("Size"),
-//        table.tablePair("Diet"),
-//        table.tablePair("Schedule"),
-//        table.tablePair("Combat Style"),
-//    ).toMap()
-//    return FaunaWikiData(name, temperament, planet, biomes, resource, abilities, other)
-//}
+
+private fun parseTable(table: Element, species: String): List<FloraWikiData> {
+    return table.select("tr").drop(1).map { row ->
+
+        val planet = row.selectTdClean(0)
+        val biomes = row.selectTdClean(1)?.split(",")?.map { it.trim() } ?: listOf()
+        val resource = row.selectTdClean(2) ?: "None"
+        val production = row.selectTdClean(3)
+
+        val other: Map<String, String> = listOfNotNull(
+            production?.let { "Production" to it },
+        ).toMap()
+
+        val name = "$species ($planet)"
+
+        FloraWikiData(name, planet, biomes, resource, other)
+    }
+}
 
