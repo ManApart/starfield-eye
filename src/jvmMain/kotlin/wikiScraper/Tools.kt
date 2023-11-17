@@ -133,11 +133,13 @@ fun Element.selectRightClean(headerText: String): String? {
 }
 
 fun Element.selectRight(headerText: String): Element? {
-    return select("tr").firstOrNull { row -> row.select("th").any { it.text() == headerText } }?.let { row ->
-        val headers = row.select("th")
-        val right = headers.first { it.text() == headerText }.let { headers.indexOf(it) }
-        select("td")[right]
-    }
+    return select("tr")
+        .firstOrNull { row -> row.select("th").any { it.text() == headerText } }
+        ?.let { row ->
+            val headers = row.select("th")
+            val right = headers.first { it.text() == headerText }.let { headers.indexOf(it) }
+            row.select("td").takeIf { it.size > right }?.get(right)
+        }
 }
 
 fun Element.selectBelowClean(headerText: String): String? {

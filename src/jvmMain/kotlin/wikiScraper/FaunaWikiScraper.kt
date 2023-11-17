@@ -44,7 +44,7 @@ private fun parseFauna(page: Document): List<FaunaWikiData> {
 
 private fun parseTable(table: Element): FaunaWikiData {
     val name = parseName(table.select("th").first()!!)
-    val planet = table.selectHeaderClean("Planet") ?: parsePlanet(table.select("th").first()!!)
+    val planet = table.selectHeaderClean("Planet") ?: table.selectHeaderClean("Location")  ?: parsePlanet(table.select("th").first()!!)
     if (name == planet) throw IllegalStateException("Non-fauna table detected")
     val abilities = table.selectHeaderClean("Abilities")?.split(",") ?: emptyList()
     val temperament = table.selectHeaderClean("Temperament").toTemperament()
