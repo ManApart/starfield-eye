@@ -1,5 +1,6 @@
 package views
 
+import Outpost
 import Planet
 import PlanetInfo
 import el
@@ -91,7 +92,7 @@ private fun TagConsumer<HTMLElement>.outpostInfo(info: PlanetInfo, planet: Plane
             id = "existing-outposts"
             info.outPosts.forEach { outpost ->
                 span("planet-outpost") {
-                    +outpost
+                    +outpost.name
                     button(classes = "remove-info-button") {
                         +"Del"
                         onClickFunction = {
@@ -109,7 +110,7 @@ private fun TagConsumer<HTMLElement>.outpostInfo(info: PlanetInfo, planet: Plane
                 onKeyUpFunction = { e ->
                     if ((e as KeyboardEvent).key == "Enter") {
                         val outpost = el<HTMLInputElement>("add-outpost-input").value
-                        info.outPosts.add(outpost)
+                        info.outPosts.add(Outpost(outpost))
                         savePlanetInfo(planet, info)
                     }
                 }
@@ -118,7 +119,7 @@ private fun TagConsumer<HTMLElement>.outpostInfo(info: PlanetInfo, planet: Plane
                 +"Add"
                 onClickFunction = {
                     val outpost = el<HTMLInputElement>("add-outpost-input").value
-                    info.outPosts.add(outpost)
+                    info.outPosts.add(Outpost(outpost))
                     savePlanetInfo(planet, info)
                 }
             }

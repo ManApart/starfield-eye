@@ -43,6 +43,6 @@ private fun planetInfoMatches(planet: Planet, searchText: String): Boolean {
     return info != null && with(info) {
         labels.any { it.name.lowercase().contains(searchText) }
                 || outPosts.isNotEmpty() && "outposts".contains(searchText)
-                || outPosts.any { it.lowercase().contains(searchText) }
+                || outPosts.any { it.name.lowercase().contains(searchText) }
     }
 }

@@ -4,7 +4,14 @@ import kotlinx.serialization.Serializable
 data class PlanetInfo(
     val labels: MutableSet<Label> = mutableSetOf(),
     var notes: String = "",
-    val outPosts: MutableSet<String> = mutableSetOf()
+    val outPosts: MutableSet<Outpost> = mutableSetOf()
+)
+
+@Serializable
+data class Outpost(
+    var name: String = "",
+    val resources: Set<ResourceType> = mutableSetOf(),
+    var notes: String = "",
 )
 
 @Serializable

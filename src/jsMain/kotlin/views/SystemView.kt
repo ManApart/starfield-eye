@@ -180,7 +180,7 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
                         td { +data.toString() }
                     }
                 }
-            resourceRow(system.planets.values.flatMap { it.resources }.toSet().toList())
+            resourceRow(system.planets.values.flatMap { it.resources }.toSet())
         }
     }
 }
@@ -247,7 +247,7 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
     }
 }
 
-private fun TABLE.resourceRow(resources: List<ResourceType>) {
+private fun TABLE.resourceRow(resources: Set<ResourceType>) {
     tr {
         td("resource-td") { +"Resources" }
         td("resource-value-td") {
