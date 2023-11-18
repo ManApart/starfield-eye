@@ -11,6 +11,9 @@ var pageIsVisible = true
 var pollHook: (Boolean) -> Unit = {}
 var keyPressedHook: (KeyboardEvent) -> Unit = {}
 var missionReference: Map<String, MissionWikiData> = mapOf()
+var mouseX = 0.0
+var mouseY = 0.0
+
 
 fun getPlanets(): List<Planet> {
     return galaxy.systems.values.flatMap { it.planets.values }
@@ -31,20 +34,34 @@ fun main() {
 
     window.addEventListener("keyup", { e ->
         val event = (e as KeyboardEvent)
-        if (document.activeElement !is HTMLTextAreaElement && document.activeElement !is HTMLInputElement && event.key in listOf("ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown")) {
+        if (document.activeElement !is HTMLTextAreaElement && document.activeElement !is HTMLInputElement && event.key in listOf(
+                "ArrowRight",
+                "ArrowLeft",
+                "ArrowUp",
+                "ArrowDown"
+            )
+        ) {
             keyPressedHook(event)
-        } else if (document.activeElement is HTMLInputElement && event.key == "Enter"){
+        } else if (document.activeElement is HTMLInputElement && event.key == "Enter") {
             keyPressedHook(event)
         }
     })
     window.addEventListener("keydown", { e ->
         val event = (e as KeyboardEvent)
-        if (document.activeElement !is HTMLTextAreaElement && document.activeElement !is HTMLInputElement && event.key in listOf("ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown")) {
+        if (document.activeElement !is HTMLTextAreaElement && document.activeElement !is HTMLInputElement && event.key in listOf(
+                "ArrowRight",
+                "ArrowLeft",
+                "ArrowUp",
+                "ArrowDown"
+            )
+        ) {
             event.preventDefault()
         }
     })
 
     document.onmousemove = { e ->
+        mouseX = e.pageX
+        mouseY = e.pageY
         val x = e.clientX / window.innerWidth.toFloat()
         val y = e.clientY / window.innerHeight.toFloat()
         panStars(x, y)
@@ -69,21 +86,31 @@ fun doRouting(windowHash: String) {
         windowHash.startsWith("#about") -> {
             aboutView()
         }
+
         windowHash.startsWith("#catalogue") -> {
             catalogueView()
         }
+
         windowHash.startsWith("#crew") -> {
             crewView()
         }
+
         windowHash.startsWith("#dock") -> {
             dockView()
         }
+
         windowHash.startsWith("#quests") -> {
             questView()
         }
+
+        windowHash.startsWith("#outposts") -> {
+            outpostsPage()
+        }
+
         windowHash.startsWith("#misc-stats") -> {
             miscStatView()
         }
+
         windowHash.startsWith("#system/") -> {
             val parts = windowHash.replace("#system/", "").split("/")
             if (parts.size == 2) {
@@ -92,6 +119,7 @@ fun doRouting(windowHash: String) {
                 systemView(system, planet)
             }
         }
+
         else -> renderGalaxy()
     }
 }

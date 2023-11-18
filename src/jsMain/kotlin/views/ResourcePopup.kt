@@ -11,6 +11,8 @@ import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.style
 import kotlinx.html.title
+import mouseX
+import mouseY
 import org.w3c.dom.DOMRect
 import org.w3c.dom.HTMLElement
 
@@ -26,11 +28,12 @@ fun TagConsumer<HTMLElement>.resourceSquares(resources: Set<ResourceType>) {
     }
 }
 
-fun showResourcePicker(resources: Set<ResourceType>, pos: DOMRect, result: (ResourceType) -> Unit) {
+fun showResourcePicker(resources: Set<ResourceType>, result: (ResourceType) -> Unit) {
     val root = el("popup")
     root.removeClass("hidden")
-    root.style.top = "${pos.top}px"
-    root.style.left = "${pos.left}px"
+    println("Adding $mouseX, $mouseY")
+    root.style.top = "${mouseY}px"
+    root.style.left = "${mouseX}px"
     root.innerHTML = ""
     root.append {
         resources.forEach { resource ->

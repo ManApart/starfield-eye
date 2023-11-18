@@ -29,7 +29,11 @@ data class InMemoryStorage(
     var quests: List<Quest> = listOf(),
     var stats: MiscStats = MiscStats(),
     var discoveredOnly: Boolean = false
-)
+) {
+    fun planetInfo(uniqueId: String): PlanetInfo {
+       return planetUserInfo[uniqueId] ?: PlanetInfo(uniqueId)
+    }
+}
 
 var inMemoryStorage = InMemoryStorage()
 var starDivs: Map<String, HTMLElement> = mapOf()

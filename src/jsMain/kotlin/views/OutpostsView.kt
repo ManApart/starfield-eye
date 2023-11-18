@@ -4,8 +4,9 @@ import Outpost
 import Planet
 import PlanetInfo
 import el
+import galaxy
 import inMemoryStorage
-import kotlinx.browser.document
+import kotlinx.browser.window
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.h4
@@ -16,24 +17,55 @@ import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.HTMLTextAreaElement
 import persistMemory
 
-fun clearOutpostsView() {
-    val root = el("outpost-view")
+
+fun outpostsPage() {
+    window.history.pushState(null, "null", "#outposts")
+    val root = el("root")
     root.innerHTML = ""
+    root.append {
+        div {
+            id = "outposts-view"
+            button {
+                +"Back to Galaxy"
+                onClickFunction = {
+                    renderGalaxy()
+                }
+            }
+
+            div("section-wrapper") {
+                inMemoryStorage.planetUserInfo.values
+                    .filter { it.outPosts.isNotEmpty() }
+                    .forEach { planetInfo ->
+                        val planet = galaxy.planets[planetInfo.planetId]!!
+                        +"Outpost ${planet.name}"
+                        outpostsView(planet, planetInfo)
+                    }
+            }
+        }
+    }
+}
+
+fun clearOutpostsView() {
+    el<HTMLElement?>("outpost-view")?.let { it.innerHTML = "" }
 }
 
 fun outpostsView(planet: Planet, info: PlanetInfo) {
     val root = el("outpost-view")
     root.innerHTML = ""
     root.append {
-        h2 { +"${planet.name} Outposts" }
-        div {
-            id = "existing-outposts"
-            info.outPosts.forEach { outpost ->
-                outpost(outpost, info, planet)
-            }
-        }
-        addOutpost(info, planet)
+        outpostsView(planet, info)
     }
+}
+
+private fun TagConsumer<HTMLElement>.outpostsView(planet: Planet, info: PlanetInfo) {
+    h2 { +"${planet.name} Outposts" }
+    div {
+        id = "existing-outposts-${planet.name}"
+        info.outPosts.forEach { outpost ->
+            outpost(outpost, info, planet)
+        }
+    }
+    addOutpost(info, planet)
 }
 
 private fun TagConsumer<HTMLElement>.outpost(
@@ -55,22 +87,18 @@ private fun TagConsumer<HTMLElement>.outpost(
     h5 { +"Resources" }
     div {
         button(classes = "add-info-button") {
-            id = "add-resource-button"
             +"Add"
             onClickFunction = {
-                val pos = el("add-resource-button").getBoundingClientRect()
-                showResourcePicker(planet.resources - outpost.resources, pos) {
+                showResourcePicker(planet.resources - outpost.resources) {
                     outpost.resources.add(it)
                     saveOutpostInfo(planet, info)
                 }
             }
         }
         button(classes = "remove-info-button") {
-            id = "remove-resource-button"
             +"Del"
             onClickFunction = {
-                val pos = el("remove-resource-button").getBoundingClientRect()
-                showResourcePicker(outpost.resources, pos) {
+                showResourcePicker(outpost.resources) {
                     outpost.resources.remove(it)
                     saveOutpostInfo(planet, info)
                 }
@@ -82,19 +110,16 @@ private fun TagConsumer<HTMLElement>.outpost(
     }
     h5 { +"Notes" }
     div {
-        id = "outpost-info-notes"
         textArea {
-            id = "outpost-player-info-notes"
+            id = "outpost-player-info-notes-${planet.uniqueId}-${outpost.name}"
             +info.notes
             onChangeFunction = {
-                info.notes = el<HTMLTextAreaElement>("outpost-player-info-notes").value
+                info.notes = el<HTMLTextAreaElement>("outpost-player-info-notes-${planet.uniqueId}-${outpost.name}").value
                 saveOutpostInfo(planet, info)
             }
         }
     }
-
 }
-
 
 private fun TagConsumer<HTMLElement>.addOutpost(info: PlanetInfo, planet: Planet) {
     div {

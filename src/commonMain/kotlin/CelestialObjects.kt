@@ -62,7 +62,10 @@ data class StarSystem(
 data class Galaxy(
     val systems: Map<Int, StarSystem> = mapOf(),
     val summary: GalaxySummary = GalaxySummary()
-)
+) {
+    @Transient
+    val planets = systems.values.flatMap { it.planets.values }.associateBy { it.uniqueId }
+}
 
 @Serializable
 data class GalaxySummary(

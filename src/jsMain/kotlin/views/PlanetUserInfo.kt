@@ -19,7 +19,7 @@ fun userInfo(planet: Planet) {
     val root = el("user-info")
     root.innerHTML = ""
     root.append {
-        val info = inMemoryStorage.planetUserInfo[planet.uniqueId] ?: PlanetInfo()
+        val info = inMemoryStorage.planetInfo(planet.uniqueId)
         table("detail-view-table") {
             tr {
                 td { +"Labels" }

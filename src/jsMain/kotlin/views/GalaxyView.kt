@@ -42,14 +42,18 @@ private fun TagConsumer<HTMLElement>.nav() {
             onClickFunction = { crewView() }
         }
         button {
-            +"Catalogue"
-            onClickFunction = { catalogueView() }
-        }
-        button {
             id = "dock-button"
             +"Dock"
             title = "Change Settings"
             onClickFunction = { dockView() }
+        }
+        button {
+            +"Catalogue"
+            onClickFunction = { catalogueView() }
+        }
+        button {
+            +"Outposts"
+            onClickFunction = { outpostsPage() }
         }
         button {
             id = "quest-button"

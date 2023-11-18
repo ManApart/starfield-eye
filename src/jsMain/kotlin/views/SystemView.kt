@@ -82,11 +82,11 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                 onClickFunction = {
                     setSelected("star", 0)
                     detailView(system, 0)
-                    clearOutpostsView()
+                    system.planets[currentPlanet]?.let { clearOutpostsView() }
                 }
                 onMouseOverFunction = {
                     detailView(system, 0)
-                    clearOutpostsView()
+                    system.planets[currentPlanet]?.let { clearOutpostsView() }
                 }
                 onMouseOutFunction = { detailView(system, currentPlanet) }
             }
@@ -185,7 +185,7 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
                 "Planets" to system.planetChildren.size,
                 "Moons" to system.planetChildren.values.sumOf { it.size },
                 "Outposts" to system.planets.values.sumOf {
-                    (inMemoryStorage.planetUserInfo[it.uniqueId] ?: PlanetInfo()).outPosts.size
+                    (inMemoryStorage.planetInfo(it.uniqueId)).outPosts.size
                 },
             )
                 .filter { (_, data) -> data.toString().isNotBlank() && data.toString() != "0" }
@@ -257,7 +257,7 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
                 }
             }
             resourceRow(resources)
-            val info = inMemoryStorage.planetUserInfo[planet.uniqueId] ?: PlanetInfo()
+            val info = inMemoryStorage.planetInfo(planet.uniqueId)
             outPostsRow(info.outPosts)
         }
         div { id = "user-info" }
@@ -267,7 +267,7 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
 fun outpostsView(system: StarSystem, planetId: Int) {
     if (planetId != 0) {
         val planet = system.planets[planetId]!!
-        val info = inMemoryStorage.planetUserInfo[planet.uniqueId] ?: PlanetInfo()
+        val info = inMemoryStorage.planetInfo(planet.uniqueId)
         outpostsView(planet, info)
     }
 }
