@@ -1,6 +1,6 @@
 package views
 
-import Outpost
+import Label
 import Planet
 import PlanetInfo
 import el
@@ -9,12 +9,9 @@ import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onChangeFunction
 import kotlinx.html.js.onClickFunction
-import kotlinx.html.js.onKeyUpFunction
 import org.w3c.dom.HTMLElement
-import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.HTMLSelectElement
 import org.w3c.dom.HTMLTextAreaElement
-import org.w3c.dom.events.KeyboardEvent
 import persistMemory
 
 
@@ -27,10 +24,6 @@ fun userInfo(planet: Planet) {
             tr {
                 td { +"Labels" }
                 td { labelInfo(info, planet) }
-            }
-            tr {
-                td { +"Outposts" }
-                td { outpostInfo(info, planet) }
             }
             tr {
                 td { +"Notes" }
@@ -84,48 +77,6 @@ private fun TagConsumer<HTMLElement>.labelInfo(info: PlanetInfo, planet: Planet)
     }
 }
 
-
-private fun TagConsumer<HTMLElement>.outpostInfo(info: PlanetInfo, planet: Planet) {
-    div {
-        id = "info-outposts"
-        div {
-            id = "existing-outposts"
-            info.outPosts.forEach { outpost ->
-                span("planet-outpost") {
-                    +outpost.name
-                    button(classes = "remove-info-button") {
-                        +"Del"
-                        onClickFunction = {
-                            info.outPosts.remove(outpost)
-                            savePlanetInfo(planet, info)
-                        }
-                    }
-                }
-            }
-        }
-        div {
-            id = "add-outpost"
-            input {
-                id = "add-outpost-input"
-                onKeyUpFunction = { e ->
-                    if ((e as KeyboardEvent).key == "Enter") {
-                        val outpost = el<HTMLInputElement>("add-outpost-input").value
-                        info.outPosts.add(Outpost(outpost))
-                        savePlanetInfo(planet, info)
-                    }
-                }
-            }
-            button(classes = "add-info-button") {
-                +"Add"
-                onClickFunction = {
-                    val outpost = el<HTMLInputElement>("add-outpost-input").value
-                    info.outPosts.add(Outpost(outpost))
-                    savePlanetInfo(planet, info)
-                }
-            }
-        }
-    }
-}
 private fun TagConsumer<HTMLElement>.playerNotes(info: PlanetInfo, planet: Planet) {
     div {
         id = "info-notes"

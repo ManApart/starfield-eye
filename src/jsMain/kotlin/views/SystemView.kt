@@ -46,10 +46,13 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
             div("section-wrapper") {
                 orrery(system)
                 div("section-view-box") { id = "detail-view" }
+                div("section-view-box") { id = "outpost-view" }
             }
         }
     }
     detailView(system, planetId)
+    outpostsView(system, planetId)
+
     val planetType = when {
         planetId == 0 -> "star"
         system.planetChildren.keys.contains(planetId) -> "planet"
@@ -78,8 +81,12 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                 onClickFunction = {
                     setSelected("star", 0)
                     detailView(system, 0)
+                    clearOutpostsView()
                 }
-                onMouseOverFunction = { detailView(system, 0) }
+                onMouseOverFunction = {
+                    detailView(system, 0)
+                    clearOutpostsView()
+                }
                 onMouseOutFunction = { detailView(system, currentPlanet) }
             }
             system.planetChildren.entries.forEach { (planetId, moons) ->
@@ -92,9 +99,16 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                         onClickFunction = {
                             setSelected("planet", planetId)
                             detailView(system, planetId)
+                            outpostsView(system, planetId)
                         }
-                        onMouseOverFunction = { detailView(system, planetId) }
-                        onMouseOutFunction = { detailView(system, currentPlanet) }
+                        onMouseOverFunction = {
+                            detailView(system, planetId)
+                            outpostsView(system, planetId)
+                        }
+                        onMouseOutFunction = {
+                            detailView(system, currentPlanet)
+                            outpostsView(system, currentPlanet)
+                        }
                     }
                     if (moons.isNotEmpty()) {
                         moons.forEach { moonId ->
@@ -247,22 +261,22 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
     }
 }
 
-private fun TABLE.resourceRow(resources: Set<ResourceType>) {
+fun outpostsView(system: StarSystem, planetId: Int) {
+    if (planetId != 0) {
+        val planet = system.planets[planetId]!!
+        val info = inMemoryStorage.planetUserInfo[planet.uniqueId] ?: PlanetInfo()
+        outpostsView(planet, info)
+    }
+}
+
+private fun TagConsumer<HTMLElement>.resourceRow(resources: Set<ResourceType>) {
     tr {
         td("resource-td") { +"Resources" }
         td("resource-value-td") {
             if (resources.isEmpty()) {
                 +"None"
             } else {
-                resources.forEach { resource ->
-                    div("resource") {
-                        style = "background-color: #${resource.color}"
-                        div("resource-inner") {
-                            +resource.name
-                        }
-                        title = resource.readableName
-                    }
-                }
+                resourceSquares(resources)
             }
         }
     }
@@ -292,6 +306,7 @@ private fun selectNextPlanet(system: StarSystem, shift: Int = 1) {
     val planetId = planetIds[i]
     setSelected(system, planetId)
     detailView(system, planetId)
+    outpostsView(system, planetId)
 }
 
 private fun selectNextMoon(system: StarSystem, shift: Int = 1) {
@@ -310,6 +325,7 @@ private fun selectNextMoon(system: StarSystem, shift: Int = 1) {
 
     setSelected(system, planetId)
     detailView(system, planetId)
+    outpostsView(system, planetId)
 }
 
 private fun attemptTravel(destination: String) {
