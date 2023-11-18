@@ -176,8 +176,7 @@
 }
 
 #add-outpost-input {
-    border: none;
-    outline: none;
+    margin-top: 10px;
 }
 
 .planet-label {

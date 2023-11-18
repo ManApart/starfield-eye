@@ -42,7 +42,7 @@ fun outpostsPage() {
                     .forEach { planetInfo ->
                         val planet = galaxy.planets[planetInfo.planetId]!!
                         div("section-view-box") {
-                            outpostsView(planet, planetInfo, false)
+                            outpostsView(planet, planetInfo, false, true)
                         }
                     }
             }
@@ -66,15 +66,37 @@ fun outpostsView(planet: Planet, info: PlanetInfo) {
     }
 }
 
-private fun TagConsumer<HTMLElement>.outpostsView(planet: Planet, info: PlanetInfo, showAddButton: Boolean) {
+private fun TagConsumer<HTMLElement>.outpostsView(
+    planet: Planet,
+    info: PlanetInfo,
+    showAddButton: Boolean,
+    linkToSystem: Boolean = false
+) {
     h2 { +"${planet.name} Outposts" }
+    if (linkToSystem) {
+        button {
+            +"View System"
+            onClickFunction = {
+                val system = galaxy.systems[planet.starId]!!
+                systemView(system, planet.id)
+            }
+        }
+    }
     div {
         id = "existing-outposts-${planet.name}"
         info.outPosts.forEach { outpost ->
             outpost(outpost, info, planet)
         }
     }
-    if (showAddButton) addOutpost(info, planet)
+    if (showAddButton) {
+        div {
+            button {
+                +"View ALl Outposts"
+                onClickFunction = { outpostsPage() }
+            }
+        }
+        addOutpost(info, planet)
+    }
 }
 
 private fun TagConsumer<HTMLElement>.outpost(
@@ -131,14 +153,14 @@ private fun TagConsumer<HTMLElement>.outpost(
             }
         }
     }
-    hr {  }
+    hr { }
 }
 
 private fun TagConsumer<HTMLElement>.addOutpost(info: PlanetInfo, planet: Planet) {
     div {
         id = "add-outpost"
         textInput {
-            id = "new-outpost-name"
+            id = "add-outpost-input"
             placeholder = "Outpost Name"
         }
         button(classes = "add-info-button") {
