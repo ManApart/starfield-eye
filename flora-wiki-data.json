@@ -1,0 +1,7061 @@
+[
+    {
+        "name": "Abyss Pine Seedling (Alpha Andraste III)",
+        "planet": "Alpha Andraste III",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Hallucinogen",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Abyss Pine Seedling (Bel II)",
+        "planet": "Bel II",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Aromatic"
+    },
+    {
+        "name": "Abyss Pine Seedling (Beta Ternion III)",
+        "planet": "Beta Ternion III",
+        "biomes": [
+            "Coniferous Forest",
+            "Mountains"
+        ],
+        "resource": "Adhesive"
+    },
+    {
+        "name": "Abyss Pine Seedling (Charybdis II)",
+        "planet": "Charybdis II",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Abyss Pine Seedling (Moloch II)",
+        "planet": "Moloch II",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Abyss Pine Seedling (Rutherford III)",
+        "planet": "Rutherford III",
+        "biomes": [
+            "Swamp",
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Abyss Pine Seedling (Sumati)",
+        "planet": "Sumati",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Abyss Pine Seedling (Ursa Minor II)",
+        "planet": "Ursa Minor II",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Altar Clusterpod (Strix I)",
+        "planet": "Strix I",
+        "biomes": [
+            "Volcanic",
+            "Sandy Desert",
+            "Craters"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Aniline Blackweed (Lantana VIII-b)",
+        "planet": "Lantana VIII-b",
+        "biomes": [
+            "Craters"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Apollo Fireleaf (Cassiopeia I)",
+        "planet": "Cassiopeia I",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest",
+            "Tropical Forest",
+            "Plateau"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Apollo Fireleaf (Feynman III)",
+        "planet": "Feynman III",
+        "biomes": [
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Apollo Fireleaf (Maheo I)",
+        "planet": "Maheo I",
+        "biomes": [
+            "Swamp",
+            "Tropical Forest",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Arc Root (Cassiopeia IV-a)",
+        "planet": "Cassiopeia IV-a",
+        "biomes": [
+            "Plateau",
+            "Mountains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Arc Root (Vesta)",
+        "planet": "Vesta",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Plateau"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Aries Vine (Heinlein IV-b)",
+        "planet": "Heinlein IV-b",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Aries Vine (Leonis III)",
+        "planet": "Leonis III",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Aruna Goldenglow (Algorab III-b)",
+        "planet": "Algorab III-b",
+        "biomes": [
+            "Swamp",
+            "Wetlands",
+            "Hills"
+        ],
+        "resource": "Lubricant"
+    },
+    {
+        "name": "Aruna Goldenglow (Bel I)",
+        "planet": "Bel I",
+        "biomes": [
+            "Frozen Hills",
+            "Hills",
+            "Savanna"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Aruna Goldenglow (Huygens IV)",
+        "planet": "Huygens IV",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Sedative"
+    },
+    {
+        "name": "Aruna Goldenglow (Hyla II)",
+        "planet": "Hyla II",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Aruna Goldenglow (Ka'zaal)",
+        "planet": "Ka'zaal",
+        "biomes": [
+            "Hills",
+            "Wetlands"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Aruna Goldenglow (Polvo)",
+        "planet": "Polvo",
+        "biomes": [
+            "Rocky Desert",
+            "Hills"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Aruna Goldenglow (Rana VI-a)",
+        "planet": "Rana VI-a",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Aruna Goldenglow (Schrodinger III)",
+        "planet": "Schrodinger III",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Aruna Goldenglow (Serpentis III)",
+        "planet": "Serpentis III",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Aruna Goldenglow (Tau Ceti II)",
+        "planet": "Tau Ceti II",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Aruna Goldenglow (Tirna VIII-c)",
+        "planet": "Tirna VIII-c",
+        "biomes": [
+            "Swamp",
+            "Savanna",
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Aruna Goldenglow (Xi Ophiuchi VIII-b)",
+        "planet": "Xi Ophiuchi VIII-b",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Aruna Goldenglow (Zeta Ophiuchi I)",
+        "planet": "Zeta Ophiuchi I",
+        "biomes": [
+            "Swamp",
+            "Deciduous Forest",
+            "Tropical Forest",
+            "Savanna"
+        ],
+        "resource": "Polymer",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Ash Flower (Cassiopeia IV-a)",
+        "planet": "Cassiopeia IV-a",
+        "biomes": [
+            "Mountains",
+            "Volcanic"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Ash Flower (Tirna II)",
+        "planet": "Tirna II",
+        "biomes": [
+            "Volcanic",
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Ash Sweeper (Gamma Vulpes II-a)",
+        "planet": "Gamma Vulpes II-a",
+        "biomes": [
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Ash Sweeper (Guniibuu VI-b)",
+        "planet": "Guniibuu VI-b",
+        "biomes": [
+            "Volcanic",
+            "Hills"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Ash Sweeper (Khayyam II)",
+        "planet": "Khayyam II",
+        "biomes": [
+            "Volcanic",
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Ash Sweeper (Rivera I)",
+        "planet": "Rivera I",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Rocky Desert"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Ash Sweeper (Sparta III)",
+        "planet": "Sparta III",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Atlas Weed (Bardeen III)",
+        "planet": "Bardeen III",
+        "biomes": [
+            "Mountains",
+            "Deciduous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Atlas Weed (Hawking I)",
+        "planet": "Hawking I",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Atlas Weed (Kumasi I)",
+        "planet": "Kumasi I",
+        "biomes": [
+            "Tropical Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Atlas Weed (Lantana III)",
+        "planet": "Lantana III",
+        "biomes": [
+            "Tropical Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Atlas Weed (Nemeria I)",
+        "planet": "Nemeria I",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Atlas Weed (Oborum I)",
+        "planet": "Oborum I",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Membrane"
+    },
+    {
+        "name": "Atlas Weed (Shoza IV)",
+        "planet": "Shoza IV",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Atlas Weed (Syrma III)",
+        "planet": "Syrma III",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest",
+            "Hills"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Atlas Weed (Zeta Ophiuchi I)",
+        "planet": "Zeta Ophiuchi I",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Augustus Creeper (Andromas II)",
+        "planet": "Andromas II",
+        "biomes": [
+            "Hills",
+            "Savanna"
+        ],
+        "resource": "Hallucinogen"
+    },
+    {
+        "name": "Augustus Creeper (Celebrai II)",
+        "planet": "Celebrai II",
+        "biomes": [
+            "Mountains",
+            "Savanna",
+            "Hills"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Augustus Creeper (Copernicus IV)",
+        "planet": "Copernicus IV",
+        "biomes": [
+            "Hills",
+            "Savanna"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Augustus Creeper (Eridani II)",
+        "planet": "Eridani II",
+        "biomes": [
+            "Rocky Desert",
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Augustus Creeper (Huygens IV)",
+        "planet": "Huygens IV",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Augustus Creeper (Hyla I)",
+        "planet": "Hyla I",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Aurora Palm (Alpha Andraste II)",
+        "planet": "Alpha Andraste II",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Aurora Palm (Beta Marae I)",
+        "planet": "Beta Marae I",
+        "biomes": [
+            "Coniferous Forest",
+            "Rocky Desert",
+            "Mountains",
+            "Plateau"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Aurora Palm (Copernicus III)",
+        "planet": "Copernicus III",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Aurora Palm (Groombridge VIII-a)",
+        "planet": "Groombridge VIII-a",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Aurora Palm (Jemison)",
+        "planet": "Jemison",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Aurora Palm (Kang III)",
+        "planet": "Kang III",
+        "biomes": [
+            "Rocky Desert",
+            "Mountains"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Aurora Palm (Marduk III)",
+        "planet": "Marduk III",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Aurora Palm (Rasalhague II)",
+        "planet": "Rasalhague II",
+        "biomes": [
+            "Mountains",
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Aurora Palm (Strix I)",
+        "planet": "Strix I",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Aurora Palm (Tau Ceti VIII-b)",
+        "planet": "Tau Ceti VIII-b",
+        "biomes": [
+            "Mountains",
+            "Savanna"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Aurora Palm (Tirna II)",
+        "planet": "Tirna II",
+        "biomes": [
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Aurora Palm (Vesta)",
+        "planet": "Vesta",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Plateau"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Autumn Junglebloom (Beta Marae I)",
+        "planet": "Beta Marae I",
+        "biomes": [
+            "Wetlands",
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Autumn Junglebloom (Eridani II)",
+        "planet": "Eridani II",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Autumn Junglebloom (Kumasi I)",
+        "planet": "Kumasi I",
+        "biomes": [
+            "Wetlands",
+            "Tropical Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Autumn Junglebloom (Schrodinger VIII-a)",
+        "planet": "Schrodinger VIII-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Autumn Junglebloom (Zelazny II)",
+        "planet": "Zelazny II",
+        "biomes": [
+            "Swamp",
+            "Tropical Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Autumn Junglebloom (Zelazny III)",
+        "planet": "Zelazny III",
+        "biomes": [
+            "Tropical Forest",
+            "Wetlands"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Barrenbulb (Kang III)",
+        "planet": "Kang III",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Barrenbulb (Piazzi I)",
+        "planet": "Piazzi I",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Barrenbulb (Polvo)",
+        "planet": "Polvo",
+        "biomes": [
+            "Rocky Desert",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Bellona Bush (Copernicus IV)",
+        "planet": "Copernicus IV",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Membrane"
+    },
+    {
+        "name": "Bellona Bush (Leviathan IV)",
+        "planet": "Leviathan IV",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Bellona Bush (Rana VI-a)",
+        "planet": "Rana VI-a",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Bellona Bush (Tirna VIII-c)",
+        "planet": "Tirna VIII-c",
+        "biomes": [
+            "Swamp",
+            "Savanna",
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Bellona Bush (Zelazny II)",
+        "planet": "Zelazny II",
+        "biomes": [
+            "Swamp",
+            "Tropical Forest"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Bitter Bramble (Feynman IV)",
+        "planet": "Feynman IV",
+        "biomes": [
+            "Craters",
+            "Savanna",
+            "Mountains"
+        ],
+        "resource": "Toxin",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Bitter Goldenglow (Altair II)",
+        "planet": "Altair II",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Amino Acids"
+    },
+    {
+        "name": "Bitter Goldenglow (Eridani II)",
+        "planet": "Eridani II",
+        "biomes": [
+            "Rocky Desert",
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Bitter Goldenglow (Gagarin)",
+        "planet": "Gagarin",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Bitter Goldenglow (Heisenberg II)",
+        "planet": "Heisenberg II",
+        "biomes": [
+            "Hills",
+            "Mountains",
+            "Rocky Desert"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Bitter Goldenglow (Marduk III)",
+        "planet": "Marduk III",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Bitter Orange Root (Shoza V)",
+        "planet": "Shoza V",
+        "biomes": [
+            "Plateau"
+        ],
+        "resource": "Polymer"
+    },
+    {
+        "name": "Bleeding Heart Vine (Al-Battani II)",
+        "planet": "Al-Battani II",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Bleeding Heart Vine (Bardeen III)",
+        "planet": "Bardeen III",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Bleeding Heart Vine (Celebrai II)",
+        "planet": "Celebrai II",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Bleeding Heart Vine (Polvo)",
+        "planet": "Polvo",
+        "biomes": [
+            "Rocky Desert",
+            "Hills"
+        ],
+        "resource": "Solvent"
+    },
+    {
+        "name": "Bleeding Heart Vine (Rana III)",
+        "planet": "Rana III",
+        "biomes": [
+            "Sandy Desert",
+            "Hills"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Bleeding Heart Vine (Rivera I)",
+        "planet": "Rivera I",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest",
+            "Hills"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Bleeding Heart Vine (Schrodinger III)",
+        "planet": "Schrodinger III",
+        "biomes": [
+            "Mountains",
+            "Frozen Mountains",
+            "Hills"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Blistered Hornbulb (Feynman IV)",
+        "planet": "Feynman IV",
+        "biomes": [
+            "Craters",
+            "Savanna",
+            "Mountains"
+        ],
+        "resource": "Fiber",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Blood Palm (Maal IV)",
+        "planet": "Maal IV",
+        "biomes": [
+            "Mountains",
+            "Volcanic"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Blood Palm (Serpentis II)",
+        "planet": "Serpentis II",
+        "biomes": [
+            "Mountains",
+            "Sandy Desert",
+            "Savanna",
+            "Volcanic"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Blood Palm (Syrma III)",
+        "planet": "Syrma III",
+        "biomes": [
+            "Volcanic",
+            "Hills",
+            "Craters"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Blooming Slopefeather (Denebola I-b)",
+        "planet": "Denebola I-b",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Blooming Slopefeather (Ixyll II)",
+        "planet": "Ixyll II",
+        "biomes": [
+            "Savanna",
+            "Frozen Plains",
+            "Volcanic",
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Blooming Slopefeather (Lantana VIII-b)",
+        "planet": "Lantana VIII-b",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Blooming Slopefeather (Montara Luna)",
+        "planet": "Montara Luna",
+        "biomes": [
+            "Hills",
+            "Savanna"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Blue Weeping Shrub (Algorab III-b)",
+        "planet": "Algorab III-b",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Blue Weeping Shrub (Cassiopeia I)",
+        "planet": "Cassiopeia I",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Blue Weeping Shrub (Freya III)",
+        "planet": "Freya III",
+        "biomes": [
+            "Deciduous Forest",
+            "Tropical Forest",
+            "Mountains"
+        ],
+        "resource": "Membrane"
+    },
+    {
+        "name": "Blue Weeping Shrub (Groombridge VIII-a)",
+        "planet": "Groombridge VIII-a",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Tropical Forest",
+            "Savanna"
+        ],
+        "resource": "Aromatic"
+    },
+    {
+        "name": "Blue Weeping Shrub (Ixyll III-b)",
+        "planet": "Ixyll III-b",
+        "biomes": [
+            "Mountains",
+            "Swamp",
+            "Deciduous Forest",
+            "Wetlands"
+        ],
+        "resource": "Analgesic"
+    },
+    {
+        "name": "Blue Weeping Shrub (Nemeria IV-a)",
+        "planet": "Nemeria IV-a",
+        "biomes": [
+            "Swamp",
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Blue Weeping Shrub (Sumati)",
+        "planet": "Sumati",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest",
+            "Mountains"
+        ],
+        "resource": "Hypercatalyst"
+    },
+    {
+        "name": "Bog Bloom (Beta Marae I)",
+        "planet": "Beta Marae I",
+        "biomes": [
+            "Wetlands",
+            "Tropical Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Bog Bloom (Procyon III)",
+        "planet": "Procyon III",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Nutrient",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Bog Bloom (Pyraas II)",
+        "planet": "Pyraas II",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Bog Bloom (Pyraas VII-b)",
+        "planet": "Pyraas VII-b",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Boreas Root (Decaran I)",
+        "planet": "Decaran I",
+        "biomes": [
+            "Frozen Plains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Boreas Root (Eridani III)",
+        "planet": "Eridani III",
+        "biomes": [
+            "Frozen Dunes"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Boreas Root (Freya III)",
+        "planet": "Freya III",
+        "biomes": [
+            "Frozen Mountains",
+            "Mountains"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Boreas Root (Jemison)",
+        "planet": "Jemison",
+        "biomes": [
+            "Frozen Mountains",
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Boreas Root (Khayyam II)",
+        "planet": "Khayyam II",
+        "biomes": [
+            "Volcanic",
+            "Frozen Mountains",
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Boreas Root (Tidacha I)",
+        "planet": "Tidacha I",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains",
+            "Coniferous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Bowing Shadeleaf (Bardeen III)",
+        "planet": "Bardeen III",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains",
+            "Deciduous Forest",
+            "Hills"
+        ],
+        "resource": "Lubricant"
+    },
+    {
+        "name": "Bowing Shadeleaf (Celebrai II)",
+        "planet": "Celebrai II",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Bowing Shadeleaf (Kumasi II)",
+        "planet": "Kumasi II",
+        "biomes": [
+            "Rocky Desert",
+            "Hills",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Bowing Shadeleaf (Masada III)",
+        "planet": "Masada III",
+        "biomes": [
+            "Mountains",
+            "Savanna",
+            "Hills"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Bowing Shadeleaf (Polvo)",
+        "planet": "Polvo",
+        "biomes": [
+            "Rocky Desert",
+            "Hills"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Bowing Shadeleaf (Syrma III)",
+        "planet": "Syrma III",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Hills",
+            "Craters"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Bright Fire Reed (Zelazny III)",
+        "planet": "Zelazny III",
+        "biomes": [
+            "Volcanic",
+            "Coniferous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Immunostimulant"
+    },
+    {
+        "name": "Bristle Barrel (Beta Ternion I)",
+        "planet": "Beta Ternion I",
+        "biomes": [
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Stimulant"
+    },
+    {
+        "name": "Bristle Barrel (Huygens VII-b)",
+        "planet": "Huygens VII-b",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Bristle Barrel (Porrima II)",
+        "planet": "Porrima II",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Broadleaf Rose (Hawking I)",
+        "planet": "Hawking I",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Broadleaf Rose (Jemison)",
+        "planet": "Jemison",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Broadleaf Rose (Khayyam II)",
+        "planet": "Khayyam II",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Broadleaf Rose (McClure II)",
+        "planet": "McClure II",
+        "biomes": [
+            "Coniferous Forest",
+            "Frozen Plains"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Broadleaf Rose (Oborum I)",
+        "planet": "Oborum I",
+        "biomes": [
+            "Frozen Plains",
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Broadleaf Rose (Porrima III)",
+        "planet": "Porrima III",
+        "biomes": [
+            "Coniferous Forest",
+            "Frozen Plains",
+            "Craters"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Broadleaf Rose (Rivera I)",
+        "planet": "Rivera I",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest",
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Broadleaf Rose (Syrma VII-a)",
+        "planet": "Syrma VII-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains",
+            "Wetlands",
+            "Coniferous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Broadleaf Rose (Vega II-c)",
+        "planet": "Vega II-c",
+        "biomes": [
+            "Coniferous Forest",
+            "Plateau",
+            "Rocky Desert"
+        ],
+        "resource": "Toxin",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Broken Heart Vine (Copernicus IV)",
+        "planet": "Copernicus IV",
+        "biomes": [
+            "Hills",
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Broken Heart Vine (Enlil II)",
+        "planet": "Enlil II",
+        "biomes": [
+            "Tropical Forest",
+            "Savanna"
+        ],
+        "resource": "Sedative"
+    },
+    {
+        "name": "Broken Heart Vine (Pyraas II)",
+        "planet": "Pyraas II",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Hallucinogen"
+    },
+    {
+        "name": "Broken Heart Vine (Shoza III)",
+        "planet": "Shoza III",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Broken Heart Vine (Tirna VIII-c)",
+        "planet": "Tirna VIII-c",
+        "biomes": [
+            "Swamp",
+            "Savanna",
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Broken Heart Vine (Vesta)",
+        "planet": "Vesta",
+        "biomes": [
+            "Savanna",
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Burnt Pokeleaf (Beta Marae I)",
+        "planet": "Beta Marae I",
+        "biomes": [
+            "Rocky Desert",
+            "Mountains",
+            "Plateau"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Burnt Pokeleaf (Gagarin)",
+        "planet": "Gagarin",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Caelus Pokeweed (Hyla II)",
+        "planet": "Hyla II",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Caelus Pokeweed (Indum II)",
+        "planet": "Indum II",
+        "biomes": [
+            "Sandy Desert",
+            "Swamp"
+        ],
+        "resource": "Structural",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Caelus Pokeweed (Serpentis III)",
+        "planet": "Serpentis III",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Cosmetic",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Cage Brain (Bradbury III)",
+        "planet": "Bradbury III",
+        "biomes": [
+            "Savanna",
+            "Swamp",
+            "Hills",
+            "Mountains",
+            "Wetlands"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Cage Brain (Enlil II)",
+        "planet": "Enlil II",
+        "biomes": [
+            "Tropical Forest",
+            "Mountains",
+            "Savanna"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Cage Brain (Kumasi II)",
+        "planet": "Kumasi II",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Cage Brain (Lantana III)",
+        "planet": "Lantana III",
+        "biomes": [
+            "Tropical Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Cage Brain (Newton II)",
+        "planet": "Newton II",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Cage Brain (Piazzi IV-c)",
+        "planet": "Piazzi IV-c",
+        "biomes": [
+            "Hills",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Cage Brain (Sparta IV)",
+        "planet": "Sparta IV",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Cage Brain (Tau Ceti VIII-b)",
+        "planet": "Tau Ceti VIII-b",
+        "biomes": [
+            "Tropical Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Cage Brain (Zelazny III)",
+        "planet": "Zelazny III",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Canary Reed (Akila)",
+        "planet": "Akila",
+        "biomes": [
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Canary Reed (Algorab II)",
+        "planet": "Algorab II",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Canary Reed (Archimedes III)",
+        "planet": "Archimedes III",
+        "biomes": [
+            "Savanna",
+            "Mountains"
+        ],
+        "resource": "Lubricant"
+    },
+    {
+        "name": "Canary Reed (Archimedes V-a)",
+        "planet": "Archimedes V-a",
+        "biomes": [
+            "Hills",
+            "Mountains",
+            "Savanna"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Canary Reed (Bel II)",
+        "planet": "Bel II",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Canary Reed (Charybdis II)",
+        "planet": "Charybdis II",
+        "biomes": [
+            "Swamp",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Canary Reed (Guniibuu II)",
+        "planet": "Guniibuu II",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Canary Reed (Ixyll III-b)",
+        "planet": "Ixyll III-b",
+        "biomes": [
+            "Savanna",
+            "Wetlands"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Canary Reed (Muphrid V-b)",
+        "planet": "Muphrid V-b",
+        "biomes": [
+            "Savanna",
+            "Volcanic"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Canary Reed (Zeta Ophiuchi I)",
+        "planet": "Zeta Ophiuchi I",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Canis Palm (Altair II)",
+        "planet": "Altair II",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Membrane",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Canis Palm (Polvo)",
+        "planet": "Polvo",
+        "biomes": [
+            "Rocky Desert",
+            "Hills"
+        ],
+        "resource": "Amino Acids"
+    },
+    {
+        "name": "Canyon Rose (Verne II)",
+        "planet": "Verne II",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Chillhook (Akila)",
+        "planet": "Akila",
+        "biomes": [
+            "Frozen Plains",
+            "Coniferous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Chillhook (Gamma Vulpes I)",
+        "planet": "Gamma Vulpes I",
+        "biomes": [
+            "Frozen Plains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Chillhook (Masada III)",
+        "planet": "Masada III",
+        "biomes": [
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Amino Acids"
+    },
+    {
+        "name": "Chillhook (Rana IV)",
+        "planet": "Rana IV",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains",
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Chillhook (Schrodinger III)",
+        "planet": "Schrodinger III",
+        "biomes": [
+            "Mountains",
+            "Frozen Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Christina Bloom (Jaffa III)",
+        "planet": "Jaffa III",
+        "biomes": [
+            "Volcanic",
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Christina Bloom (McClure II)",
+        "planet": "McClure II",
+        "biomes": [
+            "Coniferous Forest",
+            "Frozen Plains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Christina Bloom (Shoza IV)",
+        "planet": "Shoza IV",
+        "biomes": [
+            "Plateau",
+            "Coniferous Forest",
+            "Savanna",
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Christina Bloom (Sparta IV)",
+        "planet": "Sparta IV",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Christina Bloom (Ursa Minor II)",
+        "planet": "Ursa Minor II",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Cliff Laurel (Archimedes III)",
+        "planet": "Archimedes III",
+        "biomes": [
+            "Savanna",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Cliff Laurel (Beta Ternion II)",
+        "planet": "Beta Ternion II",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Deciduous Forest"
+        ],
+        "resource": "Stimulant"
+    },
+    {
+        "name": "Cliff Laurel (Decaran I)",
+        "planet": "Decaran I",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Sealant",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Cliff Laurel (Eridani II)",
+        "planet": "Eridani II",
+        "biomes": [
+            "Rocky Desert",
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Cliff Laurel (Jemison)",
+        "planet": "Jemison",
+        "biomes": [
+            "Frozen Mountains",
+            "Deciduous Forest",
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Cliff Laurel (Newton II)",
+        "planet": "Newton II",
+        "biomes": [
+            "Mountains",
+            "Rocky Desert"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Cliff Laurel (Newton III)",
+        "planet": "Newton III",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Tropical Forest",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Cliff Laurel (Shoza IV)",
+        "planet": "Shoza IV",
+        "biomes": [
+            "Plateau",
+            "Coniferous Forest",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Cliff Laurel (Sparta III)",
+        "planet": "Sparta III",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Cliff Laurel (Syrma III)",
+        "planet": "Syrma III",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Cliff Laurel (Tau Ceti VIII-b)",
+        "planet": "Tau Ceti VIII-b",
+        "biomes": [
+            "Mountains",
+            "Savanna"
+        ],
+        "resource": "Cosmetic",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Cliff Laurel (Tirna II)",
+        "planet": "Tirna II",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Cliffberry (Bannoc II)",
+        "planet": "Bannoc II",
+        "biomes": [
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Cliffberry (Copernicus II)",
+        "planet": "Copernicus II",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Cliffberry (Copernicus III)",
+        "planet": "Copernicus III",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Amino Acids"
+    },
+    {
+        "name": "Cliffberry (Newton II)",
+        "planet": "Newton II",
+        "biomes": [
+            "Mountains",
+            "Rocky Desert"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Cliffberry (Nirvana II)",
+        "planet": "Nirvana II",
+        "biomes": [
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Cliffberry (Sumati)",
+        "planet": "Sumati",
+        "biomes": [
+            "Frozen Plains",
+            "Deciduous Forest",
+            "Coniferous Forest",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Cliffberry (Tau Ceti VIII-b)",
+        "planet": "Tau Ceti VIII-b",
+        "biomes": [
+            "Mountains",
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Cliffberry (Ternion III)",
+        "planet": "Ternion III",
+        "biomes": [
+            "Mountains",
+            "Volcanic"
+        ],
+        "resource": "Polymer"
+    },
+    {
+        "name": "Cliffberry (Verne II)",
+        "planet": "Verne II",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Cliffberry (Zelazny II)",
+        "planet": "Zelazny II",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Cold Cave Nettle (Akila)",
+        "planet": "Akila",
+        "biomes": [
+            "Frozen Plains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Cold Cave Nettle (Bara III)",
+        "planet": "Bara III",
+        "biomes": [
+            "Frozen Plains",
+            "Mountains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Cold Cave Nettle (Jemison)",
+        "planet": "Jemison",
+        "biomes": [
+            "Frozen Mountains",
+            "Mountains"
+        ],
+        "resource": "Toxin",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Cold Cave Nettle (Lantana IV)",
+        "planet": "Lantana IV",
+        "biomes": [
+            "Deciduous Forest",
+            "Frozen Plains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Cold Cave Nettle (Linnaeus II)",
+        "planet": "Linnaeus II",
+        "biomes": [
+            "Mountains",
+            "Frozen Mountains"
+        ],
+        "resource": "Fiber",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Cold Cave Nettle (Porrima IV-c)",
+        "planet": "Porrima IV-c",
+        "biomes": [
+            "Frozen Mountains",
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Cold Cave Nettle (Procyon III)",
+        "planet": "Procyon III",
+        "biomes": [
+            "Frozen Plains"
+        ],
+        "resource": "Sealant",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Cold Cave Nettle (Schrodinger III)",
+        "planet": "Schrodinger III",
+        "biomes": [
+            "Mountains",
+            "Frozen Mountains"
+        ],
+        "resource": "Toxin",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Cold Cave Nettle (Verne II)",
+        "planet": "Verne II",
+        "biomes": [
+            "Frozen Crevasses",
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Crag Root (Bohr II)",
+        "planet": "Bohr II",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Crag Root (Fermi III)",
+        "planet": "Fermi III",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Crag Root (Guniibuu II)",
+        "planet": "Guniibuu II",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Ornamental",
+        "other": {
+            "Production": "Yes ^"
+        }
+    },
+    {
+        "name": "Crag Root (Heinlein IV-b)",
+        "planet": "Heinlein IV-b",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Crag Root (Heisenberg II)",
+        "planet": "Heisenberg II",
+        "biomes": [
+            "Hills",
+            "Mountains",
+            "Rocky Desert"
+        ],
+        "resource": "Aromatic"
+    },
+    {
+        "name": "Crag Root (Huygens III)",
+        "planet": "Huygens III",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains",
+            "Savanna"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Crag Root (Hyla I)",
+        "planet": "Hyla I",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Crag Root (Ixyll II)",
+        "planet": "Ixyll II",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Crag Root (Ixyll III-b)",
+        "planet": "Ixyll III-b",
+        "biomes": [
+            "Mountains",
+            "Swamp",
+            "Deciduous Forest"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Crag Root (Kumasi II)",
+        "planet": "Kumasi II",
+        "biomes": [
+            "Rocky Desert",
+            "Frozen Plains",
+            "Hills",
+            "Mountains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Crag Root (Magnar)",
+        "planet": "Magnar",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Nutrient",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Crag Root (Montara Luna)",
+        "planet": "Montara Luna",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Crag Root (Newton II)",
+        "planet": "Newton II",
+        "biomes": [
+            "Mountains",
+            "Swamp"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Crag Root (Serpentis IV)",
+        "planet": "Serpentis IV",
+        "biomes": [
+            "Coniferous Forest",
+            "Mountains"
+        ],
+        "resource": "Toxin",
+        "other": {
+            "Production": "No"
+        }
+    },
+    {
+        "name": "Crag Root (Syrma IV)",
+        "planet": "Syrma IV",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Crag Root (Verne II)",
+        "planet": "Verne II",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Crater Weed (Bradbury IV)",
+        "planet": "Bradbury IV",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Crater Weed (Marduk IV)",
+        "planet": "Marduk IV",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Crater Weed (Newton III)",
+        "planet": "Newton III",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Crater Weed (Nirvana II)",
+        "planet": "Nirvana II",
+        "biomes": [
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Crater Weed (Shoza II)",
+        "planet": "Shoza II",
+        "biomes": [
+            "Volcanic",
+            "Deciduous Forest",
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Craterhorn Shrub (Andromas III)",
+        "planet": "Andromas III",
+        "biomes": [
+            "Craters"
+        ],
+        "resource": "Hallucinogen"
+    },
+    {
+        "name": "Creeping Twin Shrub (Leonis III)",
+        "planet": "Leonis III",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Creeping Twin Shrub (Marduk IV)",
+        "planet": "Marduk IV",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Crimson Courtstalk (Archimedes II)",
+        "planet": "Archimedes II",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Sedative"
+    },
+    {
+        "name": "Crimson Courtstalk (Marduk IV)",
+        "planet": "Marduk IV",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Crimson Courtstalk (Nemeria II)",
+        "planet": "Nemeria II",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Hills",
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Crimson Courtstalk (Nirvana II)",
+        "planet": "Nirvana II",
+        "biomes": [
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Crimson Gibbet (Beta Ternion II)",
+        "planet": "Beta Ternion II",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Crimson Gibbet (Ixyll II)",
+        "planet": "Ixyll II",
+        "biomes": [
+            "Savanna",
+            "Mountains",
+            "Wetlands",
+            "Deciduous Forest",
+            "Volcanic",
+            "Hills"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Crimson Gibbet (Maheo I)",
+        "planet": "Maheo I",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Crimson Gibbet (Tau Ceti II)",
+        "planet": "Tau Ceti II",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Crusher Leaf (Denebola I-b)",
+        "planet": "Denebola I-b",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Dappled Ash Bloom (Kumasi I)",
+        "planet": "Kumasi I",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Dappled Ash Bloom (Leonis III)",
+        "planet": "Leonis III",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Dappled Ash Bloom (Serpentis II)",
+        "planet": "Serpentis II",
+        "biomes": [
+            "Mountains",
+            "Deciduous Forest",
+            "Sandy Desert",
+            "Volcanic"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Desiccated Yarberry (Bolivar I)",
+        "planet": "Bolivar I",
+        "biomes": [
+            "Wetlands",
+            "Tropical Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Desiccated Yarberry (Kumasi I)",
+        "planet": "Kumasi I",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Dovefoot Pedestal (Aranae I)",
+        "planet": "Aranae I",
+        "biomes": [
+            "Craters"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Dovefoot Pedestal (Strix III-a)",
+        "planet": "Strix III-a",
+        "biomes": [
+            "Craters"
+        ],
+        "resource": "Analgesic"
+    },
+    {
+        "name": "Dunetangle (Eridani III)",
+        "planet": "Eridani III",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Dunetangle (Gamma Vulpes I)",
+        "planet": "Gamma Vulpes I",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Dunetangle (Heinlein IV-b)",
+        "planet": "Heinlein IV-b",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Dunetangle (Porrima II)",
+        "planet": "Porrima II",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Dust Root (Kreet)",
+        "planet": "Kreet",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Duster Shrub (Leonis III)",
+        "planet": "Leonis III",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Duster Shrub (Ternion III)",
+        "planet": "Ternion III",
+        "biomes": [
+            "Mountains",
+            "Volcanic"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Enduring Bugleweed (Arcturus II)",
+        "planet": "Arcturus II",
+        "biomes": [
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Enduring Bugleweed (Beta Ternion III)",
+        "planet": "Beta Ternion III",
+        "biomes": [
+            "Coniferous Forest",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Enduring Bugleweed (Bohr II)",
+        "planet": "Bohr II",
+        "biomes": [
+            "Frozen Crevasses",
+            "Mountains"
+        ],
+        "resource": "Adhesive"
+    },
+    {
+        "name": "Enduring Bugleweed (Copernicus II)",
+        "planet": "Copernicus II",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Enduring Bugleweed (Kumasi II)",
+        "planet": "Kumasi II",
+        "biomes": [
+            "Rocky Desert",
+            "Frozen Plains",
+            "Hills",
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Enduring Bugleweed (Newton II)",
+        "planet": "Newton II",
+        "biomes": [
+            "Mountains",
+            "Rocky Desert"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Enduring Bugleweed (Schrodinger VIII-a)",
+        "planet": "Schrodinger VIII-a",
+        "biomes": [
+            "Mountains",
+            "Volcanic",
+            "Savanna"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Enduring Bugleweed (Serpentis IV)",
+        "planet": "Serpentis IV",
+        "biomes": [
+            "Coniferous Forest",
+            "Mountains"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Enduring Bugleweed (Syrma VII-a)",
+        "planet": "Syrma VII-a",
+        "biomes": [
+            "Mountains",
+            "Swamp",
+            "Coniferous Forest",
+            "Hills"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Enduring Bugleweed (Tidacha I)",
+        "planet": "Tidacha I",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Enduring Bugleweed (Ursa Major II)",
+        "planet": "Ursa Major II",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Enduring Bugleweed (Zosma V-a)",
+        "planet": "Zosma V-a",
+        "biomes": [
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Eurymedon Bulb (Charybdis IV)",
+        "planet": "Charybdis IV",
+        "biomes": [
+            "Plateau"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Explorer' Coleus (Bolivar I)",
+        "planet": "Bolivar I",
+        "biomes": [
+            "Hills",
+            "Wetlands",
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Explorer' Coleus (Cassiopeia I)",
+        "planet": "Cassiopeia I",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Explorer' Coleus (Gamma Vulpes II-a)",
+        "planet": "Gamma Vulpes II-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Wetlands"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Explorer' Coleus (Muphrid IV)",
+        "planet": "Muphrid IV",
+        "biomes": [
+            "Frozen Dunes",
+            "Hills",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Explorer' Coleus (Shoza II)",
+        "planet": "Shoza II",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Explorer' Coleus (Ternion III)",
+        "planet": "Ternion III",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Fallen Star Palm (Andromas II)",
+        "planet": "Andromas II",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Fallen Star Palm (Bel I)",
+        "planet": "Bel I",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Fallen Star Palm (Bel II)",
+        "planet": "Bel II",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Fallen Star Palm (Beta Ternion II)",
+        "planet": "Beta Ternion II",
+        "biomes": [
+            "Deciduous Forest",
+            "Savanna",
+            "Sandy Desert"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Fallen Star Palm (Proxima Ternion III)",
+        "planet": "Proxima Ternion III",
+        "biomes": [
+            "Swamp",
+            "Hills",
+            "Savanna"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Fallen Star Palm (Ternion III)",
+        "planet": "Ternion III",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Fallen Star Palm (Tirna VIII-c)",
+        "planet": "Tirna VIII-c",
+        "biomes": [
+            "Swamp",
+            "Savanna",
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Fallen Star Palm (Ursa Major II)",
+        "planet": "Ursa Major II",
+        "biomes": [
+            "Savanna",
+            "Swamp"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Fallen Star Palm (Zeta Ophiuchi I)",
+        "planet": "Zeta Ophiuchi I",
+        "biomes": [
+            "Swamp",
+            "Mountains",
+            "Tropical Forest",
+            "Savanna"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Fallen Star Palm (Zosma V-a)",
+        "planet": "Zosma V-a",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Festering Junglecreep (Huygens III)",
+        "planet": "Huygens III",
+        "biomes": [
+            "Deciduous Forest",
+            "Swamp",
+            "Wetlands",
+            "Tropical Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Festering Junglecreep (Katydid I-a)",
+        "planet": "Katydid I-a",
+        "biomes": [
+            "Wetlands",
+            "Tropical Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Fire Rose (Arcturus II)",
+        "planet": "Arcturus II",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Fire Rose (Freya III)",
+        "planet": "Freya III",
+        "biomes": [
+            "Wetlands",
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Sedative"
+    },
+    {
+        "name": "Fire Rose (Schrodinger VIII-a)",
+        "planet": "Schrodinger VIII-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Firecracker Vine (Beta Marae I)",
+        "planet": "Beta Marae I",
+        "biomes": [
+            "Wetlands",
+            "Tropical Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Firecracker Vine (Groombridge VIII-a)",
+        "planet": "Groombridge VIII-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Flame Vine (Charybdis II)",
+        "planet": "Charybdis II",
+        "biomes": [
+            "Swamp",
+            "Deciduous Forest",
+            "Coniferous Forest",
+            "Wetlands"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Flame Vine (Rana VI-a)",
+        "planet": "Rana VI-a",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Flame Vine (Rutherford III)",
+        "planet": "Rutherford III",
+        "biomes": [
+            "Swamp",
+            "Deciduous Forest",
+            "Savanna"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Flame Vine (Syrma IV)",
+        "planet": "Syrma IV",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Forest Wisp (Algorab II)",
+        "planet": "Algorab II",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Forest Wisp (Bel II)",
+        "planet": "Bel II",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Forest Wisp (Beta Ternion III)",
+        "planet": "Beta Ternion III",
+        "biomes": [
+            "Coniferous Forest",
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Forest Wisp (Groombridge VIII-a)",
+        "planet": "Groombridge VIII-a",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Forest Wisp (Khayyam II)",
+        "planet": "Khayyam II",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Forest Wisp (Kumasi III)",
+        "planet": "Kumasi III",
+        "biomes": [
+            "Hills",
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Forest Wisp (McClure II)",
+        "planet": "McClure II",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Forest Wisp (Muphrid V-b)",
+        "planet": "Muphrid V-b",
+        "biomes": [
+            "Frozen Hills",
+            "Coniferous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Forest Wisp (Porrima III)",
+        "planet": "Porrima III",
+        "biomes": [
+            "Coniferous Forest",
+            "Frozen Plains",
+            "Craters"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Forest Wisp (Sparta IV)",
+        "planet": "Sparta IV",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Forest Wisp (Ternion III)",
+        "planet": "Ternion III",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Forest Wisp (Ursa Minor II)",
+        "planet": "Ursa Minor II",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Frigid Palm (Guniibuu II)",
+        "planet": "Guniibuu II",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains"
+        ],
+        "resource": "Antimicrobial",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Frigid Palm (Kumasi II)",
+        "planet": "Kumasi II",
+        "biomes": [
+            "Frozen Plains",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Frigid Palm (Linnaeus II)",
+        "planet": "Linnaeus II",
+        "biomes": [
+            "Mountains",
+            "Frozen Mountains"
+        ],
+        "resource": "High-Tensile Spidroin",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Frigid Palm (Strix I)",
+        "planet": "Strix I",
+        "biomes": [
+            "Frozen Mountains",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Frigid Palm (Zeta Ophiuchi I)",
+        "planet": "Zeta Ophiuchi I",
+        "biomes": [
+            "Frozen Dunes",
+            "Mountains"
+        ],
+        "resource": "Nutrient",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Frost Reed (Bardeen III)",
+        "planet": "Bardeen III",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains"
+        ],
+        "resource": "Cosmetic",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Frost Reed (Bohr II)",
+        "planet": "Bohr II",
+        "biomes": [
+            "Frozen Crevasses"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Frost Reed (Kreet)",
+        "planet": "Kreet",
+        "biomes": [
+            "Frozen Volcanic"
+        ],
+        "resource": "Nutrient",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Frost Reed (Procyon III)",
+        "planet": "Procyon III",
+        "biomes": [
+            "Frozen Plains"
+        ],
+        "resource": "Fiber",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Frost Reed (Toliman II)",
+        "planet": "Toliman II",
+        "biomes": [
+            "Frozen Plains",
+            "Mountains",
+            "Swamp"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Gasping Fireleaf (Altair II)",
+        "planet": "Altair II",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Gasping Fireleaf (Kang III)",
+        "planet": "Kang III",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Gasping Fireleaf (Rivera I)",
+        "planet": "Rivera I",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Ginger Cage Vine (Ursa Major I)",
+        "planet": "Ursa Major I",
+        "biomes": [
+            "Plateau",
+            "Sandy Desert"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Glossy Stickweed (Groombridge VIII-a)",
+        "planet": "Groombridge VIII-a",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Glossy Stickweed (Jemison)",
+        "planet": "Jemison",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Glossy Stickweed (Marduk IV)",
+        "planet": "Marduk IV",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Glossy Stickweed (McClure II)",
+        "planet": "McClure II",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Glossy Stickweed (Moloch II)",
+        "planet": "Moloch II",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Glossy Stickweed (Newton III)",
+        "planet": "Newton III",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Glossy Stickweed (Oborum I)",
+        "planet": "Oborum I",
+        "biomes": [
+            "Frozen Plains",
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Glossy Stickweed (Piazzi IV-c)",
+        "planet": "Piazzi IV-c",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Glossy Stickweed (Syrma VII-a)",
+        "planet": "Syrma VII-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Wetlands",
+            "Coniferous Forest",
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Gnaw Stalk (Bardeen III)",
+        "planet": "Bardeen III",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Gnaw Stalk (Ka'zaal)",
+        "planet": "Ka'zaal",
+        "biomes": [
+            "Hills",
+            "Wetlands"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Gnaw Stalk (Pyraas II)",
+        "planet": "Pyraas II",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Golden Creeper (Akila)",
+        "planet": "Akila",
+        "biomes": [
+            "Frozen Plains",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Hallucinogen"
+    },
+    {
+        "name": "Golden Creeper (Algorab III-b)",
+        "planet": "Algorab III-b",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Golden Creeper (Eridani IV)",
+        "planet": "Eridani IV",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Golden Creeper (Heisenberg V-a)",
+        "planet": "Heisenberg V-a",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Golden Creeper (Lantana III)",
+        "planet": "Lantana III",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest",
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Golden Creeper (Montara Luna)",
+        "planet": "Montara Luna",
+        "biomes": [
+            "Frozen Plains",
+            "Coniferous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Golden Creeper (Muphrid V-b)",
+        "planet": "Muphrid V-b",
+        "biomes": [
+            "Frozen Hills",
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Golden Creeper (Sparta III)",
+        "planet": "Sparta III",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Golden Creeper (Sparta IV)",
+        "planet": "Sparta IV",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Golden Creeper (Ternion III)",
+        "planet": "Ternion III",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Golden Creeper (Verne II)",
+        "planet": "Verne II",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Golden Sand Root (Cassiopeia IV-a)",
+        "planet": "Cassiopeia IV-a",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Golden Sand Root (Kang III)",
+        "planet": "Kang III",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Golden Sand Root (Kumasi II)",
+        "planet": "Kumasi II",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Golden Sand Root (Shoza V)",
+        "planet": "Shoza V",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Hardy Woundwort (Gamma Vulpes II-a)",
+        "planet": "Gamma Vulpes II-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Wetlands"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Hardy Woundwort (Serpentis IV)",
+        "planet": "Serpentis IV",
+        "biomes": [
+            "Wetlands",
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Haven Vine (Hawking I)",
+        "planet": "Hawking I",
+        "biomes": [
+            "Volcanic",
+            "Frozen Dunes"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Haven Vine (Jaffa III)",
+        "planet": "Jaffa III",
+        "biomes": [
+            "Volcanic",
+            "Coniferous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Haven Vine (Masada III)",
+        "planet": "Masada III",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Haven Vine (Shoza II)",
+        "planet": "Shoza II",
+        "biomes": [
+            "Volcanic",
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Haven Vine (Zelazny III)",
+        "planet": "Zelazny III",
+        "biomes": [
+            "Volcanic",
+            "Coniferous Forest",
+            "Frozen Plains"
+        ],
+        "resource": "Hallucinogen"
+    },
+    {
+        "name": "Haviva Vine (Alpha Andraste II)",
+        "planet": "Alpha Andraste II",
+        "biomes": [
+            "Craters"
+        ],
+        "resource": "Antimicrobial",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Haviva Vine (Andromas III)",
+        "planet": "Andromas III",
+        "biomes": [
+            "Craters"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Hecate' Fireleaf (Arcturus II)",
+        "planet": "Arcturus II",
+        "biomes": [
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Hecate' Fireleaf (Bradbury III)",
+        "planet": "Bradbury III",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Hecate' Fireleaf (Gamma Vulpes I)",
+        "planet": "Gamma Vulpes I",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Hecate' Fireleaf (Groombridge I)",
+        "planet": "Groombridge I",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Hecate' Fireleaf (Porrima II)",
+        "planet": "Porrima II",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Hecate' Fireleaf (Zosma V-a)",
+        "planet": "Zosma V-a",
+        "biomes": [
+            "Rocky Desert",
+            "Sandy Desert"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Hunter' Stalk (Algorab III-b)",
+        "planet": "Algorab III-b",
+        "biomes": [
+            "Swamp",
+            "Wetlands"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Hunter' Stalk (Leviathan IV)",
+        "planet": "Leviathan IV",
+        "biomes": [
+            "Mountains",
+            "Swamp",
+            "Wetlands"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Hunter' Stalk (Maal IV)",
+        "planet": "Maal IV",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Hunter' Stalk (Pyraas II)",
+        "planet": "Pyraas II",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Hunter' Stalk (Pyraas VII-b)",
+        "planet": "Pyraas VII-b",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Hunter' Stalk (Shoza III)",
+        "planet": "Shoza III",
+        "biomes": [
+            "Swamp",
+            "Wetlands"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Ice Creeper (Decaran I)",
+        "planet": "Decaran I",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains"
+        ],
+        "resource": "Amino Acids",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Ice Creeper (Hyla II)",
+        "planet": "Hyla II",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Ice Creeper (Lantana IV)",
+        "planet": "Lantana IV",
+        "biomes": [
+            "Deciduous Forest",
+            "Frozen Plains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Ice Creeper (Serpentis III)",
+        "planet": "Serpentis III",
+        "biomes": [
+            "Frozen Plains"
+        ],
+        "resource": "Nutrient",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Ice Creeper (Tidacha I)",
+        "planet": "Tidacha I",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains",
+            "Coniferous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Ice Creeper (Zelazny III)",
+        "planet": "Zelazny III",
+        "biomes": [
+            "Volcanic",
+            "Frozen Plains"
+        ],
+        "resource": "Membrane",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Iceblood Vine (Decaran I)",
+        "planet": "Decaran I",
+        "biomes": [
+            "Frozen Plains"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Iceblood Vine (Gamma Vulpes I)",
+        "planet": "Gamma Vulpes I",
+        "biomes": [
+            "Frozen Plains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Iceblood Vine (Hyla II)",
+        "planet": "Hyla II",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Jagged Heart leaf (Archimedes III)",
+        "planet": "Archimedes III",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Lubricant"
+    },
+    {
+        "name": "Jagged Heart leaf (Bohr II)",
+        "planet": "Bohr II",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Jagged Heart leaf (Ixyll III-b)",
+        "planet": "Ixyll III-b",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Jagged Heart leaf (Katydid I-a)",
+        "planet": "Katydid I-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Jagged Heart leaf (Lantana IV)",
+        "planet": "Lantana IV",
+        "biomes": [
+            "Deciduous Forest",
+            "Frozen Plains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Jagged Heart leaf (Nesoi)",
+        "planet": "Nesoi",
+        "biomes": [
+            "Savanna",
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Jagged Heart leaf (Syrma VII-a)",
+        "planet": "Syrma VII-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains",
+            "Swamp",
+            "Wetlands",
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Jealous Heart Vine (Marduk III)",
+        "planet": "Marduk III",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Jealous Heart Vine (Piazzi I)",
+        "planet": "Piazzi I",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Jealous Heart Vine (Piazzi IV-c)",
+        "planet": "Piazzi IV-c",
+        "biomes": [
+            "Volcanic",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Jealous Heart Vine (Rivera I)",
+        "planet": "Rivera I",
+        "biomes": [
+            "Volcanic",
+            "Rocky Desert"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Kingshead Bugloss (Archimedes II)",
+        "planet": "Archimedes II",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Kingshead Bugloss (Guniibuu VI-b)",
+        "planet": "Guniibuu VI-b",
+        "biomes": [
+            "Volcanic",
+            "Hills"
+        ],
+        "resource": "Membrane",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Kingshead Bugloss (Jaffa III)",
+        "planet": "Jaffa III",
+        "biomes": [
+            "Volcanic",
+            "Coniferous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Laga Plant (Lantana III)",
+        "planet": "Lantana III",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Hills"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Laga Plant (Oborum I)",
+        "planet": "Oborum I",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Laga Plant (Schrodinger IV)",
+        "planet": "Schrodinger IV",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Laga Plant (Tidacha I)",
+        "planet": "Tidacha I",
+        "biomes": [
+            "Mountains",
+            "Swamp",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Hallucinogen"
+    },
+    {
+        "name": "Laga Plant (Ursa Major II)",
+        "planet": "Ursa Major II",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest",
+            "Tropical Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Laga Plant (Zelazny III)",
+        "planet": "Zelazny III",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Lattice Leaf (Alpha Andraste III)",
+        "planet": "Alpha Andraste III",
+        "biomes": [
+            "Tropical Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Biosuppressant",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Lattice Leaf (Bolivar I)",
+        "planet": "Bolivar I",
+        "biomes": [
+            "Savanna",
+            "Wetlands",
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Lattice Leaf (Maal V)",
+        "planet": "Maal V",
+        "biomes": [
+            "Swamp",
+            "Tropical Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Leafy Morningstar (Bannoc II)",
+        "planet": "Bannoc II",
+        "biomes": [
+            "Deciduous Forest",
+            "Savanna"
+        ],
+        "resource": "Membrane"
+    },
+    {
+        "name": "Leafy Morningstar (Bardeen III)",
+        "planet": "Bardeen III",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Leafy Morningstar (Bardeen V-c)",
+        "planet": "Bardeen V-c",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Leafy Morningstar (Bohr II)",
+        "planet": "Bohr II",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Leafy Morningstar (Groombridge VIII-a)",
+        "planet": "Groombridge VIII-a",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Tropical Forest",
+            "Savanna"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Leafy Morningstar (Hawking I)",
+        "planet": "Hawking I",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Leafy Morningstar (Shoza II)",
+        "planet": "Shoza II",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Leaning Fireleaf (Bradbury IV)",
+        "planet": "Bradbury IV",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Hallucinogen"
+    },
+    {
+        "name": "Leaning Fireleaf (Guniibuu VI-b)",
+        "planet": "Guniibuu VI-b",
+        "biomes": [
+            "Volcanic",
+            "Hills"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Leaning Fireleaf (Khayyam II)",
+        "planet": "Khayyam II",
+        "biomes": [
+            "Volcanic",
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Leaning Fireleaf (Marduk IV)",
+        "planet": "Marduk IV",
+        "biomes": [
+            "Volcanic",
+            "Frozen Crevasses"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Leaning Fireleaf (Piazzi I)",
+        "planet": "Piazzi I",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Mimic Pokeweed (Strix III-a)",
+        "planet": "Strix III-a",
+        "biomes": [
+            "Craters",
+            "Hills"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Mire Root (Freya III)",
+        "planet": "Freya III",
+        "biomes": [
+            "Wetlands",
+            "Tropical Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Mire Root (Huygens III)",
+        "planet": "Huygens III",
+        "biomes": [
+            "Deciduous Forest",
+            "Swamp",
+            "Wetlands",
+            "Tropical Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Mire Root (Jaffa II)",
+        "planet": "Jaffa II",
+        "biomes": [
+            "Wetlands",
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Moon Root (Archimedes III)",
+        "planet": "Archimedes III",
+        "biomes": [
+            "Swamp",
+            "Wetlands"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Moon Root (Cassiopeia IV-a)",
+        "planet": "Cassiopeia IV-a",
+        "biomes": [
+            "Rocky Desert",
+            "Volcanic"
+        ],
+        "resource": "Membrane"
+    },
+    {
+        "name": "Moon Root (Leonis V)",
+        "planet": "Leonis V",
+        "biomes": [
+            "Mountains",
+            "Wetlands"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Moth Vine (Arcturus II)",
+        "planet": "Arcturus II",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Polymer"
+    },
+    {
+        "name": "Moth Vine (Jaffa II)",
+        "planet": "Jaffa II",
+        "biomes": [
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Moth Vine (Nemeria I)",
+        "planet": "Nemeria I",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Moth Vine (Tau Ceti VIII-b)",
+        "planet": "Tau Ceti VIII-b",
+        "biomes": [
+            "Tropical Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Moth Vine (Ursa Major II)",
+        "planet": "Ursa Major II",
+        "biomes": [
+            "Coniferous Forest",
+            "Tropical Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Moth Vine (Zelazny II)",
+        "planet": "Zelazny II",
+        "biomes": [
+            "Swamp",
+            "Tropical Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Moth Vine (Zelazny III)",
+        "planet": "Zelazny III",
+        "biomes": [
+            "Coniferous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Mountain Silkweed (Al-Battani II)",
+        "planet": "Al-Battani II",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Mountain Silkweed (Celebrai II)",
+        "planet": "Celebrai II",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Mountain Silkweed (Decaran I)",
+        "planet": "Decaran I",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Mountain Silkweed (Hyla II)",
+        "planet": "Hyla II",
+        "biomes": [
+            "Swamp",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Mountain Silkweed (Linnaeus II)",
+        "planet": "Linnaeus II",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Mountain Silkweed (Masada III)",
+        "planet": "Masada III",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Mountain Silkweed (Nemeria IV-a)",
+        "planet": "Nemeria IV-a",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains",
+            "Coniferous Forest",
+            "Plateau"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Mountain Silkweed (Strix III-a)",
+        "planet": "Strix III-a",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Mountain Silkweed (Ternion III)",
+        "planet": "Ternion III",
+        "biomes": [
+            "Mountains",
+            "Volcanic"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Mountain Silkweed (Zeta Ophiuchi I)",
+        "planet": "Zeta Ophiuchi I",
+        "biomes": [
+            "Swamp",
+            "Frozen Dunes",
+            "Deciduous Forest",
+            "Mountains",
+            "Savanna"
+        ],
+        "resource": "Neurologic"
+    },
+    {
+        "name": "Mustard Bugweed (Maal IV)",
+        "planet": "Maal IV",
+        "biomes": [
+            "Mountains",
+            "Sandy Desert"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Mustard Bugweed (Schrodinger III)",
+        "planet": "Schrodinger III",
+        "biomes": [
+            "Sandy Desert",
+            "Hills"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Mustard Bugweed (Tirna II)",
+        "planet": "Tirna II",
+        "biomes": [
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Mustard Bugweed (Ursa Major I)",
+        "planet": "Ursa Major I",
+        "biomes": [
+            "Plateau",
+            "Sandy Desert"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Nebula Vine (Alpha Andraste II)",
+        "planet": "Alpha Andraste II",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Nebula Vine (Bara III)",
+        "planet": "Bara III",
+        "biomes": [
+            "Frozen Plains",
+            "Savanna",
+            "Mountains"
+        ],
+        "resource": "Analgesic"
+    },
+    {
+        "name": "Nebula Vine (Bradbury III)",
+        "planet": "Bradbury III",
+        "biomes": [
+            "Hills",
+            "Mountains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Nebula Vine (Enlil II)",
+        "planet": "Enlil II",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Nebula Vine (Gamma Vulpes II-a)",
+        "planet": "Gamma Vulpes II-a",
+        "biomes": [
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Nebula Vine (Heisenberg II)",
+        "planet": "Heisenberg II",
+        "biomes": [
+            "Hills",
+            "Mountains",
+            "Rocky Desert"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Nebula Vine (Heisenberg V-a)",
+        "planet": "Heisenberg V-a",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Nebula Vine (Hyla II)",
+        "planet": "Hyla II",
+        "biomes": [
+            "Swamp",
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Nebula Vine (Kreet)",
+        "planet": "Kreet",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Nebula Vine (Shoza III)",
+        "planet": "Shoza III",
+        "biomes": [
+            "Mountains",
+            "Savanna"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Nebula Vine (Zelazny II)",
+        "planet": "Zelazny II",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains",
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Nebula Weed (Bardeen III)",
+        "planet": "Bardeen III",
+        "biomes": [
+            "Wetlands",
+            "Deciduous Forest",
+            "Hills"
+        ],
+        "resource": "Analgesic"
+    },
+    {
+        "name": "Nebula Weed (Bohr II)",
+        "planet": "Bohr II",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Nebula Weed (Charybdis II)",
+        "planet": "Charybdis II",
+        "biomes": [
+            "Swamp",
+            "Deciduous Forest",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Nebula Weed (Huygens III)",
+        "planet": "Huygens III",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains",
+            "Savanna",
+            "Tropical Forest"
+        ],
+        "resource": "Hallucinogen"
+    },
+    {
+        "name": "Nova Bloom (Groombridge VIII-a)",
+        "planet": "Groombridge VIII-a",
+        "biomes": [
+            "Mountains",
+            "Savanna"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Nova Bloom (Kumasi III)",
+        "planet": "Kumasi III",
+        "biomes": [
+            "Hills",
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Savanna"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Nova Bloom (Rutherford III)",
+        "planet": "Rutherford III",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Nova Bloom (Ursa Major II)",
+        "planet": "Ursa Major II",
+        "biomes": [
+            "Savanna",
+            "Swamp"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Nova Bloom (Zeta Ophiuchi I)",
+        "planet": "Zeta Ophiuchi I",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Passenger Vine (Copernicus II)",
+        "planet": "Copernicus II",
+        "biomes": [
+            "Mountains",
+            "Swamp",
+            "Wetlands",
+            "Hills"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Passenger Vine (Leonis III)",
+        "planet": "Leonis III",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Aromatic"
+    },
+    {
+        "name": "Passenger Vine (Tirna II)",
+        "planet": "Tirna II",
+        "biomes": [
+            "Volcanic",
+            "Sandy Desert"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Phoenix Briar (Heinlein VI-a)",
+        "planet": "Heinlein VI-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Tropical Forest",
+            "Hills",
+            "Rocky Desert"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Prickly Awaj (Charybdis IV)",
+        "planet": "Charybdis IV",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Red Latticebulb (Archimedes V-a)",
+        "planet": "Archimedes V-a",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Red Latticebulb (Bolivar I)",
+        "planet": "Bolivar I",
+        "biomes": [
+            "Savanna",
+            "Hills",
+            "Deciduous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Red Latticebulb (Eridani II)",
+        "planet": "Eridani II",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Red Latticebulb (Heisenberg V-a)",
+        "planet": "Heisenberg V-a",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Red Latticebulb (Huygens IV)",
+        "planet": "Huygens IV",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Red Latticebulb (Ka'zaal)",
+        "planet": "Ka'zaal",
+        "biomes": [
+            "Hills",
+            "Wetlands"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Red Latticebulb (Leonis V)",
+        "planet": "Leonis V",
+        "biomes": [
+            "Sandy Desert",
+            "Savanna",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Red Stinging Nettle (Cassiopeia IV-a)",
+        "planet": "Cassiopeia IV-a",
+        "biomes": [
+            "Plateau",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Red Stinging Nettle (Niira)",
+        "planet": "Niira",
+        "biomes": [
+            "Hills",
+            "Wetlands"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Red Stinging Nettle (Ursa Major I)",
+        "planet": "Ursa Major I",
+        "biomes": [
+            "Plateau",
+            "Sandy Desert"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Rosy Tendril Weed (Rana III)",
+        "planet": "Rana III",
+        "biomes": [
+            "Volcanic",
+            "Hills"
+        ],
+        "resource": "Toxin Rosy Tendril Weed"
+    },
+    {
+        "name": "Rosy Tendril Weed (Serpentis II)",
+        "planet": "Serpentis II",
+        "biomes": [
+            "Mountains",
+            "Tropical Forest",
+            "Sandy Desert",
+            "Volcanic"
+        ],
+        "resource": "Structural Rosy Tendril Weed"
+    },
+    {
+        "name": "Rotorstalk (Bardeen V-c)",
+        "planet": "Bardeen V-c",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Rotting Stinkroot (Bardeen III)",
+        "planet": "Bardeen III",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Sealant",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Rotting Stinkroot (Ka'zaal)",
+        "planet": "Ka'zaal",
+        "biomes": [
+            "Hills",
+            "Wetlands"
+        ],
+        "resource": "Metabolic Agent",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Rotting Stinkroot (Procyon III)",
+        "planet": "Procyon III",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Antimicrobial",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Rotting Stinkroot (Serpentis IV)",
+        "planet": "Serpentis IV",
+        "biomes": [
+            "Wetlands",
+            "Savanna"
+        ],
+        "resource": "Structural",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Sage Shrub (Bel I)",
+        "planet": "Bel I",
+        "biomes": [
+            "Hills",
+            "Savanna"
+        ],
+        "resource": "Analgesic"
+    },
+    {
+        "name": "Sage Shrub (Beta Ternion II)",
+        "planet": "Beta Ternion II",
+        "biomes": [
+            "Savanna",
+            "Sandy Desert"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Sage Shrub (Celebrai II)",
+        "planet": "Celebrai II",
+        "biomes": [
+            "Savanna",
+            "Hills"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Sage Shrub (Charybdis II)",
+        "planet": "Charybdis II",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Sage Shrub (Codos)",
+        "planet": "Codos",
+        "biomes": [
+            "Swamp",
+            "Savanna"
+        ],
+        "resource": "Analgesic"
+    },
+    {
+        "name": "Sage Shrub (Groombridge VIII-a)",
+        "planet": "Groombridge VIII-a",
+        "biomes": [
+            "Mountains",
+            "Savanna"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Sage Shrub (Leonis V)",
+        "planet": "Leonis V",
+        "biomes": [
+            "Savanna",
+            "Hills"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Sage Shrub (Masada III)",
+        "planet": "Masada III",
+        "biomes": [
+            "Wetlands",
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Sage Shrub (Shoza III)",
+        "planet": "Shoza III",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Hallucinogen"
+    },
+    {
+        "name": "Sandclaw (Groombridge I)",
+        "planet": "Groombridge I",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Sedative"
+    },
+    {
+        "name": "Sandclaw (Huygens VII-b)",
+        "planet": "Huygens VII-b",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Sandclaw (Nesoi)",
+        "planet": "Nesoi",
+        "biomes": [
+            "Mountains",
+            "Sandy Desert",
+            "Deciduous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Sandclaw (Porrima II)",
+        "planet": "Porrima II",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Aromatic"
+    },
+    {
+        "name": "Sandclaw (Pyraas II)",
+        "planet": "Pyraas II",
+        "biomes": [
+            "Volcanic",
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Sandclaw (Strix I)",
+        "planet": "Strix I",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Sandy Goldenglow (Codos)",
+        "planet": "Codos",
+        "biomes": [
+            "Mountains",
+            "Swamp"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Sandy Goldenglow (Gamma Vulpes I)",
+        "planet": "Gamma Vulpes I",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Sandy Goldenglow (Heinlein IV-b)",
+        "planet": "Heinlein IV-b",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Satellite Ghostvine (Charybdis III)",
+        "planet": "Charybdis III",
+        "biomes": [
+            "Wetland"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Satellite Ghostvine (Enlil II)",
+        "planet": "Enlil II",
+        "biomes": [
+            "Mountains",
+            "Savanna"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Satellite Ghostvine (Guniibuu II)",
+        "planet": "Guniibuu II",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Satellite Ghostvine (Ixyll III-b)",
+        "planet": "Ixyll III-b",
+        "biomes": [
+            "Savanna",
+            "Wetlands"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Satellite Ghostvine (Moloch II)",
+        "planet": "Moloch II",
+        "biomes": [
+            "Swamp",
+            "Savanna"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Satellite Ghostvine (Nemeria IV-a)",
+        "planet": "Nemeria IV-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Savanna",
+            "Plateau"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Satellite Ghostvine (Pyraas II)",
+        "planet": "Pyraas II",
+        "biomes": [
+            "Savanna",
+            "Sandy Desert"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Satellite Ghostvine (Serpentis IV)",
+        "planet": "Serpentis IV",
+        "biomes": [
+            "Wetlands",
+            "Coniferous Forest",
+            "Savanna",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Savage Woundwort (Charybdis II)",
+        "planet": "Charybdis II",
+        "biomes": [
+            "Swamp",
+            "Deciduous Forest"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Savage Woundwort (Copernicus IV)",
+        "planet": "Copernicus IV",
+        "biomes": [
+            "Swamp",
+            "Savanna"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Savage Woundwort (Heisenberg V-a)",
+        "planet": "Heisenberg V-a",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Savage Woundwort (Montara Luna)",
+        "planet": "Montara Luna",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Amino Acids"
+    },
+    {
+        "name": "Savage Woundwort (Schrodinger IV)",
+        "planet": "Schrodinger IV",
+        "biomes": [
+            "Swamp",
+            "Deciduous Forest",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Savage Woundwort (Serpentis III)",
+        "planet": "Serpentis III",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Scarlet Hillfrond (Heisenberg II)",
+        "planet": "Heisenberg II",
+        "biomes": [
+            "Hills",
+            "Mountains",
+            "Rocky Desert"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Scarlet Hillfrond (Heisenberg V-a)",
+        "planet": "Heisenberg V-a",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Scarlet Hillfrond (Masada III)",
+        "planet": "Masada III",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Scarlet Hillfrond (Proxima Ternion III)",
+        "planet": "Proxima Ternion III",
+        "biomes": [
+            "Hills",
+            "Savanna"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Scarlet Hillfrond (Schrodinger III)",
+        "planet": "Schrodinger III",
+        "biomes": [
+            "Mountains",
+            "Sandy Desert",
+            "Hills"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Sleeping Giant Thorn (Lantana VIII-b)",
+        "planet": "Lantana VIII-b",
+        "biomes": [
+            "Rocky Desert",
+            "Sandy Desert"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Sleeping Giant Thorn (Strix III-a)",
+        "planet": "Strix III-a",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Spike Spit Trap (Guniibuu II)",
+        "planet": "Guniibuu II",
+        "biomes": [
+            "Mountains",
+            "Swamp"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Spike Spit Trap (Ixyll III-b)",
+        "planet": "Ixyll III-b",
+        "biomes": [
+            "Savanna",
+            "Swamp"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Spike Spit Trap (Moloch II)",
+        "planet": "Moloch II",
+        "biomes": [
+            "Swamp",
+            "Savanna",
+            "Mountains"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Spike Spit Trap (Rana VI-a)",
+        "planet": "Rana VI-a",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Spike Spit Trap (Rutherford III)",
+        "planet": "Rutherford III",
+        "biomes": [
+            "Swamp",
+            "Savanna"
+        ],
+        "resource": "Hallucinogen"
+    },
+    {
+        "name": "Spike Spit Trap (Syrma IV)",
+        "planet": "Syrma IV",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Spiny Bell Cactus (Eridani III)",
+        "planet": "Eridani III",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Spiny Bell Cactus (Schrodinger III)",
+        "planet": "Schrodinger III",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Analgesic"
+    },
+    {
+        "name": "Spiny Bell Cactus (Tirna II)",
+        "planet": "Tirna II",
+        "biomes": [
+            "Volcanic",
+            "Sandy Desert"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Spiny Ghost Cactus (Copernicus III)",
+        "planet": "Copernicus III",
+        "biomes": [
+            "Volcanic"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Spiny Ghost Cactus (Katydid I-a)",
+        "planet": "Katydid I-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Spiny Ghost Cactus (Muphrid V-b)",
+        "planet": "Muphrid V-b",
+        "biomes": [
+            "Coniferous Forest",
+            "Savanna",
+            "Volcanic"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Spiny Ghost Cactus (Nemeria II)",
+        "planet": "Nemeria II",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Hills",
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Spiny Ghost Cactus (Strix I)",
+        "planet": "Strix I",
+        "biomes": [
+            "Volcanic",
+            "Craters"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Spiral Bloom (Codos)",
+        "planet": "Codos",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Analgesic"
+    },
+    {
+        "name": "Spiral Bloom (Feynman IV)",
+        "planet": "Feynman IV",
+        "biomes": [
+            "Frozen Volcanic",
+            "Craters",
+            "Savanna",
+            "Mountains"
+        ],
+        "resource": "Metabolic Agent",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Spiral Bloom (Hawking I)",
+        "planet": "Hawking I",
+        "biomes": [
+            "Volcanic",
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Spiral Bloom (Hyla II)",
+        "planet": "Hyla II",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Aromatic"
+    },
+    {
+        "name": "Spiral Bloom (Ixyll II)",
+        "planet": "Ixyll II",
+        "biomes": [
+            "Mountains",
+            "Deciduous Forest",
+            "Volcanic"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Spiral Bloom (Leonis IV)",
+        "planet": "Leonis IV",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Pigment"
+    },
+    {
+        "name": "Spiral Bloom (Leonis V)",
+        "planet": "Leonis V",
+        "biomes": [
+            "Mountains",
+            "Wetlands"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Spiral Bloom (Maal V)",
+        "planet": "Maal V",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Spiral Bloom (Shoza II)",
+        "planet": "Shoza II",
+        "biomes": [
+            "Volcanic",
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Spiral Bloom (Shoza III)",
+        "planet": "Shoza III",
+        "biomes": [
+            "Mountains",
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Spiral Bloom (Zelazny II)",
+        "planet": "Zelazny II",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Spiral Creeper (Fermi III)",
+        "planet": "Fermi III",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Spiral Creeper (Feynman III)",
+        "planet": "Feynman III",
+        "biomes": [
+            "Deciduous Forest",
+            "Tropical Forest",
+            "Mountains"
+        ],
+        "resource": "Nutrient",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Spiral Creeper (Jemison)",
+        "planet": "Jemison",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Spiral Creeper (Muphrid IV)",
+        "planet": "Muphrid IV",
+        "biomes": [
+            "Swamp",
+            "Hills",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Spiral Creeper (Nesoi)",
+        "planet": "Nesoi",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Spirit Laurel (Fermi III)",
+        "planet": "Fermi III",
+        "biomes": [
+            "Deciduous Forest",
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Spirit Laurel (Gamma Vulpes II-a)",
+        "planet": "Gamma Vulpes II-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains",
+            "Wetlands"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Spirit Laurel (Groombridge VIII-a)",
+        "planet": "Groombridge VIII-a",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Spirit Laurel (Ixyll II)",
+        "planet": "Ixyll II",
+        "biomes": [
+            "Wetlands",
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Spirit Laurel (Ixyll III-b)",
+        "planet": "Ixyll III-b",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Spirit Laurel (Jaffa II)",
+        "planet": "Jaffa II",
+        "biomes": [
+            "Wetlands",
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Spirit Laurel (Kumasi III)",
+        "planet": "Kumasi III",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Spirit Laurel (Nemeria I)",
+        "planet": "Nemeria I",
+        "biomes": [
+            "Deciduous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Spirit Laurel (Sparta IV)",
+        "planet": "Sparta IV",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Spirit Laurel (Ursa Major II)",
+        "planet": "Ursa Major II",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest",
+            "Tropical Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Spitting Goatweed (Alpha Andraste III)",
+        "planet": "Alpha Andraste III",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Sealant",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Spitting Goatweed (Bara III)",
+        "planet": "Bara III",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Spitting Goatweed (Charybdis III)",
+        "planet": "Charybdis III",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Spitting Goatweed (Huygens III)",
+        "planet": "Huygens III",
+        "biomes": [
+            "Mountains",
+            "Swamp",
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Spitting Goatweed (Ixyll II)",
+        "planet": "Ixyll II",
+        "biomes": [
+            "Savanna",
+            "Wetlands",
+            "Volcanic",
+            "Hills"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Spitting Goatweed (Leonis V)",
+        "planet": "Leonis V",
+        "biomes": [
+            "Savanna",
+            "Hills"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Spitting Goatweed (Masada III)",
+        "planet": "Masada III",
+        "biomes": [
+            "Volcanic",
+            "Wetlands",
+            "Savanna",
+            "Hills"
+        ],
+        "resource": "Hypercatalyst"
+    },
+    {
+        "name": "Spitting Goatweed (Ternion III)",
+        "planet": "Ternion III",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Spitting Pokeweed (Alpha Andraste III)",
+        "planet": "Alpha Andraste III",
+        "biomes": [
+            "Tropical Forest",
+            "Deciduous Forest",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Sedative"
+    },
+    {
+        "name": "Spitting Pokeweed (Archimedes V-a)",
+        "planet": "Archimedes V-a",
+        "biomes": [
+            "Wetlands",
+            "Mountains",
+            "Deciduous Forest"
+        ],
+        "resource": "Adhesive"
+    },
+    {
+        "name": "Spitting Pokeweed (Beta Marae I)",
+        "planet": "Beta Marae I",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Spitting Pokeweed (Freya III)",
+        "planet": "Freya III",
+        "biomes": [
+            "Wetlands",
+            "Deciduous Forest",
+            "Tropical Forest",
+            "Mountains"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Spitting Pokeweed (Ixyll II)",
+        "planet": "Ixyll II",
+        "biomes": [
+            "Wetlands",
+            "Deciduous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Spitting Pokeweed (Nemeria IV-a)",
+        "planet": "Nemeria IV-a",
+        "biomes": [
+            "Swamp",
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Savanna",
+            "Plateau"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Spitting Pokeweed (Nesoi)",
+        "planet": "Nesoi",
+        "biomes": [
+            "Savanna",
+            "Deciduous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Spitting Pokeweed (Sparta III)",
+        "planet": "Sparta III",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Spitting Pokeweed (Syrma VII-a)",
+        "planet": "Syrma VII-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Swamp",
+            "Wetlands",
+            "Coniferous Forest",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Spitting Pokeweed (Ternion III)",
+        "planet": "Ternion III",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Polymer"
+    },
+    {
+        "name": "Spitting Pokeweed (Vesta)",
+        "planet": "Vesta",
+        "biomes": [
+            "Savanna",
+            "Deciduous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Split Leaf Watercress (Charybdis II)",
+        "planet": "Charybdis II",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Split Leaf Watercress (Katydid I-a)",
+        "planet": "Katydid I-a",
+        "biomes": [
+            "Wetlands",
+            "Tropical Forest"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Split Leaf Watercress (Zelazny III)",
+        "planet": "Zelazny III",
+        "biomes": [
+            "Tropical Forest",
+            "Wetlands"
+        ],
+        "resource": "Hallucinogen"
+    },
+    {
+        "name": "Star Bloom Root (Al-Battani II)",
+        "planet": "Al-Battani II",
+        "biomes": [
+            "Hills",
+            "Mountains"
+        ],
+        "resource": "Adhesive"
+    },
+    {
+        "name": "Star Bloom Root (Beta Ternion II)",
+        "planet": "Beta Ternion II",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Deciduous Forest",
+            "Hills"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Star Bloom Root (Denebola I-b)",
+        "planet": "Denebola I-b",
+        "biomes": [
+            "Mountains",
+            "Hills",
+            "Volcanic"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Star Bloom Root (Feynman III)",
+        "planet": "Feynman III",
+        "biomes": [
+            "Volcanic",
+            "Sandy Desert",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Sealant",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Star Bloom Root (Freya III)",
+        "planet": "Freya III",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Star Bloom Root (Hawking I)",
+        "planet": "Hawking I",
+        "biomes": [
+            "Volcanic",
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Star Bloom Root (Leonis IV)",
+        "planet": "Leonis IV",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Star Bloom Root (Magnar)",
+        "planet": "Magnar",
+        "biomes": [
+            "Frozen Plains",
+            "Mountains",
+            "Savanna",
+            "Hills"
+        ],
+        "resource": "Ornamental",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Star Bloom Root (Nemeria I)",
+        "planet": "Nemeria I",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Star Bloom Root (Nirvana II)",
+        "planet": "Nirvana II",
+        "biomes": [
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Star Bloom Root (Xi Ophiuchi VIII-b)",
+        "planet": "Xi Ophiuchi VIII-b",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Starburst Silkweed (Beta Marae I)",
+        "planet": "Beta Marae I",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Starburst Silkweed (Cassiopeia I)",
+        "planet": "Cassiopeia I",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Starburst Silkweed (Copernicus III)",
+        "planet": "Copernicus III",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Sealant",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Starburst Silkweed (Eridani IV)",
+        "planet": "Eridani IV",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Starburst Silkweed (Marduk IV)",
+        "planet": "Marduk IV",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Starburst Silkweed (Rana IV)",
+        "planet": "Rana IV",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Starburst Silkweed (Schrodinger IV)",
+        "planet": "Schrodinger IV",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Starburst Silkweed (Shoza IV)",
+        "planet": "Shoza IV",
+        "biomes": [
+            "Deciduous Forest",
+            "Plateau",
+            "Coniferous Forest",
+            "Savanna",
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Starburst Silkweed (Ursa Minor II)",
+        "planet": "Ursa Minor II",
+        "biomes": [
+            "Frozen Plains",
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Starburst Silkweed (Vega II-c)",
+        "planet": "Vega II-c",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Starleaf (Cassiopeia I)",
+        "planet": "Cassiopeia I",
+        "biomes": [
+            "Plateau"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Starpod Silkweed (Bannoc II)",
+        "planet": "Bannoc II",
+        "biomes": [
+            "Deciduous Forest",
+            "Savanna"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Starpod Silkweed (Heisenberg V-a)",
+        "planet": "Heisenberg V-a",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Starpod Silkweed (Leonis IV)",
+        "planet": "Leonis IV",
+        "biomes": [
+            "Savanna",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Starpod Silkweed (Moloch II)",
+        "planet": "Moloch II",
+        "biomes": [
+            "Swamp",
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Starpod Silkweed (Muphrid V-b)",
+        "planet": "Muphrid V-b",
+        "biomes": [
+            "Savanna",
+            "Volcanic"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Starpod Silkweed (Niira)",
+        "planet": "Niira",
+        "biomes": [
+            "Hills",
+            "Wetlands"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Starpod Silkweed (Ursa Major II)",
+        "planet": "Ursa Major II",
+        "biomes": [
+            "Savanna",
+            "Swamp"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Stinging Flutterleaf (Gamma Vulpes I)",
+        "planet": "Gamma Vulpes I",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Stinging Flutterleaf (Porrima II)",
+        "planet": "Porrima II",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Spice"
+    },
+    {
+        "name": "Stinging Flutterleaf (Rana III)",
+        "planet": "Rana III",
+        "biomes": [
+            "Savanna",
+            "Sandy Desert",
+            "Volcanic",
+            "Hills"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Stinging Flutterleaf (Schrodinger III)",
+        "planet": "Schrodinger III",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Stinging Ice Stalk (Bohr II)",
+        "planet": "Bohr II",
+        "biomes": [
+            "Frozen Crevasses",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Stinging Ice Stalk (Nemeria IV-a)",
+        "planet": "Nemeria IV-a",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains",
+            "Coniferous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Stinging Ice Stalk (Oborum I)",
+        "planet": "Oborum I",
+        "biomes": [
+            "Frozen Plains",
+            "Coniferous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Stinging Ice Stalk (Suvorov)",
+        "planet": "Suvorov",
+        "biomes": [
+            "Frozen Crevasses"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Stunted Pine (Beta Ternion I)",
+        "planet": "Beta Ternion I",
+        "biomes": [
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Stunted Pine (Cassiopeia IV-a)",
+        "planet": "Cassiopeia IV-a",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Amino Acids"
+    },
+    {
+        "name": "Stunted Pine (Fermi III)",
+        "planet": "Fermi III",
+        "biomes": [
+            "Deciduous Forest",
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Stunted Pine (Guniibuu II)",
+        "planet": "Guniibuu II",
+        "biomes": [
+            "Mountains",
+            "Swamp",
+            "Savanna"
+        ],
+        "resource": "Sealant",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Stunted Pine (Heisenberg V-a)",
+        "planet": "Heisenberg V-a",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Structural",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Stunted Pine (Hyla I)",
+        "planet": "Hyla I",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Stunted Pine (Leviathan IV)",
+        "planet": "Leviathan IV",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Structural",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Stunted Pine (Piazzi I)",
+        "planet": "Piazzi I",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Stunted Pine (Porrima IV-c)",
+        "planet": "Porrima IV-c",
+        "biomes": [
+            "Frozen Mountains",
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Stunted Pine (Pyraas II)",
+        "planet": "Pyraas II",
+        "biomes": [
+            "Volcanic",
+            "Mountains"
+        ],
+        "resource": "Ornamental"
+    },
+    {
+        "name": "Stunted Pine (Rana IV)",
+        "planet": "Rana IV",
+        "biomes": [
+            "Mountains",
+            "Frozen Plains",
+            "Coniferous Forest"
+        ],
+        "resource": "Hypercatalyst"
+    },
+    {
+        "name": "Stunted Pine (Rivera I)",
+        "planet": "Rivera I",
+        "biomes": [
+            "Mountains"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Stunted Pine (Shoza II)",
+        "planet": "Shoza II",
+        "biomes": [
+            "Volcanic",
+            "Deciduous Forest",
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Stunted Pine (Tidacha I)",
+        "planet": "Tidacha I",
+        "biomes": [
+            "Mountains",
+            "Swamp",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Sub-Zero Silkweed (Bradbury IV)",
+        "planet": "Bradbury IV",
+        "biomes": [
+            "Volcanic",
+            "Frozen Plains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Sub-Zero Silkweed (Charybdis III)",
+        "planet": "Charybdis III",
+        "biomes": [
+            "Frozen Dunes",
+            "Wetlands"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Sub-Zero Silkweed (Eridani III)",
+        "planet": "Eridani III",
+        "biomes": [
+            "Frozen Dunes"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Sub-Zero Silkweed (Kumasi II)",
+        "planet": "Kumasi II",
+        "biomes": [
+            "Frozen Plains",
+            "Mountains"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Sub-Zero Silkweed (McClure II)",
+        "planet": "McClure II",
+        "biomes": [
+            "Frozen Plains"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Sub-Zero Silkweed (Strix I)",
+        "planet": "Strix I",
+        "biomes": [
+            "Frozen Mountains",
+            "Mountains"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Sub-Zero Silkweed (Toliman II)",
+        "planet": "Toliman II",
+        "biomes": [
+            "Frozen Plains",
+            "Mountains",
+            "Swamp"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Swamp Bottle Root (Charybdis II)",
+        "planet": "Charybdis II",
+        "biomes": [
+            "Swamp",
+            "Wetlands"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Swamp Bottle Root (Gagarin)",
+        "planet": "Gagarin",
+        "biomes": [
+            "Swamp",
+            "Wetlands"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Swamp Bottle Root (Gamma Vulpes II-a)",
+        "planet": "Gamma Vulpes II-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Wetlands"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Swamp Bottle Root (Ixyll III-b)",
+        "planet": "Ixyll III-b",
+        "biomes": [
+            "Savanna",
+            "Swamp",
+            "Deciduous Forest",
+            "Wetlands"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Swamp Bottle Root (Serpentis IV)",
+        "planet": "Serpentis IV",
+        "biomes": [
+            "Wetlands",
+            "Coniferous Forest",
+            "Savanna"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Swamp Pedestal (Bradbury III)",
+        "planet": "Bradbury III",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Antimicrobial"
+    },
+    {
+        "name": "Swamp Pedestal (Shoza III)",
+        "planet": "Shoza III",
+        "biomes": [
+            "Swamp",
+            "Wetlands"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Swamp Weed (Ka'zaal)",
+        "planet": "Ka'zaal",
+        "biomes": [
+            "Hills",
+            "Wetlands"
+        ],
+        "resource": "Fiber",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Swamp Weed (Masada III)",
+        "planet": "Masada III",
+        "biomes": [
+            "Wetlands",
+            "Savanna"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Swamp Weed (Procyon III)",
+        "planet": "Procyon III",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Ornamental",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Swamp Weed (Zelazny III)",
+        "planet": "Zelazny III",
+        "biomes": [
+            "Wetlands"
+        ],
+        "resource": "Structural",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Sweeping Silkweed (Copernicus II)",
+        "planet": "Copernicus II",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Sweeping Silkweed (Hyla II)",
+        "planet": "Hyla II",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Sweeping Silkweed (Proxima Ternion III)",
+        "planet": "Proxima Ternion III",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Sedative"
+    },
+    {
+        "name": "Sweeping Silkweed (Shoza III)",
+        "planet": "Shoza III",
+        "biomes": [
+            "Swamp",
+            "Wetlands"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Sweeping Silkweed (Zelazny II)",
+        "planet": "Zelazny II",
+        "biomes": [
+            "Swamp",
+            "Tropical Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Sweet Canis Vine (Bardeen V-c)",
+        "planet": "Bardeen V-c",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Sweet Canis Vine (Eridani IV)",
+        "planet": "Eridani IV",
+        "biomes": [
+            "Frozen Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Sweet Canis Vine (Indum II)",
+        "planet": "Indum II",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Sealant",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Sweet Canis Vine (Lantana III)",
+        "planet": "Lantana III",
+        "biomes": [
+            "Frozen Crevasses",
+            "Mountains",
+            "Coniferous Forest",
+            "Hills"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Sweet Canis Vine (Marduk IV)",
+        "planet": "Marduk IV",
+        "biomes": [
+            "Frozen Crevasses",
+            "Coniferous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Sweet Canis Vine (Montara Luna)",
+        "planet": "Montara Luna",
+        "biomes": [
+            "Swamp",
+            "Coniferous Forest",
+            "Hills"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Sweet Canis Vine (Porrima III)",
+        "planet": "Porrima III",
+        "biomes": [
+            "Coniferous Forest",
+            "Frozen Plains",
+            "Craters"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Sweet Canis Vine (Syrma III)",
+        "planet": "Syrma III",
+        "biomes": [
+            "Mountains",
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Sweet Canis Vine (Vega II-c)",
+        "planet": "Vega II-c",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Sweet Fumewort (Eridani III)",
+        "planet": "Eridani III",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Sweet Fumewort (Fermi III)",
+        "planet": "Fermi III",
+        "biomes": [
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Sweet Fumewort (Feynman III)",
+        "planet": "Feynman III",
+        "biomes": [
+            "Volcanic",
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Toxin",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Sweet Fumewort (Gamma Vulpes I)",
+        "planet": "Gamma Vulpes I",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Sweet Fumewort (Marduk III)",
+        "planet": "Marduk III",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Sweet Fumewort (Nesoi)",
+        "planet": "Nesoi",
+        "biomes": [
+            "Mountains",
+            "Sandy Desert",
+            "Deciduous Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Sweet Fumewort (Ursa Major I)",
+        "planet": "Ursa Major I",
+        "biomes": [
+            "Plateau",
+            "Sandy Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Sweet Goldenglow (Eridani II)",
+        "planet": "Eridani II",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Sweet Goldenglow (Nemeria I)",
+        "planet": "Nemeria I",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Sweet Goldenglow (Zelazny II)",
+        "planet": "Zelazny II",
+        "biomes": [
+            "Swamp",
+            "Tropical Forest"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Sweet Root (Alpha Andraste III)",
+        "planet": "Alpha Andraste III",
+        "biomes": [
+            "Tropical Forest",
+            "Savanna"
+        ],
+        "resource": "Hallucinogen",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Sweet Root (Tau Ceti VIII-b)",
+        "planet": "Tau Ceti VIII-b",
+        "biomes": [
+            "Mountains",
+            "Deciduous Forest"
+        ],
+        "resource": "Toxin",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Sweet Root (Zeta Ophiuchi I)",
+        "planet": "Zeta Ophiuchi I",
+        "biomes": [
+            "Swamp",
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Fiber",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Sweet Wallflower (Andromas III)",
+        "planet": "Andromas III",
+        "biomes": [
+            "Craters"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Sweet Yellow Creeper (Ixyll II)",
+        "planet": "Ixyll II",
+        "biomes": [
+            "Wetlands",
+            "Deciduous Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Sweet Yellow Creeper (Muphrid IV)",
+        "planet": "Muphrid IV",
+        "biomes": [
+            "Hills",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Sweet Yellow Creeper (Nemeria IV-a)",
+        "planet": "Nemeria IV-a",
+        "biomes": [
+            "Mountains",
+            "Swamp",
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Savanna"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Sweet Yellow Creeper (Schrodinger VIII-a)",
+        "planet": "Schrodinger VIII-a",
+        "biomes": [
+            "Deciduous Forest",
+            "Tropical Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Sweet Yellow Creeper (Shoza II)",
+        "planet": "Shoza II",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Sweet Yellow Creeper (Sparta IV)",
+        "planet": "Sparta IV",
+        "biomes": [
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Sweet Yellow Creeper (Zeta Ophiuchi I)",
+        "planet": "Zeta Ophiuchi I",
+        "biomes": [
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Fiber",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Sweetwater Cactus (Gagarin)",
+        "planet": "Gagarin",
+        "biomes": [
+            "Swamp",
+            "Rocky Desert"
+        ],
+        "resource": "Adhesive"
+    },
+    {
+        "name": "Sweetwater Cactus (Hyla I)",
+        "planet": "Hyla I",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Sweetwater Cactus (Vega II-c)",
+        "planet": "Vega II-c",
+        "biomes": [
+            "Coniferous Forest",
+            "Plateau",
+            "Rocky Desert"
+        ],
+        "resource": "Structural",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Sweetwater Cactus (Zosma V-a)",
+        "planet": "Zosma V-a",
+        "biomes": [
+            "Volcanic",
+            "Mountains",
+            "Savanna",
+            "Rocky Desert",
+            "Sandy Desert"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Terra Root (Algorab II)",
+        "planet": "Algorab II",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Terra Root (Hawking I)",
+        "planet": "Hawking I",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Terra Root (Heisenberg V-a)",
+        "planet": "Heisenberg V-a",
+        "biomes": [
+            "Coniferous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Terra Root (Jaffa III)",
+        "planet": "Jaffa III",
+        "biomes": [
+            "Volcanic",
+            "Coniferous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Terra Root (Maal V)",
+        "planet": "Maal V",
+        "biomes": [
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Terra Root (Marduk IV)",
+        "planet": "Marduk IV",
+        "biomes": [
+            "Frozen Crevasses",
+            "Coniferous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Terra Root (Moloch II)",
+        "planet": "Moloch II",
+        "biomes": [
+            "Frozen Plains",
+            "Coniferous Forest",
+            "Deciduous Forest",
+            "Mountains"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Terra Root (Nemeria II)",
+        "planet": "Nemeria II",
+        "biomes": [
+            "Mountains",
+            "Hills",
+            "Coniferous Forest",
+            "Deciduous Forest"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Terra Root (Porrima III)",
+        "planet": "Porrima III",
+        "biomes": [
+            "Coniferous Forest",
+            "Frozen Plains",
+            "Craters"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Terra Root (Porrima IV-c)",
+        "planet": "Porrima IV-c",
+        "biomes": [
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Cosmetic"
+    },
+    {
+        "name": "Terra Root (Rutherford III)",
+        "planet": "Rutherford III",
+        "biomes": [
+            "Swamp",
+            "Deciduous Forest",
+            "Coniferous Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Titan Coleus (Beta Marae I)",
+        "planet": "Beta Marae I",
+        "biomes": [
+            "Rocky Desert",
+            "Mountains",
+            "Plateau"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Titan Coleus (Vega II-c)",
+        "planet": "Vega II-c",
+        "biomes": [
+            "Coniferous Forest",
+            "Plateau",
+            "Rocky Desert"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Tremor Root (Altair II)",
+        "planet": "Altair II",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Tremor Root (Kumasi II)",
+        "planet": "Kumasi II",
+        "biomes": [
+            "Rocky Desert"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Tropical Maw Palm (Enlil II)",
+        "planet": "Enlil II",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Tropical Maw Palm (Eridani II)",
+        "planet": "Eridani II",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Membrane"
+    },
+    {
+        "name": "Tropical Maw Palm (Feynman III)",
+        "planet": "Feynman III",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Fiber",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Tropical Maw Palm (Groombridge VIII-a)",
+        "planet": "Groombridge VIII-a",
+        "biomes": [
+            "Tropical Forest"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Tropical Maw Palm (Zeta Ophiuchi I)",
+        "planet": "Zeta Ophiuchi I",
+        "biomes": [
+            "Swamp",
+            "Tropical Forest"
+        ],
+        "resource": "Metabolic Agent",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Tufted Snow Willow (Archimedes II)",
+        "planet": "Archimedes II",
+        "biomes": [
+            "Frozen Plains"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Tufted Snow Willow (Feynman IV)",
+        "planet": "Feynman IV",
+        "biomes": [
+            "Frozen Volcanic",
+            "Mountains"
+        ],
+        "resource": "Sealant",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Tufted Snow Willow (Jemison)",
+        "planet": "Jemison",
+        "biomes": [
+            "Frozen Mountains",
+            "Mountains",
+            "Coniferous Forest"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Tufted Snow Willow (Toliman II)",
+        "planet": "Toliman II",
+        "biomes": [
+            "Frozen Plains",
+            "Mountains",
+            "Swamp"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Tundra Vine (Beta Ternion II)",
+        "planet": "Beta Ternion II",
+        "biomes": [
+            "Savanna",
+            "Sandy Desert",
+            "Hills"
+        ],
+        "resource": "Hallucinogen"
+    },
+    {
+        "name": "Tundra Vine (Copernicus IV)",
+        "planet": "Copernicus IV",
+        "biomes": [
+            "Hills",
+            "Savanna"
+        ],
+        "resource": "Membrane"
+    },
+    {
+        "name": "Tundra Vine (Hyla I)",
+        "planet": "Hyla I",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Twilight Cradleleaf (Bel I)",
+        "planet": "Bel I",
+        "biomes": [
+            "Hills",
+            "Savanna"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Twilight Cradleleaf (Magnar)",
+        "planet": "Magnar",
+        "biomes": [
+            "Swamp",
+            "Mountains",
+            "Savanna",
+            "Hills"
+        ],
+        "resource": "Fiber",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Twilight Cradleleaf (Montara Luna)",
+        "planet": "Montara Luna",
+        "biomes": [
+            "Swamp",
+            "Hills",
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Twilight Cradleleaf (Proxima Ternion III)",
+        "planet": "Proxima Ternion III",
+        "biomes": [
+            "Swamp",
+            "Hills",
+            "Savanna"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Twilight Cradleleaf (Pyraas II)",
+        "planet": "Pyraas II",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Twilight Cradleleaf (Rana III)",
+        "planet": "Rana III",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Membrane"
+    },
+    {
+        "name": "Twilight Cradleleaf (Rasalhague II)",
+        "planet": "Rasalhague II",
+        "biomes": [
+            "Plateau",
+            "Savanna"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Twilight Cradleleaf (Rutherford III)",
+        "planet": "Rutherford III",
+        "biomes": [
+            "Swamp",
+            "Savanna"
+        ],
+        "resource": "Membrane"
+    },
+    {
+        "name": "Twilight Cradleleaf (Schrodinger IV)",
+        "planet": "Schrodinger IV",
+        "biomes": [
+            "Swamp",
+            "Savanna"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Twilight Cradleleaf (Shoza IV)",
+        "planet": "Shoza IV",
+        "biomes": [
+            "Savanna"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Velvet Bloom (Archimedes III)",
+        "planet": "Archimedes III",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Aromatic"
+    },
+    {
+        "name": "Velvet Bloom (Gagarin)",
+        "planet": "Gagarin",
+        "biomes": [
+            "Swamp",
+            "Wetlands"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Velvet Bloom (Indum II)",
+        "planet": "Indum II",
+        "biomes": [
+            "Coniferous Forest",
+            "Sandy Desert",
+            "Swamp"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Wanderer' Husk (Alpha Andraste II)",
+        "planet": "Alpha Andraste II",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Nutrient",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Wanderer' Husk (Beta Ternion I)",
+        "planet": "Beta Ternion I",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Wanderer' Husk (Codos)",
+        "planet": "Codos",
+        "biomes": [
+            "Mountains",
+            "Swamp"
+        ],
+        "resource": "Solvent"
+    },
+    {
+        "name": "Wanderer' Husk (Fermi III)",
+        "planet": "Fermi III",
+        "biomes": [
+            "Sandy Desert",
+            "Mountains"
+        ],
+        "resource": "Sealant"
+    },
+    {
+        "name": "Wanderer' Husk (Gamma Vulpes I)",
+        "planet": "Gamma Vulpes I",
+        "biomes": [
+            "Frozen Plains",
+            "Sandy Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Wanderer' Husk (Huygens VII-b)",
+        "planet": "Huygens VII-b",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Wanderer' Husk (Lantana VIII-b)",
+        "planet": "Lantana VIII-b",
+        "biomes": [
+            "Rocky Desert",
+            "Sandy Desert"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Wanderer' Husk (Strix I)",
+        "planet": "Strix I",
+        "biomes": [
+            "Sandy Desert"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Warren Nettle (Andromas II)",
+        "planet": "Andromas II",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Warren Nettle (Celebrai II)",
+        "planet": "Celebrai II",
+        "biomes": [
+            "Mountains",
+            "Savanna",
+            "Hills"
+        ],
+        "resource": "Metabolic Agent"
+    },
+    {
+        "name": "Warren Nettle (Copernicus II)",
+        "planet": "Copernicus II",
+        "biomes": [
+            "Mountains",
+            "Swamp",
+            "Hills"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Warren Nettle (Heisenberg II)",
+        "planet": "Heisenberg II",
+        "biomes": [
+            "Hills",
+            "Mountains",
+            "Rocky Desert"
+        ],
+        "resource": "Structural"
+    },
+    {
+        "name": "Warren Nettle (Tau Ceti II)",
+        "planet": "Tau Ceti II",
+        "biomes": [
+            "Hills"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Warren Nettle (Tirna VIII-c)",
+        "planet": "Tirna VIII-c",
+        "biomes": [
+            "Swamp",
+            "Savanna",
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Fiber"
+    },
+    {
+        "name": "Warren Nettle (Xi Ophiuchi VIII-b)",
+        "planet": "Xi Ophiuchi VIII-b",
+        "biomes": [
+            "Mountains",
+            "Hills"
+        ],
+        "resource": "Toxin"
+    },
+    {
+        "name": "Weeping Fireleaf (Guniibuu II)",
+        "planet": "Guniibuu II",
+        "biomes": [
+            "Swamp",
+            "Savanna"
+        ],
+        "resource": "Spice",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Weeping Fireleaf (Leviathan IV)",
+        "planet": "Leviathan IV",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Sealant",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Weeping Fireleaf (Magnar)",
+        "planet": "Magnar",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Sealant",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Weeping Fireleaf (Maheo I)",
+        "planet": "Maheo I",
+        "biomes": [
+            "Swamp",
+            "Tropical Forest"
+        ],
+        "resource": "Nutrient"
+    },
+    {
+        "name": "Weeping Fireleaf (Serpentis III)",
+        "planet": "Serpentis III",
+        "biomes": [
+            "Swamp"
+        ],
+        "resource": "Structural",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Weeping Fireleaf (Shoza III)",
+        "planet": "Shoza III",
+        "biomes": [
+            "Swamp",
+            "Wetlands"
+        ],
+        "resource": "Toxin",
+        "other": {
+            "Production": "Yes"
+        }
+    },
+    {
+        "name": "Weeping Fireleaf (Ursa Major II)",
+        "planet": "Ursa Major II",
+        "biomes": [
+            "Mountains",
+            "Savanna",
+            "Swamp"
+        ],
+        "resource": "Metabolic Agent"
+    }
+]

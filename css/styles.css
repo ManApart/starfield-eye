@@ -48,6 +48,10 @@ h2 {
     margin-top: 10px;
 }
 
+h5 {
+    margin-bottom: 0px;
+}
+
 
 td {
     vertical-align: top;
@@ -148,7 +152,7 @@ summary::-webkit-details-marker {
     overflow-x: hidden;
     overflow-y: auto;
     width: 90%;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .accent-line {
@@ -170,4 +174,11 @@ summary::-webkit-details-marker {
 
 #sections .section-view-box {
     max-width: 900px;
+}
+
+#popup {
+    position: absolute;
+    border: 1px solid gray;
+    padding: 10px;
+    background: var(--background-blue);
 }
