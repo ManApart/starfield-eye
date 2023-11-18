@@ -159,23 +159,22 @@ fun detailView(system: StarSystem, planetId: Int, updateUrl: Boolean = true, lin
     val root = el("detail-view")
     root.innerHTML = ""
     root.append {
-        if (linkToSystem) {
-            button {
-                +"View System"
-                onClickFunction = { systemView(system, planetId) }
-            }
-        }
-
-        if (planetId == 0) detailView(system.star, system) else detailView(system, system.planets[planetId]!!)
+        if (planetId == 0) detailView(system.star, system, linkToSystem) else detailView(system, system.planets[planetId]!!, linkToSystem)
     }
     if (planetId != 0) {
         system.planets[planetId]?.let { userInfo(it) }
     }
 }
 
-private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) {
+private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, linkToSystem: Boolean) {
     with(star) {
         h2 { +name }
+        if (linkToSystem) {
+            button {
+                +"View System"
+                onClickFunction = { systemView(system, 0) }
+            }
+        }
         a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
             id = "wiki-link"
             +"View on Wiki"
@@ -206,9 +205,15 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem) 
     }
 }
 
-private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet) {
+private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, linkToSystem: Boolean) {
     with(planet) {
         h2 { +name }
+        if (linkToSystem) {
+            button {
+                +"View System"
+                onClickFunction = { systemView(system, planet.id) }
+            }
+        }
         button {
             id = "travel-button"
             +"Travel (Alpha)"
