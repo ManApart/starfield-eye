@@ -14,9 +14,11 @@ import kotlinx.html.dom.append
 import kotlinx.html.js.h4
 import kotlinx.html.js.onChangeFunction
 import kotlinx.html.js.onClickFunction
+import kotlinx.html.js.onKeyPressFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.HTMLTextAreaElement
+import org.w3c.dom.events.KeyboardEvent
 import persistMemory
 
 
@@ -162,11 +164,19 @@ private fun TagConsumer<HTMLElement>.addOutpost(info: PlanetInfo, planet: Planet
         textInput {
             id = "add-outpost-input"
             placeholder = "Outpost Name"
+            onKeyPressFunction = {
+                val e = it as KeyboardEvent
+                if (e.key == "Enter"){
+                    val name = el<HTMLInputElement>("add-outpost-input").value
+                    info.outPosts.add(Outpost(name))
+                    saveOutpostInfo(planet, info)
+                }
+            }
         }
         button(classes = "add-info-button") {
             +"Add"
             onClickFunction = {
-                val name = el<HTMLInputElement>("new-outpost-name").value
+                val name = el<HTMLInputElement>("add-outpost-input").value
                 info.outPosts.add(Outpost(name))
                 saveOutpostInfo(planet, info)
             }
