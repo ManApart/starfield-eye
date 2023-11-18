@@ -1,5 +1,6 @@
 package views
 
+import Outpost
 import Planet
 import PlanetInfo
 import ResourceType
@@ -256,6 +257,8 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
                 }
             }
             resourceRow(resources)
+            val info = inMemoryStorage.planetUserInfo[planet.uniqueId] ?: PlanetInfo()
+            outPostsRow(info.outPosts)
         }
         div { id = "user-info" }
     }
@@ -277,6 +280,18 @@ private fun TagConsumer<HTMLElement>.resourceRow(resources: Set<ResourceType>) {
                 +"None"
             } else {
                 resourceSquares(resources)
+            }
+        }
+    }
+}
+private fun TagConsumer<HTMLElement>.outPostsRow(outposts: List<Outpost>) {
+    tr {
+        td("outpost-td") { +"Outposts" }
+        td("outpost-value-td") {
+            if (outposts.isEmpty()) {
+                +"None"
+            } else {
+                +outposts.joinToString(", ") { it.name }
             }
         }
     }
