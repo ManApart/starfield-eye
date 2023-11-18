@@ -82,11 +82,11 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                 onClickFunction = {
                     setSelected("star", 0)
                     detailView(system, 0)
-                    system.planets[currentPlanet]?.let { clearOutpostsView() }
+                    clearOutpostsView()
                 }
                 onMouseOverFunction = {
                     detailView(system, 0)
-                    system.planets[currentPlanet]?.let { clearOutpostsView() }
+                    clearOutpostsView()
                 }
                 onMouseOutFunction = { detailView(system, currentPlanet) }
             }
@@ -290,6 +290,7 @@ private fun TagConsumer<HTMLElement>.resourceRow(resources: Set<ResourceType>) {
         }
     }
 }
+
 private fun TagConsumer<HTMLElement>.outPostsRow(outposts: List<Outpost>) {
     tr {
         td("outpost-td") { +"Outposts" }

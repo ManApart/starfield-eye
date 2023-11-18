@@ -116,7 +116,7 @@ private fun determineResources(
     rawPlanet: RawPlanet,
     systemResources: Map<String, List<ResourceType>>,
     wikiData: PlanetWikiData
-): List<ResourceType> {
+): Set<ResourceType> {
     val wikiResources = wikiData.resources.mapNotNull { rawName ->
         ResourceType.entries.firstOrNull { resource -> resource.matches(rawName) }
             .also { if (it == null) failedWikiResourceLookups.add(rawName) }
@@ -125,7 +125,7 @@ private fun determineResources(
     val resources = systemResources[rawPlanet.name] ?: emptyList<ResourceType>().also {
         failedPlanetResourceLookups.add(rawPlanet.name)
     }
-    return (resources + wikiResources).toSet().toList()
+    return (resources + wikiResources).toSet()
 }
 
 private fun parseResourceLookup(lines: List<String>): Map<String, Map<String, List<ResourceType>>> {

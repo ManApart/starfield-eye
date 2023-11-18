@@ -53,6 +53,7 @@ fun catalogueView() {
                 div("section-view-box") {
                     id = "detail-view"
                 }
+                div { id = "outpost-view" }
             }
         }
     }
@@ -67,8 +68,14 @@ private fun TagConsumer<HTMLElement>.planetList() {
             id = system.star.name
             span {
                 +system.star.name
-                onClickFunction = { detailView(system, 0, false, true) }
-                onMouseOverFunction = { detailView(system, 0, false, true) }
+                onClickFunction = {
+                    detailView(system, 0, false, true)
+                    clearOutpostsView()
+                }
+                onMouseOverFunction = {
+                    detailView(system, 0, false, true)
+                    clearOutpostsView()
+                }
             }
         }
         system.planets.values.forEach { planet ->
@@ -76,8 +83,14 @@ private fun TagConsumer<HTMLElement>.planetList() {
                 id = planet.uniqueId
                 span {
                     +planet.name
-                    onClickFunction = { detailView(system, planet.id, false, true) }
-                    onMouseOverFunction = { detailView(system, planet.id, false, true) }
+                    onClickFunction = {
+                        detailView(system, planet.id, false, true)
+                        outpostsView(system, planet.id)
+                    }
+                    onMouseOverFunction = {
+                        detailView(system, planet.id, false, true)
+                        outpostsView(system, planet.id)
+                    }
                 }
             }
         }
