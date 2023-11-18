@@ -7,6 +7,8 @@ import el
 import galaxy
 import inMemoryStorage
 import kotlinx.browser.window
+import kotlinx.dom.addClass
+import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.h4
@@ -32,13 +34,16 @@ fun outpostsPage() {
                 }
             }
 
+            p { +"Add more outposts from the System View" }
+
             div("section-wrapper") {
                 inMemoryStorage.planetUserInfo.values
                     .filter { it.outPosts.isNotEmpty() }
                     .forEach { planetInfo ->
                         val planet = galaxy.planets[planetInfo.planetId]!!
-                        +"Outpost ${planet.name}"
-                        outpostsView(planet, planetInfo)
+                        div("section-view-box") {
+                            outpostsView(planet, planetInfo, false)
+                        }
                     }
             }
         }
@@ -46,18 +51,22 @@ fun outpostsPage() {
 }
 
 fun clearOutpostsView() {
-    el<HTMLElement?>("outpost-view")?.let { it.innerHTML = "" }
+    el<HTMLElement?>("outpost-view")?.let {
+        it.removeClass("section-view-box")
+        it.innerHTML = ""
+    }
 }
 
 fun outpostsView(planet: Planet, info: PlanetInfo) {
     val root = el("outpost-view")
     root.innerHTML = ""
+    root.addClass("section-view-box")
     root.append {
-        outpostsView(planet, info)
+        outpostsView(planet, info, true)
     }
 }
 
-private fun TagConsumer<HTMLElement>.outpostsView(planet: Planet, info: PlanetInfo) {
+private fun TagConsumer<HTMLElement>.outpostsView(planet: Planet, info: PlanetInfo, showAddButton: Boolean) {
     h2 { +"${planet.name} Outposts" }
     div {
         id = "existing-outposts-${planet.name}"
@@ -65,7 +74,7 @@ private fun TagConsumer<HTMLElement>.outpostsView(planet: Planet, info: PlanetIn
             outpost(outpost, info, planet)
         }
     }
-    addOutpost(info, planet)
+    if (showAddButton) addOutpost(info, planet)
 }
 
 private fun TagConsumer<HTMLElement>.outpost(
@@ -105,8 +114,10 @@ private fun TagConsumer<HTMLElement>.outpost(
             }
         }
     }
-    div("resource-wrapper") {
-        resourceSquares(outpost.resources)
+    if (outpost.resources.isNotEmpty()) {
+        div("resource-wrapper") {
+            resourceSquares(outpost.resources)
+        }
     }
     h5 { +"Notes" }
     div {
@@ -114,11 +125,13 @@ private fun TagConsumer<HTMLElement>.outpost(
             id = "outpost-player-info-notes-${planet.uniqueId}-${outpost.name}"
             +info.notes
             onChangeFunction = {
-                info.notes = el<HTMLTextAreaElement>("outpost-player-info-notes-${planet.uniqueId}-${outpost.name}").value
+                info.notes =
+                    el<HTMLTextAreaElement>("outpost-player-info-notes-${planet.uniqueId}-${outpost.name}").value
                 saveOutpostInfo(planet, info)
             }
         }
     }
+    hr {  }
 }
 
 private fun TagConsumer<HTMLElement>.addOutpost(info: PlanetInfo, planet: Planet) {

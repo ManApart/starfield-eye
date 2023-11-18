@@ -47,7 +47,7 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
             div("section-wrapper") {
                 orrery(system)
                 div("section-view-box") { id = "detail-view" }
-                div("section-view-box") { id = "outpost-view" }
+                div { id = "outpost-view" }
             }
         }
     }
@@ -121,8 +121,14 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                                     setSelected("moon", moonId)
                                     detailView(system, moonId)
                                 }
-                                onMouseOverFunction = { detailView(system, moonId) }
-                                onMouseOutFunction = { detailView(system, currentPlanet) }
+                                onMouseOverFunction = {
+                                    detailView(system, moonId)
+                                    outpostsView(system, moonId)
+                                }
+                                onMouseOutFunction = {
+                                    detailView(system, currentPlanet)
+                                    outpostsView(system, currentPlanet)
+                                }
                             }
                         }
                     }
