@@ -181,4 +181,6 @@ summary::-webkit-details-marker {
     border: 1px solid gray;
     padding: 10px;
     background: var(--background-blue);
+    min-width: 50px;
+    min-height: 50px;
 }

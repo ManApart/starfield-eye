@@ -44,6 +44,7 @@ fun outpostsPage() {
                     .forEach { planetInfo ->
                         val planet = galaxy.planets[planetInfo.planetId]!!
                         div("section-view-box") {
+                            id = "outpost-view-${planet.uniqueId}"
                             outpostsView(planet, planetInfo, false, true)
                         }
                     }
@@ -60,11 +61,13 @@ fun clearOutpostsView() {
 }
 
 fun outpostsView(planet: Planet, info: PlanetInfo) {
-    val root = el("outpost-view")
+    val genericRoot = el<HTMLElement?>("outpost-view")
+    val root = genericRoot ?: el("outpost-view-${planet.uniqueId}")
+    val showLink = genericRoot == null
     root.innerHTML = ""
     root.addClass("section-view-box")
     root.append {
-        outpostsView(planet, info, true)
+        outpostsView(planet, info, true, showLink)
     }
 }
 
