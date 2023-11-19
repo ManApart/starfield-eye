@@ -34,4 +34,9 @@
     .accent-line {
         font-size: smaller;
     }
+
+    .outpost-resource-item {
+        display: block;
+    }
+
 }

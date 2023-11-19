@@ -216,26 +216,31 @@ private fun saveOutpostInfo(planet: Planet, info: PlanetInfo) {
 private data class ResourceEntry(val planetId: String, val name: String, val resource: ResourceType)
 
 private fun TagConsumer<HTMLElement>.viewOutpostsByResearch() {
+    val resourceEntries = inMemoryStorage.planetUserInfo.values
+        .filter { it.outPosts.isNotEmpty() }
+        .flatMap { planet -> planet.outPosts.map { planet.planetId to it } }
+        .flatMap { (id, outpost) -> outpost.resources.map { ResourceEntry(id, outpost.name, it) } }
+        .groupBy { it.resource }
+        .entries.sortedBy { it.key.name }
+
     div("section-view-box") {
-        inMemoryStorage.planetUserInfo.values
-            .filter { it.outPosts.isNotEmpty() }
-            .flatMap { planet -> planet.outPosts.map { planet.planetId to it } }
-            .flatMap { (id, outpost) -> outpost.resources.map { ResourceEntry(id, outpost.name, it) } }
-            .groupBy { it.resource }
-            .entries.sortedBy { it.key.name }
-            .forEach { (resource, outposts) ->
-                div("outpost-resource-row") {
-                    resourceSquare(resource)
-                    outposts.forEach { outpost ->
-                        val planet = galaxy.planets[outpost.planetId]!!
-                        span("outpost-resource-item") {
-                            a(href = "#system/${outpost.planetId.replace("-", "/")}") {
-                                +"${outpost.name} (${planet.name})"
+        table {
+            resourceEntries.forEach { (resource, outposts) ->
+                tr("outpost-resource-row") {
+                    td { resourceSquare(resource) }
+                    td {
+                        outposts.forEach { outpost ->
+                            val planet = galaxy.planets[outpost.planetId]!!
+                            span("outpost-resource-item") {
+                                a(href = "#system/${outpost.planetId.replace("-", "/")}") {
+                                    +"${outpost.name} (${planet.name})"
+                                }
                             }
                         }
                     }
                 }
             }
+        }
     }
 
 
