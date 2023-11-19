@@ -1,4 +1,4 @@
-package views
+package components
 
 import ResourceType
 import el
@@ -13,7 +13,6 @@ import kotlinx.html.style
 import kotlinx.html.title
 import mouseX
 import mouseY
-import org.w3c.dom.DOMRect
 import org.w3c.dom.HTMLElement
 
 fun TagConsumer<HTMLElement>.resourceSquares(resources: Set<ResourceType>) {

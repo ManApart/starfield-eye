@@ -28,7 +28,8 @@ data class InMemoryStorage(
     val connectionSettings: GameConnectionSettings = GameConnectionSettings(),
     var quests: List<Quest> = listOf(),
     var stats: MiscStats = MiscStats(),
-    var discoveredOnly: Boolean = false
+    var discoveredOnly: Boolean = false,
+    var outpostResourceView: Boolean = false,
 ) {
     fun planetInfo(uniqueId: String): PlanetInfo {
        return planetUserInfo[uniqueId] ?: PlanetInfo(uniqueId)

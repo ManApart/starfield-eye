@@ -3,6 +3,9 @@ package views
 import Outpost
 import Planet
 import PlanetInfo
+import components.resourceSquares
+import components.showResourcePicker
+import components.toggle
 import el
 import galaxy
 import inMemoryStorage
@@ -35,22 +38,35 @@ fun outpostsPage() {
                     renderGalaxy()
                 }
             }
+            div("toggle-wrapper") {
+                +"By Resource"
+                toggle(inMemoryStorage::outpostResourceView) {
+                    persistMemory()
+                    outpostsPage()
+                }
+            }
 
             p { +"Add more outposts from the System View" }
 
             div("section-wrapper") {
-                inMemoryStorage.planetUserInfo.values
-                    .filter { it.outPosts.isNotEmpty() }
-                    .forEach { planetInfo ->
-                        val planet = galaxy.planets[planetInfo.planetId]!!
-                        div("section-view-box") {
-                            id = "outpost-view-${planet.uniqueId}"
-                            outpostsView(planet, planetInfo, false, true)
-                        }
-                    }
+                if (inMemoryStorage.outpostResourceView) {
+                    viewOutpostsByResearch()
+                } else viewAllOutposts()
             }
         }
     }
+}
+
+private fun TagConsumer<HTMLElement>.viewAllOutposts() {
+    inMemoryStorage.planetUserInfo.values
+        .filter { it.outPosts.isNotEmpty() }
+        .forEach { planetInfo ->
+            val planet = galaxy.planets[planetInfo.planetId]!!
+            div("section-view-box") {
+                id = "outpost-view-${planet.uniqueId}"
+                outpostsView(planet, planetInfo, false, true)
+            }
+        }
 }
 
 fun clearOutpostsView() {
@@ -169,7 +185,7 @@ private fun TagConsumer<HTMLElement>.addOutpost(info: PlanetInfo, planet: Planet
             placeholder = "Outpost Name"
             onKeyPressFunction = {
                 val e = it as KeyboardEvent
-                if (e.key == "Enter"){
+                if (e.key == "Enter") {
                     val name = el<HTMLInputElement>("add-outpost-input").value
                     info.outPosts.add(Outpost(name))
                     saveOutpostInfo(planet, info)
@@ -191,4 +207,10 @@ private fun saveOutpostInfo(planet: Planet, info: PlanetInfo) {
     inMemoryStorage.planetUserInfo[planet.uniqueId] = info
     outpostsView(planet, info)
     persistMemory()
+}
+
+
+private fun TagConsumer<HTMLElement>.viewOutpostsByResearch() {
+    inMemoryStorage.planetUserInfo.values
+    p { +"By Resource" }
 }

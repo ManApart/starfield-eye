@@ -2,10 +2,10 @@ package views
 
 import Outpost
 import Planet
-import PlanetInfo
 import ResourceType
 import Star
 import StarSystem
+import components.resourceSquares
 import docking.setCourse
 import el
 import inMemoryStorage
