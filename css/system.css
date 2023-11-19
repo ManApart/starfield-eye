@@ -1,0 +1,191 @@
+
+
+#system-title {
+}
+
+#system-view{
+    margin-left: 5%;
+    width: 90%;
+}
+
+#detail-view a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.system-view-box td{
+    padding-right: 15px;
+}
+
+#orrery {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#current-hover {
+    margin-bottom: 20px;
+}
+
+#detail-view {
+}
+
+.resource-td {
+    vertical-align: top;
+}
+
+.resource-value-td {
+    direction: rtl;
+}
+
+.resource {
+    float: right;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    margin: 2px;
+    font-size: medium;
+}
+
+.resource-inner {
+    margin-top: 25%;
+}
+
+.resource-wrapper {
+    height: 55px;
+}
+.resource-wrapper .resource {
+    float: left;
+}
+
+#system-map {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    min-height: 90%
+}
+
+.system-star-circle {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background-color: var(--background-blue);
+    border: 3px solid white;
+    transition: .5s;
+}
+
+.planet-column {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 28px;
+}
+
+.system-planet-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: var(--background-blue);
+    border: 3px solid white;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: -3px;
+    transition: .5s;
+}
+
+.orrery-line {
+    width: 2px;
+    border: none;
+    height: 30px;
+    background-color: white;
+    margin-top: -3px;
+    margin-bottom: 0px;
+}
+
+.system-moon-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--background-blue);
+    border: 3px solid white;
+    vertical-align: top;
+    margin: auto;
+    transition: .5s;
+}
+
+.planet-spacer {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    margin-top: 47px;
+}
+
+.selected-circle {
+    background-color: white;
+
+}
+
+#moons-detail {
+    overflow-wrap: break-word;
+}
+
+#moons-detail a {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.detail-view-table {
+    width: 98%;
+    border-spacing: 0px 5px;
+    border-collapse: separate;
+}
+
+.detail-view-table tr{
+}
+
+.detail-view-table td:first-child{
+    background-color: var(--menu-gray);
+    border-left: 1px solid gray;
+    padding-left: 5px;
+}
+
+.detail-view-table td:last-child{
+    text-align: right;
+    border-right: 1px solid gray;
+    padding-right: 5px;
+}
+
+.detail-view-table td {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.detail-view-table td:first-child {
+    width: 35%;
+    min-width: 130px;
+}
+
+.add-info-button, .remove-info-button {
+    margin: 5px;
+    border: none;
+}
+
+#add-outpost-input {
+    margin-top: 10px;
+}
+
+.planet-label {
+}
+
+#detail-view #wiki-link {
+    display: inline-block;
+}
+
+#travel-button {
+    display: inline-block;
+}

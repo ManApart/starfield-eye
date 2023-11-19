@@ -1,0 +1,34 @@
+#catalogue-view #nav {
+    position: relative;
+    top: unset;
+}
+
+.search {
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    width: 43%;
+    min-width: 300px;
+    vertical-align: top;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+#search-icon {
+    height: 40px;
+    margin-right: 10px;
+}
+
+#planet-list {
+    max-height: 800px;
+    overflow-y: scroll;
+
+}
+
+.system-catalogue-item {
+    font-size: large;
+}
+
+.planet-catalogue-item {
+    margin-left: 5%;
+}

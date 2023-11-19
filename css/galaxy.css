@@ -1,0 +1,58 @@
+#galaxy{
+    position: relative;
+    width: 98vw;
+    height: 98vh;
+    min-width: 1500px;
+    min-height: 1000px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#galaxy-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.galaxy-system {
+    position: absolute;
+    height: 0px;
+}
+
+.system-name:hover{
+    background-position: -100% 0%;
+    transition: 1s;
+}
+
+.system-circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.system-name {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, transparent 50%, var(--menu-gray) 50%);
+
+}
+
+.system-name-above {
+    margin-top: -30px;
+}
+
+.star-line {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    overflow: visible;
+    pointer-events: none;
+}
