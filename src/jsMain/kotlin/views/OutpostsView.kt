@@ -3,6 +3,8 @@ package views
 import Outpost
 import Planet
 import PlanetInfo
+import ResourceType
+import components.resourceSquare
 import components.resourceSquares
 import components.showResourcePicker
 import components.toggle
@@ -13,11 +15,13 @@ import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
+import kotlinx.html.button
+import kotlinx.html.div
 import kotlinx.html.dom.append
-import kotlinx.html.js.h4
-import kotlinx.html.js.onChangeFunction
-import kotlinx.html.js.onClickFunction
-import kotlinx.html.js.onKeyPressFunction
+import kotlinx.html.h2
+import kotlinx.html.h5
+import kotlinx.html.hr
+import kotlinx.html.js.*
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.HTMLTextAreaElement
@@ -209,8 +213,30 @@ private fun saveOutpostInfo(planet: Planet, info: PlanetInfo) {
     persistMemory()
 }
 
+private data class ResourceEntry(val planetId: String, val name: String, val resource: ResourceType)
 
 private fun TagConsumer<HTMLElement>.viewOutpostsByResearch() {
-    inMemoryStorage.planetUserInfo.values
-    p { +"By Resource" }
+    div("section-view-box") {
+        inMemoryStorage.planetUserInfo.values
+            .filter { it.outPosts.isNotEmpty() }
+            .flatMap { planet -> planet.outPosts.map { planet.planetId to it } }
+            .flatMap { (id, outpost) -> outpost.resources.map { ResourceEntry(id, outpost.name, it) } }
+            .groupBy { it.resource }
+            .entries.sortedBy { it.key.name }
+            .forEach { (resource, outposts) ->
+                div("outpost-resource-row") {
+                    resourceSquare(resource)
+                    outposts.forEach { outpost ->
+                        val planet = galaxy.planets[outpost.planetId]!!
+                        span("outpost-resource-item") {
+                            a(href = "#system/${outpost.planetId.replace("-", "/")}") {
+                                +"${outpost.name} (${planet.name})"
+                            }
+                        }
+                    }
+                }
+            }
+    }
+
+
 }

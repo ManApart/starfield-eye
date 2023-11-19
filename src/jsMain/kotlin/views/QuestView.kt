@@ -104,7 +104,6 @@ private fun saveHtmlRefs(quests: List<Quest>) {
     }
 }
 
-
 private fun TagConsumer<HTMLElement>.filterControls() {
     div {
         id = "quest-search"

@@ -1,0 +1,14 @@
+.outpost-resource-row {
+    display: block;
+}
+
+.outpost-resource-row .resource {
+    display: inline-block;
+    float: unset;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.outpost-resource-item {
+    margin-left: 20px;
+}

@@ -16,14 +16,16 @@ import mouseY
 import org.w3c.dom.HTMLElement
 
 fun TagConsumer<HTMLElement>.resourceSquares(resources: Set<ResourceType>) {
-    resources.forEach { resource ->
-        div("resource") {
-            style = "background-color: #${resource.color}"
-            div("resource-inner") {
-                +resource.name
-            }
-            title = resource.readableName
+    resources.forEach { resourceSquare(it) }
+}
+
+fun TagConsumer<HTMLElement>.resourceSquare(resource: ResourceType) {
+    div("resource") {
+        style = "background-color: #${resource.color}"
+        div("resource-inner") {
+            +resource.name
         }
+        title = resource.readableName
     }
 }
 
