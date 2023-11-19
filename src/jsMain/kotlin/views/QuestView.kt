@@ -3,6 +3,7 @@ package views
 import MissionType
 import Quest
 import QuestStageState
+import components.toggle
 import el
 import inMemoryStorage
 import kotlinx.browser.window
@@ -15,6 +16,7 @@ import kotlinx.html.js.onKeyUpFunction
 import org.w3c.dom.HTMLButtonElement
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
+import persistMemory
 import pollHook
 import searchMissions
 
@@ -106,14 +108,18 @@ private fun saveHtmlRefs(quests: List<Quest>) {
 private fun TagConsumer<HTMLElement>.filterControls() {
     div {
         id = "quest-search"
-        val toggleClass = "button-pushed".takeIf {  inMemoryStorage.missionSearchOptions.showCompleted}
-        missionButton("toggle-completed", "Toggle Completed", ::toggleCompleted, toggleClass)
         missionButton("show-all", "All", ::showAll)
         missionButton("show-main", "Main Quests", ::showMain)
         missionButton("show-faction", "Faction", ::showFaction)
         missionButton("show-city", "City", ::showCity)
         missionButton("show-misc", "Misc", ::showMisc)
         missionButton("show-other", "Other", ::showOther)
+        div("toggle-wrapper") {
+            +"Completed"
+            toggle(inMemoryStorage.missionSearchOptions::showCompleted) {
+                searchMissions()
+            }
+        }
         input(classes = "search") {
             id = "search"
             placeholder = "Filter by Name or stage"
@@ -207,18 +213,6 @@ private fun showAll() {
 private fun showMain() {
     inMemoryStorage.missionSearchOptions.types = listOf(MissionType.MAIN)
     pushButton("show-main")
-    searchMissions()
-}
-
-private fun toggleCompleted() {
-    inMemoryStorage.missionSearchOptions.showCompleted = !inMemoryStorage.missionSearchOptions.showCompleted
-    el("toggle-completed").let {
-        if (inMemoryStorage.missionSearchOptions.showCompleted) {
-            it.addClass("button-pushed")
-        } else {
-            it.removeClass("button-pushed")
-        }
-    }
     searchMissions()
 }
 
