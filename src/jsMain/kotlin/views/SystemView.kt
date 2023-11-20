@@ -48,11 +48,14 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
                 orrery(system)
                 div("section-view-box") { id = "detail-view" }
                 div { id = "outpost-view" }
+                div { id = "flora-view" }
+                div { id = "fauna-view" }
             }
         }
     }
     detailView(system, planetId)
     outpostsView(system, planetId)
+    floraView(system.star.id, planetId)
 
     val planetType = when {
         planetId == 0 -> "star"

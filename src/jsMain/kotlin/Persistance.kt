@@ -72,7 +72,7 @@ fun loadFloraReference(): Promise<*> {
     return loadJson("flora-wiki-data.json").then { json ->
         floraReference = jsonMapper.decodeFromString<List<FloraWikiData>>(json)
             .filter { it.planetId != null }
-            .associateBy { it.planetId!! }
+            .groupBy { it.planetId!! }
         println("Read ${floraReference.keys.size} flora from json")
     }
 }
@@ -81,7 +81,7 @@ fun loadFaunaReference(): Promise<*> {
     return loadJson("fauna-wiki-data.json").then { json ->
         faunaReference = jsonMapper.decodeFromString<List<FaunaWikiData>>(json)
             .filter { it.planetId != null }
-            .associateBy { it.planetId!! }
+            .groupBy { it.planetId!! }
         println("Read ${faunaReference.keys.size} fauna from json")
     }
 }

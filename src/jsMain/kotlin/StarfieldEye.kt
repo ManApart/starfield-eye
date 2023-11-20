@@ -11,8 +11,8 @@ var pageIsVisible = true
 var pollHook: (Boolean) -> Unit = {}
 var keyPressedHook: (KeyboardEvent) -> Unit = {}
 var missionReference: Map<String, MissionWikiData> = mapOf()
-var floraReference: Map<String, FloraWikiData> = mapOf()
-var faunaReference: Map<String, FaunaWikiData> = mapOf()
+var floraReference: Map<String, List<FloraWikiData>> = mapOf()
+var faunaReference: Map<String, List<FaunaWikiData>> = mapOf()
 var mouseX = 0.0
 var mouseY = 0.0
 
