@@ -30,6 +30,7 @@ data class FaunaWikiData(
     override val name: String = "",
     val temperament: Temperament = Temperament.UNKNOWN,
     val planet: String? = null,
+    val planetId: String? = null,
     val biomes: List<String> = listOf(),
     val resource: String,
     val abilities: List<String> = listOf(),
@@ -40,6 +41,7 @@ data class FaunaWikiData(
 data class FloraWikiData(
     override val name: String = "",
     val planet: String? = null,
+    val planetId: String? = null,
     val biomes: List<String> = listOf(),
     val resource: String,
     val other: Map<String, String> = mapOf()

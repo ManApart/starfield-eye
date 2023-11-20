@@ -1,7 +1,10 @@
 package wikiScraper
 
 import FaunaWikiData
+import Galaxy
+import Planet
 import jsonMapper
+import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
@@ -9,6 +12,8 @@ import org.jsoup.nodes.Element
 import toTemperament
 import java.io.File
 import java.lang.IllegalStateException
+
+private lateinit var planetsByName: Map<String, Planet>
 
 fun main() {
     val options = ScraperOptions()
@@ -23,6 +28,7 @@ fun main() {
     val output = File("src/jsMain/resources/fauna-wiki-data.json")
 
     println("Reading Fauna")
+    planetsByName = jsonMapper.decodeFromString<Galaxy>(File("src/jsMain/resources/data.json").readText()).planets.values.associateBy { it.name }
     readFromUrls(urlFile, output, ::parseFauna, options)
 }
 
@@ -66,5 +72,7 @@ private fun parseTable(table: Element): FaunaWikiData {
         table.tablePair("Schedule"),
         table.tablePair("Combat Style"),
     ).toMap()
-    return FaunaWikiData(name, temperament, planet, biomes, resource, abilities, other)
+    val planetId = planetsByName[planet]?.uniqueId
+    if (planetId == null) println("Could not find planet $planet")
+    return FaunaWikiData(name, temperament, planet, planetId, biomes, resource, abilities, other)
 }

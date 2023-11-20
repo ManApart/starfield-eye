@@ -1,10 +1,16 @@
 package wikiScraper
 
 import FloraWikiData
+import Galaxy
+import Planet
+import jsonMapper
+import kotlinx.serialization.decodeFromString
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import java.io.File
 import java.lang.IllegalStateException
+
+private lateinit var planetsByName: Map<String, Planet>
 
 fun main() {
     val options = ScraperOptions()
@@ -14,6 +20,7 @@ fun main() {
     val output = File("src/jsMain/resources/flora-wiki-data.json")
 
     println("Reading Flora")
+    planetsByName = jsonMapper.decodeFromString<Galaxy>(File("src/jsMain/resources/data.json").readText()).planets.values.associateBy { it.name }
     readFromUrls(urlFile, output, ::parseFlora, options)
 }
 
@@ -39,7 +46,9 @@ private fun parseTable(table: Element, species: String): List<FloraWikiData> {
 
         val name = "$species ($planet)"
 
-        FloraWikiData(name, planet, biomes, resource, other)
+        val planetId = planetsByName[planet]?.uniqueId
+        if (planetId == null) println("Could not find planet $planet")
+        FloraWikiData(name, planet, planetId, biomes, resource, other)
     }
 }
 

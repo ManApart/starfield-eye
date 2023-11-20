@@ -1,4 +1,3 @@
-
 import LocalForage.config
 import kotlinx.browser.document
 import kotlinx.browser.window
@@ -32,7 +31,7 @@ data class InMemoryStorage(
     var outpostResourceView: Boolean = false,
 ) {
     fun planetInfo(uniqueId: String): PlanetInfo {
-       return planetUserInfo[uniqueId] ?: PlanetInfo(uniqueId)
+        return planetUserInfo[uniqueId] ?: PlanetInfo(uniqueId)
     }
 }
 
@@ -45,7 +44,11 @@ fun loadAll(): Promise<*> {
     return loadMemory().then {
         loadGalaxy().then {
             loadMissionReference().then {
-                return@then
+                loadFloraReference().then {
+                    loadFaunaReference().then {
+                        return@then
+                    }
+                }
             }
         }
     }
@@ -57,10 +60,29 @@ fun loadGalaxy(): Promise<*> {
         println("Read ${galaxy.systems.keys.size} systems from json")
     }
 }
+
 fun loadMissionReference(): Promise<*> {
     return loadJson("mission-wiki-data.json").then { json ->
         missionReference = jsonMapper.decodeFromString<List<MissionWikiData>>(json).associateBy { it.name }
         println("Read ${missionReference.keys.size} missions from json")
+    }
+}
+
+fun loadFloraReference(): Promise<*> {
+    return loadJson("flora-wiki-data.json").then { json ->
+        floraReference = jsonMapper.decodeFromString<List<FloraWikiData>>(json)
+            .filter { it.planetId != null }
+            .associateBy { it.planetId!! }
+        println("Read ${floraReference.keys.size} flora from json")
+    }
+}
+
+fun loadFaunaReference(): Promise<*> {
+    return loadJson("fauna-wiki-data.json").then { json ->
+        faunaReference = jsonMapper.decodeFromString<List<FaunaWikiData>>(json)
+            .filter { it.planetId != null }
+            .associateBy { it.planetId!! }
+        println("Read ${faunaReference.keys.size} fauna from json")
     }
 }
 
@@ -128,8 +150,8 @@ fun importPlayerInfo() {
     }
 }
 
-fun deleteUserData(){
-    if (window.confirm("Are you sure you want to delete data? Make sure you've exported a backup first!")){
+fun deleteUserData() {
+    if (window.confirm("Are you sure you want to delete data? Make sure you've exported a backup first!")) {
         inMemoryStorage = InMemoryStorage()
         persistMemory()
     }
