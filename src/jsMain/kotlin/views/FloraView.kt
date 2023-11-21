@@ -6,14 +6,13 @@ import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.dom.append
+import org.w3c.dom.HTMLElement
 
 fun floraView(system: Int, planet: Int) {
-    println("id $system $planet")
     val root = el("flora-view")
     root.innerHTML = ""
     root.removeClass("section-view-box")
     floraReference["$system-$planet"]?.let { planetFlora ->
-        println("Found Flora")
         root.addClass("section-view-box")
         root.append {
             h2 { +"Flora" }
@@ -41,5 +40,17 @@ fun floraView(system: Int, planet: Int) {
             }
 
         }
+    }
+}
+
+
+fun clearFloraFaunaView() {
+    el<HTMLElement?>("flora-view")?.let {
+        it.removeClass("section-view-box")
+        it.innerHTML = ""
+    }
+    el<HTMLElement?>("fauna-view")?.let {
+        it.removeClass("section-view-box")
+        it.innerHTML = ""
     }
 }

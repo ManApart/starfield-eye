@@ -56,6 +56,7 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
     detailView(system, planetId)
     outpostsView(system, planetId)
     floraView(system.star.id, planetId)
+    faunaView(system.star.id, planetId)
 
     val planetType = when {
         planetId == 0 -> "star"
@@ -86,10 +87,12 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                     setSelected("star", 0)
                     detailView(system, 0)
                     clearOutpostsView()
+                    clearFloraFaunaView()
                 }
                 onMouseOverFunction = {
                     detailView(system, 0)
                     clearOutpostsView()
+                    clearFloraFaunaView()
                 }
                 onMouseOutFunction = { detailView(system, currentPlanet) }
             }
@@ -104,14 +107,20 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                             setSelected("planet", planetId)
                             detailView(system, planetId)
                             outpostsView(system, planetId)
+                            floraView(system.star.id, planetId)
+                            faunaView(system.star.id, planetId)
                         }
                         onMouseOverFunction = {
                             detailView(system, planetId)
                             outpostsView(system, planetId)
+                            floraView(system.star.id, planetId)
+                            faunaView(system.star.id, planetId)
                         }
                         onMouseOutFunction = {
                             detailView(system, currentPlanet)
                             outpostsView(system, currentPlanet)
+                            floraView(system.star.id, currentPlanet)
+                            faunaView(system.star.id, currentPlanet)
                         }
                     }
                     if (moons.isNotEmpty()) {
@@ -123,14 +132,20 @@ private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                                 onClickFunction = {
                                     setSelected("moon", moonId)
                                     detailView(system, moonId)
+                                    floraView(system.star.id, moonId)
+                                    faunaView(system.star.id, moonId)
                                 }
                                 onMouseOverFunction = {
                                     detailView(system, moonId)
                                     outpostsView(system, moonId)
+                                    floraView(system.star.id, moonId)
+                                    faunaView(system.star.id, moonId)
                                 }
                                 onMouseOutFunction = {
                                     detailView(system, currentPlanet)
                                     outpostsView(system, currentPlanet)
+                                    floraView(system.star.id, currentPlanet)
+                                    faunaView(system.star.id, currentPlanet)
                                 }
                             }
                         }

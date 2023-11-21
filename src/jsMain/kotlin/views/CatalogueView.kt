@@ -71,10 +71,12 @@ private fun TagConsumer<HTMLElement>.planetList() {
                 onClickFunction = {
                     detailView(system, 0, false, true)
                     clearOutpostsView()
+                    clearFloraFaunaView()
                 }
                 onMouseOverFunction = {
                     detailView(system, 0, false, true)
                     clearOutpostsView()
+                    clearFloraFaunaView()
                 }
             }
         }
