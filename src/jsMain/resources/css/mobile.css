@@ -1,8 +1,11 @@
 @media (max-aspect-ratio: 3/4) {
 
-    .search {
+    #about-nav {
         display: block;
-        width: 20%;
+    }
+
+    .search {
+        width: 90%;
     }
 
     #crew-view #nav {
@@ -25,6 +28,10 @@
         height: 98vh;
         overflow-x: scroll;
         overflow-y: scroll;
+    }
+
+    #galaxy {
+        margin-top: 80px;
     }
 
     #planet-list{

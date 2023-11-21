@@ -29,23 +29,26 @@ private fun TagConsumer<HTMLElement>.nav() {
     div {
         id = "galaxy-nav"
 
-        button {
-            id = "about-button"
-            +"About"
-            title = "How this site works"
-            onClickFunction = { aboutView() }
-        }
-        button {
-            id = "crew-button"
-            +"Crew"
-            title = "View Credits"
-            onClickFunction = { crewView() }
-        }
-        button {
-            id = "dock-button"
-            +"Dock"
-            title = "Change Settings"
-            onClickFunction = { dockView() }
+        div {
+            id = "about-nav"
+            button {
+                id = "about-button"
+                +"About"
+                title = "How this site works"
+                onClickFunction = { aboutView() }
+            }
+            button {
+                id = "crew-button"
+                +"Crew"
+                title = "View Credits"
+                onClickFunction = { crewView() }
+            }
+            button {
+                id = "dock-button"
+                +"Dock"
+                title = "Change Settings"
+                onClickFunction = { dockView() }
+            }
         }
         button {
             +"Catalogue"
