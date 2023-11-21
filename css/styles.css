@@ -152,6 +152,7 @@ summary::-webkit-details-marker {
     overflow-y: auto;
     width: 90%;
     max-width: 500px;
+    max-height: 900px;
 }
 
 .accent-line {

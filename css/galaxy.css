@@ -16,6 +16,13 @@
     width: 100%;
 }
 
+#about-nav {
+    display: inline-block;
+}
+
+.search {
+    display: block;
+}
 
 .galaxy-system {
     position: absolute;

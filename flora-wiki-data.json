@@ -2,6 +2,7 @@
     {
         "name": "Abyss Pine Seedling (Alpha Andraste III)",
         "planet": "Alpha Andraste III",
+        "planetId": "5325-3",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest",
@@ -15,6 +16,7 @@
     {
         "name": "Abyss Pine Seedling (Bel II)",
         "planet": "Bel II",
+        "planetId": "69192-2",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -23,6 +25,7 @@
     {
         "name": "Abyss Pine Seedling (Beta Ternion III)",
         "planet": "Beta Ternion III",
+        "planetId": "119058-3",
         "biomes": [
             "Coniferous Forest",
             "Mountains"
@@ -32,6 +35,7 @@
     {
         "name": "Abyss Pine Seedling (Charybdis II)",
         "planet": "Charybdis II",
+        "planetId": "56075-2",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest",
@@ -42,6 +46,7 @@
     {
         "name": "Abyss Pine Seedling (Moloch II)",
         "planet": "Moloch II",
+        "planetId": "68463-2",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest",
@@ -52,6 +57,7 @@
     {
         "name": "Abyss Pine Seedling (Rutherford III)",
         "planet": "Rutherford III",
+        "planetId": "64587-3",
         "biomes": [
             "Swamp",
             "Deciduous Forest",
@@ -62,6 +68,7 @@
     {
         "name": "Abyss Pine Seedling (Sumati)",
         "planet": "Sumati",
+        "planetId": "88327-2",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest",
@@ -72,6 +79,7 @@
     {
         "name": "Abyss Pine Seedling (Ursa Minor II)",
         "planet": "Ursa Minor II",
+        "planetId": "118743-2",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -80,6 +88,7 @@
     {
         "name": "Altar Clusterpod (Strix I)",
         "planet": "Strix I",
+        "planetId": "72407-1",
         "biomes": [
             "Volcanic",
             "Sandy Desert",
@@ -90,6 +99,7 @@
     {
         "name": "Aniline Blackweed (Lantana VIII-b)",
         "planet": "Lantana VIII-b",
+        "planetId": "57584-17",
         "biomes": [
             "Craters"
         ],
@@ -109,6 +119,7 @@
     {
         "name": "Apollo Fireleaf (Feynman III)",
         "planet": "Feynman III",
+        "planetId": "86469-3",
         "biomes": [
             "Deciduous Forest",
             "Tropical Forest"
@@ -118,6 +129,7 @@
     {
         "name": "Apollo Fireleaf (Maheo I)",
         "planet": "Maheo I",
+        "planetId": "118988-1",
         "biomes": [
             "Swamp",
             "Tropical Forest",
@@ -137,6 +149,7 @@
     {
         "name": "Arc Root (Vesta)",
         "planet": "Vesta",
+        "planetId": "83865-2",
         "biomes": [
             "Volcanic",
             "Mountains",
@@ -147,6 +160,7 @@
     {
         "name": "Aries Vine (Heinlein IV-b)",
         "planet": "Heinlein IV-b",
+        "planetId": "71731-16",
         "biomes": [
             "Volcanic",
             "Mountains",
@@ -157,6 +171,7 @@
     {
         "name": "Aries Vine (Leonis III)",
         "planet": "Leonis III",
+        "planetId": "55476-3",
         "biomes": [
             "Volcanic"
         ],
@@ -165,6 +180,7 @@
     {
         "name": "Aruna Goldenglow (Algorab III-b)",
         "planet": "Algorab III-b",
+        "planetId": "60776-9",
         "biomes": [
             "Swamp",
             "Wetlands",
@@ -175,6 +191,7 @@
     {
         "name": "Aruna Goldenglow (Bel I)",
         "planet": "Bel I",
+        "planetId": "69192-1",
         "biomes": [
             "Frozen Hills",
             "Hills",
@@ -185,6 +202,7 @@
     {
         "name": "Aruna Goldenglow (Huygens IV)",
         "planet": "Huygens IV",
+        "planetId": "73082-4",
         "biomes": [
             "Hills"
         ],
@@ -193,6 +211,7 @@
     {
         "name": "Aruna Goldenglow (Hyla II)",
         "planet": "Hyla II",
+        "planetId": "70096-2",
         "biomes": [
             "Swamp"
         ],
@@ -201,6 +220,7 @@
     {
         "name": "Aruna Goldenglow (Ka'zaal)",
         "planet": "Ka'zaal",
+        "planetId": "76835-2",
         "biomes": [
             "Hills",
             "Wetlands"
@@ -210,6 +230,7 @@
     {
         "name": "Aruna Goldenglow (Polvo)",
         "planet": "Polvo",
+        "planetId": "119198-1",
         "biomes": [
             "Rocky Desert",
             "Hills"
@@ -219,6 +240,7 @@
     {
         "name": "Aruna Goldenglow (Rana VI-a)",
         "planet": "Rana VI-a",
+        "planetId": "69766-17",
         "biomes": [
             "Swamp"
         ],
@@ -227,6 +249,7 @@
     {
         "name": "Aruna Goldenglow (Schrodinger III)",
         "planet": "Schrodinger III",
+        "planetId": "87902-3",
         "biomes": [
             "Mountains",
             "Hills"
@@ -244,6 +267,7 @@
     {
         "name": "Aruna Goldenglow (Tau Ceti II)",
         "planet": "Tau Ceti II",
+        "planetId": "8087-2",
         "biomes": [
             "Hills"
         ],
@@ -252,6 +276,7 @@
     {
         "name": "Aruna Goldenglow (Tirna VIII-c)",
         "planet": "Tirna VIII-c",
+        "planetId": "57270-25",
         "biomes": [
             "Swamp",
             "Savanna",
@@ -263,6 +288,7 @@
     {
         "name": "Aruna Goldenglow (Xi Ophiuchi VIII-b)",
         "planet": "Xi Ophiuchi VIII-b",
+        "planetId": "84636-24",
         "biomes": [
             "Mountains",
             "Hills"
@@ -272,6 +298,7 @@
     {
         "name": "Aruna Goldenglow (Zeta Ophiuchi I)",
         "planet": "Zeta Ophiuchi I",
+        "planetId": "119147-1",
         "biomes": [
             "Swamp",
             "Deciduous Forest",
@@ -295,6 +322,7 @@
     {
         "name": "Ash Flower (Tirna II)",
         "planet": "Tirna II",
+        "planetId": "57270-2",
         "biomes": [
             "Volcanic",
             "Sandy Desert",
@@ -305,6 +333,7 @@
     {
         "name": "Ash Sweeper (Gamma Vulpes II-a)",
         "planet": "Gamma Vulpes II-a",
+        "planetId": "75489-7",
         "biomes": [
             "Volcanic",
             "Mountains"
@@ -314,6 +343,7 @@
     {
         "name": "Ash Sweeper (Guniibuu VI-b)",
         "planet": "Guniibuu VI-b",
+        "planetId": "84147-23",
         "biomes": [
             "Volcanic",
             "Hills"
@@ -323,6 +353,7 @@
     {
         "name": "Ash Sweeper (Khayyam II)",
         "planet": "Khayyam II",
+        "planetId": "65150-2",
         "biomes": [
             "Volcanic",
             "Coniferous Forest",
@@ -333,6 +364,7 @@
     {
         "name": "Ash Sweeper (Rivera I)",
         "planet": "Rivera I",
+        "planetId": "118819-1",
         "biomes": [
             "Volcanic",
             "Mountains",
@@ -343,6 +375,7 @@
     {
         "name": "Ash Sweeper (Sparta III)",
         "planet": "Sparta III",
+        "planetId": "79252-3",
         "biomes": [
             "Volcanic"
         ],
@@ -351,6 +384,7 @@
     {
         "name": "Atlas Weed (Bardeen III)",
         "planet": "Bardeen III",
+        "planetId": "90582-3",
         "biomes": [
             "Mountains",
             "Deciduous Forest"
@@ -360,6 +394,7 @@
     {
         "name": "Atlas Weed (Hawking I)",
         "planet": "Hawking I",
+        "planetId": "73489-1",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -368,6 +403,7 @@
     {
         "name": "Atlas Weed (Kumasi I)",
         "planet": "Kumasi I",
+        "planetId": "56828-1",
         "biomes": [
             "Tropical Forest",
             "Deciduous Forest"
@@ -377,6 +413,7 @@
     {
         "name": "Atlas Weed (Lantana III)",
         "planet": "Lantana III",
+        "planetId": "57584-3",
         "biomes": [
             "Tropical Forest",
             "Deciduous Forest"
@@ -386,6 +423,7 @@
     {
         "name": "Atlas Weed (Nemeria I)",
         "planet": "Nemeria I",
+        "planetId": "84604-1",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -394,6 +432,7 @@
     {
         "name": "Atlas Weed (Oborum I)",
         "planet": "Oborum I",
+        "planetId": "119143-1",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -403,6 +442,7 @@
     {
         "name": "Atlas Weed (Shoza IV)",
         "planet": "Shoza IV",
+        "planetId": "67063-4",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -421,6 +461,7 @@
     {
         "name": "Atlas Weed (Zeta Ophiuchi I)",
         "planet": "Zeta Ophiuchi I",
+        "planetId": "119147-1",
         "biomes": [
             "Deciduous Forest",
             "Mountains"
@@ -430,6 +471,7 @@
     {
         "name": "Augustus Creeper (Andromas II)",
         "planet": "Andromas II",
+        "planetId": "86705-2",
         "biomes": [
             "Hills",
             "Savanna"
@@ -449,6 +491,7 @@
     {
         "name": "Augustus Creeper (Copernicus IV)",
         "planet": "Copernicus IV",
+        "planetId": "76816-4",
         "biomes": [
             "Hills",
             "Savanna"
@@ -458,6 +501,7 @@
     {
         "name": "Augustus Creeper (Eridani II)",
         "planet": "Eridani II",
+        "planetId": "15471-2",
         "biomes": [
             "Rocky Desert",
             "Mountains",
@@ -468,6 +512,7 @@
     {
         "name": "Augustus Creeper (Huygens IV)",
         "planet": "Huygens IV",
+        "planetId": "73082-4",
         "biomes": [
             "Hills"
         ],
@@ -476,6 +521,7 @@
     {
         "name": "Augustus Creeper (Hyla I)",
         "planet": "Hyla I",
+        "planetId": "70096-1",
         "biomes": [
             "Hills"
         ],
@@ -484,6 +530,7 @@
     {
         "name": "Aurora Palm (Alpha Andraste II)",
         "planet": "Alpha Andraste II",
+        "planetId": "5325-2",
         "biomes": [
             "Mountains"
         ],
@@ -492,6 +539,7 @@
     {
         "name": "Aurora Palm (Beta Marae I)",
         "planet": "Beta Marae I",
+        "planetId": "119159-1",
         "biomes": [
             "Coniferous Forest",
             "Rocky Desert",
@@ -503,6 +551,7 @@
     {
         "name": "Aurora Palm (Copernicus III)",
         "planet": "Copernicus III",
+        "planetId": "76816-3",
         "biomes": [
             "Mountains",
             "Coniferous Forest"
@@ -512,6 +561,7 @@
     {
         "name": "Aurora Palm (Groombridge VIII-a)",
         "planet": "Groombridge VIII-a",
+        "planetId": "57767-24",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest",
@@ -522,6 +572,7 @@
     {
         "name": "Aurora Palm (Jemison)",
         "planet": "Jemison",
+        "planetId": "71456-3",
         "biomes": [
             "Deciduous Forest",
             "Mountains"
@@ -531,6 +582,7 @@
     {
         "name": "Aurora Palm (Kang III)",
         "planet": "Kang III",
+        "planetId": "71517-3",
         "biomes": [
             "Rocky Desert",
             "Mountains"
@@ -540,6 +592,7 @@
     {
         "name": "Aurora Palm (Marduk III)",
         "planet": "Marduk III",
+        "planetId": "60805-3",
         "biomes": [
             "Mountains"
         ],
@@ -548,6 +601,7 @@
     {
         "name": "Aurora Palm (Rasalhague II)",
         "planet": "Rasalhague II",
+        "planetId": "85769-2",
         "biomes": [
             "Mountains",
             "Deciduous Forest"
@@ -557,6 +611,7 @@
     {
         "name": "Aurora Palm (Strix I)",
         "planet": "Strix I",
+        "planetId": "72407-1",
         "biomes": [
             "Mountains"
         ],
@@ -565,6 +620,7 @@
     {
         "name": "Aurora Palm (Tau Ceti VIII-b)",
         "planet": "Tau Ceti VIII-b",
+        "planetId": "8087-19",
         "biomes": [
             "Mountains",
             "Savanna"
@@ -574,6 +630,7 @@
     {
         "name": "Aurora Palm (Tirna II)",
         "planet": "Tirna II",
+        "planetId": "57270-2",
         "biomes": [
             "Volcanic",
             "Mountains"
@@ -583,6 +640,7 @@
     {
         "name": "Aurora Palm (Vesta)",
         "planet": "Vesta",
+        "planetId": "83865-2",
         "biomes": [
             "Volcanic",
             "Mountains",
@@ -593,6 +651,7 @@
     {
         "name": "Autumn Junglebloom (Beta Marae I)",
         "planet": "Beta Marae I",
+        "planetId": "119159-1",
         "biomes": [
             "Wetlands",
             "Deciduous Forest",
@@ -603,6 +662,7 @@
     {
         "name": "Autumn Junglebloom (Eridani II)",
         "planet": "Eridani II",
+        "planetId": "15471-2",
         "biomes": [
             "Tropical Forest"
         ],
@@ -611,6 +671,7 @@
     {
         "name": "Autumn Junglebloom (Kumasi I)",
         "planet": "Kumasi I",
+        "planetId": "56828-1",
         "biomes": [
             "Wetlands",
             "Tropical Forest",
@@ -621,6 +682,7 @@
     {
         "name": "Autumn Junglebloom (Schrodinger VIII-a)",
         "planet": "Schrodinger VIII-a",
+        "planetId": "87902-20",
         "biomes": [
             "Deciduous Forest",
             "Tropical Forest"
@@ -630,6 +692,7 @@
     {
         "name": "Autumn Junglebloom (Zelazny II)",
         "planet": "Zelazny II",
+        "planetId": "59092-2",
         "biomes": [
             "Swamp",
             "Tropical Forest"
@@ -639,6 +702,7 @@
     {
         "name": "Autumn Junglebloom (Zelazny III)",
         "planet": "Zelazny III",
+        "planetId": "59092-3",
         "biomes": [
             "Tropical Forest",
             "Wetlands"
@@ -648,6 +712,7 @@
     {
         "name": "Barrenbulb (Kang III)",
         "planet": "Kang III",
+        "planetId": "71517-3",
         "biomes": [
             "Rocky Desert"
         ],
@@ -656,6 +721,7 @@
     {
         "name": "Barrenbulb (Piazzi I)",
         "planet": "Piazzi I",
+        "planetId": "103879-1",
         "biomes": [
             "Rocky Desert"
         ],
@@ -664,6 +730,7 @@
     {
         "name": "Barrenbulb (Polvo)",
         "planet": "Polvo",
+        "planetId": "119198-1",
         "biomes": [
             "Rocky Desert",
             "Hills"
@@ -673,6 +740,7 @@
     {
         "name": "Bellona Bush (Copernicus IV)",
         "planet": "Copernicus IV",
+        "planetId": "76816-4",
         "biomes": [
             "Swamp"
         ],
@@ -681,6 +749,7 @@
     {
         "name": "Bellona Bush (Leviathan IV)",
         "planet": "Leviathan IV",
+        "planetId": "89684-4",
         "biomes": [
             "Swamp"
         ],
@@ -689,6 +758,7 @@
     {
         "name": "Bellona Bush (Rana VI-a)",
         "planet": "Rana VI-a",
+        "planetId": "69766-17",
         "biomes": [
             "Swamp"
         ],
@@ -697,6 +767,7 @@
     {
         "name": "Bellona Bush (Tirna VIII-c)",
         "planet": "Tirna VIII-c",
+        "planetId": "57270-25",
         "biomes": [
             "Swamp",
             "Savanna",
@@ -708,6 +779,7 @@
     {
         "name": "Bellona Bush (Zelazny II)",
         "planet": "Zelazny II",
+        "planetId": "59092-2",
         "biomes": [
             "Swamp",
             "Tropical Forest"
@@ -717,6 +789,7 @@
     {
         "name": "Bitter Bramble (Feynman IV)",
         "planet": "Feynman IV",
+        "planetId": "86469-4",
         "biomes": [
             "Craters",
             "Savanna",
@@ -730,6 +803,7 @@
     {
         "name": "Bitter Goldenglow (Altair II)",
         "planet": "Altair II",
+        "planetId": "97338-2",
         "biomes": [
             "Rocky Desert"
         ],
@@ -738,6 +812,7 @@
     {
         "name": "Bitter Goldenglow (Eridani II)",
         "planet": "Eridani II",
+        "planetId": "15471-2",
         "biomes": [
             "Rocky Desert",
             "Mountains",
@@ -748,6 +823,7 @@
     {
         "name": "Bitter Goldenglow (Gagarin)",
         "planet": "Gagarin",
+        "planetId": "71456-2",
         "biomes": [
             "Rocky Desert"
         ],
@@ -756,6 +832,7 @@
     {
         "name": "Bitter Goldenglow (Heisenberg II)",
         "planet": "Heisenberg II",
+        "planetId": "83344-2",
         "biomes": [
             "Hills",
             "Mountains",
@@ -766,6 +843,7 @@
     {
         "name": "Bitter Goldenglow (Marduk III)",
         "planet": "Marduk III",
+        "planetId": "60805-3",
         "biomes": [
             "Rocky Desert"
         ],
@@ -774,6 +852,7 @@
     {
         "name": "Bitter Orange Root (Shoza V)",
         "planet": "Shoza V",
+        "planetId": "67063-5",
         "biomes": [
             "Plateau"
         ],
@@ -782,6 +861,7 @@
     {
         "name": "Bleeding Heart Vine (Al-Battani II)",
         "planet": "Al-Battani II",
+        "planetId": "65147-2",
         "biomes": [
             "Hills"
         ],
@@ -790,6 +870,7 @@
     {
         "name": "Bleeding Heart Vine (Bardeen III)",
         "planet": "Bardeen III",
+        "planetId": "90582-3",
         "biomes": [
             "Mountains",
             "Hills"
@@ -808,6 +889,7 @@
     {
         "name": "Bleeding Heart Vine (Polvo)",
         "planet": "Polvo",
+        "planetId": "119198-1",
         "biomes": [
             "Rocky Desert",
             "Hills"
@@ -817,6 +899,7 @@
     {
         "name": "Bleeding Heart Vine (Rana III)",
         "planet": "Rana III",
+        "planetId": "69766-3",
         "biomes": [
             "Sandy Desert",
             "Hills"
@@ -826,6 +909,7 @@
     {
         "name": "Bleeding Heart Vine (Rivera I)",
         "planet": "Rivera I",
+        "planetId": "118819-1",
         "biomes": [
             "Mountains",
             "Coniferous Forest",
@@ -836,6 +920,7 @@
     {
         "name": "Bleeding Heart Vine (Schrodinger III)",
         "planet": "Schrodinger III",
+        "planetId": "87902-3",
         "biomes": [
             "Mountains",
             "Frozen Mountains",
@@ -846,6 +931,7 @@
     {
         "name": "Blistered Hornbulb (Feynman IV)",
         "planet": "Feynman IV",
+        "planetId": "86469-4",
         "biomes": [
             "Craters",
             "Savanna",
@@ -859,6 +945,7 @@
     {
         "name": "Blood Palm (Maal IV)",
         "planet": "Maal IV",
+        "planetId": "74746-4",
         "biomes": [
             "Mountains",
             "Volcanic"
@@ -889,6 +976,7 @@
     {
         "name": "Blooming Slopefeather (Denebola I-b)",
         "planet": "Denebola I-b",
+        "planetId": "57459-6",
         "biomes": [
             "Mountains",
             "Hills"
@@ -898,6 +986,7 @@
     {
         "name": "Blooming Slopefeather (Ixyll II)",
         "planet": "Ixyll II",
+        "planetId": "62328-2",
         "biomes": [
             "Savanna",
             "Frozen Plains",
@@ -909,6 +998,7 @@
     {
         "name": "Blooming Slopefeather (Lantana VIII-b)",
         "planet": "Lantana VIII-b",
+        "planetId": "57584-17",
         "biomes": [
             "Hills"
         ],
@@ -917,6 +1007,7 @@
     {
         "name": "Blooming Slopefeather (Montara Luna)",
         "planet": "Montara Luna",
+        "planetId": "72432-18",
         "biomes": [
             "Hills",
             "Savanna"
@@ -926,6 +1017,7 @@
     {
         "name": "Blue Weeping Shrub (Algorab III-b)",
         "planet": "Algorab III-b",
+        "planetId": "60776-9",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -943,6 +1035,7 @@
     {
         "name": "Blue Weeping Shrub (Freya III)",
         "planet": "Freya III",
+        "planetId": "72341-3",
         "biomes": [
             "Deciduous Forest",
             "Tropical Forest",
@@ -953,6 +1046,7 @@
     {
         "name": "Blue Weeping Shrub (Groombridge VIII-a)",
         "planet": "Groombridge VIII-a",
+        "planetId": "57767-24",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest",
@@ -964,6 +1058,7 @@
     {
         "name": "Blue Weeping Shrub (Ixyll III-b)",
         "planet": "Ixyll III-b",
+        "planetId": "62328-12",
         "biomes": [
             "Mountains",
             "Swamp",
@@ -975,6 +1070,7 @@
     {
         "name": "Blue Weeping Shrub (Nemeria IV-a)",
         "planet": "Nemeria IV-a",
+        "planetId": "84604-12",
         "biomes": [
             "Swamp",
             "Coniferous Forest",
@@ -986,6 +1082,7 @@
     {
         "name": "Blue Weeping Shrub (Sumati)",
         "planet": "Sumati",
+        "planetId": "88327-2",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest",
@@ -996,6 +1093,7 @@
     {
         "name": "Bog Bloom (Beta Marae I)",
         "planet": "Beta Marae I",
+        "planetId": "119159-1",
         "biomes": [
             "Wetlands",
             "Tropical Forest"
@@ -1005,6 +1103,7 @@
     {
         "name": "Bog Bloom (Procyon III)",
         "planet": "Procyon III",
+        "planetId": "37173-3",
         "biomes": [
             "Wetlands"
         ],
@@ -1016,6 +1115,7 @@
     {
         "name": "Bog Bloom (Pyraas II)",
         "planet": "Pyraas II",
+        "planetId": "68415-2",
         "biomes": [
             "Wetlands"
         ],
@@ -1024,6 +1124,7 @@
     {
         "name": "Bog Bloom (Pyraas VII-b)",
         "planet": "Pyraas VII-b",
+        "planetId": "68415-14",
         "biomes": [
             "Wetlands"
         ],
@@ -1032,6 +1133,7 @@
     {
         "name": "Boreas Root (Decaran I)",
         "planet": "Decaran I",
+        "planetId": "119105-1",
         "biomes": [
             "Frozen Plains"
         ],
@@ -1040,6 +1142,7 @@
     {
         "name": "Boreas Root (Eridani III)",
         "planet": "Eridani III",
+        "planetId": "15471-3",
         "biomes": [
             "Frozen Dunes"
         ],
@@ -1048,6 +1151,7 @@
     {
         "name": "Boreas Root (Freya III)",
         "planet": "Freya III",
+        "planetId": "72341-3",
         "biomes": [
             "Frozen Mountains",
             "Mountains"
@@ -1057,6 +1161,7 @@
     {
         "name": "Boreas Root (Jemison)",
         "planet": "Jemison",
+        "planetId": "71456-3",
         "biomes": [
             "Frozen Mountains",
             "Mountains",
@@ -1067,6 +1172,7 @@
     {
         "name": "Boreas Root (Khayyam II)",
         "planet": "Khayyam II",
+        "planetId": "65150-2",
         "biomes": [
             "Volcanic",
             "Frozen Mountains",
@@ -1078,6 +1184,7 @@
     {
         "name": "Boreas Root (Tidacha I)",
         "planet": "Tidacha I",
+        "planetId": "82337-1",
         "biomes": [
             "Mountains",
             "Frozen Plains",
@@ -1088,6 +1195,7 @@
     {
         "name": "Bowing Shadeleaf (Bardeen III)",
         "planet": "Bardeen III",
+        "planetId": "90582-3",
         "biomes": [
             "Mountains",
             "Frozen Plains",
@@ -1108,6 +1216,7 @@
     {
         "name": "Bowing Shadeleaf (Kumasi II)",
         "planet": "Kumasi II",
+        "planetId": "56828-2",
         "biomes": [
             "Rocky Desert",
             "Hills",
@@ -1118,6 +1227,7 @@
     {
         "name": "Bowing Shadeleaf (Masada III)",
         "planet": "Masada III",
+        "planetId": "83021-3",
         "biomes": [
             "Mountains",
             "Savanna",
@@ -1128,6 +1238,7 @@
     {
         "name": "Bowing Shadeleaf (Polvo)",
         "planet": "Polvo",
+        "planetId": "119198-1",
         "biomes": [
             "Rocky Desert",
             "Hills"
@@ -1148,6 +1259,7 @@
     {
         "name": "Bright Fire Reed (Zelazny III)",
         "planet": "Zelazny III",
+        "planetId": "59092-3",
         "biomes": [
             "Volcanic",
             "Coniferous Forest",
@@ -1158,6 +1270,7 @@
     {
         "name": "Bristle Barrel (Beta Ternion I)",
         "planet": "Beta Ternion I",
+        "planetId": "119058-1",
         "biomes": [
             "Sandy Desert",
             "Mountains"
@@ -1167,6 +1280,7 @@
     {
         "name": "Bristle Barrel (Huygens VII-b)",
         "planet": "Huygens VII-b",
+        "planetId": "73082-17",
         "biomes": [
             "Sandy Desert"
         ],
@@ -1175,6 +1289,7 @@
     {
         "name": "Bristle Barrel (Porrima II)",
         "planet": "Porrima II",
+        "planetId": "61748-2",
         "biomes": [
             "Tropical Forest"
         ],
@@ -1183,6 +1298,7 @@
     {
         "name": "Broadleaf Rose (Hawking I)",
         "planet": "Hawking I",
+        "planetId": "73489-1",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -1191,6 +1307,7 @@
     {
         "name": "Broadleaf Rose (Jemison)",
         "planet": "Jemison",
+        "planetId": "71456-3",
         "biomes": [
             "Mountains",
             "Coniferous Forest"
@@ -1203,6 +1320,7 @@
     {
         "name": "Broadleaf Rose (Khayyam II)",
         "planet": "Khayyam II",
+        "planetId": "65150-2",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -1212,6 +1330,7 @@
     {
         "name": "Broadleaf Rose (McClure II)",
         "planet": "McClure II",
+        "planetId": "119106-2",
         "biomes": [
             "Coniferous Forest",
             "Frozen Plains"
@@ -1221,6 +1340,7 @@
     {
         "name": "Broadleaf Rose (Oborum I)",
         "planet": "Oborum I",
+        "planetId": "119143-1",
         "biomes": [
             "Frozen Plains",
             "Coniferous Forest",
@@ -1231,6 +1351,7 @@
     {
         "name": "Broadleaf Rose (Porrima III)",
         "planet": "Porrima III",
+        "planetId": "61748-3",
         "biomes": [
             "Coniferous Forest",
             "Frozen Plains",
@@ -1241,6 +1362,7 @@
     {
         "name": "Broadleaf Rose (Rivera I)",
         "planet": "Rivera I",
+        "planetId": "118819-1",
         "biomes": [
             "Mountains",
             "Coniferous Forest",
@@ -1262,6 +1384,7 @@
     {
         "name": "Broadleaf Rose (Vega II-c)",
         "planet": "Vega II-c",
+        "planetId": "90979-7",
         "biomes": [
             "Coniferous Forest",
             "Plateau",
@@ -1275,6 +1398,7 @@
     {
         "name": "Broken Heart Vine (Copernicus IV)",
         "planet": "Copernicus IV",
+        "planetId": "76816-4",
         "biomes": [
             "Hills",
             "Savanna"
@@ -1284,6 +1408,7 @@
     {
         "name": "Broken Heart Vine (Enlil II)",
         "planet": "Enlil II",
+        "planetId": "78498-2",
         "biomes": [
             "Tropical Forest",
             "Savanna"
@@ -1293,6 +1418,7 @@
     {
         "name": "Broken Heart Vine (Pyraas II)",
         "planet": "Pyraas II",
+        "planetId": "68415-2",
         "biomes": [
             "Savanna"
         ],
@@ -1301,6 +1427,7 @@
     {
         "name": "Broken Heart Vine (Shoza III)",
         "planet": "Shoza III",
+        "planetId": "67063-3",
         "biomes": [
             "Savanna"
         ],
@@ -1309,6 +1436,7 @@
     {
         "name": "Broken Heart Vine (Tirna VIII-c)",
         "planet": "Tirna VIII-c",
+        "planetId": "57270-25",
         "biomes": [
             "Swamp",
             "Savanna",
@@ -1320,6 +1448,7 @@
     {
         "name": "Broken Heart Vine (Vesta)",
         "planet": "Vesta",
+        "planetId": "83865-2",
         "biomes": [
             "Savanna",
             "Deciduous Forest"
@@ -1329,6 +1458,7 @@
     {
         "name": "Burnt Pokeleaf (Beta Marae I)",
         "planet": "Beta Marae I",
+        "planetId": "119159-1",
         "biomes": [
             "Rocky Desert",
             "Mountains",
@@ -1339,6 +1469,7 @@
     {
         "name": "Burnt Pokeleaf (Gagarin)",
         "planet": "Gagarin",
+        "planetId": "71456-2",
         "biomes": [
             "Rocky Desert"
         ],
@@ -1347,6 +1478,7 @@
     {
         "name": "Caelus Pokeweed (Hyla II)",
         "planet": "Hyla II",
+        "planetId": "70096-2",
         "biomes": [
             "Swamp"
         ],
@@ -1355,6 +1487,7 @@
     {
         "name": "Caelus Pokeweed (Indum II)",
         "planet": "Indum II",
+        "planetId": "119135-2",
         "biomes": [
             "Sandy Desert",
             "Swamp"
@@ -1378,6 +1511,7 @@
     {
         "name": "Cage Brain (Bradbury III)",
         "planet": "Bradbury III",
+        "planetId": "81444-3",
         "biomes": [
             "Savanna",
             "Swamp",
@@ -1390,6 +1524,7 @@
     {
         "name": "Cage Brain (Enlil II)",
         "planet": "Enlil II",
+        "planetId": "78498-2",
         "biomes": [
             "Tropical Forest",
             "Mountains",
@@ -1400,6 +1535,7 @@
     {
         "name": "Cage Brain (Kumasi II)",
         "planet": "Kumasi II",
+        "planetId": "56828-2",
         "biomes": [
             "Hills"
         ],
@@ -1408,6 +1544,7 @@
     {
         "name": "Cage Brain (Lantana III)",
         "planet": "Lantana III",
+        "planetId": "57584-3",
         "biomes": [
             "Tropical Forest",
             "Deciduous Forest"
@@ -1417,6 +1554,7 @@
     {
         "name": "Cage Brain (Newton II)",
         "planet": "Newton II",
+        "planetId": "91756-2",
         "biomes": [
             "Swamp"
         ],
@@ -1425,6 +1563,7 @@
     {
         "name": "Cage Brain (Piazzi IV-c)",
         "planet": "Piazzi IV-c",
+        "planetId": "103879-12",
         "biomes": [
             "Hills",
             "Coniferous Forest",
@@ -1435,6 +1574,7 @@
     {
         "name": "Cage Brain (Sparta IV)",
         "planet": "Sparta IV",
+        "planetId": "79252-4",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -1443,6 +1583,7 @@
     {
         "name": "Cage Brain (Tau Ceti VIII-b)",
         "planet": "Tau Ceti VIII-b",
+        "planetId": "8087-19",
         "biomes": [
             "Tropical Forest",
             "Deciduous Forest"
@@ -1452,6 +1593,7 @@
     {
         "name": "Cage Brain (Zelazny III)",
         "planet": "Zelazny III",
+        "planetId": "59092-3",
         "biomes": [
             "Wetlands"
         ],
@@ -1460,6 +1602,7 @@
     {
         "name": "Canary Reed (Akila)",
         "planet": "Akila",
+        "planetId": "72432-2",
         "biomes": [
             "Coniferous Forest",
             "Savanna"
@@ -1469,6 +1612,7 @@
     {
         "name": "Canary Reed (Algorab II)",
         "planet": "Algorab II",
+        "planetId": "60776-2",
         "biomes": [
             "Savanna"
         ],
@@ -1477,6 +1621,7 @@
     {
         "name": "Canary Reed (Archimedes III)",
         "planet": "Archimedes III",
+        "planetId": "75150-3",
         "biomes": [
             "Savanna",
             "Mountains"
@@ -1486,6 +1631,7 @@
     {
         "name": "Canary Reed (Archimedes V-a)",
         "planet": "Archimedes V-a",
+        "planetId": "75150-13",
         "biomes": [
             "Hills",
             "Mountains",
@@ -1496,6 +1642,7 @@
     {
         "name": "Canary Reed (Bel II)",
         "planet": "Bel II",
+        "planetId": "69192-2",
         "biomes": [
             "Savanna"
         ],
@@ -1504,6 +1651,7 @@
     {
         "name": "Canary Reed (Charybdis II)",
         "planet": "Charybdis II",
+        "planetId": "56075-2",
         "biomes": [
             "Swamp",
             "Coniferous Forest",
@@ -1514,6 +1662,7 @@
     {
         "name": "Canary Reed (Guniibuu II)",
         "planet": "Guniibuu II",
+        "planetId": "84147-2",
         "biomes": [
             "Savanna"
         ],
@@ -1522,6 +1671,7 @@
     {
         "name": "Canary Reed (Ixyll III-b)",
         "planet": "Ixyll III-b",
+        "planetId": "62328-12",
         "biomes": [
             "Savanna",
             "Wetlands"
@@ -1531,6 +1681,7 @@
     {
         "name": "Canary Reed (Muphrid V-b)",
         "planet": "Muphrid V-b",
+        "planetId": "67711-19",
         "biomes": [
             "Savanna",
             "Volcanic"
@@ -1540,6 +1691,7 @@
     {
         "name": "Canary Reed (Zeta Ophiuchi I)",
         "planet": "Zeta Ophiuchi I",
+        "planetId": "119147-1",
         "biomes": [
             "Savanna"
         ],
@@ -1548,6 +1700,7 @@
     {
         "name": "Canis Palm (Altair II)",
         "planet": "Altair II",
+        "planetId": "97338-2",
         "biomes": [
             "Rocky Desert"
         ],
@@ -1559,6 +1712,7 @@
     {
         "name": "Canis Palm (Polvo)",
         "planet": "Polvo",
+        "planetId": "119198-1",
         "biomes": [
             "Rocky Desert",
             "Hills"
@@ -1568,6 +1722,7 @@
     {
         "name": "Canyon Rose (Verne II)",
         "planet": "Verne II",
+        "planetId": "63947-2",
         "biomes": [
             "Mountains",
             "Coniferous Forest"
@@ -1577,6 +1732,7 @@
     {
         "name": "Chillhook (Akila)",
         "planet": "Akila",
+        "planetId": "72432-2",
         "biomes": [
             "Frozen Plains",
             "Coniferous Forest"
@@ -1586,6 +1742,7 @@
     {
         "name": "Chillhook (Gamma Vulpes I)",
         "planet": "Gamma Vulpes I",
+        "planetId": "75489-1",
         "biomes": [
             "Frozen Plains"
         ],
@@ -1594,6 +1751,7 @@
     {
         "name": "Chillhook (Masada III)",
         "planet": "Masada III",
+        "planetId": "83021-3",
         "biomes": [
             "Volcanic",
             "Mountains"
@@ -1603,6 +1761,7 @@
     {
         "name": "Chillhook (Rana IV)",
         "planet": "Rana IV",
+        "planetId": "69766-4",
         "biomes": [
             "Mountains",
             "Frozen Plains",
@@ -1613,6 +1772,7 @@
     {
         "name": "Chillhook (Schrodinger III)",
         "planet": "Schrodinger III",
+        "planetId": "87902-3",
         "biomes": [
             "Mountains",
             "Frozen Mountains"
@@ -1622,6 +1782,7 @@
     {
         "name": "Christina Bloom (Jaffa III)",
         "planet": "Jaffa III",
+        "planetId": "79431-3",
         "biomes": [
             "Volcanic",
             "Coniferous Forest"
@@ -1631,6 +1792,7 @@
     {
         "name": "Christina Bloom (McClure II)",
         "planet": "McClure II",
+        "planetId": "119106-2",
         "biomes": [
             "Coniferous Forest",
             "Frozen Plains"
@@ -1640,6 +1802,7 @@
     {
         "name": "Christina Bloom (Shoza IV)",
         "planet": "Shoza IV",
+        "planetId": "67063-4",
         "biomes": [
             "Plateau",
             "Coniferous Forest",
@@ -1651,6 +1814,7 @@
     {
         "name": "Christina Bloom (Sparta IV)",
         "planet": "Sparta IV",
+        "planetId": "79252-4",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -1660,6 +1824,7 @@
     {
         "name": "Christina Bloom (Ursa Minor II)",
         "planet": "Ursa Minor II",
+        "planetId": "118743-2",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -1668,6 +1833,7 @@
     {
         "name": "Cliff Laurel (Archimedes III)",
         "planet": "Archimedes III",
+        "planetId": "75150-3",
         "biomes": [
             "Savanna",
             "Mountains"
@@ -1677,6 +1843,7 @@
     {
         "name": "Cliff Laurel (Beta Ternion II)",
         "planet": "Beta Ternion II",
+        "planetId": "119058-2",
         "biomes": [
             "Volcanic",
             "Mountains",
@@ -1687,6 +1854,7 @@
     {
         "name": "Cliff Laurel (Decaran I)",
         "planet": "Decaran I",
+        "planetId": "119105-1",
         "biomes": [
             "Mountains"
         ],
@@ -1698,6 +1866,7 @@
     {
         "name": "Cliff Laurel (Eridani II)",
         "planet": "Eridani II",
+        "planetId": "15471-2",
         "biomes": [
             "Rocky Desert",
             "Mountains",
@@ -1708,6 +1877,7 @@
     {
         "name": "Cliff Laurel (Jemison)",
         "planet": "Jemison",
+        "planetId": "71456-3",
         "biomes": [
             "Frozen Mountains",
             "Deciduous Forest",
@@ -1722,6 +1892,7 @@
     {
         "name": "Cliff Laurel (Newton II)",
         "planet": "Newton II",
+        "planetId": "91756-2",
         "biomes": [
             "Mountains",
             "Rocky Desert"
@@ -1731,6 +1902,7 @@
     {
         "name": "Cliff Laurel (Newton III)",
         "planet": "Newton III",
+        "planetId": "91756-3",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest",
@@ -1742,6 +1914,7 @@
     {
         "name": "Cliff Laurel (Shoza IV)",
         "planet": "Shoza IV",
+        "planetId": "67063-4",
         "biomes": [
             "Plateau",
             "Coniferous Forest",
@@ -1752,6 +1925,7 @@
     {
         "name": "Cliff Laurel (Sparta III)",
         "planet": "Sparta III",
+        "planetId": "79252-3",
         "biomes": [
             "Mountains"
         ],
@@ -1768,6 +1942,7 @@
     {
         "name": "Cliff Laurel (Tau Ceti VIII-b)",
         "planet": "Tau Ceti VIII-b",
+        "planetId": "8087-19",
         "biomes": [
             "Mountains",
             "Savanna"
@@ -1780,6 +1955,7 @@
     {
         "name": "Cliff Laurel (Tirna II)",
         "planet": "Tirna II",
+        "planetId": "57270-2",
         "biomes": [
             "Mountains"
         ],
@@ -1797,6 +1973,7 @@
     {
         "name": "Cliffberry (Copernicus II)",
         "planet": "Copernicus II",
+        "planetId": "76816-2",
         "biomes": [
             "Mountains",
             "Hills"
@@ -1806,6 +1983,7 @@
     {
         "name": "Cliffberry (Copernicus III)",
         "planet": "Copernicus III",
+        "planetId": "76816-3",
         "biomes": [
             "Mountains"
         ],
@@ -1814,6 +1992,7 @@
     {
         "name": "Cliffberry (Newton II)",
         "planet": "Newton II",
+        "planetId": "91756-2",
         "biomes": [
             "Mountains",
             "Rocky Desert"
@@ -1823,6 +2002,7 @@
     {
         "name": "Cliffberry (Nirvana II)",
         "planet": "Nirvana II",
+        "planetId": "58401-2",
         "biomes": [
             "Volcanic",
             "Mountains"
@@ -1832,6 +2012,7 @@
     {
         "name": "Cliffberry (Sumati)",
         "planet": "Sumati",
+        "planetId": "88327-2",
         "biomes": [
             "Frozen Plains",
             "Deciduous Forest",
@@ -1843,6 +2024,7 @@
     {
         "name": "Cliffberry (Tau Ceti VIII-b)",
         "planet": "Tau Ceti VIII-b",
+        "planetId": "8087-19",
         "biomes": [
             "Mountains",
             "Savanna"
@@ -1852,6 +2034,7 @@
     {
         "name": "Cliffberry (Ternion III)",
         "planet": "Ternion III",
+        "planetId": "119060-3",
         "biomes": [
             "Mountains",
             "Volcanic"
@@ -1861,6 +2044,7 @@
     {
         "name": "Cliffberry (Verne II)",
         "planet": "Verne II",
+        "planetId": "63947-2",
         "biomes": [
             "Mountains",
             "Coniferous Forest"
@@ -1870,6 +2054,7 @@
     {
         "name": "Cliffberry (Zelazny II)",
         "planet": "Zelazny II",
+        "planetId": "59092-2",
         "biomes": [
             "Mountains",
             "Coniferous Forest",
@@ -1880,6 +2065,7 @@
     {
         "name": "Cold Cave Nettle (Akila)",
         "planet": "Akila",
+        "planetId": "72432-2",
         "biomes": [
             "Frozen Plains"
         ],
@@ -1897,6 +2083,7 @@
     {
         "name": "Cold Cave Nettle (Jemison)",
         "planet": "Jemison",
+        "planetId": "71456-3",
         "biomes": [
             "Frozen Mountains",
             "Mountains"
@@ -1909,6 +2096,7 @@
     {
         "name": "Cold Cave Nettle (Lantana IV)",
         "planet": "Lantana IV",
+        "planetId": "57584-4",
         "biomes": [
             "Deciduous Forest",
             "Frozen Plains"
@@ -1918,6 +2106,7 @@
     {
         "name": "Cold Cave Nettle (Linnaeus II)",
         "planet": "Linnaeus II",
+        "planetId": "91156-2",
         "biomes": [
             "Mountains",
             "Frozen Mountains"
@@ -1930,6 +2119,7 @@
     {
         "name": "Cold Cave Nettle (Porrima IV-c)",
         "planet": "Porrima IV-c",
+        "planetId": "61748-17",
         "biomes": [
             "Frozen Mountains",
             "Mountains",
@@ -1940,6 +2130,7 @@
     {
         "name": "Cold Cave Nettle (Procyon III)",
         "planet": "Procyon III",
+        "planetId": "37173-3",
         "biomes": [
             "Frozen Plains"
         ],
@@ -1951,6 +2142,7 @@
     {
         "name": "Cold Cave Nettle (Schrodinger III)",
         "planet": "Schrodinger III",
+        "planetId": "87902-3",
         "biomes": [
             "Mountains",
             "Frozen Mountains"
@@ -1963,6 +2155,7 @@
     {
         "name": "Cold Cave Nettle (Verne II)",
         "planet": "Verne II",
+        "planetId": "63947-2",
         "biomes": [
             "Frozen Crevasses",
             "Mountains",
@@ -1973,6 +2166,7 @@
     {
         "name": "Crag Root (Bohr II)",
         "planet": "Bohr II",
+        "planetId": "73018-2",
         "biomes": [
             "Deciduous Forest",
             "Mountains"
@@ -1982,6 +2176,7 @@
     {
         "name": "Crag Root (Fermi III)",
         "planet": "Fermi III",
+        "planetId": "73788-3",
         "biomes": [
             "Deciduous Forest",
             "Mountains"
@@ -1991,6 +2186,7 @@
     {
         "name": "Crag Root (Guniibuu II)",
         "planet": "Guniibuu II",
+        "planetId": "84147-2",
         "biomes": [
             "Swamp"
         ],
@@ -2002,6 +2198,7 @@
     {
         "name": "Crag Root (Heinlein IV-b)",
         "planet": "Heinlein IV-b",
+        "planetId": "71731-16",
         "biomes": [
             "Volcanic",
             "Mountains",
@@ -2012,6 +2209,7 @@
     {
         "name": "Crag Root (Heisenberg II)",
         "planet": "Heisenberg II",
+        "planetId": "83344-2",
         "biomes": [
             "Hills",
             "Mountains",
@@ -2022,6 +2220,7 @@
     {
         "name": "Crag Root (Huygens III)",
         "planet": "Huygens III",
+        "planetId": "73082-3",
         "biomes": [
             "Deciduous Forest",
             "Mountains",
@@ -2032,6 +2231,7 @@
     {
         "name": "Crag Root (Hyla I)",
         "planet": "Hyla I",
+        "planetId": "70096-1",
         "biomes": [
             "Mountains"
         ],
@@ -2040,6 +2240,7 @@
     {
         "name": "Crag Root (Ixyll II)",
         "planet": "Ixyll II",
+        "planetId": "62328-2",
         "biomes": [
             "Mountains",
             "Frozen Plains",
@@ -2050,6 +2251,7 @@
     {
         "name": "Crag Root (Ixyll III-b)",
         "planet": "Ixyll III-b",
+        "planetId": "62328-12",
         "biomes": [
             "Mountains",
             "Swamp",
@@ -2060,6 +2262,7 @@
     {
         "name": "Crag Root (Kumasi II)",
         "planet": "Kumasi II",
+        "planetId": "56828-2",
         "biomes": [
             "Rocky Desert",
             "Frozen Plains",
@@ -2071,6 +2274,7 @@
     {
         "name": "Crag Root (Magnar)",
         "planet": "Magnar",
+        "planetId": "98924-2",
         "biomes": [
             "Swamp"
         ],
@@ -2082,6 +2286,7 @@
     {
         "name": "Crag Root (Montara Luna)",
         "planet": "Montara Luna",
+        "planetId": "72432-18",
         "biomes": [
             "Swamp"
         ],
@@ -2090,6 +2295,7 @@
     {
         "name": "Crag Root (Newton II)",
         "planet": "Newton II",
+        "planetId": "91756-2",
         "biomes": [
             "Mountains",
             "Swamp"
@@ -2119,6 +2325,7 @@
     {
         "name": "Crag Root (Verne II)",
         "planet": "Verne II",
+        "planetId": "63947-2",
         "biomes": [
             "Mountains",
             "Coniferous Forest"
@@ -2128,6 +2335,7 @@
     {
         "name": "Crater Weed (Bradbury IV)",
         "planet": "Bradbury IV",
+        "planetId": "81444-4",
         "biomes": [
             "Volcanic"
         ],
@@ -2136,6 +2344,7 @@
     {
         "name": "Crater Weed (Marduk IV)",
         "planet": "Marduk IV",
+        "planetId": "60805-4",
         "biomes": [
             "Volcanic"
         ],
@@ -2144,6 +2353,7 @@
     {
         "name": "Crater Weed (Newton III)",
         "planet": "Newton III",
+        "planetId": "91756-3",
         "biomes": [
             "Volcanic"
         ],
@@ -2152,6 +2362,7 @@
     {
         "name": "Crater Weed (Nirvana II)",
         "planet": "Nirvana II",
+        "planetId": "58401-2",
         "biomes": [
             "Volcanic",
             "Mountains"
@@ -2161,6 +2372,7 @@
     {
         "name": "Crater Weed (Shoza II)",
         "planet": "Shoza II",
+        "planetId": "67063-2",
         "biomes": [
             "Volcanic",
             "Deciduous Forest",
@@ -2172,6 +2384,7 @@
     {
         "name": "Craterhorn Shrub (Andromas III)",
         "planet": "Andromas III",
+        "planetId": "86705-3",
         "biomes": [
             "Craters"
         ],
@@ -2180,6 +2393,7 @@
     {
         "name": "Creeping Twin Shrub (Leonis III)",
         "planet": "Leonis III",
+        "planetId": "55476-3",
         "biomes": [
             "Volcanic"
         ],
@@ -2188,6 +2402,7 @@
     {
         "name": "Creeping Twin Shrub (Marduk IV)",
         "planet": "Marduk IV",
+        "planetId": "60805-4",
         "biomes": [
             "Volcanic"
         ],
@@ -2196,6 +2411,7 @@
     {
         "name": "Crimson Courtstalk (Archimedes II)",
         "planet": "Archimedes II",
+        "planetId": "75150-2",
         "biomes": [
             "Volcanic"
         ],
@@ -2204,6 +2420,7 @@
     {
         "name": "Crimson Courtstalk (Marduk IV)",
         "planet": "Marduk IV",
+        "planetId": "60805-4",
         "biomes": [
             "Volcanic"
         ],
@@ -2212,6 +2429,7 @@
     {
         "name": "Crimson Courtstalk (Nemeria II)",
         "planet": "Nemeria II",
+        "planetId": "84604-2",
         "biomes": [
             "Volcanic",
             "Mountains",
@@ -2224,6 +2442,7 @@
     {
         "name": "Crimson Courtstalk (Nirvana II)",
         "planet": "Nirvana II",
+        "planetId": "58401-2",
         "biomes": [
             "Volcanic",
             "Mountains"
@@ -2233,6 +2452,7 @@
     {
         "name": "Crimson Gibbet (Beta Ternion II)",
         "planet": "Beta Ternion II",
+        "planetId": "119058-2",
         "biomes": [
             "Hills"
         ],
@@ -2241,6 +2461,7 @@
     {
         "name": "Crimson Gibbet (Ixyll II)",
         "planet": "Ixyll II",
+        "planetId": "62328-2",
         "biomes": [
             "Savanna",
             "Mountains",
@@ -2254,6 +2475,7 @@
     {
         "name": "Crimson Gibbet (Maheo I)",
         "planet": "Maheo I",
+        "planetId": "118988-1",
         "biomes": [
             "Hills"
         ],
@@ -2262,6 +2484,7 @@
     {
         "name": "Crimson Gibbet (Tau Ceti II)",
         "planet": "Tau Ceti II",
+        "planetId": "8087-2",
         "biomes": [
             "Hills"
         ],
@@ -2270,6 +2493,7 @@
     {
         "name": "Crusher Leaf (Denebola I-b)",
         "planet": "Denebola I-b",
+        "planetId": "57459-6",
         "biomes": [
             "Volcanic"
         ],
@@ -2278,6 +2502,7 @@
     {
         "name": "Dappled Ash Bloom (Kumasi I)",
         "planet": "Kumasi I",
+        "planetId": "56828-1",
         "biomes": [
             "Volcanic"
         ],
@@ -2286,6 +2511,7 @@
     {
         "name": "Dappled Ash Bloom (Leonis III)",
         "planet": "Leonis III",
+        "planetId": "55476-3",
         "biomes": [
             "Volcanic"
         ],
@@ -2305,6 +2531,7 @@
     {
         "name": "Desiccated Yarberry (Bolivar I)",
         "planet": "Bolivar I",
+        "planetId": "118818-1",
         "biomes": [
             "Wetlands",
             "Tropical Forest"
@@ -2314,6 +2541,7 @@
     {
         "name": "Desiccated Yarberry (Kumasi I)",
         "planet": "Kumasi I",
+        "planetId": "56828-1",
         "biomes": [
             "Wetlands"
         ],
@@ -2322,6 +2550,7 @@
     {
         "name": "Dovefoot Pedestal (Aranae I)",
         "planet": "Aranae I",
+        "planetId": "72955-1",
         "biomes": [
             "Craters"
         ],
@@ -2330,6 +2559,7 @@
     {
         "name": "Dovefoot Pedestal (Strix III-a)",
         "planet": "Strix III-a",
+        "planetId": "72407-12",
         "biomes": [
             "Craters"
         ],
@@ -2338,6 +2568,7 @@
     {
         "name": "Dunetangle (Eridani III)",
         "planet": "Eridani III",
+        "planetId": "15471-3",
         "biomes": [
             "Sandy Desert"
         ],
@@ -2346,6 +2577,7 @@
     {
         "name": "Dunetangle (Gamma Vulpes I)",
         "planet": "Gamma Vulpes I",
+        "planetId": "75489-1",
         "biomes": [
             "Sandy Desert"
         ],
@@ -2354,6 +2586,7 @@
     {
         "name": "Dunetangle (Heinlein IV-b)",
         "planet": "Heinlein IV-b",
+        "planetId": "71731-16",
         "biomes": [
             "Sandy Desert"
         ],
@@ -2362,6 +2595,7 @@
     {
         "name": "Dunetangle (Porrima II)",
         "planet": "Porrima II",
+        "planetId": "61748-2",
         "biomes": [
             "Tropical Forest"
         ],
@@ -2370,6 +2604,7 @@
     {
         "name": "Dust Root (Kreet)",
         "planet": "Kreet",
+        "planetId": "88327-16",
         "biomes": [
             "Volcanic"
         ],
@@ -2378,6 +2613,7 @@
     {
         "name": "Duster Shrub (Leonis III)",
         "planet": "Leonis III",
+        "planetId": "55476-3",
         "biomes": [
             "Volcanic"
         ],
@@ -2386,6 +2622,7 @@
     {
         "name": "Duster Shrub (Ternion III)",
         "planet": "Ternion III",
+        "planetId": "119060-3",
         "biomes": [
             "Mountains",
             "Volcanic"
@@ -2395,6 +2632,7 @@
     {
         "name": "Enduring Bugleweed (Arcturus II)",
         "planet": "Arcturus II",
+        "planetId": "69451-2",
         "biomes": [
             "Sandy Desert",
             "Mountains"
@@ -2404,6 +2642,7 @@
     {
         "name": "Enduring Bugleweed (Beta Ternion III)",
         "planet": "Beta Ternion III",
+        "planetId": "119058-3",
         "biomes": [
             "Coniferous Forest",
             "Mountains"
@@ -2413,6 +2652,7 @@
     {
         "name": "Enduring Bugleweed (Bohr II)",
         "planet": "Bohr II",
+        "planetId": "73018-2",
         "biomes": [
             "Frozen Crevasses",
             "Mountains"
@@ -2422,6 +2662,7 @@
     {
         "name": "Enduring Bugleweed (Copernicus II)",
         "planet": "Copernicus II",
+        "planetId": "76816-2",
         "biomes": [
             "Mountains",
             "Hills"
@@ -2431,6 +2672,7 @@
     {
         "name": "Enduring Bugleweed (Kumasi II)",
         "planet": "Kumasi II",
+        "planetId": "56828-2",
         "biomes": [
             "Rocky Desert",
             "Frozen Plains",
@@ -2442,6 +2684,7 @@
     {
         "name": "Enduring Bugleweed (Newton II)",
         "planet": "Newton II",
+        "planetId": "91756-2",
         "biomes": [
             "Mountains",
             "Rocky Desert"
@@ -2451,6 +2694,7 @@
     {
         "name": "Enduring Bugleweed (Schrodinger VIII-a)",
         "planet": "Schrodinger VIII-a",
+        "planetId": "87902-20",
         "biomes": [
             "Mountains",
             "Volcanic",
@@ -2481,6 +2725,7 @@
     {
         "name": "Enduring Bugleweed (Tidacha I)",
         "planet": "Tidacha I",
+        "planetId": "82337-1",
         "biomes": [
             "Mountains",
             "Frozen Plains"
@@ -2490,6 +2735,7 @@
     {
         "name": "Enduring Bugleweed (Ursa Major II)",
         "planet": "Ursa Major II",
+        "planetId": "118742-2",
         "biomes": [
             "Mountains",
             "Coniferous Forest"
@@ -2499,6 +2745,7 @@
     {
         "name": "Enduring Bugleweed (Zosma V-a)",
         "planet": "Zosma V-a",
+        "planetId": "54712-12",
         "biomes": [
             "Volcanic",
             "Mountains"
@@ -2508,6 +2755,7 @@
     {
         "name": "Eurymedon Bulb (Charybdis IV)",
         "planet": "Charybdis IV",
+        "planetId": "56075-4",
         "biomes": [
             "Plateau"
         ],
@@ -2516,6 +2764,7 @@
     {
         "name": "Explorer' Coleus (Bolivar I)",
         "planet": "Bolivar I",
+        "planetId": "118818-1",
         "biomes": [
             "Hills",
             "Wetlands",
@@ -2535,6 +2784,7 @@
     {
         "name": "Explorer' Coleus (Gamma Vulpes II-a)",
         "planet": "Gamma Vulpes II-a",
+        "planetId": "75489-7",
         "biomes": [
             "Deciduous Forest",
             "Wetlands"
@@ -2544,6 +2794,7 @@
     {
         "name": "Explorer' Coleus (Muphrid IV)",
         "planet": "Muphrid IV",
+        "planetId": "67711-4",
         "biomes": [
             "Frozen Dunes",
             "Hills",
@@ -2555,6 +2806,7 @@
     {
         "name": "Explorer' Coleus (Shoza II)",
         "planet": "Shoza II",
+        "planetId": "67063-2",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -2563,6 +2815,7 @@
     {
         "name": "Explorer' Coleus (Ternion III)",
         "planet": "Ternion III",
+        "planetId": "119060-3",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -2572,6 +2825,7 @@
     {
         "name": "Fallen Star Palm (Andromas II)",
         "planet": "Andromas II",
+        "planetId": "86705-2",
         "biomes": [
             "Savanna"
         ],
@@ -2580,6 +2834,7 @@
     {
         "name": "Fallen Star Palm (Bel I)",
         "planet": "Bel I",
+        "planetId": "69192-1",
         "biomes": [
             "Savanna"
         ],
@@ -2588,6 +2843,7 @@
     {
         "name": "Fallen Star Palm (Bel II)",
         "planet": "Bel II",
+        "planetId": "69192-2",
         "biomes": [
             "Savanna"
         ],
@@ -2596,6 +2852,7 @@
     {
         "name": "Fallen Star Palm (Beta Ternion II)",
         "planet": "Beta Ternion II",
+        "planetId": "119058-2",
         "biomes": [
             "Deciduous Forest",
             "Savanna",
@@ -2606,6 +2863,7 @@
     {
         "name": "Fallen Star Palm (Proxima Ternion III)",
         "planet": "Proxima Ternion III",
+        "planetId": "119059-3",
         "biomes": [
             "Swamp",
             "Hills",
@@ -2616,6 +2874,7 @@
     {
         "name": "Fallen Star Palm (Ternion III)",
         "planet": "Ternion III",
+        "planetId": "119060-3",
         "biomes": [
             "Savanna"
         ],
@@ -2624,6 +2883,7 @@
     {
         "name": "Fallen Star Palm (Tirna VIII-c)",
         "planet": "Tirna VIII-c",
+        "planetId": "57270-25",
         "biomes": [
             "Swamp",
             "Savanna",
@@ -2635,6 +2895,7 @@
     {
         "name": "Fallen Star Palm (Ursa Major II)",
         "planet": "Ursa Major II",
+        "planetId": "118742-2",
         "biomes": [
             "Savanna",
             "Swamp"
@@ -2644,6 +2905,7 @@
     {
         "name": "Fallen Star Palm (Zeta Ophiuchi I)",
         "planet": "Zeta Ophiuchi I",
+        "planetId": "119147-1",
         "biomes": [
             "Swamp",
             "Mountains",
@@ -2655,6 +2917,7 @@
     {
         "name": "Fallen Star Palm (Zosma V-a)",
         "planet": "Zosma V-a",
+        "planetId": "54712-12",
         "biomes": [
             "Savanna"
         ],
@@ -2663,6 +2926,7 @@
     {
         "name": "Festering Junglecreep (Huygens III)",
         "planet": "Huygens III",
+        "planetId": "73082-3",
         "biomes": [
             "Deciduous Forest",
             "Swamp",
@@ -2683,6 +2947,7 @@
     {
         "name": "Fire Rose (Arcturus II)",
         "planet": "Arcturus II",
+        "planetId": "69451-2",
         "biomes": [
             "Tropical Forest"
         ],
@@ -2691,6 +2956,7 @@
     {
         "name": "Fire Rose (Freya III)",
         "planet": "Freya III",
+        "planetId": "72341-3",
         "biomes": [
             "Wetlands",
             "Deciduous Forest",
@@ -2701,6 +2967,7 @@
     {
         "name": "Fire Rose (Schrodinger VIII-a)",
         "planet": "Schrodinger VIII-a",
+        "planetId": "87902-20",
         "biomes": [
             "Deciduous Forest",
             "Tropical Forest"
@@ -2710,6 +2977,7 @@
     {
         "name": "Firecracker Vine (Beta Marae I)",
         "planet": "Beta Marae I",
+        "planetId": "119159-1",
         "biomes": [
             "Wetlands",
             "Tropical Forest"
@@ -2719,6 +2987,7 @@
     {
         "name": "Firecracker Vine (Groombridge VIII-a)",
         "planet": "Groombridge VIII-a",
+        "planetId": "57767-24",
         "biomes": [
             "Deciduous Forest",
             "Tropical Forest"
@@ -2728,6 +2997,7 @@
     {
         "name": "Flame Vine (Charybdis II)",
         "planet": "Charybdis II",
+        "planetId": "56075-2",
         "biomes": [
             "Swamp",
             "Deciduous Forest",
@@ -2739,6 +3009,7 @@
     {
         "name": "Flame Vine (Rana VI-a)",
         "planet": "Rana VI-a",
+        "planetId": "69766-17",
         "biomes": [
             "Swamp"
         ],
@@ -2747,6 +3018,7 @@
     {
         "name": "Flame Vine (Rutherford III)",
         "planet": "Rutherford III",
+        "planetId": "64587-3",
         "biomes": [
             "Swamp",
             "Deciduous Forest",
@@ -2765,6 +3037,7 @@
     {
         "name": "Forest Wisp (Algorab II)",
         "planet": "Algorab II",
+        "planetId": "60776-2",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -2773,6 +3046,7 @@
     {
         "name": "Forest Wisp (Bel II)",
         "planet": "Bel II",
+        "planetId": "69192-2",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -2781,6 +3055,7 @@
     {
         "name": "Forest Wisp (Beta Ternion III)",
         "planet": "Beta Ternion III",
+        "planetId": "119058-3",
         "biomes": [
             "Coniferous Forest",
             "Mountains"
@@ -2790,6 +3065,7 @@
     {
         "name": "Forest Wisp (Groombridge VIII-a)",
         "planet": "Groombridge VIII-a",
+        "planetId": "57767-24",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest",
@@ -2800,6 +3076,7 @@
     {
         "name": "Forest Wisp (Khayyam II)",
         "planet": "Khayyam II",
+        "planetId": "65150-2",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -2809,6 +3086,7 @@
     {
         "name": "Forest Wisp (Kumasi III)",
         "planet": "Kumasi III",
+        "planetId": "56828-3",
         "biomes": [
             "Hills",
             "Coniferous Forest",
@@ -2819,6 +3097,7 @@
     {
         "name": "Forest Wisp (McClure II)",
         "planet": "McClure II",
+        "planetId": "119106-2",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -2827,6 +3106,7 @@
     {
         "name": "Forest Wisp (Muphrid V-b)",
         "planet": "Muphrid V-b",
+        "planetId": "67711-19",
         "biomes": [
             "Frozen Hills",
             "Coniferous Forest"
@@ -2836,6 +3116,7 @@
     {
         "name": "Forest Wisp (Porrima III)",
         "planet": "Porrima III",
+        "planetId": "61748-3",
         "biomes": [
             "Coniferous Forest",
             "Frozen Plains",
@@ -2846,6 +3127,7 @@
     {
         "name": "Forest Wisp (Sparta IV)",
         "planet": "Sparta IV",
+        "planetId": "79252-4",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -2855,6 +3137,7 @@
     {
         "name": "Forest Wisp (Ternion III)",
         "planet": "Ternion III",
+        "planetId": "119060-3",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -2864,6 +3147,7 @@
     {
         "name": "Forest Wisp (Ursa Minor II)",
         "planet": "Ursa Minor II",
+        "planetId": "118743-2",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -2872,6 +3156,7 @@
     {
         "name": "Frigid Palm (Guniibuu II)",
         "planet": "Guniibuu II",
+        "planetId": "84147-2",
         "biomes": [
             "Mountains",
             "Frozen Plains"
@@ -2884,6 +3169,7 @@
     {
         "name": "Frigid Palm (Kumasi II)",
         "planet": "Kumasi II",
+        "planetId": "56828-2",
         "biomes": [
             "Frozen Plains",
             "Mountains"
@@ -2893,6 +3179,7 @@
     {
         "name": "Frigid Palm (Linnaeus II)",
         "planet": "Linnaeus II",
+        "planetId": "91156-2",
         "biomes": [
             "Mountains",
             "Frozen Mountains"
@@ -2905,6 +3192,7 @@
     {
         "name": "Frigid Palm (Strix I)",
         "planet": "Strix I",
+        "planetId": "72407-1",
         "biomes": [
             "Frozen Mountains",
             "Mountains"
@@ -2914,6 +3202,7 @@
     {
         "name": "Frigid Palm (Zeta Ophiuchi I)",
         "planet": "Zeta Ophiuchi I",
+        "planetId": "119147-1",
         "biomes": [
             "Frozen Dunes",
             "Mountains"
@@ -2926,6 +3215,7 @@
     {
         "name": "Frost Reed (Bardeen III)",
         "planet": "Bardeen III",
+        "planetId": "90582-3",
         "biomes": [
             "Mountains",
             "Frozen Plains"
@@ -2938,6 +3228,7 @@
     {
         "name": "Frost Reed (Bohr II)",
         "planet": "Bohr II",
+        "planetId": "73018-2",
         "biomes": [
             "Frozen Crevasses"
         ],
@@ -2946,6 +3237,7 @@
     {
         "name": "Frost Reed (Kreet)",
         "planet": "Kreet",
+        "planetId": "88327-16",
         "biomes": [
             "Frozen Volcanic"
         ],
@@ -2957,6 +3249,7 @@
     {
         "name": "Frost Reed (Procyon III)",
         "planet": "Procyon III",
+        "planetId": "37173-3",
         "biomes": [
             "Frozen Plains"
         ],
@@ -2968,6 +3261,7 @@
     {
         "name": "Frost Reed (Toliman II)",
         "planet": "Toliman II",
+        "planetId": "71453-2",
         "biomes": [
             "Frozen Plains",
             "Mountains",
@@ -2978,6 +3272,7 @@
     {
         "name": "Gasping Fireleaf (Altair II)",
         "planet": "Altair II",
+        "planetId": "97338-2",
         "biomes": [
             "Rocky Desert"
         ],
@@ -2986,6 +3281,7 @@
     {
         "name": "Gasping Fireleaf (Kang III)",
         "planet": "Kang III",
+        "planetId": "71517-3",
         "biomes": [
             "Rocky Desert"
         ],
@@ -2994,6 +3290,7 @@
     {
         "name": "Gasping Fireleaf (Rivera I)",
         "planet": "Rivera I",
+        "planetId": "118819-1",
         "biomes": [
             "Rocky Desert"
         ],
@@ -3002,6 +3299,7 @@
     {
         "name": "Ginger Cage Vine (Ursa Major I)",
         "planet": "Ursa Major I",
+        "planetId": "118742-1",
         "biomes": [
             "Plateau",
             "Sandy Desert"
@@ -3011,6 +3309,7 @@
     {
         "name": "Glossy Stickweed (Groombridge VIII-a)",
         "planet": "Groombridge VIII-a",
+        "planetId": "57767-24",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest",
@@ -3021,6 +3320,7 @@
     {
         "name": "Glossy Stickweed (Jemison)",
         "planet": "Jemison",
+        "planetId": "71456-3",
         "biomes": [
             "Deciduous Forest",
             "Mountains",
@@ -3031,6 +3331,7 @@
     {
         "name": "Glossy Stickweed (Marduk IV)",
         "planet": "Marduk IV",
+        "planetId": "60805-4",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -3039,6 +3340,7 @@
     {
         "name": "Glossy Stickweed (McClure II)",
         "planet": "McClure II",
+        "planetId": "119106-2",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -3047,6 +3349,7 @@
     {
         "name": "Glossy Stickweed (Moloch II)",
         "planet": "Moloch II",
+        "planetId": "68463-2",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -3056,6 +3359,7 @@
     {
         "name": "Glossy Stickweed (Newton III)",
         "planet": "Newton III",
+        "planetId": "91756-3",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest",
@@ -3066,6 +3370,7 @@
     {
         "name": "Glossy Stickweed (Oborum I)",
         "planet": "Oborum I",
+        "planetId": "119143-1",
         "biomes": [
             "Frozen Plains",
             "Coniferous Forest",
@@ -3076,6 +3381,7 @@
     {
         "name": "Glossy Stickweed (Piazzi IV-c)",
         "planet": "Piazzi IV-c",
+        "planetId": "103879-12",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -3095,6 +3401,7 @@
     {
         "name": "Gnaw Stalk (Bardeen III)",
         "planet": "Bardeen III",
+        "planetId": "90582-3",
         "biomes": [
             "Wetlands"
         ],
@@ -3103,6 +3410,7 @@
     {
         "name": "Gnaw Stalk (Ka'zaal)",
         "planet": "Ka'zaal",
+        "planetId": "76835-2",
         "biomes": [
             "Hills",
             "Wetlands"
@@ -3112,6 +3420,7 @@
     {
         "name": "Gnaw Stalk (Pyraas II)",
         "planet": "Pyraas II",
+        "planetId": "68415-2",
         "biomes": [
             "Wetlands"
         ],
@@ -3120,6 +3429,7 @@
     {
         "name": "Golden Creeper (Akila)",
         "planet": "Akila",
+        "planetId": "72432-2",
         "biomes": [
             "Frozen Plains",
             "Coniferous Forest",
@@ -3130,6 +3440,7 @@
     {
         "name": "Golden Creeper (Algorab III-b)",
         "planet": "Algorab III-b",
+        "planetId": "60776-9",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -3139,6 +3450,7 @@
     {
         "name": "Golden Creeper (Eridani IV)",
         "planet": "Eridani IV",
+        "planetId": "15471-4",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -3147,6 +3459,7 @@
     {
         "name": "Golden Creeper (Heisenberg V-a)",
         "planet": "Heisenberg V-a",
+        "planetId": "83344-12",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -3155,6 +3468,7 @@
     {
         "name": "Golden Creeper (Lantana III)",
         "planet": "Lantana III",
+        "planetId": "57584-3",
         "biomes": [
             "Mountains",
             "Coniferous Forest",
@@ -3165,6 +3479,7 @@
     {
         "name": "Golden Creeper (Montara Luna)",
         "planet": "Montara Luna",
+        "planetId": "72432-18",
         "biomes": [
             "Frozen Plains",
             "Coniferous Forest"
@@ -3174,6 +3489,7 @@
     {
         "name": "Golden Creeper (Muphrid V-b)",
         "planet": "Muphrid V-b",
+        "planetId": "67711-19",
         "biomes": [
             "Frozen Hills",
             "Coniferous Forest"
@@ -3183,6 +3499,7 @@
     {
         "name": "Golden Creeper (Sparta III)",
         "planet": "Sparta III",
+        "planetId": "79252-3",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -3192,6 +3509,7 @@
     {
         "name": "Golden Creeper (Sparta IV)",
         "planet": "Sparta IV",
+        "planetId": "79252-4",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -3201,6 +3519,7 @@
     {
         "name": "Golden Creeper (Ternion III)",
         "planet": "Ternion III",
+        "planetId": "119060-3",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -3210,6 +3529,7 @@
     {
         "name": "Golden Creeper (Verne II)",
         "planet": "Verne II",
+        "planetId": "63947-2",
         "biomes": [
             "Mountains",
             "Coniferous Forest"
@@ -3227,6 +3547,7 @@
     {
         "name": "Golden Sand Root (Kang III)",
         "planet": "Kang III",
+        "planetId": "71517-3",
         "biomes": [
             "Rocky Desert"
         ],
@@ -3235,6 +3556,7 @@
     {
         "name": "Golden Sand Root (Kumasi II)",
         "planet": "Kumasi II",
+        "planetId": "56828-2",
         "biomes": [
             "Rocky Desert"
         ],
@@ -3243,6 +3565,7 @@
     {
         "name": "Golden Sand Root (Shoza V)",
         "planet": "Shoza V",
+        "planetId": "67063-5",
         "biomes": [
             "Rocky Desert"
         ],
@@ -3251,6 +3574,7 @@
     {
         "name": "Hardy Woundwort (Gamma Vulpes II-a)",
         "planet": "Gamma Vulpes II-a",
+        "planetId": "75489-7",
         "biomes": [
             "Deciduous Forest",
             "Wetlands"
@@ -3269,6 +3593,7 @@
     {
         "name": "Haven Vine (Hawking I)",
         "planet": "Hawking I",
+        "planetId": "73489-1",
         "biomes": [
             "Volcanic",
             "Frozen Dunes"
@@ -3278,6 +3603,7 @@
     {
         "name": "Haven Vine (Jaffa III)",
         "planet": "Jaffa III",
+        "planetId": "79431-3",
         "biomes": [
             "Volcanic",
             "Coniferous Forest"
@@ -3287,6 +3613,7 @@
     {
         "name": "Haven Vine (Masada III)",
         "planet": "Masada III",
+        "planetId": "83021-3",
         "biomes": [
             "Volcanic",
             "Mountains",
@@ -3297,6 +3624,7 @@
     {
         "name": "Haven Vine (Shoza II)",
         "planet": "Shoza II",
+        "planetId": "67063-2",
         "biomes": [
             "Volcanic",
             "Sandy Desert",
@@ -3307,6 +3635,7 @@
     {
         "name": "Haven Vine (Zelazny III)",
         "planet": "Zelazny III",
+        "planetId": "59092-3",
         "biomes": [
             "Volcanic",
             "Coniferous Forest",
@@ -3317,6 +3646,7 @@
     {
         "name": "Haviva Vine (Alpha Andraste II)",
         "planet": "Alpha Andraste II",
+        "planetId": "5325-2",
         "biomes": [
             "Craters"
         ],
@@ -3328,6 +3658,7 @@
     {
         "name": "Haviva Vine (Andromas III)",
         "planet": "Andromas III",
+        "planetId": "86705-3",
         "biomes": [
             "Craters"
         ],
@@ -3336,6 +3667,7 @@
     {
         "name": "Hecate' Fireleaf (Arcturus II)",
         "planet": "Arcturus II",
+        "planetId": "69451-2",
         "biomes": [
             "Sandy Desert",
             "Mountains"
@@ -3345,6 +3677,7 @@
     {
         "name": "Hecate' Fireleaf (Bradbury III)",
         "planet": "Bradbury III",
+        "planetId": "81444-3",
         "biomes": [
             "Sandy Desert"
         ],
@@ -3353,6 +3686,7 @@
     {
         "name": "Hecate' Fireleaf (Gamma Vulpes I)",
         "planet": "Gamma Vulpes I",
+        "planetId": "75489-1",
         "biomes": [
             "Sandy Desert"
         ],
@@ -3361,6 +3695,7 @@
     {
         "name": "Hecate' Fireleaf (Groombridge I)",
         "planet": "Groombridge I",
+        "planetId": "57767-1",
         "biomes": [
             "Sandy Desert"
         ],
@@ -3369,6 +3704,7 @@
     {
         "name": "Hecate' Fireleaf (Porrima II)",
         "planet": "Porrima II",
+        "planetId": "61748-2",
         "biomes": [
             "Tropical Forest"
         ],
@@ -3377,6 +3713,7 @@
     {
         "name": "Hecate' Fireleaf (Zosma V-a)",
         "planet": "Zosma V-a",
+        "planetId": "54712-12",
         "biomes": [
             "Rocky Desert",
             "Sandy Desert"
@@ -3386,6 +3723,7 @@
     {
         "name": "Hunter' Stalk (Algorab III-b)",
         "planet": "Algorab III-b",
+        "planetId": "60776-9",
         "biomes": [
             "Swamp",
             "Wetlands"
@@ -3395,6 +3733,7 @@
     {
         "name": "Hunter' Stalk (Leviathan IV)",
         "planet": "Leviathan IV",
+        "planetId": "89684-4",
         "biomes": [
             "Mountains",
             "Swamp",
@@ -3405,6 +3744,7 @@
     {
         "name": "Hunter' Stalk (Maal IV)",
         "planet": "Maal IV",
+        "planetId": "74746-4",
         "biomes": [
             "Wetlands"
         ],
@@ -3413,6 +3753,7 @@
     {
         "name": "Hunter' Stalk (Pyraas II)",
         "planet": "Pyraas II",
+        "planetId": "68415-2",
         "biomes": [
             "Wetlands"
         ],
@@ -3421,6 +3762,7 @@
     {
         "name": "Hunter' Stalk (Pyraas VII-b)",
         "planet": "Pyraas VII-b",
+        "planetId": "68415-14",
         "biomes": [
             "Wetlands"
         ],
@@ -3429,6 +3771,7 @@
     {
         "name": "Hunter' Stalk (Shoza III)",
         "planet": "Shoza III",
+        "planetId": "67063-3",
         "biomes": [
             "Swamp",
             "Wetlands"
@@ -3438,6 +3781,7 @@
     {
         "name": "Ice Creeper (Decaran I)",
         "planet": "Decaran I",
+        "planetId": "119105-1",
         "biomes": [
             "Mountains",
             "Frozen Plains"
@@ -3450,6 +3794,7 @@
     {
         "name": "Ice Creeper (Hyla II)",
         "planet": "Hyla II",
+        "planetId": "70096-2",
         "biomes": [
             "Mountains",
             "Frozen Plains"
@@ -3459,6 +3804,7 @@
     {
         "name": "Ice Creeper (Lantana IV)",
         "planet": "Lantana IV",
+        "planetId": "57584-4",
         "biomes": [
             "Deciduous Forest",
             "Frozen Plains"
@@ -3479,6 +3825,7 @@
     {
         "name": "Ice Creeper (Tidacha I)",
         "planet": "Tidacha I",
+        "planetId": "82337-1",
         "biomes": [
             "Mountains",
             "Frozen Plains",
@@ -3489,6 +3836,7 @@
     {
         "name": "Ice Creeper (Zelazny III)",
         "planet": "Zelazny III",
+        "planetId": "59092-3",
         "biomes": [
             "Volcanic",
             "Frozen Plains"
@@ -3501,6 +3849,7 @@
     {
         "name": "Iceblood Vine (Decaran I)",
         "planet": "Decaran I",
+        "planetId": "119105-1",
         "biomes": [
             "Frozen Plains"
         ],
@@ -3509,6 +3858,7 @@
     {
         "name": "Iceblood Vine (Gamma Vulpes I)",
         "planet": "Gamma Vulpes I",
+        "planetId": "75489-1",
         "biomes": [
             "Frozen Plains"
         ],
@@ -3517,6 +3867,7 @@
     {
         "name": "Iceblood Vine (Hyla II)",
         "planet": "Hyla II",
+        "planetId": "70096-2",
         "biomes": [
             "Mountains",
             "Frozen Plains"
@@ -3526,6 +3877,7 @@
     {
         "name": "Jagged Heart leaf (Archimedes III)",
         "planet": "Archimedes III",
+        "planetId": "75150-3",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -3535,6 +3887,7 @@
     {
         "name": "Jagged Heart leaf (Bohr II)",
         "planet": "Bohr II",
+        "planetId": "73018-2",
         "biomes": [
             "Deciduous Forest",
             "Mountains"
@@ -3544,6 +3897,7 @@
     {
         "name": "Jagged Heart leaf (Ixyll III-b)",
         "planet": "Ixyll III-b",
+        "planetId": "62328-12",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -3562,6 +3916,7 @@
     {
         "name": "Jagged Heart leaf (Lantana IV)",
         "planet": "Lantana IV",
+        "planetId": "57584-4",
         "biomes": [
             "Deciduous Forest",
             "Frozen Plains"
@@ -3571,6 +3926,7 @@
     {
         "name": "Jagged Heart leaf (Nesoi)",
         "planet": "Nesoi",
+        "planetId": "72957-1",
         "biomes": [
             "Savanna",
             "Deciduous Forest"
@@ -3592,6 +3948,7 @@
     {
         "name": "Jealous Heart Vine (Marduk III)",
         "planet": "Marduk III",
+        "planetId": "60805-3",
         "biomes": [
             "Volcanic"
         ],
@@ -3600,6 +3957,7 @@
     {
         "name": "Jealous Heart Vine (Piazzi I)",
         "planet": "Piazzi I",
+        "planetId": "103879-1",
         "biomes": [
             "Volcanic"
         ],
@@ -3608,6 +3966,7 @@
     {
         "name": "Jealous Heart Vine (Piazzi IV-c)",
         "planet": "Piazzi IV-c",
+        "planetId": "103879-12",
         "biomes": [
             "Volcanic",
             "Coniferous Forest",
@@ -3618,6 +3977,7 @@
     {
         "name": "Jealous Heart Vine (Rivera I)",
         "planet": "Rivera I",
+        "planetId": "118819-1",
         "biomes": [
             "Volcanic",
             "Rocky Desert"
@@ -3627,6 +3987,7 @@
     {
         "name": "Kingshead Bugloss (Archimedes II)",
         "planet": "Archimedes II",
+        "planetId": "75150-2",
         "biomes": [
             "Volcanic"
         ],
@@ -3635,6 +3996,7 @@
     {
         "name": "Kingshead Bugloss (Guniibuu VI-b)",
         "planet": "Guniibuu VI-b",
+        "planetId": "84147-23",
         "biomes": [
             "Volcanic",
             "Hills"
@@ -3647,6 +4009,7 @@
     {
         "name": "Kingshead Bugloss (Jaffa III)",
         "planet": "Jaffa III",
+        "planetId": "79431-3",
         "biomes": [
             "Volcanic",
             "Coniferous Forest"
@@ -3656,6 +4019,7 @@
     {
         "name": "Laga Plant (Lantana III)",
         "planet": "Lantana III",
+        "planetId": "57584-3",
         "biomes": [
             "Mountains",
             "Coniferous Forest",
@@ -3667,6 +4031,7 @@
     {
         "name": "Laga Plant (Oborum I)",
         "planet": "Oborum I",
+        "planetId": "119143-1",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -3676,6 +4041,7 @@
     {
         "name": "Laga Plant (Schrodinger IV)",
         "planet": "Schrodinger IV",
+        "planetId": "87902-4",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -3685,6 +4051,7 @@
     {
         "name": "Laga Plant (Tidacha I)",
         "planet": "Tidacha I",
+        "planetId": "82337-1",
         "biomes": [
             "Mountains",
             "Swamp",
@@ -3696,6 +4063,7 @@
     {
         "name": "Laga Plant (Ursa Major II)",
         "planet": "Ursa Major II",
+        "planetId": "118742-2",
         "biomes": [
             "Mountains",
             "Coniferous Forest",
@@ -3707,6 +4075,7 @@
     {
         "name": "Laga Plant (Zelazny III)",
         "planet": "Zelazny III",
+        "planetId": "59092-3",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -3715,6 +4084,7 @@
     {
         "name": "Lattice Leaf (Alpha Andraste III)",
         "planet": "Alpha Andraste III",
+        "planetId": "5325-3",
         "biomes": [
             "Tropical Forest",
             "Deciduous Forest"
@@ -3727,6 +4097,7 @@
     {
         "name": "Lattice Leaf (Bolivar I)",
         "planet": "Bolivar I",
+        "planetId": "118818-1",
         "biomes": [
             "Savanna",
             "Wetlands",
@@ -3738,6 +4109,7 @@
     {
         "name": "Lattice Leaf (Maal V)",
         "planet": "Maal V",
+        "planetId": "74746-5",
         "biomes": [
             "Swamp",
             "Tropical Forest"
@@ -3756,6 +4128,7 @@
     {
         "name": "Leafy Morningstar (Bardeen III)",
         "planet": "Bardeen III",
+        "planetId": "90582-3",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -3764,6 +4137,7 @@
     {
         "name": "Leafy Morningstar (Bardeen V-c)",
         "planet": "Bardeen V-c",
+        "planetId": "90582-20",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -3773,6 +4147,7 @@
     {
         "name": "Leafy Morningstar (Bohr II)",
         "planet": "Bohr II",
+        "planetId": "73018-2",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -3781,6 +4156,7 @@
     {
         "name": "Leafy Morningstar (Groombridge VIII-a)",
         "planet": "Groombridge VIII-a",
+        "planetId": "57767-24",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest",
@@ -3792,6 +4168,7 @@
     {
         "name": "Leafy Morningstar (Hawking I)",
         "planet": "Hawking I",
+        "planetId": "73489-1",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest",
@@ -3802,6 +4179,7 @@
     {
         "name": "Leafy Morningstar (Shoza II)",
         "planet": "Shoza II",
+        "planetId": "67063-2",
         "biomes": [
             "Deciduous Forest",
             "Mountains"
@@ -3811,6 +4189,7 @@
     {
         "name": "Leaning Fireleaf (Bradbury IV)",
         "planet": "Bradbury IV",
+        "planetId": "81444-4",
         "biomes": [
             "Volcanic"
         ],
@@ -3819,6 +4198,7 @@
     {
         "name": "Leaning Fireleaf (Guniibuu VI-b)",
         "planet": "Guniibuu VI-b",
+        "planetId": "84147-23",
         "biomes": [
             "Volcanic",
             "Hills"
@@ -3828,6 +4208,7 @@
     {
         "name": "Leaning Fireleaf (Khayyam II)",
         "planet": "Khayyam II",
+        "planetId": "65150-2",
         "biomes": [
             "Volcanic",
             "Coniferous Forest",
@@ -3838,6 +4219,7 @@
     {
         "name": "Leaning Fireleaf (Marduk IV)",
         "planet": "Marduk IV",
+        "planetId": "60805-4",
         "biomes": [
             "Volcanic",
             "Frozen Crevasses"
@@ -3847,6 +4229,7 @@
     {
         "name": "Leaning Fireleaf (Piazzi I)",
         "planet": "Piazzi I",
+        "planetId": "103879-1",
         "biomes": [
             "Volcanic"
         ],
@@ -3855,6 +4238,7 @@
     {
         "name": "Mimic Pokeweed (Strix III-a)",
         "planet": "Strix III-a",
+        "planetId": "72407-12",
         "biomes": [
             "Craters",
             "Hills"
@@ -3864,6 +4248,7 @@
     {
         "name": "Mire Root (Freya III)",
         "planet": "Freya III",
+        "planetId": "72341-3",
         "biomes": [
             "Wetlands",
             "Tropical Forest"
@@ -3873,6 +4258,7 @@
     {
         "name": "Mire Root (Huygens III)",
         "planet": "Huygens III",
+        "planetId": "73082-3",
         "biomes": [
             "Deciduous Forest",
             "Swamp",
@@ -3884,6 +4270,7 @@
     {
         "name": "Mire Root (Jaffa II)",
         "planet": "Jaffa II",
+        "planetId": "79431-2",
         "biomes": [
             "Wetlands",
             "Deciduous Forest",
@@ -3894,6 +4281,7 @@
     {
         "name": "Moon Root (Archimedes III)",
         "planet": "Archimedes III",
+        "planetId": "75150-3",
         "biomes": [
             "Swamp",
             "Wetlands"
@@ -3912,6 +4300,7 @@
     {
         "name": "Moon Root (Leonis V)",
         "planet": "Leonis V",
+        "planetId": "55476-5",
         "biomes": [
             "Mountains",
             "Wetlands"
@@ -3921,6 +4310,7 @@
     {
         "name": "Moth Vine (Arcturus II)",
         "planet": "Arcturus II",
+        "planetId": "69451-2",
         "biomes": [
             "Tropical Forest"
         ],
@@ -3929,6 +4319,7 @@
     {
         "name": "Moth Vine (Jaffa II)",
         "planet": "Jaffa II",
+        "planetId": "79431-2",
         "biomes": [
             "Deciduous Forest",
             "Tropical Forest"
@@ -3938,6 +4329,7 @@
     {
         "name": "Moth Vine (Nemeria I)",
         "planet": "Nemeria I",
+        "planetId": "84604-1",
         "biomes": [
             "Tropical Forest"
         ],
@@ -3946,6 +4338,7 @@
     {
         "name": "Moth Vine (Tau Ceti VIII-b)",
         "planet": "Tau Ceti VIII-b",
+        "planetId": "8087-19",
         "biomes": [
             "Tropical Forest",
             "Deciduous Forest"
@@ -3955,6 +4348,7 @@
     {
         "name": "Moth Vine (Ursa Major II)",
         "planet": "Ursa Major II",
+        "planetId": "118742-2",
         "biomes": [
             "Coniferous Forest",
             "Tropical Forest",
@@ -3965,6 +4359,7 @@
     {
         "name": "Moth Vine (Zelazny II)",
         "planet": "Zelazny II",
+        "planetId": "59092-2",
         "biomes": [
             "Swamp",
             "Tropical Forest"
@@ -3974,6 +4369,7 @@
     {
         "name": "Moth Vine (Zelazny III)",
         "planet": "Zelazny III",
+        "planetId": "59092-3",
         "biomes": [
             "Coniferous Forest",
             "Tropical Forest"
@@ -3983,6 +4379,7 @@
     {
         "name": "Mountain Silkweed (Al-Battani II)",
         "planet": "Al-Battani II",
+        "planetId": "65147-2",
         "biomes": [
             "Mountains"
         ],
@@ -4001,6 +4398,7 @@
     {
         "name": "Mountain Silkweed (Decaran I)",
         "planet": "Decaran I",
+        "planetId": "119105-1",
         "biomes": [
             "Mountains"
         ],
@@ -4009,6 +4407,7 @@
     {
         "name": "Mountain Silkweed (Hyla II)",
         "planet": "Hyla II",
+        "planetId": "70096-2",
         "biomes": [
             "Swamp",
             "Mountains"
@@ -4018,6 +4417,7 @@
     {
         "name": "Mountain Silkweed (Linnaeus II)",
         "planet": "Linnaeus II",
+        "planetId": "91156-2",
         "biomes": [
             "Mountains"
         ],
@@ -4026,6 +4426,7 @@
     {
         "name": "Mountain Silkweed (Masada III)",
         "planet": "Masada III",
+        "planetId": "83021-3",
         "biomes": [
             "Mountains",
             "Hills"
@@ -4035,6 +4436,7 @@
     {
         "name": "Mountain Silkweed (Nemeria IV-a)",
         "planet": "Nemeria IV-a",
+        "planetId": "84604-12",
         "biomes": [
             "Mountains",
             "Frozen Plains",
@@ -4046,6 +4448,7 @@
     {
         "name": "Mountain Silkweed (Strix III-a)",
         "planet": "Strix III-a",
+        "planetId": "72407-12",
         "biomes": [
             "Mountains"
         ],
@@ -4054,6 +4457,7 @@
     {
         "name": "Mountain Silkweed (Ternion III)",
         "planet": "Ternion III",
+        "planetId": "119060-3",
         "biomes": [
             "Mountains",
             "Volcanic"
@@ -4063,6 +4467,7 @@
     {
         "name": "Mountain Silkweed (Zeta Ophiuchi I)",
         "planet": "Zeta Ophiuchi I",
+        "planetId": "119147-1",
         "biomes": [
             "Swamp",
             "Frozen Dunes",
@@ -4075,6 +4480,7 @@
     {
         "name": "Mustard Bugweed (Maal IV)",
         "planet": "Maal IV",
+        "planetId": "74746-4",
         "biomes": [
             "Mountains",
             "Sandy Desert"
@@ -4084,6 +4490,7 @@
     {
         "name": "Mustard Bugweed (Schrodinger III)",
         "planet": "Schrodinger III",
+        "planetId": "87902-3",
         "biomes": [
             "Sandy Desert",
             "Hills"
@@ -4093,6 +4500,7 @@
     {
         "name": "Mustard Bugweed (Tirna II)",
         "planet": "Tirna II",
+        "planetId": "57270-2",
         "biomes": [
             "Sandy Desert",
             "Mountains"
@@ -4102,6 +4510,7 @@
     {
         "name": "Mustard Bugweed (Ursa Major I)",
         "planet": "Ursa Major I",
+        "planetId": "118742-1",
         "biomes": [
             "Plateau",
             "Sandy Desert"
@@ -4111,6 +4520,7 @@
     {
         "name": "Nebula Vine (Alpha Andraste II)",
         "planet": "Alpha Andraste II",
+        "planetId": "5325-2",
         "biomes": [
             "Mountains"
         ],
@@ -4129,6 +4539,7 @@
     {
         "name": "Nebula Vine (Bradbury III)",
         "planet": "Bradbury III",
+        "planetId": "81444-3",
         "biomes": [
             "Hills",
             "Mountains"
@@ -4138,6 +4549,7 @@
     {
         "name": "Nebula Vine (Enlil II)",
         "planet": "Enlil II",
+        "planetId": "78498-2",
         "biomes": [
             "Mountains"
         ],
@@ -4146,6 +4558,7 @@
     {
         "name": "Nebula Vine (Gamma Vulpes II-a)",
         "planet": "Gamma Vulpes II-a",
+        "planetId": "75489-7",
         "biomes": [
             "Volcanic",
             "Mountains"
@@ -4155,6 +4568,7 @@
     {
         "name": "Nebula Vine (Heisenberg II)",
         "planet": "Heisenberg II",
+        "planetId": "83344-2",
         "biomes": [
             "Hills",
             "Mountains",
@@ -4165,6 +4579,7 @@
     {
         "name": "Nebula Vine (Heisenberg V-a)",
         "planet": "Heisenberg V-a",
+        "planetId": "83344-12",
         "biomes": [
             "Mountains"
         ],
@@ -4173,6 +4588,7 @@
     {
         "name": "Nebula Vine (Hyla II)",
         "planet": "Hyla II",
+        "planetId": "70096-2",
         "biomes": [
             "Swamp",
             "Mountains"
@@ -4182,6 +4598,7 @@
     {
         "name": "Nebula Vine (Kreet)",
         "planet": "Kreet",
+        "planetId": "88327-16",
         "biomes": [
             "Mountains"
         ],
@@ -4190,6 +4607,7 @@
     {
         "name": "Nebula Vine (Shoza III)",
         "planet": "Shoza III",
+        "planetId": "67063-3",
         "biomes": [
             "Mountains",
             "Savanna"
@@ -4199,6 +4617,7 @@
     {
         "name": "Nebula Vine (Zelazny II)",
         "planet": "Zelazny II",
+        "planetId": "59092-2",
         "biomes": [
             "Mountains",
             "Frozen Plains",
@@ -4210,6 +4629,7 @@
     {
         "name": "Nebula Weed (Bardeen III)",
         "planet": "Bardeen III",
+        "planetId": "90582-3",
         "biomes": [
             "Wetlands",
             "Deciduous Forest",
@@ -4220,6 +4640,7 @@
     {
         "name": "Nebula Weed (Bohr II)",
         "planet": "Bohr II",
+        "planetId": "73018-2",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -4228,6 +4649,7 @@
     {
         "name": "Nebula Weed (Charybdis II)",
         "planet": "Charybdis II",
+        "planetId": "56075-2",
         "biomes": [
             "Swamp",
             "Deciduous Forest",
@@ -4239,6 +4661,7 @@
     {
         "name": "Nebula Weed (Huygens III)",
         "planet": "Huygens III",
+        "planetId": "73082-3",
         "biomes": [
             "Deciduous Forest",
             "Mountains",
@@ -4250,6 +4673,7 @@
     {
         "name": "Nova Bloom (Groombridge VIII-a)",
         "planet": "Groombridge VIII-a",
+        "planetId": "57767-24",
         "biomes": [
             "Mountains",
             "Savanna"
@@ -4259,6 +4683,7 @@
     {
         "name": "Nova Bloom (Kumasi III)",
         "planet": "Kumasi III",
+        "planetId": "56828-3",
         "biomes": [
             "Hills",
             "Coniferous Forest",
@@ -4270,6 +4695,7 @@
     {
         "name": "Nova Bloom (Rutherford III)",
         "planet": "Rutherford III",
+        "planetId": "64587-3",
         "biomes": [
             "Savanna"
         ],
@@ -4278,6 +4704,7 @@
     {
         "name": "Nova Bloom (Ursa Major II)",
         "planet": "Ursa Major II",
+        "planetId": "118742-2",
         "biomes": [
             "Savanna",
             "Swamp"
@@ -4287,6 +4714,7 @@
     {
         "name": "Nova Bloom (Zeta Ophiuchi I)",
         "planet": "Zeta Ophiuchi I",
+        "planetId": "119147-1",
         "biomes": [
             "Savanna"
         ],
@@ -4295,6 +4723,7 @@
     {
         "name": "Passenger Vine (Copernicus II)",
         "planet": "Copernicus II",
+        "planetId": "76816-2",
         "biomes": [
             "Mountains",
             "Swamp",
@@ -4306,6 +4735,7 @@
     {
         "name": "Passenger Vine (Leonis III)",
         "planet": "Leonis III",
+        "planetId": "55476-3",
         "biomes": [
             "Volcanic"
         ],
@@ -4314,6 +4744,7 @@
     {
         "name": "Passenger Vine (Tirna II)",
         "planet": "Tirna II",
+        "planetId": "57270-2",
         "biomes": [
             "Volcanic",
             "Sandy Desert"
@@ -4323,6 +4754,7 @@
     {
         "name": "Phoenix Briar (Heinlein VI-a)",
         "planet": "Heinlein VI-a",
+        "planetId": "71731-24",
         "biomes": [
             "Deciduous Forest",
             "Tropical Forest",
@@ -4334,6 +4766,7 @@
     {
         "name": "Prickly Awaj (Charybdis IV)",
         "planet": "Charybdis IV",
+        "planetId": "56075-4",
         "biomes": [
             "Rocky Desert"
         ],
@@ -4342,6 +4775,7 @@
     {
         "name": "Red Latticebulb (Archimedes V-a)",
         "planet": "Archimedes V-a",
+        "planetId": "75150-13",
         "biomes": [
             "Hills"
         ],
@@ -4350,6 +4784,7 @@
     {
         "name": "Red Latticebulb (Bolivar I)",
         "planet": "Bolivar I",
+        "planetId": "118818-1",
         "biomes": [
             "Savanna",
             "Hills",
@@ -4360,6 +4795,7 @@
     {
         "name": "Red Latticebulb (Eridani II)",
         "planet": "Eridani II",
+        "planetId": "15471-2",
         "biomes": [
             "Mountains",
             "Hills"
@@ -4369,6 +4805,7 @@
     {
         "name": "Red Latticebulb (Heisenberg V-a)",
         "planet": "Heisenberg V-a",
+        "planetId": "83344-12",
         "biomes": [
             "Hills"
         ],
@@ -4377,6 +4814,7 @@
     {
         "name": "Red Latticebulb (Huygens IV)",
         "planet": "Huygens IV",
+        "planetId": "73082-4",
         "biomes": [
             "Hills"
         ],
@@ -4385,6 +4823,7 @@
     {
         "name": "Red Latticebulb (Ka'zaal)",
         "planet": "Ka'zaal",
+        "planetId": "76835-2",
         "biomes": [
             "Hills",
             "Wetlands"
@@ -4394,6 +4833,7 @@
     {
         "name": "Red Latticebulb (Leonis V)",
         "planet": "Leonis V",
+        "planetId": "55476-5",
         "biomes": [
             "Sandy Desert",
             "Savanna",
@@ -4413,6 +4853,7 @@
     {
         "name": "Red Stinging Nettle (Niira)",
         "planet": "Niira",
+        "planetId": "88327-1",
         "biomes": [
             "Hills",
             "Wetlands"
@@ -4422,6 +4863,7 @@
     {
         "name": "Red Stinging Nettle (Ursa Major I)",
         "planet": "Ursa Major I",
+        "planetId": "118742-1",
         "biomes": [
             "Plateau",
             "Sandy Desert"
@@ -4431,6 +4873,7 @@
     {
         "name": "Rosy Tendril Weed (Rana III)",
         "planet": "Rana III",
+        "planetId": "69766-3",
         "biomes": [
             "Volcanic",
             "Hills"
@@ -4451,6 +4894,7 @@
     {
         "name": "Rotorstalk (Bardeen V-c)",
         "planet": "Bardeen V-c",
+        "planetId": "90582-20",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -4460,6 +4904,7 @@
     {
         "name": "Rotting Stinkroot (Bardeen III)",
         "planet": "Bardeen III",
+        "planetId": "90582-3",
         "biomes": [
             "Wetlands"
         ],
@@ -4471,6 +4916,7 @@
     {
         "name": "Rotting Stinkroot (Ka'zaal)",
         "planet": "Ka'zaal",
+        "planetId": "76835-2",
         "biomes": [
             "Hills",
             "Wetlands"
@@ -4483,6 +4929,7 @@
     {
         "name": "Rotting Stinkroot (Procyon III)",
         "planet": "Procyon III",
+        "planetId": "37173-3",
         "biomes": [
             "Wetlands"
         ],
@@ -4506,6 +4953,7 @@
     {
         "name": "Sage Shrub (Bel I)",
         "planet": "Bel I",
+        "planetId": "69192-1",
         "biomes": [
             "Hills",
             "Savanna"
@@ -4515,6 +4963,7 @@
     {
         "name": "Sage Shrub (Beta Ternion II)",
         "planet": "Beta Ternion II",
+        "planetId": "119058-2",
         "biomes": [
             "Savanna",
             "Sandy Desert"
@@ -4533,6 +4982,7 @@
     {
         "name": "Sage Shrub (Charybdis II)",
         "planet": "Charybdis II",
+        "planetId": "56075-2",
         "biomes": [
             "Savanna"
         ],
@@ -4541,6 +4991,7 @@
     {
         "name": "Sage Shrub (Codos)",
         "planet": "Codos",
+        "planetId": "72432-14",
         "biomes": [
             "Swamp",
             "Savanna"
@@ -4550,6 +5001,7 @@
     {
         "name": "Sage Shrub (Groombridge VIII-a)",
         "planet": "Groombridge VIII-a",
+        "planetId": "57767-24",
         "biomes": [
             "Mountains",
             "Savanna"
@@ -4559,6 +5011,7 @@
     {
         "name": "Sage Shrub (Leonis V)",
         "planet": "Leonis V",
+        "planetId": "55476-5",
         "biomes": [
             "Savanna",
             "Hills"
@@ -4568,6 +5021,7 @@
     {
         "name": "Sage Shrub (Masada III)",
         "planet": "Masada III",
+        "planetId": "83021-3",
         "biomes": [
             "Wetlands",
             "Savanna"
@@ -4577,6 +5031,7 @@
     {
         "name": "Sage Shrub (Shoza III)",
         "planet": "Shoza III",
+        "planetId": "67063-3",
         "biomes": [
             "Savanna"
         ],
@@ -4585,6 +5040,7 @@
     {
         "name": "Sandclaw (Groombridge I)",
         "planet": "Groombridge I",
+        "planetId": "57767-1",
         "biomes": [
             "Sandy Desert"
         ],
@@ -4593,6 +5049,7 @@
     {
         "name": "Sandclaw (Huygens VII-b)",
         "planet": "Huygens VII-b",
+        "planetId": "73082-17",
         "biomes": [
             "Sandy Desert"
         ],
@@ -4601,6 +5058,7 @@
     {
         "name": "Sandclaw (Nesoi)",
         "planet": "Nesoi",
+        "planetId": "72957-1",
         "biomes": [
             "Mountains",
             "Sandy Desert",
@@ -4611,6 +5069,7 @@
     {
         "name": "Sandclaw (Porrima II)",
         "planet": "Porrima II",
+        "planetId": "61748-2",
         "biomes": [
             "Tropical Forest"
         ],
@@ -4619,6 +5078,7 @@
     {
         "name": "Sandclaw (Pyraas II)",
         "planet": "Pyraas II",
+        "planetId": "68415-2",
         "biomes": [
             "Volcanic",
             "Sandy Desert",
@@ -4629,6 +5089,7 @@
     {
         "name": "Sandclaw (Strix I)",
         "planet": "Strix I",
+        "planetId": "72407-1",
         "biomes": [
             "Sandy Desert"
         ],
@@ -4637,6 +5098,7 @@
     {
         "name": "Sandy Goldenglow (Codos)",
         "planet": "Codos",
+        "planetId": "72432-14",
         "biomes": [
             "Mountains",
             "Swamp"
@@ -4646,6 +5108,7 @@
     {
         "name": "Sandy Goldenglow (Gamma Vulpes I)",
         "planet": "Gamma Vulpes I",
+        "planetId": "75489-1",
         "biomes": [
             "Sandy Desert"
         ],
@@ -4654,6 +5117,7 @@
     {
         "name": "Sandy Goldenglow (Heinlein IV-b)",
         "planet": "Heinlein IV-b",
+        "planetId": "71731-16",
         "biomes": [
             "Sandy Desert"
         ],
@@ -4662,6 +5126,7 @@
     {
         "name": "Satellite Ghostvine (Charybdis III)",
         "planet": "Charybdis III",
+        "planetId": "56075-3",
         "biomes": [
             "Wetland"
         ],
@@ -4670,6 +5135,7 @@
     {
         "name": "Satellite Ghostvine (Enlil II)",
         "planet": "Enlil II",
+        "planetId": "78498-2",
         "biomes": [
             "Mountains",
             "Savanna"
@@ -4679,6 +5145,7 @@
     {
         "name": "Satellite Ghostvine (Guniibuu II)",
         "planet": "Guniibuu II",
+        "planetId": "84147-2",
         "biomes": [
             "Savanna"
         ],
@@ -4687,6 +5154,7 @@
     {
         "name": "Satellite Ghostvine (Ixyll III-b)",
         "planet": "Ixyll III-b",
+        "planetId": "62328-12",
         "biomes": [
             "Savanna",
             "Wetlands"
@@ -4696,6 +5164,7 @@
     {
         "name": "Satellite Ghostvine (Moloch II)",
         "planet": "Moloch II",
+        "planetId": "68463-2",
         "biomes": [
             "Swamp",
             "Savanna"
@@ -4705,6 +5174,7 @@
     {
         "name": "Satellite Ghostvine (Nemeria IV-a)",
         "planet": "Nemeria IV-a",
+        "planetId": "84604-12",
         "biomes": [
             "Deciduous Forest",
             "Savanna",
@@ -4715,6 +5185,7 @@
     {
         "name": "Satellite Ghostvine (Pyraas II)",
         "planet": "Pyraas II",
+        "planetId": "68415-2",
         "biomes": [
             "Savanna",
             "Sandy Desert"
@@ -4735,6 +5206,7 @@
     {
         "name": "Savage Woundwort (Charybdis II)",
         "planet": "Charybdis II",
+        "planetId": "56075-2",
         "biomes": [
             "Swamp",
             "Deciduous Forest"
@@ -4744,6 +5216,7 @@
     {
         "name": "Savage Woundwort (Copernicus IV)",
         "planet": "Copernicus IV",
+        "planetId": "76816-4",
         "biomes": [
             "Swamp",
             "Savanna"
@@ -4753,6 +5226,7 @@
     {
         "name": "Savage Woundwort (Heisenberg V-a)",
         "planet": "Heisenberg V-a",
+        "planetId": "83344-12",
         "biomes": [
             "Swamp"
         ],
@@ -4761,6 +5235,7 @@
     {
         "name": "Savage Woundwort (Montara Luna)",
         "planet": "Montara Luna",
+        "planetId": "72432-18",
         "biomes": [
             "Swamp"
         ],
@@ -4769,6 +5244,7 @@
     {
         "name": "Savage Woundwort (Schrodinger IV)",
         "planet": "Schrodinger IV",
+        "planetId": "87902-4",
         "biomes": [
             "Swamp",
             "Deciduous Forest",
@@ -4788,6 +5264,7 @@
     {
         "name": "Scarlet Hillfrond (Heisenberg II)",
         "planet": "Heisenberg II",
+        "planetId": "83344-2",
         "biomes": [
             "Hills",
             "Mountains",
@@ -4798,6 +5275,7 @@
     {
         "name": "Scarlet Hillfrond (Heisenberg V-a)",
         "planet": "Heisenberg V-a",
+        "planetId": "83344-12",
         "biomes": [
             "Hills"
         ],
@@ -4806,6 +5284,7 @@
     {
         "name": "Scarlet Hillfrond (Masada III)",
         "planet": "Masada III",
+        "planetId": "83021-3",
         "biomes": [
             "Volcanic",
             "Mountains",
@@ -4816,6 +5295,7 @@
     {
         "name": "Scarlet Hillfrond (Proxima Ternion III)",
         "planet": "Proxima Ternion III",
+        "planetId": "119059-3",
         "biomes": [
             "Hills",
             "Savanna"
@@ -4825,6 +5305,7 @@
     {
         "name": "Scarlet Hillfrond (Schrodinger III)",
         "planet": "Schrodinger III",
+        "planetId": "87902-3",
         "biomes": [
             "Mountains",
             "Sandy Desert",
@@ -4835,6 +5316,7 @@
     {
         "name": "Sleeping Giant Thorn (Lantana VIII-b)",
         "planet": "Lantana VIII-b",
+        "planetId": "57584-17",
         "biomes": [
             "Rocky Desert",
             "Sandy Desert"
@@ -4844,6 +5326,7 @@
     {
         "name": "Sleeping Giant Thorn (Strix III-a)",
         "planet": "Strix III-a",
+        "planetId": "72407-12",
         "biomes": [
             "Rocky Desert"
         ],
@@ -4852,6 +5335,7 @@
     {
         "name": "Spike Spit Trap (Guniibuu II)",
         "planet": "Guniibuu II",
+        "planetId": "84147-2",
         "biomes": [
             "Mountains",
             "Swamp"
@@ -4861,6 +5345,7 @@
     {
         "name": "Spike Spit Trap (Ixyll III-b)",
         "planet": "Ixyll III-b",
+        "planetId": "62328-12",
         "biomes": [
             "Savanna",
             "Swamp"
@@ -4870,6 +5355,7 @@
     {
         "name": "Spike Spit Trap (Moloch II)",
         "planet": "Moloch II",
+        "planetId": "68463-2",
         "biomes": [
             "Swamp",
             "Savanna",
@@ -4880,6 +5366,7 @@
     {
         "name": "Spike Spit Trap (Rana VI-a)",
         "planet": "Rana VI-a",
+        "planetId": "69766-17",
         "biomes": [
             "Swamp"
         ],
@@ -4888,6 +5375,7 @@
     {
         "name": "Spike Spit Trap (Rutherford III)",
         "planet": "Rutherford III",
+        "planetId": "64587-3",
         "biomes": [
             "Swamp",
             "Savanna"
@@ -4905,6 +5393,7 @@
     {
         "name": "Spiny Bell Cactus (Eridani III)",
         "planet": "Eridani III",
+        "planetId": "15471-3",
         "biomes": [
             "Sandy Desert"
         ],
@@ -4913,6 +5402,7 @@
     {
         "name": "Spiny Bell Cactus (Schrodinger III)",
         "planet": "Schrodinger III",
+        "planetId": "87902-3",
         "biomes": [
             "Sandy Desert"
         ],
@@ -4921,6 +5411,7 @@
     {
         "name": "Spiny Bell Cactus (Tirna II)",
         "planet": "Tirna II",
+        "planetId": "57270-2",
         "biomes": [
             "Volcanic",
             "Sandy Desert"
@@ -4930,6 +5421,7 @@
     {
         "name": "Spiny Ghost Cactus (Copernicus III)",
         "planet": "Copernicus III",
+        "planetId": "76816-3",
         "biomes": [
             "Volcanic"
         ],
@@ -4948,6 +5440,7 @@
     {
         "name": "Spiny Ghost Cactus (Muphrid V-b)",
         "planet": "Muphrid V-b",
+        "planetId": "67711-19",
         "biomes": [
             "Coniferous Forest",
             "Savanna",
@@ -4958,6 +5451,7 @@
     {
         "name": "Spiny Ghost Cactus (Nemeria II)",
         "planet": "Nemeria II",
+        "planetId": "84604-2",
         "biomes": [
             "Volcanic",
             "Mountains",
@@ -4970,6 +5464,7 @@
     {
         "name": "Spiny Ghost Cactus (Strix I)",
         "planet": "Strix I",
+        "planetId": "72407-1",
         "biomes": [
             "Volcanic",
             "Craters"
@@ -4979,6 +5474,7 @@
     {
         "name": "Spiral Bloom (Codos)",
         "planet": "Codos",
+        "planetId": "72432-14",
         "biomes": [
             "Mountains"
         ],
@@ -4987,6 +5483,7 @@
     {
         "name": "Spiral Bloom (Feynman IV)",
         "planet": "Feynman IV",
+        "planetId": "86469-4",
         "biomes": [
             "Frozen Volcanic",
             "Craters",
@@ -5001,6 +5498,7 @@
     {
         "name": "Spiral Bloom (Hawking I)",
         "planet": "Hawking I",
+        "planetId": "73489-1",
         "biomes": [
             "Volcanic",
             "Coniferous Forest",
@@ -5012,6 +5510,7 @@
     {
         "name": "Spiral Bloom (Hyla II)",
         "planet": "Hyla II",
+        "planetId": "70096-2",
         "biomes": [
             "Mountains"
         ],
@@ -5020,6 +5519,7 @@
     {
         "name": "Spiral Bloom (Ixyll II)",
         "planet": "Ixyll II",
+        "planetId": "62328-2",
         "biomes": [
             "Mountains",
             "Deciduous Forest",
@@ -5030,6 +5530,7 @@
     {
         "name": "Spiral Bloom (Leonis IV)",
         "planet": "Leonis IV",
+        "planetId": "55476-4",
         "biomes": [
             "Mountains",
             "Hills"
@@ -5039,6 +5540,7 @@
     {
         "name": "Spiral Bloom (Leonis V)",
         "planet": "Leonis V",
+        "planetId": "55476-5",
         "biomes": [
             "Mountains",
             "Wetlands"
@@ -5048,6 +5550,7 @@
     {
         "name": "Spiral Bloom (Maal V)",
         "planet": "Maal V",
+        "planetId": "74746-5",
         "biomes": [
             "Mountains",
             "Frozen Plains"
@@ -5057,6 +5560,7 @@
     {
         "name": "Spiral Bloom (Shoza II)",
         "planet": "Shoza II",
+        "planetId": "67063-2",
         "biomes": [
             "Volcanic",
             "Sandy Desert",
@@ -5067,6 +5571,7 @@
     {
         "name": "Spiral Bloom (Shoza III)",
         "planet": "Shoza III",
+        "planetId": "67063-3",
         "biomes": [
             "Mountains",
             "Savanna"
@@ -5076,6 +5581,7 @@
     {
         "name": "Spiral Bloom (Zelazny II)",
         "planet": "Zelazny II",
+        "planetId": "59092-2",
         "biomes": [
             "Mountains",
             "Coniferous Forest",
@@ -5086,6 +5592,7 @@
     {
         "name": "Spiral Creeper (Fermi III)",
         "planet": "Fermi III",
+        "planetId": "73788-3",
         "biomes": [
             "Deciduous Forest",
             "Mountains"
@@ -5095,6 +5602,7 @@
     {
         "name": "Spiral Creeper (Feynman III)",
         "planet": "Feynman III",
+        "planetId": "86469-3",
         "biomes": [
             "Deciduous Forest",
             "Tropical Forest",
@@ -5108,6 +5616,7 @@
     {
         "name": "Spiral Creeper (Jemison)",
         "planet": "Jemison",
+        "planetId": "71456-3",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -5117,6 +5626,7 @@
     {
         "name": "Spiral Creeper (Muphrid IV)",
         "planet": "Muphrid IV",
+        "planetId": "67711-4",
         "biomes": [
             "Swamp",
             "Hills",
@@ -5128,6 +5638,7 @@
     {
         "name": "Spiral Creeper (Nesoi)",
         "planet": "Nesoi",
+        "planetId": "72957-1",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -5136,6 +5647,7 @@
     {
         "name": "Spirit Laurel (Fermi III)",
         "planet": "Fermi III",
+        "planetId": "73788-3",
         "biomes": [
             "Deciduous Forest",
             "Sandy Desert",
@@ -5146,6 +5658,7 @@
     {
         "name": "Spirit Laurel (Gamma Vulpes II-a)",
         "planet": "Gamma Vulpes II-a",
+        "planetId": "75489-7",
         "biomes": [
             "Deciduous Forest",
             "Mountains",
@@ -5156,6 +5669,7 @@
     {
         "name": "Spirit Laurel (Groombridge VIII-a)",
         "planet": "Groombridge VIII-a",
+        "planetId": "57767-24",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -5164,6 +5678,7 @@
     {
         "name": "Spirit Laurel (Ixyll II)",
         "planet": "Ixyll II",
+        "planetId": "62328-2",
         "biomes": [
             "Wetlands",
             "Deciduous Forest"
@@ -5173,6 +5688,7 @@
     {
         "name": "Spirit Laurel (Ixyll III-b)",
         "planet": "Ixyll III-b",
+        "planetId": "62328-12",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -5181,6 +5697,7 @@
     {
         "name": "Spirit Laurel (Jaffa II)",
         "planet": "Jaffa II",
+        "planetId": "79431-2",
         "biomes": [
             "Wetlands",
             "Deciduous Forest",
@@ -5191,6 +5708,7 @@
     {
         "name": "Spirit Laurel (Kumasi III)",
         "planet": "Kumasi III",
+        "planetId": "56828-3",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -5200,6 +5718,7 @@
     {
         "name": "Spirit Laurel (Nemeria I)",
         "planet": "Nemeria I",
+        "planetId": "84604-1",
         "biomes": [
             "Deciduous Forest"
         ],
@@ -5208,6 +5727,7 @@
     {
         "name": "Spirit Laurel (Sparta IV)",
         "planet": "Sparta IV",
+        "planetId": "79252-4",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -5217,6 +5737,7 @@
     {
         "name": "Spirit Laurel (Ursa Major II)",
         "planet": "Ursa Major II",
+        "planetId": "118742-2",
         "biomes": [
             "Mountains",
             "Coniferous Forest",
@@ -5228,6 +5749,7 @@
     {
         "name": "Spitting Goatweed (Alpha Andraste III)",
         "planet": "Alpha Andraste III",
+        "planetId": "5325-3",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest",
@@ -5249,6 +5771,7 @@
     {
         "name": "Spitting Goatweed (Charybdis III)",
         "planet": "Charybdis III",
+        "planetId": "56075-3",
         "biomes": [
             "Wetlands"
         ],
@@ -5257,6 +5780,7 @@
     {
         "name": "Spitting Goatweed (Huygens III)",
         "planet": "Huygens III",
+        "planetId": "73082-3",
         "biomes": [
             "Mountains",
             "Swamp",
@@ -5267,6 +5791,7 @@
     {
         "name": "Spitting Goatweed (Ixyll II)",
         "planet": "Ixyll II",
+        "planetId": "62328-2",
         "biomes": [
             "Savanna",
             "Wetlands",
@@ -5278,6 +5803,7 @@
     {
         "name": "Spitting Goatweed (Leonis V)",
         "planet": "Leonis V",
+        "planetId": "55476-5",
         "biomes": [
             "Savanna",
             "Hills"
@@ -5287,6 +5813,7 @@
     {
         "name": "Spitting Goatweed (Masada III)",
         "planet": "Masada III",
+        "planetId": "83021-3",
         "biomes": [
             "Volcanic",
             "Wetlands",
@@ -5298,6 +5825,7 @@
     {
         "name": "Spitting Goatweed (Ternion III)",
         "planet": "Ternion III",
+        "planetId": "119060-3",
         "biomes": [
             "Savanna"
         ],
@@ -5306,6 +5834,7 @@
     {
         "name": "Spitting Pokeweed (Alpha Andraste III)",
         "planet": "Alpha Andraste III",
+        "planetId": "5325-3",
         "biomes": [
             "Tropical Forest",
             "Deciduous Forest",
@@ -5317,6 +5846,7 @@
     {
         "name": "Spitting Pokeweed (Archimedes V-a)",
         "planet": "Archimedes V-a",
+        "planetId": "75150-13",
         "biomes": [
             "Wetlands",
             "Mountains",
@@ -5327,6 +5857,7 @@
     {
         "name": "Spitting Pokeweed (Beta Marae I)",
         "planet": "Beta Marae I",
+        "planetId": "119159-1",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -5336,6 +5867,7 @@
     {
         "name": "Spitting Pokeweed (Freya III)",
         "planet": "Freya III",
+        "planetId": "72341-3",
         "biomes": [
             "Wetlands",
             "Deciduous Forest",
@@ -5347,6 +5879,7 @@
     {
         "name": "Spitting Pokeweed (Ixyll II)",
         "planet": "Ixyll II",
+        "planetId": "62328-2",
         "biomes": [
             "Wetlands",
             "Deciduous Forest"
@@ -5356,6 +5889,7 @@
     {
         "name": "Spitting Pokeweed (Nemeria IV-a)",
         "planet": "Nemeria IV-a",
+        "planetId": "84604-12",
         "biomes": [
             "Swamp",
             "Coniferous Forest",
@@ -5368,6 +5902,7 @@
     {
         "name": "Spitting Pokeweed (Nesoi)",
         "planet": "Nesoi",
+        "planetId": "72957-1",
         "biomes": [
             "Savanna",
             "Deciduous Forest"
@@ -5377,6 +5912,7 @@
     {
         "name": "Spitting Pokeweed (Sparta III)",
         "planet": "Sparta III",
+        "planetId": "79252-3",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -5398,6 +5934,7 @@
     {
         "name": "Spitting Pokeweed (Ternion III)",
         "planet": "Ternion III",
+        "planetId": "119060-3",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -5407,6 +5944,7 @@
     {
         "name": "Spitting Pokeweed (Vesta)",
         "planet": "Vesta",
+        "planetId": "83865-2",
         "biomes": [
             "Savanna",
             "Deciduous Forest"
@@ -5416,6 +5954,7 @@
     {
         "name": "Split Leaf Watercress (Charybdis II)",
         "planet": "Charybdis II",
+        "planetId": "56075-2",
         "biomes": [
             "Wetlands"
         ],
@@ -5433,6 +5972,7 @@
     {
         "name": "Split Leaf Watercress (Zelazny III)",
         "planet": "Zelazny III",
+        "planetId": "59092-3",
         "biomes": [
             "Tropical Forest",
             "Wetlands"
@@ -5442,6 +5982,7 @@
     {
         "name": "Star Bloom Root (Al-Battani II)",
         "planet": "Al-Battani II",
+        "planetId": "65147-2",
         "biomes": [
             "Hills",
             "Mountains"
@@ -5451,6 +5992,7 @@
     {
         "name": "Star Bloom Root (Beta Ternion II)",
         "planet": "Beta Ternion II",
+        "planetId": "119058-2",
         "biomes": [
             "Volcanic",
             "Mountains",
@@ -5462,6 +6004,7 @@
     {
         "name": "Star Bloom Root (Denebola I-b)",
         "planet": "Denebola I-b",
+        "planetId": "57459-6",
         "biomes": [
             "Mountains",
             "Hills",
@@ -5472,6 +6015,7 @@
     {
         "name": "Star Bloom Root (Feynman III)",
         "planet": "Feynman III",
+        "planetId": "86469-3",
         "biomes": [
             "Volcanic",
             "Sandy Desert",
@@ -5486,6 +6030,7 @@
     {
         "name": "Star Bloom Root (Freya III)",
         "planet": "Freya III",
+        "planetId": "72341-3",
         "biomes": [
             "Deciduous Forest",
             "Mountains"
@@ -5495,6 +6040,7 @@
     {
         "name": "Star Bloom Root (Hawking I)",
         "planet": "Hawking I",
+        "planetId": "73489-1",
         "biomes": [
             "Volcanic",
             "Coniferous Forest",
@@ -5506,6 +6052,7 @@
     {
         "name": "Star Bloom Root (Leonis IV)",
         "planet": "Leonis IV",
+        "planetId": "55476-4",
         "biomes": [
             "Mountains",
             "Hills"
@@ -5515,6 +6062,7 @@
     {
         "name": "Star Bloom Root (Magnar)",
         "planet": "Magnar",
+        "planetId": "98924-2",
         "biomes": [
             "Frozen Plains",
             "Mountains",
@@ -5529,6 +6077,7 @@
     {
         "name": "Star Bloom Root (Nemeria I)",
         "planet": "Nemeria I",
+        "planetId": "84604-1",
         "biomes": [
             "Mountains"
         ],
@@ -5537,6 +6086,7 @@
     {
         "name": "Star Bloom Root (Nirvana II)",
         "planet": "Nirvana II",
+        "planetId": "58401-2",
         "biomes": [
             "Volcanic",
             "Mountains"
@@ -5546,6 +6096,7 @@
     {
         "name": "Star Bloom Root (Xi Ophiuchi VIII-b)",
         "planet": "Xi Ophiuchi VIII-b",
+        "planetId": "84636-24",
         "biomes": [
             "Mountains",
             "Hills"
@@ -5555,6 +6106,7 @@
     {
         "name": "Starburst Silkweed (Beta Marae I)",
         "planet": "Beta Marae I",
+        "planetId": "119159-1",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -5572,6 +6124,7 @@
     {
         "name": "Starburst Silkweed (Copernicus III)",
         "planet": "Copernicus III",
+        "planetId": "76816-3",
         "biomes": [
             "Mountains",
             "Coniferous Forest"
@@ -5584,6 +6137,7 @@
     {
         "name": "Starburst Silkweed (Eridani IV)",
         "planet": "Eridani IV",
+        "planetId": "15471-4",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -5592,6 +6146,7 @@
     {
         "name": "Starburst Silkweed (Marduk IV)",
         "planet": "Marduk IV",
+        "planetId": "60805-4",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -5600,6 +6155,7 @@
     {
         "name": "Starburst Silkweed (Rana IV)",
         "planet": "Rana IV",
+        "planetId": "69766-4",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -5608,6 +6164,7 @@
     {
         "name": "Starburst Silkweed (Schrodinger IV)",
         "planet": "Schrodinger IV",
+        "planetId": "87902-4",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -5617,6 +6174,7 @@
     {
         "name": "Starburst Silkweed (Shoza IV)",
         "planet": "Shoza IV",
+        "planetId": "67063-4",
         "biomes": [
             "Deciduous Forest",
             "Plateau",
@@ -5629,6 +6187,7 @@
     {
         "name": "Starburst Silkweed (Ursa Minor II)",
         "planet": "Ursa Minor II",
+        "planetId": "118743-2",
         "biomes": [
             "Frozen Plains",
             "Coniferous Forest"
@@ -5638,6 +6197,7 @@
     {
         "name": "Starburst Silkweed (Vega II-c)",
         "planet": "Vega II-c",
+        "planetId": "90979-7",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -5666,6 +6226,7 @@
     {
         "name": "Starpod Silkweed (Heisenberg V-a)",
         "planet": "Heisenberg V-a",
+        "planetId": "83344-12",
         "biomes": [
             "Savanna"
         ],
@@ -5674,6 +6235,7 @@
     {
         "name": "Starpod Silkweed (Leonis IV)",
         "planet": "Leonis IV",
+        "planetId": "55476-4",
         "biomes": [
             "Savanna",
             "Hills"
@@ -5683,6 +6245,7 @@
     {
         "name": "Starpod Silkweed (Moloch II)",
         "planet": "Moloch II",
+        "planetId": "68463-2",
         "biomes": [
             "Swamp",
             "Savanna"
@@ -5692,6 +6255,7 @@
     {
         "name": "Starpod Silkweed (Muphrid V-b)",
         "planet": "Muphrid V-b",
+        "planetId": "67711-19",
         "biomes": [
             "Savanna",
             "Volcanic"
@@ -5701,6 +6265,7 @@
     {
         "name": "Starpod Silkweed (Niira)",
         "planet": "Niira",
+        "planetId": "88327-1",
         "biomes": [
             "Hills",
             "Wetlands"
@@ -5710,6 +6275,7 @@
     {
         "name": "Starpod Silkweed (Ursa Major II)",
         "planet": "Ursa Major II",
+        "planetId": "118742-2",
         "biomes": [
             "Savanna",
             "Swamp"
@@ -5719,6 +6285,7 @@
     {
         "name": "Stinging Flutterleaf (Gamma Vulpes I)",
         "planet": "Gamma Vulpes I",
+        "planetId": "75489-1",
         "biomes": [
             "Sandy Desert"
         ],
@@ -5727,6 +6294,7 @@
     {
         "name": "Stinging Flutterleaf (Porrima II)",
         "planet": "Porrima II",
+        "planetId": "61748-2",
         "biomes": [
             "Tropical Forest"
         ],
@@ -5735,6 +6303,7 @@
     {
         "name": "Stinging Flutterleaf (Rana III)",
         "planet": "Rana III",
+        "planetId": "69766-3",
         "biomes": [
             "Savanna",
             "Sandy Desert",
@@ -5746,6 +6315,7 @@
     {
         "name": "Stinging Flutterleaf (Schrodinger III)",
         "planet": "Schrodinger III",
+        "planetId": "87902-3",
         "biomes": [
             "Sandy Desert"
         ],
@@ -5754,6 +6324,7 @@
     {
         "name": "Stinging Ice Stalk (Bohr II)",
         "planet": "Bohr II",
+        "planetId": "73018-2",
         "biomes": [
             "Frozen Crevasses",
             "Mountains"
@@ -5763,6 +6334,7 @@
     {
         "name": "Stinging Ice Stalk (Nemeria IV-a)",
         "planet": "Nemeria IV-a",
+        "planetId": "84604-12",
         "biomes": [
             "Mountains",
             "Frozen Plains",
@@ -5773,6 +6345,7 @@
     {
         "name": "Stinging Ice Stalk (Oborum I)",
         "planet": "Oborum I",
+        "planetId": "119143-1",
         "biomes": [
             "Frozen Plains",
             "Coniferous Forest"
@@ -5790,6 +6363,7 @@
     {
         "name": "Stunted Pine (Beta Ternion I)",
         "planet": "Beta Ternion I",
+        "planetId": "119058-1",
         "biomes": [
             "Sandy Desert",
             "Mountains"
@@ -5807,6 +6381,7 @@
     {
         "name": "Stunted Pine (Fermi III)",
         "planet": "Fermi III",
+        "planetId": "73788-3",
         "biomes": [
             "Deciduous Forest",
             "Sandy Desert",
@@ -5817,6 +6392,7 @@
     {
         "name": "Stunted Pine (Guniibuu II)",
         "planet": "Guniibuu II",
+        "planetId": "84147-2",
         "biomes": [
             "Mountains",
             "Swamp",
@@ -5830,6 +6406,7 @@
     {
         "name": "Stunted Pine (Heisenberg V-a)",
         "planet": "Heisenberg V-a",
+        "planetId": "83344-12",
         "biomes": [
             "Mountains"
         ],
@@ -5841,6 +6418,7 @@
     {
         "name": "Stunted Pine (Hyla I)",
         "planet": "Hyla I",
+        "planetId": "70096-1",
         "biomes": [
             "Mountains"
         ],
@@ -5849,6 +6427,7 @@
     {
         "name": "Stunted Pine (Leviathan IV)",
         "planet": "Leviathan IV",
+        "planetId": "89684-4",
         "biomes": [
             "Mountains"
         ],
@@ -5860,6 +6439,7 @@
     {
         "name": "Stunted Pine (Piazzi I)",
         "planet": "Piazzi I",
+        "planetId": "103879-1",
         "biomes": [
             "Mountains"
         ],
@@ -5868,6 +6448,7 @@
     {
         "name": "Stunted Pine (Porrima IV-c)",
         "planet": "Porrima IV-c",
+        "planetId": "61748-17",
         "biomes": [
             "Frozen Mountains",
             "Mountains",
@@ -5878,6 +6459,7 @@
     {
         "name": "Stunted Pine (Pyraas II)",
         "planet": "Pyraas II",
+        "planetId": "68415-2",
         "biomes": [
             "Volcanic",
             "Mountains"
@@ -5887,6 +6469,7 @@
     {
         "name": "Stunted Pine (Rana IV)",
         "planet": "Rana IV",
+        "planetId": "69766-4",
         "biomes": [
             "Mountains",
             "Frozen Plains",
@@ -5897,6 +6480,7 @@
     {
         "name": "Stunted Pine (Rivera I)",
         "planet": "Rivera I",
+        "planetId": "118819-1",
         "biomes": [
             "Mountains"
         ],
@@ -5905,6 +6489,7 @@
     {
         "name": "Stunted Pine (Shoza II)",
         "planet": "Shoza II",
+        "planetId": "67063-2",
         "biomes": [
             "Volcanic",
             "Deciduous Forest",
@@ -5916,6 +6501,7 @@
     {
         "name": "Stunted Pine (Tidacha I)",
         "planet": "Tidacha I",
+        "planetId": "82337-1",
         "biomes": [
             "Mountains",
             "Swamp",
@@ -5927,6 +6513,7 @@
     {
         "name": "Sub-Zero Silkweed (Bradbury IV)",
         "planet": "Bradbury IV",
+        "planetId": "81444-4",
         "biomes": [
             "Volcanic",
             "Frozen Plains"
@@ -5936,6 +6523,7 @@
     {
         "name": "Sub-Zero Silkweed (Charybdis III)",
         "planet": "Charybdis III",
+        "planetId": "56075-3",
         "biomes": [
             "Frozen Dunes",
             "Wetlands"
@@ -5945,6 +6533,7 @@
     {
         "name": "Sub-Zero Silkweed (Eridani III)",
         "planet": "Eridani III",
+        "planetId": "15471-3",
         "biomes": [
             "Frozen Dunes"
         ],
@@ -5953,6 +6542,7 @@
     {
         "name": "Sub-Zero Silkweed (Kumasi II)",
         "planet": "Kumasi II",
+        "planetId": "56828-2",
         "biomes": [
             "Frozen Plains",
             "Mountains"
@@ -5962,6 +6552,7 @@
     {
         "name": "Sub-Zero Silkweed (McClure II)",
         "planet": "McClure II",
+        "planetId": "119106-2",
         "biomes": [
             "Frozen Plains"
         ],
@@ -5970,6 +6561,7 @@
     {
         "name": "Sub-Zero Silkweed (Strix I)",
         "planet": "Strix I",
+        "planetId": "72407-1",
         "biomes": [
             "Frozen Mountains",
             "Mountains"
@@ -5979,6 +6571,7 @@
     {
         "name": "Sub-Zero Silkweed (Toliman II)",
         "planet": "Toliman II",
+        "planetId": "71453-2",
         "biomes": [
             "Frozen Plains",
             "Mountains",
@@ -5989,6 +6582,7 @@
     {
         "name": "Swamp Bottle Root (Charybdis II)",
         "planet": "Charybdis II",
+        "planetId": "56075-2",
         "biomes": [
             "Swamp",
             "Wetlands"
@@ -5998,6 +6592,7 @@
     {
         "name": "Swamp Bottle Root (Gagarin)",
         "planet": "Gagarin",
+        "planetId": "71456-2",
         "biomes": [
             "Swamp",
             "Wetlands"
@@ -6007,6 +6602,7 @@
     {
         "name": "Swamp Bottle Root (Gamma Vulpes II-a)",
         "planet": "Gamma Vulpes II-a",
+        "planetId": "75489-7",
         "biomes": [
             "Deciduous Forest",
             "Wetlands"
@@ -6016,6 +6612,7 @@
     {
         "name": "Swamp Bottle Root (Ixyll III-b)",
         "planet": "Ixyll III-b",
+        "planetId": "62328-12",
         "biomes": [
             "Savanna",
             "Swamp",
@@ -6037,6 +6634,7 @@
     {
         "name": "Swamp Pedestal (Bradbury III)",
         "planet": "Bradbury III",
+        "planetId": "81444-3",
         "biomes": [
             "Wetlands"
         ],
@@ -6045,6 +6643,7 @@
     {
         "name": "Swamp Pedestal (Shoza III)",
         "planet": "Shoza III",
+        "planetId": "67063-3",
         "biomes": [
             "Swamp",
             "Wetlands"
@@ -6054,6 +6653,7 @@
     {
         "name": "Swamp Weed (Ka'zaal)",
         "planet": "Ka'zaal",
+        "planetId": "76835-2",
         "biomes": [
             "Hills",
             "Wetlands"
@@ -6066,6 +6666,7 @@
     {
         "name": "Swamp Weed (Masada III)",
         "planet": "Masada III",
+        "planetId": "83021-3",
         "biomes": [
             "Wetlands",
             "Savanna"
@@ -6075,6 +6676,7 @@
     {
         "name": "Swamp Weed (Procyon III)",
         "planet": "Procyon III",
+        "planetId": "37173-3",
         "biomes": [
             "Wetlands"
         ],
@@ -6086,6 +6688,7 @@
     {
         "name": "Swamp Weed (Zelazny III)",
         "planet": "Zelazny III",
+        "planetId": "59092-3",
         "biomes": [
             "Wetlands"
         ],
@@ -6097,6 +6700,7 @@
     {
         "name": "Sweeping Silkweed (Copernicus II)",
         "planet": "Copernicus II",
+        "planetId": "76816-2",
         "biomes": [
             "Swamp"
         ],
@@ -6105,6 +6709,7 @@
     {
         "name": "Sweeping Silkweed (Hyla II)",
         "planet": "Hyla II",
+        "planetId": "70096-2",
         "biomes": [
             "Swamp"
         ],
@@ -6113,6 +6718,7 @@
     {
         "name": "Sweeping Silkweed (Proxima Ternion III)",
         "planet": "Proxima Ternion III",
+        "planetId": "119059-3",
         "biomes": [
             "Swamp"
         ],
@@ -6121,6 +6727,7 @@
     {
         "name": "Sweeping Silkweed (Shoza III)",
         "planet": "Shoza III",
+        "planetId": "67063-3",
         "biomes": [
             "Swamp",
             "Wetlands"
@@ -6130,6 +6737,7 @@
     {
         "name": "Sweeping Silkweed (Zelazny II)",
         "planet": "Zelazny II",
+        "planetId": "59092-2",
         "biomes": [
             "Swamp",
             "Tropical Forest"
@@ -6139,6 +6747,7 @@
     {
         "name": "Sweet Canis Vine (Bardeen V-c)",
         "planet": "Bardeen V-c",
+        "planetId": "90582-20",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -6148,6 +6757,7 @@
     {
         "name": "Sweet Canis Vine (Eridani IV)",
         "planet": "Eridani IV",
+        "planetId": "15471-4",
         "biomes": [
             "Frozen Mountains",
             "Coniferous Forest"
@@ -6157,6 +6767,7 @@
     {
         "name": "Sweet Canis Vine (Indum II)",
         "planet": "Indum II",
+        "planetId": "119135-2",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -6168,6 +6779,7 @@
     {
         "name": "Sweet Canis Vine (Lantana III)",
         "planet": "Lantana III",
+        "planetId": "57584-3",
         "biomes": [
             "Frozen Crevasses",
             "Mountains",
@@ -6179,6 +6791,7 @@
     {
         "name": "Sweet Canis Vine (Marduk IV)",
         "planet": "Marduk IV",
+        "planetId": "60805-4",
         "biomes": [
             "Frozen Crevasses",
             "Coniferous Forest"
@@ -6188,6 +6801,7 @@
     {
         "name": "Sweet Canis Vine (Montara Luna)",
         "planet": "Montara Luna",
+        "planetId": "72432-18",
         "biomes": [
             "Swamp",
             "Coniferous Forest",
@@ -6198,6 +6812,7 @@
     {
         "name": "Sweet Canis Vine (Porrima III)",
         "planet": "Porrima III",
+        "planetId": "61748-3",
         "biomes": [
             "Coniferous Forest",
             "Frozen Plains",
@@ -6218,6 +6833,7 @@
     {
         "name": "Sweet Canis Vine (Vega II-c)",
         "planet": "Vega II-c",
+        "planetId": "90979-7",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -6226,6 +6842,7 @@
     {
         "name": "Sweet Fumewort (Eridani III)",
         "planet": "Eridani III",
+        "planetId": "15471-3",
         "biomes": [
             "Sandy Desert"
         ],
@@ -6234,6 +6851,7 @@
     {
         "name": "Sweet Fumewort (Fermi III)",
         "planet": "Fermi III",
+        "planetId": "73788-3",
         "biomes": [
             "Sandy Desert",
             "Mountains"
@@ -6243,6 +6861,7 @@
     {
         "name": "Sweet Fumewort (Feynman III)",
         "planet": "Feynman III",
+        "planetId": "86469-3",
         "biomes": [
             "Volcanic",
             "Sandy Desert",
@@ -6256,6 +6875,7 @@
     {
         "name": "Sweet Fumewort (Gamma Vulpes I)",
         "planet": "Gamma Vulpes I",
+        "planetId": "75489-1",
         "biomes": [
             "Sandy Desert"
         ],
@@ -6264,6 +6884,7 @@
     {
         "name": "Sweet Fumewort (Marduk III)",
         "planet": "Marduk III",
+        "planetId": "60805-3",
         "biomes": [
             "Sandy Desert"
         ],
@@ -6272,6 +6893,7 @@
     {
         "name": "Sweet Fumewort (Nesoi)",
         "planet": "Nesoi",
+        "planetId": "72957-1",
         "biomes": [
             "Mountains",
             "Sandy Desert",
@@ -6282,6 +6904,7 @@
     {
         "name": "Sweet Fumewort (Ursa Major I)",
         "planet": "Ursa Major I",
+        "planetId": "118742-1",
         "biomes": [
             "Plateau",
             "Sandy Desert"
@@ -6291,6 +6914,7 @@
     {
         "name": "Sweet Goldenglow (Eridani II)",
         "planet": "Eridani II",
+        "planetId": "15471-2",
         "biomes": [
             "Tropical Forest"
         ],
@@ -6299,6 +6923,7 @@
     {
         "name": "Sweet Goldenglow (Nemeria I)",
         "planet": "Nemeria I",
+        "planetId": "84604-1",
         "biomes": [
             "Tropical Forest"
         ],
@@ -6307,6 +6932,7 @@
     {
         "name": "Sweet Goldenglow (Zelazny II)",
         "planet": "Zelazny II",
+        "planetId": "59092-2",
         "biomes": [
             "Swamp",
             "Tropical Forest"
@@ -6316,6 +6942,7 @@
     {
         "name": "Sweet Root (Alpha Andraste III)",
         "planet": "Alpha Andraste III",
+        "planetId": "5325-3",
         "biomes": [
             "Tropical Forest",
             "Savanna"
@@ -6328,6 +6955,7 @@
     {
         "name": "Sweet Root (Tau Ceti VIII-b)",
         "planet": "Tau Ceti VIII-b",
+        "planetId": "8087-19",
         "biomes": [
             "Mountains",
             "Deciduous Forest"
@@ -6340,6 +6968,7 @@
     {
         "name": "Sweet Root (Zeta Ophiuchi I)",
         "planet": "Zeta Ophiuchi I",
+        "planetId": "119147-1",
         "biomes": [
             "Swamp",
             "Deciduous Forest",
@@ -6353,6 +6982,7 @@
     {
         "name": "Sweet Wallflower (Andromas III)",
         "planet": "Andromas III",
+        "planetId": "86705-3",
         "biomes": [
             "Craters"
         ],
@@ -6361,6 +6991,7 @@
     {
         "name": "Sweet Yellow Creeper (Ixyll II)",
         "planet": "Ixyll II",
+        "planetId": "62328-2",
         "biomes": [
             "Wetlands",
             "Deciduous Forest"
@@ -6370,6 +7001,7 @@
     {
         "name": "Sweet Yellow Creeper (Muphrid IV)",
         "planet": "Muphrid IV",
+        "planetId": "67711-4",
         "biomes": [
             "Hills",
             "Deciduous Forest",
@@ -6380,6 +7012,7 @@
     {
         "name": "Sweet Yellow Creeper (Nemeria IV-a)",
         "planet": "Nemeria IV-a",
+        "planetId": "84604-12",
         "biomes": [
             "Mountains",
             "Swamp",
@@ -6392,6 +7025,7 @@
     {
         "name": "Sweet Yellow Creeper (Schrodinger VIII-a)",
         "planet": "Schrodinger VIII-a",
+        "planetId": "87902-20",
         "biomes": [
             "Deciduous Forest",
             "Tropical Forest"
@@ -6401,6 +7035,7 @@
     {
         "name": "Sweet Yellow Creeper (Shoza II)",
         "planet": "Shoza II",
+        "planetId": "67063-2",
         "biomes": [
             "Deciduous Forest",
             "Mountains"
@@ -6410,6 +7045,7 @@
     {
         "name": "Sweet Yellow Creeper (Sparta IV)",
         "planet": "Sparta IV",
+        "planetId": "79252-4",
         "biomes": [
             "Deciduous Forest",
             "Coniferous Forest"
@@ -6419,6 +7055,7 @@
     {
         "name": "Sweet Yellow Creeper (Zeta Ophiuchi I)",
         "planet": "Zeta Ophiuchi I",
+        "planetId": "119147-1",
         "biomes": [
             "Deciduous Forest",
             "Mountains"
@@ -6431,6 +7068,7 @@
     {
         "name": "Sweetwater Cactus (Gagarin)",
         "planet": "Gagarin",
+        "planetId": "71456-2",
         "biomes": [
             "Swamp",
             "Rocky Desert"
@@ -6440,6 +7078,7 @@
     {
         "name": "Sweetwater Cactus (Hyla I)",
         "planet": "Hyla I",
+        "planetId": "70096-1",
         "biomes": [
             "Rocky Desert"
         ],
@@ -6448,6 +7087,7 @@
     {
         "name": "Sweetwater Cactus (Vega II-c)",
         "planet": "Vega II-c",
+        "planetId": "90979-7",
         "biomes": [
             "Coniferous Forest",
             "Plateau",
@@ -6461,6 +7101,7 @@
     {
         "name": "Sweetwater Cactus (Zosma V-a)",
         "planet": "Zosma V-a",
+        "planetId": "54712-12",
         "biomes": [
             "Volcanic",
             "Mountains",
@@ -6473,6 +7114,7 @@
     {
         "name": "Terra Root (Algorab II)",
         "planet": "Algorab II",
+        "planetId": "60776-2",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -6481,6 +7123,7 @@
     {
         "name": "Terra Root (Hawking I)",
         "planet": "Hawking I",
+        "planetId": "73489-1",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest",
@@ -6491,6 +7134,7 @@
     {
         "name": "Terra Root (Heisenberg V-a)",
         "planet": "Heisenberg V-a",
+        "planetId": "83344-12",
         "biomes": [
             "Coniferous Forest"
         ],
@@ -6499,6 +7143,7 @@
     {
         "name": "Terra Root (Jaffa III)",
         "planet": "Jaffa III",
+        "planetId": "79431-3",
         "biomes": [
             "Volcanic",
             "Coniferous Forest"
@@ -6508,6 +7153,7 @@
     {
         "name": "Terra Root (Maal V)",
         "planet": "Maal V",
+        "planetId": "74746-5",
         "biomes": [
             "Coniferous Forest",
             "Deciduous Forest"
@@ -6517,6 +7163,7 @@
     {
         "name": "Terra Root (Marduk IV)",
         "planet": "Marduk IV",
+        "planetId": "60805-4",
         "biomes": [
             "Frozen Crevasses",
             "Coniferous Forest"
@@ -6526,6 +7173,7 @@
     {
         "name": "Terra Root (Moloch II)",
         "planet": "Moloch II",
+        "planetId": "68463-2",
         "biomes": [
             "Frozen Plains",
             "Coniferous Forest",
@@ -6537,6 +7185,7 @@
     {
         "name": "Terra Root (Nemeria II)",
         "planet": "Nemeria II",
+        "planetId": "84604-2",
         "biomes": [
             "Mountains",
             "Hills",
@@ -6548,6 +7197,7 @@
     {
         "name": "Terra Root (Porrima III)",
         "planet": "Porrima III",
+        "planetId": "61748-3",
         "biomes": [
             "Coniferous Forest",
             "Frozen Plains",
@@ -6558,6 +7208,7 @@
     {
         "name": "Terra Root (Porrima IV-c)",
         "planet": "Porrima IV-c",
+        "planetId": "61748-17",
         "biomes": [
             "Mountains",
             "Coniferous Forest"
@@ -6567,6 +7218,7 @@
     {
         "name": "Terra Root (Rutherford III)",
         "planet": "Rutherford III",
+        "planetId": "64587-3",
         "biomes": [
             "Swamp",
             "Deciduous Forest",
@@ -6577,6 +7229,7 @@
     {
         "name": "Titan Coleus (Beta Marae I)",
         "planet": "Beta Marae I",
+        "planetId": "119159-1",
         "biomes": [
             "Rocky Desert",
             "Mountains",
@@ -6587,6 +7240,7 @@
     {
         "name": "Titan Coleus (Vega II-c)",
         "planet": "Vega II-c",
+        "planetId": "90979-7",
         "biomes": [
             "Coniferous Forest",
             "Plateau",
@@ -6597,6 +7251,7 @@
     {
         "name": "Tremor Root (Altair II)",
         "planet": "Altair II",
+        "planetId": "97338-2",
         "biomes": [
             "Rocky Desert"
         ],
@@ -6605,6 +7260,7 @@
     {
         "name": "Tremor Root (Kumasi II)",
         "planet": "Kumasi II",
+        "planetId": "56828-2",
         "biomes": [
             "Rocky Desert"
         ],
@@ -6613,6 +7269,7 @@
     {
         "name": "Tropical Maw Palm (Enlil II)",
         "planet": "Enlil II",
+        "planetId": "78498-2",
         "biomes": [
             "Tropical Forest"
         ],
@@ -6621,6 +7278,7 @@
     {
         "name": "Tropical Maw Palm (Eridani II)",
         "planet": "Eridani II",
+        "planetId": "15471-2",
         "biomes": [
             "Tropical Forest"
         ],
@@ -6629,6 +7287,7 @@
     {
         "name": "Tropical Maw Palm (Feynman III)",
         "planet": "Feynman III",
+        "planetId": "86469-3",
         "biomes": [
             "Tropical Forest"
         ],
@@ -6640,6 +7299,7 @@
     {
         "name": "Tropical Maw Palm (Groombridge VIII-a)",
         "planet": "Groombridge VIII-a",
+        "planetId": "57767-24",
         "biomes": [
             "Tropical Forest"
         ],
@@ -6648,6 +7308,7 @@
     {
         "name": "Tropical Maw Palm (Zeta Ophiuchi I)",
         "planet": "Zeta Ophiuchi I",
+        "planetId": "119147-1",
         "biomes": [
             "Swamp",
             "Tropical Forest"
@@ -6660,6 +7321,7 @@
     {
         "name": "Tufted Snow Willow (Archimedes II)",
         "planet": "Archimedes II",
+        "planetId": "75150-2",
         "biomes": [
             "Frozen Plains"
         ],
@@ -6668,6 +7330,7 @@
     {
         "name": "Tufted Snow Willow (Feynman IV)",
         "planet": "Feynman IV",
+        "planetId": "86469-4",
         "biomes": [
             "Frozen Volcanic",
             "Mountains"
@@ -6680,6 +7343,7 @@
     {
         "name": "Tufted Snow Willow (Jemison)",
         "planet": "Jemison",
+        "planetId": "71456-3",
         "biomes": [
             "Frozen Mountains",
             "Mountains",
@@ -6690,6 +7354,7 @@
     {
         "name": "Tufted Snow Willow (Toliman II)",
         "planet": "Toliman II",
+        "planetId": "71453-2",
         "biomes": [
             "Frozen Plains",
             "Mountains",
@@ -6700,6 +7365,7 @@
     {
         "name": "Tundra Vine (Beta Ternion II)",
         "planet": "Beta Ternion II",
+        "planetId": "119058-2",
         "biomes": [
             "Savanna",
             "Sandy Desert",
@@ -6710,6 +7376,7 @@
     {
         "name": "Tundra Vine (Copernicus IV)",
         "planet": "Copernicus IV",
+        "planetId": "76816-4",
         "biomes": [
             "Hills",
             "Savanna"
@@ -6719,6 +7386,7 @@
     {
         "name": "Tundra Vine (Hyla I)",
         "planet": "Hyla I",
+        "planetId": "70096-1",
         "biomes": [
             "Hills"
         ],
@@ -6727,6 +7395,7 @@
     {
         "name": "Twilight Cradleleaf (Bel I)",
         "planet": "Bel I",
+        "planetId": "69192-1",
         "biomes": [
             "Hills",
             "Savanna"
@@ -6736,6 +7405,7 @@
     {
         "name": "Twilight Cradleleaf (Magnar)",
         "planet": "Magnar",
+        "planetId": "98924-2",
         "biomes": [
             "Swamp",
             "Mountains",
@@ -6750,6 +7420,7 @@
     {
         "name": "Twilight Cradleleaf (Montara Luna)",
         "planet": "Montara Luna",
+        "planetId": "72432-18",
         "biomes": [
             "Swamp",
             "Hills",
@@ -6760,6 +7431,7 @@
     {
         "name": "Twilight Cradleleaf (Proxima Ternion III)",
         "planet": "Proxima Ternion III",
+        "planetId": "119059-3",
         "biomes": [
             "Swamp",
             "Hills",
@@ -6770,6 +7442,7 @@
     {
         "name": "Twilight Cradleleaf (Pyraas II)",
         "planet": "Pyraas II",
+        "planetId": "68415-2",
         "biomes": [
             "Savanna"
         ],
@@ -6778,6 +7451,7 @@
     {
         "name": "Twilight Cradleleaf (Rana III)",
         "planet": "Rana III",
+        "planetId": "69766-3",
         "biomes": [
             "Savanna"
         ],
@@ -6786,6 +7460,7 @@
     {
         "name": "Twilight Cradleleaf (Rasalhague II)",
         "planet": "Rasalhague II",
+        "planetId": "85769-2",
         "biomes": [
             "Plateau",
             "Savanna"
@@ -6795,6 +7470,7 @@
     {
         "name": "Twilight Cradleleaf (Rutherford III)",
         "planet": "Rutherford III",
+        "planetId": "64587-3",
         "biomes": [
             "Swamp",
             "Savanna"
@@ -6804,6 +7480,7 @@
     {
         "name": "Twilight Cradleleaf (Schrodinger IV)",
         "planet": "Schrodinger IV",
+        "planetId": "87902-4",
         "biomes": [
             "Swamp",
             "Savanna"
@@ -6813,6 +7490,7 @@
     {
         "name": "Twilight Cradleleaf (Shoza IV)",
         "planet": "Shoza IV",
+        "planetId": "67063-4",
         "biomes": [
             "Savanna"
         ],
@@ -6821,6 +7499,7 @@
     {
         "name": "Velvet Bloom (Archimedes III)",
         "planet": "Archimedes III",
+        "planetId": "75150-3",
         "biomes": [
             "Swamp"
         ],
@@ -6829,6 +7508,7 @@
     {
         "name": "Velvet Bloom (Gagarin)",
         "planet": "Gagarin",
+        "planetId": "71456-2",
         "biomes": [
             "Swamp",
             "Wetlands"
@@ -6838,6 +7518,7 @@
     {
         "name": "Velvet Bloom (Indum II)",
         "planet": "Indum II",
+        "planetId": "119135-2",
         "biomes": [
             "Coniferous Forest",
             "Sandy Desert",
@@ -6848,6 +7529,7 @@
     {
         "name": "Wanderer' Husk (Alpha Andraste II)",
         "planet": "Alpha Andraste II",
+        "planetId": "5325-2",
         "biomes": [
             "Sandy Desert"
         ],
@@ -6859,6 +7541,7 @@
     {
         "name": "Wanderer' Husk (Beta Ternion I)",
         "planet": "Beta Ternion I",
+        "planetId": "119058-1",
         "biomes": [
             "Sandy Desert"
         ],
@@ -6867,6 +7550,7 @@
     {
         "name": "Wanderer' Husk (Codos)",
         "planet": "Codos",
+        "planetId": "72432-14",
         "biomes": [
             "Mountains",
             "Swamp"
@@ -6876,6 +7560,7 @@
     {
         "name": "Wanderer' Husk (Fermi III)",
         "planet": "Fermi III",
+        "planetId": "73788-3",
         "biomes": [
             "Sandy Desert",
             "Mountains"
@@ -6885,6 +7570,7 @@
     {
         "name": "Wanderer' Husk (Gamma Vulpes I)",
         "planet": "Gamma Vulpes I",
+        "planetId": "75489-1",
         "biomes": [
             "Frozen Plains",
             "Sandy Desert"
@@ -6894,6 +7580,7 @@
     {
         "name": "Wanderer' Husk (Huygens VII-b)",
         "planet": "Huygens VII-b",
+        "planetId": "73082-17",
         "biomes": [
             "Sandy Desert"
         ],
@@ -6902,6 +7589,7 @@
     {
         "name": "Wanderer' Husk (Lantana VIII-b)",
         "planet": "Lantana VIII-b",
+        "planetId": "57584-17",
         "biomes": [
             "Rocky Desert",
             "Sandy Desert"
@@ -6911,6 +7599,7 @@
     {
         "name": "Wanderer' Husk (Strix I)",
         "planet": "Strix I",
+        "planetId": "72407-1",
         "biomes": [
             "Sandy Desert"
         ],
@@ -6919,6 +7608,7 @@
     {
         "name": "Warren Nettle (Andromas II)",
         "planet": "Andromas II",
+        "planetId": "86705-2",
         "biomes": [
             "Hills"
         ],
@@ -6937,6 +7627,7 @@
     {
         "name": "Warren Nettle (Copernicus II)",
         "planet": "Copernicus II",
+        "planetId": "76816-2",
         "biomes": [
             "Mountains",
             "Swamp",
@@ -6947,6 +7638,7 @@
     {
         "name": "Warren Nettle (Heisenberg II)",
         "planet": "Heisenberg II",
+        "planetId": "83344-2",
         "biomes": [
             "Hills",
             "Mountains",
@@ -6957,6 +7649,7 @@
     {
         "name": "Warren Nettle (Tau Ceti II)",
         "planet": "Tau Ceti II",
+        "planetId": "8087-2",
         "biomes": [
             "Hills"
         ],
@@ -6965,6 +7658,7 @@
     {
         "name": "Warren Nettle (Tirna VIII-c)",
         "planet": "Tirna VIII-c",
+        "planetId": "57270-25",
         "biomes": [
             "Swamp",
             "Savanna",
@@ -6976,6 +7670,7 @@
     {
         "name": "Warren Nettle (Xi Ophiuchi VIII-b)",
         "planet": "Xi Ophiuchi VIII-b",
+        "planetId": "84636-24",
         "biomes": [
             "Mountains",
             "Hills"
@@ -6985,6 +7680,7 @@
     {
         "name": "Weeping Fireleaf (Guniibuu II)",
         "planet": "Guniibuu II",
+        "planetId": "84147-2",
         "biomes": [
             "Swamp",
             "Savanna"
@@ -6997,6 +7693,7 @@
     {
         "name": "Weeping Fireleaf (Leviathan IV)",
         "planet": "Leviathan IV",
+        "planetId": "89684-4",
         "biomes": [
             "Swamp"
         ],
@@ -7008,6 +7705,7 @@
     {
         "name": "Weeping Fireleaf (Magnar)",
         "planet": "Magnar",
+        "planetId": "98924-2",
         "biomes": [
             "Swamp"
         ],
@@ -7019,6 +7717,7 @@
     {
         "name": "Weeping Fireleaf (Maheo I)",
         "planet": "Maheo I",
+        "planetId": "118988-1",
         "biomes": [
             "Swamp",
             "Tropical Forest"
@@ -7039,6 +7738,7 @@
     {
         "name": "Weeping Fireleaf (Shoza III)",
         "planet": "Shoza III",
+        "planetId": "67063-3",
         "biomes": [
             "Swamp",
             "Wetlands"
@@ -7051,6 +7751,7 @@
     {
         "name": "Weeping Fireleaf (Ursa Major II)",
         "planet": "Ursa Major II",
+        "planetId": "118742-2",
         "biomes": [
             "Mountains",
             "Savanna",
