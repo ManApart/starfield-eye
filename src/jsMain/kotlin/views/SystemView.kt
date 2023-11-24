@@ -235,8 +235,8 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
         }
         button {
             id = "travel-button"
-            +"Travel (Alpha)"
-            title = "Set course (requires docking, must have game map open)"
+            +"Travel"
+            title = "Set course to ${planet.name} (requires docking)"
             onClickFunction = { attemptTravel(planet.name) }
         }
         a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
@@ -375,7 +375,7 @@ private fun selectNextMoon(system: StarSystem, shift: Int = 1) {
     outpostsView(system, planetId)
 }
 
-private fun attemptTravel(destination: String) {
+fun attemptTravel(destination: String) {
     CoroutineScope(Dispatchers.Default).launch {
         setCourse(destination)
     }

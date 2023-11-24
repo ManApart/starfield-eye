@@ -142,6 +142,7 @@ fun importPlayerInfo() {
                 reader.onloadend = {
                     jsonMapper.decodeFromString<InMemoryStorage>(reader.result as String).also { inMemoryStorage = it }
                     println("Imported ${inMemoryStorage.planetUserInfo.size} user info pieces")
+                    persistMemory()
                 }
                 reader.readAsText(file)
             }

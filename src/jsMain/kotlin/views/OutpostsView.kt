@@ -104,6 +104,11 @@ private fun TagConsumer<HTMLElement>.outpostsView(
             }
         }
     }
+    button {
+        +"Travel"
+        title = "Set course to planet. In Future hopefully direct to outpost"
+        onClickFunction = { attemptTravel(planet.name) }
+    }
     div {
         id = "existing-outposts-${planet.name}"
         info.outPosts.forEach { outpost ->
@@ -248,7 +253,7 @@ private fun TagConsumer<HTMLElement>.viewOutpostsByResearch() {
         .groupBy { it.resource }
         .entries.sortedBy { it.key.name }
 
-    div("section-view-box") {
+    div("section-view-box by-resource-view") {
         table {
             resourceEntries.forEach { (resource, outposts) ->
                 tr("outpost-resource-row") {
@@ -259,6 +264,11 @@ private fun TagConsumer<HTMLElement>.viewOutpostsByResearch() {
                             span("outpost-resource-item") {
                                 a(href = "#system/${outpost.planetId.replace("-", "/")}") {
                                     +"${outpost.name} (${planet.name})"
+                                }
+                                button {
+                                    +"Travel"
+                                    title = "Set course to planet. In Future hopefully direct to outpost"
+                                    onClickFunction = { attemptTravel(planet.name) }
                                 }
                             }
                         }

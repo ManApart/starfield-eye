@@ -3,6 +3,7 @@ package docking
 import MissionWikiData
 import PollResponse
 import Quest
+import kotlinx.coroutines.delay
 
 suspend fun healthCheck(): Boolean {
     val versionLine = postToConsole("GetSFSEVersion")?.split("\n")?.last { it.isNotBlank() }
@@ -23,6 +24,8 @@ suspend fun poll(missionReference: Map<String, MissionWikiData>): PollResponse {
 
 suspend fun setCourse(destination: String) {
     try {
+        postToConsole("showmenu galaxyStarMapMenu")
+        delay(100)
         println(postToConsole("AddPlotToBody \"${destination}\""))
     } catch (e: Error) {
         println(e)
