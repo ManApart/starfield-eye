@@ -218,7 +218,7 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, 
                         td { +data.toString() }
                     }
                 }
-            resourceRow(system.planets.values.flatMap { it.resources }.toSet())
+            resourceRow(system.planets.values.flatMap { it.inorganicResources }.toSet())
         }
     }
 }
@@ -285,7 +285,7 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
                     }
                 }
             }
-            resourceRow(resources)
+            resourceRow(inorganicResources)
             val info = inMemoryStorage.planetInfo(planet.uniqueId)
             outPostsRow(info.outPosts)
         }
@@ -303,7 +303,7 @@ fun outpostsView(system: StarSystem, planetId: Int) {
 
 private fun TagConsumer<HTMLElement>.resourceRow(resources: Set<ResourceType>) {
     tr {
-        td("resource-td") { +"Resources" }
+        td("resource-td") { +"Inorganic Resources" }
         td("resource-value-td") {
             if (resources.isEmpty()) {
                 +"None"

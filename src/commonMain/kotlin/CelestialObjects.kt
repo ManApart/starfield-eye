@@ -42,7 +42,8 @@ data class Planet(
     val fauna: String,
     val biomes: List<String>,
     val traits: List<String>,
-    val resources: Set<ResourceType>,
+    val organicResources: Set<String>,
+    val inorganicResources: Set<ResourceType>,
 ) {
     @Transient
     val uniqueId = "$starId-$id"

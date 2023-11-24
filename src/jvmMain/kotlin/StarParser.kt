@@ -1,4 +1,3 @@
-
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import java.io.File
@@ -21,6 +20,14 @@ fun main() {
     val wikiData = if (wikiDataFile.exists()) {
         jsonMapper.decodeFromString<Map<String, PlanetWikiData>>(wikiDataFile.readText()).toMutableMap()
     } else mapOf()
+    val floraWikiData =
+        jsonMapper.decodeFromString<List<FloraWikiData>>(File("./src/jsMain/resources/flora-wiki-data.json").readText())
+            .filter { it.planetId != null }
+            .groupBy { it.planetId!! }
+    val faunaWikiData =
+        jsonMapper.decodeFromString<List<FaunaWikiData>>(File("./src/jsMain/resources/fauna-wiki-data.json").readText())
+            .filter { it.planetId != null }
+            .groupBy { it.planetId!! }
 
     val galaxySummary = with(rawStars) {
         val maxX = maxOf { it.x }
@@ -41,7 +48,7 @@ fun main() {
         val resources = resourceLookup[star.name] ?: emptyMap<String, List<ResourceType>>().also {
             failedSystemResourceLookups.add(star.name)
         }
-        star.starId to parseSystem(star, planets, biomes, resources, wikiData)
+        star.starId to parseSystem(star, planets, biomes, floraWikiData, faunaWikiData, resources, wikiData)
     }
 
     println("Failed to find resources for ${failedSystemResourceLookups.size} systems: ${failedSystemResourceLookups.joinToString()}.")
@@ -55,6 +62,8 @@ private fun parseSystem(
     rawStar: RawStar,
     rawPlanets: List<RawPlanet>,
     rawBiomes: List<RawBiome>,
+    floraResources: Map<String, List<FloraWikiData>>,
+    faunaResources: Map<String, List<FaunaWikiData>>,
     systemResources: Map<String, List<ResourceType>>,
     wikiDataMap: Map<String, PlanetWikiData>
 ): StarSystem {
@@ -65,7 +74,12 @@ private fun parseSystem(
 
         //TODO - resource matchup
         val wikiData = wikiDataMap[rawPlanet.name] ?: PlanetWikiData()
-        val resources = determineResources(rawPlanet, systemResources, wikiData)
+        val inorganicResources = determineResources(rawPlanet, systemResources, wikiData)
+        val uniqueId = "${rawPlanet.starId}-${rawPlanet.planetId}"
+
+        val floraList = floraResources[uniqueId]?.map { it.resource } ?: listOf()
+        val faunaList = faunaResources[uniqueId]?.map { it.resource } ?: listOf()
+        val organicResources = (floraList + faunaList).toSet()
 
         val flora = wikiData.flora.replace("[[#Flora|]]", "")
         val fauna = wikiData.fauna.replace("[[#Fauna|]]", "")
@@ -100,7 +114,8 @@ private fun parseSystem(
                     fauna,
                     biomes,
                     wikiData.traits,
-                    resources
+                    organicResources,
+                    inorganicResources
                 )
             }
         rawPlanet.planetId to planet

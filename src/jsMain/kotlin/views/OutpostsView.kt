@@ -140,12 +140,12 @@ private fun TagConsumer<HTMLElement>.outpost(
         }
     }
 
-    h5 { +"Resources" }
+    h5 { +"Inorganic Resources" }
     div {
         button(classes = "add-info-button") {
             +"Add"
             onClickFunction = {
-                showResourcePicker(planet.resources - outpost.resources) {
+                showResourcePicker(planet.inorganicResources - outpost.resources) {
                     outpost.resources.add(it)
                     saveOutpostInfo(planet, info)
                 }

@@ -34,7 +34,7 @@ private fun planetMatches(planet: Planet, searchText: String): Boolean {
                 || traits.any { it.lowercase().contains(searchText) }
                 || flora.any { it.lowercase().contains(searchText) }
                 || fauna.any { it.lowercase().contains(searchText) }
-                || resources.any { it.contains(searchText) }
+                || inorganicResources.any { it.contains(searchText) }
     }
 }
 
