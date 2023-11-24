@@ -1,5 +1,6 @@
 .by-resource-view {
     max-width: unset;
+    max-height: unset;
 }
 
 .outpost-resource-row {
@@ -21,4 +22,8 @@
 
 .outpost-resource-row td:last-child {
     padding-top: 5px;
+}
+
+#organic-resources td:first-child {
+    min-width: 100px;
 }

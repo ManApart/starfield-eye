@@ -244,33 +244,53 @@ private fun saveOutpostInfo(planet: Planet, info: PlanetInfo) {
 }
 
 private data class ResourceEntry(val planetId: String, val name: String, val resource: ResourceType)
+private data class OrganicResourceEntry(val planetId: String, val name: String, val resource: String)
 
 private fun TagConsumer<HTMLElement>.viewOutpostsByResearch() {
-    val resourceEntries = inMemoryStorage.planetUserInfo.values
+    val outpostMap = inMemoryStorage.planetUserInfo.values
         .filter { it.outPosts.isNotEmpty() }
         .flatMap { planet -> planet.outPosts.map { planet.planetId to it } }
-        .flatMap { (id, outpost) -> outpost.inorganicResources.map { ResourceEntry(id, outpost.name, it) } }
-        .groupBy { it.resource }
-        .entries.sortedBy { it.key.name }
+
+    val inorganicResources =
+        outpostMap.flatMap { (id, outpost) -> outpost.inorganicResources.map { ResourceEntry(id, outpost.name, it) } }
+            .groupBy { it.resource }
+            .entries.sortedBy { it.key.name }
+
+    val organicResources =
+        outpostMap.flatMap { (id, outpost) ->
+            outpost.organicResources.map {
+                OrganicResourceEntry(
+                    id,
+                    outpost.name,
+                    it
+                )
+            }
+        }
+            .groupBy { it.resource }
+            .entries.sortedBy { it.key }
 
     div("section-view-box by-resource-view") {
         table {
-            resourceEntries.forEach { (resource, outposts) ->
+            id = "inorganic-resources"
+            inorganicResources.forEach { (resource, outposts) ->
                 tr("outpost-resource-row") {
                     td { resourceSquare(resource) }
                     td {
                         outposts.forEach { outpost ->
-                            val planet = galaxy.planets[outpost.planetId]!!
-                            span("outpost-resource-item") {
-                                a(href = "#system/${outpost.planetId.replace("-", "/")}") {
-                                    +"${outpost.name} (${planet.name})"
-                                }
-                                button {
-                                    +"Travel"
-                                    title = "Set course to planet. In Future hopefully direct to outpost"
-                                    onClickFunction = { attemptTravel(planet.name) }
-                                }
-                            }
+                            outpostCell(outpost.planetId, outpost.name)
+                        }
+                    }
+                }
+            }
+        }
+        table {
+            id = "organic-resources"
+            organicResources.forEach { (resource, outposts) ->
+                tr("outpost-resource-row") {
+                    td { +resource }
+                    td {
+                        outposts.forEach { outpost ->
+                            outpostCell(outpost.planetId, outpost.name)
                         }
                     }
                 }
@@ -279,4 +299,18 @@ private fun TagConsumer<HTMLElement>.viewOutpostsByResearch() {
     }
 
 
+}
+
+private fun TD.outpostCell(planetId: String, name: String) {
+    val planet = galaxy.planets[planetId]!!
+    span("outpost-resource-item") {
+        a(href = "#system/${planetId.replace("-", "/")}") {
+            +"$name (${planet.name})"
+        }
+        button {
+            +"Travel"
+            title = "Set course to planet. In Future hopefully direct to outpost"
+            onClickFunction = { attemptTravel(planet.name) }
+        }
+    }
 }
