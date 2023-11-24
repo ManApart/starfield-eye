@@ -11,7 +11,8 @@ data class PlanetInfo(
 @Serializable
 data class Outpost(
     var name: String = "",
-    val resources: MutableSet<ResourceType> = mutableSetOf(),
+    val organicResources: MutableSet<String> = mutableSetOf(),
+    val inorganicResources: MutableSet<ResourceType> = mutableSetOf(),
     var notes: String = "",
 )
 

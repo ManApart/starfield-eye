@@ -4,10 +4,7 @@ import Outpost
 import Planet
 import PlanetInfo
 import ResourceType
-import components.resourceSquare
-import components.resourceSquares
-import components.showResourcePicker
-import components.toggle
+import components.*
 import el
 import galaxy
 import inMemoryStorage
@@ -140,13 +137,13 @@ private fun TagConsumer<HTMLElement>.outpost(
         }
     }
 
-    h5 { +"Inorganic Resources" }
+    h5 { +"Organic Resources" }
     div {
         button(classes = "add-info-button") {
             +"Add"
             onClickFunction = {
-                showResourcePicker(planet.inorganicResources - outpost.resources) {
-                    outpost.resources.add(it)
+                showStringPicker(planet.organicResources - outpost.organicResources) {
+                    outpost.organicResources.add(it)
                     saveOutpostInfo(planet, info)
                 }
             }
@@ -154,16 +151,44 @@ private fun TagConsumer<HTMLElement>.outpost(
         button(classes = "remove-info-button") {
             +"Del"
             onClickFunction = {
-                showResourcePicker(outpost.resources) {
-                    outpost.resources.remove(it)
+                showStringPicker(outpost.organicResources) {
+                    outpost.organicResources.remove(it)
                     saveOutpostInfo(planet, info)
                 }
             }
         }
     }
-    if (outpost.resources.isNotEmpty()) {
+    if (outpost.organicResources.isNotEmpty()) {
         div("resource-wrapper") {
-            resourceSquares(outpost.resources)
+            +outpost.organicResources.joinToString()
+        }
+    }
+    if (planet.organicResources.isNotEmpty()) {
+        h5 { +"Inorganic Resources" }
+        div {
+            button(classes = "add-info-button") {
+                +"Add"
+                onClickFunction = {
+                    showResourcePicker(planet.inorganicResources - outpost.inorganicResources) {
+                        outpost.inorganicResources.add(it)
+                        saveOutpostInfo(planet, info)
+                    }
+                }
+            }
+            button(classes = "remove-info-button") {
+                +"Del"
+                onClickFunction = {
+                    showResourcePicker(outpost.inorganicResources) {
+                        outpost.inorganicResources.remove(it)
+                        saveOutpostInfo(planet, info)
+                    }
+                }
+            }
+        }
+    }
+    if (outpost.inorganicResources.isNotEmpty()) {
+        div("resource-wrapper") {
+            resourceSquares(outpost.inorganicResources)
         }
     }
     h5 { +"Notes" }
@@ -219,7 +244,7 @@ private fun TagConsumer<HTMLElement>.viewOutpostsByResearch() {
     val resourceEntries = inMemoryStorage.planetUserInfo.values
         .filter { it.outPosts.isNotEmpty() }
         .flatMap { planet -> planet.outPosts.map { planet.planetId to it } }
-        .flatMap { (id, outpost) -> outpost.resources.map { ResourceEntry(id, outpost.name, it) } }
+        .flatMap { (id, outpost) -> outpost.inorganicResources.map { ResourceEntry(id, outpost.name, it) } }
         .groupBy { it.resource }
         .entries.sortedBy { it.key.name }
 
