@@ -1,5 +1,6 @@
 package views
 
+import components.screenshot
 import el
 import faunaReference
 import floraReference
@@ -21,8 +22,10 @@ fun faunaView(system: Int, planet: Int) {
                 with(flora) {
                     div("fauna-entry") {
                         p { +name.substring(0, name.indexOf("(")).trim() }
-                        table("detail-view-table") {
 
+                        screenshot("fauna/$name")
+
+                        table("detail-view-table") {
                             (listOf(
                                 "Biomes" to biomes.joinToString(),
                                 "Resource" to resource,

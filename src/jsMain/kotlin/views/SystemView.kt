@@ -6,6 +6,7 @@ import ResourceType
 import Star
 import StarSystem
 import components.resourceSquares
+import components.screenshot
 import docking.setCourse
 import el
 import inMemoryStorage
@@ -227,6 +228,10 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, 
 private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, linkToSystem: Boolean) {
     with(planet) {
         h2 { +name }
+
+        //"https://images.starfieldwiki.net/b/ba/SF-planet-${planet.name.replace(" ", "_")}.jpg"
+        screenshot("planets/${planet.uniqueId}")
+
         if (linkToSystem) {
             button {
                 +"View System"

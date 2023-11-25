@@ -142,6 +142,8 @@ private fun TagConsumer<HTMLElement>.outpost(
         }
     }
 
+    screenshot("outposts/${planet.uniqueId}/${outpost.id}")
+
     h5 { +"Organic Resources" }
     div {
         button(classes = "add-info-button") {
@@ -221,7 +223,7 @@ private fun TagConsumer<HTMLElement>.addOutpost(info: PlanetInfo, planet: Planet
                 val e = it as KeyboardEvent
                 if (e.key == "Enter") {
                     val name = el<HTMLInputElement>("add-outpost-input").value
-                    info.outPosts.add(Outpost(name))
+                    info.addOutpost(name)
                     saveOutpostInfo(planet, info)
                 }
             }
@@ -230,7 +232,7 @@ private fun TagConsumer<HTMLElement>.addOutpost(info: PlanetInfo, planet: Planet
             +"Add"
             onClickFunction = {
                 val name = el<HTMLInputElement>("add-outpost-input").value
-                info.outPosts.add(Outpost(name))
+                info.addOutpost(name)
                 saveOutpostInfo(planet, info)
             }
         }

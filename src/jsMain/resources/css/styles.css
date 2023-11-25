@@ -48,7 +48,7 @@ h2 {
     margin-top: 10px;
 }
 
-h5 {
+h4, h5 {
     margin-bottom: 0px;
 }
 
@@ -234,4 +234,11 @@ input[type=checkbox]{
 
 .toggle-switch label:active:after {
   width: 25px;
+}
+
+.screenshot {
+}
+
+.screenshot img {
+    width: 100%;
 }

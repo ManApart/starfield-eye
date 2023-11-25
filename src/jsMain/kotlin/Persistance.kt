@@ -8,6 +8,7 @@ import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.events.Event
 import org.w3c.dom.events.MouseEvent
+import org.w3c.files.Blob
 import org.w3c.files.FileReader
 import org.w3c.files.get
 import org.w3c.xhr.JSON
@@ -38,6 +39,7 @@ data class InMemoryStorage(
 var inMemoryStorage = InMemoryStorage()
 var starDivs: Map<String, HTMLElement> = mapOf()
 var planetDivs: Map<String, HTMLElement> = mapOf()
+var pictureStorage: MutableMap<String, String> = mutableMapOf()
 
 
 fun loadAll(): Promise<*> {
@@ -46,7 +48,9 @@ fun loadAll(): Promise<*> {
             loadMissionReference().then {
                 loadFloraReference().then {
                     loadFaunaReference().then {
-                        return@then
+                        loadPictures().then {
+                            return@then
+                        }
                     }
                 }
             }
@@ -107,6 +111,7 @@ fun createDB() {
 
 fun persistMemory() {
     LocalForage.setItem("memory", jsonMapper.encodeToString(inMemoryStorage))
+    LocalForage.setItem("pictures", jsonMapper.encodeToString(pictureStorage))
 }
 
 fun loadMemory(): Promise<*> {
@@ -121,16 +126,48 @@ fun loadMemory(): Promise<*> {
     }
 }
 
-fun exportPlayerInfo() {
+fun loadPictures(): Promise<*> {
+    return LocalForage.getItem("pictures").then { persisted ->
+        if (persisted != null && persisted != undefined) {
+            try {
+                pictureStorage = jsonMapper.decodeFromString(persisted as String)
+            } catch (e: Exception) {
+                println("Failed to parse pictures. Try deleting user data and rebuilding it.")
+            }
+        }
+    }
+}
+
+fun exportPlayerInfo() = exportData(jsonMapper.encodeToString(inMemoryStorage), "StarfieldEye.json")
+
+fun exportPictures() = exportData(jsonMapper.encodeToString(pictureStorage), "starfield-pictures.json")
+
+private fun exportData(data: String, fileName: String) {
     val download = document.createElement("a") as HTMLElement
-    download.setAttribute("href", "data:text/plain;charset=utf-8," + jsonMapper.encodeToString(inMemoryStorage))
-    download.setAttribute("download", "StarfieldEye.json")
+    download.setAttribute("href", "data:text/plain;charset=utf-8," + data)
+    download.setAttribute("download", fileName)
     document.body?.append(download)
     download.click()
     document.body?.removeChild(download)
 }
 
 fun importPlayerInfo() {
+    importData { data ->
+        jsonMapper.decodeFromString<InMemoryStorage>(data).also { inMemoryStorage = it }
+        println("Imported ${inMemoryStorage.planetUserInfo.size} user info pieces")
+        persistMemory()
+    }
+}
+
+fun importPictures() {
+    importData { data ->
+        jsonMapper.decodeFromString<Map<String, String>>(data).also { pictureStorage = it.toMutableMap() }
+        println("Imported ${pictureStorage.keys.size} pictures")
+        persistMemory()
+    }
+}
+
+private fun importData(then: (String) -> Unit) {
     val fileInput = document.createElement("input") as HTMLInputElement
     fileInput.apply {
         type = "file"
@@ -140,9 +177,7 @@ fun importPlayerInfo() {
                 val file = files!![0]!!
                 val reader = FileReader()
                 reader.onloadend = {
-                    jsonMapper.decodeFromString<InMemoryStorage>(reader.result as String).also { inMemoryStorage = it }
-                    println("Imported ${inMemoryStorage.planetUserInfo.size} user info pieces")
-                    persistMemory()
+                    then(reader.result as String)
                 }
                 reader.readAsText(file)
             }
@@ -154,6 +189,12 @@ fun importPlayerInfo() {
 fun deleteUserData() {
     if (window.confirm("Are you sure you want to delete data? Make sure you've exported a backup first!")) {
         inMemoryStorage = InMemoryStorage()
+        pictureStorage = mutableMapOf()
         persistMemory()
     }
+}
+
+fun savePicture(path: String, data: String) {
+    pictureStorage[path] = data
+    persistMemory()
 }

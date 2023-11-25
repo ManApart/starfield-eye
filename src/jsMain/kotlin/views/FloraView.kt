@@ -1,5 +1,6 @@
 package views
 
+import components.screenshot
 import el
 import floraReference
 import kotlinx.dom.addClass
@@ -21,8 +22,10 @@ fun floraView(system: Int, planet: Int) {
                 with(flora) {
                     div("flora-entry") {
                         p { +name.substring(0, name.indexOf("(")).trim() }
-                        table("detail-view-table") {
 
+                        screenshot("flora/$name")
+
+                        table("detail-view-table") {
                             (listOf(
                                 "Biomes" to biomes.joinToString(),
                                 "Resource" to resource,

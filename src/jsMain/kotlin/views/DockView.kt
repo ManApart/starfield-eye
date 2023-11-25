@@ -4,7 +4,9 @@ import deleteUserData
 import docking.healthCheck
 import docking.poll
 import el
+import exportPictures
 import exportPlayerInfo
+import importPictures
 import importPlayerInfo
 import inMemoryStorage
 import keyPressedHook
@@ -123,23 +125,39 @@ private fun DIV.manageData() {
         p { +"You can export data here to either back it up, or import it into another browser, or from the github site to the locally hosted one." }
         p { +"If you're having issues with the site, it's possible that deleting your user data may fix them. Make sure to export your data first so you have a backup." }
 
-        button {
-            id = "import-button"
-            +"Import Data"
-            title = "Import saved user data"
-            onClickFunction = { importPlayerInfo() }
+        div {
+            button {
+                id = "import-button"
+                +"Import Data"
+                title = "Import saved user data"
+                onClickFunction = { importPlayerInfo() }
+            }
+            button {
+                id = "export-button"
+                +"Export Data"
+                title = "Download user entered data"
+                onClickFunction = { exportPlayerInfo() }
+            }
+            button {
+                id = "delete-button"
+                +"Delete Data"
+                title = "Delete user entered data"
+                onClickFunction = { deleteUserData() }
+            }
         }
-        button {
-            id = "export-button"
-            +"Export Data"
-            title = "Download user entered data"
-            onClickFunction = { exportPlayerInfo() }
-        }
-        button {
-            id = "delete-button"
-            +"Delete Data"
-            title = "Delete user entered data"
-            onClickFunction = { deleteUserData() }
+        div {
+            button {
+                id = "import-images-button"
+                +"Import Images"
+                title = "Import saved user images"
+                onClickFunction = { importPictures() }
+            }
+            button {
+                id = "export-images-button"
+                +"Export Images"
+                title = "Download user uploaded images"
+                onClickFunction = { exportPictures() }
+            }
         }
     }
 }
