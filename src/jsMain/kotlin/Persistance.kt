@@ -8,7 +8,6 @@ import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.events.Event
 import org.w3c.dom.events.MouseEvent
-import org.w3c.files.Blob
 import org.w3c.files.FileReader
 import org.w3c.files.get
 import org.w3c.xhr.JSON
@@ -194,7 +193,12 @@ fun deleteUserData() {
     }
 }
 
-fun savePicture(path: String, data: String) {
-    pictureStorage[path] = data
+fun savePicture(key: String, data: String) {
+    pictureStorage[key] = data
+    persistMemory()
+}
+
+fun deletePicture(key: String) {
+    pictureStorage.remove(key)
     persistMemory()
 }

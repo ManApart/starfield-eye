@@ -123,7 +123,7 @@ summary::-webkit-details-marker {
 }
 
 .hidden {
-    display: none !important;
+    display: none;
 }
 
 .visible-block {
@@ -237,8 +237,14 @@ input[type=checkbox]{
 }
 
 .screenshot {
+    position: relative;
 }
 
 .screenshot img {
     width: 100%;
+}
+
+.screenshot-delete-button {
+    position: absolute;
+    right: 0;
 }

@@ -1,5 +1,6 @@
 package components
 
+import deletePicture
 import el
 import kotlinx.browser.document
 import kotlinx.dom.addClass
@@ -17,23 +18,32 @@ import savePicture
 fun TagConsumer<HTMLElement>.screenshot(key: String, fallbackUrl: String? = null) {
     div("screenshot") {
         val imageUrl = (pictureStorage[key] ?: fallbackUrl)
-        val hidden = if (imageUrl == null) "hidden" else ""
-        img(classes = hidden) {
+
+//         val deleteClasses = "screenshot-delete-button hidden"
+         val deleteClasses = "screenshot-delete-button" + (" hidden".takeIf { pictureStorage[key] == null } ?: "")
+        button(classes = deleteClasses) {
+            id = "$key-delete-button"
+            +"Del"
+            onClickFunction = {
+                el<HTMLInputElement>(key).src = fallbackUrl ?: ""
+                if (fallbackUrl == null) {
+                    el<HTMLButtonElement?>("$key-button")?.removeClass("hidden")
+                }
+                el<HTMLButtonElement?>("$key-delete-button")?.addClass("hidden")
+                deletePicture(key)
+            }
+        }
+        img(classes = "hidden".takeIf { imageUrl == null }) {
             id = key
             alt = ""
             imageUrl?.let { src = it }
-
+            onClickFunction = { uploadPicture(key) }
+        }
+        button(classes = "hidden".takeIf { imageUrl != null }) {
+            id = "$key-button"
+            +"Upload Picture"
             onClickFunction = {
                 uploadPicture(key)
-            }
-        }
-        if (imageUrl == null) {
-            button {
-                id = "$key-button"
-                +"Upload Picture"
-                onClickFunction = {
-                    uploadPicture(key)
-                }
             }
         }
     }
@@ -57,8 +67,8 @@ private fun uploadPicture(key: String) {
                         img.removeClass("hidden")
                         savePicture(key, img.src)
                         if (img.src.isNotBlank()) {
-                            val button = el<HTMLButtonElement?>("$key-button")
-                            button?.addClass("hidden")
+                            el<HTMLButtonElement?>("$key-button")?.addClass("hidden")
+                            el<HTMLButtonElement?>("$key-delete-button")?.removeClass("hidden")
                         }
                     }
                     null
