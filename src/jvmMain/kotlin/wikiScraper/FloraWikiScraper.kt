@@ -44,11 +44,9 @@ private fun parseTable(table: Element, species: String): List<FloraWikiData> {
             production?.let { "Production" to it },
         ).toMap()
 
-        val name = "$species ($planet)"
-
         val planetId = planetsByName[planet]?.uniqueId
         if (planetId == null) println("Could not find planet $planet")
-        FloraWikiData(name, planet, planetId, biomes, resource, other)
+        FloraWikiData(species, null, planet, planetId, biomes, resource, other)
     }
 }
 

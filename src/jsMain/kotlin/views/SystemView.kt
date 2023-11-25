@@ -229,8 +229,7 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
     with(planet) {
         h2 { +name }
 
-        //"https://images.starfieldwiki.net/b/ba/SF-planet-${planet.name.replace(" ", "_")}.jpg"
-        screenshot("planets/${planet.uniqueId}")
+        screenshot("planets/${planet.uniqueId}", planet.imageUrl)
 
         if (linkToSystem) {
             button {

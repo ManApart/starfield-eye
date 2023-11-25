@@ -19,6 +19,7 @@ data class Planet(
     val starId: Int,
     val parentId: Int,
     val name: String,
+    val imageUrl: String? = null,
     val planetClass: String,
     val bodyType: Int,
     val bodyTypeDescription: String,

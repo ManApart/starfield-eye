@@ -18,12 +18,12 @@ fun faunaView(system: Int, planet: Int) {
         root.append {
             h2 { +"Fauna" }
 
-            planetFlora.forEach { flora ->
-                with(flora) {
+            planetFlora.forEach { fauna ->
+                with(fauna) {
                     div("fauna-entry") {
                         p { +name.substring(0, name.indexOf("(")).trim() }
 
-                        screenshot("fauna/$name")
+                        screenshot("fauna/$name", fauna.imageUrl)
 
                         table("detail-view-table") {
                             (listOf(

@@ -21,9 +21,9 @@ fun floraView(system: Int, planet: Int) {
             planetFlora.forEach { flora ->
                 with(flora) {
                     div("flora-entry") {
-                        p { +name.substring(0, name.indexOf("(")).trim() }
+                        p { +name }
 
-                        screenshot("flora/$name")
+                        screenshot("flora/$name", flora.imageUrl)
 
                         table("detail-view-table") {
                             (listOf(

@@ -74,5 +74,5 @@ private fun parseTable(table: Element): FaunaWikiData {
     ).toMap()
     val planetId = planetsByName[planet]?.uniqueId
     if (planetId == null) println("Could not find planet $planet")
-    return FaunaWikiData(name, temperament, planet, planetId, biomes, resource, abilities, other)
+    return FaunaWikiData(name, null, temperament, planet, planetId, biomes, resource, abilities, other)
 }

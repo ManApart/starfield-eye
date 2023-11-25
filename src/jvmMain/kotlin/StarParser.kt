@@ -72,7 +72,6 @@ private fun parseSystem(
     val planets = rawPlanets.associate { rawPlanet ->
         val biomes = rawBiomes.filter { it.planetId == rawPlanet.planetId }.map { it.name }
 
-        //TODO - resource matchup
         val wikiData = wikiDataMap[rawPlanet.name] ?: PlanetWikiData()
         val inorganicResources = determineResources(rawPlanet, systemResources, wikiData)
         val uniqueId = "${rawPlanet.starId}-${rawPlanet.planetId}"
@@ -91,6 +90,7 @@ private fun parseSystem(
                     starId,
                     parentId,
                     name,
+                    wikiData.imageUrl,
                     planetClass,
                     bodyType,
                     wikiData.type,

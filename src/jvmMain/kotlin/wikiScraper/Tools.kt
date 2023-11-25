@@ -14,7 +14,6 @@ import java.util.*
 
 data class ScraperOptions(
     val onlyOne: Boolean = false,
-    val useCache: Boolean = true,
     val start: Int = 0,
     val limit: Int = 0,
     val chunkSize: Int = 100
@@ -85,7 +84,7 @@ inline fun <reified T : WikiData> readFromUrls(
             chunk.flatMap {
 //                parse(fetch(it, options.useCache))
                 try {
-                    parse(fetch(it, options.useCache))
+                    parse(fetch(it))
                 } catch (e: Exception) {
                     println("Unable to parse $it")
                     emptyList()
@@ -97,16 +96,17 @@ inline fun <reified T : WikiData> readFromUrls(
     output.writeText(jsonMapper.encodeToString(existing.values))
 }
 
-fun fetch(url: String, useCache: Boolean): Document {
-    return if (useCache) {
-        val file = File("raw-data/cache/${url.substring(url.lastIndexOf("/"))}.html").also { it.parentFile.mkdirs() }
-        if (!file.exists()) {
-            file.writeText(getPage(url)!!)
-        }
-        Jsoup.parse(file)
-    } else Jsoup.connect(url).get()
+fun fetch(url: String): Document {
+    return Jsoup.parse(fetchPage(url))
 }
 
+fun fetchPage(url: String): String {
+    val file = File("raw-data/cache/${url.substring(url.lastIndexOf("/"))}.html").also { it.parentFile.mkdirs() }
+    if (!file.exists()) {
+        file.writeText(getPage(url)!!)
+    }
+    return file.readText()
+}
 
 fun Element?.cleanText(): String? {
     return this?.text()?.replace("(?)", "")?.ifBlank { null }

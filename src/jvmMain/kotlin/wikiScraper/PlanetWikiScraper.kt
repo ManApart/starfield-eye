@@ -4,7 +4,7 @@ import PlanetWikiData
 import jsonMapper
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
-import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
 import toPlanet
 import java.io.File
 
@@ -23,7 +23,13 @@ fun main() {
         .also { println("Reading ${it.size} Planets") }
         .chunked(chunkSize)
         .flatMap { chunk ->
-            chunk.mapNotNull { name -> getPage("https://starfieldwiki.net/wiki/Starfield:$name")?.let { name to it } }.also {
+            chunk.mapNotNull { name ->
+                try {
+                    fetch("https://starfieldwiki.net/wiki/Starfield:$name").let { name to it }
+                } catch (e: Exception) {
+                    null
+                }
+            }.also {
                 println("Downloaded ${it.size}")
             }
         }
@@ -43,17 +49,17 @@ private fun getPlanetNames(): List<String> {
     }
 }
 
-private fun parseWikiData(name: String, pageString: String): PlanetWikiData? {
+private fun parseWikiData(name: String, document: Document): PlanetWikiData? {
     return try {
-        attemptParseWikiData(name, pageString)
+        attemptParseWikiData(name, document)
     } catch (e: Exception) {
         println("Unable to get data for $name")
         null
     }
 }
 
-private fun attemptParseWikiData(name: String, pageString: String): PlanetWikiData {
-    val data: Map<String, List<String>> = Jsoup.parse(pageString).select(".infobox").select("tr").mapNotNull { row ->
+private fun attemptParseWikiData(name: String, document: Document): PlanetWikiData {
+    val data: Map<String, List<String>> = document.select(".infobox").select("tr").mapNotNull { row ->
         val title = row.selectFirst("th")?.text()?.trim()
         val cols = row.select("td")
         if (title == null || cols.isEmpty()) null else {
@@ -62,8 +68,13 @@ private fun attemptParseWikiData(name: String, pageString: String): PlanetWikiDa
         }
     }.toMap()
     val resources = data["Resources"]?.flatMap { it.replace("  ", " ").split(" ") } ?: listOf()
+
+    val image = document.select(".thumbinner").flatMap { it.select("img") }.firstOrNull()
+    val url = image?.attr("srcset")?.split(" ")?.firstOrNull()?.let { "https:$it" } ?: image?.attr("src")
+
     return PlanetWikiData(
         name.replace("_", " "),
+        url,
         data["Type"]?.first() ?: "",
         data["Temperature"]?.first() ?: "",
         data["Atmosphere"]?.first() ?: "",
