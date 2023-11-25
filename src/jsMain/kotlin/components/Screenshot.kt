@@ -71,26 +71,17 @@ private fun uploadPicture(key: String) {
 }
 
 fun scaleImage(img: HTMLImageElement, data: String, then: () -> Unit) {
-    val w = 1000.0
-    if (img.naturalWidth <= w) {
-        then()
-    } else {
-        val image = Image()
-        val ratio = img.naturalHeight.toDouble() / img.naturalWidth.toDouble()
-        val h = w * ratio
-        println("Resize to $w x $h, r: $ratio")
-        image.src = data
-        image.onload = {
-            val can = (document.createElement("canvas") as HTMLCanvasElement).apply {
-                width = w.toInt()
-                height = h.toInt()
-            }
-            val ctx = can.getContext("2d") as CanvasRenderingContext2D
-            ctx.imageSmoothingQuality = ImageSmoothingQuality.HIGH
-            ctx.drawImage(image, 0.0, 0.0, w, h)
-            img.src = ctx.canvas.toDataURL()
-            then()
-            null
+    val image = Image()
+    image.src = data
+    image.onload = {
+        val can = (document.createElement("canvas") as HTMLCanvasElement).apply {
+            width = img.naturalWidth
+            height = img.naturalHeight
         }
+        val ctx = can.getContext("2d") as CanvasRenderingContext2D
+        ctx.drawImage(image, 0.0, 0.0, img.naturalWidth.toDouble(), img.naturalHeight.toDouble())
+        img.src = ctx.canvas.toDataURL("image/jpeg", .85)
+        then()
+        null
     }
 }
