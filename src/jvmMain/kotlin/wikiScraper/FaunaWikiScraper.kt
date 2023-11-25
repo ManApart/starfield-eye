@@ -16,7 +16,7 @@ import java.lang.IllegalStateException
 private lateinit var planetsByName: Map<String, Planet>
 
 fun main() {
-    val options = ScraperOptions()
+    val options = ScraperOptions("fauna")
     val urlFile = File("raw-data/fauna-pages.txt")
     if (!urlFile.exists()) urlFile.writeText("")
     fetchPagesIfEmpty(
@@ -37,18 +37,21 @@ private fun parseFauna(page: Document): List<FaunaWikiData> {
     val singleTable = allTables.firstOrNull { it.hasClass("infobox") }
     val variantTables = allTables.toMutableList().also { it.remove(singleTable) }
 
+    val image = page.select(".thumbinner").flatMap { it.select("img") }.firstOrNull()
+    val url = image?.attr("srcset")?.split(" ")?.firstOrNull()?.let { "https:$it" } ?: image?.attr("src")
+
     return when {
         singleTable == null && variantTables.isEmpty() -> {
             println("Skipping ${page.baseUri()}")
             listOf()
         }
 
-        variantTables.isEmpty() -> listOf(parseTable(singleTable!!))
-        else -> variantTables.map { parseTable(it) }
+        variantTables.isEmpty() -> listOf(parseTable(singleTable!!, url))
+        else -> variantTables.map { parseTable(it, url) }
     }
 }
 
-private fun parseTable(table: Element): FaunaWikiData {
+private fun parseTable(table: Element, imageUrl: String?): FaunaWikiData {
     val name = parseName(table.select("th").first()!!)
     val planet = table.selectHeaderClean("Planet") ?: table.selectHeaderClean("Location")  ?: parsePlanet(table.select("th").first()!!)
     if (name == planet) throw IllegalStateException("Non-fauna table detected")
@@ -74,5 +77,5 @@ private fun parseTable(table: Element): FaunaWikiData {
     ).toMap()
     val planetId = planetsByName[planet]?.uniqueId
     if (planetId == null) println("Could not find planet $planet")
-    return FaunaWikiData(name, null, temperament, planet, planetId, biomes, resource, abilities, other)
+    return FaunaWikiData(name, imageUrl, temperament, planet, planetId, biomes, resource, abilities, other)
 }

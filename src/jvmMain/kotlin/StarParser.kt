@@ -16,9 +16,9 @@ fun main() {
     val rawStars = File("./raw-data/stars.csv").readLines().drop(2).map { it.toStar() }
     val rawPlanets = File("./raw-data/galaxy.csv").readLines().drop(2).map { it.toPlanet() }.groupBy { it.starId }
     val resourceLookup = parseResourceLookup(File("./raw-data/raw-resources.csv").readLines())
-    val wikiDataFile = File("raw-data/wiki-data.json")
-    val wikiData = if (wikiDataFile.exists()) {
-        jsonMapper.decodeFromString<Map<String, PlanetWikiData>>(wikiDataFile.readText()).toMutableMap()
+    val planetWikiDataFile = File("raw-data/planet-wiki-data.json")
+    val planetWikiData = if (planetWikiDataFile.exists()) {
+        jsonMapper.decodeFromString<Map<String, PlanetWikiData>>(planetWikiDataFile.readText()).toMutableMap()
     } else mapOf()
     val floraWikiData =
         jsonMapper.decodeFromString<List<FloraWikiData>>(File("./src/jsMain/resources/flora-wiki-data.json").readText())
@@ -48,7 +48,7 @@ fun main() {
         val resources = resourceLookup[star.name] ?: emptyMap<String, List<ResourceType>>().also {
             failedSystemResourceLookups.add(star.name)
         }
-        star.starId to parseSystem(star, planets, biomes, floraWikiData, faunaWikiData, resources, wikiData)
+        star.starId to parseSystem(star, planets, biomes, floraWikiData, faunaWikiData, resources, planetWikiData)
     }
 
     println("Failed to find resources for ${failedSystemResourceLookups.size} systems: ${failedSystemResourceLookups.joinToString()}.")

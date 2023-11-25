@@ -25,7 +25,7 @@ fun main() {
         .flatMap { chunk ->
             chunk.mapNotNull { name ->
                 try {
-                    fetch("https://starfieldwiki.net/wiki/Starfield:$name").let { name to it }
+                    fetch("https://starfieldwiki.net/wiki/Starfield:$name", "planets").let { name to it }
                 } catch (e: Exception) {
                     null
                 }

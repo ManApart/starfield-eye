@@ -10,7 +10,7 @@ import toMissionType
 import java.io.File
 
 fun main() {
-    val options = ScraperOptions()
+    val options = ScraperOptions("missions")
     val urlFile = File("raw-data/mission-pages.txt")
     if (!urlFile.exists()) urlFile.writeText("")
     val missionBaseUrls = listOf(

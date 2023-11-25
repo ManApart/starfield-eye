@@ -13,10 +13,11 @@ import java.nio.charset.StandardCharsets
 import java.util.*
 
 data class ScraperOptions(
+    val cacheDir: String,
     val onlyOne: Boolean = false,
     val start: Int = 0,
     val limit: Int = 0,
-    val chunkSize: Int = 100
+    val chunkSize: Int = 100,
 )
 
 fun getPage(url: String, headers: Map<String, String> = mapOf()): String? {
@@ -84,7 +85,7 @@ inline fun <reified T : WikiData> readFromUrls(
             chunk.flatMap {
 //                parse(fetch(it, options.useCache))
                 try {
-                    parse(fetch(it))
+                    parse(fetch(it, options.cacheDir))
                 } catch (e: Exception) {
                     println("Unable to parse $it")
                     emptyList()
@@ -96,12 +97,12 @@ inline fun <reified T : WikiData> readFromUrls(
     output.writeText(jsonMapper.encodeToString(existing.values))
 }
 
-fun fetch(url: String): Document {
-    return Jsoup.parse(fetchPage(url))
+fun fetch(url: String, cacheDir: String): Document {
+    return Jsoup.parse(fetchPage(url, cacheDir))
 }
 
-fun fetchPage(url: String): String {
-    val file = File("raw-data/cache/${url.substring(url.lastIndexOf("/"))}.html").also { it.parentFile.mkdirs() }
+fun fetchPage(url: String, cacheDir: String): String {
+    val file = File("raw-data/cache/$cacheDir/${url.substring(url.lastIndexOf("/"))}.html").also { it.parentFile.mkdirs() }
     if (!file.exists()) {
         file.writeText(getPage(url)!!)
     }
