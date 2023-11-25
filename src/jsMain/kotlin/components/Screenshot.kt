@@ -6,9 +6,7 @@ import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.js.onClickFunction
-import org.w3c.dom.HTMLElement
-import org.w3c.dom.HTMLImageElement
-import org.w3c.dom.HTMLInputElement
+import org.w3c.dom.*
 import org.w3c.dom.events.Event
 import org.w3c.dom.events.MouseEvent
 import org.w3c.files.FileReader
@@ -55,17 +53,44 @@ private fun uploadPicture(key: String) {
                 reader.onload = {
                     val pic = reader.result as String
                     img.src = pic
-                    img.removeClass("hidden")
-                    savePicture(key, pic)
-                    if (img.src.isNotBlank()) {
-                        val button = el("$key-button")
-                        button.addClass("hidden")
+                    scaleImage(img, pic) {
+                        img.removeClass("hidden")
+                        savePicture(key, img.src)
+                        if (img.src.isNotBlank()) {
+                            val button = el<HTMLButtonElement?>("$key-button")
+                            button?.addClass("hidden")
+                        }
                     }
-                    true
+                    null
                 }
                 reader.readAsDataURL(file)
             }
         })
         dispatchEvent(MouseEvent("click"))
+    }
+}
+
+fun scaleImage(img: HTMLImageElement, data: String, then: () -> Unit) {
+    val w = 1000.0
+    if (img.naturalWidth <= w) {
+        then()
+    } else {
+        val image = Image()
+        val ratio = img.naturalHeight.toDouble() / img.naturalWidth.toDouble()
+        val h = w * ratio
+        println("Resize to $w x $h, r: $ratio")
+        image.src = data
+        image.onload = {
+            val can = (document.createElement("canvas") as HTMLCanvasElement).apply {
+                width = w.toInt()
+                height = h.toInt()
+            }
+            val ctx = can.getContext("2d") as CanvasRenderingContext2D
+            ctx.imageSmoothingQuality = ImageSmoothingQuality.HIGH
+            ctx.drawImage(image, 0.0, 0.0, w, h)
+            img.src = ctx.canvas.toDataURL()
+            then()
+            null
+        }
     }
 }
