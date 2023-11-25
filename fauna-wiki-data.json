@@ -146,6 +146,7 @@
     },
     {
         "name": "Apex Dust Devil Exorunner",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/6/62/SF-fauna-Apex_Dust_Devil_Exorunner.jpg/450px-SF-fauna-Apex_Dust_Devil_Exorunner.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Gagarin",
         "planetId": "71456-2",
@@ -195,6 +196,7 @@
     },
     {
         "name": "Apex Parrothawk",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/7/76/SF-fauna-Parrothawk.jpg/450px-SF-fauna-Parrothawk.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Jemison",
         "planetId": "71456-3",
@@ -279,6 +281,7 @@
     },
     {
         "name": "Ashta",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8b/SF-fauna-Ashta.jpg/450px-SF-fauna-Ashta.jpg",
         "temperament": "FEARLESS",
         "planet": "Akila",
         "planetId": "72432-2",
@@ -430,6 +433,7 @@
     },
     {
         "name": "Beetle Geophage (Alpha Andraste III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/14/SF-fauna-Beetle_Geophage.jpg/450px-SF-fauna-Beetle_Geophage.jpg",
         "temperament": "PEACEFUL",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
@@ -455,6 +459,7 @@
     },
     {
         "name": "Beetle Geophage (Codos)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/14/SF-fauna-Beetle_Geophage.jpg/450px-SF-fauna-Beetle_Geophage.jpg",
         "temperament": "WARY",
         "planet": "Codos",
         "planetId": "72432-14",
@@ -481,6 +486,7 @@
     },
     {
         "name": "Beetle Grazer (Jemison)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/e3/SF-fauna-Beetle_Grazer.jpg/450px-SF-fauna-Beetle_Grazer.jpg",
         "temperament": "SKITTISH",
         "planet": "Jemison",
         "planetId": "71456-3",
@@ -505,6 +511,7 @@
     },
     {
         "name": "Beetle Grazer (Bara III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/e3/SF-fauna-Beetle_Grazer.jpg/450px-SF-fauna-Beetle_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Bara III",
         "biomes": [
@@ -529,6 +536,7 @@
     },
     {
         "name": "Beetle Grazer (Groombridge VIII-a)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/e3/SF-fauna-Beetle_Grazer.jpg/450px-SF-fauna-Beetle_Grazer.jpg",
         "temperament": "SKITTISH",
         "planet": "Groombridge VIII-a",
         "planetId": "57767-24",
@@ -554,6 +562,7 @@
     },
     {
         "name": "Beetle Scavenger (Al-Battani II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Beetle_Scavenger.jpg/450px-SF-fauna-Beetle_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Al-Battani II",
         "planetId": "65147-2",
@@ -577,6 +586,7 @@
     },
     {
         "name": "Beetle Scavenger (Archimedes III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Beetle_Scavenger.jpg/450px-SF-fauna-Beetle_Scavenger.jpg",
         "temperament": "WARY",
         "planet": "Archimedes III",
         "planetId": "75150-3",
@@ -604,6 +614,7 @@
     },
     {
         "name": "Beetle Scavenger (Beta Ternion II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Beetle_Scavenger.jpg/450px-SF-fauna-Beetle_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Beta Ternion II",
         "planetId": "119058-2",
@@ -631,6 +642,7 @@
     },
     {
         "name": "Beetle Scavenger (Magnar)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Beetle_Scavenger.jpg/450px-SF-fauna-Beetle_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Magnar",
         "planetId": "98924-2",
@@ -658,6 +670,7 @@
     },
     {
         "name": "Beetle Scavenger (Eridani IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Beetle_Scavenger.jpg/450px-SF-fauna-Beetle_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Eridani IV",
         "planetId": "15471-4",
@@ -682,6 +695,7 @@
     },
     {
         "name": "Beetle Scavenger (Feynman III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Beetle_Scavenger.jpg/450px-SF-fauna-Beetle_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Feynman III",
         "planetId": "86469-3",
@@ -708,6 +722,7 @@
     },
     {
         "name": "Beetle Scavenger (Marduk IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Beetle_Scavenger.jpg/450px-SF-fauna-Beetle_Scavenger.jpg",
         "temperament": "WARY",
         "planet": "Marduk IV",
         "planetId": "60805-4",
@@ -732,6 +747,7 @@
     },
     {
         "name": "Beetle Scavenger (Oborum I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Beetle_Scavenger.jpg/450px-SF-fauna-Beetle_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Oborum I",
         "planetId": "119143-1",
@@ -756,6 +772,7 @@
     },
     {
         "name": "Beetle Scavenger (Pyraas II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Beetle_Scavenger.jpg/450px-SF-fauna-Beetle_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Pyraas II",
         "planetId": "68415-2",
@@ -779,6 +796,7 @@
     },
     {
         "name": "Beetle Scavenger (Rutherford III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Beetle_Scavenger.jpg/450px-SF-fauna-Beetle_Scavenger.jpg",
         "temperament": "WARY",
         "planet": "Rutherford III",
         "planetId": "64587-3",
@@ -803,6 +821,7 @@
     },
     {
         "name": "Beetle Scavenger (Schrodinger III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Beetle_Scavenger.jpg/450px-SF-fauna-Beetle_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Schrodinger III",
         "planetId": "87902-3",
@@ -828,6 +847,7 @@
     },
     {
         "name": "Beetlecrab Grazer (Feynman III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/0e/SF-fauna-BeetlecrabGrazer-1x1.jpg/450px-SF-fauna-BeetlecrabGrazer-1x1.jpg",
         "temperament": "WARY",
         "planet": "Feynman III",
         "planetId": "86469-3",
@@ -854,6 +874,7 @@
     },
     {
         "name": "Beetlecrab Grazer (Ixyll II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/0e/SF-fauna-BeetlecrabGrazer-1x1.jpg/450px-SF-fauna-BeetlecrabGrazer-1x1.jpg",
         "temperament": "WARY",
         "planet": "Ixyll II",
         "planetId": "62328-2",
@@ -1125,6 +1146,7 @@
     },
     {
         "name": "Carasnail Grazer (Decaran I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/0d/SF-fauna-Carasnail_Grazer.jpg/450px-SF-fauna-Carasnail_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Decaran I",
         "planetId": "119105-1",
@@ -1150,6 +1172,7 @@
     },
     {
         "name": "Carasnail Grazer (Volii Epsilon)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/0d/SF-fauna-Carasnail_Grazer.jpg/450px-SF-fauna-Carasnail_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Volii Epsilon",
         "planetId": "64720-3",
@@ -1177,6 +1200,7 @@
     },
     {
         "name": "Carasnail Grazer (Zelazny II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/0d/SF-fauna-Carasnail_Grazer.jpg/450px-SF-fauna-Carasnail_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Zelazny II",
         "planetId": "59092-2",
@@ -1274,6 +1298,7 @@
     },
     {
         "name": "Cassowary Grazer (Groombridge VIII-a)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a8/Cassowary_Grazer.jpg/450px-Cassowary_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Groombridge VIII-a",
         "planetId": "57767-24",
@@ -1303,6 +1328,7 @@
     },
     {
         "name": "Cassowary Grazer (Heinlein VI-a)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a8/Cassowary_Grazer.jpg/450px-Cassowary_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Heinlein VI-a",
         "planetId": "71731-24",
@@ -1331,6 +1357,7 @@
     },
     {
         "name": "Cassowary Grazer (Schrodinger III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a8/Cassowary_Grazer.jpg/450px-Cassowary_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Schrodinger III",
         "planetId": "87902-3",
@@ -1483,6 +1510,7 @@
     },
     {
         "name": "Centiskull Geophage",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/9/90/SF-fauna-Centiskull_Geophage.jpg/450px-SF-fauna-Centiskull_Geophage.jpg",
         "temperament": "PEACEFUL",
         "planet": "Altair II",
         "planetId": "97338-2",
@@ -1510,6 +1538,7 @@
     },
     {
         "name": "Centiskull Grazer (Algorab III-b)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-fauna-Centiskull_Grazer.jpg/450px-SF-fauna-Centiskull_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Algorab III-b",
         "planetId": "60776-9",
@@ -1535,6 +1564,7 @@
     },
     {
         "name": "Centiskull Grazer (Montara Luna)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-fauna-Centiskull_Grazer.jpg/450px-SF-fauna-Centiskull_Grazer.jpg",
         "temperament": "SKITTISH",
         "planet": "Montara Luna",
         "planetId": "72432-18",
@@ -1562,6 +1592,7 @@
     },
     {
         "name": "Centiskull Grazer (Cassiopeia I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-fauna-Centiskull_Grazer.jpg/450px-SF-fauna-Centiskull_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Cassiopeia I",
         "biomes": [
@@ -1584,6 +1615,7 @@
     },
     {
         "name": "Centiskull Grazer (Vega II-c)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-fauna-Centiskull_Grazer.jpg/450px-SF-fauna-Centiskull_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Vega II-c",
         "planetId": "90979-7",
@@ -1608,6 +1640,7 @@
     },
     {
         "name": "Centiskull Grazer (Zeta Ophiuchi I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-fauna-Centiskull_Grazer.jpg/450px-SF-fauna-Centiskull_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Zeta Ophiuchi I",
         "planetId": "119147-1",
@@ -1709,6 +1742,7 @@
     },
     {
         "name": "Chasmbass",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/81/SF-fauna-Chasmbass.png/450px-SF-fauna-Chasmbass.png",
         "temperament": "PEACEFUL",
         "planet": "Volii Alpha",
         "planetId": "64720-2",
@@ -1899,6 +1933,7 @@
     },
     {
         "name": "Coralheart Filterer (Andromas III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Coralheart_Filterer.jpg/450px-SF-fauna-Coralheart_Filterer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Andromas III",
         "planetId": "86705-3",
@@ -1924,6 +1959,7 @@
     },
     {
         "name": "Coralheart Filterer (Bannoc II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Coralheart_Filterer.jpg/450px-SF-fauna-Coralheart_Filterer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Bannoc II",
         "biomes": [
@@ -1950,6 +1986,7 @@
     },
     {
         "name": "Coralheart Filterer (Bohr II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Coralheart_Filterer.jpg/450px-SF-fauna-Coralheart_Filterer.jpg",
         "temperament": "WARY",
         "planet": "Bohr II",
         "planetId": "73018-2",
@@ -1974,6 +2011,7 @@
     },
     {
         "name": "Coralheart Filterer (Bradbury IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Coralheart_Filterer.jpg/450px-SF-fauna-Coralheart_Filterer.jpg",
         "temperament": "WARY",
         "planet": "Bradbury IV",
         "planetId": "81444-4",
@@ -1999,6 +2037,7 @@
     },
     {
         "name": "Coralheart Filterer (Leviathan IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Coralheart_Filterer.jpg/450px-SF-fauna-Coralheart_Filterer.jpg",
         "temperament": "SKITTISH",
         "planet": "Leviathan IV",
         "planetId": "89684-4",
@@ -2025,6 +2064,7 @@
     },
     {
         "name": "Coralheart Filterer (Sumati)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Coralheart_Filterer.jpg/450px-SF-fauna-Coralheart_Filterer.jpg",
         "temperament": "WARY",
         "planet": "Sumati",
         "planetId": "88327-2",
@@ -2051,6 +2091,7 @@
     },
     {
         "name": "Coralheart Filterer (Newton III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Coralheart_Filterer.jpg/450px-SF-fauna-Coralheart_Filterer.jpg",
         "temperament": "WARY",
         "planet": "Newton III",
         "planetId": "91756-3",
@@ -2079,6 +2120,7 @@
     },
     {
         "name": "Coralheart Filterer (Tidacha I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-Coralheart_Filterer.jpg/450px-SF-fauna-Coralheart_Filterer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Tidacha I",
         "planetId": "82337-1",
@@ -2103,6 +2145,7 @@
     },
     {
         "name": "Coralheart Geophage",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/c/cb/SF-fauna-Coralheart_Geophage.jpg/450px-SF-fauna-Coralheart_Geophage.jpg",
         "temperament": "PEACEFUL",
         "planet": "Copernicus III",
         "planetId": "76816-3",
@@ -2132,6 +2175,7 @@
     },
     {
         "name": "Coralheart Grazer (Guniibuu II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/53/SF-Fauna-Coralheart-Grazer.jpg/450px-SF-Fauna-Coralheart-Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
@@ -2155,6 +2199,7 @@
     },
     {
         "name": "Coralheart Grazer (Oborum I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/53/SF-Fauna-Coralheart-Grazer.jpg/450px-SF-Fauna-Coralheart-Grazer.jpg",
         "temperament": "SKITTISH",
         "planet": "Oborum I",
         "planetId": "119143-1",
@@ -2179,6 +2224,7 @@
     },
     {
         "name": "Coralheart Herbivore (Procyon III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a7/SF-fauna-Coralheart_Herbivore.jpg/450px-SF-fauna-Coralheart_Herbivore.jpg",
         "temperament": "PEACEFUL",
         "planet": "Procyon III",
         "planetId": "37173-3",
@@ -2203,6 +2249,7 @@
     },
     {
         "name": "Coralheart Herbivore (Shoza II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a7/SF-fauna-Coralheart_Herbivore.jpg/450px-SF-fauna-Coralheart_Herbivore.jpg",
         "temperament": "PEACEFUL",
         "planet": "Shoza II",
         "planetId": "67063-2",
@@ -2386,6 +2433,7 @@
     },
     {
         "name": "Crocodaunt",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/83/SF-Fauna-Crocodaunt.jpg/450px-SF-Fauna-Crocodaunt.jpg",
         "planet": "Vega II-c",
         "planetId": "90979-7",
         "resource": "None"
@@ -2520,6 +2568,7 @@
     },
     {
         "name": "Eggback Herbivore",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/ff/SF-fauna-Eggback_Herbivore.jpg/450px-SF-fauna-Eggback_Herbivore.jpg",
         "temperament": "SKITTISH",
         "planet": "Tau Ceti II",
         "planetId": "8087-2",
@@ -2546,6 +2595,7 @@
     },
     {
         "name": "Eggsac Filterer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/36/SF-fauna-Eggsac_Filterer.jpg/450px-SF-fauna-Eggsac_Filterer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Altair II",
         "planetId": "97338-2",
@@ -2812,6 +2862,7 @@
     },
     {
         "name": "Flamethorn Geophage (Masada III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/13/Flamethorn_Geophage.jpg/450px-Flamethorn_Geophage.jpg",
         "temperament": "SKITTISH",
         "planet": "Masada III",
         "planetId": "83021-3",
@@ -2840,6 +2891,7 @@
     },
     {
         "name": "Flamethorn Geophage (Ka'zaal)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/13/Flamethorn_Geophage.jpg/450px-Flamethorn_Geophage.jpg",
         "temperament": "PEACEFUL",
         "planet": "Ka'zaal",
         "planetId": "76835-2",
@@ -3598,6 +3650,7 @@
     },
     {
         "name": "Flocking Caterpillar Scavenger",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-fauna-Flocking_Caterpillar_Scavenger.jpg/450px-SF-fauna-Flocking_Caterpillar_Scavenger.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Decaran I",
         "planetId": "119105-1",
@@ -3624,6 +3677,7 @@
     },
     {
         "name": "Flocking Cephalopod Scavenger",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/27/SF-creature-Flocking_Cephalopod_Scavenger.jpg/450px-SF-creature-Flocking_Cephalopod_Scavenger.jpg",
         "temperament": "WARY",
         "planet": "Kumasi I",
         "planetId": "56828-1",
@@ -3696,6 +3750,7 @@
     },
     {
         "name": "Flocking Clawback Scavenger",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/e0/Sf-fauna-flocking-clawback-scavenger.png/450px-Sf-fauna-flocking-clawback-scavenger.png",
         "temperament": "WARY",
         "planet": "Syrma IV",
         "biomes": [
@@ -3993,6 +4048,7 @@
     },
     {
         "name": "Flocking Cutterhead Grazer",
+        "imageUrl": "https:",
         "temperament": "WARY",
         "planet": "Niira",
         "planetId": "88327-1",
@@ -4105,6 +4161,7 @@
     },
     {
         "name": "Flocking Earback Herbivore",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/19/SF-fauna-Flocking_Earback_Herbivore.jpg/450px-SF-fauna-Flocking_Earback_Herbivore.jpg",
         "temperament": "WARY",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
@@ -4178,6 +4235,7 @@
     },
     {
         "name": "Flocking Exocrawler Geophage",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/7/79/SF-fauna-Flocking_Exocrawler_Geophage.jpg/450px-SF-fauna-Flocking_Exocrawler_Geophage.jpg",
         "temperament": "WARY",
         "planet": "Copernicus Minor I-a",
         "planetId": "119039-4",
@@ -4283,6 +4341,7 @@
     },
     {
         "name": "Flocking Glowhands Grazer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/11/SF-Fauna-Glowhands.jpg/450px-SF-Fauna-Glowhands.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Niira",
         "planetId": "88327-1",
@@ -4459,6 +4518,7 @@
     },
     {
         "name": "Flocking Horsamander Scavenger",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/b/bc/SF-fauna-Flocking_Horsamander_Scavenger.jpg/450px-SF-fauna-Flocking_Horsamander_Scavenger.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Magnar",
         "planetId": "98924-2",
@@ -4516,6 +4576,7 @@
     },
     {
         "name": "Flocking Leafback Grazer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/89/SF-fauna-Flocking_Leafback_Grazer.jpg/450px-SF-fauna-Flocking_Leafback_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
@@ -4778,6 +4839,7 @@
     },
     {
         "name": "Flocking Longarm Herbivore",
+        "imageUrl": "https:",
         "temperament": "TERRITORIAL",
         "planet": "Zelazny II",
         "planetId": "59092-2",
@@ -4830,6 +4892,7 @@
     },
     {
         "name": "Flocking Nautiloos Filterer (Al-Battani II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/17/SF-creature-Flocking_Nautiloos_Filterer.jpg/450px-SF-creature-Flocking_Nautiloos_Filterer.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Al-Battani II",
         "planetId": "65147-2",
@@ -4852,6 +4915,7 @@
     },
     {
         "name": "Flocking Nautiloos Filterer (Strix I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/17/SF-creature-Flocking_Nautiloos_Filterer.jpg/450px-SF-creature-Flocking_Nautiloos_Filterer.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Strix I",
         "planetId": "72407-1",
@@ -4876,6 +4940,7 @@
     },
     {
         "name": "Flocking Octomaggot Grazer (Masada III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/9/96/SF-fauna-Flocking_Octomaggot_Grazer.jpg/450px-SF-fauna-Flocking_Octomaggot_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Masada III",
         "planetId": "83021-3",
@@ -4899,6 +4964,7 @@
     },
     {
         "name": "Flocking Octomaggot Grazer (Procyon III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/9/96/SF-fauna-Flocking_Octomaggot_Grazer.jpg/450px-SF-fauna-Flocking_Octomaggot_Grazer.jpg",
         "temperament": "SKITTISH",
         "planet": "Procyon III",
         "planetId": "37173-3",
@@ -5154,6 +5220,7 @@
     },
     {
         "name": "Flocking Scepter Geophage",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a7/Flocking_Scepter_Geophage.jpg/450px-Flocking_Scepter_Geophage.jpg",
         "temperament": "SKITTISH",
         "planet": "Ka'zaal",
         "planetId": "76835-2",
@@ -5352,6 +5419,7 @@
     },
     {
         "name": "Flocking Shroomhead Grazer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/10/Flocking_Shroomhead_Grazer.jpg/450px-Flocking_Shroomhead_Grazer.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Groombridge VIII-a",
         "planetId": "57767-24",
@@ -5378,6 +5446,7 @@
     },
     {
         "name": "Flocking Sloth Grazer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/45/SF-fauna-Flocking_Sloth_Grazer.jpg/450px-SF-fauna-Flocking_Sloth_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Vega II-c",
         "planetId": "90979-7",
@@ -5480,6 +5549,7 @@
     },
     {
         "name": "Flocking Toadface Herbivore",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/9/99/Sf-fauna-toadface.png/450px-Sf-fauna-toadface.png",
         "temperament": "WARY",
         "planet": "Tirna II",
         "planetId": "57270-2",
@@ -5556,6 +5626,7 @@
     },
     {
         "name": "Flocking Trident Grazer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f7/SF-fauna-Flocking_Trident_Grazer.jpg/450px-SF-fauna-Flocking_Trident_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Volii Epsilon",
         "planetId": "64720-3",
@@ -6039,6 +6110,7 @@
     },
     {
         "name": "Gossamer Scavenger (Procyon III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/d/dc/SF-fauna-Gossamer_Scavenger.jpg/450px-SF-fauna-Gossamer_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Procyon III",
         "planetId": "37173-3",
@@ -6062,6 +6134,7 @@
     },
     {
         "name": "Gossamer Scavenger (Zosma V-a)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/d/dc/SF-fauna-Gossamer_Scavenger.jpg/450px-SF-fauna-Gossamer_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Zosma V-a",
         "planetId": "54712-12",
@@ -6458,6 +6531,7 @@
     },
     {
         "name": "Grabber Scavenger (Archimedes III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/9/92/SF-fauna-Grabber_Scavenger.jpg/450px-SF-fauna-Grabber_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Archimedes III",
         "planetId": "75150-3",
@@ -6483,6 +6557,7 @@
     },
     {
         "name": "Grabber Scavenger (Copernicus II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/9/92/SF-fauna-Grabber_Scavenger.jpg/450px-SF-fauna-Grabber_Scavenger.jpg",
         "temperament": "WARY",
         "planet": "Copernicus II",
         "planetId": "76816-2",
@@ -6508,6 +6583,7 @@
     },
     {
         "name": "Grabber Scavenger (Moloch II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/9/92/SF-fauna-Grabber_Scavenger.jpg/450px-SF-fauna-Grabber_Scavenger.jpg",
         "temperament": "SKITTISH",
         "planet": "Moloch II",
         "planetId": "68463-2",
@@ -6583,6 +6659,7 @@
     },
     {
         "name": "Grub Filterer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/29/SF-fauna-Grub_Filterer.jpg/450px-SF-fauna-Grub_Filterer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Feynman I",
         "planetId": "86469-1",
@@ -6612,6 +6689,7 @@
     },
     {
         "name": "Grub Geophage (Freya IX-b)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/87/SF-fauna-Grub_Geophage.jpg/450px-SF-fauna-Grub_Geophage.jpg",
         "temperament": "PEACEFUL",
         "planet": "Freya IX-b",
         "planetId": "72341-18",
@@ -6638,6 +6716,7 @@
     },
     {
         "name": "Grub Geophage (Vega II-c)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/87/SF-fauna-Grub_Geophage.jpg/450px-SF-fauna-Grub_Geophage.jpg",
         "temperament": "PEACEFUL",
         "planet": "Vega II-c",
         "planetId": "90979-7",
@@ -7002,6 +7081,7 @@
     },
     {
         "name": "Herding Boneback Grazer (Denebola I-b)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/ff/SF-fauna-Herding_Boneback_Grazer.jpg/450px-SF-fauna-Herding_Boneback_Grazer.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Denebola I-b",
         "planetId": "57459-6",
@@ -7028,6 +7108,7 @@
     },
     {
         "name": "Herding Boneback Grazer (Ixyll III-b)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/ff/SF-fauna-Herding_Boneback_Grazer.jpg/450px-SF-fauna-Herding_Boneback_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Ixyll III-b",
         "planetId": "62328-12",
@@ -7054,6 +7135,7 @@
     },
     {
         "name": "Herding Boneback Grazer (Newton II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/ff/SF-fauna-Herding_Boneback_Grazer.jpg/450px-SF-fauna-Herding_Boneback_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Newton II",
         "planetId": "91756-2",
@@ -7079,6 +7161,7 @@
     },
     {
         "name": "Herding Boneback Scavenger",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/6/6b/SF-fauna-Herding_Boneback_Scavenger.jpg/450px-SF-fauna-Herding_Boneback_Scavenger.jpg",
         "temperament": "WARY",
         "planet": "Sumati",
         "planetId": "88327-2",
@@ -7155,6 +7238,7 @@
     },
     {
         "name": "Herding Boneglider Filterer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/09/Herding_Boneglider_Filterer.jpg/450px-Herding_Boneglider_Filterer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Ka'zaal",
         "planetId": "76835-2",
@@ -7184,6 +7268,7 @@
     },
     {
         "name": "Herding Bonemane Grazer (Magnar)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2e/SF-fauna-Herding_Bonemane_Grazer.jpg/450px-SF-fauna-Herding_Bonemane_Grazer.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Magnar",
         "planetId": "98924-2",
@@ -7206,6 +7291,7 @@
     },
     {
         "name": "Herding Bonemane Grazer (Tau Ceti II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2e/SF-fauna-Herding_Bonemane_Grazer.jpg/450px-SF-fauna-Herding_Bonemane_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Tau Ceti II",
         "planetId": "8087-2",
@@ -7658,6 +7744,7 @@
     },
     {
         "name": "Herding Clickbeetle Grazer (Guniibuu II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-fauna-Herding_Clickbeetle_Grazer.jpg/450px-SF-fauna-Herding_Clickbeetle_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
@@ -7680,6 +7767,7 @@
     },
     {
         "name": "Herding Clickbeetle Grazer (Kumasi III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-fauna-Herding_Clickbeetle_Grazer.jpg/450px-SF-fauna-Herding_Clickbeetle_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Kumasi III",
         "planetId": "56828-3",
@@ -7853,6 +7941,7 @@
     },
     {
         "name": "Herding Coralcrawler Grazer (Procyon III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c5/SF-fauna-Herding_Coralcrawler_Grazer.jpg/450px-SF-fauna-Herding_Coralcrawler_Grazer.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Procyon III",
         "planetId": "37173-3",
@@ -7877,6 +7966,7 @@
     },
     {
         "name": "Herding Coralcrawler Grazer (Ursa Minor II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c5/SF-fauna-Herding_Coralcrawler_Grazer.jpg/450px-SF-fauna-Herding_Coralcrawler_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Ursa Minor II",
         "planetId": "118743-2",
@@ -7975,6 +8065,7 @@
     },
     {
         "name": "Herding Crab Herbivore (Serpentis IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/49/SF-fauna-Herding_Crab_Herbivore.jpg/450px-SF-fauna-Herding_Crab_Herbivore.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Serpentis IV",
         "biomes": [
@@ -7998,6 +8089,7 @@
     },
     {
         "name": "Herding Crab Herbivore (Tidacha I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/49/SF-fauna-Herding_Crab_Herbivore.jpg/450px-SF-fauna-Herding_Crab_Herbivore.jpg",
         "temperament": "WARY",
         "planet": "Tidacha I",
         "planetId": "82337-1",
@@ -8050,6 +8142,7 @@
     },
     {
         "name": "Herding Crabfly Grazer (Decaran I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/89/SF-fauna-Herding_Crabfly_Grazer.jpg/450px-SF-fauna-Herding_Crabfly_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Decaran I",
         "planetId": "119105-1",
@@ -8074,6 +8167,7 @@
     },
     {
         "name": "Herding Crabfly Grazer (Procyon III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/89/SF-fauna-Herding_Crabfly_Grazer.jpg/450px-SF-fauna-Herding_Crabfly_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Procyon III",
         "planetId": "37173-3",
@@ -8095,6 +8189,7 @@
     },
     {
         "name": "Herding Crabfly Grazer (Schrodinger IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/89/SF-fauna-Herding_Crabfly_Grazer.jpg/450px-SF-fauna-Herding_Crabfly_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Schrodinger IV",
         "planetId": "87902-4",
@@ -8168,6 +8263,7 @@
     },
     {
         "name": "Herding Cutterhead Herbivore (Jemison)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/30/SF-fauna-Cutterhead.jpg/450px-SF-fauna-Cutterhead.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Jemison",
         "planetId": "71456-3",
@@ -8190,6 +8286,7 @@
     },
     {
         "name": "Herding Cutterhead Herbivore (Katydid I-a)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/30/SF-fauna-Cutterhead.jpg/450px-SF-fauna-Cutterhead.jpg",
         "temperament": "WARY",
         "planet": "Katydid I-a",
         "biomes": [
@@ -8366,6 +8463,7 @@
     },
     {
         "name": "Herding Geckon Grazer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/7/7b/SF-Fauna-Geckon.jpg/450px-SF-Fauna-Geckon.jpg",
         "temperament": "PEACEFUL",
         "planet": "Nesoi",
         "planetId": "72957-1",
@@ -8558,6 +8656,7 @@
     },
     {
         "name": "Herding Hippodon Scavenger",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b8/SF-fauna-Hippodon.jpg/450px-SF-fauna-Hippodon.jpg",
         "temperament": "WARY",
         "planet": "Nesoi",
         "planetId": "72957-1",
@@ -8713,6 +8812,7 @@
     },
     {
         "name": "Herding Horsamander Herbivore",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f4/SF-fauna-Herding_Horsamander_Herbivore.jpg/450px-SF-fauna-Herding_Horsamander_Herbivore.jpg",
         "temperament": "WARY",
         "planet": "Vega II-c",
         "planetId": "90979-7",
@@ -8982,6 +9082,7 @@
     },
     {
         "name": "Herding Lionfish Grazer (Copernicus II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/22/SF-fauna-Herding_Lionfish_Grazer.jpg/450px-SF-fauna-Herding_Lionfish_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Copernicus II",
         "planetId": "76816-2",
@@ -9007,6 +9108,7 @@
     },
     {
         "name": "Herding Lionfish Grazer (Verne II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/22/SF-fauna-Herding_Lionfish_Grazer.jpg/450px-SF-fauna-Herding_Lionfish_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Verne II",
         "planetId": "63947-2",
@@ -9078,6 +9180,7 @@
     },
     {
         "name": "Herding Lockjaw Herbivore",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/7/75/Herding_Lockjaw_Herbivore.jpg/450px-Herding_Lockjaw_Herbivore.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Ka'zaal",
         "planetId": "76835-2",
@@ -9184,6 +9287,7 @@
     },
     {
         "name": "Herding Longneck Herbivore",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/fd/Herding_Longneck_Herbivore.jpg/450px-Herding_Longneck_Herbivore.jpg",
         "temperament": "WARY",
         "planet": "Groombridge VIII-a",
         "planetId": "57767-24",
@@ -9392,6 +9496,7 @@
     },
     {
         "name": "Herding Morion Grazer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/7/79/SF-fauna-Herding_Morion_Grazer.jpg/450px-SF-fauna-Herding_Morion_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
@@ -9961,6 +10066,7 @@
     },
     {
         "name": "Herding Scoopback Geophage (Al-Battani II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/03/SF-creature-Herding_Scoopback_Geophage.jpg/450px-SF-creature-Herding_Scoopback_Geophage.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Al-Battani II",
         "planetId": "65147-2",
@@ -9982,6 +10088,7 @@
     },
     {
         "name": "Herding Scoopback Geophage (Strix I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/03/SF-creature-Herding_Scoopback_Geophage.jpg/450px-SF-creature-Herding_Scoopback_Geophage.jpg",
         "temperament": "WARY",
         "planet": "Strix I",
         "planetId": "72407-1",
@@ -10028,6 +10135,7 @@
     },
     {
         "name": "Herding Sentinel Filterer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/ea/SF-creature-Herding_Sentinel_Filterer.jpg/450px-SF-creature-Herding_Sentinel_Filterer.jpg",
         "temperament": "WARY",
         "planet": "Al-Battani II",
         "planetId": "65147-2",
@@ -10384,6 +10492,7 @@
     },
     {
         "name": "Herding Sunflower Fliterer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/00/SF-fauna-Herding_Sunflower_Filterer.jpg/450px-SF-fauna-Herding_Sunflower_Filterer.jpg",
         "temperament": "WARY",
         "planet": "Altair II",
         "planetId": "97338-2",
@@ -10475,6 +10584,7 @@
     },
     {
         "name": "Herding Tongueface Geophage",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2b/SF-fauna-Herding_Tongueface_Geophage.jpg/450px-SF-fauna-Herding_Tongueface_Geophage.jpg",
         "temperament": "WARY",
         "planet": "Guniibuu VI-b",
         "planetId": "84147-23",
@@ -10596,6 +10706,7 @@
     },
     {
         "name": "Herding Trihorn Grazer (Alpha Andraste III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f3/SF-fauna-Herding_Trihorn_Grazer.jpg/450px-SF-fauna-Herding_Trihorn_Grazer.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
@@ -10616,6 +10727,7 @@
     },
     {
         "name": "Herding Trihorn Grazer (Bradbury III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f3/SF-fauna-Herding_Trihorn_Grazer.jpg/450px-SF-fauna-Herding_Trihorn_Grazer.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Bradbury III",
         "planetId": "81444-3",
@@ -10644,6 +10756,7 @@
     },
     {
         "name": "Herding Trihorn Grazer (Polvo)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f3/SF-fauna-Herding_Trihorn_Grazer.jpg/450px-SF-fauna-Herding_Trihorn_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Polvo",
         "planetId": "119198-1",
@@ -11018,6 +11131,7 @@
     },
     {
         "name": "Herding Windbag Grazer (Copernicus II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/84/SF-fauna-Herding_Windbag_Grazer.jpg/450px-SF-fauna-Herding_Windbag_Grazer.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Copernicus II",
         "planetId": "76816-2",
@@ -11044,6 +11158,7 @@
     },
     {
         "name": "Herding Windbag Grazer (Heisenberg II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/84/SF-fauna-Herding_Windbag_Grazer.jpg/450px-SF-fauna-Herding_Windbag_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Heisenberg II",
         "planetId": "83344-2",
@@ -11198,6 +11313,7 @@
     },
     {
         "name": "Hunting Akylosaurus",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/58/SF-Fauna-Hunting_Akylosaurus.jpg/450px-SF-Fauna-Hunting_Akylosaurus.jpg",
         "temperament": "WARY",
         "planet": "Tau Ceti II",
         "planetId": "8087-2",
@@ -11208,6 +11324,7 @@
     },
     {
         "name": "Hunting Angler",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/fc/SF-fauna-Hunting_Angler.jpg/450px-SF-fauna-Hunting_Angler.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Copernicus II",
         "planetId": "76816-2",
@@ -11235,6 +11352,7 @@
     },
     {
         "name": "Hunting Angler Stalker",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/b/ba/SF-fauna-Hunting_Angler_Stalker.jpg/450px-SF-fauna-Hunting_Angler_Stalker.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
@@ -11283,6 +11401,7 @@
     },
     {
         "name": "Hunting Arachnomantis Stalker",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/7/7b/Hunting_Arachnomantis_Stalker.jpg/450px-Hunting_Arachnomantis_Stalker.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Ka'zaal",
         "planetId": "76835-2",
@@ -11471,6 +11590,7 @@
     },
     {
         "name": "Hunting Boneglider",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/26/SF-fauna-HuntingBoneglider.png/450px-SF-fauna-HuntingBoneglider.png",
         "temperament": "WARY",
         "planet": "Ixyll II",
         "planetId": "62328-2",
@@ -11691,6 +11811,7 @@
     },
     {
         "name": "Hunting Brainsquid (Bara III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/40/Hunting_Brainsquid.jpg/450px-Hunting_Brainsquid.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Bara III",
         "biomes": [
@@ -11714,6 +11835,7 @@
     },
     {
         "name": "Hunting Brainsquid (Bolivar I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/40/Hunting_Brainsquid.jpg/450px-Hunting_Brainsquid.jpg",
         "temperament": "FEARLESS",
         "planet": "Bolivar I",
         "planetId": "118818-1",
@@ -11739,6 +11861,7 @@
     },
     {
         "name": "Hunting Brainsquid (Feynman IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/40/Hunting_Brainsquid.jpg/450px-Hunting_Brainsquid.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Feynman IV",
         "planetId": "86469-4",
@@ -11767,6 +11890,7 @@
     },
     {
         "name": "Hunting Brainsquid (Kumasi II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/40/Hunting_Brainsquid.jpg/450px-Hunting_Brainsquid.jpg",
         "temperament": "WARY",
         "planet": "Kumasi II",
         "planetId": "56828-2",
@@ -11787,6 +11911,7 @@
     },
     {
         "name": "Hunting Brightcage (Altair II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/7/71/SF-fauna-Hunting_Brightcage.jpg/450px-SF-fauna-Hunting_Brightcage.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Altair II",
         "planetId": "97338-2",
@@ -11809,6 +11934,7 @@
     },
     {
         "name": "Hunting Brightcage (Groombridge VIII-a)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/7/71/SF-fauna-Hunting_Brightcage.jpg/450px-SF-fauna-Hunting_Brightcage.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Groombridge VIII-a",
         "planetId": "57767-24",
@@ -11899,6 +12025,7 @@
     },
     {
         "name": "Hunting Caterpillar Scavenger",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/51/SF-fauna-Hunting_Caterpillar_Scavenger.jpg/450px-SF-fauna-Hunting_Caterpillar_Scavenger.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Copernicus Minor I-a",
         "planetId": "119039-4",
@@ -11947,6 +12074,7 @@
     },
     {
         "name": "Hunting Clickbeetle Scavenger",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/7/7f/SF-fauna-Hunting_Clickbeetle_Scavenger.jpg/450px-SF-fauna-Hunting_Clickbeetle_Scavenger.jpg",
         "temperament": "FEARLESS",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
@@ -11972,6 +12100,7 @@
     },
     {
         "name": "Hunting Cockroach (Decaran I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/34/SF-fauna-Hunting_Cockroach.jpg/450px-SF-fauna-Hunting_Cockroach.jpg",
         "temperament": "FEARLESS",
         "planet": "Decaran I",
         "planetId": "119105-1",
@@ -11997,6 +12126,7 @@
     },
     {
         "name": "Hunting Cockroach (Foucault II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/34/SF-fauna-Hunting_Cockroach.jpg/450px-SF-fauna-Hunting_Cockroach.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Foucault II",
         "planetId": "72377-2",
@@ -12022,6 +12152,7 @@
     },
     {
         "name": "Hunting Coralbug (Feynman III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-fauna-Hunting_Coralbug.jpg/450px-SF-fauna-Hunting_Coralbug.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Feynman III",
         "planetId": "86469-3",
@@ -12048,6 +12179,7 @@
     },
     {
         "name": "Hunting Coralbug (Ixyll III-b)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-fauna-Hunting_Coralbug.jpg/450px-SF-fauna-Hunting_Coralbug.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Ixyll III-b",
         "planetId": "62328-12",
@@ -12071,6 +12203,7 @@
     },
     {
         "name": "Hunting Coralbug (Xi Ophiuchi VIII-b)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-fauna-Hunting_Coralbug.jpg/450px-SF-fauna-Hunting_Coralbug.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Xi Ophiuchi VIII-b",
         "planetId": "84636-24",
@@ -12253,6 +12386,7 @@
     },
     {
         "name": "Hunting Crab (Beta Ternion I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/24/SF-fauna-Hunting_Crab.jpg/450px-SF-fauna-Hunting_Crab.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Beta Ternion I",
         "planetId": "119058-1",
@@ -12278,6 +12412,7 @@
     },
     {
         "name": "Hunting Crab (Eridani IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/24/SF-fauna-Hunting_Crab.jpg/450px-SF-fauna-Hunting_Crab.jpg",
         "temperament": "FEARLESS",
         "planet": "Eridani IV",
         "planetId": "15471-4",
@@ -12302,6 +12437,7 @@
     },
     {
         "name": "Hunting Crab (Sumati)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/24/SF-fauna-Hunting_Crab.jpg/450px-SF-fauna-Hunting_Crab.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Sumati",
         "planetId": "88327-2",
@@ -12462,6 +12598,7 @@
     },
     {
         "name": "Hunting Cricket Stalker",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/26/SF-fauna-Hunting_Cricket_Stalker.jpg/450px-SF-fauna-Hunting_Cricket_Stalker.jpg",
         "temperament": "WARY",
         "planet": "Copernicus II",
         "planetId": "76816-2",
@@ -12950,6 +13087,7 @@
     },
     {
         "name": "Hunting Kronosaurus",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d8/SF-fauna-Hunting_Kronosaurus.jpg/450px-SF-fauna-Hunting_Kronosaurus.jpg",
         "temperament": "FEARLESS",
         "planet": "Procyon III",
         "planetId": "37173-3",
@@ -13279,6 +13417,7 @@
     },
     {
         "name": "Hunting Nightmare",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/ef/SF-fauna-HuntingNightmare-1x1.jpg/450px-SF-fauna-HuntingNightmare-1x1.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Ixyll II",
         "planetId": "62328-2",
@@ -13407,6 +13546,7 @@
     },
     {
         "name": "Hunting Sailgator (Maal V)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/ec/SF-fauna-Hunting_Sailgator.jpg/450px-SF-fauna-Hunting_Sailgator.jpg",
         "temperament": "FEARLESS",
         "planet": "Maal V",
         "planetId": "74746-5",
@@ -13431,6 +13571,7 @@
     },
     {
         "name": "Hunting Sailgator (McClure II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/ec/SF-fauna-Hunting_Sailgator.jpg/450px-SF-fauna-Hunting_Sailgator.jpg",
         "temperament": "WARY",
         "planet": "McClure II",
         "planetId": "119106-2",
@@ -13453,6 +13594,7 @@
     },
     {
         "name": "Hunting Sailgator (Tidacha I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/ec/SF-fauna-Hunting_Sailgator.jpg/450px-SF-fauna-Hunting_Sailgator.jpg",
         "temperament": "WARY",
         "planet": "Tidacha I",
         "planetId": "82337-1",
@@ -13658,6 +13800,7 @@
     },
     {
         "name": "Hunting Shieldshell (Delta Vulpes V-c)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/5c/SF-fauna-Hunting_Shieldshell.jpg/450px-SF-fauna-Hunting_Shieldshell.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Delta Vulpes V-c",
         "planetId": "75493-13",
@@ -13684,6 +13827,7 @@
     },
     {
         "name": "Hunting Shieldshell (Heinlein VI-a)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/5c/SF-fauna-Hunting_Shieldshell.jpg/450px-SF-fauna-Hunting_Shieldshell.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Heinlein VI-a",
         "planetId": "71731-24",
@@ -13711,6 +13855,7 @@
     },
     {
         "name": "Hunting Shieldshell (Huygens III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/5c/SF-fauna-Hunting_Shieldshell.jpg/450px-SF-fauna-Hunting_Shieldshell.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Huygens III",
         "planetId": "73082-3",
@@ -13734,6 +13879,7 @@
     },
     {
         "name": "Hunting Shieldshell (Muphrid IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/5c/SF-fauna-Hunting_Shieldshell.jpg/450px-SF-fauna-Hunting_Shieldshell.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Muphrid IV",
         "planetId": "67711-4",
@@ -13758,6 +13904,7 @@
     },
     {
         "name": "Hunting Shieldshell (Newton III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/5c/SF-fauna-Hunting_Shieldshell.jpg/450px-SF-fauna-Hunting_Shieldshell.jpg",
         "temperament": "WARY",
         "planet": "Newton III",
         "planetId": "91756-3",
@@ -13784,6 +13931,7 @@
     },
     {
         "name": "Hunting Shieldshell (Procyon III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/5c/SF-fauna-Hunting_Shieldshell.jpg/450px-SF-fauna-Hunting_Shieldshell.jpg",
         "temperament": "FEARLESS",
         "planet": "Procyon III",
         "planetId": "37173-3",
@@ -13804,6 +13952,7 @@
     },
     {
         "name": "Hunting Shieldshell (Sparta III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/5c/SF-fauna-Hunting_Shieldshell.jpg/450px-SF-fauna-Hunting_Shieldshell.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Sparta III",
         "planetId": "79252-3",
@@ -13828,6 +13977,7 @@
     },
     {
         "name": "Hunting Shieldshell (Ursa Minor II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/5c/SF-fauna-Hunting_Shieldshell.jpg/450px-SF-fauna-Hunting_Shieldshell.jpg",
         "temperament": "WARY",
         "planet": "Ursa Minor II",
         "planetId": "118743-2",
@@ -13849,6 +13999,7 @@
     },
     {
         "name": "Hunting Silverfish",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/57/Hunting_Silverfish.jpg/450px-Hunting_Silverfish.jpg",
         "temperament": "FEARLESS",
         "planet": "Ka'zaal",
         "planetId": "76835-2",
@@ -14007,6 +14158,7 @@
     },
     {
         "name": "Hunting Stonewalker Stalker",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/6/6a/Hunting_Stonewalker_Stalker.jpg/450px-Hunting_Stonewalker_Stalker.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Cassiopeia I",
         "biomes": [
@@ -14141,6 +14293,7 @@
     },
     {
         "name": "Hunting Toadface",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/ff/SF-fauna-Hunting_Toadface.jpg/450px-SF-fauna-Hunting_Toadface.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Magnar",
         "planetId": "98924-2",
@@ -14195,6 +14348,7 @@
     },
     {
         "name": "Hunting Trapmaw (Bel I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3a/SF-fauna-Hunting_Trapmaw.jpg/450px-SF-fauna-Hunting_Trapmaw.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Bel I",
         "planetId": "69192-1",
@@ -14218,6 +14372,7 @@
     },
     {
         "name": "Hunting Trapmaw (Indum II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3a/SF-fauna-Hunting_Trapmaw.jpg/450px-SF-fauna-Hunting_Trapmaw.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Indum II",
         "planetId": "119135-2",
@@ -14245,6 +14400,7 @@
     },
     {
         "name": "Hunting Trapmaw (Toliman II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3a/SF-fauna-Hunting_Trapmaw.jpg/450px-SF-fauna-Hunting_Trapmaw.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Toliman II",
         "planetId": "71453-2",
@@ -14272,6 +14428,7 @@
     },
     {
         "name": "Hunting Triantler",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8d/SF-fauna-Triantler.jpg/450px-SF-fauna-Triantler.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Nesoi",
         "planetId": "72957-1",
@@ -14298,6 +14455,7 @@
     },
     {
         "name": "Hunting Trihorn",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/b/bc/SF-fauna-Hunting_Trihorn.jpg/450px-SF-fauna-Hunting_Trihorn.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Bel II",
         "planetId": "69192-2",
@@ -14321,6 +14479,7 @@
     },
     {
         "name": "Hunting Tuskfrog",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/9/9a/SF-fauna-Tuskfrog.jpg/450px-SF-fauna-Tuskfrog.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Jemison",
         "planetId": "71456-3",
@@ -14370,6 +14529,7 @@
     },
     {
         "name": "Hunting Vectorback (Guniibuu VI-b)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/9/92/SF-fauna-Hunting_Vectorback.jpg/450px-SF-fauna-Hunting_Vectorback.jpg",
         "temperament": "FEARLESS",
         "planet": "Guniibuu VI-b",
         "planetId": "84147-23",
@@ -14393,6 +14553,7 @@
     },
     {
         "name": "Hunting Vectorback (Huygens III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/9/92/SF-fauna-Hunting_Vectorback.jpg/450px-SF-fauna-Hunting_Vectorback.jpg",
         "temperament": "FEARLESS",
         "planet": "Huygens III",
         "planetId": "73082-3",
@@ -14415,6 +14576,7 @@
     },
     {
         "name": "Hunting Vectorback (Nesoi)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/9/92/SF-fauna-Hunting_Vectorback.jpg/450px-SF-fauna-Hunting_Vectorback.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Nesoi",
         "planetId": "72957-1",
@@ -14542,6 +14704,7 @@
     },
     {
         "name": "Jackknife Grazer (Alpha Andraste III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/fe/SF-fauna-Jackknife_Grazer.jpg/450px-SF-fauna-Jackknife_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
@@ -14566,6 +14729,7 @@
     },
     {
         "name": "Jackknife Grazer (Arcturus II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/fe/SF-fauna-Jackknife_Grazer.jpg/450px-SF-fauna-Jackknife_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Arcturus II",
         "planetId": "69451-2",
@@ -14751,6 +14915,7 @@
     },
     {
         "name": "Kreet Grazer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f9/SF-fauna-Kreet-Grazer.png/450px-SF-fauna-Kreet-Grazer.png",
         "temperament": "WARY",
         "planet": "Kreet",
         "planetId": "88327-16",
@@ -14774,6 +14939,7 @@
     },
     {
         "name": "Kreet Stalker",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/fe/SF-fauna-Kreet_Stalker.jpg/450px-SF-fauna-Kreet_Stalker.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Kreet",
         "planetId": "88327-16",
@@ -15005,6 +15171,7 @@
     },
     {
         "name": "Lockjaw Grazer (Alpha Andraste III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/c/cd/SF-fauna-Lockjaw_Grazer.jpg/450px-SF-fauna-Lockjaw_Grazer.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
@@ -15027,6 +15194,7 @@
     },
     {
         "name": "Lockjaw Grazer (Bohr II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/c/cd/SF-fauna-Lockjaw_Grazer.jpg/450px-SF-fauna-Lockjaw_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Bohr II",
         "planetId": "73018-2",
@@ -15051,6 +15219,7 @@
     },
     {
         "name": "Lockjaw Grazer (Copernicus III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/c/cd/SF-fauna-Lockjaw_Grazer.jpg/450px-SF-fauna-Lockjaw_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Copernicus III",
         "planetId": "76816-3",
@@ -15271,6 +15440,7 @@
     },
     {
         "name": "Milliwhale Filterer (Guniibuu VI-b)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1e/SF-fauna-Milliwhale.jpg/450px-SF-fauna-Milliwhale.jpg",
         "temperament": "SKITTISH",
         "planet": "Guniibuu VI-b",
         "planetId": "84147-23",
@@ -15296,6 +15466,7 @@
     },
     {
         "name": "Milliwhale Filterer (Huygens IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1e/SF-fauna-Milliwhale.jpg/450px-SF-fauna-Milliwhale.jpg",
         "temperament": "PEACEFUL",
         "planet": "Huygens IV",
         "planetId": "73082-4",
@@ -15321,6 +15492,7 @@
     },
     {
         "name": "Milliwhale Filterer (Indum II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1e/SF-fauna-Milliwhale.jpg/450px-SF-fauna-Milliwhale.jpg",
         "temperament": "WARY",
         "planet": "Indum II",
         "planetId": "119135-2",
@@ -15347,6 +15519,7 @@
     },
     {
         "name": "Milliwhale Filterer (Leonis III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1e/SF-fauna-Milliwhale.jpg/450px-SF-fauna-Milliwhale.jpg",
         "temperament": "WARY",
         "planet": "Leonis III",
         "planetId": "55476-3",
@@ -15371,6 +15544,7 @@
     },
     {
         "name": "Milliwhale Filterer (Leviathan IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1e/SF-fauna-Milliwhale.jpg/450px-SF-fauna-Milliwhale.jpg",
         "temperament": "SKITTISH",
         "planet": "Leviathan IV",
         "planetId": "89684-4",
@@ -15395,6 +15569,7 @@
     },
     {
         "name": "Milliwhale Filterer (McClure II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1e/SF-fauna-Milliwhale.jpg/450px-SF-fauna-Milliwhale.jpg",
         "temperament": "PEACEFUL",
         "planet": "McClure II",
         "planetId": "119106-2",
@@ -15419,6 +15594,7 @@
     },
     {
         "name": "Milliwhale Filterer (Moloch II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1e/SF-fauna-Milliwhale.jpg/450px-SF-fauna-Milliwhale.jpg",
         "temperament": "PEACEFUL",
         "planet": "Moloch II",
         "planetId": "68463-2",
@@ -15439,6 +15615,7 @@
     },
     {
         "name": "Milliwhale Filterer (Nesoi)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1e/SF-fauna-Milliwhale.jpg/450px-SF-fauna-Milliwhale.jpg",
         "temperament": "PEACEFUL",
         "planet": "Nesoi",
         "planetId": "72957-1",
@@ -15467,6 +15644,7 @@
     },
     {
         "name": "Milliwhale Filterer (Zelazny II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1e/SF-fauna-Milliwhale.jpg/450px-SF-fauna-Milliwhale.jpg",
         "temperament": "PEACEFUL",
         "planet": "Zelazny II",
         "planetId": "59092-2",
@@ -15538,6 +15716,7 @@
     },
     {
         "name": "Milliwhale Grazer (Tirna II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/15/SF-fauna-Milliwhale.png/450px-SF-fauna-Milliwhale.png",
         "temperament": "SKITTISH",
         "planet": "Tirna II",
         "planetId": "57270-2",
@@ -15563,6 +15742,7 @@
     },
     {
         "name": "Milliwhale Grazer (Porrima II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/15/SF-fauna-Milliwhale.png/450px-SF-fauna-Milliwhale.png",
         "temperament": "SKITTISH",
         "planet": "Porrima II",
         "planetId": "61748-2",
@@ -15586,6 +15766,7 @@
     },
     {
         "name": "Milliwhale Grazer (Zelazny III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/1/15/SF-fauna-Milliwhale.png/450px-SF-fauna-Milliwhale.png",
         "temperament": "PEACEFUL",
         "planet": "Zelazny III",
         "planetId": "59092-3",
@@ -15734,6 +15915,7 @@
     },
     {
         "name": "Mothwing Grazer",
+        "imageUrl": "https://images.starfieldwiki.net/c/c3/SF-fauna-Mothwing_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Tidacha I",
         "planetId": "82337-1",
@@ -15820,6 +16002,7 @@
     },
     {
         "name": "Nautilus Scavanger",
+        "imageUrl": "https:",
         "temperament": "DEFENSIVE",
         "planet": "Vega II-c",
         "planetId": "90979-7",
@@ -15827,6 +16010,7 @@
     },
     {
         "name": "Nautilus Scavenger (Toliman II)",
+        "imageUrl": "https:",
         "temperament": "PEACEFUL",
         "planet": "Toliman II",
         "planetId": "71453-2",
@@ -15854,6 +16038,7 @@
     },
     {
         "name": "Nautilus Scavenger (Vega II-c)",
+        "imageUrl": "https:",
         "temperament": "PEACEFUL",
         "planet": "Vega II-c",
         "planetId": "90979-7",
@@ -15934,6 +16119,7 @@
     },
     {
         "name": "Noid Scavenger",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/a/ae/SF-fauna-Noid_Scavenger.jpg/450px-SF-fauna-Noid_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Copernicus Minor I-a",
         "planetId": "119039-4",
@@ -15960,6 +16146,7 @@
     },
     {
         "name": "Pack Ankylosaurus (Archimedes II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2a/PackAnkylosaurus.jpg/450px-PackAnkylosaurus.jpg",
         "temperament": "WARY",
         "planet": "Archimedes II",
         "planetId": "75150-2",
@@ -15983,6 +16170,7 @@
     },
     {
         "name": "Pack Ankylosaurus (Vesta)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2a/PackAnkylosaurus.jpg/450px-PackAnkylosaurus.jpg",
         "temperament": "WARY",
         "planet": "Vesta",
         "planetId": "83865-2",
@@ -16008,6 +16196,7 @@
     },
     {
         "name": "Pack Ankylosaurus (Porrima IV-c)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2a/PackAnkylosaurus.jpg/450px-PackAnkylosaurus.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Porrima IV-c",
         "planetId": "61748-17",
@@ -16030,6 +16219,7 @@
     },
     {
         "name": "Pack Ankylosaurus (Rivera I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2a/PackAnkylosaurus.jpg/450px-PackAnkylosaurus.jpg",
         "temperament": "FEARLESS",
         "planet": "Rivera I",
         "planetId": "118819-1",
@@ -16054,6 +16244,7 @@
     },
     {
         "name": "Pack Ankylosaurus (Tau Ceti VIII-b)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2a/PackAnkylosaurus.jpg/450px-PackAnkylosaurus.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Tau Ceti VIII-b",
         "planetId": "8087-19",
@@ -16326,6 +16517,7 @@
     },
     {
         "name": "Pack Caterpillar",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/ed/Starfield_Pack_Caterpillar.jpg/450px-Starfield_Pack_Caterpillar.jpg",
         "temperament": "FEARLESS",
         "planet": "Zeta Ophiuchi I",
         "planetId": "119147-1",
@@ -16401,6 +16593,7 @@
     },
     {
         "name": "Pack Clickbeetle (Copernicus III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4c/SF-fauna-Pack_Clickbeetle.jpg/450px-SF-fauna-Pack_Clickbeetle.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Copernicus III",
         "planetId": "76816-3",
@@ -16424,6 +16617,7 @@
     },
     {
         "name": "Pack Clickbeetle (Feynman III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4c/SF-fauna-Pack_Clickbeetle.jpg/450px-SF-fauna-Pack_Clickbeetle.jpg",
         "temperament": "WARY",
         "planet": "Feynman III",
         "planetId": "86469-3",
@@ -16447,6 +16641,7 @@
     },
     {
         "name": "Pack Clickbeetle (Serpentis IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4c/SF-fauna-Pack_Clickbeetle.jpg/450px-SF-fauna-Pack_Clickbeetle.jpg",
         "temperament": "FEARLESS",
         "planet": "Serpentis IV",
         "biomes": [
@@ -16588,6 +16783,7 @@
     },
     {
         "name": "Pack Coralbug Stalker",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/7/70/SF-fauna-Pack_Coralbug_Stalker.jpg/450px-SF-fauna-Pack_Coralbug_Stalker.jpg",
         "temperament": "FEARLESS",
         "planet": "Procyon III",
         "planetId": "37173-3",
@@ -16611,6 +16807,7 @@
     },
     {
         "name": "Pack Coralcrab Stalker",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8c/SF-fauna-Pack_Coralcrab_Stalker.jpg/450px-SF-fauna-Pack_Coralcrab_Stalker.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Procyon III",
         "planetId": "37173-3",
@@ -16655,6 +16852,7 @@
     },
     {
         "name": "Pack Crab (Denebola I-b)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8b/SF-fauna-Pack_Crab.jpg/450px-SF-fauna-Pack_Crab.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Denebola I-b",
         "planetId": "57459-6",
@@ -16681,6 +16879,7 @@
     },
     {
         "name": "Pack Crab (Hawking I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8b/SF-fauna-Pack_Crab.jpg/450px-SF-fauna-Pack_Crab.jpg",
         "temperament": "WARY",
         "planet": "Hawking I",
         "planetId": "73489-1",
@@ -16749,6 +16948,7 @@
     },
     {
         "name": "Pack Cranehopper",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/d/dc/SF-creature-Pack_Cranehopper.jpg/450px-SF-creature-Pack_Cranehopper.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Al-Battani II",
         "planetId": "65147-2",
@@ -16845,6 +17045,7 @@
     },
     {
         "name": "Pack Crocodaunt (Leonis V)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/e9/SF-fauna-Pack_Crocodaunt.jpg/450px-SF-fauna-Pack_Crocodaunt.jpg",
         "temperament": "WARY",
         "planet": "Leonis V",
         "planetId": "55476-5",
@@ -16867,6 +17068,7 @@
     },
     {
         "name": "Pack Crocodaunt (Vega II-c)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/e9/SF-fauna-Pack_Crocodaunt.jpg/450px-SF-fauna-Pack_Crocodaunt.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Vega II-c",
         "planetId": "90979-7",
@@ -16914,6 +17116,7 @@
     },
     {
         "name": "Pack Dragondon",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-creature-Pack_Dragondon.jpg/450px-SF-creature-Pack_Dragondon.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Al-Battani II",
         "planetId": "65147-2",
@@ -16987,6 +17190,7 @@
     },
     {
         "name": "Pack Exocrawler (Bardeen III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/09/SF-fauna-Pack_Exocrawler.jpg/450px-SF-fauna-Pack_Exocrawler.jpg",
         "temperament": "WARY",
         "planet": "Bardeen III",
         "planetId": "90582-3",
@@ -17009,6 +17213,7 @@
     },
     {
         "name": "Pack Exocrawler (Magnar)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/09/SF-fauna-Pack_Exocrawler.jpg/450px-SF-fauna-Pack_Exocrawler.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Magnar",
         "planetId": "98924-2",
@@ -17033,6 +17238,7 @@
     },
     {
         "name": "Pack Exocrawler (Guniibuu II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/09/SF-fauna-Pack_Exocrawler.jpg/450px-SF-fauna-Pack_Exocrawler.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
@@ -17130,6 +17336,7 @@
     },
     {
         "name": "Pack Glowhands (Ixyll II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f8/SF-fauna-PackGlowhands.png/450px-SF-fauna-PackGlowhands.png",
         "temperament": "FEARLESS",
         "planet": "Ixyll II",
         "planetId": "62328-2",
@@ -17155,6 +17362,7 @@
     },
     {
         "name": "Pack Glowhands (Khayyam II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f8/SF-fauna-PackGlowhands.png/450px-SF-fauna-PackGlowhands.png",
         "temperament": "TERRITORIAL",
         "planet": "Khayyam II",
         "planetId": "65150-2",
@@ -17360,6 +17568,7 @@
     },
     {
         "name": "Pack Landshark (Masada III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/c/ce/SF-fauna-Pack_Landshark.jpg/450px-SF-fauna-Pack_Landshark.jpg",
         "temperament": "FEARLESS",
         "planet": "Masada III",
         "planetId": "83021-3",
@@ -17383,6 +17592,7 @@
     },
     {
         "name": "Pack Landshark (Zelazny II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/c/ce/SF-fauna-Pack_Landshark.jpg/450px-SF-fauna-Pack_Landshark.jpg",
         "temperament": "FEARLESS",
         "planet": "Zelazny II",
         "planetId": "59092-2",
@@ -17404,6 +17614,7 @@
     },
     {
         "name": "Pack Lionbear (Alpha Andraste III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/29/SF-fauna-Pack_Lionbear.jpg/450px-SF-fauna-Pack_Lionbear.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
@@ -17426,6 +17637,7 @@
     },
     {
         "name": "Pack Lionbear (Beta Ternion II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/29/SF-fauna-Pack_Lionbear.jpg/450px-SF-fauna-Pack_Lionbear.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Beta Ternion II",
         "planetId": "119058-2",
@@ -17450,6 +17662,7 @@
     },
     {
         "name": "Pack Lionbear (Celebrai II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/29/SF-fauna-Pack_Lionbear.jpg/450px-SF-fauna-Pack_Lionbear.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Celebrai II",
         "biomes": [
@@ -17473,6 +17686,7 @@
     },
     {
         "name": "Pack Lionbear (Rivera I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/29/SF-fauna-Pack_Lionbear.jpg/450px-SF-fauna-Pack_Lionbear.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Rivera I",
         "planetId": "118819-1",
@@ -17495,6 +17709,7 @@
     },
     {
         "name": "Pack Longhorn (Alpha Andraste III)",
+        "imageUrl": "https:",
         "temperament": "DEFENSIVE",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
@@ -17517,6 +17732,7 @@
     },
     {
         "name": "Pack Longhorn (Oborum I)",
+        "imageUrl": "https:",
         "temperament": "WARY",
         "planet": "Oborum I",
         "planetId": "119143-1",
@@ -17563,6 +17779,7 @@
     },
     {
         "name": "Pack Mossasaur",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b9/Pack_Mossasaur.jpg/450px-Pack_Mossasaur.jpg",
         "temperament": "FEARLESS",
         "planet": "Zelazny II",
         "planetId": "59092-2",
@@ -17783,6 +18000,7 @@
     },
     {
         "name": "Pack Scarab (Leonis III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/21/SF-Fauna-Pack_Scarab.jpg/450px-SF-Fauna-Pack_Scarab.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Leonis III",
         "planetId": "55476-3",
@@ -17803,6 +18021,7 @@
     },
     {
         "name": "Pack Scarab (Marduk IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/21/SF-Fauna-Pack_Scarab.jpg/450px-SF-Fauna-Pack_Scarab.jpg",
         "temperament": "FEARLESS",
         "planet": "Marduk IV",
         "planetId": "60805-4",
@@ -17824,6 +18043,7 @@
     },
     {
         "name": "Pack Scarab (Muphrid IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/21/SF-Fauna-Pack_Scarab.jpg/450px-SF-Fauna-Pack_Scarab.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Muphrid IV",
         "planetId": "67711-4",
@@ -17849,6 +18069,7 @@
     },
     {
         "name": "Pack Scarab (Schrodinger III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/21/SF-Fauna-Pack_Scarab.jpg/450px-SF-Fauna-Pack_Scarab.jpg",
         "temperament": "WARY",
         "planet": "Schrodinger III",
         "planetId": "87902-3",
@@ -17873,6 +18094,7 @@
     },
     {
         "name": "Pack Scarab (Vega II-c)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/21/SF-Fauna-Pack_Scarab.jpg/450px-SF-Fauna-Pack_Scarab.jpg",
         "temperament": "FEARLESS",
         "planet": "Vega II-c",
         "planetId": "90979-7",
@@ -17894,6 +18116,7 @@
     },
     {
         "name": "Pack Scarab (Zelazny III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/21/SF-Fauna-Pack_Scarab.jpg/450px-SF-Fauna-Pack_Scarab.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Zelazny III",
         "planetId": "59092-3",
@@ -18186,6 +18409,7 @@
     },
     {
         "name": "Pack Stingray",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3a/Pack_Stingray.jpg/450px-Pack_Stingray.jpg",
         "temperament": "FEARLESS",
         "planet": "Zelazny II",
         "planetId": "59092-2",
@@ -18240,6 +18464,7 @@
     },
     {
         "name": "Pack Tentabeard",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/0b/Pack_Tentabeard.jpg/450px-Pack_Tentabeard.jpg",
         "temperament": "FEARLESS",
         "planet": "Groombridge VIII-a",
         "planetId": "57767-24",
@@ -18288,6 +18513,7 @@
     },
     {
         "name": "Pack Trapmaw (Alpha Andraste III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8e/SF-fauna-Pack_Trapmaw.jpg/450px-SF-fauna-Pack_Trapmaw.jpg",
         "temperament": "WARY",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
@@ -18310,6 +18536,7 @@
     },
     {
         "name": "Pack Trapmaw (Archimedes III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8e/SF-fauna-Pack_Trapmaw.jpg/450px-SF-fauna-Pack_Trapmaw.jpg",
         "temperament": "FEARLESS",
         "planet": "Archimedes III",
         "planetId": "75150-3",
@@ -18335,6 +18562,7 @@
     },
     {
         "name": "Pack Trapmaw (Eridani III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8e/SF-fauna-Pack_Trapmaw.jpg/450px-SF-fauna-Pack_Trapmaw.jpg",
         "temperament": "FEARLESS",
         "planet": "Eridani III",
         "planetId": "15471-3",
@@ -18356,6 +18584,7 @@
     },
     {
         "name": "Pack Trapmaw (Huygens III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8e/SF-fauna-Pack_Trapmaw.jpg/450px-SF-fauna-Pack_Trapmaw.jpg",
         "temperament": "WARY",
         "planet": "Huygens III",
         "planetId": "73082-3",
@@ -18380,6 +18609,7 @@
     },
     {
         "name": "Pack Trapmaw (Piazzi IV-c)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8e/SF-fauna-Pack_Trapmaw.jpg/450px-SF-fauna-Pack_Trapmaw.jpg",
         "temperament": "TERRITORIAL",
         "planet": "Piazzi IV-c",
         "planetId": "103879-12",
@@ -18404,6 +18634,7 @@
     },
     {
         "name": "Pack Trapmaw (Rana III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8e/SF-fauna-Pack_Trapmaw.jpg/450px-SF-fauna-Pack_Trapmaw.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Rana III",
         "planetId": "69766-3",
@@ -18425,6 +18656,7 @@
     },
     {
         "name": "Pack Trapmaw (Syrma IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8e/SF-fauna-Pack_Trapmaw.jpg/450px-SF-fauna-Pack_Trapmaw.jpg",
         "temperament": "DEFENSIVE",
         "planet": "Syrma IV",
         "biomes": [
@@ -18778,6 +19010,7 @@
     },
     {
         "name": "Pearl Filterer (Bannoc II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/03/SF-fauna-Pearl_Filterer.jpg/450px-SF-fauna-Pearl_Filterer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Bannoc II",
         "biomes": [
@@ -18805,6 +19038,7 @@
     },
     {
         "name": "Pearl Filterer (Denebola I-b)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/03/SF-fauna-Pearl_Filterer.jpg/450px-SF-fauna-Pearl_Filterer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Denebola I-b",
         "planetId": "57459-6",
@@ -18832,6 +19066,7 @@
     },
     {
         "name": "Pearl Filterer (Oborum I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/03/SF-fauna-Pearl_Filterer.jpg/450px-SF-fauna-Pearl_Filterer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Oborum I",
         "planetId": "119143-1",
@@ -18968,6 +19203,7 @@
     },
     {
         "name": "Puffball Filterer (Huygens III)",
+        "imageUrl": "https:",
         "temperament": "WARY",
         "planet": "Huygens III",
         "planetId": "73082-3",
@@ -18998,6 +19234,7 @@
     },
     {
         "name": "Puffball Filterer (Ixyll II)",
+        "imageUrl": "https:",
         "temperament": "SKITTISH",
         "planet": "Ixyll II",
         "planetId": "62328-2",
@@ -19028,6 +19265,7 @@
     },
     {
         "name": "Puffball Filterer (Lantana III)",
+        "imageUrl": "https:",
         "temperament": "SKITTISH",
         "planet": "Lantana III",
         "planetId": "57584-3",
@@ -19057,6 +19295,7 @@
     },
     {
         "name": "Puffball Filterer (Porrima IV-c)",
+        "imageUrl": "https:",
         "temperament": "PEACEFUL",
         "planet": "Porrima IV-c",
         "planetId": "61748-17",
@@ -19083,6 +19322,7 @@
     },
     {
         "name": "Puffball Filterer (Ursa Minor II)",
+        "imageUrl": "https:",
         "temperament": "PEACEFUL",
         "planet": "Ursa Minor II",
         "planetId": "118743-2",
@@ -19421,6 +19661,7 @@
     },
     {
         "name": "Schooling Featherfin Filterer (Montara Luna)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/b/be/SF-fauna-Schooling_Featherfin_Filterer.jpg/450px-SF-fauna-Schooling_Featherfin_Filterer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Montara Luna",
         "planetId": "72432-18",
@@ -19446,6 +19687,7 @@
     },
     {
         "name": "Schooling Featherfin Filterer (Procyon III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/b/be/SF-fauna-Schooling_Featherfin_Filterer.jpg/450px-SF-fauna-Schooling_Featherfin_Filterer.jpg",
         "temperament": "WARY",
         "planet": "Procyon III",
         "planetId": "37173-3",
@@ -19814,6 +20056,7 @@
     },
     {
         "name": "Schooling Sawhead Grazer (Indum II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-fauna-SchoolingSawheadGrazer.jpg/450px-SF-fauna-SchoolingSawheadGrazer.jpg",
         "temperament": "WARY",
         "planet": "Indum II",
         "planetId": "119135-2",
@@ -19839,6 +20082,7 @@
     },
     {
         "name": "Schooling Sawhead Grazer (Ixyll II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-fauna-SchoolingSawheadGrazer.jpg/450px-SF-fauna-SchoolingSawheadGrazer.jpg",
         "temperament": "SKITTISH",
         "planet": "Ixyll II",
         "planetId": "62328-2",
@@ -19862,6 +20106,7 @@
     },
     {
         "name": "Schooling Sawhead Grazer (Sparta IV)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-fauna-SchoolingSawheadGrazer.jpg/450px-SF-fauna-SchoolingSawheadGrazer.jpg",
         "temperament": "WARY",
         "planet": "Sparta IV",
         "planetId": "79252-4",
@@ -20443,6 +20688,7 @@
     },
     {
         "name": "Shroombobber Filterer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/6/6b/SF-fauna-Shroombobber_Filterer.jpg/450px-SF-fauna-Shroombobber_Filterer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Copernicus II",
         "planetId": "76816-2",
@@ -20471,6 +20717,7 @@
     },
     {
         "name": "Siren",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/e8/SF-fauna-Siren.jpg/450px-SF-fauna-Siren.jpg",
         "temperament": "AGGRESSIVE",
         "planet": "Niira, Lantana VIII-b",
         "resource": "None",
@@ -20480,6 +20727,7 @@
     },
     {
         "name": "Sloth Grazer",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/6/60/SF-Fauna-Flocking-Sloth-Grazer-single.jpg/450px-SF-Fauna-Flocking-Sloth-Grazer-single.jpg",
         "planet": "Vega II-c",
         "planetId": "90979-7",
         "biomes": [
@@ -20599,6 +20847,7 @@
     },
     {
         "name": "Spaceroach Filterer (Beta Ternion III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-SpaceroachFilterer-1x1.jpg/450px-SF-fauna-SpaceroachFilterer-1x1.jpg",
         "temperament": "PEACEFUL",
         "planet": "Beta Ternion III",
         "planetId": "119058-3",
@@ -20623,6 +20872,7 @@
     },
     {
         "name": "Spaceroach Filterer (Eridani II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-SpaceroachFilterer-1x1.jpg/450px-SF-fauna-SpaceroachFilterer-1x1.jpg",
         "temperament": "PEACEFUL",
         "planet": "Eridani II",
         "planetId": "15471-2",
@@ -20649,6 +20899,7 @@
     },
     {
         "name": "Spaceroach Filterer (Ixyll II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-SpaceroachFilterer-1x1.jpg/450px-SF-fauna-SpaceroachFilterer-1x1.jpg",
         "temperament": "WARY",
         "planet": "Ixyll II",
         "planetId": "62328-2",
@@ -20675,6 +20926,7 @@
     },
     {
         "name": "Spaceroach Filterer (Porrima III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-SpaceroachFilterer-1x1.jpg/450px-SF-fauna-SpaceroachFilterer-1x1.jpg",
         "temperament": "PEACEFUL",
         "planet": "Porrima III",
         "planetId": "61748-3",
@@ -20700,6 +20952,7 @@
     },
     {
         "name": "Spaceroach Filterer (Syrma VII-a)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-fauna-SpaceroachFilterer-1x1.jpg/450px-SF-fauna-SpaceroachFilterer-1x1.jpg",
         "temperament": "PEACEFUL",
         "planet": "Syrma VII-a",
         "biomes": [
@@ -20728,6 +20981,7 @@
     },
     {
         "name": "Spaceroach Geophage (Al-Battani II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a9/SF-creature-Spaceroach_Geophage.jpg/450px-SF-creature-Spaceroach_Geophage.jpg",
         "temperament": "WARY",
         "planet": "Al-Battani II",
         "planetId": "65147-2",
@@ -20752,6 +21006,7 @@
     },
     {
         "name": "Spaceroach Geophage (Newton II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a9/SF-creature-Spaceroach_Geophage.jpg/450px-SF-creature-Spaceroach_Geophage.jpg",
         "temperament": "WARY",
         "planet": "Newton II",
         "planetId": "91756-2",
@@ -20777,6 +21032,7 @@
     },
     {
         "name": "Spaceroach Geophage (Serpentis II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a9/SF-creature-Spaceroach_Geophage.jpg/450px-SF-creature-Spaceroach_Geophage.jpg",
         "temperament": "WARY",
         "planet": "Serpentis II",
         "biomes": [
@@ -21167,6 +21423,7 @@
     },
     {
         "name": "Stonewalker Geophage",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/9/97/SF-fauna-Stonewalker_Geophage.jpg/450px-SF-fauna-Stonewalker_Geophage.jpg",
         "temperament": "WARY",
         "planet": "Feynman I",
         "planetId": "86469-1",
@@ -21439,6 +21696,7 @@
     },
     {
         "name": "Swarming Dragon",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-fauna-Swarming_Dragon.jpg/450px-SF-fauna-Swarming_Dragon.jpg",
         "temperament": "WARY",
         "planet": "Tidacha I",
         "planetId": "82337-1",
@@ -21532,6 +21790,7 @@
     },
     {
         "name": "Swarming Foxbat",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/b/ba/SF-fauna-Swarming_Foxbat.png/450px-SF-fauna-Swarming_Foxbat.png",
         "temperament": "TERRITORIAL",
         "planet": "Schrodinger III",
         "planetId": "87902-3",
@@ -21736,6 +21995,7 @@
     },
     {
         "name": "Swarming Saturnine",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/7/78/SF-fauna-Swarming_Saturnine.jpg/450px-SF-fauna-Swarming_Saturnine.jpg",
         "temperament": "WARY",
         "planet": "Magnar",
         "planetId": "98924-2",
@@ -21765,6 +22025,7 @@
     },
     {
         "name": "Swarming Scorpion",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/e/e6/SF-fauna-SwarmingScorpion.jpg/450px-SF-fauna-SwarmingScorpion.jpg",
         "temperament": "WARY",
         "planet": "Marduk IV",
         "planetId": "60805-4",
@@ -22167,6 +22428,7 @@
     },
     {
         "name": "Thorn Grazer (Celebrai II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/46/SF-fauna-Thorn_Grazer.jpg/450px-SF-fauna-Thorn_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Celebrai II",
         "biomes": [
@@ -22192,6 +22454,7 @@
     },
     {
         "name": "Thorn Grazer (Guniibuu II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/46/SF-fauna-Thorn_Grazer.jpg/450px-SF-fauna-Thorn_Grazer.jpg",
         "temperament": "SKITTISH",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
@@ -22218,6 +22481,7 @@
     },
     {
         "name": "Thorn Grazer (Proxima Ternion III)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/46/SF-fauna-Thorn_Grazer.jpg/450px-SF-fauna-Thorn_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Proxima Ternion III",
         "planetId": "119059-3",
@@ -22244,6 +22508,7 @@
     },
     {
         "name": "Thorn Grazer (Tidacha I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/46/SF-fauna-Thorn_Grazer.jpg/450px-SF-fauna-Thorn_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Tidacha I",
         "planetId": "82337-1",
@@ -22269,6 +22534,7 @@
     },
     {
         "name": "Thorn Grazer (Ursa Minor II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/46/SF-fauna-Thorn_Grazer.jpg/450px-SF-fauna-Thorn_Grazer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Ursa Minor II",
         "planetId": "118743-2",
@@ -22293,6 +22559,7 @@
     },
     {
         "name": "Thorn Scavenger (Algorab II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/22/SF-fauna-Thorn_Scavenger.jpg/450px-SF-fauna-Thorn_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Algorab II",
         "planetId": "60776-2",
@@ -22318,6 +22585,7 @@
     },
     {
         "name": "Thorn Scavenger (Bohr II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/22/SF-fauna-Thorn_Scavenger.jpg/450px-SF-fauna-Thorn_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Bohr II",
         "planetId": "73018-2",
@@ -22342,6 +22610,7 @@
     },
     {
         "name": "Thorn Scavenger (Ixyll II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/22/SF-fauna-Thorn_Scavenger.jpg/450px-SF-fauna-Thorn_Scavenger.jpg",
         "temperament": "WARY",
         "planet": "Ixyll II",
         "planetId": "62328-2",
@@ -22371,6 +22640,7 @@
     },
     {
         "name": "Thorn Scavenger (Zosma V-a)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/2/22/SF-fauna-Thorn_Scavenger.jpg/450px-SF-fauna-Thorn_Scavenger.jpg",
         "temperament": "SKITTISH",
         "planet": "Zosma V-a",
         "planetId": "54712-12",
@@ -22397,6 +22667,7 @@
     },
     {
         "name": "Toadface Grazer (Gamma Vulpes II-a)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/d/de/SF-fauna-Toadface_Grazer.jpg/450px-SF-fauna-Toadface_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Gamma Vulpes II-a",
         "planetId": "75489-7",
@@ -22422,6 +22693,7 @@
     },
     {
         "name": "Toadface Grazer (Indum II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/d/de/SF-fauna-Toadface_Grazer.jpg/450px-SF-fauna-Toadface_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Indum II",
         "planetId": "119135-2",
@@ -22448,6 +22720,7 @@
     },
     {
         "name": "Toadface Grazer (Kumasi I)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/d/de/SF-fauna-Toadface_Grazer.jpg/450px-SF-fauna-Toadface_Grazer.jpg",
         "temperament": "WARY",
         "planet": "Kumasi I",
         "planetId": "56828-1",
@@ -22524,6 +22797,7 @@
     },
     {
         "name": "Trident Filterer (Celebrai II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-fauna-Trident_Filterer.jpg/450px-SF-fauna-Trident_Filterer.jpg",
         "temperament": "WARY",
         "planet": "Celebrai II",
         "biomes": [
@@ -22548,6 +22822,7 @@
     },
     {
         "name": "Trident Filterer (Linnaeus II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-fauna-Trident_Filterer.jpg/450px-SF-fauna-Trident_Filterer.jpg",
         "temperament": "PEACEFUL",
         "planet": "Linnaeus II",
         "planetId": "91156-2",
@@ -22677,6 +22952,7 @@
     },
     {
         "name": "Trident Scavenger",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/0/00/SF-fauna-Trident_Scavenger.jpg/450px-SF-fauna-Trident_Scavenger.jpg",
         "temperament": "WARY",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
@@ -22753,6 +23029,7 @@
     },
     {
         "name": "Trilobite",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/d/df/SF-fauna-Trilobite.jpg/450px-SF-fauna-Trilobite.jpg",
         "temperament": "WARY",
         "planet": "Kreet",
         "planetId": "88327-16",
@@ -23195,6 +23472,7 @@
     },
     {
         "name": "Triworm Scavenger (Charybdis II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/55/SF-fauna-Triworm_Scavenger.jpg/450px-SF-fauna-Triworm_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Charybdis II",
         "planetId": "56075-2",
@@ -23221,6 +23499,7 @@
     },
     {
         "name": "Triworm Scavenger (Copernicus II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/55/SF-fauna-Triworm_Scavenger.jpg/450px-SF-fauna-Triworm_Scavenger.jpg",
         "temperament": "PEACEFUL",
         "planet": "Copernicus II",
         "planetId": "76816-2",
@@ -23247,6 +23526,7 @@
     },
     {
         "name": "Triworm Scavenger (Nirvana II)",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/5/55/SF-fauna-Triworm_Scavenger.jpg/450px-SF-fauna-Triworm_Scavenger.jpg",
         "temperament": "SKITTISH",
         "planet": "Nirvana II",
         "planetId": "58401-2",
@@ -23463,6 +23743,7 @@
     },
     {
         "name": "Twintail Herbivore",
+        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4d/SF-fauna-Twintail_Herbivore.jpg/450px-SF-fauna-Twintail_Herbivore.jpg",
         "temperament": "WARY",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
