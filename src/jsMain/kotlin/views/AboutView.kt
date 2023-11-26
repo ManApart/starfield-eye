@@ -1,16 +1,13 @@
 package views
 
-import el
 import kotlinx.browser.window
 import kotlinx.html.*
-import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
+import replaceElement
 
 fun aboutView() {
     window.history.pushState(null, "null", "#about")
-    val root = el("root")
-    root.innerHTML = ""
-    root.append {
+    replaceElement {
         div {
             id = "about-view"
             div {

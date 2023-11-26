@@ -13,12 +13,11 @@ import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLSelectElement
 import org.w3c.dom.HTMLTextAreaElement
 import persistMemory
+import replaceElement
 
 
 fun userInfo(planet: Planet) {
-    val root = el("user-info")
-    root.innerHTML = ""
-    root.append {
+    replaceElement("user-info"){
         val info = inMemoryStorage.planetInfo(planet.uniqueId)
         table("detail-view-table") {
             tr {

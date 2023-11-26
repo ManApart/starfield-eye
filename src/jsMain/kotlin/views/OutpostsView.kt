@@ -24,13 +24,12 @@ import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.HTMLTextAreaElement
 import org.w3c.dom.events.KeyboardEvent
 import persistMemory
+import replaceElement
 
 
 fun outpostsPage() {
     window.history.pushState(null, "null", "#outposts")
-    val root = el("root")
-    root.innerHTML = ""
-    root.append {
+    replaceElement {
         div {
             id = "outposts-view"
             button {

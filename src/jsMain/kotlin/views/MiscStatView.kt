@@ -3,20 +3,17 @@ package views
 import MiscStats
 import Quest
 import QuestStageState
-import el
 import inMemoryStorage
 import kotlinx.browser.window
 import kotlinx.html.*
-import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import pollHook
+import replaceElement
 
 fun miscStatView() {
     window.history.pushState(null, "null", "#misc-stats")
-    val root = el("root")
-    root.innerHTML = ""
-    root.append {
+    replaceElement {
         div {
             id = "misc-stat-view"
             div {
@@ -41,9 +38,7 @@ fun miscStatView() {
 }
 
 private fun needsDocking() {
-    val root = el<HTMLElement?>("sections")
-    root?.innerHTML = ""
-    root?.append {
+    replaceElement("sections") {
         div("section-view-box") {
             id = "misc-stat-explanation"
             h2 { +"Misc Stats" }
@@ -72,9 +67,7 @@ private data class MiscStatItem(
 )
 
 private fun displayStats(stats: MiscStats) {
-    val root = el<HTMLElement?>("sections")
-    root?.innerHTML = ""
-    root?.append {
+    replaceElement("sections") {
         div("section-view-box") {
             id = "misc-stats"
             h2 { +"Miscellaneous Stats" }
@@ -219,11 +212,12 @@ private fun TagConsumer<HTMLElement>.statsSection(title: String, vararg data: Mi
                             td { +value.toString() }
                         }
                         if (value is Int && achievementName != null && achievementTotal != null && value != 0) {
-                            val progress = minOf(achievementTotal, value)/achievementTotal.toFloat()*100
+                            val progress = minOf(achievementTotal, value) / achievementTotal.toFloat() * 100
                             tr {
                                 td("progress-bar") {
                                     this.title = "Achievement: $achievementName: $value/$achievementTotal"
-                                    style = "background-image: linear-gradient(to right, var(--blue) $progress%, gray $progress%);"
+                                    style =
+                                        "background-image: linear-gradient(to right, var(--blue) $progress%, gray $progress%);"
                                 }
                             }
                         }

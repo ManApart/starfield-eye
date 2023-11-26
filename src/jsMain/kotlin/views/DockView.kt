@@ -15,7 +15,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.html.*
-import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import missionReference
 import org.w3c.dom.HTMLDivElement
@@ -24,12 +23,11 @@ import org.w3c.dom.events.KeyboardEvent
 import pageIsVisible
 import persistMemory
 import pollHook
+import replaceElement
 
 fun dockView() {
     window.history.pushState(null, "null", "#dock")
-    val root = el("root")
-    root.innerHTML = ""
-    root.append {
+    replaceElement {
         div {
             id = "dock-view"
             div {

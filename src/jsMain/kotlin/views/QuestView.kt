@@ -18,6 +18,7 @@ import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import persistMemory
 import pollHook
+import replaceElement
 import searchMissions
 
 private var oldQuests: List<Quest> = listOf()
@@ -26,9 +27,7 @@ private var navButtons: List<HTMLButtonElement> = listOf()
 
 fun questView() {
     window.history.pushState(null, "null", "#quests")
-    val root = el("root")
-    root.innerHTML = ""
-    root.append {
+    replaceElement("sections"){
         div {
             id = "quest-view"
             div {
@@ -53,9 +52,7 @@ fun questView() {
 }
 
 private fun needsDocking() {
-    val root = el<HTMLElement?>("sections")
-    root?.innerHTML = ""
-    root?.append {
+    replaceElement("sections") {
         div("section-view-box") {
             id = "quest-explanation"
             h2 { +"Quests" }
@@ -80,9 +77,7 @@ private fun receivePoll(success: Boolean) {
 }
 
 private fun displayQuests(quests: List<Quest>) {
-    val root = el<HTMLElement?>("sections")
-    root?.innerHTML = ""
-    root?.append {
+    replaceElement("sections") {
         div("section-view-box") {
             id = "quests"
             h2 { +"Quests" }

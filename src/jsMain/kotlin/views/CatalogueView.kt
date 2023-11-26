@@ -16,14 +16,13 @@ import kotlinx.html.js.onMouseOverFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import planetDivs
+import replaceElement
 import searchPlanets
 import starDivs
 
 fun catalogueView() {
     window.history.pushState(null, "null", "#catalogue")
-    val root = el("root")
-    root.innerHTML = ""
-    root.append {
+    replaceElement {
         div {
             id = "catalogue-view"
             div {

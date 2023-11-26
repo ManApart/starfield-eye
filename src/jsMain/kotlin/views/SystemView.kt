@@ -25,6 +25,7 @@ import kotlinx.html.js.onMouseOutFunction
 import kotlinx.html.js.onMouseOverFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.events.KeyboardEvent
+import replaceElement
 
 private var currentPlanet = 0
 private var currentPlanetType = "star"
@@ -33,9 +34,7 @@ private var currentSystem: StarSystem? = null
 fun systemView(system: StarSystem, planetId: Int = 0) {
     currentSystem = system
     updateUrl(system, planetId)
-    val root = el("root")
-    root.innerHTML = ""
-    root.append {
+    replaceElement {
         div {
             id = "system-view"
             button {
@@ -175,9 +174,7 @@ private fun setSelected(prefix: String, planetId: Int) {
 
 fun detailView(system: StarSystem, planetId: Int, updateUrl: Boolean = true, linkToSystem: Boolean = false) {
     if (updateUrl) updateUrl(system, planetId)
-    val root = el("detail-view")
-    root.innerHTML = ""
-    root.append {
+    replaceElement("detail-view", "section-view-box"){
         if (planetId == 0) detailView(system.star, system, linkToSystem) else detailView(system, system.planets[planetId]!!, linkToSystem)
     }
     if (planetId != 0) {

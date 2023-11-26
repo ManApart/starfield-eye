@@ -2,23 +2,25 @@ package views
 
 import el
 import galaxy
+import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.dom.addClass
+import kotlinx.dom.createElement
 import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.dom.append
+import kotlinx.html.dom.create
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.js.onKeyUpFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
+import replaceElement
 import starDivs
 
 fun renderGalaxy() {
     window.history.pushState(null, "null", "#galaxy")
-    val root = el("root")
 
-    root.innerHTML = ""
-    root.append {
+    replaceElement {
         galaxy()
         nav()
     }
