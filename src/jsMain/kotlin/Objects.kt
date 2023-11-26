@@ -6,6 +6,11 @@ data class PlanetSearchOptions(
 )
 
 @Serializable
+data class LifeSignsSearchOptions(
+    var searchText: String = ""
+)
+
+@Serializable
 data class MissionSearchOptions(
     var searchText: String = "",
     var showCompleted: Boolean = false,

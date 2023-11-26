@@ -37,6 +37,7 @@ data class InMemoryStorage(
 }
 
 val planetSearchOptions: PlanetSearchOptions = PlanetSearchOptions()
+val lifeSignsSearchOptions: PlanetSearchOptions = PlanetSearchOptions()
 val missionSearchOptions: MissionSearchOptions = MissionSearchOptions()
 var inMemoryStorage = InMemoryStorage()
 var starDivs: Map<String, HTMLElement> = mapOf()

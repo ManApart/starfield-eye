@@ -57,6 +57,10 @@ private fun TagConsumer<HTMLElement>.nav() {
             onClickFunction = { catalogueView() }
         }
         button {
+            +"Life Signs"
+            onClickFunction = { lifeSignsView() }
+        }
+        button {
             +"Outposts"
             onClickFunction = { outpostsPage() }
         }

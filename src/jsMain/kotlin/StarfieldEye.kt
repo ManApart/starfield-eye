@@ -96,6 +96,9 @@ fun doRouting(windowHash: String) {
         windowHash.startsWith("#catalogue") -> {
             catalogueView()
         }
+        windowHash.startsWith("#lifesigns") -> {
+            lifeSignsView()
+        }
 
         windowHash.startsWith("#crew") -> {
             crewView()
