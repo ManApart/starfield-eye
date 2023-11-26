@@ -147,3 +147,8 @@ fun replaceElement(id: String = "root", rootClasses: String? = null, newHtml: Ta
         root.replaceWith(newRoot)
     }
 }
+
+fun isMobile(): Boolean {
+    val screenRatio = window.screen.width / window.screen.height.toDouble()
+    return screenRatio < 3/4.0
+}

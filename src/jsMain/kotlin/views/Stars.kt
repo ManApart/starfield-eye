@@ -1,6 +1,7 @@
 package views
 
 import el
+import isMobile
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import org.w3c.dom.HTMLElement
@@ -11,10 +12,12 @@ private const val layerCount = 3
 private var starLayers = listOf<HTMLElement>()
 
 fun genStars() {
-    el("stars").append {
-        backgroundStars()
+    if (!isMobile()) {
+        el("stars").append {
+            backgroundStars()
+        }
+        starLayers = (0 until layerCount).mapNotNull { el<HTMLElement?>("star-layer-$it") }
     }
-    starLayers = (0 until layerCount).mapNotNull { el<HTMLElement?>("star-layer-$it") }
 }
 
 private fun TagConsumer<HTMLElement>.backgroundStars() {
