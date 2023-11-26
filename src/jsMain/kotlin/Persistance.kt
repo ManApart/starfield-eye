@@ -1,6 +1,9 @@
 import LocalForage.config
 import kotlinx.browser.document
 import kotlinx.browser.window
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
@@ -19,8 +22,6 @@ val jsonMapper = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
 
 @Serializable
 data class InMemoryStorage(
-    val planetSearchOptions: PlanetSearchOptions = PlanetSearchOptions(),
-    val missionSearchOptions: MissionSearchOptions = MissionSearchOptions(),
     val planetUserInfo: MutableMap<String, PlanetInfo> = mutableMapOf(),
     val discoveredStars: Set<Int> = setOf(),
     val planetScans: MutableMap<String, PlanetInfo> = mutableMapOf(),
@@ -35,6 +36,8 @@ data class InMemoryStorage(
     }
 }
 
+val planetSearchOptions: PlanetSearchOptions = PlanetSearchOptions()
+val missionSearchOptions: MissionSearchOptions = MissionSearchOptions()
 var inMemoryStorage = InMemoryStorage()
 var starDivs: Map<String, HTMLElement> = mapOf()
 var planetDivs: Map<String, HTMLElement> = mapOf()
@@ -110,6 +113,9 @@ fun createDB() {
 
 fun persistMemory() {
     LocalForage.setItem("memory", jsonMapper.encodeToString(inMemoryStorage))
+}
+
+fun persistPictures() {
     LocalForage.setItem("pictures", jsonMapper.encodeToString(pictureStorage))
 }
 

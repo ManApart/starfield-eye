@@ -1,7 +1,7 @@
 import views.filterMissions
 
 fun searchMissions() {
-    val filtered = with(inMemoryStorage.missionSearchOptions) {
+    val filtered = with(missionSearchOptions) {
         val text = searchText.lowercase()
         inMemoryStorage.quests
             .filter { it.matches(types) }
@@ -9,7 +9,6 @@ fun searchMissions() {
             .filter { it.matches(text) }
     }
     filterMissions(filtered)
-    persistMemory()
 }
 
 private fun Quest.matches(types: List<MissionType>): Boolean {

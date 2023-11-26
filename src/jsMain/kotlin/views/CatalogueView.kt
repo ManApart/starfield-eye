@@ -16,6 +16,7 @@ import kotlinx.html.js.onMouseOverFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import planetDivs
+import planetSearchOptions
 import replaceElement
 import searchPlanets
 import starDivs
@@ -36,9 +37,9 @@ fun catalogueView() {
                 input(classes = "search") {
                     id = "search"
                     placeholder = "Filter: Name, Resources etc. Comma separated"
-                    value = inMemoryStorage.planetSearchOptions.searchText
+                    value = planetSearchOptions.searchText
                     onKeyUpFunction = {
-                        inMemoryStorage.planetSearchOptions.searchText = el<HTMLInputElement>("search").value
+                        planetSearchOptions.searchText = el<HTMLInputElement>("search").value
                         searchPlanets()
                     }
                 }

@@ -1,9 +1,8 @@
 import views.filterPlanets
 
 fun searchPlanets() {
-    val planets = getPlanets().filterSearch(inMemoryStorage.planetSearchOptions.searchText)
+    val planets = getPlanets().filterSearch(planetSearchOptions.searchText)
     filterPlanets(planets)
-    persistMemory()
 }
 
 private fun List<Planet>.filterSearch(searchText: String): List<Planet> {

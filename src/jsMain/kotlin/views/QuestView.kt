@@ -13,6 +13,7 @@ import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.js.onKeyUpFunction
+import missionSearchOptions
 import org.w3c.dom.HTMLButtonElement
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
@@ -110,16 +111,16 @@ private fun TagConsumer<HTMLElement>.filterControls() {
         missionButton("show-other", "Other", ::showOther)
         div("toggle-wrapper") {
             +"Completed"
-            toggle(inMemoryStorage.missionSearchOptions::showCompleted) {
+            toggle(missionSearchOptions::showCompleted) {
                 searchMissions()
             }
         }
         input(classes = "search") {
             id = "search"
             placeholder = "Filter by Name or stage"
-            value = inMemoryStorage.missionSearchOptions.searchText
+            value = missionSearchOptions.searchText
             onKeyUpFunction = {
-                inMemoryStorage.missionSearchOptions.searchText = el<HTMLInputElement>("search").value
+                missionSearchOptions.searchText = el<HTMLInputElement>("search").value
                 searchMissions()
             }
         }
@@ -199,37 +200,37 @@ private fun pushButton(id: String) {
 
 
 private fun showAll() {
-    inMemoryStorage.missionSearchOptions.types = MissionType.entries
+    missionSearchOptions.types = MissionType.entries
     pushButton("show-all")
     searchMissions()
 }
 
 private fun showMain() {
-    inMemoryStorage.missionSearchOptions.types = listOf(MissionType.MAIN)
+    missionSearchOptions.types = listOf(MissionType.MAIN)
     pushButton("show-main")
     searchMissions()
 }
 
 private fun showCity() {
-    inMemoryStorage.missionSearchOptions.types = MissionType.entries.filter { it.isCity() }
+    missionSearchOptions.types = MissionType.entries.filter { it.isCity() }
     pushButton("show-city")
     searchMissions()
 }
 
 private fun showFaction() {
-    inMemoryStorage.missionSearchOptions.types = MissionType.entries.filter { it.isFaction() }
+    missionSearchOptions.types = MissionType.entries.filter { it.isFaction() }
     pushButton("show-faction")
     searchMissions()
 }
 
 private fun showMisc() {
-    inMemoryStorage.missionSearchOptions.types = MissionType.entries.filter { it.isMisc() }
+    missionSearchOptions.types = MissionType.entries.filter { it.isMisc() }
     pushButton("show-misc")
     searchMissions()
 }
 
 private fun showOther() {
-    inMemoryStorage.missionSearchOptions.types = listOf(MissionType.OTHER)
+    missionSearchOptions.types = listOf(MissionType.OTHER)
     pushButton("show-other")
     searchMissions()
 }
