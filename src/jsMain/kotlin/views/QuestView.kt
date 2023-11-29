@@ -28,7 +28,7 @@ private var navButtons: List<HTMLButtonElement> = listOf()
 
 fun questView() {
     window.history.pushState(null, "null", "#quests")
-    replaceElement("sections"){
+    replaceElement{
         div {
             id = "quest-view"
             div {
