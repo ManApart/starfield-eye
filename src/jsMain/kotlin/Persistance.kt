@@ -42,6 +42,8 @@ val missionSearchOptions: MissionSearchOptions = MissionSearchOptions()
 var inMemoryStorage = InMemoryStorage()
 var starDivs: Map<String, HTMLElement> = mapOf()
 var planetDivs: Map<String, HTMLElement> = mapOf()
+var floraDivs: Map<String, HTMLElement> = mapOf()
+var faunaDivs: Map<String, HTMLElement> = mapOf()
 var pictureStorage: MutableMap<String, String> = mutableMapOf()
 
 

@@ -1,8 +1,12 @@
 package views
 
+import FaunaWikiData
+import FloraWikiData
 import Planet
 import el
+import faunaDivs
 import faunaReference
+import floraDivs
 import floraReference
 import galaxy
 import getPlanets
@@ -18,6 +22,7 @@ import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import planetDivs
 import replaceElement
+import searchLifeSigns
 import searchPlanets
 import starDivs
 
@@ -40,7 +45,7 @@ fun lifeSignsView() {
                     value = lifeSignsSearchOptions.searchText
                     onKeyUpFunction = {
                         lifeSignsSearchOptions.searchText = el<HTMLInputElement>("search").value
-//                        searchPlanets()
+                        searchLifeSigns()
                     }
                 }
             }
@@ -55,8 +60,8 @@ fun lifeSignsView() {
             }
         }
     }
-//    saveHtmlRefs()
-//    searchPlanets()
+    saveHtmlRefs()
+    searchLifeSigns()
 }
 
 private fun TagConsumer<HTMLElement>.lifeSignList() {
@@ -97,7 +102,7 @@ private fun TagConsumer<HTMLElement>.lifeSignList() {
             }
             wikiData.first.forEach { flora ->
                 div("life-sign-catalogue-item") {
-                    id = "${planet.uniqueId}-${flora.name}"
+                    id = flora.uniqueId
                     span {
                         +flora.name
                         onClickFunction = {
@@ -113,7 +118,7 @@ private fun TagConsumer<HTMLElement>.lifeSignList() {
             }
             wikiData.second.forEach { fauna ->
                 div("life-sign-catalogue-item") {
-                    id = "${planet.uniqueId}-${fauna.name}"
+                    id = fauna.uniqueId
                     span {
                         +fauna.name
                         onClickFunction = {
@@ -132,21 +137,29 @@ private fun TagConsumer<HTMLElement>.lifeSignList() {
 }
 
 private fun saveHtmlRefs() {
-    planetDivs = getPlanets().associate { it.uniqueId to el(it.uniqueId) }
-    starDivs = galaxy.systems.values.associate { it.star.id.toString() to el(it.star.name) }
+    val planets = getPlanets()
+    starDivs = galaxy.systems.values.map { it.star.id.toString() to el<HTMLElement?>(it.star.name) }.filter { it.second != null }.toMap() as Map<String, HTMLElement>
+    planetDivs = getPlanets().map { it.uniqueId to el<HTMLElement?>(it.uniqueId) }.filter { it.second != null }.toMap() as Map<String, HTMLElement>
+    floraDivs = planets.mapNotNull { floraReference[it.uniqueId] }.flatten().associate { it.uniqueId to el(it.uniqueId) }
+    faunaDivs = planets.mapNotNull { faunaReference[it.uniqueId] }.flatten().associate { it.uniqueId to el(it.uniqueId) }
 }
 
-fun filterLife(shown: List<Planet>) {
-    val shownMap = shown.associateBy { it.uniqueId }
-    val (shownHtml, hiddenHtml) = planetDivs.entries.partition { (id, _) -> shownMap.containsKey(id) }
-    val shownStars = shown.groupBy { it.starId.toString() }.keys
-    val (shownStarHtml, hiddenStarHtml) = starDivs.entries.partition { (id, _) -> shownStars.contains(id) }
+fun filterLife(shownFlora: List<FloraWikiData>, shownFauna: List<FaunaWikiData>) {
+    val shownPlanetIds = (shownFauna.mapNotNull { it.planetId } + shownFlora.mapNotNull { it.planetId }).toSet()
+    val shownStarIds = (shownFauna.mapNotNull { it.planetId?.split("-")?.first() } + shownFlora.mapNotNull { it.planetId?.split("-")?.first() }).toSet()
+    val shownFloraIds = shownFlora.map { it.uniqueId }
+    val shownFaunaIds = shownFauna.map { it.uniqueId }
 
-    (shownStarHtml + shownHtml).forEach { (_, html) ->
+    val (shownStarHtml, hiddenStarHtml) = starDivs.entries.partition { (id, _) -> shownStarIds.contains(id) }
+    val (shownPlanetHtml, hiddenPlanetHtml) = planetDivs.entries.partition { (id, _) -> shownPlanetIds.contains(id) }
+    val (shownFloraHtml, hiddenFloraHtml) = floraDivs.entries.partition { (id, _) -> shownFloraIds.contains(id) }
+    val (shownFaunaHtml, hiddenFaunaHtml) = faunaDivs.entries.partition { (id, _) -> shownFaunaIds.contains(id) }
+
+    (shownStarHtml + shownPlanetHtml + shownFloraHtml + shownFaunaHtml).forEach { (_, html) ->
         html.addClass("visible-block")
         html.removeClass("hidden")
     }
-    (hiddenStarHtml + hiddenHtml).forEach { (_, html) ->
+    (hiddenStarHtml + hiddenPlanetHtml + hiddenFloraHtml + hiddenFaunaHtml).forEach { (_, html) ->
         html.addClass("hidden")
         html.removeClass("visible-block")
     }

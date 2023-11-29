@@ -1,4 +1,5 @@
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.Transient
 
 interface WikiData {
     val name: String
@@ -37,7 +38,10 @@ data class FaunaWikiData(
     val resource: String,
     val abilities: List<String> = listOf(),
     val other: Map<String, String> = mapOf()
-): WikiData
+): WikiData {
+    @Transient
+    val uniqueId = "$planetId-$name"
+}
 
 @Serializable
 data class FloraWikiData(
@@ -48,4 +52,7 @@ data class FloraWikiData(
     val biomes: List<String> = listOf(),
     val resource: String,
     val other: Map<String, String> = mapOf()
-): WikiData
+): WikiData {
+    @Transient
+    val uniqueId = "$planetId-$name"
+}
