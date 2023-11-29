@@ -5,7 +5,7 @@ fun searchLifeSigns() {
     val rawFlora = planets.mapNotNull { floraReference[it.uniqueId]}.flatten()
     val rawFauna = planets.mapNotNull { faunaReference[it.uniqueId]}.flatten()
     val flora = rawFlora.floraSearch(lifeSignsSearchOptions.searchText)
-    val fauna = rawFauna.faunaSearch(planetSearchOptions.searchText)
+    val fauna = rawFauna.faunaSearch(lifeSignsSearchOptions.searchText)
     filterLife(flora, fauna)
 }
 
@@ -21,45 +21,21 @@ private fun List<FaunaWikiData>.faunaSearch(searchText: String): List<FaunaWikiD
 }
 
 private fun floraMatches(floraWikiData: FloraWikiData, searchText: String): Boolean {
-    return true
-//    return with(planet) {
-//        name.lowercase().contains(searchText)
-//                || bodyType == searchText.toIntOrNull()
-//                || type.lowercase().contains(searchText)
-//                || bodyTypeDescription.lowercase().contains(searchText)
-//                || atmosphere.lowercase().contains(searchText)
-//                || temperature.lowercase().contains(searchText)
-//                || water.lowercase().contains(searchText)
-//                || planetClass.lowercase().contains(searchText)
-//                || magneticField.lowercase().contains(searchText)
-//                || life.lowercase().contains(searchText)
-//                || biomes.any { it.lowercase().contains(searchText) }
-//                || traits.any { it.lowercase().contains(searchText) }
-//                || flora.any { it.lowercase().contains(searchText) }
-//                || fauna.any { it.lowercase().contains(searchText) }
-//                || inorganicResources.any { it.contains(searchText) }
-//                || organicResources.any { it.lowercase().contains(searchText) }
-//    }
+    return with(floraWikiData) {
+        name.lowercase().contains(searchText)
+                || resource.lowercase().contains(searchText)
+                || biomes.any { it.lowercase().contains(searchText) }
+                || other.values.any { it.lowercase().contains(searchText) }
+    }
 }
 
 private fun faunaMatches(faunaWikiData: FaunaWikiData, searchText: String): Boolean {
-    return true
-//    return with(planet) {
-//        name.lowercase().contains(searchText)
-//                || bodyType == searchText.toIntOrNull()
-//                || type.lowercase().contains(searchText)
-//                || bodyTypeDescription.lowercase().contains(searchText)
-//                || atmosphere.lowercase().contains(searchText)
-//                || temperature.lowercase().contains(searchText)
-//                || water.lowercase().contains(searchText)
-//                || planetClass.lowercase().contains(searchText)
-//                || magneticField.lowercase().contains(searchText)
-//                || life.lowercase().contains(searchText)
-//                || biomes.any { it.lowercase().contains(searchText) }
-//                || traits.any { it.lowercase().contains(searchText) }
-//                || flora.any { it.lowercase().contains(searchText) }
-//                || fauna.any { it.lowercase().contains(searchText) }
-//                || inorganicResources.any { it.contains(searchText) }
-//                || organicResources.any { it.lowercase().contains(searchText) }
-//    }
+    return with(faunaWikiData) {
+        name.lowercase().contains(searchText)
+                || resource.lowercase().contains(searchText)
+                || temperament.name.lowercase().contains(searchText)
+                || biomes.any { it.lowercase().contains(searchText) }
+                || abilities.any { it.lowercase().contains(searchText) }
+                || other.values.any { it.lowercase().contains(searchText) }
+    }
 }
