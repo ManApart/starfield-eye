@@ -9,6 +9,7 @@ import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.dom.append
+import kotlinx.html.js.a
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 
@@ -58,6 +59,10 @@ private fun TagConsumer<HTMLElement>.display(flora: FloraWikiData, linkToSystem:
                         }
                     }
                 }
+            }
+            a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
+                id = "wiki-link"
+                +"View on Wiki"
             }
 
             table("detail-view-table") {

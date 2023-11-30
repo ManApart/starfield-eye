@@ -59,6 +59,10 @@ private fun TagConsumer<HTMLElement>.display(fauna: FaunaWikiData, linkToSystem:
                     }
                 }
             }
+            a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
+                id = "wiki-link"
+                +"View on Wiki"
+            }
 
             table("detail-view-table") {
                 (listOf(

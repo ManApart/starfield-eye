@@ -18,7 +18,7 @@ import kotlinx.coroutines.launch
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
-import kotlinx.html.dom.append
+import kotlinx.html.consumers.filter
 import kotlinx.html.js.a
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.js.onMouseOutFunction
@@ -174,8 +174,12 @@ private fun setSelected(prefix: String, planetId: Int) {
 
 fun detailView(system: StarSystem, planetId: Int, updateUrl: Boolean = true, linkToSystem: Boolean = false) {
     if (updateUrl) updateUrl(system, planetId)
-    replaceElement("detail-view", "section-view-box"){
-        if (planetId == 0) detailView(system.star, system, linkToSystem) else detailView(system, system.planets[planetId]!!, linkToSystem)
+    replaceElement("detail-view", "section-view-box") {
+        if (planetId == 0) detailView(system.star, system, linkToSystem) else detailView(
+            system,
+            system.planets[planetId]!!,
+            linkToSystem
+        )
     }
     if (planetId != 0) {
         system.planets[planetId]?.let { userInfo(it) }
@@ -207,8 +211,7 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, 
                 "Moons" to system.planetChildren.values.sumOf { it.size },
                 "Outposts" to system.planets.values.sumOf {
                     (inMemoryStorage.planetInfo(it.uniqueId)).outPosts.size
-                },
-                "Organic Resources" to system.planets.flatMap { it.value.organicResources }.sorted().toSet().joinToString(),
+                }
             )
                 .filter { (_, data) -> data.toString().isNotBlank() && data.toString() != "0" }
                 .forEach { (title, data) ->
@@ -217,7 +220,8 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, 
                         td { +data.toString() }
                     }
                 }
-            resourceRow(system.planets.values.flatMap { it.inorganicResources }.sortedBy { it.name }.toSet())
+            organicResourceRow(system.planets.flatMap { it.value.organicResources }.sorted().toSet())
+            inorganicResourceRow(system.planets.values.flatMap { it.inorganicResources }.sortedBy { it.name }.toSet())
         }
     }
 }
@@ -265,7 +269,6 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
                 "Traits" to traits,
                 "Asteroids" to asteroids,
                 "Rings" to rings,
-                "Organic Resources" to organicResources.joinToString(),
             )
                 .filter { (_, data) -> data.toString().isNotBlank() && data.toString() != "0" }
                 .forEach { (title, data) ->
@@ -288,7 +291,8 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
                     }
                 }
             }
-            resourceRow(inorganicResources)
+            organicResourceRow(organicResources)
+            inorganicResourceRow(inorganicResources)
             val info = inMemoryStorage.planetInfo(planet.uniqueId)
             outPostsRow(info.outPosts)
         }
@@ -304,7 +308,20 @@ fun outpostsView(system: StarSystem, planetId: Int) {
     }
 }
 
-private fun TagConsumer<HTMLElement>.resourceRow(resources: Set<ResourceType>) {
+private fun TagConsumer<HTMLElement>.organicResourceRow(resources: Set<String>) {
+    tr {
+        td("resource-td") { +"Organic Resources" }
+        td("resource-value-td") {
+            if (resources.isEmpty()) {
+                +"None"
+            } else {
+                +resources.joinToString()
+            }
+        }
+    }
+}
+
+private fun TagConsumer<HTMLElement>.inorganicResourceRow(resources: Set<ResourceType>) {
     tr {
         td("resource-td") { +"Inorganic Resources" }
         td("resource-value-td") {

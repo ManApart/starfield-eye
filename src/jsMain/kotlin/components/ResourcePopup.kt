@@ -5,12 +5,9 @@ import el
 import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
-import kotlinx.html.TagConsumer
-import kotlinx.html.div
+import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
-import kotlinx.html.style
-import kotlinx.html.title
 import mouseX
 import mouseY
 import org.w3c.dom.HTMLElement
@@ -23,7 +20,7 @@ fun TagConsumer<HTMLElement>.resourceSquare(resource: ResourceType) {
     div("resource") {
         style = "background-color: #${resource.color}"
         div("resource-inner") {
-            +resource.name
+            a("https://starfieldwiki.net/wiki/Starfield:${resource.readableName.replace(" ", "_")}", target = "_blank") { +resource.name }
         }
         title = resource.readableName
     }
