@@ -78,7 +78,7 @@ private fun parseSystem(
 
         val floraList = floraResources[uniqueId]?.map { it.resource } ?: listOf()
         val faunaList = faunaResources[uniqueId]?.map { it.resource } ?: listOf()
-        val organicResources = (floraList + faunaList).toSet()
+        val organicResources = (floraList + faunaList).sorted().toSet()
 
         val flora = wikiData.flora.replace("[[#Flora|]]", "")
         val fauna = wikiData.fauna.replace("[[#Fauna|]]", "")
@@ -140,7 +140,7 @@ private fun determineResources(
     val resources = systemResources[rawPlanet.name] ?: emptyList<ResourceType>().also {
         failedPlanetResourceLookups.add(rawPlanet.name)
     }
-    return (resources + wikiResources).toSet()
+    return (resources + wikiResources).sortedByDescending { it.name }.toSet()
 }
 
 private fun parseResourceLookup(lines: List<String>): Map<String, Map<String, List<ResourceType>>> {

@@ -208,7 +208,7 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, 
                 "Outposts" to system.planets.values.sumOf {
                     (inMemoryStorage.planetInfo(it.uniqueId)).outPosts.size
                 },
-                "Organic Resources" to system.planets.flatMap { it.value.organicResources }.toSet().joinToString(),
+                "Organic Resources" to system.planets.flatMap { it.value.organicResources }.sorted().toSet().joinToString(),
             )
                 .filter { (_, data) -> data.toString().isNotBlank() && data.toString() != "0" }
                 .forEach { (title, data) ->
@@ -217,7 +217,7 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, 
                         td { +data.toString() }
                     }
                 }
-            resourceRow(system.planets.values.flatMap { it.inorganicResources }.toSet())
+            resourceRow(system.planets.values.flatMap { it.inorganicResources }.sortedBy { it.name }.toSet())
         }
     }
 }
