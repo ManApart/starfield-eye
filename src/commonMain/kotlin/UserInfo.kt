@@ -8,7 +8,7 @@ data class PlanetInfo(
     val outPosts: MutableList<Outpost> = mutableListOf()
 ) {
     fun addOutpost(name: String) {
-        val id = outPosts.maxOf { it.id } + 1
+        val id = (outPosts.maxOfOrNull { it.id } ?: 0) + 1
         outPosts.add(Outpost(id, name))
     }
 }
