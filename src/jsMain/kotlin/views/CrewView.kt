@@ -45,8 +45,8 @@ fun crewView() {
                         ) { +"Hardcore Gamer" }
                     }
                     li {
-                        +"Inorganic Resource Data from "
-                        a("https://starfieldwiki.net/wiki/Starfield:Resources", target = "_blank") { +"Starfield Wiki" }
+                        +"Resource Data, Flora and Fauna Data, Planet Data and more from "
+                        a("https://starfieldwiki.net/wiki/Home", target = "_blank") { +"Starfield Wiki" }
                     }
                     li {
                         +"Optional Live Game Connection (Docking) by "
