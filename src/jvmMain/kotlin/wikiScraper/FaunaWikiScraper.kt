@@ -33,6 +33,8 @@ fun main() {
 }
 
 private fun parseFauna(page: Document): List<FaunaWikiData> {
+//    println("Parsing ${page.baseUri()}: ${page.title()}")
+    val name = page.title().replace("Starfield:", "").replace(" - Starfield Wiki", "").trim()
     val allTables = page.select(".wikitable")
     val singleTable = allTables.firstOrNull { it.hasClass("infobox") }
     val variantTables = allTables.toMutableList().also { it.remove(singleTable) }
@@ -42,17 +44,16 @@ private fun parseFauna(page: Document): List<FaunaWikiData> {
 
     return when {
         singleTable == null && variantTables.isEmpty() -> {
-            println("Skipping ${page.baseUri()}")
+            println("Skipping ${page.baseUri()}: ${page.title()}")
             listOf()
         }
 
-        variantTables.isEmpty() -> listOf(parseTable(singleTable!!, url))
-        else -> variantTables.map { parseTable(it, url) }
+        variantTables.isEmpty() -> listOf(parseTable(singleTable!!, name, url))
+        else -> variantTables.map { parseTable(it, name, url) }
     }
 }
 
-private fun parseTable(table: Element, imageUrl: String?): FaunaWikiData {
-    val name = parseName(table.select("th").first()!!)
+private fun parseTable(table: Element, name: String, imageUrl: String?): FaunaWikiData {
     val planet = table.selectHeaderClean("Planet") ?: table.selectHeaderClean("Location")  ?: parsePlanet(table.select("th").first()!!)
     if (name == planet) throw IllegalStateException("Non-fauna table detected")
     val abilities = table.selectHeaderClean("Abilities")?.split(",") ?: emptyList()

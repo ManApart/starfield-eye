@@ -73,8 +73,7 @@ inline fun <reified T : WikiData> readFromUrls(
     parse: (Document) -> List<T>,
     options: ScraperOptions,
 ) {
-    val existing = mutableMapOf<String, T>()
-    urlFile.readLines()
+    val data = urlFile.readLines()
         .also { println("Found a total of ${it.size} urls") }
 //        .filter { it.contains("Seahag") }
         .let { if (options.onlyOne) it.take(1) else it.drop(options.start) }
@@ -83,7 +82,6 @@ inline fun <reified T : WikiData> readFromUrls(
         .chunked(options.chunkSize).flatMap { chunk ->
             println("Processing next ${options.chunkSize}, starting with ${chunk.first()}")
             chunk.flatMap {
-//                parse(fetch(it, options.useCache))
                 try {
                     parse(fetch(it, options.cacheDir))
                 } catch (e: Exception) {
@@ -92,9 +90,8 @@ inline fun <reified T : WikiData> readFromUrls(
                 }
             }
         }
-        .forEach { existing[it.name] = it }
 
-    output.writeText(jsonMapper.encodeToString(existing.values))
+    output.writeText(jsonMapper.encodeToString(data))
 }
 
 fun fetch(url: String, cacheDir: String): Document {

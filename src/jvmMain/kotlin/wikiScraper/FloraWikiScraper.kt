@@ -8,7 +8,6 @@ import kotlinx.serialization.decodeFromString
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import java.io.File
-import java.lang.IllegalStateException
 
 private lateinit var planetsByName: Map<String, Planet>
 
@@ -20,24 +19,24 @@ fun main() {
     val output = File("src/jsMain/resources/flora-wiki-data.json")
 
     println("Reading Flora")
-    planetsByName = jsonMapper.decodeFromString<Galaxy>(File("src/jsMain/resources/data.json").readText()).planets.values.associateBy { it.name }
+    planetsByName =
+        jsonMapper.decodeFromString<Galaxy>(File("src/jsMain/resources/data.json").readText()).planets.values.associateBy { it.name }
     readFromUrls(urlFile, output, ::parseFlora, options)
 }
 
 private fun parseFlora(page: Document): List<FloraWikiData> {
+    val name = page.title().replace("Starfield:", "").replace(" - Starfield Wiki", "").trim()
     val allTables = page.select(".wikitable")
     val singleTable = allTables.firstOrNull { it.hasClass("infobox") }!!
     val variantTables = allTables.toMutableList().also { it.remove(singleTable) }
-    val species = page.baseUri().takeIf { it.isNotBlank() }?.let { it.substring(it.lastIndexOf(":")+1) }?.replace("_", " ")?.replace("%27s", "'")?.replace(".html", "")
-        ?: page.title().replace("Starfield:", "").replace("- Starfield Wiki", "").trim()
 
     val image = page.select(".thumbinner").flatMap { it.select("img") }.firstOrNull()
     val url = image?.attr("srcset")?.split(" ")?.firstOrNull()?.let { "https:$it" } ?: image?.attr("src")
 
-    return variantTables.flatMap { parseTable(it, species, url) }
+    return variantTables.flatMap { parseFloraTable(it, name, url) }
 }
 
-private fun parseTable(table: Element, species: String, imageUrl: String?): List<FloraWikiData> {
+private fun parseFloraTable(table: Element, name: String, imageUrl: String?): List<FloraWikiData> {
     return table.select("tr").drop(1).map { row ->
 
         val planet = row.selectTdClean(0)
@@ -51,7 +50,7 @@ private fun parseTable(table: Element, species: String, imageUrl: String?): List
 
         val planetId = planetsByName[planet]?.uniqueId
         if (planetId == null) println("Could not find planet $planet")
-        FloraWikiData(species, imageUrl, planet, planetId, biomes, resource, other)
+        FloraWikiData(name, imageUrl, planet, planetId, biomes, resource, other)
     }
 }
 
