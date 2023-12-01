@@ -1,4 +1,8 @@
-
+:root {
+  --star-width: 80;
+  --planet-width: 30;
+  --moon-width: 14;
+}
 
 #system-title {
 }
@@ -21,6 +25,8 @@
 #orrery {
     text-align: center;
     padding-bottom: 10px;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 #current-hover {
@@ -69,9 +75,9 @@
 .system-star-circle {
     display: inline-block;
     vertical-align: top;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+    width: calc(var(--star-width) * 1px);
+    height: calc(var(--star-width) * 1px);
+    border-radius: calc(var(--star-width) * .5px);
     box-sizing: border-box;
     background-color: var(--background-blue);
     border: 3px solid white;
@@ -85,9 +91,9 @@
 }
 
 .system-planet-circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: calc(var(--planet-width) * 1px);
+    height: calc(var(--planet-width) * 1px);
+    border-radius: calc(var(--planet-width) * .5px);
     box-sizing: border-box;
     background-color: var(--background-blue);
     border: 3px solid white;
@@ -100,16 +106,16 @@
 .orrery-line {
     width: 2px;
     border: none;
-    height: 30px;
+    height: 18px;
     background-color: white;
     margin-top: -3px;
     margin-bottom: 0px;
 }
 
 .system-moon-circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: calc(var(--moon-width) * 1px);
+    height: calc(var(--moon-width) * 1px);
+    border-radius: calc(var(--moon-width) * .5px);
     box-sizing: border-box;
     background-color: var(--background-blue);
     border: 3px solid white;
@@ -121,8 +127,8 @@
 .planet-spacer {
     display: inline-block;
     vertical-align: top;
-    width: 20px;
-    margin-top: 47px;
+    width: 15px;
+    margin-top: 42px;
 }
 
 .selected-circle {

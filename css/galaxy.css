@@ -7,17 +7,19 @@
     overflow-x: scroll;
     overflow-y: scroll;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
-#galaxy-nav {
+.galaxy-nav {
     position: fixed;
     top: 0;
-    width: 100%;
 }
 
-#about-nav {
-    display: inline-block;
+#galaxy-search {
+    position: fixed;
+    top: 40px;
+    width: 50%;
+    height: 20px;
 }
 
 .search {
@@ -41,6 +43,14 @@
     border-radius: 5px;
     display: block;
     margin: auto;
+}
+
+.dimmed-star {
+    color: var(--blue);
+}
+
+.dimmed-star .system-circle {
+    background-color: var(--blue);
 }
 
 .system-name {
