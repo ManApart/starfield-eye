@@ -30,15 +30,7 @@ fun dockView() {
     replaceElement {
         div {
             id = "dock-view"
-            div {
-                id = "dock-nav"
-                button {
-                    +"Back to Galaxy"
-                    onClickFunction = {
-                        renderGalaxy()
-                    }
-                }
-            }
+            navButtons()
             div {
                 id = "sections"
                 connectToGame()

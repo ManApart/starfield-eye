@@ -32,12 +32,7 @@ fun outpostsPage() {
     replaceElement {
         div {
             id = "outposts-view"
-            button {
-                +"Back to Galaxy"
-                onClickFunction = {
-                    renderGalaxy()
-                }
-            }
+            navButtons()
             div("toggle-wrapper") {
                 +"By Resource"
                 toggle(inMemoryStorage::outpostResourceView) {

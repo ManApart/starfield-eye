@@ -10,15 +10,7 @@ fun aboutView() {
     replaceElement {
         div {
             id = "about-view"
-            div {
-                id = "nav"
-                button {
-                    +"Back to Galaxy"
-                    onClickFunction = {
-                        renderGalaxy()
-                    }
-                }
-            }
+            navButtons()
             div {
                 id = "sections"
                 div("section-view-box") {

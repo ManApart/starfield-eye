@@ -31,15 +31,7 @@ fun questView() {
     replaceElement{
         div {
             id = "quest-view"
-            div {
-                id = "nav"
-                button {
-                    +"Back to Galaxy"
-                    onClickFunction = {
-                        renderGalaxy()
-                    }
-                }
-            }
+            navButtons()
             div { id = "sections" }
         }
     }

@@ -28,12 +28,7 @@ fun catalogueView() {
             id = "catalogue-view"
             div {
                 id = "nav"
-                button {
-                    +"Back to Galaxy"
-                    onClickFunction = {
-                        renderGalaxy()
-                    }
-                }
+                navButtons()
                 input(classes = "search") {
                     id = "search"
                     placeholder = "Filter: Name, Resources etc. Comma separated"

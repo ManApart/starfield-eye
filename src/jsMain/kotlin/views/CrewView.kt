@@ -10,15 +10,7 @@ fun crewView() {
     replaceElement {
         div {
             id = "crew-view"
-            div {
-                id = "nav"
-                button {
-                    +"Back to Galaxy"
-                    onClickFunction = {
-                        renderGalaxy()
-                    }
-                }
-            }
+            navButtons()
             div {
                 id = "sections"
                 div("section-view-box") {
