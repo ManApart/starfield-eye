@@ -93,14 +93,12 @@ private fun highlightStar(searchText: String) {
 
     shown.forEach {
         starDivs[it.star.id.toString()]?.apply {
-            addClass("visible-block")
-            removeClass("hidden")
+            removeClass("dimmed-star")
         }
     }
     hidden.forEach {
         starDivs[it.star.id.toString()]?.apply {
-            addClass("hidden")
-            removeClass("visible-block")
+            addClass("dimmed-star")
         }
     }
 }

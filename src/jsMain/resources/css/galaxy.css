@@ -45,6 +45,14 @@
     margin: auto;
 }
 
+.dimmed-star {
+    color: var(--blue);
+}
+
+.dimmed-star .system-circle {
+    background-color: var(--blue);
+}
+
 .system-name {
     position: relative;
     text-align: center;
