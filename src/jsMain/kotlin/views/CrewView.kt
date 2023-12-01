@@ -25,35 +25,35 @@ fun crewView() {
                     id = "crew-list"
                     h2 { +"Crew" }
                     div("accent-line") { +"Go catch a smile" }
-                    ul{
+                    ul {
                         li {
-                        +"Site by "
-                        a("https://github.com/ManApart/starfield-eye", target = "_blank") { +"ManApart" }
+                            +"Site by "
+                            a("https://github.com/ManApart/starfield-eye", target = "_blank") { +"ManApart" }
+                        }
+                        li { +"Star and Planet data from Starfield Game Files" }
+                        li { +"Fonts and Icons from Starfield Game Files" }
+                        li {
+                            +"Resource Data from "
+                            a(
+                                "https://docs.google.com/spreadsheets/d/1seE2vzP_8Whs43C-6CXpoHPyJMFGoUH4TkSzeJqMHm4/edit#gid=231618918",
+                                target = "_blank"
+                            ) { +"Google Docs" }
+                            +" originally pulled from "
+                            a(
+                                "https://hardcoregamer.com/db/starfield-all-locations-systems-planets-moons/",
+                                target = "_blank"
+                            ) { +"Hardcore Gamer" }
+                        }
+                        li {
+                            +"Resource Data, Flora and Fauna Data, Planet Data and more from "
+                            a("https://starfieldwiki.net/wiki/Home", target = "_blank") { +"Starfield Wiki" }
+                        }
+                        li {
+                            +"Optional Live Game Connection (Docking) by "
+                            a("https://www.nexusmods.com/starfield/mods/4280", target = "_blank") { +"stonegdi" }
+                        }
+                        li { +"Quotes from Vladimir Sall, who runs The Eye in Starfield. The Eye is used to gaze at the heavens and \"see what's out there\"" }
                     }
-                    li { +"Star and Planet data from Starfield Game Files" }
-                    li { +"Fonts and Icons from Starfield Game Files" }
-                    li {
-                        +"Resource Data from "
-                        a(
-                            "https://docs.google.com/spreadsheets/d/1seE2vzP_8Whs43C-6CXpoHPyJMFGoUH4TkSzeJqMHm4/edit#gid=231618918",
-                            target = "_blank"
-                        ) { +"Google Docs" }
-                        +" originally pulled from "
-                        a(
-                            "https://hardcoregamer.com/db/starfield-all-locations-systems-planets-moons/",
-                            target = "_blank"
-                        ) { +"Hardcore Gamer" }
-                    }
-                    li {
-                        +"Resource Data, Flora and Fauna Data, Planet Data and more from "
-                        a("https://starfieldwiki.net/wiki/Home", target = "_blank") { +"Starfield Wiki" }
-                    }
-                    li {
-                        +"Optional Live Game Connection (Docking) by "
-                        a("https://www.nexusmods.com/starfield/mods/4280", target = "_blank") { +"stonegdi" }
-                    }
-                    li { +"Quotes from Vladimir Sall, who runs The Eye in Starfield. The Eye is used to gaze at the heavens and \"see what's out there\"" }
-                }
                 }
                 div("section-view-box") {
                     id = "directory"
