@@ -105,17 +105,16 @@ private fun TagConsumer<HTMLElement>.outpostsView(
     }
     div {
         id = "existing-outposts-${planet.name}"
-        info.outPosts.forEach { outpost ->
+        info.outPosts.dropLast(1).forEach { outpost ->
             outpost(outpost, info, planet)
+            hr { }
+        }
+        if (info.outPosts.isNotEmpty()) {
+            outpost(info.outPosts.last(), info, planet)
         }
     }
     if (showAddButton) {
-        div {
-            button {
-                +"View ALl Outposts"
-                onClickFunction = { outpostsPage() }
-            }
-        }
+        hr {  }
         addOutpost(info, planet)
     }
 }
@@ -204,7 +203,6 @@ private fun TagConsumer<HTMLElement>.outpost(
             }
         }
     }
-    hr { }
 }
 
 private fun TagConsumer<HTMLElement>.addOutpost(info: PlanetInfo, planet: Planet) {

@@ -37,12 +37,7 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
     replaceElement {
         div {
             id = "system-view"
-            button {
-                +"Back to Galaxy"
-                onClickFunction = {
-                    renderGalaxy()
-                }
-            }
+            navButtons()
 
             div("section-wrapper") {
                 orrery(system)
