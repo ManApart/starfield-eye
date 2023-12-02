@@ -34,8 +34,12 @@
         margin-top: 80px;
     }
 
-    #planet-list{
-        max-height: 500px;
+    #galaxy-search {
+        top: 75px;
+    }
+
+    #planet-list, #life-signs-list{
+        max-height: 300px;
     }
 
     .accent-line {
