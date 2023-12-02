@@ -98,10 +98,12 @@ private fun TagConsumer<HTMLElement>.outpostsView(
             }
         }
     }
-    button {
-        +"Travel"
-        title = "Set course to planet. In Future hopefully direct to outpost"
-        onClickFunction = { attemptTravel(planet.name) }
+    if (info.outPosts.isNotEmpty()) {
+        button {
+            +"Travel"
+            title = "Set course to planet. In Future hopefully direct to outpost"
+            onClickFunction = { attemptTravel(planet.name) }
+        }
     }
     div {
         id = "existing-outposts-${planet.name}"
@@ -114,7 +116,7 @@ private fun TagConsumer<HTMLElement>.outpostsView(
         }
     }
     if (showAddButton) {
-        hr {  }
+        hr { }
         addOutpost(info, planet)
     }
 }
