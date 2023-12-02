@@ -45,7 +45,7 @@ fun lifeSignsView(addHistory: Boolean = true) {
 
             div("section-wrapper") {
                 div("section-view-box") {
-                    id = "life-sign-list"
+                    id = "life-signs-list"
                     lifeSignList()
                 }
                 div { id = "flora-view" }
@@ -54,6 +54,7 @@ fun lifeSignsView(addHistory: Boolean = true) {
         }
     }
     saveHtmlRefs()
+    floraView(floraReference.values.first().first())
     searchLifeSigns()
 }
 
