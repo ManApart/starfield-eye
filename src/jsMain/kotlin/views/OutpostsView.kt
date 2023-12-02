@@ -126,16 +126,8 @@ private fun TagConsumer<HTMLElement>.outpost(
     info: PlanetInfo,
     planet: Planet
 ) {
-    h4 {
-        +outpost.name
-        button(classes = "remove-info-button") {
-            +"Del"
-            onClickFunction = {
-                info.outPosts.remove(outpost)
-                saveOutpostInfo(planet, info)
-            }
-        }
-    }
+    val i = info.outPosts.indexOf(outpost)
+    outpostHeader(i, outpost, planet, info)
 
     screenshot("outposts/${planet.uniqueId}/${outpost.id}")
 
@@ -201,6 +193,66 @@ private fun TagConsumer<HTMLElement>.outpost(
             onChangeFunction = {
                 info.notes =
                     el<HTMLTextAreaElement>("outpost-player-info-notes-${planet.uniqueId}-${outpost.name}").value
+                saveOutpostInfo(planet, info)
+            }
+        }
+    }
+}
+
+private fun TagConsumer<HTMLElement>.outpostHeader(
+    i: Int,
+    outpost: Outpost,
+    planet: Planet,
+    info: PlanetInfo,
+) {
+    var renameMode = false
+    h4 {
+        span {
+            id = "outpost-$i-header"
+            +outpost.name
+        }
+        input(classes = "outpost-rename hidden") {
+            id = "rename-outpost-$i"
+            onKeyPressFunction = {
+                val e = it as KeyboardEvent
+                if (e.key == "Enter") {
+                    val input = el<HTMLInputElement>("rename-outpost-$i")
+                    val name = input.value
+                    outpost.name = name
+                    el("outpost-$i-header").innerText = name
+                    el("delete-outpost-$i").removeClass("hidden")
+                    input.addClass("hidden")
+                    saveOutpostInfo(planet, info)
+                }
+            }
+        }
+        button(classes = "add-info-button") {
+            +"Ren"
+            title = "rename outpost"
+            onClickFunction = {
+                val input = el<HTMLInputElement>("rename-outpost-$i")
+                val header = el("outpost-$i-header")
+                if (renameMode) {
+                    val name = input.value
+                    outpost.name = name
+                    el("outpost-$i-header").innerText = name
+                    el("delete-outpost-$i").removeClass("hidden")
+                    input.addClass("hidden")
+                    saveOutpostInfo(planet, info)
+                } else {
+                    input.value = header.innerText
+                    header.textContent = ""
+                    el("delete-outpost-$i").addClass("hidden")
+                    input.removeClass("hidden")
+                }
+                renameMode = !renameMode
+            }
+        }
+        button(classes = "remove-info-button") {
+            id = "delete-outpost-$i"
+            +"Del"
+            onClickFunction = {
+                info.outPosts.remove(outpost)
                 saveOutpostInfo(planet, info)
             }
         }
