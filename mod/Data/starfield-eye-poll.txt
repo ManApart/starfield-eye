@@ -87,7 +87,7 @@ getpcmiscstat "favorite power"
 getpcmiscstat "organic resources gathered"
 getpcmiscstat "inorganic resources gathered"
 ;getpcmiscstat "chems crafted"
-getpcmiscstat "food cooked"s
+getpcmiscstat "food cooked"
 getpcmiscstat "outposts built"
 getpcmiscstat "objects built"
 getpcmiscstat "cargo links established"

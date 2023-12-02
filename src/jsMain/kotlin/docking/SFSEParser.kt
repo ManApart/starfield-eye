@@ -1,19 +1,15 @@
 package docking
 
-import CombatStats
-import CraftingStats
-import CrimeStats
-import ExplorationStats
-import GeneralStats
 import MiscStats
-import MissionStats
 import MissionType
 import MissionWikiData
 import PollResponse
 import Quest
 import QuestStage
 import QuestStageState
-import ShipStats
+import jsonMapper
+import kotlinx.serialization.encodeToString
+import stat
 
 fun parseQuests(lines: List<String>, missionReference: Map<String, MissionWikiData>): List<Quest> {
     return lines.chunkedBy("==")
@@ -73,106 +69,107 @@ private fun parseMiscStats(commands: RawPollResponse): MiscStats? {
     return if (!commands.hasMiscStats()) null else {
         with(commands) {
             MiscStats(
-                GeneralStats(
-                    getMiscStatInt("locations discovered"),
-                    getMiscStatInt("locations explored"),
-                    getMiscStatInt("days passed"),
-                    getMiscStatInt("hours slept"),
-                    getMiscStatInt("hours waited"),
-                    getMiscStatInt("credits found"),
-                    getMiscStatInt("most credits carried"),
-                    getMiscStatInt("containers looted"),
-                    getMiscStatInt("magazines found"),
-                    getMiscStatInt("persuasion successes"),
-                    getMiscStatInt("afflictions suffered"),
-                    getMiscStatInt("food eaten"),
-                    getMiscStatInt("data slates read"),
-                    getMiscStatInt("skill challenges completed"),
-                    getMiscStatInt("snow globes collected"),
+                listOf(
+                    stat("locations discovered"),
+                    stat("locations explored"),
+                    stat("days passed"),
+                    stat("hours slept"),
+//                    stat("hours waited"), //90
+                    stat("credits found"),
+                    stat("most credits carried"),
+                    stat("containers looted"),//1359
+                    stat("magazines found", "Thirst for Knowledge", 20),
+//                    stat("persuasion successes"),//70
+                    stat("afflictions suffered"),
+                    stat("food eaten"),
+                    stat("data slates read"),
+//                    stat("skill challenges completed"), //52
+                    stat("snow globes collected"),
                 ),
-                ExplorationStats(
-                    getMiscStatInt("systems visited"),
-                    getMiscStatInt("planets scanned"),
-                    getMiscStatInt("planets fully surveyed"),
-                    getMiscStatInt("planets landed on"),
-                    getMiscStatInt("flora fully scanned"),
-                    getMiscStatInt("fauna fully scanned"),
-                    getMiscStatInt("stations docked with"),
-                    getMiscStatInt("ships docked with"),
-                    getMiscStatInt("unique creatures scanned"),
-                    getMiscStatInt("temples found"),
-                    getMiscStatInt("grav jumps"),
+                listOf(
+                    stat("systems visited", "Stellar Cartography", 20),
+                    stat("planets scanned"),
+                    stat("planets fully surveyed"),
+                    stat("planets landed on", "Boots on the Ground", 100),
+                    stat("flora fully scanned"),
+                    stat("fauna fully scanned"),
+                    stat("stations docked with"),
+                    stat("ships docked with"),
+                    stat("unique creatures scanned"),
+                    stat("temples found"),
                 ),
-                ShipStats(
-                    getMiscStatInt("farthest grav jump"),
-                    getMiscStatInt("ships registered"),
-                    getMiscStatInt("max ships owned"),
-                    getMiscStatInt("most expensive ship owned"),
-                    getMiscStatInt("largest ship owned"),
-                    getMiscStatInt("largest crew size"),
-                    getMiscStatInt("ships customized"),
-                    getMiscStatInt("ship builder credits spent"),
-                    getMiscStatInt("ships sold"),
-                    getMiscStatInt("ships painted"),
-                    getMiscStatInt("ship modules built"),
+                listOf(
+                    stat("grav jumps"),
+                    stat("farthest grav jump"),
+//                    stat("ships registered"), //7
+                    stat("max ships owned"),
+                    stat("most expensive ship owned"),
+                    stat("largest ship owned"),
+                    stat("largest crew size"),
+                    stat("ships customized"),
+                    stat("ship builder credits spent"),
+                    stat("ships sold"),
+                    stat("ships painted"),
+                    stat("ship modules built"),
                 ),
-                MissionStats(
-                    getMiscStatInt("quests completed"),
-                    getMiscStatInt("activities completed"),
-                    getMiscStatInt("main quests completed"),
-                    getMiscStatInt("crimson fleet collective quests completed"),
-                    getMiscStatInt("freestar collective quests completed"),
-                    getMiscStatInt("ryujin industries quests completed"),
-                    getMiscStatInt("united colonies quests completed"),
-                    getMiscStatInt("side quests completed"),
+                listOf(
+                    stat("quests completed"),
+                    stat("activities completed"),
+                    stat("main quests completed"),
+                    stat("crimson fleet quests completed"),
+                    stat("freestar collective quests completed"),
+                    stat("ryujin industries quests completed"),
+                    stat("united colonies quests completed"),
+                    stat("side quests completed", "Privateer", 30),
                 ),
-                CombatStats(
-                    getMiscStatInt("people killed"),
-                    getMiscStatInt("creatures killed"),
-                    getMiscStatInt("robots killed"),
-                    getMiscStatInt("turrets killed"),
-                    getMiscStatInt("elite enemies killed"),
-                    getMiscStatInt("critical strikes"),
-                    getMiscStatInt("sneak attacks"),
-                    getMiscStatInt("boost packs exploded"),
-                    getMiscStatInt("zero g kills"),
-                    getMiscStatInt("powers used"),
-                    getMiscStatInt("scoped kills"),
-                    getMiscStatInt("max damage shot"),
-                    getMiscStatInt("melee kills"),
-                    getMiscStatInt("laser kills"),
-                    getMiscStatInt("ballistic kills"),
-                    getMiscStatInt("head shots"),
-                    getMiscStatInt("explosive kills"),
-                    getMiscStatInt("starborn killed"),
-                    getMiscStatInt("ships destroyed"),
-                    getMiscStatString("favorite weapon"),
-                    getMiscStatString("favorite power"),
+                listOf(
+                    stat("people killed", "Dark Matter", 300),
+                    stat("creatures killed", "Another Bug Hunt", 300),
+                    stat("robots killed"),
+                    stat("turrets killed"),
+//                    stat("elite enemies killed"), //199
+                    stat("critical strikes"),
+                    stat("sneak attacks"),
+//                    stat("boost packs exploded"), //134
+                    stat("zero g kills"),
+                    stat("powers used"),
+                    stat("scoped kills"),
+                    stat("max damage shot"),
+                    stat("melee kills"),
+                    stat("laser kills"),
+                    stat("ballistic kills"),
+                    stat("head shots"),
+                    stat("explosive kills"),
+                    stat("starborn killed", "War of Angels", 20),
+                    stat("ships destroyed"),
+//                    stat("favorite weapon"), //Kodama
+//                    stat("favorite power"), // Personal Atmosphere
                 ),
-                CraftingStats(
-                    getMiscStatInt("weapon mods crafted"),
-                    getMiscStatInt("armor mods crafted"),
-                    getMiscStatInt("organic resources gathered"),
-                    getMiscStatInt("inorganic resources gathered"),
-                    getMiscStatInt("chems crafted"),
-                    getMiscStatInt("food cooked"),
-                    getMiscStatInt("outposts built"),
-                    getMiscStatInt("objects built"),
-                    getMiscStatInt("cargo links established"),
+                listOf(
+//                    stat("weapon mods crafted", "Soldier of Fortune", 50), //55
+//                    stat("armor mods crafted"), //24
+                    stat("organic resources gathered", "Life Begets Life", 500),
+                    stat("inorganic resources gathered", "Rock Collection", 500),
+//                    stat("chems crafted"), //12
+                    stat("food cooked"), //4
+                    stat("outposts built"),
+                    stat("objects built"),
+                    stat("cargo links established"),
+                    stat("cargo links established", "Shipping Magnate", 5), //getting links, not count of outposts linked
                 ),
-                CrimeStats(
-                    getMiscStatInt("locks picked"),
-                    getMiscStatInt("pockets picked"),
-                    getMiscStatInt("items stolen"),
-                    getMiscStatInt("assaults"),
-                    getMiscStatInt("murders"),
-                    getMiscStatInt("trespasses"),
-                    getMiscStatInt("times arrested"),
-                    getMiscStatInt("most contraband carried"),
-                    getMiscStatInt("times caught with contraband"),
-                    getMiscStatInt("acts of piracy"),
-                    getMiscStatInt("total lifetime bounty"),
-                    getMiscStatInt("largest bounty"),
+                listOf(
+                    stat("locks picked", "Cyber Jockey", 50),
+                    stat("pockets picked"),
+                    stat("items stolen"),
+                    stat("assaults"),
+                    stat("murders"),
+                    stat("trespasses"),
+                    stat("times arrested"),
+                    stat("most contraband carried"),
+                    stat("times caught with contraband"),
+                    stat("acts of piracy"),
+                    stat("total lifetime bounty"),
+                    stat("largest bounty"),
                 ),
             )
         }

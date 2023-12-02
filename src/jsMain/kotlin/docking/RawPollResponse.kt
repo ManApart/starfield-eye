@@ -1,6 +1,6 @@
 package docking
 
-class RawPollResponse(private val commandMap: Map<String, List<String>>) {
+class RawPollResponse(val commandMap: Map<String, List<String>>) {
     fun getQuests(): List<String> {
         return commandMap["sqo"] ?: listOf()
     }
