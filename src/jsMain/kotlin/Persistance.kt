@@ -29,7 +29,8 @@ data class InMemoryStorage(
     var quests: List<Quest> = listOf(),
     var stats: MiscStats = MiscStats(),
     var discoveredOnly: Boolean = false,
-    var outpostResourceView: Boolean = false,
+    var outpostResourceView: Boolean? = false,
+    var paintBackgroundStars: Boolean? = null,
 ) {
     fun planetInfo(uniqueId: String): PlanetInfo {
         return planetUserInfo[uniqueId] ?: PlanetInfo(uniqueId)

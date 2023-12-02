@@ -1,5 +1,6 @@
 package views
 
+import components.toggle
 import deleteUserData
 import docking.healthCheck
 import docking.poll
@@ -18,6 +19,7 @@ import kotlinx.html.*
 import kotlinx.html.js.onClickFunction
 import missionReference
 import org.w3c.dom.HTMLDivElement
+import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.events.KeyboardEvent
 import pageIsVisible
@@ -35,6 +37,7 @@ fun dockView() {
                 id = "sections"
                 connectToGame()
                 manageData()
+                settings()
                 prepareToDock()
             }
         }
@@ -147,6 +150,36 @@ private fun DIV.manageData() {
                 +"Export Images"
                 title = "Download user uploaded images"
                 onClickFunction = { exportPictures() }
+            }
+        }
+    }
+}
+
+private fun TagConsumer<HTMLElement>.settings() {
+    div("section-view-box") {
+        id = "settings"
+        h2 { +"Change Settings" }
+        div("accent-line") { +"" }
+
+        p { +"Manage site wide settings." }
+        p { +"Showing stars defaults to on in desktop and off in mobile in order to provide a more responsive experience." }
+
+        div("toggle-wrapper") {
+            +"Show Stars"
+            title = "Force background stars on or off"
+            toggle(inMemoryStorage::paintBackgroundStars) {
+                genStars()
+                persistMemory()
+            }
+        }
+        button {
+            id = "reset-stars"
+            +"Use Mobile Test"
+            title = "Show stars depending on if device is mobile"
+            onClickFunction = {
+                inMemoryStorage.paintBackgroundStars = null
+                genStars()
+                persistMemory()
             }
         }
     }

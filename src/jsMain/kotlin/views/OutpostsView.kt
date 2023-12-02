@@ -44,7 +44,7 @@ fun outpostsPage() {
             p { +"Add more outposts from the System View" }
 
             div("section-wrapper") {
-                if (inMemoryStorage.outpostResourceView) {
+                if (inMemoryStorage.outpostResourceView == true) {
                     viewOutpostsByResearch()
                 } else viewAllOutposts()
             }

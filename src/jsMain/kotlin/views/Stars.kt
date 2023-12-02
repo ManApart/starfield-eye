@@ -1,6 +1,7 @@
 package views
 
 import el
+import inMemoryStorage
 import isMobile
 import kotlinx.html.*
 import kotlinx.html.dom.append
@@ -12,11 +13,14 @@ private const val layerCount = 3
 private var starLayers = listOf<HTMLElement>()
 
 fun genStars() {
-    if (!isMobile()) {
-        el("stars").append {
+    val stars = el("stars")
+    if (inMemoryStorage.paintBackgroundStars ?: !isMobile()) {
+        stars.append {
             backgroundStars()
         }
         starLayers = (0 until layerCount).mapNotNull { el<HTMLElement?>("star-layer-$it") }
+    } else {
+        stars.innerHTML = ""
     }
 }
 

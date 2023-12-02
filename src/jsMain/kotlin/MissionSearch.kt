@@ -15,8 +15,8 @@ private fun Quest.matches(types: List<MissionType>): Boolean {
     return this.type in types
 }
 
-private fun Quest.matches(showCompleted: Boolean): Boolean {
-    return this.latestState == QuestStageState.DISPLAYED || (showCompleted && this.latestState == QuestStageState.COMPLETED)
+private fun Quest.matches(showCompleted: Boolean?): Boolean {
+    return this.latestState == QuestStageState.DISPLAYED || (showCompleted == true && this.latestState == QuestStageState.COMPLETED)
 }
 
 private fun Quest.matches(searchText: String): Boolean {
