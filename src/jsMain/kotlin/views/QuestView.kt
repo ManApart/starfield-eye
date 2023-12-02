@@ -6,28 +6,26 @@ import QuestStageState
 import components.toggle
 import el
 import inMemoryStorage
-import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
-import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.js.onKeyUpFunction
 import missionSearchOptions
 import org.w3c.dom.HTMLButtonElement
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
-import persistMemory
 import pollHook
 import replaceElement
 import searchMissions
+import updateUrl
 
 private var oldQuests: List<Quest> = listOf()
 var missionDivs: Map<String, HTMLElement> = mapOf()
 private var navButtons: List<HTMLButtonElement> = listOf()
 
-fun questView() {
-    window.history.pushState(null, "null", "#quests")
+fun questView(addHistory: Boolean = true) {
+    updateUrl("quests", addHistory)
     replaceElement{
         div {
             id = "quest-view"

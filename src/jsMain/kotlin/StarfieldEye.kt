@@ -90,34 +90,35 @@ fun doRouting(windowHash: String) {
     keyPressedHook = {}
     when {
         windowHash.startsWith("#about") -> {
-            aboutView()
+            aboutView(false)
         }
 
         windowHash.startsWith("#catalogue") -> {
-            catalogueView()
+            catalogueView(false)
         }
+
         windowHash.startsWith("#lifesigns") -> {
-            lifeSignsView()
+            lifeSignsView(false)
         }
 
         windowHash.startsWith("#crew") -> {
-            crewView()
+            crewView(false)
         }
 
         windowHash.startsWith("#dock") -> {
-            dockView()
+            dockView(false)
         }
 
         windowHash.startsWith("#quests") -> {
-            questView()
+            questView(false)
         }
 
         windowHash.startsWith("#outposts") -> {
-            outpostsPage()
+            outpostsPage(false)
         }
 
         windowHash.startsWith("#misc-stats") -> {
-            miscStatView()
+            miscStatView(false)
         }
 
         windowHash.startsWith("#system/") -> {
@@ -125,14 +126,21 @@ fun doRouting(windowHash: String) {
             if (parts.size == 2) {
                 val system = galaxy.systems[parts.first().toInt()]!!
                 val planet = parts.last().toIntOrNull() ?: 0
-                systemView(system, planet)
+                systemView(system, planet, false)
             }
         }
 
-        else -> renderGalaxy()
+        else -> renderGalaxy(false)
     }
 }
 
+fun updateUrl(path: String, addHistory: Boolean) {
+    val pathName = path.split("/").first().capitalize()
+    if (addHistory) {
+        window.history.pushState(null, "", "#$path")
+    }
+    document.title = "The Eye: $pathName"
+}
 
 fun el(id: String) = document.getElementById(id) as HTMLElement
 fun <T> el(id: String) = document.getElementById(id) as T
@@ -153,5 +161,5 @@ fun replaceElement(id: String = "root", rootClasses: String? = null, newHtml: Ta
 
 fun isMobile(): Boolean {
     val screenRatio = window.screen.width / window.screen.height.toDouble()
-    return screenRatio < 3/4.0
+    return screenRatio < 3 / 4.0
 }

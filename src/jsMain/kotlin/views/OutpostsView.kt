@@ -8,7 +8,6 @@ import components.*
 import el
 import galaxy
 import inMemoryStorage
-import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
@@ -25,10 +24,11 @@ import org.w3c.dom.HTMLTextAreaElement
 import org.w3c.dom.events.KeyboardEvent
 import persistMemory
 import replaceElement
+import updateUrl
 
 
-fun outpostsPage() {
-    window.history.pushState(null, "null", "#outposts")
+fun outpostsPage(addHistory: Boolean = true) {
+    updateUrl("outposts", addHistory)
     replaceElement {
         div {
             id = "outposts-view"

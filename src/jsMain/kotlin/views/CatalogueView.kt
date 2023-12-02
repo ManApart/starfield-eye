@@ -4,12 +4,9 @@ import Planet
 import el
 import galaxy
 import getPlanets
-import inMemoryStorage
-import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
-import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.js.onKeyUpFunction
 import kotlinx.html.js.onMouseOverFunction
@@ -20,9 +17,10 @@ import planetSearchOptions
 import replaceElement
 import searchPlanets
 import starDivs
+import updateUrl
 
-fun catalogueView() {
-    window.history.pushState(null, "null", "#catalogue")
+fun catalogueView(addHistory: Boolean = true) {
+    updateUrl("catalogue", addHistory)
     replaceElement {
         div {
             id = "catalogue-view"

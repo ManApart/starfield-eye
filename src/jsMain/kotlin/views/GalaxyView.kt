@@ -16,9 +16,10 @@ import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import replaceElement
 import starDivs
+import updateUrl
 
-fun renderGalaxy() {
-    window.history.pushState(null, "null", "#galaxy")
+fun renderGalaxy(addHistory: Boolean = true) {
+    updateUrl("galaxy", addHistory)
 
     replaceElement {
         galaxy()

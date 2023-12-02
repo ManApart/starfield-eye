@@ -18,7 +18,6 @@ import kotlinx.coroutines.launch
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
-import kotlinx.html.consumers.filter
 import kotlinx.html.js.a
 import kotlinx.html.js.onClickFunction
 import kotlinx.html.js.onMouseOutFunction
@@ -26,14 +25,15 @@ import kotlinx.html.js.onMouseOverFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.events.KeyboardEvent
 import replaceElement
+import updateUrl
 
 private var currentPlanet = 0
 private var currentPlanetType = "star"
 private var currentSystem: StarSystem? = null
 
-fun systemView(system: StarSystem, planetId: Int = 0) {
+fun systemView(system: StarSystem, planetId: Int = 0, addHistory: Boolean = true) {
     currentSystem = system
-    updateUrl(system, planetId)
+    updateUrl(system, planetId, addHistory)
     replaceElement {
         div {
             id = "system-view"
@@ -62,8 +62,8 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
     keyPressedHook = ::navigateOrrery
 }
 
-private fun updateUrl(system: StarSystem, planetId: Int) {
-    window.history.pushState(null, "null", "#system/${system.star.id}/$planetId")
+private fun updateUrl(system: StarSystem, planetId: Int, addHistory: Boolean = true) {
+    updateUrl("system/${system.star.id}/$planetId", addHistory)
 }
 
 private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {

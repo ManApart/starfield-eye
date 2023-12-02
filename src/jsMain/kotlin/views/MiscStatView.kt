@@ -4,15 +4,15 @@ import MiscStats
 import Quest
 import QuestStageState
 import inMemoryStorage
-import kotlinx.browser.window
 import kotlinx.html.*
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import pollHook
 import replaceElement
+import updateUrl
 
-fun miscStatView() {
-    window.history.pushState(null, "null", "#misc-stats")
+fun miscStatView(addHistory: Boolean = true) {
+    updateUrl("misc-stats", addHistory)
     replaceElement {
         div {
             id = "misc-stat-view"

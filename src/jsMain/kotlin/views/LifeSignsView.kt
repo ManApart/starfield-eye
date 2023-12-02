@@ -2,7 +2,6 @@ package views
 
 import FaunaWikiData
 import FloraWikiData
-import Planet
 import el
 import faunaDivs
 import faunaReference
@@ -10,7 +9,6 @@ import floraDivs
 import floraReference
 import galaxy
 import getPlanets
-import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
@@ -23,11 +21,11 @@ import org.w3c.dom.HTMLInputElement
 import planetDivs
 import replaceElement
 import searchLifeSigns
-import searchPlanets
 import starDivs
+import updateUrl
 
-fun lifeSignsView() {
-    window.history.pushState(null, "null", "#lifesigns")
+fun lifeSignsView(addHistory: Boolean = true) {
+    updateUrl("lifesigns", addHistory)
     replaceElement {
         div {
             id = "life-signs-view"

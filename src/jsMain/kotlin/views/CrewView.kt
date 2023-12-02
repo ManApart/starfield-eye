@@ -1,12 +1,11 @@
 package views
 
-import kotlinx.browser.window
 import kotlinx.html.*
-import kotlinx.html.js.onClickFunction
 import replaceElement
+import updateUrl
 
-fun crewView() {
-    window.history.pushState(null, "null", "#crew")
+fun crewView(addHistory: Boolean = true) {
+    updateUrl("crew", addHistory)
     replaceElement {
         div {
             id = "crew-view"

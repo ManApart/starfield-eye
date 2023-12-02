@@ -26,9 +26,10 @@ import pageIsVisible
 import persistMemory
 import pollHook
 import replaceElement
+import updateUrl
 
-fun dockView() {
-    window.history.pushState(null, "null", "#dock")
+fun dockView(addHistory: Boolean = true) {
+    updateUrl("dock", addHistory)
     replaceElement {
         div {
             id = "dock-view"
@@ -159,7 +160,7 @@ private fun TagConsumer<HTMLElement>.settings() {
     div("section-view-box") {
         id = "settings"
         h2 { +"Change Settings" }
-        div("accent-line") { +"" }
+        div("accent-line") { +"Do my ears play a false tune?" }
 
         p { +"Manage site wide settings." }
         p { +"Showing stars defaults to on in desktop and off in mobile in order to provide a more responsive experience." }
