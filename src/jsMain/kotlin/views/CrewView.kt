@@ -55,6 +55,7 @@ fun crewView(addHistory: Boolean = true) {
                         li { a("https://starfieldwiki.net/wiki/Home", target = "_blank") { +"Starfield Wiki" } }
                         li { a("https://inara.cz/starfield", target = "_blank") { +"Starfield Inara" } }
                         li { a("https://starfield.lukium.ai/locations", target = "_blank") { +"Starfield Locations" } }
+                        li { a("https://starfieldradio.com/", target = "_blank") { +"Starfield Radio" } }
                     }
                 }
             }

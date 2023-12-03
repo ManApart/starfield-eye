@@ -42,6 +42,8 @@
 }
 
 #quest-search {
+    max-width: 900px;
+    margin: auto;
     margin-bottom: 10px;
 }
 

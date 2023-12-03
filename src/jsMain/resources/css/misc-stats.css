@@ -1,7 +1,13 @@
+#misc-stat-view #sections {
+    max-width: 1000px;
+    margin: auto;
+}
+
 #sections .misc-stat-box {
-    max-width: 440px;
+    max-width: 418px;
     display: inline-block;
     vertical-align: top;
+    margin-left: 4%;
 }
 
 .stat-table {
