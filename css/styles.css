@@ -166,14 +166,20 @@ summary::-webkit-details-marker {
     padding-top: 5px;
 }
 
+#root {
+    margin: auto;
+    max-width: 1920px
+}
+
 #sections {
     position: relative;
-    margin-left: 20%;
-    max-width: 75%;
+    margin: auto;
+    max-width: min(75%, 1920px)
 }
 
 #sections .section-view-box {
-    max-width: 900px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 #popup {
