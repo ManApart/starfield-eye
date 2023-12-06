@@ -24,11 +24,10 @@ val jsonMapper = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
 data class InMemoryStorage(
     val planetUserInfo: MutableMap<String, PlanetInfo> = mutableMapOf(),
     val discoveredStars: Set<Int> = setOf(),
-    val planetScans: MutableMap<String, PlanetInfo> = mutableMapOf(),
     val connectionSettings: GameConnectionSettings = GameConnectionSettings(),
     var quests: List<Quest> = listOf(),
     var stats: MiscStats = MiscStats(),
-    var discoveredOnly: Boolean = false,
+    var discoveredOnly: Boolean? = true,
     var outpostResourceView: Boolean? = false,
     var paintBackgroundStars: Boolean? = null,
 ) {

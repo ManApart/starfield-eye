@@ -2,6 +2,7 @@ package views
 
 import el
 import galaxy
+import inMemoryStorage
 import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.dom.addClass
@@ -36,7 +37,7 @@ fun renderGalaxy(addHistory: Boolean = true) {
 }
 
 private fun TagConsumer<HTMLElement>.galaxy() {
-    val systems = galaxy.systems
+    val systems = galaxy.systems.let { system -> if (inMemoryStorage.discoveredOnly == true) system else system.filter { inMemoryStorage.discoveredStars.contains(it.key) }}
     val summary = galaxy.summary
     div {
         id = "galaxy-wrapper"
@@ -83,7 +84,8 @@ private fun TagConsumer<HTMLElement>.galaxy() {
 }
 
 private fun saveHtmlRefs() {
-    starDivs = galaxy.systems.values.associate { it.star.id.toString() to el(it.star.name) }
+    val systems = galaxy.systems.let { system -> if (inMemoryStorage.discoveredOnly == true) system else system.filter { inMemoryStorage.discoveredStars.contains(it.key) }}
+    starDivs = systems.values.associate { it.star.id.toString() to el(it.star.name) }
 }
 
 private fun highlightStar(searchText: String) {

@@ -5,7 +5,8 @@ data class PlanetInfo(
     val planetId: String,
     val labels: MutableSet<Label> = mutableSetOf(),
     var notes: String = "",
-    val outPosts: MutableList<Outpost> = mutableListOf()
+    val outPosts: MutableList<Outpost> = mutableListOf(),
+    val scan: PlanetScan = PlanetScan()
 ) {
     fun addOutpost(name: String) {
         val id = (outPosts.maxOfOrNull { it.id } ?: 0) + 1
@@ -26,8 +27,8 @@ data class Outpost(
 data class PlanetScan(
     var traits: Set<Int>? = null,
     var resources: Set<Int>? = null,
-    var lifeScans: Map<ScanName, PercentScanned>
+    val lifeScans: MutableMap<ScanName, PercentScanned> = mutableMapOf()
 )
 
 typealias ScanName = String
-typealias PercentScanned = String
+typealias PercentScanned = Int

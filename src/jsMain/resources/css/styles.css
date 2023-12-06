@@ -264,3 +264,7 @@ input[type=checkbox]{
 #about-nav {
     display: inline-block;
 }
+
+.nav-section {
+    display: inline-block;
+}

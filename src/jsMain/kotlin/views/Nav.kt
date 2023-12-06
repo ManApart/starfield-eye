@@ -1,15 +1,19 @@
 package views
 
+import components.toggle
+import doRouting
+import inMemoryStorage
 import kotlinx.html.*
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
+import persistMemory
 
 
 fun TagConsumer<HTMLElement>.navButtons(navClass: String = "header-nav") {
     div(navClass) {
         id = "nav"
 
-        div {
+        div("nav-section") {
             id = "about-nav"
             button {
                 id = "about-button"
@@ -30,33 +34,45 @@ fun TagConsumer<HTMLElement>.navButtons(navClass: String = "header-nav") {
                 onClickFunction = { dockView() }
             }
         }
-        button {
-            +"Galaxy"
-            onClickFunction = { renderGalaxy() }
+        div("nav-section") {
+            button {
+                +"Galaxy"
+                onClickFunction = { renderGalaxy() }
+            }
+            button {
+                +"Catalogue"
+                onClickFunction = { catalogueView() }
+            }
+            button {
+                +"Life Signs"
+                onClickFunction = { lifeSignsView() }
+            }
+            button {
+                +"Outposts"
+                onClickFunction = { outpostsPage() }
+            }
+            button {
+                id = "quest-button"
+                +"Quests"
+                title = "View Quests"
+                onClickFunction = { questView() }
+            }
+            button {
+                id = "misc-stat-button"
+                +"Stats"
+                title = "View Misc Stats"
+                onClickFunction = { miscStatView() }
+            }
         }
-        button {
-            +"Catalogue"
-            onClickFunction = { catalogueView() }
-        }
-        button {
-            +"Life Signs"
-            onClickFunction = { lifeSignsView() }
-        }
-        button {
-            +"Outposts"
-            onClickFunction = { outpostsPage() }
-        }
-        button {
-            id = "quest-button"
-            +"Quests"
-            title = "View Quests"
-            onClickFunction = { questView() }
-        }
-        button {
-            id = "misc-stat-button"
-            +"Stats"
-            title = "View Misc Stats"
-            onClickFunction = { miscStatView() }
+        div("nav-section") {
+            div("toggle-wrapper") {
+                +"X-ray"
+                title = "Show all data, or only what you've discovered so far"
+                toggle(inMemoryStorage::discoveredOnly) {
+                    persistMemory()
+                    doRouting()
+                }
+            }
         }
     }
 }
