@@ -27,8 +27,8 @@ data class Outpost(
 data class PlanetScan(
     var initialScan: Boolean = false,
     var landed: Boolean = false,
-    var traits: Set<Int>? = null,
-    var resources: Set<Int>? = null,
+    val traits: MutableSet<Int> = mutableSetOf(),
+    val resources: MutableSet<Int> = mutableSetOf(),
     val lifeScans: MutableMap<ScanName, PercentScanned> = mutableMapOf()
 )
 

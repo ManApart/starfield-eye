@@ -5,8 +5,8 @@ import Planet
 import ResourceType
 import Star
 import StarSystem
-import components.resourceSquares
-import components.screenshot
+import components.*
+import components.checkBox
 import docking.setCourse
 import el
 import inMemoryStorage
@@ -25,7 +25,6 @@ import kotlinx.html.js.*
 import kotlinx.html.table
 import kotlinx.html.tr
 import org.w3c.dom.HTMLElement
-import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.events.KeyboardEvent
 import replaceElement
 import updateUrl
@@ -202,16 +201,11 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, 
             tr {
                 td { +"Discovered" }
                 td {
-                    input(InputType.checkBox, classes = "check-box") {
-                        id = "${star.id}-discovered"
-                        checked = inMemoryStorage.discoveredStars.contains(star.id)
-                        onChangeFunction = {
-                            val newValue = el<HTMLInputElement>(this.id).checked
-                            if (newValue){
-                                inMemoryStorage.discoveredStars.add(star.id)
-                            } else {
-                                inMemoryStorage.discoveredStars.remove(star.id)
-                            }
+                    checkBox("${star.id}-discovered", { inMemoryStorage.discoveredStars.contains(star.id) }) {
+                        if (it == true) {
+                            inMemoryStorage.discoveredStars.add(star.id)
+                        } else {
+                            inMemoryStorage.discoveredStars.remove(star.id)
                         }
                     }
                 }
@@ -247,9 +241,10 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, 
 
 private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, linkToSystem: Boolean) {
     with(planet) {
+        val info = inMemoryStorage.planetInfo(uniqueId)
         h2 { +name }
 
-        screenshot("planets/${planet.uniqueId}", planet.imageUrl)
+        screenshot("planets/${uniqueId}", imageUrl)
 
         if (linkToSystem) {
             button {
@@ -267,6 +262,44 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
             id = "wiki-link"
             +"View on Wiki"
         }
+
+        table("discovered-table") {
+            tr {
+                td { +"Initial Scan" }
+                td {
+                    checkBox(info.scan::initialScan) //TODO - show resources
+                }
+            }
+            tr {
+                td { +"Landed On" }
+                td {
+                    checkBox(info.scan::landed)
+                }
+            }
+            planet.traits.forEachIndexed { id, trait ->
+                tr {
+                    td { +"Trait: $trait" }
+                    td {
+                        checkBox(id, info.scan::traits)
+                    }
+                }
+            }
+            if (planet.inorganicResources.isNotEmpty()) {
+                tr {
+                    td { +"Resources" }
+                    td {
+                        planet.inorganicResources.forEachIndexed { id, resource ->
+                            span("checkbox-wrapper") {
+                                checkBox(id, info.scan::resources)
+                                +resource.name
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
         table("detail-view-table") {
             listOf(
                 "Type" to "$bodyTypeDescription ($bodyType)",
@@ -312,7 +345,6 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
             }
             organicResourceRow(organicResources)
             inorganicResourceRow(inorganicResources)
-            val info = inMemoryStorage.planetInfo(planet.uniqueId)
             outPostsRow(info.outPosts)
         }
         div { id = "user-info" }
