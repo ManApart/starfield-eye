@@ -182,66 +182,6 @@ summary::-webkit-details-marker {
     margin: auto;
 }
 
-#popup {
-    position: absolute;
-    border: 1px solid gray;
-    padding: 10px;
-    background: var(--background-blue);
-    min-width: 50px;
-    min-height: 50px;
-}
-
-.toggle-wrapper {
-    font-family: Architekt;
-}
-
-input[type=checkbox]{
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-
-.toggle-switch {
-    display: inline-block;
-    margin-left: 5px;
-}
-
-.toggle-switch label {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 50px;
-  height: 25px;
-  background: grey;
-  display: block;
-  border-radius: 100px;
-  position: relative;
-}
-
-.toggle-switch label:after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border-radius: 20px;
-  transition: 0.3s;
-}
-
-.toggle-switch input:checked + label {
-  background: var(--blue);
-}
-
-.toggle-switch input:checked + label:after {
-  left: calc(100% - 2px);
-  transform: translateX(-100%);
-}
-
-.toggle-switch label:active:after {
-  width: 25px;
-}
-
 .screenshot {
     position: relative;
 }

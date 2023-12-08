@@ -18,11 +18,14 @@ import kotlinx.coroutines.launch
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
-import kotlinx.html.js.a
-import kotlinx.html.js.onClickFunction
-import kotlinx.html.js.onMouseOutFunction
-import kotlinx.html.js.onMouseOverFunction
+import kotlinx.html.button
+import kotlinx.html.div
+import kotlinx.html.h2
+import kotlinx.html.js.*
+import kotlinx.html.table
+import kotlinx.html.tr
 import org.w3c.dom.HTMLElement
+import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.events.KeyboardEvent
 import replaceElement
 import updateUrl
@@ -194,6 +197,27 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, 
             id = "wiki-link"
             +"View on Wiki"
         }
+
+        table("discovered-table") {
+            tr {
+                td { +"Discovered" }
+                td {
+                    input(InputType.checkBox, classes = "check-box") {
+                        id = "${star.id}-discovered"
+                        checked = inMemoryStorage.discoveredStars.contains(star.id)
+                        onChangeFunction = {
+                            val newValue = el<HTMLInputElement>(this.id).checked
+                            if (newValue){
+                                inMemoryStorage.discoveredStars.add(star.id)
+                            } else {
+                                inMemoryStorage.discoveredStars.remove(star.id)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         table("detail-view-table") {
             listOf(
                 "Spectral Class" to spectral,

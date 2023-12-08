@@ -145,6 +145,9 @@
     display: inline-block;
 }
 
+.discovered-table {
+}
+
 .detail-view-table {
     width: 98%;
     border-spacing: 0px 5px;
