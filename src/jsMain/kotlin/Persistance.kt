@@ -1,9 +1,6 @@
 import LocalForage.config
 import kotlinx.browser.document
 import kotlinx.browser.window
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
@@ -27,13 +24,18 @@ data class InMemoryStorage(
     val connectionSettings: GameConnectionSettings = GameConnectionSettings(),
     var quests: List<Quest> = listOf(),
     var stats: MiscStats = MiscStats(),
-    var discoveredOnly: Boolean? = true,
+    var showUndiscovered: Boolean? = true,
     var outpostResourceView: Boolean? = false,
     var paintBackgroundStars: Boolean? = null,
 ) {
     fun planetInfo(uniqueId: String): PlanetInfo {
         return planetUserInfo[uniqueId] ?: PlanetInfo(uniqueId)
     }
+
+    fun isDiscovered(system: Int) = if(inMemoryStorage.showUndiscovered == true) true else inMemoryStorage.discoveredStars.contains(system)
+
+    fun discoveredSystems(galaxy: Galaxy) = galaxy.systems.let { system -> if (showUndiscovered == true) system else system.filter { discoveredStars.contains(it.key) }}
+    fun discoveredPlanets(galaxy: Galaxy) = discoveredSystems(galaxy).values.flatMap { it.planets.values }
 }
 
 val planetSearchOptions: PlanetSearchOptions = PlanetSearchOptions()

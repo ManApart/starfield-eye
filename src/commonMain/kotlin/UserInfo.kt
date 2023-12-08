@@ -25,6 +25,8 @@ data class Outpost(
 
 @Serializable
 data class PlanetScan(
+    var initialScan: Boolean = false,
+    var landed: Boolean = false,
     var traits: Set<Int>? = null,
     var resources: Set<Int>? = null,
     val lifeScans: MutableMap<ScanName, PercentScanned> = mutableMapOf()

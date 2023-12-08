@@ -1,7 +1,7 @@
 import views.filterPlanets
 
 fun searchPlanets() {
-    val planets = getPlanets().filterSearch(planetSearchOptions.searchText)
+    val planets = inMemoryStorage.discoveredPlanets(galaxy).filterSearch(planetSearchOptions.searchText)
     filterPlanets(planets)
 }
 

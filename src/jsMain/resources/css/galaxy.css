@@ -58,6 +58,14 @@
     background-color: var(--blue);
 }
 
+.dimmed-star .system-name{
+    display: none;
+}
+
+.dimmed-star .star-line{
+    display: none;
+}
+
 .system-name {
     position: relative;
     text-align: center;

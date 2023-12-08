@@ -37,7 +37,7 @@ fun renderGalaxy(addHistory: Boolean = true) {
 }
 
 private fun TagConsumer<HTMLElement>.galaxy() {
-    val systems = galaxy.systems.let { system -> if (inMemoryStorage.discoveredOnly == true) system else system.filter { inMemoryStorage.discoveredStars.contains(it.key) }}
+    val systems = galaxy.systems
     val summary = galaxy.summary
     div {
         id = "galaxy-wrapper"
@@ -46,7 +46,9 @@ private fun TagConsumer<HTMLElement>.galaxy() {
             systems.values.forEach { system ->
                 val x = 95 - (((system.pos.x - summary.minX) / summary.distX) * 90 + 2)
                 val y = ((system.pos.y - summary.minY) / summary.distY) * 90 + 2
-                div("galaxy-system") {
+                val discovered = inMemoryStorage.isDiscovered(system.star.id)
+                val dimmed = if(discovered) "" else "dimmed-star"
+                div("galaxy-system $dimmed") {
                     id = system.star.name
                     style = "top: ${y}%; left: ${x}%;"
 
@@ -84,8 +86,8 @@ private fun TagConsumer<HTMLElement>.galaxy() {
 }
 
 private fun saveHtmlRefs() {
-    val systems = galaxy.systems.let { system -> if (inMemoryStorage.discoveredOnly == true) system else system.filter { inMemoryStorage.discoveredStars.contains(it.key) }}
-    starDivs = systems.values.associate { it.star.id.toString() to el(it.star.name) }
+    val systems = galaxy.systems.values
+    starDivs = systems.associate { it.star.id.toString() to el(it.star.name) }
 }
 
 private fun highlightStar(searchText: String) {

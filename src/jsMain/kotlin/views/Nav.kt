@@ -68,7 +68,7 @@ fun TagConsumer<HTMLElement>.navButtons(navClass: String = "header-nav") {
             div("toggle-wrapper") {
                 +"X-ray"
                 title = "Show all data, or only what you've discovered so far"
-                toggle(inMemoryStorage::discoveredOnly) {
+                toggle(inMemoryStorage::showUndiscovered) {
                     persistMemory()
                     doRouting()
                 }
