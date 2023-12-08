@@ -1,10 +1,13 @@
 package views
 
 import FloraWikiData
+import components.checkBox
+import components.counter
 import components.screenshot
 import el
 import floraReference
 import galaxy
+import inMemoryStorage
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
@@ -12,6 +15,8 @@ import kotlinx.html.dom.append
 import kotlinx.html.js.a
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
+import kotlin.math.max
+import kotlin.math.min
 
 fun floraView(system: Int, planet: Int) {
     val root = el("flora-view")
@@ -63,6 +68,20 @@ private fun TagConsumer<HTMLElement>.display(flora: FloraWikiData, linkToSystem:
             a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
                 id = "wiki-link"
                 +"View on Wiki"
+            }
+            table("scan-progress-table") {
+                if (flora.planetId != null) {
+                    tr {
+                        td { +"Scanned %" }
+                        td {
+                            val scanPercent = inMemoryStorage.planetInfo(flora.planetId).scan.lifeScans[flora.name] ?: 0
+                            counter("${flora.uniqueId}-scan", { scanPercent }) {
+                                val newVal = min(100, max(0, it))
+                                inMemoryStorage.planetInfo(flora.planetId).scan.lifeScans[flora.name] = newVal
+                            }
+                        }
+                    }
+                }
             }
 
             table("detail-view-table") {

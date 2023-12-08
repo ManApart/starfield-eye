@@ -1,17 +1,21 @@
 package views
 
 import FaunaWikiData
+import components.counter
 import components.screenshot
 import el
 import faunaReference
 import floraReference
 import galaxy
+import inMemoryStorage
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
+import kotlin.math.max
+import kotlin.math.min
 
 fun faunaView(system: Int, planet: Int) {
     val root = el("fauna-view")
@@ -62,6 +66,21 @@ private fun TagConsumer<HTMLElement>.display(fauna: FaunaWikiData, linkToSystem:
             a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
                 id = "wiki-link"
                 +"View on Wiki"
+            }
+
+            table("scan-progress-table") {
+                if (fauna.planetId != null) {
+                    tr {
+                        td { +"Scanned %" }
+                        td {
+                            val scanPercent = inMemoryStorage.planetInfo(fauna.planetId).scan.lifeScans[fauna.name] ?: 0
+                            counter("${fauna.uniqueId}-scan", { scanPercent }) {
+                                val newVal = min(100, max(0, it))
+                                inMemoryStorage.planetInfo(fauna.planetId).scan.lifeScans[fauna.name] = newVal
+                            }
+                        }
+                    }
+                }
             }
 
             table("detail-view-table") {

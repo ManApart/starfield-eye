@@ -197,7 +197,7 @@ private fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, 
             +"View on Wiki"
         }
 
-        table("discovered-table") {
+        table("scan-progress-table") {
             tr {
                 td { +"Discovered" }
                 td {
@@ -263,7 +263,7 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
             +"View on Wiki"
         }
 
-        table("discovered-table") {
+        table("scan-progress-table") {
             tr {
                 td { +"Initial Scan" }
                 td {
