@@ -7,6 +7,7 @@ import Star
 import StarSystem
 import components.*
 import components.checkBox
+import doRouting
 import docking.setCourse
 import el
 import inMemoryStorage
@@ -26,6 +27,7 @@ import kotlinx.html.table
 import kotlinx.html.tr
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.events.KeyboardEvent
+import persistMemory
 import replaceElement
 import updateUrl
 
@@ -267,20 +269,26 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
             tr {
                 td { +"Initial Scan" }
                 td {
-                    checkBox(info.scan::initialScan) //TODO - show resources
+                    checkBox(info.scan::initialScan) {
+                        doRouting()
+                        persistMemory()
+                    }
                 }
             }
             tr {
                 td { +"Landed On" }
                 td {
                     checkBox(info.scan::landed)
+                    persistMemory()
                 }
             }
             planet.traits.forEachIndexed { id, trait ->
                 tr {
                     td { +"Trait: $trait" }
                     td {
-                        checkBox(id, info.scan::traits)
+                        checkBox(id, info.scan::traits){
+                            persistMemory()
+                        }
                     }
                 }
             }
@@ -290,7 +298,9 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
                     td {
                         planet.inorganicResources.forEachIndexed { id, resource ->
                             span("checkbox-wrapper") {
-                                checkBox(id, info.scan::resources)
+                                checkBox(id, info.scan::resources) {
+                                    persistMemory()
+                                }
                                 +resource.name
                             }
                         }
@@ -300,52 +310,54 @@ private fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Plan
             }
         }
 
-        table("detail-view-table") {
-            listOf(
-                "Type" to "$bodyTypeDescription ($bodyType)",
-                "Class" to planetClass,
-                "Mass" to mass,
-                "Radius" to radius,
-                "Density" to density,
-                "Gravity" to "$gravity G",
-                "Temperature" to "$temperature ($heat C)",
-                "Atmosphere" to atmosphere,
-                "Magnetosphere" to magneticField,
-                "Biomes" to biomes.joinToString(),
-                "Life" to life,
-                "Fauna" to fauna,
-                "Flora" to flora,
-                "Water" to water,
-                "Year" to "$year days",
-                "Day" to "$day hours",
-                "Traits" to traits,
-                "Asteroids" to asteroids,
-                "Rings" to rings,
-            )
-                .filter { (_, data) -> data.toString().isNotBlank() && data.toString() != "0" }
-                .forEach { (title, data) ->
-                    tr {
-                        td { +title }
-                        td { +data.toString() }
+        if (inMemoryStorage.showUndiscovered != false || info.scan.initialScan) {
+            table("detail-view-table") {
+                listOf(
+                    "Type" to "$bodyTypeDescription ($bodyType)",
+                    "Class" to planetClass,
+                    "Mass" to mass,
+                    "Radius" to radius,
+                    "Density" to density,
+                    "Gravity" to "$gravity G",
+                    "Temperature" to "$temperature ($heat C)",
+                    "Atmosphere" to atmosphere,
+                    "Magnetosphere" to magneticField,
+                    "Biomes" to biomes.joinToString(),
+                    "Life" to life,
+                    "Fauna" to fauna,
+                    "Flora" to flora,
+                    "Water" to water,
+                    "Year" to "$year days",
+                    "Day" to "$day hours",
+                    "Traits" to traits,
+                    "Asteroids" to asteroids,
+                    "Rings" to rings,
+                )
+                    .filter { (_, data) -> data.toString().isNotBlank() && data.toString() != "0" }
+                    .forEach { (title, data) ->
+                        tr {
+                            td { +title }
+                            td { +data.toString() }
+                        }
                     }
-                }
-            system.planetChildren[planet.id]?.let { moons ->
-                if (moons.isNotEmpty()) {
-                    tr {
-                        td { +"Moons" }
-                        td("moons-detail") {
-                            moons.forEach { moonId ->
-                                id = "moons-detail"
-                                val moon = system.planets[moonId]!!
-                                a("#system/${system.star.id}/$moonId") { +moon.name }
+                system.planetChildren[planet.id]?.let { moons ->
+                    if (moons.isNotEmpty()) {
+                        tr {
+                            td { +"Moons" }
+                            td("moons-detail") {
+                                moons.forEach { moonId ->
+                                    id = "moons-detail"
+                                    val moon = system.planets[moonId]!!
+                                    a("#system/${system.star.id}/$moonId") { +moon.name }
+                                }
                             }
                         }
                     }
                 }
+                organicResourceRow(organicResources)
+                inorganicResourceRow(inorganicResources)
+                outPostsRow(info.outPosts)
             }
-            organicResourceRow(organicResources)
-            inorganicResourceRow(inorganicResources)
-            outPostsRow(info.outPosts)
         }
         div { id = "user-info" }
     }

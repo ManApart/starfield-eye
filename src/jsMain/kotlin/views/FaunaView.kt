@@ -14,6 +14,7 @@ import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
+import persistMemory
 import kotlin.math.max
 import kotlin.math.min
 
@@ -77,6 +78,7 @@ private fun TagConsumer<HTMLElement>.display(fauna: FaunaWikiData, linkToSystem:
                             counter("${fauna.uniqueId}-scan", { scanPercent }) {
                                 val newVal = min(100, max(0, it))
                                 inMemoryStorage.planetInfo(fauna.planetId).scan.lifeScans[fauna.name] = newVal
+                                persistMemory()
                             }
                         }
                     }
