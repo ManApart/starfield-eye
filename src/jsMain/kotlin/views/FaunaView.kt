@@ -3,6 +3,7 @@ package views
 import FaunaWikiData
 import components.counter
 import components.screenshot
+import doRouting
 import el
 import faunaReference
 import floraReference
@@ -78,12 +79,14 @@ private fun TagConsumer<HTMLElement>.display(fauna: FaunaWikiData, linkToSystem:
                             counter("${fauna.uniqueId}-scan", { scanPercent }) {
                                 val newVal = min(100, max(0, it))
                                 inMemoryStorage.planetInfo(fauna.planetId).scan.lifeScans[fauna.name] = newVal
+                                doRouting()
                                 persistMemory()
                             }
                         }
                     }
                 }
             }
+
 
             table("detail-view-table") {
                 (listOf(
@@ -93,6 +96,15 @@ private fun TagConsumer<HTMLElement>.display(fauna: FaunaWikiData, linkToSystem:
                     "Abilities" to abilities.joinToString(),
                 ) + other.entries.map { it.key to it.value }.sortedBy { it.first })
                     .filter { (_, data) -> data.isNotBlank() && data != "0" }
+                    .let { data ->
+                        if (inMemoryStorage.showUndiscovered != false) data else {
+                            val percent =
+                                (fauna.planetId?.let { inMemoryStorage.planetInfo(it).scan.lifeScans[fauna.name] }
+                                    ?: 0) / 100.0
+                            val totalRows = (data.size * percent).toInt()
+                            data.take(totalRows)
+                        }
+                    }
                     .forEach { (title, data) ->
                         tr {
                             td { +title }

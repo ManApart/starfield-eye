@@ -4,6 +4,7 @@ import FloraWikiData
 import components.checkBox
 import components.counter
 import components.screenshot
+import doRouting
 import el
 import floraReference
 import galaxy
@@ -79,6 +80,7 @@ private fun TagConsumer<HTMLElement>.display(flora: FloraWikiData, linkToSystem:
                             counter("${flora.uniqueId}-scan", { scanPercent }) {
                                 val newVal = min(100, max(0, it))
                                 inMemoryStorage.planetInfo(flora.planetId).scan.lifeScans[flora.name] = newVal
+                                doRouting()
                                 persistMemory()
                             }
                         }
@@ -92,6 +94,15 @@ private fun TagConsumer<HTMLElement>.display(flora: FloraWikiData, linkToSystem:
                     "Resource" to resource,
                 ) + other.entries.map { it.key to it.value })
                     .filter { (_, data) -> data.isNotBlank() && data != "0" }
+                    .let { data ->
+                        if (inMemoryStorage.showUndiscovered != false) data else {
+                            val percent =
+                                (flora.planetId?.let { inMemoryStorage.planetInfo(it).scan.lifeScans[flora.name] }
+                                    ?: 0) / 100.0
+                            val totalRows = (data.size * percent).toInt()
+                            data.take(totalRows)
+                        }
+                    }
                     .forEach { (title, data) ->
                         tr {
                             td { +title }
