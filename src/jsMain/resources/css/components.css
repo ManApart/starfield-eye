@@ -59,10 +59,27 @@
 }
 
 
-.checkbox{
+input[type="checkbox"]::-ms-check {
+    display: none;
+}
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0px;
+    margin-right: 2px;
+
+    border: 1px solid white;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--blue);
 }
 
 .checkbox-wrapper{
+    margin-left: 10px;
 }
 
 .counter {

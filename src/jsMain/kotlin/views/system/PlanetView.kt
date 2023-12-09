@@ -1,6 +1,8 @@
 package views.system
 
 import Planet
+import PlanetInfo
+import PlanetScan
 import StarSystem
 import components.checkBox
 import components.screenshot
@@ -36,50 +38,58 @@ fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, link
             +"View on Wiki"
         }
 
-        table("scan-progress-table") {
-            tr {
-                td { +"Initial Scan" }
-                td {
-                    checkBox(info.scan::initialScan) {
-                        doRouting()
-                        persistMemory()
-                    }
-                }
-            }
-            tr {
-                td { +"Landed On" }
-                td {
-                    checkBox(info.scan::landed)
-                    persistMemory()
-                }
-            }
-            planet.traits.forEachIndexed { id, trait ->
-                tr {
-                    td { +"Trait: $trait" }
-                    td {
-                        checkBox(id, info.scan::traits){
-                            persistMemory()
-                        }
-                    }
-                }
-            }
-            if (planet.inorganicResources.isNotEmpty()) {
-                tr {
-                    td { +"Resources" }
-                    td {
-                        planet.inorganicResources.forEachIndexed { id, resource ->
-                            span("checkbox-wrapper") {
-                                checkBox(id, info.scan::resources) {
-                                    persistMemory()
-                                }
-                                +resource.name
-                            }
-                        }
-                    }
-
-                }
-            }
+        checkBox("Initial Scan", info.scan::initialScan) {
+            doRouting()
+            persistMemory()
         }
+        checkBox("Landed On", info.scan::landed) {
+            persistMemory()
+        }
+//
+//        table("scan-progress-table") {
+//            tr {
+//                td { +"Initial Scan" }
+//                td {
+//                    checkBox(info.scan::initialScan) {
+//                        doRouting()
+//                        persistMemory()
+//                    }
+//                }
+//            }
+//            tr {
+//                td { +"Landed On" }
+//                td {
+//                    checkBox(info.scan::landed)
+//                    persistMemory()
+//                }
+//            }
+//            planet.traits.forEachIndexed { id, trait ->
+//                tr {
+//                    td { +"Trait: $trait" }
+//                    td {
+//                        checkBox(id, info.scan::traits){
+//                            persistMemory()
+//                        }
+//                    }
+//                }
+//            }
+//            if (planet.inorganicResources.isNotEmpty()) {
+//                tr {
+//                    td { +"Resources" }
+//                    td {
+//                        planet.inorganicResources.forEachIndexed { id, resource ->
+//                            span("checkbox-wrapper") {
+//                                checkBox(id, info.scan::resources) {
+//                                    persistMemory()
+//                                }
+//                                +resource.name
+//                            }
+//                        }
+//                    }
+//
+//                }
+//            }
+//        }
 
         if (inMemoryStorage.showUndiscovered != false || info.scan.initialScan) {
             table("detail-view-table") {
@@ -100,7 +110,6 @@ fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, link
                     "Water" to water,
                     "Year" to "$year days",
                     "Day" to "$day hours",
-                    "Traits" to traits,
                     "Asteroids" to asteroids,
                     "Rings" to rings,
                 )
@@ -125,11 +134,27 @@ fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, link
                         }
                     }
                 }
+                traitsRow(info.scan, traits)
                 organicResourceRow(organicResources)
                 inorganicResourceRow(inorganicResources)
                 outPostsRow(info.outPosts)
             }
         }
         div { id = "user-info" }
+    }
+}
+
+private fun TagConsumer<HTMLElement>.traitsRow(scan: PlanetScan, traits: List<String>) {
+    if (traits.isNotEmpty()) {
+        tr {
+            td { +"Traits" }
+            td{
+                traits.forEachIndexed { i, trait ->
+                    checkBox(i, trait, scan::traits) {
+                        persistMemory()
+                    }
+                }
+            }
+        }
     }
 }

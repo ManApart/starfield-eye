@@ -1,6 +1,7 @@
 package components
 
 import el
+import inMemoryStorage
 import kotlinx.html.*
 import kotlinx.html.js.onChangeFunction
 import org.w3c.dom.HTMLElement
@@ -32,6 +33,17 @@ fun TagConsumer<HTMLElement>.checkBox(property: KMutableProperty0<Boolean>, onCh
 }
 
 fun TagConsumer<HTMLElement>.checkBox(
+    name: String,
+    property: KMutableProperty0<Boolean>,
+    onChange: (Boolean) -> Unit = {}
+) {
+    span("checkbox-wrapper") {
+        checkBox(property, onChange)
+        +name
+    }
+}
+
+fun TagConsumer<HTMLElement>.checkBox(
     index: Int,
     property: KProperty0<MutableSet<Int>>,
     onChange: (Boolean) -> Unit = {}
@@ -48,5 +60,17 @@ fun TagConsumer<HTMLElement>.checkBox(
             }
             onChange(newVal)
         }
+    }
+}
+
+fun TagConsumer<HTMLElement>.checkBox(
+    index: Int,
+    name: String,
+    property: KProperty0<MutableSet<Int>>,
+    onChange: (Boolean) -> Unit = {}
+) {
+    span("checkbox-wrapper") {
+        checkBox(index, property, onChange)
+        +name
     }
 }

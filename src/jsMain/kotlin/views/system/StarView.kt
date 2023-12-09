@@ -24,20 +24,7 @@ fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, linkToSy
             +"View on Wiki"
         }
 
-        table("scan-progress-table") {
-            tr {
-                td { +"Discovered" }
-                td {
-                    checkBox("${star.id}-discovered", { inMemoryStorage.discoveredStars.contains(star.id) }) {
-                        if (it == true) {
-                            inMemoryStorage.discoveredStars.add(star.id)
-                        } else {
-                            inMemoryStorage.discoveredStars.remove(star.id)
-                        }
-                    }
-                }
-            }
-        }
+        checkBox(star.id, "Discovered", inMemoryStorage::discoveredStars)
 
         table("detail-view-table") {
             listOf(
