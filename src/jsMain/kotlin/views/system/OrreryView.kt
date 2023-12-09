@@ -38,11 +38,11 @@ fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                     clearFloraFaunaView()
                 }
                 onMouseOverFunction = {
-                    detailView(system, 0)
+                    detailView(system, 0, false)
                     clearOutpostsView()
                     clearFloraFaunaView()
                 }
-                onMouseOutFunction = { detailView(system, currentPlanet) }
+                onMouseOutFunction = { detailView(system, currentPlanet, false) }
             }
             system.planetChildren.entries.forEach { (planetId, moons) ->
                 hr("planet-spacer")
@@ -59,13 +59,13 @@ fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                             faunaView(system.star.id, planetId)
                         }
                         onMouseOverFunction = {
-                            detailView(system, planetId)
+                            detailView(system, planetId, false)
                             outpostsView(system, planetId)
                             floraView(system.star.id, planetId)
                             faunaView(system.star.id, planetId)
                         }
                         onMouseOutFunction = {
-                            detailView(system, currentPlanet)
+                            detailView(system, currentPlanet, false)
                             outpostsView(system, currentPlanet)
                             floraView(system.star.id, currentPlanet)
                             faunaView(system.star.id, currentPlanet)
@@ -84,13 +84,13 @@ fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                                     faunaView(system.star.id, moonId)
                                 }
                                 onMouseOverFunction = {
-                                    detailView(system, moonId)
+                                    detailView(system, moonId, false)
                                     outpostsView(system, moonId)
                                     floraView(system.star.id, moonId)
                                     faunaView(system.star.id, moonId)
                                 }
                                 onMouseOutFunction = {
-                                    detailView(system, currentPlanet)
+                                    detailView(system, currentPlanet, false)
                                     outpostsView(system, currentPlanet)
                                     floraView(system.star.id, currentPlanet)
                                     faunaView(system.star.id, currentPlanet)

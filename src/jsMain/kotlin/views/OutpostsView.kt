@@ -133,33 +133,34 @@ private fun TagConsumer<HTMLElement>.outpost(
 
     screenshot("outposts/${planet.uniqueId}/${outpost.id}")
 
-    h5 { +"Organic Resources" }
-    div {
-        button(classes = "add-info-button") {
-            +"Add"
-            onClickFunction = {
-                showStringPicker(planet.organicResources - outpost.organicResources) {
-                    outpost.organicResources.add(it)
-                    saveOutpostInfo(planet, info)
-                }
-            }
-        }
-        button(classes = "remove-info-button") {
-            +"Del"
-            onClickFunction = {
-                showStringPicker(outpost.organicResources) {
-                    outpost.organicResources.remove(it)
-                    saveOutpostInfo(planet, info)
-                }
-            }
-        }
-    }
     if (outpost.organicResources.isNotEmpty()) {
+        h5 { +"Organic Resources" }
+        div {
+            button(classes = "add-info-button") {
+                +"Add"
+                onClickFunction = {
+                    showStringPicker(planet.organicResources - outpost.organicResources) {
+                        outpost.organicResources.add(it)
+                        saveOutpostInfo(planet, info)
+                    }
+                }
+            }
+            button(classes = "remove-info-button") {
+                +"Del"
+                onClickFunction = {
+                    showStringPicker(outpost.organicResources) {
+                        outpost.organicResources.remove(it)
+                        saveOutpostInfo(planet, info)
+                    }
+                }
+            }
+        }
+
         div("resource-wrapper") {
             +outpost.organicResources.joinToString()
         }
     }
-    if (planet.organicResources.isNotEmpty()) {
+    if (planet.inorganicResources.isNotEmpty()) {
         h5 { +"Inorganic Resources" }
         div {
             button(classes = "add-info-button") {
