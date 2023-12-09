@@ -27,8 +27,8 @@ import replaceElement
 import updateUrl
 
 
-fun outpostsPage(addHistory: Boolean = true) {
-    updateUrl("outposts", addHistory)
+fun outpostsPage() {
+    updateUrl("outposts")
     replaceElement {
         div {
             id = "outposts-view"

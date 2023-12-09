@@ -4,8 +4,8 @@ import kotlinx.html.*
 import replaceElement
 import updateUrl
 
-fun aboutView(addHistory: Boolean = true) {
-    updateUrl("about", addHistory)
+fun aboutView() {
+    updateUrl("about")
     replaceElement {
         div {
             id = "about-view"

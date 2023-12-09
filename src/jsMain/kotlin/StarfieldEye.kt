@@ -90,35 +90,35 @@ fun doRouting(windowHash: String) {
     keyPressedHook = {}
     when {
         windowHash.startsWith("#about") -> {
-            aboutView(false)
+            aboutView()
         }
 
         windowHash.startsWith("#catalogue") -> {
-            catalogueView(false)
+            catalogueView()
         }
 
         windowHash.startsWith("#lifesigns") -> {
-            lifeSignsView(false)
+            lifeSignsView()
         }
 
         windowHash.startsWith("#crew") -> {
-            crewView(false)
+            crewView()
         }
 
         windowHash.startsWith("#dock") -> {
-            dockView(false)
+            dockView()
         }
 
         windowHash.startsWith("#quests") -> {
-            questView(false)
+            questView()
         }
 
         windowHash.startsWith("#outposts") -> {
-            outpostsPage(false)
+            outpostsPage()
         }
 
         windowHash.startsWith("#misc-stats") -> {
-            miscStatView(false)
+            miscStatView()
         }
 
         windowHash.startsWith("#system/") -> {
@@ -126,7 +126,7 @@ fun doRouting(windowHash: String) {
             if (parts.size == 2) {
                 val system = galaxy.systems[parts.first().toInt()]!!
                 val planet = parts.last().toIntOrNull() ?: 0
-                systemView(system, planet, false)
+                systemView(system, planet)
             }
         }
 
@@ -134,9 +134,9 @@ fun doRouting(windowHash: String) {
     }
 }
 
-fun updateUrl(path: String, addHistory: Boolean) {
+fun updateUrl(path: String) {
     val pathName = path.split("/").first().capitalize()
-    if (addHistory) {
+    if (!window.location.href.endsWith("#$path")) {
         window.history.pushState(null, "", "#$path")
     }
     document.title = "The Eye: $pathName"

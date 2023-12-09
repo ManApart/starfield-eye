@@ -12,8 +12,8 @@ import pollHook
 import replaceElement
 import updateUrl
 
-fun miscStatView(addHistory: Boolean = true) {
-    updateUrl("misc-stats", addHistory)
+fun miscStatView() {
+    updateUrl("misc-stats")
     replaceElement {
         div {
             id = "misc-stat-view"

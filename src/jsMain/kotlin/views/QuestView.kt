@@ -24,8 +24,8 @@ private var oldQuests: List<Quest> = listOf()
 var missionDivs: Map<String, HTMLElement> = mapOf()
 private var navButtons: List<HTMLButtonElement> = listOf()
 
-fun questView(addHistory: Boolean = true) {
-    updateUrl("quests", addHistory)
+fun questView() {
+    updateUrl("quests")
     replaceElement{
         div {
             id = "quest-view"

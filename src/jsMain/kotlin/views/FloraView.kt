@@ -1,7 +1,6 @@
 package views
 
 import FloraWikiData
-import components.checkBox
 import components.counter
 import components.screenshot
 import doRouting
@@ -13,7 +12,6 @@ import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.dom.append
-import kotlinx.html.js.a
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import persistMemory

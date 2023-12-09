@@ -24,8 +24,8 @@ import searchLifeSigns
 import starDivs
 import updateUrl
 
-fun lifeSignsView(addHistory: Boolean = true) {
-    updateUrl("lifesigns", addHistory)
+fun lifeSignsView() {
+    updateUrl("lifesigns")
     replaceElement {
         div {
             id = "life-signs-view"

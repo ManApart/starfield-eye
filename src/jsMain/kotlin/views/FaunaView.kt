@@ -6,7 +6,6 @@ import components.screenshot
 import doRouting
 import el
 import faunaReference
-import floraReference
 import galaxy
 import inMemoryStorage
 import kotlinx.dom.addClass

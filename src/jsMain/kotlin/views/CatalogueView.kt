@@ -19,8 +19,8 @@ import searchPlanets
 import starDivs
 import updateUrl
 
-fun catalogueView(addHistory: Boolean = true) {
-    updateUrl("catalogue", addHistory)
+fun catalogueView() {
+    updateUrl("catalogue")
     replaceElement {
         div {
             id = "catalogue-view"

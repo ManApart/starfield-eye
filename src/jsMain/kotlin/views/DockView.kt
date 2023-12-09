@@ -28,8 +28,8 @@ import pollHook
 import replaceElement
 import updateUrl
 
-fun dockView(addHistory: Boolean = true) {
-    updateUrl("dock", addHistory)
+fun dockView() {
+    updateUrl("dock")
     replaceElement {
         div {
             id = "dock-view"

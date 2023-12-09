@@ -35,9 +35,9 @@ private var currentPlanet = 0
 private var currentPlanetType = "star"
 private var currentSystem: StarSystem? = null
 
-fun systemView(system: StarSystem, planetId: Int = 0, addHistory: Boolean = true) {
+fun systemView(system: StarSystem, planetId: Int = 0) {
     currentSystem = system
-    updateUrl(system, planetId, addHistory)
+    updateUrl(system, planetId)
     replaceElement {
         div {
             id = "system-view"
@@ -66,8 +66,8 @@ fun systemView(system: StarSystem, planetId: Int = 0, addHistory: Boolean = true
     keyPressedHook = ::navigateOrrery
 }
 
-private fun updateUrl(system: StarSystem, planetId: Int, addHistory: Boolean = true) {
-    updateUrl("system/${system.star.id}/$planetId", addHistory)
+private fun updateUrl(system: StarSystem, planetId: Int) {
+    updateUrl("system/${system.star.id}/$planetId")
 }
 
 private fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
