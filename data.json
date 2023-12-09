@@ -50,7 +50,8 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "Solar Storm Seasons Prismatic Plumes"
+                        "Solar Storm Seasons",
+                        "Prismatic Plumes"
                     ],
                     "organicResources": [
                     ],
@@ -132,7 +133,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Diseased Biosphere"
+                        "Aeriform Life",
+                        "Diseased Biosphere"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -188,7 +190,10 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Crystalline Crust Slushy Subsurface Seas Coralline Landmass Continual Conductor"
+                        "Crystalline Crust",
+                        "Slushy Subsurface Seas",
+                        "Coralline Landmass",
+                        "Continual Conductor"
                     ],
                     "organicResources": [
                     ],
@@ -312,7 +317,8 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Prismatic Plumes Sonorous Lithosphere"
+                        "Prismatic Plumes",
+                        "Sonorous Lithosphere"
                     ],
                     "organicResources": [
                     ],
@@ -877,7 +883,8 @@
                         "Mountains"
                     ],
                     "traits": [
-                        "Active Faulting Boiled Seas"
+                        "Active Faulting",
+                        "Boiled Seas"
                     ],
                     "organicResources": [
                     ],
@@ -1001,7 +1008,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Diseased Biosphere Global Glacial Recession Sentient Microbial Colonies"
+                        "Diseased Biosphere",
+                        "Global Glacial Recession",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Cosmetic",
@@ -1058,7 +1067,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Coralline Landmass"
+                        "Amphibious Foothold",
+                        "Coralline Landmass"
                     ],
                     "organicResources": [
                         "Cosmetic",
@@ -1222,7 +1232,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Slushy Subsurface Seas Coralline Landmass"
+                        "Frozen Ecosystem",
+                        "Slushy Subsurface Seas",
+                        "Coralline Landmass"
                     ],
                     "organicResources": [
                     ],
@@ -1345,7 +1357,8 @@
                         "Ocean"
                     ],
                     "traits": [
-                        "Sentient Microbial Colonies Diseased Biosphere"
+                        "Sentient Microbial Colonies",
+                        "Diseased Biosphere"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -1688,7 +1701,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Psychotropic Biota"
+                        "Ecological Consortium",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Analgesic",
@@ -1783,7 +1797,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Coralline Landmass Sonorous Lithosphere Continual Conductor"
+                        "Coralline Landmass",
+                        "Sonorous Lithosphere",
+                        "Continual Conductor"
                     ],
                     "organicResources": [
                     ],
@@ -1826,7 +1842,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen EcosystemFile:SF-planet trait-Primed for Life.svg Primed for Life Solar Storm Seasons"
+                        "Frozen Ecosystem",
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -2272,7 +2290,8 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Emerging Tectonics Energetic Rifting"
+                        "Emerging Tectonics",
+                        "Energetic Rifting"
                     ],
                     "organicResources": [
                     ],
@@ -2358,7 +2377,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Primordial Network"
+                        "Ecological Consortium",
+                        "Primordial Network"
                     ],
                     "organicResources": [
                         "Amino Acids",
@@ -2622,7 +2642,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Sonorous LithosphereFile:SF-planet trait-Primed for Life.svg Primed for Life"
+                        "Sonorous Lithosphere",
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life"
                     ],
                     "organicResources": [
                     ],
@@ -3535,7 +3556,8 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "Prismatic Plumes Charred Ecosystem"
+                        "Prismatic Plumes",
+                        "Charred Ecosystem"
                     ],
                     "organicResources": [
                     ],
@@ -3671,7 +3693,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Global Glacial Recession"
+                        "Aeriform Life",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -3728,7 +3751,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Emerging Tectonics Sonorous Lithosphere Energetic Rifting"
+                        "Emerging Tectonics",
+                        "Sonorous Lithosphere",
+                        "Energetic Rifting"
                     ],
                     "organicResources": [
                     ],
@@ -3893,7 +3918,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Global Glacial Recession Psychotropic Biota"
+                        "Amphibious Foothold",
+                        "Global Glacial Recession",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -3946,7 +3973,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Continual Conductor Solar Storm Seasons"
+                        "Frozen Ecosystem",
+                        "Continual Conductor",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -4196,7 +4225,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Psychotropic Biota Sentient Microbial Colonies"
+                        "Ecological Consortium",
+                        "Psychotropic Biota",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Ornamental",
@@ -4440,7 +4471,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Global Glacial Recession Psychotropic Biota"
+                        "Global Glacial Recession",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Amino Acids",
@@ -4681,7 +4713,9 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Charred Ecosystem Continual Conductor Active Faulting"
+                        "Charred Ecosystem",
+                        "Continual Conductor",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -4762,7 +4796,9 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Emerging Tectonics Energetic Rifting Prismatic Plumes"
+                        "Emerging Tectonics",
+                        "Energetic Rifting",
+                        "Prismatic Plumes"
                     ],
                     "organicResources": [
                     ],
@@ -4845,7 +4881,9 @@
                         "Ocean"
                     ],
                     "traits": [
-                        "Diseased Biosphere Continual Conductor Global Glacial Recession"
+                        "Diseased Biosphere",
+                        "Continual Conductor",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -4899,7 +4937,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Global Glacial Recession Primordial Network Sentient Microbial Colonies"
+                        "Global Glacial Recession",
+                        "Primordial Network",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Aromatic",
@@ -4950,7 +4990,8 @@
                         "Cratered"
                     ],
                     "traits": [
-                        "Boiled Seas Bolide Bombardment"
+                        "Boiled Seas",
+                        "Bolide Bombardment"
                     ],
                     "organicResources": [
                     ],
@@ -5155,7 +5196,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Energetic Rifting"
+                        "Frozen Ecosystem",
+                        "Energetic Rifting"
                     ],
                     "organicResources": [
                     ],
@@ -5730,7 +5772,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Energetic RiftingFile:SF-planet trait-Primed for Life.svg Primed for Life Active Faulting"
+                        "Energetic Rifting",
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -5774,7 +5818,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Energetic Rifting Active Faulting"
+                        "Energetic Rifting",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -6252,7 +6297,8 @@
                         "Cratered"
                     ],
                     "traits": [
-                        "Charred Ecosystem Boiled Seas"
+                        "Charred Ecosystem",
+                        "Boiled Seas"
                     ],
                     "organicResources": [
                     ],
@@ -6294,7 +6340,9 @@
                         "Ocean"
                     ],
                     "traits": [
-                        "Amphibious Foothold Prismatic Plumes Emerging Tectonics"
+                        "Amphibious Foothold",
+                        "Prismatic Plumes",
+                        "Emerging Tectonics"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -6346,7 +6394,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Continual Conductor Solar Storm Seasons Sonorous Lithosphere"
+                        "Continual Conductor",
+                        "Solar Storm Seasons",
+                        "Sonorous Lithosphere"
                     ],
                     "organicResources": [
                     ],
@@ -6519,7 +6569,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "File:SF-planet trait-Primed for Life.svg Primed for Life Frozen Ecosystem Crystalline Crust"
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life",
+                        "Frozen Ecosystem",
+                        "Crystalline Crust"
                     ],
                     "organicResources": [
                     ],
@@ -6567,7 +6619,11 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Emerging Tectonics Solar Storm Seasons Prismatic Plumes Energetic Rifting Active Faulting"
+                        "Emerging Tectonics",
+                        "Solar Storm Seasons",
+                        "Prismatic Plumes",
+                        "Energetic Rifting",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -7144,7 +7200,8 @@
                         "Mountains"
                     ],
                     "traits": [
-                        "Charred Ecosystem Solar Storm Seasons"
+                        "Charred Ecosystem",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -7232,7 +7289,8 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Charred Ecosystem Solar Storm Seasons"
+                        "Charred Ecosystem",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -7279,7 +7337,8 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "Charred Ecosystem Gaseous Font"
+                        "Charred Ecosystem",
+                        "Gaseous Font"
                     ],
                     "organicResources": [
                     ],
@@ -7362,7 +7421,8 @@
                         "Ocean"
                     ],
                     "traits": [
-                        "Amphibious Foothold Sentient Microbial Colonies"
+                        "Amphibious Foothold",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -7418,7 +7478,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Amphibious Foothold"
+                        "Aeriform Life",
+                        "Amphibious Foothold"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -7476,7 +7537,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Global Glacial Recession Sentient Microbial Colonies"
+                        "Global Glacial Recession",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Aromatic",
@@ -7770,7 +7832,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Emerging Tectonics Solar Storm Seasons"
+                        "Emerging Tectonics",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                         "Lubricant"
@@ -8152,7 +8215,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Pelted Fields Solar Storm Seasons"
+                        "Pelted Fields",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -8701,7 +8765,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Crystalline Crust"
+                        "Frozen Ecosystem",
+                        "Crystalline Crust"
                     ],
                     "organicResources": [
                     ],
@@ -9276,7 +9341,8 @@
                         "Hills"
                     ],
                     "traits": [
-                        "File:SF-planet trait-Primed for Life.svg Primed for Life Active Faulting"
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -9467,7 +9533,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Continual Conductor Solar Storm Seasons Slushy Subsurface Seas"
+                        "Continual Conductor",
+                        "Solar Storm Seasons",
+                        "Slushy Subsurface Seas"
                     ],
                     "organicResources": [
                     ],
@@ -9513,7 +9581,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Pelted Fields"
+                        "Aeriform Life",
+                        "Pelted Fields"
                     ],
                     "organicResources": [
                     ],
@@ -9594,7 +9663,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Gaseous Font Sonorous Lithosphere"
+                        "Gaseous Font",
+                        "Sonorous Lithosphere"
                     ],
                     "organicResources": [
                     ],
@@ -10181,7 +10251,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Continual Conductor"
+                        "Frozen Ecosystem",
+                        "Continual Conductor"
                     ],
                     "organicResources": [
                     ],
@@ -10226,7 +10297,11 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Continual Conductor Sonorous Lithosphere Crystalline Crust Slushy Subsurface Seas Extinction Event"
+                        "Continual Conductor",
+                        "Sonorous Lithosphere",
+                        "Crystalline Crust",
+                        "Slushy Subsurface Seas",
+                        "Extinction Event"
                     ],
                     "organicResources": [
                     ],
@@ -10357,7 +10432,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Crystalline Crust Emerging Tectonics Extinction Event"
+                        "Crystalline Crust",
+                        "Emerging Tectonics",
+                        "Extinction Event"
                     ],
                     "organicResources": [
                     ],
@@ -10919,7 +10996,8 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "Prismatic Plumes Boiled Seas"
+                        "Prismatic Plumes",
+                        "Boiled Seas"
                     ],
                     "organicResources": [
                     ],
@@ -10960,7 +11038,8 @@
                         "Desert Sandy"
                     ],
                     "traits": [
-                        "Solar Storm Seasons Continual Conductor"
+                        "Solar Storm Seasons",
+                        "Continual Conductor"
                     ],
                     "organicResources": [
                     ],
@@ -11002,7 +11081,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Primordial Network"
+                        "Ecological Consortium",
+                        "Primordial Network"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -11214,7 +11294,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Global Glacial Recession"
+                        "Ecological Consortium",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                         "Metabolic Agent",
@@ -11368,7 +11449,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Diseased Biosphere Sentient Microbial Colonies"
+                        "Diseased Biosphere",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -11420,7 +11502,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Pelted Fields Solar Storm Seasons"
+                        "Pelted Fields",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -11682,7 +11765,10 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Crystalline Crust Coralline Landmass Pelted Fields Solar Storm Seasons"
+                        "Crystalline Crust",
+                        "Coralline Landmass",
+                        "Pelted Fields",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -11833,7 +11919,9 @@
                         "Ocean"
                     ],
                     "traits": [
-                        "Continual Conductor Global Glacial Recession Psychotropic Biota"
+                        "Continual Conductor",
+                        "Global Glacial Recession",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Cosmetic",
@@ -11959,7 +12047,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Crystalline Crust Slushy Subsurface Seas"
+                        "Crystalline Crust",
+                        "Slushy Subsurface Seas"
                     ],
                     "organicResources": [
                     ],
@@ -11999,7 +12088,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Energetic RiftingFile:SF-planet trait-Primed for Life.svg Primed for Life"
+                        "Energetic Rifting",
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life"
                     ],
                     "organicResources": [
                     ],
@@ -13261,7 +13351,8 @@
                         "Ocean"
                     ],
                     "traits": [
-                        "Charred Ecosystem Continual Conductor"
+                        "Charred Ecosystem",
+                        "Continual Conductor"
                     ],
                     "organicResources": [
                     ],
@@ -13344,7 +13435,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Primordial Network"
+                        "Aeriform Life",
+                        "Primordial Network"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -13440,7 +13532,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Slushy Subsurface Seas Frozen Ecosystem Continual Conductor"
+                        "Slushy Subsurface Seas",
+                        "Frozen Ecosystem",
+                        "Continual Conductor"
                     ],
                     "organicResources": [
                     ],
@@ -13526,7 +13620,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Slushy Subsurface Seas Crystalline Crust"
+                        "Slushy Subsurface Seas",
+                        "Crystalline Crust"
                     ],
                     "organicResources": [
                     ],
@@ -13574,7 +13669,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Energetic Rifting Frozen EcosystemFile:SF-planet trait-Primed for Life.svg Primed for Life"
+                        "Energetic Rifting",
+                        "Frozen Ecosystem",
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life"
                     ],
                     "organicResources": [
                     ],
@@ -14108,7 +14205,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Global Glacial Recession Sentient Microbial Colonies"
+                        "Ecological Consortium",
+                        "Global Glacial Recession",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -14208,7 +14307,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Psychotropic Biota"
+                        "Ecological Consortium",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -14358,7 +14458,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Emerging Tectonics Energetic Rifting Sonorous Lithosphere"
+                        "Emerging Tectonics",
+                        "Energetic Rifting",
+                        "Sonorous Lithosphere"
                     ],
                     "organicResources": [
                     ],
@@ -15071,7 +15173,10 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Energetic Rifting Emerging TectonicsFile:SF-planet trait-Primed for Life.svg Primed for Life"
+                        "Frozen Ecosystem",
+                        "Energetic Rifting",
+                        "Emerging Tectonics",
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life"
                     ],
                     "organicResources": [
                     ],
@@ -15791,7 +15896,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Sentient Microbial Colonies"
+                        "Ecological Consortium",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Amino Acids",
@@ -16892,7 +16998,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Prismatic Plumes Active Faulting"
+                        "Prismatic Plumes",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -17253,7 +17360,8 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Emerging Tectonics Prismatic Plumes"
+                        "Emerging Tectonics",
+                        "Prismatic Plumes"
                     ],
                     "organicResources": [
                     ],
@@ -17418,7 +17526,8 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Charred Ecosystem Extinction Event"
+                        "Charred Ecosystem",
+                        "Extinction Event"
                     ],
                     "organicResources": [
                     ],
@@ -17602,7 +17711,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Aeriform Life"
+                        "Ecological Consortium",
+                        "Aeriform Life"
                     ],
                     "organicResources": [
                         "Hypercatalyst",
@@ -17652,7 +17762,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen EcosystemFile:SF-planet trait-Primed for Life.svg Primed for Life Sonorous Lithosphere"
+                        "Frozen Ecosystem",
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life",
+                        "Sonorous Lithosphere"
                     ],
                     "organicResources": [
                     ],
@@ -18449,7 +18561,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Ecological Consortium Psychotropic Biota"
+                        "Amphibious Foothold",
+                        "Ecological Consortium",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -18505,7 +18619,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Crystalline Crust Active Faulting"
+                        "Crystalline Crust",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -18552,7 +18667,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Crystalline Crust Sonorous Lithosphere"
+                        "Crystalline Crust",
+                        "Sonorous Lithosphere"
                     ],
                     "organicResources": [
                     ],
@@ -18753,7 +18869,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Global Glacial Recession Emerging Tectonics"
+                        "Aeriform Life",
+                        "Global Glacial Recession",
+                        "Emerging Tectonics"
                     ],
                     "organicResources": [
                     ],
@@ -19236,7 +19354,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Psychotropic Biota Sentient Microbial Colonies"
+                        "Psychotropic Biota",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -19464,7 +19583,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Crystalline Crust Continual Conductor"
+                        "Crystalline Crust",
+                        "Continual Conductor"
                     ],
                     "organicResources": [
                     ],
@@ -20523,7 +20643,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Frozen Ecosystem"
+                        "Aeriform Life",
+                        "Frozen Ecosystem"
                     ],
                     "organicResources": [
                     ],
@@ -21188,7 +21309,8 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Prismatic Plumes Extinction Event"
+                        "Prismatic Plumes",
+                        "Extinction Event"
                     ],
                     "organicResources": [
                     ],
@@ -21305,7 +21427,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Energetic Rifting Frozen Ecosystem"
+                        "Energetic Rifting",
+                        "Frozen Ecosystem"
                     ],
                     "organicResources": [
                     ],
@@ -21830,7 +21953,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Emerging Tectonics"
+                        "Aeriform Life",
+                        "Emerging Tectonics"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -22617,7 +22741,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Coralline Landmass Primordial Network"
+                        "Amphibious Foothold",
+                        "Coralline Landmass",
+                        "Primordial Network"
                     ],
                     "organicResources": [
                         "Cosmetic",
@@ -22672,7 +22798,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Psychotropic Biota Sentient Microbial Colonies Primordial Network"
+                        "Psychotropic Biota",
+                        "Sentient Microbial Colonies",
+                        "Primordial Network"
                     ],
                     "organicResources": [
                         "Nutrient",
@@ -23693,7 +23821,8 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "Prismatic Plumes Active Faulting"
+                        "Prismatic Plumes",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -23739,7 +23868,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Sonorous Lithosphere Slushy Subsurface Seas Coralline Landmass"
+                        "Sonorous Lithosphere",
+                        "Slushy Subsurface Seas",
+                        "Coralline Landmass"
                     ],
                     "organicResources": [
                     ],
@@ -23941,7 +24072,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Amphibious Foothold Primordial Network"
+                        "Aeriform Life",
+                        "Amphibious Foothold",
+                        "Primordial Network"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -24706,7 +24839,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Psychotropic Biota Diseased Biosphere Global Glacial Recession"
+                        "Psychotropic Biota",
+                        "Diseased Biosphere",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -25588,7 +25723,8 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "Energetic Rifting Prismatic Plumes"
+                        "Energetic Rifting",
+                        "Prismatic Plumes"
                     ],
                     "organicResources": [
                     ],
@@ -25636,7 +25772,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Psychotropic Biota Sentient Microbial Colonies"
+                        "Ecological Consortium",
+                        "Psychotropic Biota",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -25688,7 +25826,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Gaseous Font"
+                        "Frozen Ecosystem",
+                        "Gaseous Font"
                     ],
                     "organicResources": [
                     ],
@@ -25965,7 +26104,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Coralline Landmass Emerging Tectonics Extinction Event"
+                        "Coralline Landmass",
+                        "Emerging Tectonics",
+                        "Extinction Event"
                     ],
                     "organicResources": [
                     ],
@@ -26286,7 +26427,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Amphibious Foothold Ecological Consortium"
+                        "Aeriform Life",
+                        "Amphibious Foothold",
+                        "Ecological Consortium"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -26598,7 +26741,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Global Glacial Recession Aeriform Life"
+                        "Global Glacial Recession",
+                        "Aeriform Life"
                     ],
                     "organicResources": [
                     ],
@@ -26797,7 +26941,9 @@
                         "Desert Sandy"
                     ],
                     "traits": [
-                        "Charred Ecosystem Prismatic Plumes Pelted Fields"
+                        "Charred Ecosystem",
+                        "Prismatic Plumes",
+                        "Pelted Fields"
                     ],
                     "organicResources": [
                     ],
@@ -27056,7 +27202,8 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Energetic Rifting Active Faulting"
+                        "Energetic Rifting",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -27544,7 +27691,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Crystalline Crust Global Glacial Recession"
+                        "Crystalline Crust",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                     ],
@@ -28005,7 +28153,9 @@
                         "Desert Sandy"
                     ],
                     "traits": [
-                        "Charred Ecosystem Continual Conductor Solar Storm Seasons"
+                        "Charred Ecosystem",
+                        "Continual Conductor",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -28049,7 +28199,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Sentient Microbial Colonies"
+                        "Ecological Consortium",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -28468,7 +28619,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Amphibious Foothold"
+                        "Aeriform Life",
+                        "Amphibious Foothold"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -28733,7 +28885,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Emerging Tectonics"
+                        "Frozen Ecosystem",
+                        "Emerging Tectonics"
                     ],
                     "organicResources": [
                     ],
@@ -29143,7 +29296,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Psychotropic Biota"
+                        "Ecological Consortium",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Analgesic",
@@ -29286,7 +29440,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Psychotropic Biota Sentient Microbial Colonies"
+                        "Ecological Consortium",
+                        "Psychotropic Biota",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Amino Acids",
@@ -29811,7 +29967,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Charred Ecosystem Coralline Landmass Global Glacial Recession"
+                        "Charred Ecosystem",
+                        "Coralline Landmass",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                         "Metabolic Agent",
@@ -29866,7 +30024,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Psychotropic Biota Diseased Biosphere Global Glacial Recession"
+                        "Psychotropic Biota",
+                        "Diseased Biosphere",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                         "Cosmetic",
@@ -30642,7 +30802,9 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Active Faulting Continual Conductor Extinction Event"
+                        "Active Faulting",
+                        "Continual Conductor",
+                        "Extinction Event"
                     ],
                     "organicResources": [
                     ],
@@ -30692,7 +30854,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Global Glacial Recession"
+                        "Ecological Consortium",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                         "Analgesic",
@@ -30792,7 +30955,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Primordial Network Amphibious Foothold Sentient Microbial Colonies"
+                        "Primordial Network",
+                        "Amphibious Foothold",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Amino Acids",
@@ -30844,7 +31009,11 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Coralline Landmass Frozen Ecosystem Gaseous Font Crystalline CrustFile:SF-planet trait-Primed for Life.svg Primed for Life"
+                        "Coralline Landmass",
+                        "Frozen Ecosystem",
+                        "Gaseous Font",
+                        "Crystalline Crust",
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life"
                     ],
                     "organicResources": [
                     ],
@@ -31323,7 +31492,8 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Amphibious Foothold Psychotropic Biota"
+                        "Amphibious Foothold",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Lubricant",
@@ -31587,7 +31757,8 @@
                     "biomes": [
                     ],
                     "traits": [
-                        "Frozen Ecosystem Slushy Subsurface Seas"
+                        "Frozen Ecosystem",
+                        "Slushy Subsurface Seas"
                     ],
                     "organicResources": [
                     ],
@@ -31653,7 +31824,8 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Crystalline Crust Continual Conductor"
+                        "Crystalline Crust",
+                        "Continual Conductor"
                     ],
                     "organicResources": [
                     ],
@@ -31918,7 +32090,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Sentient Microbial Colonies"
+                        "Amphibious Foothold",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                     ],
@@ -32256,7 +32429,8 @@
                         "Mountains"
                     ],
                     "traits": [
-                        "Extinction Event Charred Ecosystem"
+                        "Extinction Event",
+                        "Charred Ecosystem"
                     ],
                     "organicResources": [
                     ],
@@ -32304,7 +32478,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Global Glacial Recession Diseased Biosphere Sentient Microbial Colonies"
+                        "Global Glacial Recession",
+                        "Diseased Biosphere",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Aromatic",
@@ -32363,7 +32539,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Psychotropic Biota Sentient Microbial Colonies"
+                        "Psychotropic Biota",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Cosmetic",
@@ -32418,7 +32595,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Primed For Life Frozen Ecosystem Prismatic Plumes"
+                        "Primed For Life",
+                        "Frozen Ecosystem",
+                        "Prismatic Plumes"
                     ],
                     "organicResources": [
                     ],
@@ -32781,7 +32960,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Pelted Fields Solar Storm Seasons"
+                        "Pelted Fields",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -33288,7 +33468,8 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "Charred Ecosystem Active Faulting"
+                        "Charred Ecosystem",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -33742,7 +33923,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Emerging Tectonics Prismatic Plumes Energetic Rifting"
+                        "Emerging Tectonics",
+                        "Prismatic Plumes",
+                        "Energetic Rifting"
                     ],
                     "organicResources": [
                     ],
@@ -34578,7 +34761,8 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Global Glacial Recession Continual Conductor"
+                        "Global Glacial Recession",
+                        "Continual Conductor"
                     ],
                     "organicResources": [
                         "Sealant",
@@ -35278,7 +35462,10 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Ecological Consortium Primordial Network Aeriform Life"
+                        "Amphibious Foothold",
+                        "Ecological Consortium",
+                        "Primordial Network",
+                        "Aeriform Life"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -35332,7 +35519,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Psychotropic Biota Global Glacial Recession Sentient Microbial Colonies"
+                        "Psychotropic Biota",
+                        "Global Glacial Recession",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -35586,7 +35775,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Diseased Biosphere Sentient Microbial Colonies"
+                        "Diseased Biosphere",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -36169,7 +36359,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Global Glacial Recession Psychotropic Biota"
+                        "Ecological Consortium",
+                        "Global Glacial Recession",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -37090,7 +37282,9 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Crystalline Crust Active Faulting Extinction Event"
+                        "Crystalline Crust",
+                        "Active Faulting",
+                        "Extinction Event"
                     ],
                     "organicResources": [
                     ],
@@ -37135,7 +37329,8 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Sonorous Lithosphere Coralline Landmass"
+                        "Sonorous Lithosphere",
+                        "Coralline Landmass"
                     ],
                     "organicResources": [
                     ],
@@ -37268,7 +37463,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Energetic Rifting Prismatic Plumes"
+                        "Energetic Rifting",
+                        "Prismatic Plumes"
                     ],
                     "organicResources": [
                     ],
@@ -37514,7 +37710,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Emerging Tectonics Active Faulting"
+                        "Emerging Tectonics",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -38708,7 +38905,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Continual Conductor Crystalline Crust"
+                        "Continual Conductor",
+                        "Crystalline Crust"
                     ],
                     "organicResources": [
                     ],
@@ -38796,7 +38994,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Psychotropic Biota Gravitational Anomaly"
+                        "Aeriform Life",
+                        "Psychotropic Biota",
+                        "Gravitational Anomaly"
                     ],
                     "organicResources": [
                         "Analgesic",
@@ -39009,7 +39209,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Crystalline Crust Gravitational Anomaly"
+                        "Crystalline Crust",
+                        "Gravitational Anomaly"
                     ],
                     "organicResources": [
                     ],
@@ -39097,7 +39298,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Primed For Life"
+                        "Aeriform Life",
+                        "Primed For Life"
                     ],
                     "organicResources": [
                     ],
@@ -39769,7 +39971,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Sonorous Lithosphere Crystalline Crust Continual Conductor"
+                        "Sonorous Lithosphere",
+                        "Crystalline Crust",
+                        "Continual Conductor"
                     ],
                     "organicResources": [
                     ],
@@ -40209,7 +40413,8 @@
                         "Ocean"
                     ],
                     "traits": [
-                        "Aeriform Life Ecological Consortium"
+                        "Aeriform Life",
+                        "Ecological Consortium"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -40340,7 +40545,10 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Coralline Landmass Amphibious Foothold Sentient Microbial Colonies Primordial Network"
+                        "Coralline Landmass",
+                        "Amphibious Foothold",
+                        "Sentient Microbial Colonies",
+                        "Primordial Network"
                     ],
                     "organicResources": [
                     ],
@@ -40792,7 +41000,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Global Glacial Recession Diseased Biosphere Psychotropic Biota"
+                        "Global Glacial Recession",
+                        "Diseased Biosphere",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Analgesic",
@@ -41783,7 +41993,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Psychotropic Biota"
+                        "Ecological Consortium",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -41840,7 +42051,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Amphibious Foothold"
+                        "Aeriform Life",
+                        "Amphibious Foothold"
                     ],
                     "organicResources": [
                     ],
@@ -41884,7 +42096,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Active Faulting Energetic Rifting Sonorous Lithosphere"
+                        "Active Faulting",
+                        "Energetic Rifting",
+                        "Sonorous Lithosphere"
                     ],
                     "organicResources": [
                     ],
@@ -41932,7 +42146,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Sonorous Lithosphere Slushy Subsurface Seas"
+                        "Sonorous Lithosphere",
+                        "Slushy Subsurface Seas"
                     ],
                     "organicResources": [
                     ],
@@ -41983,7 +42198,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Diseased Biosphere"
+                        "Aeriform Life",
+                        "Diseased Biosphere"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -42710,7 +42926,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Sentient Microbial Colonies"
+                        "Amphibious Foothold",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Amino Acids",
@@ -43501,7 +43718,8 @@
                         "Cratered"
                     ],
                     "traits": [
-                        "Boiled Seas Bolide Bombardment"
+                        "Boiled Seas",
+                        "Bolide Bombardment"
                     ],
                     "organicResources": [
                     ],
@@ -44123,7 +44341,9 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "Charred Ecosystem Gaseous Font Prismatic Plumes"
+                        "Charred Ecosystem",
+                        "Gaseous Font",
+                        "Prismatic Plumes"
                     ],
                     "organicResources": [
                     ],
@@ -44465,7 +44685,8 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Continual Conductor Active Faulting"
+                        "Continual Conductor",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -44551,7 +44772,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Amphibious Foothold Sentient Microbial Colonies"
+                        "Aeriform Life",
+                        "Amphibious Foothold",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Membrane",
@@ -44605,7 +44828,8 @@
                         "Ocean"
                     ],
                     "traits": [
-                        "Continual Conductor Solar Storm Seasons"
+                        "Continual Conductor",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -44652,7 +44876,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Diseased Biosphere Psychotropic Biota"
+                        "Diseased Biosphere",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -44709,7 +44934,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Energetic Rifting Active Faulting"
+                        "Energetic Rifting",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                         "Membrane",
@@ -45401,7 +45627,8 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "Global Glacial Recession Crystalline Crust"
+                        "Global Glacial Recession",
+                        "Crystalline Crust"
                     ],
                     "organicResources": [
                     ],
@@ -45566,7 +45793,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Sentient Microbial Colonies Aeriform Life Global Glacial Recession"
+                        "Sentient Microbial Colonies",
+                        "Aeriform Life",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -45714,7 +45943,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen EcosystemFile:SF-planet trait-Primed for Life.svg Primed for Life"
+                        "Frozen Ecosystem",
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life"
                     ],
                     "organicResources": [
                     ],
@@ -46240,7 +46470,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Extinction Event Pelted Fields"
+                        "Extinction Event",
+                        "Pelted Fields"
                     ],
                     "organicResources": [
                     ],
@@ -46809,7 +47040,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Energetic Rifting Primordial Network Psychotropic Biota"
+                        "Energetic Rifting",
+                        "Primordial Network",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Aromatic",
@@ -47611,7 +47844,9 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Energetic Rifting Prismatic Plumes Active Faulting"
+                        "Energetic Rifting",
+                        "Prismatic Plumes",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -47658,7 +47893,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Sentient Microbial Colonies"
+                        "Amphibious Foothold",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Amino Acids",
@@ -47718,7 +47954,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Global Glacial Recession Sentient Microbial Colonies"
+                        "Amphibious Foothold",
+                        "Global Glacial Recession",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Amino Acids",
@@ -48029,7 +48267,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Global Glacial Recession"
+                        "Aeriform Life",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                     ],
@@ -48392,7 +48631,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Energetic Rifting Continual Conductor"
+                        "Energetic Rifting",
+                        "Continual Conductor"
                     ],
                     "organicResources": [
                     ],
@@ -49064,7 +49304,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Global Glacial Recession"
+                        "Ecological Consortium",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -49196,7 +49437,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Ecological Consortium Psychotropic Biota"
+                        "Amphibious Foothold",
+                        "Ecological Consortium",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Aromatic",
@@ -49251,7 +49494,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Slushy Subsurface Seas Crystalline Crust"
+                        "Slushy Subsurface Seas",
+                        "Crystalline Crust"
                     ],
                     "organicResources": [
                     ],
@@ -50187,7 +50431,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Sentient Microbial Colonies"
+                        "Ecological Consortium",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -50248,7 +50493,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Prismatic Plumes Sonorous Lithosphere Active Faulting"
+                        "Prismatic Plumes",
+                        "Sonorous Lithosphere",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -50567,7 +50814,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Global Glacial Recession Solar Storm Seasons Emerging Tectonics"
+                        "Global Glacial Recession",
+                        "Solar Storm Seasons",
+                        "Emerging Tectonics"
                     ],
                     "organicResources": [
                     ],
@@ -50810,7 +51059,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Diseased Biosphere Global Glacial Recession"
+                        "Diseased Biosphere",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -51060,7 +51310,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Coralline Landmass Ecological Consortium"
+                        "Amphibious Foothold",
+                        "Coralline Landmass",
+                        "Ecological Consortium"
                     ],
                     "organicResources": [
                     ],
@@ -51542,7 +51794,8 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Prismatic Plumes Active Faulting"
+                        "Prismatic Plumes",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -51590,7 +51843,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Primordial Network Crystalline Crust"
+                        "Primordial Network",
+                        "Crystalline Crust"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -51786,7 +52040,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "File:SF-planet trait-Primed for Life.svg Primed for Life Sonorous Lithosphere"
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life",
+                        "Sonorous Lithosphere"
                     ],
                     "organicResources": [
                     ],
@@ -52186,7 +52441,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Primordial Network Psychotropic Biota"
+                        "Primordial Network",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Amino Acids",
@@ -52395,7 +52651,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Crystalline Crust Coralline Landmass"
+                        "Frozen Ecosystem",
+                        "Crystalline Crust",
+                        "Coralline Landmass"
                     ],
                     "organicResources": [
                     ],
@@ -52589,7 +52847,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Pelted Fields Frozen Ecosystem"
+                        "Pelted Fields",
+                        "Frozen Ecosystem"
                     ],
                     "organicResources": [
                     ],
@@ -53177,7 +53436,9 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "Charred Ecosystem Prismatic Plumes Solar Storm Seasons"
+                        "Charred Ecosystem",
+                        "Prismatic Plumes",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -53283,7 +53544,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Prismatic Plumes"
+                        "Frozen Ecosystem",
+                        "Prismatic Plumes"
                     ],
                     "organicResources": [
                     ],
@@ -53446,7 +53708,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Pelted Fields Solar Storm Seasons"
+                        "Frozen Ecosystem",
+                        "Pelted Fields",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -54101,7 +54365,8 @@
                         "Cratered"
                     ],
                     "traits": [
-                        "Boiled Seas Charred Ecosystem"
+                        "Boiled Seas",
+                        "Charred Ecosystem"
                     ],
                     "organicResources": [
                     ],
@@ -54182,7 +54447,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Solar Storm Seasons Frozen Ecosystem"
+                        "Solar Storm Seasons",
+                        "Frozen Ecosystem"
                     ],
                     "organicResources": [
                     ],
@@ -54421,7 +54687,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Energetic Rifting Emerging Tectonics"
+                        "Frozen Ecosystem",
+                        "Energetic Rifting",
+                        "Emerging Tectonics"
                     ],
                     "organicResources": [
                     ],
@@ -55297,7 +55565,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Emerging Tectonics Sentient Microbial Colonies"
+                        "Amphibious Foothold",
+                        "Emerging Tectonics",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -55539,7 +55809,9 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Charred Ecosystem Active Faulting Emerging Tectonics"
+                        "Charred Ecosystem",
+                        "Active Faulting",
+                        "Emerging Tectonics"
                     ],
                     "organicResources": [
                     ],
@@ -55720,7 +55992,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Global Glacial Recession Sentient Microbial Colonies"
+                        "Ecological Consortium",
+                        "Global Glacial Recession",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Cosmetic",
@@ -55849,7 +56123,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Solar Storm Seasons Crystalline Crust"
+                        "Solar Storm Seasons",
+                        "Crystalline Crust"
                     ],
                     "organicResources": [
                     ],
@@ -56146,7 +56421,8 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Continual Conductor Active Faulting"
+                        "Continual Conductor",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -56238,7 +56514,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Emerging Tectonics Aeriform Life"
+                        "Emerging Tectonics",
+                        "Aeriform Life"
                     ],
                     "organicResources": [
                         "Aromatic",
@@ -56371,7 +56648,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Pelted Fields Gaseous Font"
+                        "Pelted Fields",
+                        "Gaseous Font"
                     ],
                     "organicResources": [
                     ],
@@ -56577,7 +56855,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Active Faulting Frozen Ecosystem"
+                        "Active Faulting",
+                        "Frozen Ecosystem"
                     ],
                     "organicResources": [
                     ],
@@ -57574,7 +57853,9 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "File:SF-planet trait-Primed for Life.svg Primed for Life Boiled Seas Emerging Tectonics"
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life",
+                        "Boiled Seas",
+                        "Emerging Tectonics"
                     ],
                     "organicResources": [
                     ],
@@ -58179,7 +58460,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Psychotropic Biota Sentient Microbial Colonies"
+                        "Psychotropic Biota",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Biosuppressant",
@@ -58235,7 +58517,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Emerging Tectonics"
+                        "Frozen Ecosystem",
+                        "Emerging Tectonics"
                     ],
                     "organicResources": [
                     ],
@@ -58283,7 +58566,9 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Pelted Fields Crystalline Crust Continual Conductor"
+                        "Pelted Fields",
+                        "Crystalline Crust",
+                        "Continual Conductor"
                     ],
                     "organicResources": [
                     ],
@@ -58444,7 +58729,8 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Continual Conductor Solar Storm Seasons"
+                        "Continual Conductor",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -58532,7 +58818,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Aeriform Life Amphibious Foothold"
+                        "Ecological Consortium",
+                        "Aeriform Life",
+                        "Amphibious Foothold"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -58916,7 +59204,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Gaseous Font Pelted Fields"
+                        "Gaseous Font",
+                        "Pelted Fields"
                     ],
                     "organicResources": [
                     ],
@@ -58999,7 +59288,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "File:SF-planet trait-Primed for Life.svg Primed for Life Slushy Subsurface Seas"
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life",
+                        "Slushy Subsurface Seas"
                     ],
                     "organicResources": [
                     ],
@@ -59118,7 +59408,9 @@
                         "Desert Sandy"
                     ],
                     "traits": [
-                        "Sonorous Lithosphere Coralline Landmass Solar Storm Seasons"
+                        "Sonorous Lithosphere",
+                        "Coralline Landmass",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -59486,7 +59778,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Global Glacial Recession Amphibious Foothold Ecological Consortium"
+                        "Global Glacial Recession",
+                        "Amphibious Foothold",
+                        "Ecological Consortium"
                     ],
                     "organicResources": [
                         "Aromatic",
@@ -59580,7 +59874,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Slushy Subsurface Seas Crystalline Crust Pelted Fields"
+                        "Slushy Subsurface Seas",
+                        "Crystalline Crust",
+                        "Pelted Fields"
                     ],
                     "organicResources": [
                     ],
@@ -59797,7 +60093,8 @@
                         "Mountains"
                     ],
                     "traits": [
-                        "Active Faulting Emerging Tectonics"
+                        "Active Faulting",
+                        "Emerging Tectonics"
                     ],
                     "organicResources": [
                     ],
@@ -60429,7 +60726,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Solar Storm Seasons Extinction Event"
+                        "Solar Storm Seasons",
+                        "Extinction Event"
                     ],
                     "organicResources": [
                     ],
@@ -60575,7 +60873,8 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Extinction Event Solar Storm Seasons"
+                        "Extinction Event",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -60626,7 +60925,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Psychotropic Biota"
+                        "Ecological Consortium",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -60730,7 +61030,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Primordial Network Sentient Microbial Colonies"
+                        "Ecological Consortium",
+                        "Primordial Network",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Biosuppressant",
@@ -62645,7 +62947,8 @@
                         "Cratered"
                     ],
                     "traits": [
-                        "Boiled Seas Charred Ecosystem"
+                        "Boiled Seas",
+                        "Charred Ecosystem"
                     ],
                     "organicResources": [
                     ],
@@ -62763,7 +63066,9 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Sonorous Lithosphere Energetic Rifting Aeriform Life"
+                        "Sonorous Lithosphere",
+                        "Energetic Rifting",
+                        "Aeriform Life"
                     ],
                     "organicResources": [
                     ],
@@ -62847,7 +63152,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Primordial Network Sentient Microbial Colonies"
+                        "Ecological Consortium",
+                        "Primordial Network",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -63018,7 +63325,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Gaseous Font Extinction Event"
+                        "Gaseous Font",
+                        "Extinction Event"
                     ],
                     "organicResources": [
                     ],
@@ -63063,7 +63371,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Slushy Subsurface Seas Crystalline Crust"
+                        "Slushy Subsurface Seas",
+                        "Crystalline Crust"
                     ],
                     "organicResources": [
                     ],
@@ -63346,7 +63655,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Pelted Fields Frozen Ecosystem"
+                        "Pelted Fields",
+                        "Frozen Ecosystem"
                     ],
                     "organicResources": [
                     ],
@@ -63596,7 +63906,9 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Continual Conductor Active Faulting Global Glacial Recession"
+                        "Continual Conductor",
+                        "Active Faulting",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                     ],
@@ -63648,7 +63960,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Sentient Microbial Colonies"
+                        "Amphibious Foothold",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Aromatic",
@@ -63742,7 +64055,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Continual Conductor Crystalline Crust"
+                        "Continual Conductor",
+                        "Crystalline Crust"
                     ],
                     "organicResources": [
                     ],
@@ -63791,7 +64105,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Sentient Microbial Colonies Primordial Network"
+                        "Sentient Microbial Colonies",
+                        "Primordial Network"
                     ],
                     "organicResources": [
                         "Analgesic",
@@ -63890,7 +64205,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Emerging Tectonics Slushy Subsurface Seas"
+                        "Frozen Ecosystem",
+                        "Emerging Tectonics",
+                        "Slushy Subsurface Seas"
                     ],
                     "organicResources": [
                     ],
@@ -64057,7 +64374,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Coralline Landmass Amphibious Foothold"
+                        "Coralline Landmass",
+                        "Amphibious Foothold"
                     ],
                     "organicResources": [
                     ],
@@ -64960,7 +65278,8 @@
                         "Desert Sandy"
                     ],
                     "traits": [
-                        "Solar Storm Seasons Prismatic Plumes"
+                        "Solar Storm Seasons",
+                        "Prismatic Plumes"
                     ],
                     "organicResources": [
                     ],
@@ -65289,7 +65608,8 @@
                         "Ocean"
                     ],
                     "traits": [
-                        "Amphibious Foothold Psychotropic Biota"
+                        "Amphibious Foothold",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -65345,7 +65665,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Primordial Network"
+                        "Aeriform Life",
+                        "Primordial Network"
                     ],
                     "organicResources": [
                     ],
@@ -65763,7 +66084,8 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Continual Conductor Charred Ecosystem"
+                        "Continual Conductor",
+                        "Charred Ecosystem"
                     ],
                     "organicResources": [
                     ],
@@ -65844,7 +66166,9 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Charred Ecosystem Prismatic Plumes Active Faulting"
+                        "Charred Ecosystem",
+                        "Prismatic Plumes",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -65892,7 +66216,8 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "Solar Storm Seasons Prismatic Plumes"
+                        "Solar Storm Seasons",
+                        "Prismatic Plumes"
                     ],
                     "organicResources": [
                         "Cosmetic",
@@ -65936,7 +66261,8 @@
                         "Cratered"
                     ],
                     "traits": [
-                        "Boiled Seas Bolide Bombardment"
+                        "Boiled Seas",
+                        "Bolide Bombardment"
                     ],
                     "organicResources": [
                     ],
@@ -65979,7 +66305,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Psychotropic Biota Sentient Microbial Colonies"
+                        "Aeriform Life",
+                        "Psychotropic Biota",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -66037,7 +66365,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "File:SF-planet trait-Primed for Life.svg Primed for Life Pelted Fields Active Faulting"
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life",
+                        "Pelted Fields",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -67777,7 +68107,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Ecological Consortium Psychotropic Biota"
+                        "Amphibious Foothold",
+                        "Ecological Consortium",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Amino Acids",
@@ -67876,7 +68208,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Sonorous Lithosphere Active Faulting"
+                        "Sonorous Lithosphere",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -68147,7 +68480,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Prismatic Plumes Sonorous Lithosphere"
+                        "Frozen Ecosystem",
+                        "Prismatic Plumes",
+                        "Sonorous Lithosphere"
                     ],
                     "organicResources": [
                     ],
@@ -68222,7 +68557,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Active Faulting Energetic Rifting"
+                        "Active Faulting",
+                        "Energetic Rifting"
                     ],
                     "organicResources": [
                     ],
@@ -69042,7 +69378,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Coralline Landmass Ecological Consortium"
+                        "Amphibious Foothold",
+                        "Coralline Landmass",
+                        "Ecological Consortium"
                     ],
                     "organicResources": [
                     ],
@@ -69212,7 +69550,9 @@
                         "Volcanic"
                     ],
                     "traits": [
-                        "Continual ConductorFile:SF-planet trait-Primed for Life.svg Primed for Life Active Faulting"
+                        "Continual Conductor",
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -69259,7 +69599,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Diseased Biosphere Psychotropic Biota"
+                        "Diseased Biosphere",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Analgesic",
@@ -69519,7 +69860,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Sonorous Lithosphere Prismatic Plumes Active Faulting"
+                        "Sonorous Lithosphere",
+                        "Prismatic Plumes",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -69565,7 +69908,9 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Continual Conductor Pelted Fields Prismatic Plumes"
+                        "Continual Conductor",
+                        "Pelted Fields",
+                        "Prismatic Plumes"
                     ],
                     "organicResources": [
                     ],
@@ -69647,7 +69992,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Pelted Fields Solar Storm Seasons"
+                        "Pelted Fields",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -69694,7 +70040,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Pelted Fields Solar Storm Seasons"
+                        "Pelted Fields",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -70235,7 +70582,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Emerging Tectonics Amphibious Foothold"
+                        "Emerging Tectonics",
+                        "Amphibious Foothold"
                     ],
                     "organicResources": [
                         "Aromatic",
@@ -70328,7 +70676,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Crystalline Crust Gaseous Font Solar Storm Seasons"
+                        "Crystalline Crust",
+                        "Gaseous Font",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                     ],
@@ -70403,7 +70753,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Continual Conductor Extinction Event Gaseous Font"
+                        "Continual Conductor",
+                        "Extinction Event",
+                        "Gaseous Font"
                     ],
                     "organicResources": [
                     ],
@@ -70652,7 +71004,9 @@
                         "Cratered"
                     ],
                     "traits": [
-                        "Bolide Bombardment Boiled Seas Charred Ecosystem"
+                        "Bolide Bombardment",
+                        "Boiled Seas",
+                        "Charred Ecosystem"
                     ],
                     "organicResources": [
                     ],
@@ -70696,7 +71050,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Ecological Consortium Global Glacial Recession"
+                        "Ecological Consortium",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -70956,7 +71311,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Continual Conductor Sonorous Lithosphere Active Faulting"
+                        "Continual Conductor",
+                        "Sonorous Lithosphere",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -71518,7 +71875,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Sentient Microbial Colonies Amphibious Foothold"
+                        "Sentient Microbial Colonies",
+                        "Amphibious Foothold"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -71663,7 +72021,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Global Glacial Recession Extinction Event"
+                        "Global Glacial Recession",
+                        "Extinction Event"
                     ],
                     "organicResources": [
                     ],
@@ -72064,7 +72423,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Primordial Network"
+                        "Amphibious Foothold",
+                        "Primordial Network"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -72258,7 +72618,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Diseased Biosphere Amphibious Foothold"
+                        "Aeriform Life",
+                        "Diseased Biosphere",
+                        "Amphibious Foothold"
                     ],
                     "organicResources": [
                         "Antimicrobial",
@@ -72346,7 +72708,9 @@
                         "Snowfield"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Crystalline CrustFile:SF-planet trait-Primed for Life.svg Primed for Life"
+                        "Frozen Ecosystem",
+                        "Crystalline Crust",
+                        "File:SF-planet trait-Primed for Life.svg Primed for Life"
                     ],
                     "organicResources": [
                     ],
@@ -72464,7 +72828,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Gaseous Font Slushy Subsurface Seas"
+                        "Gaseous Font",
+                        "Slushy Subsurface Seas"
                     ],
                     "organicResources": [
                     ],
@@ -73357,7 +73722,9 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Charred Ecosystem Aeriform Life Emerging Tectonics"
+                        "Charred Ecosystem",
+                        "Aeriform Life",
+                        "Emerging Tectonics"
                     ],
                     "organicResources": [
                     ],
@@ -73555,7 +73922,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Pelted Fields Sonorous Lithosphere"
+                        "Pelted Fields",
+                        "Sonorous Lithosphere"
                     ],
                     "organicResources": [
                     ],
@@ -73661,7 +74029,9 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Pelted Fields Prismatic Plumes Solar Storm Seasons"
+                        "Pelted Fields",
+                        "Prismatic Plumes",
+                        "Solar Storm Seasons"
                     ],
                     "organicResources": [
                         "Metabolic Agent",
@@ -73816,7 +74186,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Global Glacial Recession Psychotropic Biota"
+                        "Global Glacial Recession",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Amino Acids",
@@ -74215,7 +74586,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Energetic Rifting Gaseous Font"
+                        "Energetic Rifting",
+                        "Gaseous Font"
                     ],
                     "organicResources": [
                     ],
@@ -74779,7 +75151,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Gaseous Font Pelted Fields"
+                        "Gaseous Font",
+                        "Pelted Fields"
                     ],
                     "organicResources": [
                     ],
@@ -74860,7 +75233,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Energetic Rifting Prismatic Plumes Active Faulting"
+                        "Energetic Rifting",
+                        "Prismatic Plumes",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -75893,7 +76268,9 @@
                         "Hills"
                     ],
                     "traits": [
-                        "Primed For Life Prismatic Plumes Active Faulting"
+                        "Primed For Life",
+                        "Prismatic Plumes",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -75936,7 +76313,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Coralline Landmass Psychotropic Biota"
+                        "Coralline Landmass",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Adhesive",
@@ -76035,7 +76413,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Frozen Ecosystem Primed For Life Sonorous Lithosphere"
+                        "Frozen Ecosystem",
+                        "Primed For Life",
+                        "Sonorous Lithosphere"
                     ],
                     "organicResources": [
                     ],
@@ -76529,7 +76909,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Global Glacial Recession Solar Storm Seasons Crystalline Crust"
+                        "Global Glacial Recession",
+                        "Solar Storm Seasons",
+                        "Crystalline Crust"
                     ],
                     "organicResources": [
                     ],
@@ -76698,7 +77080,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Crystalline Crust Slushy Subsurface Seas"
+                        "Crystalline Crust",
+                        "Slushy Subsurface Seas"
                     ],
                     "organicResources": [
                     ],
@@ -77037,7 +77420,9 @@
                         "SavannahBarren"
                     ],
                     "traits": [
-                        "Emerging Tectonics Energetic Rifting Prismatic Plumes"
+                        "Emerging Tectonics",
+                        "Energetic Rifting",
+                        "Prismatic Plumes"
                     ],
                     "organicResources": [
                     ],
@@ -77082,7 +77467,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Diseased Biosphere Ecological Consortium Psychotropic Biota"
+                        "Diseased Biosphere",
+                        "Ecological Consortium",
+                        "Psychotropic Biota"
                     ],
                     "organicResources": [
                         "Fiber",
@@ -77138,7 +77525,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Global Glacial Recession Ecological Consortium Sentient Microbial Colonies"
+                        "Global Glacial Recession",
+                        "Ecological Consortium",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Amino Acids",
@@ -77321,7 +77710,9 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Aeriform Life Ecological Consortium Sentient Microbial Colonies"
+                        "Aeriform Life",
+                        "Ecological Consortium",
+                        "Sentient Microbial Colonies"
                     ],
                     "organicResources": [
                         "Hallucinogen",
@@ -77490,7 +77881,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Crystalline Crust Active Faulting"
+                        "Crystalline Crust",
+                        "Active Faulting"
                     ],
                     "organicResources": [
                     ],
@@ -78281,7 +78673,8 @@
                         "Polar Ice"
                     ],
                     "traits": [
-                        "Amphibious Foothold Global Glacial Recession"
+                        "Amphibious Foothold",
+                        "Global Glacial Recession"
                     ],
                     "organicResources": [
                         "Amino Acids",
