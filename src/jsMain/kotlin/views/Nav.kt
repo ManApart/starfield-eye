@@ -7,6 +7,7 @@ import kotlinx.html.*
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import persistMemory
+import views.lifeSigns.lifeSignsView
 
 
 fun TagConsumer<HTMLElement>.navButtons(navClass: String = "header-nav") {

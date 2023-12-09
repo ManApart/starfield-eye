@@ -11,10 +11,10 @@ import kotlinx.html.js.onMouseOutFunction
 import kotlinx.html.js.onMouseOverFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.events.KeyboardEvent
-import views.clearFloraFaunaView
+import views.lifeSigns.clearFloraFaunaView
 import views.clearOutpostsView
-import views.faunaView
-import views.floraView
+import views.lifeSigns.faunaView
+import views.lifeSigns.floraView
 
 private var currentPlanet = 0
 private var currentPlanetType = "star"

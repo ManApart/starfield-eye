@@ -1,4 +1,4 @@
-package views
+package views.lifeSigns
 
 import FaunaWikiData
 import FloraWikiData
@@ -23,6 +23,7 @@ import replaceElement
 import searchLifeSigns
 import starDivs
 import updateUrl
+import views.*
 
 fun lifeSignsView() {
     updateUrl("lifesigns")

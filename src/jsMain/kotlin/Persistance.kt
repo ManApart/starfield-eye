@@ -31,6 +31,9 @@ data class InMemoryStorage(
     fun planetInfo(uniqueId: String): PlanetInfo {
         return planetUserInfo[uniqueId] ?: PlanetInfo(uniqueId)
     }
+    fun assurePlanetInfo(uniqueId: String, info: PlanetInfo) {
+        if (!planetUserInfo.contains(uniqueId)) planetUserInfo[uniqueId] = info
+    }
 
     fun isDiscovered(system: Int) = if(inMemoryStorage.showUndiscovered == true) true else inMemoryStorage.discoveredStars.contains(system)
 

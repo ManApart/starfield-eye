@@ -18,6 +18,7 @@ import replaceElement
 import searchPlanets
 import starDivs
 import updateUrl
+import views.lifeSigns.clearFloraFaunaView
 import views.system.detailView
 
 fun catalogueView() {

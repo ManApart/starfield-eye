@@ -1,49 +1,39 @@
-package views
+package views.lifeSigns
 
 import FloraWikiData
 import components.counter
 import components.screenshot
-import doRouting
 import el
 import floraReference
 import galaxy
 import inMemoryStorage
-import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
-import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import persistMemory
+import replaceElement
 import views.system.systemView
 import kotlin.math.max
 import kotlin.math.min
 
 fun floraView(system: Int, planet: Int) {
-    val root = el("flora-view")
-    root.innerHTML = ""
-    root.removeClass("section-view-box")
-    floraReference["$system-$planet"]?.let { planetFlora ->
-        root.addClass("section-view-box")
-        root.append {
+    val flora = floraReference["$system-$planet"]
+    val classes = if (flora != null) "section-view-box" else ""
+    replaceElement("flora-view", classes) {
+        flora?.let { planetFlora ->
             h2 { +"Flora" }
-
             planetFlora.forEach { flora ->
                 display(flora)
-            }
 
+            }
         }
     }
 }
 
 fun floraView(flora: FloraWikiData) {
-    val root = el("flora-view")
-    root.innerHTML = ""
-    root.removeClass("section-view-box")
-    root.addClass("section-view-box")
-    root.append {
+    replaceElement("flora-view", "section-view-box") {
         h2 { +"Flora" }
-
         display(flora, true)
     }
 }
@@ -75,40 +65,52 @@ private fun TagConsumer<HTMLElement>.display(flora: FloraWikiData, linkToSystem:
                     tr {
                         td { +"Scanned %" }
                         td {
-                            val scanPercent = inMemoryStorage.planetInfo(flora.planetId).scan.lifeScans[flora.name] ?: 0
+                            val info = inMemoryStorage.planetInfo(flora.planetId)
+                            val scanPercent = info.scan.lifeScans[flora.name] ?: 0
                             counter("${flora.uniqueId}-scan", { scanPercent }) {
                                 val newVal = min(100, max(0, it))
-                                inMemoryStorage.planetInfo(flora.planetId).scan.lifeScans[flora.name] = newVal
-                                doRouting()
+                                inMemoryStorage.assurePlanetInfo(flora.planetId, info)
+                                info.scan.lifeScans[flora.name] = newVal
+                                replaceElement("${flora.uniqueId}-details") {
+                                    detailsTable(flora)
+                                }
                                 persistMemory()
                             }
                         }
                     }
                 }
             }
-
-            table("detail-view-table") {
-                (listOf(
-                    "Biomes" to biomes.joinToString(),
-                    "Resource" to resource,
-                ) + other.entries.map { it.key to it.value })
-                    .filter { (_, data) -> data.isNotBlank() && data != "0" }
-                    .let { data ->
-                        if (inMemoryStorage.showUndiscovered != false) data else {
-                            val percent =
-                                (flora.planetId?.let { inMemoryStorage.planetInfo(it).scan.lifeScans[flora.name] }
-                                    ?: 0) / 100.0
-                            val totalRows = (data.size * percent).toInt()
-                            data.take(totalRows)
-                        }
-                    }
-                    .forEach { (title, data) ->
-                        tr {
-                            td { +title }
-                            td { +data }
-                        }
-                    }
+            div {
+                id = "${flora.uniqueId}-details"
+                detailsTable(flora)
             }
+        }
+    }
+}
+
+private fun TagConsumer<HTMLElement>.detailsTable(flora: FloraWikiData) {
+    with(flora) {
+        table("detail-view-table") {
+            (listOf(
+                "Biomes" to biomes.joinToString(),
+                "Resource" to resource,
+            ) + other.entries.map { it.key to it.value })
+                .filter { (_, data) -> data.isNotBlank() && data != "0" }
+                .let { data ->
+                    if (inMemoryStorage.showUndiscovered != false) data else {
+                        val percent =
+                            (planetId?.let { inMemoryStorage.planetInfo(it).scan.lifeScans[flora.name] }
+                                ?: 0) / 100.0
+                        val totalRows = (data.size * percent).toInt()
+                        data.take(totalRows)
+                    }
+                }
+                .forEach { (title, data) ->
+                    tr {
+                        td { +title }
+                        td { +data }
+                    }
+                }
         }
     }
 }

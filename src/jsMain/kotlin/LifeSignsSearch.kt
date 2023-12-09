@@ -1,4 +1,4 @@
-import views.filterLife
+import views.lifeSigns.filterLife
 
 fun searchLifeSigns() {
     val planets = getPlanets()

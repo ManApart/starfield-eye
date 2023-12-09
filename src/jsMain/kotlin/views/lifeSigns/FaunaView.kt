@@ -1,4 +1,4 @@
-package views
+package views.lifeSigns
 
 import FaunaWikiData
 import components.counter
@@ -15,33 +15,28 @@ import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import persistMemory
+import replaceElement
 import views.system.systemView
 import kotlin.math.max
 import kotlin.math.min
 
 fun faunaView(system: Int, planet: Int) {
-    val root = el("fauna-view")
-    root.innerHTML = ""
-    root.removeClass("section-view-box")
-    faunaReference["$system-$planet"]?.let { planetFauna ->
-        root.addClass("section-view-box")
-        root.append {
+    val fauna = faunaReference["$system-$planet"]
+    val classes = if (fauna != null) "section-view-box" else ""
+    replaceElement("fauna-view", classes) {
+        fauna?.let { planetFauna ->
             h2 { +"Fauna" }
 
             planetFauna.forEach { fauna ->
                 display(fauna)
-            }
 
+            }
         }
     }
 }
 
 fun faunaView(fauna: FaunaWikiData) {
-    val root = el("fauna-view")
-    root.innerHTML = ""
-    root.removeClass("section-view-box")
-    root.addClass("section-view-box")
-    root.append {
+    replaceElement("fauna-view", "section-view-box") {
         h2 { +"Fauna" }
         display(fauna, true)
     }
@@ -75,43 +70,54 @@ private fun TagConsumer<HTMLElement>.display(fauna: FaunaWikiData, linkToSystem:
                     tr {
                         td { +"Scanned %" }
                         td {
-                            val scanPercent = inMemoryStorage.planetInfo(fauna.planetId).scan.lifeScans[fauna.name] ?: 0
+                            val info = inMemoryStorage.planetInfo(fauna.planetId)
+                            val scanPercent = info.scan.lifeScans[fauna.name] ?: 0
                             counter("${fauna.uniqueId}-scan", { scanPercent }) {
                                 val newVal = min(100, max(0, it))
-                                inMemoryStorage.planetInfo(fauna.planetId).scan.lifeScans[fauna.name] = newVal
-                                doRouting()
+                                inMemoryStorage.assurePlanetInfo(fauna.planetId, info)
+                                info.scan.lifeScans[fauna.name] = newVal
+                                replaceElement("${fauna.uniqueId}-details") {
+                                    detailsTable(fauna)
+                                }
                                 persistMemory()
                             }
                         }
                     }
                 }
             }
-
-
-            table("detail-view-table") {
-                (listOf(
-                    "Biomes" to biomes.joinToString(),
-                    "Resource" to resource,
-                    "Temperament" to temperament.name.lowercase().capitalize(),
-                    "Abilities" to abilities.joinToString(),
-                ) + other.entries.map { it.key to it.value }.sortedBy { it.first })
-                    .filter { (_, data) -> data.isNotBlank() && data != "0" }
-                    .let { data ->
-                        if (inMemoryStorage.showUndiscovered != false) data else {
-                            val percent =
-                                (fauna.planetId?.let { inMemoryStorage.planetInfo(it).scan.lifeScans[fauna.name] }
-                                    ?: 0) / 100.0
-                            val totalRows = (data.size * percent).toInt()
-                            data.take(totalRows)
-                        }
-                    }
-                    .forEach { (title, data) ->
-                        tr {
-                            td { +title }
-                            td { +data }
-                        }
-                    }
+            div {
+                id = "${fauna.uniqueId}-details"
+                detailsTable(fauna)
             }
+        }
+    }
+}
+
+private fun TagConsumer<HTMLElement>.detailsTable(fauna: FaunaWikiData) {
+    with(fauna) {
+        table("detail-view-table") {
+            (listOf(
+                "Biomes" to biomes.joinToString(),
+                "Resource" to resource,
+                "Temperament" to temperament.name.lowercase().capitalize(),
+                "Abilities" to abilities.joinToString(),
+            ) + other.entries.map { it.key to it.value }.sortedBy { it.first })
+                .filter { (_, data) -> data.isNotBlank() && data != "0" }
+                .let { data ->
+                    if (inMemoryStorage.showUndiscovered != false) data else {
+                        val percent =
+                            (fauna.planetId?.let { inMemoryStorage.planetInfo(it).scan.lifeScans[fauna.name] }
+                                ?: 0) / 100.0
+                        val totalRows = (data.size * percent).toInt()
+                        data.take(totalRows)
+                    }
+                }
+                .forEach { (title, data) ->
+                    tr {
+                        td { +title }
+                        td { +data }
+                    }
+                }
         }
     }
 }

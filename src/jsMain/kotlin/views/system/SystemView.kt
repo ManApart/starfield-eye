@@ -1,37 +1,24 @@
 package views.system
 
 import Outpost
-import Planet
 import ResourceType
-import Star
 import StarSystem
 import components.*
-import components.checkBox
-import doRouting
 import docking.setCourse
-import el
 import inMemoryStorage
 import keyPressedHook
-import kotlinx.browser.window
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.dom.addClass
-import kotlinx.dom.removeClass
 import kotlinx.html.*
-import kotlinx.html.button
 import kotlinx.html.div
-import kotlinx.html.h2
-import kotlinx.html.js.*
-import kotlinx.html.table
 import kotlinx.html.tr
 import org.w3c.dom.HTMLElement
-import org.w3c.dom.events.KeyboardEvent
-import persistMemory
 import replaceElement
 import updateUrl
 import views.*
-import kotlin.reflect.KMutableProperty0
+import views.lifeSigns.faunaView
+import views.lifeSigns.floraView
 import kotlin.reflect.KProperty0
 
 
