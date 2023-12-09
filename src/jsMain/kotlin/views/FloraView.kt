@@ -15,6 +15,7 @@ import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import persistMemory
+import views.system.systemView
 import kotlin.math.max
 import kotlin.math.min
 

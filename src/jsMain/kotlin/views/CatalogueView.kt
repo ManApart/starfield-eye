@@ -18,6 +18,7 @@ import replaceElement
 import searchPlanets
 import starDivs
 import updateUrl
+import views.system.detailView
 
 fun catalogueView() {
     updateUrl("catalogue")
@@ -80,11 +81,11 @@ private fun TagConsumer<HTMLElement>.planetList() {
                     +planet.name
                     onClickFunction = {
                         detailView(system, planet.id, false, true)
-                        outpostsView(system, planet.id)
+                        views.system.outpostsView(system, planet.id)
                     }
                     onMouseOverFunction = {
                         detailView(system, planet.id, false, true)
-                        outpostsView(system, planet.id)
+                        views.system.outpostsView(system, planet.id)
                     }
                 }
             }

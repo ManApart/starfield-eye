@@ -25,6 +25,8 @@ import org.w3c.dom.events.KeyboardEvent
 import persistMemory
 import replaceElement
 import updateUrl
+import views.system.attemptTravel
+import views.system.systemView
 
 
 fun outpostsPage() {

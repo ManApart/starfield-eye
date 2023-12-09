@@ -13,6 +13,7 @@ import org.w3c.dom.HTMLInputElement
 import replaceElement
 import starDivs
 import updateUrl
+import views.system.systemView
 
 fun renderGalaxy(addHistory: Boolean = true) {
     updateUrl("galaxy")

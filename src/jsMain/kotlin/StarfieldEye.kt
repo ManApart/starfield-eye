@@ -9,6 +9,7 @@ import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.HTMLTextAreaElement
 import org.w3c.dom.events.KeyboardEvent
 import views.*
+import views.system.systemView
 
 var galaxy: Galaxy = Galaxy()
 var pageIsVisible = true
