@@ -3,6 +3,7 @@ package components
 import ResourceType
 import doRouting
 import el
+import inMemoryStorage
 import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
@@ -46,12 +47,12 @@ private fun TagConsumer<HTMLElement>.resourceSquare(
 ) {
     div("resource") {
         id = "resource-${resource.name}"
-        val color = if(checkBoxes.get().contains(i)) "#" +resource.color else "var(--menu-gray)"
+        val color = if(inMemoryStorage.showUndiscovered != false || checkBoxes.get().contains(i)) "#" +resource.color else "var(--menu-gray)"
 
         style = "background-color: $color"
         div("resource-hover-check") {
             checkBox(i, checkBoxes) {
-                el("resource-${resource.name}").style.backgroundColor = if(it) "#" +resource.color else "var(--menu-gray)"
+                el("resource-${resource.name}").style.backgroundColor = if(it || inMemoryStorage.showUndiscovered != false) "#" +resource.color else "var(--menu-gray)"
                 persistMemory()
             }
         }
