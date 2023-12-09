@@ -63,7 +63,7 @@ private fun TagConsumer<HTMLElement>.display(flora: FloraWikiData, linkToSystem:
             table("scan-progress-table") {
                 if (flora.planetId != null) {
                     tr {
-                        td { +"Scanned %" }
+                        td { +"Scanned" }
                         td {
                             val info = inMemoryStorage.planetInfo(flora.planetId)
                             val scanPercent = info.scan.lifeScans[flora.name] ?: 0
@@ -76,6 +76,7 @@ private fun TagConsumer<HTMLElement>.display(flora: FloraWikiData, linkToSystem:
                                 }
                                 persistMemory()
                             }
+                            +"%"
                         }
                     }
                 }

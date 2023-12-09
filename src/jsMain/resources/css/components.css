@@ -82,7 +82,26 @@ input[type="checkbox"]:checked {
     margin-left: 10px;
 }
 
+input[type=number]{
+    height: unset;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+     margin: 0;
+}
+
 .counter {
+    width: 30px;
+    border: none;
+    text-align: right;
+    font-size: 1em;
+}
+
+.counter:focus-visible {
+    border: none;
+    outline: none;
 }
 
 .resource {
