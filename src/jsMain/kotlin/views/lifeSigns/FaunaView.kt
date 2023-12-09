@@ -45,7 +45,7 @@ fun faunaView(fauna: FaunaWikiData) {
 private fun TagConsumer<HTMLElement>.display(fauna: FaunaWikiData, linkToSystem: Boolean = false) {
     with(fauna) {
         div("fauna-entry") {
-            p { +name.substring(0, name.indexOf("(")).trim() }
+            p { +name}
 
             screenshot("fauna/$name", fauna.imageUrl)
 
