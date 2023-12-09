@@ -136,7 +136,7 @@ fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, link
                 }
                 traitsRow(info.scan, traits)
                 organicResourceRow(organicResources)
-                inorganicResourceRow(inorganicResources)
+                inorganicResourceRow(inorganicResources, info.scan::resources)
                 outPostsRow(info.outPosts)
             }
         }

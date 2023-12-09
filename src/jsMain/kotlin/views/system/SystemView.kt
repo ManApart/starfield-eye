@@ -31,6 +31,8 @@ import persistMemory
 import replaceElement
 import updateUrl
 import views.*
+import kotlin.reflect.KMutableProperty0
+import kotlin.reflect.KProperty0
 
 
 var currentSystem: StarSystem? = null
@@ -105,14 +107,14 @@ fun TagConsumer<HTMLElement>.organicResourceRow(resources: Set<String>) {
     }
 }
 
-fun TagConsumer<HTMLElement>.inorganicResourceRow(resources: Set<ResourceType>) {
+fun TagConsumer<HTMLElement>.inorganicResourceRow(resources: Set<ResourceType>, checkBoxes: KProperty0<MutableSet<Int>>? = null) {
     tr {
         td("resource-td") { +"Inorganic Resources" }
         td("resource-value-td") {
             if (resources.isEmpty()) {
                 +"None"
             } else {
-                resourceSquares(resources)
+                resourceSquares(resources, checkBoxes)
             }
         }
     }

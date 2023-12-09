@@ -9,17 +9,6 @@ import org.w3c.dom.HTMLInputElement
 import kotlin.reflect.KMutableProperty0
 import kotlin.reflect.KProperty0
 
-fun TagConsumer<HTMLElement>.checkBox(name: String, getValue: () -> Boolean, onChange: (Boolean) -> Unit = {}) {
-    input(InputType.checkBox, classes = "checkbox") {
-        id = "${name}-checkbox"
-        checked = getValue()
-        onChangeFunction = {
-            val newVal = el<HTMLInputElement>(this.id).checked
-            onChange(newVal)
-        }
-    }
-}
-
 fun TagConsumer<HTMLElement>.checkBox(property: KMutableProperty0<Boolean>, onChange: (Boolean) -> Unit = {}) {
     input(InputType.checkBox, classes = "checkbox") {
         id = "${property.name}-checkbox"
@@ -49,7 +38,7 @@ fun TagConsumer<HTMLElement>.checkBox(
     onChange: (Boolean) -> Unit = {}
 ) {
     input(InputType.checkBox, classes = "checkbox") {
-        id = "${property.name}-checkbox"
+        id = "${property.name}-$index-checkbox"
         checked = property.get().contains(index)
         onChangeFunction = {
             val newVal = el<HTMLInputElement>(this.id).checked
