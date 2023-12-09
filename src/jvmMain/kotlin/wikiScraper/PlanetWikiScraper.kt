@@ -67,6 +67,13 @@ private fun attemptParseWikiData(name: String, document: Document): PlanetWikiDa
             title to data
         }
     }.toMap()
+
+    val traits = document.select(".infobox").select("tr")
+        .firstOrNull { it.selectFirst("th")?.text()?.trim() == "Traits" }?.select("td")?.flatMap { td ->
+            td.select("span").map { it.text() }
+        } ?: listOf()
+
+
     val resources = data["Resources"]?.flatMap { it.replace("  ", " ").split(" ") } ?: listOf()
 
     val image = document.select(".thumbinner").flatMap { it.select("img") }.firstOrNull()
@@ -83,6 +90,6 @@ private fun attemptParseWikiData(name: String, document: Document): PlanetWikiDa
         data["Flora"]?.first() ?: "",
         data["Water"]?.first() ?: "",
         resources,
-        data["Traits"] ?: listOf(),
+        traits,
     )
 }
