@@ -26,6 +26,8 @@ import persistMemory
 import replaceElement
 import updateUrl
 import views.system.attemptTravel
+import views.system.discoverParents
+import views.system.landAndDiscover
 import views.system.systemView
 
 
@@ -273,6 +275,7 @@ private fun TagConsumer<HTMLElement>.addOutpost(info: PlanetInfo, planet: Planet
                 if (e.key == "Enter") {
                     val name = el<HTMLInputElement>("add-outpost-input").value
                     info.addOutpost(name)
+                    planet.landAndDiscover(info)
                     saveOutpostInfo(planet, info)
                 }
             }
@@ -282,6 +285,7 @@ private fun TagConsumer<HTMLElement>.addOutpost(info: PlanetInfo, planet: Planet
             onClickFunction = {
                 val name = el<HTMLInputElement>("add-outpost-input").value
                 info.addOutpost(name)
+                planet.landAndDiscover(info)
                 saveOutpostInfo(planet, info)
             }
         }

@@ -13,6 +13,7 @@ import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import persistMemory
 import replaceElement
+import views.system.landAndDiscover
 import views.system.systemView
 import kotlin.math.max
 import kotlin.math.min
@@ -70,6 +71,7 @@ private fun TagConsumer<HTMLElement>.display(flora: FloraWikiData, linkToSystem:
                             counter("${flora.uniqueId}-scan", { scanPercent }) {
                                 val newVal = min(100, max(0, it))
                                 inMemoryStorage.assurePlanetInfo(flora.planetId, info)
+                                if (newVal != 0) galaxy.planets[flora.planetId]?.landAndDiscover(info)
                                 info.scan.lifeScans[flora.name] = newVal
                                 replaceElement("${flora.uniqueId}-details") {
                                     detailsTable(flora)

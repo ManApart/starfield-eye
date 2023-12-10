@@ -43,9 +43,11 @@ fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, link
             replaceElement("${planet.uniqueId}-details") {
                 detailsTable(system, planet, info)
             }
+            discoverParents()
             persistMemory()
         }
         checkBox("Landed On", info.scan::landed) {
+            discoverParents()
             persistMemory()
         }
 
@@ -103,7 +105,7 @@ private fun TagConsumer<HTMLElement>.detailsTable(system: StarSystem, planet: Pl
                         }
                     }
                 }
-                traitsRow(info.scan, traits)
+                traitsRow(planet, info.scan, traits)
                 organicResourceRow(organicResources)
                 inorganicResourceRow(inorganicResources, info.scan::resources)
                 outPostsRow(info.outPosts)
@@ -112,17 +114,27 @@ private fun TagConsumer<HTMLElement>.detailsTable(system: StarSystem, planet: Pl
     }
 }
 
-private fun TagConsumer<HTMLElement>.traitsRow(scan: PlanetScan, traits: List<String>) {
+private fun TagConsumer<HTMLElement>.traitsRow(planet: Planet, scan: PlanetScan, traits: List<String>) {
     if (traits.isNotEmpty()) {
         tr {
             td { +"Traits" }
             td {
                 traits.forEachIndexed { i, trait ->
                     checkBox(i, trait, scan::traits) {
+                        planet.discoverParents()
                         persistMemory()
                     }
                 }
             }
         }
     }
+}
+
+fun Planet.discoverParents() {
+    inMemoryStorage.discoveredStars.add(starId)
+}
+
+fun Planet.landAndDiscover(info: PlanetInfo) {
+    info.scan.landed = true
+    discoverParents()
 }
