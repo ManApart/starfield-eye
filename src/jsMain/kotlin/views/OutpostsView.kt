@@ -12,6 +12,7 @@ import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.button
+import kotlinx.html.consumers.filter
 import kotlinx.html.div
 import kotlinx.html.dom.append
 import kotlinx.html.h2
@@ -325,6 +326,11 @@ private fun TagConsumer<HTMLElement>.viewOutpostsByResearch() {
             .groupBy { it.resource }
             .entries.sortedBy { it.key }
 
+    val noResources =        outpostMap
+        .filter { (_, outpost) -> outpost.organicResources.isEmpty() && outpost.inorganicResources.isEmpty() }
+        .toSet()
+        .sortedBy { it.second.name }
+
     div("section-view-box by-resource-view") {
         table {
             id = "inorganic-resources"
@@ -352,9 +358,18 @@ private fun TagConsumer<HTMLElement>.viewOutpostsByResearch() {
                 }
             }
         }
+        table {
+            id = "no-resources"
+            tr("outpost-resource-row") {
+                td { +"None" }
+                td {
+                    noResources.forEach { (planetId, outpost) ->
+                        outpostCell(planetId, outpost.name)
+                    }
+                }
+            }
+        }
     }
-
-
 }
 
 private fun TD.outpostCell(planetId: String, name: String) {
