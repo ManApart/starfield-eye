@@ -13,6 +13,7 @@ import kotlinx.html.js.a
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import persistMemory
+import replaceElement
 
 fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, linkToSystem: Boolean) {
     with(planet) {
@@ -39,58 +40,26 @@ fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, link
         }
 
         checkBox("Initial Scan", info.scan::initialScan) {
-            doRouting()
+            replaceElement("${planet.uniqueId}-details") {
+                detailsTable(system, planet, info)
+            }
             persistMemory()
         }
         checkBox("Landed On", info.scan::landed) {
             persistMemory()
         }
-//
-//        table("scan-progress-table") {
-//            tr {
-//                td { +"Initial Scan" }
-//                td {
-//                    checkBox(info.scan::initialScan) {
-//                        doRouting()
-//                        persistMemory()
-//                    }
-//                }
-//            }
-//            tr {
-//                td { +"Landed On" }
-//                td {
-//                    checkBox(info.scan::landed)
-//                    persistMemory()
-//                }
-//            }
-//            planet.traits.forEachIndexed { id, trait ->
-//                tr {
-//                    td { +"Trait: $trait" }
-//                    td {
-//                        checkBox(id, info.scan::traits){
-//                            persistMemory()
-//                        }
-//                    }
-//                }
-//            }
-//            if (planet.inorganicResources.isNotEmpty()) {
-//                tr {
-//                    td { +"Resources" }
-//                    td {
-//                        planet.inorganicResources.forEachIndexed { id, resource ->
-//                            span("checkbox-wrapper") {
-//                                checkBox(id, info.scan::resources) {
-//                                    persistMemory()
-//                                }
-//                                +resource.name
-//                            }
-//                        }
-//                    }
-//
-//                }
-//            }
-//        }
 
+        div {
+            id = "${planet.uniqueId}-details"
+            detailsTable(system, planet, info)
+        }
+
+        div { id = "user-info" }
+    }
+}
+
+private fun TagConsumer<HTMLElement>.detailsTable(system: StarSystem, planet: Planet, info: PlanetInfo) {
+    with(planet) {
         if (inMemoryStorage.showUndiscovered != false || info.scan.initialScan) {
             table("detail-view-table") {
                 listOf(
@@ -140,7 +109,6 @@ fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, link
                 outPostsRow(info.outPosts)
             }
         }
-        div { id = "user-info" }
     }
 }
 
@@ -148,7 +116,7 @@ private fun TagConsumer<HTMLElement>.traitsRow(scan: PlanetScan, traits: List<St
     if (traits.isNotEmpty()) {
         tr {
             td { +"Traits" }
-            td{
+            td {
                 traits.forEachIndexed { i, trait ->
                     checkBox(i, trait, scan::traits) {
                         persistMemory()
