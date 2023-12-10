@@ -4,6 +4,7 @@ import el
 import inMemoryStorage
 import kotlinx.html.*
 import kotlinx.html.js.onChangeFunction
+import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
 import kotlin.reflect.KMutableProperty0
@@ -28,7 +29,16 @@ fun TagConsumer<HTMLElement>.checkBox(
 ) {
     span("checkbox-wrapper") {
         checkBox(property, onChange)
-        +name
+        span {
+            +name
+            onClickFunction = {
+                val checkBox = el<HTMLInputElement>("${property.name}-checkbox")
+                val newVal = !checkBox.checked
+                checkBox.checked = newVal
+                property.set(newVal)
+                onChange(newVal)
+            }
+        }
     }
 }
 
@@ -60,6 +70,20 @@ fun TagConsumer<HTMLElement>.checkBox(
 ) {
     span("checkbox-wrapper") {
         checkBox(index, property, onChange)
-        +name
+        span {
+            +name
+            onClickFunction = {
+                println("Clicked check label")
+                val checkBox = el<HTMLInputElement>("${property.name}-$index-checkbox")
+                val newVal = !checkBox.checked
+                checkBox.checked = newVal
+                if (newVal) {
+                    property.get().add(index)
+                } else {
+                    property.get().remove(index)
+                }
+                onChange(newVal)
+            }
+        }
     }
 }
