@@ -81,7 +81,7 @@ private fun TagConsumer<HTMLElement>.detailsTable(star: Star, system: StarSystem
 private fun markAllPlanetsInitialScanned(system: StarSystem) {
     system.planets.keys.forEach { planetId ->
         val uniqueId = "${system.star.id}-$planetId"
-        val info = inMemoryStorage.planetInfoAndSave(uniqueId)
+        val info = inMemoryStorage.planetInfo(uniqueId)
         info.scan.initialScan = true
     }
     persistMemory()

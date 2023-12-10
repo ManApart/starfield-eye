@@ -28,11 +28,7 @@ data class InMemoryStorage(
     var outpostResourceView: Boolean? = false,
     var paintBackgroundStars: Boolean? = null,
 ) {
-    fun planetInfo(uniqueId: String) = planetUserInfo[uniqueId] ?: PlanetInfo(uniqueId)
-    
-    fun planetInfoAndSave(uniqueId: String): PlanetInfo {
-        return planetUserInfo.getOrPut(uniqueId) { PlanetInfo(uniqueId) }
-    }
+    fun planetInfo(uniqueId: String) = planetUserInfo.getOrPut(uniqueId) { PlanetInfo(uniqueId) }
 
     fun isDiscovered(system: Int) =
         if (inMemoryStorage.showUndiscovered == true) true else inMemoryStorage.discoveredStars.contains(system)
