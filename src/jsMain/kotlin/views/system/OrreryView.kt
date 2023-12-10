@@ -146,7 +146,14 @@ private fun selectNextPlanet(system: StarSystem, shift: Int = 1) {
     val planetId = planetIds[i]
     setSelected(system, planetId)
     detailView(system, planetId)
-    outpostsView(system, planetId)
+    if (planetId == 0) {
+        clearOutpostsView()
+        clearFloraFaunaView()
+    } else {
+        outpostsView(system, planetId)
+        floraView(system.star.id, planetId)
+        faunaView(system.star.id, planetId)
+    }
 }
 
 private fun selectNextMoon(system: StarSystem, shift: Int = 1) {
@@ -165,5 +172,13 @@ private fun selectNextMoon(system: StarSystem, shift: Int = 1) {
 
     setSelected(system, planetId)
     detailView(system, planetId)
-    outpostsView(system, planetId)
+
+    if (planetId == 0) {
+        clearOutpostsView()
+        clearFloraFaunaView()
+    } else {
+        outpostsView(system, planetId)
+        floraView(system.star.id, planetId)
+        faunaView(system.star.id, planetId)
+    }
 }
