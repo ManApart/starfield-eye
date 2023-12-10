@@ -80,6 +80,7 @@ input[type="checkbox"]:checked {
 
 .checkbox-wrapper{
     margin-left: 10px;
+    margin-right: 5px;
 }
 
 input[type=number]{
