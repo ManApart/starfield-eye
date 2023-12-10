@@ -31,6 +31,14 @@ fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, linkToSy
             persistMemory()
         }
 
+        button {
+            +"Scanned"
+            title = "Mark initial scan complete for all bodies in this system"
+            onClickFunction = {
+                markAllPlanetsInitialScanned(system)
+            }
+        }
+
         div {
             id = "${star.id}-details"
             detailsTable(star, system)
@@ -68,4 +76,13 @@ private fun TagConsumer<HTMLElement>.detailsTable(star: Star, system: StarSystem
             }
         }
     }
+}
+
+private fun markAllPlanetsInitialScanned(system: StarSystem) {
+    system.planets.keys.forEach { planetId ->
+        val uniqueId = "${system.star.id}-$planetId"
+        val info = inMemoryStorage.planetInfoAndSave(uniqueId)
+        info.scan.initialScan = true
+    }
+    persistMemory()
 }

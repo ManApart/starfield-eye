@@ -64,12 +64,11 @@ private fun TagConsumer<HTMLElement>.display(fauna: FaunaWikiData, linkToSystem:
                     tr {
                         td { +"Scanned %" }
                         td {
-                            val info = inMemoryStorage.planetInfo(fauna.planetId)
-                            val scanPercent = info.scan.lifeScans[fauna.name] ?: 0
+                            val scanPercent = inMemoryStorage.planetInfo(fauna.planetId).scan.lifeScans[fauna.name] ?: 0
                             counter("${fauna.uniqueId}-scan", { scanPercent }) {
                                 val newVal = min(100, max(0, it))
+                                val info = inMemoryStorage.planetInfoAndSave(fauna.planetId)
                                 if (newVal != 0) galaxy.planets[fauna.planetId]?.landAndDiscover(info)
-                                inMemoryStorage.assurePlanetInfo(fauna.planetId, info)
                                 info.scan.lifeScans[fauna.name] = newVal
                                 replaceElement("${fauna.uniqueId}-details") {
                                     detailsTable(fauna)
