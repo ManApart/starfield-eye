@@ -36,9 +36,6 @@ data class InMemoryStorage(
     }
 
     fun isDiscovered(system: Int) = if(inMemoryStorage.showUndiscovered == true) true else inMemoryStorage.discoveredStars.contains(system)
-
-    fun discoveredSystems(galaxy: Galaxy) = galaxy.systems.let { system -> if (showUndiscovered == true) system else system.filter { discoveredStars.contains(it.key) }}
-    fun discoveredPlanets(galaxy: Galaxy) = discoveredSystems(galaxy).values.flatMap { it.planets.values }
 }
 
 val planetSearchOptions: PlanetSearchOptions = PlanetSearchOptions()
