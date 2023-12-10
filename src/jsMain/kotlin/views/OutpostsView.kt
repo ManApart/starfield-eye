@@ -59,8 +59,9 @@ fun outpostsPage() {
 private fun TagConsumer<HTMLElement>.viewAllOutposts() {
     inMemoryStorage.planetUserInfo.values
         .filter { it.outPosts.isNotEmpty() }
-        .forEach { planetInfo ->
-            val planet = galaxy.planets[planetInfo.planetId]!!
+        .map { it to galaxy.planets[it.planetId]!! }
+        .sortedBy { it.second.name }
+        .forEach { (planetInfo, planet) ->
             div("section-view-box") {
                 id = "outpost-view-${planet.uniqueId}"
                 outpostsView(planet, planetInfo, false, true)
