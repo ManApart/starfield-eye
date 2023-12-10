@@ -3,6 +3,7 @@ package views.lifeSigns
 import FloraWikiData
 import components.counter
 import components.screenshot
+import components.wikiLink
 import el
 import floraReference
 import galaxy
@@ -57,10 +58,7 @@ private fun TagConsumer<HTMLElement>.display(flora: FloraWikiData, linkToSystem:
                     }
                 }
             }
-            a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
-                id = "wiki-link"
-                +"View on Wiki"
-            }
+            wikiLink(name.replace(" ", "_"))
             table("scan-progress-table") {
                 if (flora.planetId != null) {
                     tr {

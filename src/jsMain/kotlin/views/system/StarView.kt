@@ -3,6 +3,7 @@ package views.system
 import Star
 import StarSystem
 import components.checkBox
+import components.wikiLink
 import inMemoryStorage
 import kotlinx.html.*
 import kotlinx.html.js.a
@@ -21,10 +22,7 @@ fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, linkToSy
                 onClickFunction = { systemView(system, 0) }
             }
         }
-        a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
-            id = "wiki-link"
-            +"View on Wiki"
-        }
+        wikiLink(name.replace(" ", "_"))
 
         checkBox(star.id, "Discovered", inMemoryStorage::discoveredStars) {
             replaceElement("${star.id}-details") {

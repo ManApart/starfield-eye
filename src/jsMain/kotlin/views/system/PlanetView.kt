@@ -6,7 +6,7 @@ import PlanetScan
 import StarSystem
 import components.checkBox
 import components.screenshot
-import doRouting
+import components.wikiLink
 import inMemoryStorage
 import kotlinx.html.*
 import kotlinx.html.js.a
@@ -34,10 +34,7 @@ fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, link
             title = "Set course to ${planet.name} (requires docking)"
             onClickFunction = { attemptTravel(planet.name) }
         }
-        a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
-            id = "wiki-link"
-            +"View on Wiki"
-        }
+        wikiLink(name.replace(" ", "_"))
 
         checkBox("Initial Scan", info.scan::initialScan) {
             replaceElement("${planet.uniqueId}-details") {

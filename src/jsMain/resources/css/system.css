@@ -170,7 +170,7 @@
 .planet-label {
 }
 
-#detail-view #wiki-link {
+#detail-view .a-button {
     display: inline-block;
 }
 

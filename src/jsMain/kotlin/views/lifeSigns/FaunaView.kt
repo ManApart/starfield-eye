@@ -3,15 +3,11 @@ package views.lifeSigns
 import FaunaWikiData
 import components.counter
 import components.screenshot
-import doRouting
-import el
+import components.wikiLink
 import faunaReference
 import galaxy
 import inMemoryStorage
-import kotlinx.dom.addClass
-import kotlinx.dom.removeClass
 import kotlinx.html.*
-import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import persistMemory
@@ -61,10 +57,7 @@ private fun TagConsumer<HTMLElement>.display(fauna: FaunaWikiData, linkToSystem:
                     }
                 }
             }
-            a("https://starfieldwiki.net/wiki/Starfield:${name.replace(" ", "_")}", target = "_blank") {
-                id = "wiki-link"
-                +"View on Wiki"
-            }
+            wikiLink(name.replace(" ", "_"))
 
             table("scan-progress-table") {
                 if (fauna.planetId != null) {
