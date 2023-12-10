@@ -137,7 +137,7 @@ private fun TagConsumer<HTMLElement>.outpost(
 
     screenshot("outposts/${planet.uniqueId}/${outpost.id}")
 
-    if (outpost.organicResources.isNotEmpty()) {
+    if (planet.organicResources.isNotEmpty()) {
         h5 { +"Organic Resources" }
         div {
             button(classes = "add-info-button") {
@@ -159,7 +159,8 @@ private fun TagConsumer<HTMLElement>.outpost(
                 }
             }
         }
-
+    }
+    if (outpost.organicResources.isNotEmpty()) {
         div("resource-wrapper") {
             +outpost.organicResources.joinToString()
         }
@@ -326,7 +327,7 @@ private fun TagConsumer<HTMLElement>.viewOutpostsByResearch() {
             .groupBy { it.resource }
             .entries.sortedBy { it.key }
 
-    val noResources =        outpostMap
+    val noResources = outpostMap
         .filter { (_, outpost) -> outpost.organicResources.isEmpty() && outpost.inorganicResources.isEmpty() }
         .toSet()
         .sortedBy { it.second.name }
