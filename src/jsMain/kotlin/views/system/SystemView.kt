@@ -5,6 +5,7 @@ import ResourceType
 import StarSystem
 import components.*
 import docking.setCourse
+import el
 import inMemoryStorage
 import keyPressedHook
 import kotlinx.coroutines.CoroutineScope
@@ -12,8 +13,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.html.*
 import kotlinx.html.div
+import kotlinx.html.js.onClickFunction
 import kotlinx.html.tr
 import org.w3c.dom.HTMLElement
+import org.w3c.dom.HTMLInputElement
+import persistMemory
 import replaceElement
 import updateUrl
 import views.*
@@ -94,9 +98,29 @@ fun TagConsumer<HTMLElement>.organicResourceRow(resources: Set<String>) {
     }
 }
 
-fun TagConsumer<HTMLElement>.inorganicResourceRow(resources: Set<ResourceType>, checkBoxes: KProperty0<MutableSet<Int>>? = null) {
+fun TagConsumer<HTMLElement>.inorganicResourceRow(
+    resources: Set<ResourceType>,
+    checkBoxes: KProperty0<MutableSet<Int>>? = null
+) {
     tr {
-        td("resource-td") { +"Inorganic Resources" }
+        td("resource-td") {
+            +"Inorganic Resources"
+            if (checkBoxes != null) {
+                button(classes = "table-button") {
+                    +"Done"
+                    title = "Mark all resources scanned"
+                    onClickFunction = {
+                        val props = checkBoxes.get()
+                        resources.forEachIndexed { i, resource ->
+                            props.add(i)
+                            el<HTMLInputElement>("resources-$i-checkbox").checked = true
+                            el("resource-${resource.name}").style.backgroundColor = "#" + resource.color
+                        }
+                        persistMemory()
+                    }
+                }
+            }
+        }
         td("resource-value-td") {
             if (resources.isEmpty()) {
                 +"None"

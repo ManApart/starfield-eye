@@ -4,12 +4,14 @@ import FaunaWikiData
 import components.counter
 import components.screenshot
 import components.wikiLink
+import el
 import faunaReference
 import galaxy
 import inMemoryStorage
 import kotlinx.html.*
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
+import org.w3c.dom.HTMLInputElement
 import persistMemory
 import replaceElement
 import views.system.landAndDiscover
@@ -59,23 +61,33 @@ private fun TagConsumer<HTMLElement>.display(fauna: FaunaWikiData, linkToSystem:
             }
             wikiLink(name.replace(" ", "_"))
 
-            table("scan-progress-table") {
-                if (fauna.planetId != null) {
-                    tr {
-                        td { +"Scanned %" }
-                        td {
-                            val info = inMemoryStorage.planetInfo(fauna.planetId)
-                            val scanPercent = info.scan.lifeScans[fauna.name] ?: 0
-                            counter("${fauna.uniqueId}-scan", { scanPercent }) {
-                                val newVal = min(100, max(0, it))
-                                if (newVal != 0) galaxy.planets[fauna.planetId]?.landAndDiscover(info)
-                                info.scan.lifeScans[fauna.name] = newVal
-                                replaceElement("${fauna.uniqueId}-details") {
-                                    detailsTable(fauna)
-                                }
-                                persistMemory()
-                            }
+            if (fauna.planetId != null) {
+                span { +"Scanned" }
+                span("counter-span") {
+                    val info = inMemoryStorage.planetInfo(fauna.planetId)
+                    val scanPercent = info.scan.lifeScans[fauna.name] ?: 0
+                    counter("${fauna.uniqueId}-scan", { scanPercent }) {
+                        val newVal = min(100, max(0, it))
+                        if (newVal != 0) galaxy.planets[fauna.planetId]?.landAndDiscover(info)
+                        info.scan.lifeScans[fauna.name] = newVal
+                        replaceElement("${fauna.uniqueId}-details") {
+                            detailsTable(fauna)
                         }
+                        persistMemory()
+                    }
+                    +"%"
+                }
+                button {
+                    +"Scan"
+                    onClickFunction = {
+                        val info = inMemoryStorage.planetInfo(fauna.planetId)
+                        galaxy.planets[fauna.planetId]?.landAndDiscover(info)
+                        el<HTMLInputElement>("${fauna.uniqueId}-scan-counter").valueAsNumber = 100.0
+                        info.scan.lifeScans[fauna.name] = 100
+                        replaceElement("${fauna.uniqueId}-details") {
+                            detailsTable(fauna)
+                        }
+                        persistMemory()
                     }
                 }
             }

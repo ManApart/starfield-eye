@@ -8,6 +8,7 @@ import components.checkBox
 import components.screenshot
 import components.wikiLink
 import doRouting
+import el
 import faunaReference
 import floraReference
 import inMemoryStorage
@@ -15,6 +16,7 @@ import kotlinx.html.*
 import kotlinx.html.js.a
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
+import org.w3c.dom.HTMLInputElement
 import persistMemory
 import replaceElement
 
@@ -127,7 +129,22 @@ private fun TagConsumer<HTMLElement>.detailsTable(system: StarSystem, planet: Pl
 private fun TagConsumer<HTMLElement>.traitsRow(planet: Planet, scan: PlanetScan, traits: List<String>) {
     if (traits.isNotEmpty()) {
         tr {
-            td { +"Traits" }
+            td {
+                +"Traits"
+                button(classes = "table-button") {
+                    +"Done"
+                    title = "Mark all traits scanned"
+                    onClickFunction = {
+                        traits.forEachIndexed { i, _ ->
+                            scan.traits.add(i)
+                            planet.discoverParents()
+                            el<HTMLInputElement>("traits-$i-checkbox").checked = true
+                        }
+                        planet.discoverParents()
+                        persistMemory()
+                    }
+                }
+            }
             td {
                 traits.forEachIndexed { i, trait ->
                     checkBox(i, trait, scan::traits) {

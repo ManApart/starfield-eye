@@ -105,6 +105,11 @@ input[type=number]::-webkit-inner-spin-button,
     outline: none;
 }
 
+.counter-span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .resource {
     position: relative;
     float: right;

@@ -12,6 +12,7 @@ import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
+import org.w3c.dom.HTMLInputElement
 import persistMemory
 import replaceElement
 import views.system.landAndDiscover
@@ -59,24 +60,33 @@ private fun TagConsumer<HTMLElement>.display(flora: FloraWikiData, linkToSystem:
                 }
             }
             wikiLink(name.replace(" ", "_"))
-            table("scan-progress-table") {
-                if (flora.planetId != null) {
-                    tr {
-                        td { +"Scanned" }
-                        td {
-                            val info = inMemoryStorage.planetInfo(flora.planetId)
-                            val scanPercent = info.scan.lifeScans[flora.name] ?: 0
-                            counter("${flora.uniqueId}-scan", { scanPercent }) {
-                                val newVal = min(100, max(0, it))
-                                if (newVal != 0) galaxy.planets[flora.planetId]?.landAndDiscover(info)
-                                info.scan.lifeScans[flora.name] = newVal
-                                replaceElement("${flora.uniqueId}-details") {
-                                    detailsTable(flora)
-                                }
-                                persistMemory()
-                            }
-                            +"%"
+            if (flora.planetId != null) {
+                span { +"Scanned" }
+                span("counter-span") {
+                    val info = inMemoryStorage.planetInfo(flora.planetId)
+                    val scanPercent = info.scan.lifeScans[flora.name] ?: 0
+                    counter("${flora.uniqueId}-scan", { scanPercent }) {
+                        val newVal = min(100, max(0, it))
+                        if (newVal != 0) galaxy.planets[flora.planetId]?.landAndDiscover(info)
+                        info.scan.lifeScans[flora.name] = newVal
+                        replaceElement("${flora.uniqueId}-details") {
+                            detailsTable(flora)
                         }
+                        persistMemory()
+                    }
+                    +"%"
+                }
+                button {
+                    +"Scan"
+                    onClickFunction = {
+                        val info = inMemoryStorage.planetInfo(flora.planetId)
+                        galaxy.planets[flora.planetId]?.landAndDiscover(info)
+                        el<HTMLInputElement>("${flora.uniqueId}-scan-counter").valueAsNumber = 100.0
+                        info.scan.lifeScans[flora.name] = 100
+                        replaceElement("${flora.uniqueId}-details") {
+                            detailsTable(flora)
+                        }
+                        persistMemory()
                     }
                 }
             }
