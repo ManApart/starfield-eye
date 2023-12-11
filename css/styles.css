@@ -100,11 +100,14 @@ button:hover{
     background-position: -100% 0%;
 }
 
+.table-button {
+    float: right;
+}
+
 textarea {
     color: white;
     background-color: var(--background-blue);
     width: 95%;
-    height: 80px;
     border: none;
     outline: none;
 }
