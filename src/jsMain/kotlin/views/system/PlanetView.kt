@@ -7,6 +7,9 @@ import StarSystem
 import components.checkBox
 import components.screenshot
 import components.wikiLink
+import doRouting
+import faunaReference
+import floraReference
 import inMemoryStorage
 import kotlinx.html.*
 import kotlinx.html.js.a
@@ -46,6 +49,16 @@ fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, link
         checkBox("Landed On", info.scan::landed) {
             discoverParents()
             persistMemory()
+        }
+
+        button {
+            +"Surveyed"
+            title = "Mark this planet and its life signs 100% scanned"
+            onClickFunction = {
+                completeSurvey(info)
+                doRouting()
+                persistMemory()
+            }
         }
 
         div {
@@ -134,4 +147,14 @@ fun Planet.discoverParents() {
 fun Planet.landAndDiscover(info: PlanetInfo) {
     info.scan.landed = true
     discoverParents()
+}
+
+fun Planet.completeSurvey(info: PlanetInfo) {
+    val scan = info.scan
+    scan.initialScan = true
+    landAndDiscover(info)
+    inorganicResources.forEachIndexed { i, _ -> scan.resources.add(i) }
+    traits.forEachIndexed { i, _ -> scan.traits.add(i) }
+    faunaReference[uniqueId]?.forEach { scan.lifeScans[it.name] = 100 }
+    floraReference[uniqueId]?.forEach { scan.lifeScans[it.name] = 100 }
 }
