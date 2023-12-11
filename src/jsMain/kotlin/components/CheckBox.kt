@@ -73,7 +73,6 @@ fun TagConsumer<HTMLElement>.checkBox(
         span {
             +name
             onClickFunction = {
-                println("Clicked check label")
                 val checkBox = el<HTMLInputElement>("${property.name}-$index-checkbox")
                 val newVal = !checkBox.checked
                 checkBox.checked = newVal

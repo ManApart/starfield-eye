@@ -104,7 +104,6 @@ textarea {
     color: white;
     background-color: var(--background-blue);
     width: 95%;
-    height: 80px;
     border: none;
     outline: none;
 }

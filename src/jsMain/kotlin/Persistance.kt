@@ -202,10 +202,10 @@ fun deleteUserData() {
 
 fun savePicture(key: String, data: String) {
     pictureStorage[key] = data
-    persistMemory()
+    persistPictures()
 }
 
 fun deletePicture(key: String) {
     pictureStorage.remove(key)
-    persistMemory()
+    persistPictures()
 }

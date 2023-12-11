@@ -25,7 +25,7 @@ private fun floraMatches(floraWikiData: FloraWikiData, searchText: String): Bool
         name.lowercase().contains(searchText)
                 || resource.lowercase().contains(searchText)
                 || biomes.any { it.lowercase().contains(searchText) }
-                || other.values.any { it.lowercase().contains(searchText) }
+                || other.matches(searchText)
     }
 }
 
@@ -36,6 +36,14 @@ private fun faunaMatches(faunaWikiData: FaunaWikiData, searchText: String): Bool
                 || temperament.name.lowercase().contains(searchText)
                 || biomes.any { it.lowercase().contains(searchText) }
                 || abilities.any { it.lowercase().contains(searchText) }
-                || other.values.any { it.lowercase().contains(searchText) }
+                || other.matches(searchText)
+    }
+}
+
+private fun Map<String, String>.matches(searchText: String): Boolean {
+    return entries.any { (key, value) ->
+        val lowerVal = value.lowercase()
+        lowerVal.isNotBlank() && (lowerVal.contains(searchText)
+                || (key.lowercase().contains(searchText) && lowerVal !in listOf("false", "no")))
     }
 }
