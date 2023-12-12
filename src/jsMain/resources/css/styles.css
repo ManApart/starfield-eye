@@ -179,6 +179,10 @@ summary::-webkit-details-marker {
     max-height: 900px;
 }
 
+#about-view .section-view-box{
+    max-height: unset;
+}
+
 .accent-line {
     width: 95%;
     height: 30px;
