@@ -17,10 +17,10 @@ fun TagConsumer<HTMLElement>.navButtons(navClass: String = "header-nav") {
         div("nav-section") {
             id = "about-nav"
             button {
-                id = "about-button"
-                +"About"
+                id = "manual-button"
+                +"Manual"
                 title = "How this site works"
-                onClickFunction = { aboutView() }
+                onClickFunction = { manualView() }
             }
             button {
                 id = "crew-button"

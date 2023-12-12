@@ -4,11 +4,11 @@ import kotlinx.html.*
 import replaceElement
 import updateUrl
 
-fun aboutView() {
+fun manualView() {
     updateUrl("about")
     replaceElement {
         div {
-            id = "about-view"
+            id = "manual-view"
             navButtons()
             div {
                 id = "sections"

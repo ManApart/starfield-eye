@@ -92,7 +92,7 @@ fun doRouting(windowHash: String) {
     keyPressedHook = {}
     when {
         windowHash.startsWith("#about") -> {
-            aboutView()
+            manualView()
         }
 
         windowHash.startsWith("#catalogue") -> {
