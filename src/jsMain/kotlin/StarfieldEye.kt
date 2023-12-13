@@ -136,7 +136,7 @@ fun doRouting(windowHash: String) {
             }
         }
 
-        else -> renderGalaxy(false)
+        else -> renderGalaxy()
     }
 }
 

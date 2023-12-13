@@ -12,7 +12,6 @@ import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.button
-import kotlinx.html.consumers.filter
 import kotlinx.html.div
 import kotlinx.html.dom.append
 import kotlinx.html.h2
@@ -27,7 +26,6 @@ import persistMemory
 import replaceElement
 import updateUrl
 import views.system.attemptTravel
-import views.system.discoverParents
 import views.system.landAndDiscover
 import views.system.systemView
 

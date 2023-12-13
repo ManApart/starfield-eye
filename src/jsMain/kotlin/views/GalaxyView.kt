@@ -15,7 +15,9 @@ import starDivs
 import updateUrl
 import views.system.systemView
 
-fun renderGalaxy(addHistory: Boolean = true) {
+private var searchText = ""
+
+fun renderGalaxy() {
     updateUrl("galaxy")
 
     replaceElement {
@@ -23,13 +25,16 @@ fun renderGalaxy(addHistory: Boolean = true) {
         input(classes = "search") {
             id = "galaxy-search"
             placeholder = "Highlight star by name of star or planets"
+            value = searchText
             onKeyUpFunction = {
-                highlightStar(el<HTMLInputElement>("galaxy-search").value.lowercase())
+                searchText = el<HTMLInputElement>("galaxy-search").value.lowercase()
+                highlightStar(searchText)
             }
         }
         navButtons("galaxy-nav")
     }
     saveHtmlRefs()
+    highlightStar(searchText)
 }
 
 private fun TagConsumer<HTMLElement>.galaxy() {

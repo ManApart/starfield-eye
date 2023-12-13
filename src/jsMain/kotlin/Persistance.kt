@@ -150,7 +150,7 @@ fun exportPictures() = exportData(jsonMapper.encodeToString(pictureStorage), "st
 
 private fun exportData(data: String, fileName: String) {
     val download = document.createElement("a") as HTMLElement
-    download.setAttribute("href", "data:text/plain;charset=utf-8," + data)
+    download.setAttribute("href", "data:text/plain;charset=utf-8,$data")
     download.setAttribute("download", fileName)
     document.body?.append(download)
     download.click()
@@ -169,7 +169,7 @@ fun importPictures() {
     importData { data ->
         jsonMapper.decodeFromString<Map<String, String>>(data).also { pictureStorage = it.toMutableMap() }
         println("Imported ${pictureStorage.keys.size} pictures")
-        persistMemory()
+        persistPictures()
     }
 }
 
