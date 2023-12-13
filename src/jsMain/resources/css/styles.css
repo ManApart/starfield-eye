@@ -146,10 +146,6 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-.hidden {
-    display: none;
-}
-
 .visible-block {
     display: block;
 }
@@ -231,4 +227,8 @@ summary::-webkit-details-marker {
 
 .nav-section {
     display: inline-block;
+}
+
+.hidden {
+    display: none;
 }
