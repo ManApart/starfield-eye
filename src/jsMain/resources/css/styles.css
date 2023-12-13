@@ -175,7 +175,9 @@ summary::-webkit-details-marker {
     max-height: 900px;
 }
 
-#about-view .section-view-box{
+#about-view .section-view-box,
+#dock-view .section-view-box,
+#manual-view .section-view-box{
     max-height: unset;
 }
 
@@ -218,7 +220,6 @@ summary::-webkit-details-marker {
     position: absolute;
     right: 0;
 }
-
 
 .header-nav {
     width: 100%;
