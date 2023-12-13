@@ -1,15 +1,13 @@
 package views
 
 import components.linkableH2
-import el
 import kotlinx.html.*
 import org.w3c.dom.HTMLElement
 import replaceElement
 import updateUrl
 
 fun aboutView(section: String? = null) {
-    val url = "about" + (section?.let { "/$it" } ?: "")
-    updateUrl(url)
+    updateUrl("about", section)
     replaceElement {
         div {
             id = "about-view"
@@ -131,5 +129,8 @@ fun aboutView(section: String? = null) {
             }
         }
     }
-    section?.let { el<HTMLElement?>(it)?.scrollIntoView() }
+}
+
+private fun TagConsumer<HTMLElement>.linkableH2(text: String) {
+    linkableH2("about", text)
 }

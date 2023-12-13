@@ -90,19 +90,15 @@ fun doRouting() {
 fun doRouting(windowHash: String) {
     pollHook = {}
     keyPressedHook = {}
+    val section = windowHash.split("/").takeIf { it.size == 2 }?.last()
+    section?.let { println("Section: $it") }
     when {
         windowHash.startsWith("#about") -> {
-            val parts = windowHash.split("/")
-            println(parts)
-            if (parts.size == 2) {
-                aboutView(parts.last())
-            } else {
-                aboutView()
-            }
+            aboutView(section)
         }
 
         windowHash.startsWith("#manual") -> {
-            manualView()
+            manualView(section)
         }
 
         windowHash.startsWith("#catalogue") -> {
@@ -118,7 +114,7 @@ fun doRouting(windowHash: String) {
         }
 
         windowHash.startsWith("#dock") -> {
-            dockView()
+            dockView(section)
         }
 
         windowHash.startsWith("#quests") -> {
@@ -144,12 +140,14 @@ fun doRouting(windowHash: String) {
 
         else -> renderGalaxy()
     }
+    section?.let { el<HTMLElement?>(it)?.scrollIntoView() }
 }
 
-fun updateUrl(path: String) {
+fun updateUrl(path: String, section: String? = null) {
     val pathName = path.split("/").first().capitalize()
-    if (!window.location.href.endsWith("#$path")) {
-        window.history.pushState(null, "", "#$path")
+    val newPath = path + (section?.let { "/$it" } ?: "")
+    if (!window.location.href.endsWith("#$newPath")) {
+        window.history.pushState(null, "", "#$newPath")
     }
     document.title = "The Eye: $pathName"
 }

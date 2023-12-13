@@ -2,11 +2,12 @@ package views
 
 import components.linkableH2
 import kotlinx.html.*
+import org.w3c.dom.HTMLElement
 import replaceElement
 import updateUrl
 
-fun manualView() {
-    updateUrl("manual")
+fun manualView(section: String? = null) {
+    updateUrl("manual", section)
     replaceElement {
         div {
             id = "manual-view"
@@ -82,4 +83,8 @@ fun manualView() {
             }
         }
     }
+}
+
+private fun TagConsumer<HTMLElement>.linkableH2(text: String) {
+    linkableH2("manual", text)
 }

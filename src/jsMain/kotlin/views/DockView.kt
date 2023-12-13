@@ -29,8 +29,8 @@ import pollHook
 import replaceElement
 import updateUrl
 
-fun dockView() {
-    updateUrl("dock")
+fun dockView(section: String? = null) {
+    updateUrl("dock", section)
     replaceElement {
         div {
             id = "dock-view"
@@ -311,4 +311,9 @@ private fun receivePoll(success: Boolean) {
 
 private fun setStatusDiv(message: String) {
     el<HTMLDivElement?>("dock-status")?.textContent = message
+}
+
+
+private fun TagConsumer<HTMLElement>.linkableH2(text: String) {
+    linkableH2("dock", text)
 }
