@@ -19,6 +19,12 @@ cd ../starfield-eye-deploy
 cp -r ../starfield-eye/build/dist/js/productionExecutable/* .
 ```
 
+## Testing the Dock Server
+
+```
+curl -X POST -d "GetSFSEVersion" http://localhost:55555/console -v
+```
+
 ## Crew
 
 - Star and Planet data from Starfield Game Files

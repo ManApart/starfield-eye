@@ -6,8 +6,9 @@ import Quest
 import kotlinx.coroutines.delay
 
 suspend fun healthCheck(): Boolean {
-    val versionLine = postToConsole("GetSFSEVersion")?.split("\n")?.last { it.isNotBlank() }
-    println(versionLine ?: "Disconnected")
+    val response = postToConsole("GetSFSEVersion")
+    val versionLine = response?.split("\n")?.lastOrNull { it.isNotBlank() }
+    println(versionLine ?: "Disconnected: $response")
     return versionLine?.contains("SFSE version") ?: false
 }
 
