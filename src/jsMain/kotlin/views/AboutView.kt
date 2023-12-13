@@ -1,11 +1,15 @@
 package views
 
+import components.linkableH2
+import el
 import kotlinx.html.*
+import org.w3c.dom.HTMLElement
 import replaceElement
 import updateUrl
 
-fun aboutView() {
-    updateUrl("about")
+fun aboutView(section: String? = null) {
+    val url = "about" + (section?.let { "/$it" } ?: "")
+    updateUrl(url)
     replaceElement {
         div {
             id = "about-view"
@@ -14,7 +18,7 @@ fun aboutView() {
                 id = "sections"
                 div("section-view-box") {
                     id = "how-to-use"
-                    h2 { +"About" }
+                    linkableH2("About")
                     div("accent-line") { +"The winks and the nods" }
 
                     p { +"Starfield Eye is an Ad Free Companion App for Starfield." }
@@ -34,8 +38,7 @@ fun aboutView() {
                 }
 
                 div("section-view-box") {
-                    id = "features"
-                    h2 { +"Instant Features" }
+                    linkableH2("Instant Features")
                     div("accent-line") { +"" }
                     p { +"These features work right now without any setup required. Try them out today!" }
 
@@ -84,8 +87,7 @@ fun aboutView() {
                     }
                 }
                 div("section-view-box") {
-                    id = "features"
-                    h2 { +"Advanced Features" }
+                    linkableH2("Advanced Features" )
                     div("accent-line") { +"" }
                     //TODO - links to pages
                     p { +"These features require you to Dock to work. You'll need to go through the setup on the Dock page, which requires that you have SFSE installed." }
@@ -115,8 +117,7 @@ fun aboutView() {
                 }
 
                 div("section-view-box") {
-                    id = "features"
-                    h2 { +"Planned Features" }
+                    linkableH2("Planned Features")
                     div("accent-line") { +"" }
                     p { +"While there are no guarantees, these are the features I'm hoping to build out once we have proper modding tools" }
 
@@ -130,4 +131,5 @@ fun aboutView() {
             }
         }
     }
+    section?.let { el<HTMLElement?>(it)?.scrollIntoView() }
 }

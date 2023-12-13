@@ -92,7 +92,13 @@ fun doRouting(windowHash: String) {
     keyPressedHook = {}
     when {
         windowHash.startsWith("#about") -> {
-            aboutView()
+            val parts = windowHash.split("/")
+            println(parts)
+            if (parts.size == 2) {
+                aboutView(parts.last())
+            } else {
+                aboutView()
+            }
         }
 
         windowHash.startsWith("#manual") -> {

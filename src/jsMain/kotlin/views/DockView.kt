@@ -1,5 +1,6 @@
 package views
 
+import components.linkableH2
 import components.toggle
 import deleteUserData
 import docking.healthCheck
@@ -109,10 +110,10 @@ private fun DIV.connectToGame() {
     }
 }
 
-private fun DIV.manageData() {
+private fun TagConsumer<HTMLElement>.manageData() {
     div("section-view-box") {
         id = "manage-data"
-        h2 { +"Manage Data" }
+        linkableH2("Manage Data")
         div("accent-line") { +"The mind's long con: forgetfulness" }
 
         p { +"User data is only stored on the browser. (I don't track anything you do)." }
@@ -159,7 +160,7 @@ private fun DIV.manageData() {
 private fun TagConsumer<HTMLElement>.settings() {
     div("section-view-box") {
         id = "settings"
-        h2 { +"Change Settings" }
+        linkableH2("Change Settings")
         div("accent-line") { +"Do my ears play a false tune?" }
 
         p { +"Manage site wide settings." }
@@ -186,10 +187,10 @@ private fun TagConsumer<HTMLElement>.settings() {
     }
 }
 
-private fun DIV.prepareToDock() {
+private fun TagConsumer<HTMLElement>.prepareToDock() {
     div("section-view-box") {
         id = "docking-install"
-        h2 { +"Preparing to Dock" }
+        linkableH2("Preparing to Dock")
         div("accent-line") { +"Burning helium out there" }
 
         h3 { +"Installing Mods" }
