@@ -30,7 +30,7 @@ fun getPlanets(): List<Planet> {
 fun main() {
     window.onload = {
         createDB()
-        loadAll().then {
+        loadAll(el("root")).then {
             doRouting()
             pollData()
         }

@@ -45,12 +45,18 @@ var faunaDivs: Map<String, HTMLElement> = mapOf()
 var pictureStorage: MutableMap<String, String> = mutableMapOf()
 
 
-fun loadAll(): Promise<*> {
+fun loadAll(progress: HTMLElement): Promise<*> {
+    progress.innerText = "Loading User Info"
     return loadMemory().then {
+        progress.innerText = "Loading Galaxy Data"
         loadGalaxy().then {
+            progress.innerText = "Loading Missions"
             loadMissionReference().then {
+                progress.innerText = "Loading Flora"
                 loadFloraReference().then {
+                    progress.innerText = "Loading Fauna"
                     loadFaunaReference().then {
+                        progress.innerText = "Loading User Pictures"
                         loadPictures().then {
                             return@then
                         }
