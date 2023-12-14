@@ -40,7 +40,6 @@ fun aboutView(section: String? = null) {
                     div("accent-line") { +"" }
                     p { +"These features work right now without any setup required. Try them out today!" }
 
-
                     h3 { +"Player Progress" }
                     ul {
                         li { +"Complete your own codex of the game's many flora, fauna, and planets" }
@@ -49,6 +48,7 @@ fun aboutView(section: String? = null) {
                         li { +"Toggle between full knowledge and discovered data at any time" }
                         li { +"Mark stars discovered, planets landed on, and fauna/flora scan percent" }
                         li { +"Track what you've scanned down to the specific resources on a planet, or mark an entire planet 100% surveyed" }
+                        li { +"Track your progress towards visiting every star system, landing on each planet, or even 100% surveying the game" }
                     }
 
                     h3 { +"Planets" }
@@ -61,12 +61,14 @@ fun aboutView(section: String? = null) {
                         }
                         li { +"Highlight a given system on the galaxy map to more easily find it in game" }
                         li { +"Browse system by system with an Orrery that matches the in game UI" }
-                        li { +"Save your favorite planets or the ones you want to explore" }
+                        li { +"Bookmark your favorite planets or the ones you want to explore" }
+                        li { +"Combine bookmarks, search, and the advanced travel feature to create travel routes and lists of quick travel options" }
                     }
                     h3 { +"Life Signs" }
                     ul {
                         li { +"Search for plants or creatures that produce a specific resource and are domesticable" }
                         li { +"Search on traits like biome, temperament, abilities, and other misc stats" }
+                        li { +"Use the site as your own personal pokedex, and scan them all!" }
                     }
 
                     h3 { +"Outposts" }
@@ -81,14 +83,28 @@ fun aboutView(section: String? = null) {
                         li { +"No personal data tracked or sent to any server" }
                         li { +"Everything stored locally in your browser" }
                         li { +"Export data to back it up or share it between devices" }
-                        li { +"Uploaded screenshots can be separately exported and backed up" }
+                    }
+                    h3 { +"And More" }
+                    ul {
+                        li {
+                            +"Planets, Outposts, Flor and Fauna can all have screenshots uploaded"
+                            ul {
+                                li { +"Use screenshots to easily tell outposts apart on the outposts page" }
+                                li { +"Take a screenshot of each creature you've scanned, so you can look at it as you view its stats on your phone later" }
+                                li { +"Uploaded screenshots can be separately exported and backed up" }
+                            }
+                        }
+                        li { +"Planets, Flora, Fauna, and Resources all link to their respective wiki pages so that you can read more about them" }
                     }
                 }
                 div("section-view-box") {
-                    linkableH2("Advanced Features" )
+                    linkableH2("Advanced Features")
                     div("accent-line") { +"" }
-                    //TODO - links to pages
-                    p { +"These features require you to Dock to work. You'll need to go through the setup on the Dock page, which requires that you have SFSE installed." }
+                    p {
+                        +"These features require you to Dock to work. You'll need to go through the setup on the "
+                        a("#dock/preparing_to_dock") { +"Dock page," }
+                        +" which requires that you have SFSE installed."
+                    }
 
                     h3 { +"Fast Travel" }
                     ul {

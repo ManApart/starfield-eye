@@ -61,7 +61,7 @@ private fun DIV.connectToGame() {
 
         p {
             +"Docking setup is fairly complicated. See the "
-            a(href = "#docking-install") { +"instructions below." }
+            a(href = "#dock/docking-install") { +"instructions below." }
         }
 
         p { +"Once installed, enter your host and port and attempt to dock. The docking status should update after you attempt to dock." }
@@ -201,6 +201,12 @@ private fun TagConsumer<HTMLElement>.prepareToDock() {
         ul {
             li {
                 a(
+                    "https://www.nexusmods.com/starfield/mods/106",
+                    target = "_blank"
+                ) { +"Install SFSE" }
+            }
+            li {
+                a(
                     "https://www.nexusmods.com/starfield/mods/4280",
                     target = "_blank"
                 ) { +"Install Console API and Web Application" }
@@ -214,7 +220,7 @@ private fun TagConsumer<HTMLElement>.prepareToDock() {
                         code { +"bDisableCORS=true" }
                     }
                     li {
-                        +"If self hosting the app"
+                        +"OPTIONAL: If self hosting the app"
                         ul {
                             li {
                                 code { +"bEnableWebConsole=true" }
@@ -234,10 +240,11 @@ private fun TagConsumer<HTMLElement>.prepareToDock() {
                 a(
                     "https://github.com/ManApart/starfield-eye/blob/master/mod/Data/starfield-eye-poll.txt",
                     target = "_blank"
-                ) { +"Install Companion App" }
+                ) { +"Download the Companion App bat 'starfield-eye-poll.txt'" }
             }
+            li { +"Place 'starfield-eye-poll.txt' in your Data folder" }
         }
-        h4 { +"Self Hosting" }
+        h4 { +"Self Hosting (Optional)" }
         p { +"Host the site from the companion app mod. Only needed for things like your phone to get live access." }
         ul {
             li { +"The local site will only be up when the game is running" }

@@ -44,11 +44,15 @@ fun manualView(section: String? = null) {
                     p { +"The catalogue gives you access to a powerful search. Here you can search for systems and planets using a large number of criteria." }
                     p { +"Comma separated, you can search for things like planet names, available resources (by symbol or name), planet outposts, and more. Comma separated terms are considered an \"AND\", so you can filter for planets with a warm temperature that include iron." }
                     p { +"Search results display the system and any matching planets. By hovering/tapping a result, you'll see a detailed view of that star or planet. You can then view it's system to see more information about that system" }
+                    p { +"If X-Ray is off, you'll still see entries, but details will be hidden unless they have been scanned etc" }
                 }
                 div("section-view-box") {
                     linkableH2("Life Signs View")
                     div("accent-line") { +"" }
-                    p { +"" }
+                    p { +"This view works like the catalogue view but for flora and fauna instead of planets." }
+                    p { +"Comma separated, you can search for things like creature names, available resource dropped, and most of its misc stats. Comma separated terms are considered an \"AND\", so you can filter for creatures that drop adhesive and are domesticable." }
+                    p { +"Search results display the system, planet and any matching flora or fauna. By hovering/tapping a result, you'll see a detailed view of that creature. You can then view it's system to see more information about that system" }
+                    p { +"If X-Ray is off, you'll still see entries, but details will be hidden unless they have been scanned etc" }
                 }
                 div("section-view-box") {
                     linkableH2("System View")
@@ -62,22 +66,27 @@ fun manualView(section: String? = null) {
                 div("section-view-box") {
                     linkableH2("Outposts View")
                     div("accent-line") { +"" }
-                    p { +"" }
+                    p { +"The outpost view is meant to be your one stop shop while becoming a Shipping Magnate. If coupled with the advanced feature that allows you to fast travel, this page can allow you to quickly jump through each of your outposts, whether that's to set up shipping lines, harvest resources, or just enjoy the views." }
+                    p { +"Outposts are added in the system view of the relevant system. You can use the catalogue or galaxy map to find the relevant system and planet and then add the outpost. Once it's added you can edit it there or in the outpost view." }
+                    p { +"Outposts can have their name changed, notes added, and a representative picture uploaded." }
+                    p { +"Outposts can be updated to show what organic and inorganic resources are extracted/created there. The dropdowns only present resources that are present on that planet." }
+                    p { +"The 'By Resource' view sorts all your outposts by what resources they produce, so that you can quickly scan all your outposts and find the one you want to visit. With the advanced 'fast travel' feature, you can even chart your course to that outpost in a single click" }
                 }
                 div("section-view-box") {
                     linkableH2("Quests View")
                     div("accent-line") { +"" }
-                    p { +"" }
+                    p { +"View all your quests and their current objective. You can search by quest name or stage, and toggle hiding completed quests or not." }
+                    p { +"Use the buttons at the top to filter quests by general type." }
                 }
                 div("section-view-box") {
                     linkableH2("Stats View")
                     div("accent-line") { +"" }
-                    p { +"" }
+                    p { +"View most of the stats from the in game stats page, including your progress towards achievements for relevant stats." }
                 }
                 div("section-view-box") {
                     linkableH2("Connecting to your Game")
                     div("accent-line") { +"And the darkness gets lit, just a candle more" }
-                    p { +"Thanks to the incredible work of Stonegdi, The Eye can connect to your game and grab all sorts of data. This transforms the site from an interactive map into (hopefully) a full fledged companion app." }
+                    p { +"Thanks to the incredible work of Stonegdi, The Eye can connect to your game and grab all sorts of data." }
                     p { +"I want to favor speed over stability, so things may break as we go. I have a long personal wishlist of things to add as I figure things out or functionality is added to tooling. In the near term I hope to make a stats page and make the map interactively. Ideally you'll be able to search the site for a planet, and then click it to chart the course in the in game map." }
                 }
             }
