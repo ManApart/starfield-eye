@@ -48,6 +48,10 @@ h2 {
     margin-top: 10px;
 }
 
+h2 a {
+    text-decoration: none;
+}
+
 h4, h5 {
     margin-bottom: 0px;
 }
@@ -146,10 +150,6 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-.hidden {
-    display: none;
-}
-
 .visible-block {
     display: block;
 }
@@ -177,6 +177,12 @@ summary::-webkit-details-marker {
     width: 90%;
     max-width: 500px;
     max-height: 900px;
+}
+
+#about-view .section-view-box,
+#dock-view .section-view-box,
+#manual-view .section-view-box{
+    max-height: unset;
 }
 
 .accent-line {
@@ -219,7 +225,6 @@ summary::-webkit-details-marker {
     right: 0;
 }
 
-
 .header-nav {
     width: 100%;
     margin-bottom: 20px;
@@ -231,4 +236,8 @@ summary::-webkit-details-marker {
 
 .nav-section {
     display: inline-block;
+}
+
+.hidden {
+    display: none;
 }
