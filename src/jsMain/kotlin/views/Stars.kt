@@ -6,6 +6,7 @@ import isMobile
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import org.w3c.dom.HTMLElement
+import replaceElement
 import kotlin.random.Random
 
 private val rand = Random(0)
@@ -13,14 +14,11 @@ private const val layerCount = 3
 private var starLayers = listOf<HTMLElement>()
 
 fun genStars() {
-    val stars = el("stars")
-    if (inMemoryStorage.paintBackgroundStars ?: !isMobile()) {
-        stars.append {
+    replaceElement("stars") {
+        if (inMemoryStorage.paintBackgroundStars ?: !isMobile()) {
             backgroundStars()
+            starLayers = (0 until layerCount).mapNotNull { el<HTMLElement?>("star-layer-$it") }
         }
-        starLayers = (0 until layerCount).mapNotNull { el<HTMLElement?>("star-layer-$it") }
-    } else {
-        stars.innerHTML = ""
     }
 }
 

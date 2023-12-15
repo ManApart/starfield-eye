@@ -52,6 +52,7 @@ fun crewView() {
 
                     div("accent-line") { +"More than just the you and I" }
                     ul {
+                        li { a("https://manapart.github.io/starfield-mod-manager-site/index.html", target = "_blank") { +"My CLI Mod Manager" } }
                         li { a("https://starfieldwiki.net/wiki/Home", target = "_blank") { +"Starfield Wiki" } }
                         li { a("https://inara.cz/starfield", target = "_blank") { +"Starfield Inara" } }
                         li { a("https://starfield.lukium.ai/locations", target = "_blank") { +"Starfield Locations" } }

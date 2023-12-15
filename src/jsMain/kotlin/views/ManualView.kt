@@ -48,7 +48,7 @@ fun manualView(section: String? = null) {
                 }
                 div("section-view-box") {
                     linkableH2("Life Signs View")
-                    div("accent-line") { +"" }
+                    div("accent-line") { +"Ever run the scholars on the Centaurus Proclamation?" }
                     p { +"This view works like the catalogue view but for flora and fauna instead of planets." }
                     p { +"Comma separated, you can search for things like creature names, available resource dropped, and most of its misc stats. Comma separated terms are considered an \"AND\", so you can filter for creatures that drop adhesive and are domesticable." }
                     p { +"Search results display the system, planet and any matching flora or fauna. By hovering/tapping a result, you'll see a detailed view of that creature. You can then view it's system to see more information about that system" }
@@ -65,7 +65,7 @@ fun manualView(section: String? = null) {
                 }
                 div("section-view-box") {
                     linkableH2("Outposts View")
-                    div("accent-line") { +"" }
+                    div("accent-line") { +"A house out there in the starfield" }
                     p { +"The outpost view is meant to be your one stop shop while becoming a Shipping Magnate. If coupled with the advanced feature that allows you to fast travel, this page can allow you to quickly jump through each of your outposts, whether that's to set up shipping lines, harvest resources, or just enjoy the views." }
                     p { +"Outposts are added in the system view of the relevant system. You can use the catalogue or galaxy map to find the relevant system and planet and then add the outpost. Once it's added you can edit it there or in the outpost view." }
                     p { +"Outposts can have their name changed, notes added, and a representative picture uploaded." }
@@ -74,20 +74,32 @@ fun manualView(section: String? = null) {
                 }
                 div("section-view-box") {
                     linkableH2("Quests View")
-                    div("accent-line") { +"" }
+                    div("accent-line") { +"Time dances its years forward" }
                     p { +"View all your quests and their current objective. You can search by quest name or stage, and toggle hiding completed quests or not." }
                     p { +"Use the buttons at the top to filter quests by general type." }
                 }
                 div("section-view-box") {
                     linkableH2("Stats View")
-                    div("accent-line") { +"" }
+                    div("accent-line") { +"See if he'll play the good man's game" }
                     p { +"View most of the stats from the in game stats page, including your progress towards achievements for relevant stats." }
                 }
                 div("section-view-box") {
                     linkableH2("Connecting to your Game")
-                    div("accent-line") { +"And the darkness gets lit, just a candle more" }
-                    p { +"Thanks to the incredible work of Stonegdi, The Eye can connect to your game and grab all sorts of data." }
-                    p { +"I want to favor speed over stability, so things may break as we go. I have a long personal wishlist of things to add as I figure things out or functionality is added to tooling. In the near term I hope to make a stats page and make the map interactively. Ideally you'll be able to search the site for a planet, and then click it to chart the course in the in game map." }
+                    div("accent-line") { +"Burning helium out there" }
+                    p {
+                        +"Thanks to the incredible work of Stonegdi, The Eye can connect to your game and grab all sorts of data. See "
+                        a("#about/advanced_features"){+"Advanced Features"}
+                        +" to see what it can do today."
+                    }
+                    p {
+                        +"For setup, see "
+                        a("#dock/preparing_to_dock"){+"Preparing to Dock."}
+                    }
+                    p {
+                        +"Docking is planned to be much more comprehensive than it is today, but will likely require the release of mod tools to be complete. See "
+                        a("#about/planned_features"){+"Planned Features"}
+                        +" for more information."
+                    }
                 }
             }
         }

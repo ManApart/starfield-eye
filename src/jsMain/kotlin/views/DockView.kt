@@ -118,6 +118,7 @@ private fun TagConsumer<HTMLElement>.manageData() {
 
         p { +"User data is only stored on the browser. (I don't track anything you do)." }
         p { +"You can export data here to either back it up, or import it into another browser, or from the github site to the locally hosted one." }
+        p { +"I recommend using the thumbnail image when uploading screenshots from photo mode. While you can upload any size you want, the backup will be much smaller if you use the thumbnails, and they're generally still as large as the displayed image on the site." }
         p { +"If you're having issues with the site, it's possible that deleting your user data may fix them. Make sure to export your data first so you have a backup." }
 
         div {
@@ -176,7 +177,7 @@ private fun TagConsumer<HTMLElement>.settings() {
         }
         button {
             id = "reset-stars"
-            +"Use Mobile Test"
+            +"Reset Stars"
             title = "Show stars depending on if device is mobile"
             onClickFunction = {
                 inMemoryStorage.paintBackgroundStars = null
@@ -194,7 +195,7 @@ private fun TagConsumer<HTMLElement>.prepareToDock() {
         div("accent-line") { +"Burning helium out there" }
 
         h3 { +"Installing Mods" }
-        p { +"Docking requires that you have two mods installed. First, you need to have Console API and Web Application so we can get data from the game. Second, you need to install my companion app mod that polls data from the game. (Once things are more polished I'll release it on Nexus, but for now or to get bleeding edge changes)." }
+        p { +"Docking requires that you have two mods installed. First, you need to have Console API and Web Application so we can get data from the game. Second, you need to install my companion app mod that polls data from the game. (Once things are more polished I'll release it on Nexus, but for now or to get bleeding edge changes, just grab it from github in the link below. The mod will likely not be released until after modding tools are available.)" }
         p { +"If you'll only access the site from the same computer that the game is running on, you can skip self hosting the site. If you'd like to dock your phone as well, you'll need to self host this site." }
 
         h4 { +"Installing" }

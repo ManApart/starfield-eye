@@ -37,7 +37,7 @@ fun aboutView(section: String? = null) {
 
                 div("section-view-box") {
                     linkableH2("Instant Features")
-                    div("accent-line") { +"" }
+                    div("accent-line") { +"Overdrawn from Lady Luck three times over" }
                     p { +"These features work right now without any setup required. Try them out today!" }
 
                     h3 { +"Player Progress" }
@@ -99,7 +99,7 @@ fun aboutView(section: String? = null) {
                 }
                 div("section-view-box") {
                     linkableH2("Advanced Features")
-                    div("accent-line") { +"" }
+                    div("accent-line") { +"Looking to trade names to captain" }
                     p {
                         +"These features require you to Dock to work. You'll need to go through the setup on the "
                         a("#dock/preparing_to_dock") { +"Dock page," }
@@ -132,7 +132,7 @@ fun aboutView(section: String? = null) {
 
                 div("section-view-box") {
                     linkableH2("Planned Features")
-                    div("accent-line") { +"" }
+                    div("accent-line") { +"Turn the lights off when you leave" }
                     p { +"While there are no guarantees, these are the features I'm hoping to build out once we have proper modding tools" }
 
                     ul {
