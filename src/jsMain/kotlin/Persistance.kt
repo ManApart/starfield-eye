@@ -163,19 +163,31 @@ private fun exportData(data: String, fileName: String) {
     document.body?.removeChild(download)
 }
 
-fun importPlayerInfo() {
+fun importPlayerInfo(status: HTMLElement) {
     importData { data ->
-        jsonMapper.decodeFromString<InMemoryStorage>(data).also { inMemoryStorage = it }
-        println("Imported ${inMemoryStorage.planetUserInfo.size} user info pieces")
-        persistMemory()
+        try {
+            jsonMapper.decodeFromString<InMemoryStorage>(data).also { inMemoryStorage = it }
+            println("Imported ${inMemoryStorage.planetUserInfo.size} user info pieces")
+            persistMemory()
+            status.innerText = "Player Info Imported"
+        } catch (e: Exception) {
+            println("Import failed")
+            status.innerText = "Import failed"
+        }
     }
 }
 
-fun importPictures() {
+fun importPictures(status: HTMLElement) {
     importData { data ->
-        jsonMapper.decodeFromString<Map<String, String>>(data).also { pictureStorage = it.toMutableMap() }
-        println("Imported ${pictureStorage.keys.size} pictures")
-        persistPictures()
+        try {
+            jsonMapper.decodeFromString<Map<String, String>>(data).also { pictureStorage = it.toMutableMap() }
+            println("Imported ${pictureStorage.keys.size} pictures")
+            persistPictures()
+            status.innerText = "Pictures Imported"
+        } catch (e: Exception) {
+            println("Import failed")
+            status.innerText = "Import failed"
+        }
     }
 }
 

@@ -126,7 +126,7 @@ private fun TagConsumer<HTMLElement>.manageData() {
                 id = "import-button"
                 +"Import Data"
                 title = "Import saved user data"
-                onClickFunction = { importPlayerInfo() }
+                onClickFunction = { importPlayerInfo(el("load-status")) }
             }
             button {
                 id = "export-button"
@@ -146,7 +146,7 @@ private fun TagConsumer<HTMLElement>.manageData() {
                 id = "import-images-button"
                 +"Import Images"
                 title = "Import saved user images"
-                onClickFunction = { importPictures() }
+                onClickFunction = { importPictures(el("load-status")) }
             }
             button {
                 id = "export-images-button"
@@ -154,6 +154,9 @@ private fun TagConsumer<HTMLElement>.manageData() {
                 title = "Download user uploaded images"
                 onClickFunction = { exportPictures() }
             }
+        }
+        p{
+            id = "load-status"
         }
     }
 }
