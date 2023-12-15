@@ -18,6 +18,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.html.*
 import kotlinx.html.js.onClickFunction
+import loadSampleData
 import missionReference
 import org.w3c.dom.HTMLDivElement
 import org.w3c.dom.HTMLElement
@@ -121,6 +122,12 @@ private fun TagConsumer<HTMLElement>.manageData() {
         p { +"I recommend using the thumbnail image when uploading screenshots from photo mode. While you can upload any size you want, the backup will be much smaller if you use the thumbnails, and they're generally still as large as the displayed image on the site." }
         p { +"If you're having issues with the site, it's possible that deleting your user data may fix them. Make sure to export your data first so you have a backup." }
 
+        div {
+            button {
+                +"Load Sample Data"
+                onClickFunction = { loadSampleData(el("load-status")) }
+            }
+        }
         div {
             button {
                 id = "import-button"

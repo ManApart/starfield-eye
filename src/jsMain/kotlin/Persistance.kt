@@ -152,7 +152,7 @@ fun loadPictures(): Promise<*> {
 
 fun exportPlayerInfo() = exportData(jsonMapper.encodeToString(inMemoryStorage), "StarfieldEye.json")
 
-fun exportPictures() = exportData(jsonMapper.encodeToString(pictureStorage), "starfield-pictures.json")
+fun exportPictures() = exportData(jsonMapper.encodeToString(pictureStorage), "StarfieldPictures.json")
 
 private fun exportData(data: String, fileName: String) {
     val download = document.createElement("a") as HTMLElement
@@ -226,4 +226,26 @@ fun savePicture(key: String, data: String) {
 fun deletePicture(key: String) {
     pictureStorage.remove(key)
     persistPictures()
+}
+
+fun loadSampleData(status: HTMLElement) {
+    try {
+        status.innerText = "Loading Player Info"
+        loadJson("sample/StarfieldEye.json").then { playerJson ->
+            jsonMapper.decodeFromString<InMemoryStorage>(playerJson).also { inMemoryStorage = it }
+            println("Imported ${inMemoryStorage.planetUserInfo.size} user info pieces")
+            status.innerText = "Loading Pictures"
+            loadJson("sample/StarfieldPictures.json").then { pictureJson ->
+                jsonMapper.decodeFromString<Map<String, String>>(pictureJson)
+                    .also { pictureStorage = it.toMutableMap() }
+                println("Imported ${pictureStorage.keys.size} pictures")
+                persistMemory()
+                persistPictures()
+                status.innerText = "Loaded sample data!"
+            }
+        }
+    } catch (e: Exception) {
+        status.innerText = "Loading sample data failed"
+    }
+
 }
