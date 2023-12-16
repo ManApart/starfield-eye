@@ -14,7 +14,7 @@ data class LifeSignsSearchOptions(
 data class MissionSearchOptions(
     var searchText: String = "",
     var showCompleted: Boolean? = false,
-    var types: List<MissionType> = listOf()
+    var types: List<MissionType> = MissionType.entries
 )
 
 @Serializable
