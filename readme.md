@@ -34,16 +34,43 @@ curl -X POST -d "GetSFSEVersion" http://localhost:55555/console -v
 
 ## Advertisement Text
 
-Starfield Eye is an Ad Free, Searchable Starmap for Starfield.
+https://www.reddit.com/r/starfieldmods/comments/18jsbly/companion_app_starfield_eye_now_100/
 
-Open it on a second monitor while playing, or on your phone to plan your next adventure.
+Companion App: Starfield Eye Now 1.0.0
 
-Search for planets based on any combination of resources, traits, features, name and more. Easily find a planet for your outpost that contains Aluminum, Iron, and a mountain view.
+Starfield Eye is now in 1.0.0! There are more features than I can list here, so I'll just list the highlights and you can see the rest (or use the app ad free) at https://manapart.github.io/starfield-eye/#about
 
-Browse system by system with an Orrery that matches the in game UI.
+Player Progress
+- Complete your own codex of the game's many flora, fauna, and planets
+- Track your survey and scan progress
+- Upload Screenshots
 
-Save your favorite planets or the ones you want to explore. Add the name of your outposts and then see them all by searching "outpost". All data is stored locally on your browser, so no login is required and nothing is tracked, but you can import and export data to back it up or share it between devices.
+Planets
+- Search using a wide range of criteria
+- View a searchable galaxy map and system orrery views
 
-The Crew page also links to similar sites made by others, so you can pick the one that works best for you.
+Life Signs
+- Search Flora and Fauna
+- Complete your own pokedex
 
-Please report any issues as github issues at https://github.com/ManApart/starfield-eye/
+Outposts
+- Track your outposts with screenshots and what resources are produced
+- View outposts by resource
+- One button click to travel in game (chart a course) to your outpost
+
+And More
+- Export your data
+- Ad free
+- No data sent to the server
+- Most things link to the wiki
+
+
+
+
+Captions
+
+Search using a wide range of criteria
+Searchable galaxy map
+Track your quest progress and latest objective
+View misc stats and some achievement progress
+Mark stars discovered, planets landed on, and fauna/flora scan percent
