@@ -235,6 +235,10 @@ summary::-webkit-details-marker {
 }
 
 .nav-section {
+    display: inline;
+}
+
+#nav .toggle-wrapper {
     display: inline-block;
 }
 
