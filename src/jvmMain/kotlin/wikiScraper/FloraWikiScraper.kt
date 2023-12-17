@@ -24,16 +24,16 @@ fun main() {
     readFromUrls(urlFile, output, ::parseFlora, options)
 }
 
-private fun parseFlora(page: Document): List<FloraWikiData> {
+private fun parseFlora(url: String, page: Document): List<FloraWikiData> {
     val name = page.title().replace("Starfield:", "").replace(" - Starfield Wiki", "").trim()
     val allTables = page.select(".wikitable")
     val singleTable = allTables.firstOrNull { it.hasClass("infobox") }!!
     val variantTables = allTables.toMutableList().also { it.remove(singleTable) }
 
     val image = page.select(".thumbinner").flatMap { it.select("img") }.firstOrNull()
-    val url = image?.attr("srcset")?.split(" ")?.firstOrNull()?.let { "https:$it" } ?: image?.attr("src")
+    val imageUrl = image?.attr("srcset")?.split(" ")?.firstOrNull()?.let { "https:$it" } ?: image?.attr("src")
 
-    return variantTables.flatMap { parseFloraTable(it, name, url) }
+    return variantTables.flatMap { parseFloraTable(it, name, imageUrl) }
 }
 
 private fun parseFloraTable(table: Element, name: String, imageUrl: String?): List<FloraWikiData> {

@@ -5,8 +5,6 @@ import Galaxy
 import Planet
 import jsonMapper
 import kotlinx.serialization.decodeFromString
-import kotlinx.serialization.encodeToString
-import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import toTemperament
@@ -32,7 +30,7 @@ fun main() {
     readFromUrls(urlFile, output, ::parseFauna, options)
 }
 
-private fun parseFauna(page: Document): List<FaunaWikiData> {
+private fun parseFauna(url: String, page: Document): List<FaunaWikiData> {
 //    println("Parsing ${page.baseUri()}: ${page.title()}")
     val name = page.title().replace("Starfield:", "").replace(" - Starfield Wiki", "").trim()
     val allTables = page.select(".wikitable")
@@ -40,7 +38,7 @@ private fun parseFauna(page: Document): List<FaunaWikiData> {
     val variantTables = allTables.toMutableList().also { it.remove(singleTable) }
 
     val image = page.select(".thumbinner").flatMap { it.select("img") }.firstOrNull()
-    val url = image?.attr("srcset")?.split(" ")?.firstOrNull()?.let { "https:$it" } ?: image?.attr("src")
+    val imageUrl = image?.attr("srcset")?.split(" ")?.firstOrNull()?.let { "https:$it" } ?: image?.attr("src")
 
     return when {
         singleTable == null && variantTables.isEmpty() -> {
@@ -48,8 +46,8 @@ private fun parseFauna(page: Document): List<FaunaWikiData> {
             listOf()
         }
 
-        variantTables.isEmpty() -> listOf(parseTable(singleTable!!, name, url))
-        else -> variantTables.map { parseTable(it, name, url) }
+        variantTables.isEmpty() -> listOf(parseTable(singleTable!!, name, imageUrl))
+        else -> variantTables.map { parseTable(it, name, imageUrl) }
     }
 }
 

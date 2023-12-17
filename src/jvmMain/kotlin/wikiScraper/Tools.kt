@@ -70,7 +70,7 @@ fun crawl(baseUrl: String, onlyOne: Boolean): List<String> {
 inline fun <reified T : WikiData> readFromUrls(
     urlFile: File,
     output: File,
-    parse: (Document) -> List<T>,
+    parse: (String, Document) -> List<T>,
     options: ScraperOptions,
 ) {
     val data = urlFile.readLines()
@@ -83,7 +83,7 @@ inline fun <reified T : WikiData> readFromUrls(
             println("Processing next ${options.chunkSize}, starting with ${chunk.first()}")
             chunk.flatMap {
                 try {
-                    parse(fetch(it, options.cacheDir))
+                    parse(it, fetch(it, options.cacheDir))
                 } catch (e: Exception) {
                     println("Unable to parse $it")
                     emptyList()

@@ -28,7 +28,7 @@ fun main() {
     println("Reading Missions")
     readFromUrls(urlFile, output, ::parseMission, options)
 }
-private fun parseMission(page: Document): List<MissionWikiData> {
+private fun parseMission(url: String, page: Document): List<MissionWikiData> {
     val name = page.select("#firstHeading").firstOrNull()?.text()?.replace("Starfield:", "")
     val id = page.select(".missionHeader").firstOrNull()
         ?.select("tr")?.firstOrNull { row ->
