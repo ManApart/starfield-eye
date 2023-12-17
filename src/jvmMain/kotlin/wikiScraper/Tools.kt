@@ -140,6 +140,16 @@ fun Element.selectRight(headerText: String): Element? {
         }
 }
 
+fun Element.selectRightTdClean(tdText: String): String? {
+    return select("tr")
+        .firstOrNull { row -> row.select("td").any { it.text() == tdText } }
+        ?.let { row ->
+            val cells = row.select("td")
+            val right = cells.first { it.text() == tdText }.let { cells.indexOf(it) + 1 }
+            row.select("td").takeIf { it.size > right }?.get(right)
+        }.cleanText()
+}
+
 fun Element.selectBelowClean(headerText: String): String? {
     return selectBelow(headerText).cleanText()
 }

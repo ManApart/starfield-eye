@@ -56,3 +56,15 @@ data class FloraWikiData(
     @Transient
     val uniqueId = "$planetId-$name"
 }
+
+enum class PerkCategory { PHYSICAL, SOCIAL, COMBAT, SCIENCE, TECHNICAL, OTHER }
+enum class PerkTier { NOVICE, ADVANCED, EXPERT, MASTER }
+
+@Serializable
+data class Perk(
+    override val name: String,
+    val category: PerkCategory,
+    val tier: PerkTier,
+    val url: String,
+    val ranks: Map<Int, String>,
+) : WikiData
