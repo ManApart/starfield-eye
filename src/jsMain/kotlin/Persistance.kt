@@ -57,9 +57,12 @@ fun loadAll(progress: HTMLElement): Promise<*> {
                 loadFloraReference().then {
                     progress.innerText = "Loading Fauna"
                     loadFaunaReference().then {
-                        progress.innerText = "Loading User Pictures"
-                        loadPictures().then {
-                            return@then
+                        progress.innerText = "Loading Perks"
+                        loadPerks().then {
+                            progress.innerText = "Loading User Pictures"
+                            loadPictures().then {
+                                return@then
+                            }
                         }
                     }
                 }
@@ -97,6 +100,14 @@ fun loadFaunaReference(): Promise<*> {
             .filter { it.planetId != null }
             .groupBy { it.planetId!! }
         println("Read ${faunaReference.keys.size} fauna from json")
+    }
+}
+
+fun loadPerks(): Promise<*> {
+    return loadJson("perk-wiki-data.json").then { json ->
+        perks = jsonMapper.decodeFromString<List<Perk>>(json)
+            .associateBy { it.name }
+        println("Read ${perks.keys.size} perks from json")
     }
 }
 

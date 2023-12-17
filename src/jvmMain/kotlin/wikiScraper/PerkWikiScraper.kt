@@ -7,11 +7,11 @@ import org.jsoup.nodes.Document
 import java.io.File
 
 fun main() {
-    val options = ScraperOptions("perks", onlyOne = false)
+    val options = ScraperOptions("perks")
     val urlFile = File("raw-data/perks-pages.txt")
     if (!urlFile.exists()) urlFile.writeText("")
     fetchPagesIfEmpty(urlFile, listOf("https://starfieldwiki.net/wiki/Starfield:Skills"), options.onlyOne)
-    val output = File("src/jsMain/resources/perks-wiki-data.json")
+    val output = File("src/jsMain/resources/perk-wiki-data.json")
 
     println("Reading Perks")
     readFromUrls(urlFile, output, ::parsePerk, options)
@@ -31,7 +31,9 @@ private fun parsePerk(url: String, page: Document): List<Perk> {
         .map { "https:"+ it.attr("src") }
         .associateBy {
             it.substring(it.length-5, it.length-4).toInt()
-        }
+        }.toMutableMap()
+
+    page.select(".thumbinner").flatMap { it.select("img") }.firstOrNull()?.attr("src")?.let { ranks[4] = "https:$it" }
 
     return listOf(Perk(name, category, tier, url, ranks))
 }

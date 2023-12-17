@@ -1,0 +1,22 @@
+.perk-row {
+}
+
+
+.perk-cell {
+    text-align: center;
+    text-wrap: balance;
+}
+
+.perk-cell a {
+    display: block;
+}
+
+.perk-cell input {
+    display: block;
+}
+
+.perk-image {
+    display: block;
+    margin: auto;
+    width: 100px;
+}
