@@ -93,8 +93,9 @@ private fun saveHtmlRefs() {
 
 private fun highlightStar(searchText: String) {
     val (shown, hidden) = galaxy.systems.values.partition { system ->
-        system.star.name.lowercase().contains(searchText)
-                || system.planets.values.any { it.name.lowercase().contains(searchText) }
+        inMemoryStorage.isDiscovered(system.star.id) &&
+                (system.star.name.lowercase().contains(searchText)
+                || system.planets.values.any { it.name.lowercase().contains(searchText) })
     }
 
     shown.forEach {
