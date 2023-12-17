@@ -1,0 +1,55 @@
+.perk-header {
+    padding: 10px;
+    padding-left: 10px;
+}
+
+.perk-header h2 {
+    margin: 0px;
+}
+
+.perk-row {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.perk-row-NOVICE {
+    background-color: #3b454e
+}
+.perk-row-ADVANCED {
+    background-color: #2d404b
+}
+.perk-row-EXPERT {
+    background-color: #2e3151
+}
+.perk-row-MASTER {
+    background-color: #3d3e32
+}
+
+.perk-cell {
+    display: inline-block;
+    text-align: center;
+    text-wrap: balance;
+    width: 125px;
+    overflow: hidden;
+    word-break: break-word;
+    font-size: medium;
+}
+
+.perk-cell a {
+    display: block;
+}
+
+.perk-cell input {
+    display: block;
+    width: 100px;
+}
+
+.perk-image {
+    display: block;
+    margin: auto;
+    width: 100px;
+}

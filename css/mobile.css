@@ -50,4 +50,18 @@
         display: block;
     }
 
+    .perk-cell {
+        width: 100px;
+        font-size: small;
+    }
+
+    .perk-cell input {
+        width: 70px;
+    }
+
+    .perk-image {
+        width: 90px;
+    }
+
+
 }

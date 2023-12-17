@@ -1,0 +1,1039 @@
+[
+    {
+        "name": "Stealth",
+        "category": "PHYSICAL",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Stealth",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/e/ee/SF-skill-Stealth_0.png/300px-SF-skill-Stealth_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/0/02/SF-skill-Stealth_1.png/300px-SF-skill-Stealth_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/c/cd/SF-skill-Stealth_2.png/300px-SF-skill-Stealth_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/8/8a/SF-skill-Stealth_3.png/300px-SF-skill-Stealth_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/3/3e/SF-skill-Stealth_4.png/300px-SF-skill-Stealth_4.png"
+        }
+    },
+    {
+        "name": "Theft",
+        "category": "SOCIAL",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Theft",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/6/65/SF-skill-Theft_0.png/300px-SF-skill-Theft_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/0/0d/SF-skill-Theft_1.png/300px-SF-skill-Theft_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/3/3f/SF-skill-Theft_2.png/300px-SF-skill-Theft_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/3/32/SF-skill-Theft_3.png/300px-SF-skill-Theft_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/e/ed/SF-skill-Theft_4.png/300px-SF-skill-Theft_4.png"
+        }
+    },
+    {
+        "name": "Intimidation",
+        "category": "SOCIAL",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Intimidation",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/4/4f/SF-skill-Intimidation_0.png/300px-SF-skill-Intimidation_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/3/3e/SF-skill-Intimidation_1.png/300px-SF-skill-Intimidation_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/4/49/SF-skill-Intimidation_2.png/300px-SF-skill-Intimidation_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/1/1c/SF-skill-Intimidation_3.png/300px-SF-skill-Intimidation_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/7/79/SF-skill-Intimidation_4.png/300px-SF-skill-Intimidation_4.png"
+        }
+    },
+    {
+        "name": "Negotiation",
+        "category": "SOCIAL",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Negotiation",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/2/2a/SF-skill-Negotiation_0.png/300px-SF-skill-Negotiation_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/a/ac/SF-skill-Negotiation_1.png/300px-SF-skill-Negotiation_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/b/bd/SF-skill-Negotiation_2.png/300px-SF-skill-Negotiation_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/c/c8/SF-skill-Negotiation_3.png/300px-SF-skill-Negotiation_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/c/c8/SF-skill-Negotiation_4.png/300px-SF-skill-Negotiation_4.png"
+        }
+    },
+    {
+        "name": "Manipulation",
+        "category": "SOCIAL",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Manipulation",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/a/ae/SF-skill-Manipulation_0.png/300px-SF-skill-Manipulation_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/c/c4/SF-skill-Manipulation_1.png/300px-SF-skill-Manipulation_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/1/1b/SF-skill-Manipulation_2.png/300px-SF-skill-Manipulation_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/f/f0/SF-skill-Manipulation_3.png/300px-SF-skill-Manipulation_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/b/b1/SF-skill-Manipulation_4.png/300px-SF-skill-Manipulation_4.png"
+        }
+    },
+    {
+        "name": "Xenosociology",
+        "category": "SOCIAL",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Xenosociology",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/f/f4/SF-skill-Xenosociology_0.png/300px-SF-skill-Xenosociology_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/a/a2/SF-skill-Xenosociology_1.png/300px-SF-skill-Xenosociology_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/2/23/SF-skill-Xenosociology_2.png/300px-SF-skill-Xenosociology_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/4/4d/SF-skill-Xenosociology_3.png/300px-SF-skill-Xenosociology_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/7/7e/SF-skill-Xenosociology_4.png/300px-SF-skill-Xenosociology_4.png"
+        }
+    },
+    {
+        "name": "Gymnastics",
+        "category": "PHYSICAL",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Gymnastics",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/7/71/SF-skill-Gymnastics_0.png/300px-SF-skill-Gymnastics_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/c/cd/SF-skill-Gymnastics_1.png/300px-SF-skill-Gymnastics_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/4/43/SF-skill-Gymnastics_2.png/300px-SF-skill-Gymnastics_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/8/89/SF-skill-Gymnastics_3.png/300px-SF-skill-Gymnastics_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/9/91/SF-skill-Gymnastics_4.png/300px-SF-skill-Gymnastics_4.png"
+        }
+    },
+    {
+        "name": "Concealment",
+        "category": "PHYSICAL",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Concealment",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/0/0d/SF-skill-Concealment_0.png/300px-SF-skill-Concealment_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/b/bd/SF-skill-Concealment_1.png/300px-SF-skill-Concealment_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/b/b8/SF-skill-Concealment_2.png/300px-SF-skill-Concealment_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/4/4b/SF-skill-Concealment_3.png/300px-SF-skill-Concealment_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/8/8d/SF-skill-Concealment_4.png/300px-SF-skill-Concealment_4.png"
+        }
+    },
+    {
+        "name": "Rejuvenation",
+        "category": "PHYSICAL",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Rejuvenation",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/1/1a/SF-skill-Rejuvenation_0.png/300px-SF-skill-Rejuvenation_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/b/b9/SF-skill-Rejuvenation_1.png/300px-SF-skill-Rejuvenation_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/d/df/SF-skill-Rejuvenation_2.png/300px-SF-skill-Rejuvenation_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/3/3f/SF-skill-Rejuvenation_3.png/300px-SF-skill-Rejuvenation_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/5/53/SF-skill-Rejuvenation_4.png/300px-SF-skill-Rejuvenation_4.png"
+        }
+    },
+    {
+        "name": "Demolitions",
+        "category": "COMBAT",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Demolitions",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/b/bf/SF-skill-Demolitions_0.png/300px-SF-skill-Demolitions_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/e/e1/SF-skill-Demolitions_1.png/300px-SF-skill-Demolitions_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/7/7f/SF-skill-Demolitions_2.png/300px-SF-skill-Demolitions_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/8/89/SF-skill-Demolitions_3.png/300px-SF-skill-Demolitions_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/6/67/SF-skill-Demolitions_4.png/300px-SF-skill-Demolitions_4.png"
+        }
+    },
+    {
+        "name": "Piloting",
+        "category": "TECH",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Piloting",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/c/c2/SF-skill-Piloting_0.png/300px-SF-skill-Piloting_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/8/8d/SF-skill-Piloting_1.png/300px-SF-skill-Piloting_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/a/a2/SF-skill-Piloting_2.png/300px-SF-skill-Piloting_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/c/c8/SF-skill-Piloting_3.png/300px-SF-skill-Piloting_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/9/9e/SF-skill-Piloting_4.png/300px-SF-skill-Piloting_4.png"
+        }
+    },
+    {
+        "name": "Boost Pack Training",
+        "category": "TECH",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Boost_Pack_Training",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/2/29/SF-skill-Boost_Pack_Training_0.png/300px-SF-skill-Boost_Pack_Training_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/5/5c/SF-skill-Boost_Pack_Training_1.png/300px-SF-skill-Boost_Pack_Training_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/f/fd/SF-skill-Boost_Pack_Training_2.png/300px-SF-skill-Boost_Pack_Training_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/8/8d/SF-skill-Boost_Pack_Training_3.png/300px-SF-skill-Boost_Pack_Training_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/b/b1/SF-skill-Boost_Pack_Training_4.png/300px-SF-skill-Boost_Pack_Training_4.png"
+        }
+    },
+    {
+        "name": "Security (Tech Skill)",
+        "category": "TECH",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Security_(Tech_Skill)",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/3/3b/SF-skill-Security_0.png/300px-SF-skill-Security_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/3/3f/SF-skill-Security_1.png/300px-SF-skill-Security_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/e/eb/SF-skill-Security_2.png/300px-SF-skill-Security_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/c/c7/SF-skill-Security_3.png/300px-SF-skill-Security_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/9/9f/SF-skill-Security_4.png/300px-SF-skill-Security_4.png"
+        }
+    },
+    {
+        "name": "Targeting Control Systems",
+        "category": "TECH",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Targeting_Control_Systems",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/7/72/SF-skill-Targeting_Control_Systems_0.png/300px-SF-skill-Targeting_Control_Systems_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/d/df/SF-skill-Targeting_Control_Systems_1.png/300px-SF-skill-Targeting_Control_Systems_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/3/3b/SF-skill-Targeting_Control_Systems_2.png/300px-SF-skill-Targeting_Control_Systems_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/c/ce/SF-skill-Targeting_Control_Systems_3.png/300px-SF-skill-Targeting_Control_Systems_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/9/9b/SF-skill-Targeting_Control_Systems_4.png/300px-SF-skill-Targeting_Control_Systems_4.png"
+        }
+    },
+    {
+        "name": "Engine Systems",
+        "category": "TECH",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Engine_Systems",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/8/87/SF-skill-Engine_Systems_0.png/300px-SF-skill-Engine_Systems_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/6/68/SF-skill-Engine_Systems_1.png/300px-SF-skill-Engine_Systems_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/5/5e/SF-skill-Engine_Systems_2.png/300px-SF-skill-Engine_Systems_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/f/f7/SF-skill-Engine_Systems_3.png/300px-SF-skill-Engine_Systems_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/1/1e/SF-skill-Engine_Systems_4.png/300px-SF-skill-Engine_Systems_4.png"
+        }
+    },
+    {
+        "name": "Weight Lifting",
+        "category": "PHYSICAL",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Weight_Lifting",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/b/bb/SF-skill-Weight_Lifting_0.png/300px-SF-skill-Weight_Lifting_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/e/e7/SF-skill-Weight_Lifting_1.png/300px-SF-skill-Weight_Lifting_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/4/41/SF-skill-Weight_Lifting_2.png/300px-SF-skill-Weight_Lifting_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/4/4a/SF-skill-Weight_Lifting_3.png/300px-SF-skill-Weight_Lifting_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/e/e2/SF-skill-Weight_Lifting_4.png/300px-SF-skill-Weight_Lifting_4.png"
+        }
+    },
+    {
+        "name": "Fitness",
+        "category": "PHYSICAL",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Fitness",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/6/6c/SF-skill-Fitness_0.png/300px-SF-skill-Fitness_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/5/59/SF-skill-Fitness_1.png/300px-SF-skill-Fitness_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/8/85/SF-skill-Fitness_2.png/300px-SF-skill-Fitness_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/e/ed/SF-skill-Fitness_3.png/300px-SF-skill-Fitness_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/a/a8/SF-skill-Fitness_4.png/300px-SF-skill-Fitness_4.png"
+        }
+    },
+    {
+        "name": "Nutrition",
+        "category": "PHYSICAL",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Nutrition",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/b/be/SF-skill-Nutrition_0.png/300px-SF-skill-Nutrition_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/3/3d/SF-skill-Nutrition_1.png/300px-SF-skill-Nutrition_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/3/3a/SF-skill-Nutrition_2.png/300px-SF-skill-Nutrition_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/e/ea/SF-skill-Nutrition_3.png/300px-SF-skill-Nutrition_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/1/12/SF-skill-Nutrition_4.png/300px-SF-skill-Nutrition_4.png"
+        }
+    },
+    {
+        "name": "Wellness",
+        "category": "PHYSICAL",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Wellness",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/e/e3/SF-skill-Wellness_0.png/300px-SF-skill-Wellness_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/a/ac/SF-skill-Wellness_1.png/300px-SF-skill-Wellness_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/f/ff/SF-skill-Wellness_2.png/300px-SF-skill-Wellness_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/5/5c/SF-skill-Wellness_3.png/300px-SF-skill-Wellness_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/c/ca/SF-skill-Wellness_4.png/300px-SF-skill-Wellness_4.png"
+        }
+    },
+    {
+        "name": "Boxing",
+        "category": "PHYSICAL",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Boxing",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/e/e8/SF-skill-Boxing_0.png/300px-SF-skill-Boxing_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/8/87/SF-skill-Boxing_1.png/300px-SF-skill-Boxing_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/f/fc/SF-skill-Boxing_2.png/300px-SF-skill-Boxing_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/a/a2/SF-skill-Boxing_3.png/300px-SF-skill-Boxing_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/d/d4/SF-skill-Boxing_4.png/300px-SF-skill-Boxing_4.png"
+        }
+    },
+    {
+        "name": "Martial Arts",
+        "category": "PHYSICAL",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Martial_Arts",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/4/4b/SF-skill-Martial_Arts_0.png/300px-SF-skill-Martial_Arts_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/8/83/SF-skill-Martial_Arts_1.png/300px-SF-skill-Martial_Arts_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/e/ec/SF-skill-Martial_Arts_2.png/300px-SF-skill-Martial_Arts_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/6/6d/SF-skill-Martial_Arts_3.png/300px-SF-skill-Martial_Arts_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/0/03/SF-skill-Martial_Arts_4.png/300px-SF-skill-Martial_Arts_4.png"
+        }
+    },
+    {
+        "name": "Neurostrikes",
+        "category": "PHYSICAL",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Neurostrikes",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/6/66/SF-skill-Neurostrikes_0.png/300px-SF-skill-Neurostrikes_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/3/3f/SF-skill-Neurostrikes_1.png/300px-SF-skill-Neurostrikes_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/5/57/SF-skill-Neurostrikes_2.png/300px-SF-skill-Neurostrikes_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/9/9f/SF-skill-Neurostrikes_3.png/300px-SF-skill-Neurostrikes_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/4/4d/SF-skill-Neurostrikes_4.png/300px-SF-skill-Neurostrikes_4.png"
+        }
+    },
+    {
+        "name": "Pain Tolerance",
+        "category": "PHYSICAL",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Pain_Tolerance",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/5/5d/SF-skill-Pain_Tolerance_0.png/300px-SF-skill-Pain_Tolerance_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/f/f7/SF-skill-Pain_Tolerance_1.png/300px-SF-skill-Pain_Tolerance_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/1/1b/SF-skill-Pain_Tolerance_2.png/300px-SF-skill-Pain_Tolerance_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/c/c0/SF-skill-Pain_Tolerance_3.png/300px-SF-skill-Pain_Tolerance_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/5/57/SF-skill-Pain_Tolerance_4.png/300px-SF-skill-Pain_Tolerance_4.png"
+        }
+    },
+    {
+        "name": "Energy Weapon Dissipation",
+        "category": "PHYSICAL",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Energy_Weapon_Dissipation",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/0/08/SF-skill-Energy_Weapon_Dissipation_0.png/300px-SF-skill-Energy_Weapon_Dissipation_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/d/d8/SF-skill-Energy_Weapon_Dissipation_1.png/300px-SF-skill-Energy_Weapon_Dissipation_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/1/10/SF-skill-Energy_Weapon_Dissipation_2.png/300px-SF-skill-Energy_Weapon_Dissipation_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/5/57/SF-skill-Energy_Weapon_Dissipation_3.png/300px-SF-skill-Energy_Weapon_Dissipation_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/d/d0/SF-skill-Energy_Weapon_Dissipation_4.png/300px-SF-skill-Energy_Weapon_Dissipation_4.png"
+        }
+    },
+    {
+        "name": "Environmental Conditioning",
+        "category": "PHYSICAL",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Environmental_Conditioning",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/9/95/SF-skill-Environmental_Conditioning_0.png/300px-SF-skill-Environmental_Conditioning_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/b/b1/SF-skill-Environmental_Conditioning_1.png/300px-SF-skill-Environmental_Conditioning_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/1/13/SF-skill-Environmental_Conditioning_2.png/300px-SF-skill-Environmental_Conditioning_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/4/42/SF-skill-Environmental_Conditioning_3.png/300px-SF-skill-Environmental_Conditioning_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/1/15/SF-skill-Environmental_Conditioning_4.png/300px-SF-skill-Environmental_Conditioning_4.png"
+        }
+    },
+    {
+        "name": "Decontamination",
+        "category": "PHYSICAL",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Decontamination",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/0/07/SF-skill-Decontamination_0.png/300px-SF-skill-Decontamination_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/3/39/SF-skill-Decontamination_1.png/300px-SF-skill-Decontamination_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/0/0a/SF-skill-Decontamination_2.png/300px-SF-skill-Decontamination_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/9/90/SF-skill-Decontamination_3.png/300px-SF-skill-Decontamination_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/1/10/SF-skill-Decontamination_4.png/300px-SF-skill-Decontamination_4.png"
+        }
+    },
+    {
+        "name": "Cellular Regeneration",
+        "category": "PHYSICAL",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Cellular_Regeneration",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/0/01/SF-skill-Cellular_Regeneration_0.png/300px-SF-skill-Cellular_Regeneration_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/4/44/SF-skill-Cellular_Regeneration_1.png/300px-SF-skill-Cellular_Regeneration_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/b/bc/SF-skill-Cellular_Regeneration_2.png/300px-SF-skill-Cellular_Regeneration_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/5/5e/SF-skill-Cellular_Regeneration_3.png/300px-SF-skill-Cellular_Regeneration_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/d/d7/SF-skill-Cellular_Regeneration_4.png/300px-SF-skill-Cellular_Regeneration_4.png"
+        }
+    },
+    {
+        "name": "Diplomacy",
+        "category": "SOCIAL",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Diplomacy",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/d/d8/SF-skill-Diplomacy_0.png/300px-SF-skill-Diplomacy_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/2/28/SF-skill-Diplomacy_1.png/300px-SF-skill-Diplomacy_1.png",
+            "3": "https://images.starfieldwiki.net/thumb/1/12/SF-skill-Diplomacy_3.png/300px-SF-skill-Diplomacy_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/3/33/SF-skill-Diplomacy_4.png/300px-SF-skill-Diplomacy_4.png"
+        }
+    },
+    {
+        "name": "Instigation",
+        "category": "SOCIAL",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Instigation",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/8/85/SF-skill-Instigation_0.png/300px-SF-skill-Instigation_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/0/07/SF-skill-Instigation_1.png/300px-SF-skill-Instigation_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/0/0a/SF-skill-Instigation_2.png/300px-SF-skill-Instigation_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/9/9e/SF-skill-Instigation_3.png/300px-SF-skill-Instigation_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/9/90/SF-skill-Instigation_4.png/300px-SF-skill-Instigation_4.png"
+        }
+    },
+    {
+        "name": "Persuasion",
+        "category": "SOCIAL",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Persuasion",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/f/fd/SF-skill-Persuasion_0.png/300px-SF-skill-Persuasion_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/e/e2/SF-skill-Persuasion_1.png/300px-SF-skill-Persuasion_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/a/a4/SF-skill-Persuasion_2.png/300px-SF-skill-Persuasion_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/6/6c/SF-skill-Persuasion_3.png/300px-SF-skill-Persuasion_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/d/d9/SF-skill-Persuasion_4.png/300px-SF-skill-Persuasion_4.png"
+        }
+    },
+    {
+        "name": "Commerce",
+        "category": "SOCIAL",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Commerce",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/a/ac/SF-skill-Commerce_0.png/300px-SF-skill-Commerce_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/b/b1/SF-skill-Commerce_1.png/300px-SF-skill-Commerce_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/b/b2/SF-skill-Commerce_2.png/300px-SF-skill-Commerce_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/b/bb/SF-skill-Commerce_3.png/300px-SF-skill-Commerce_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/d/d0/SF-skill-Commerce_4.png/300px-SF-skill-Commerce_4.png"
+        }
+    },
+    {
+        "name": "Deception",
+        "category": "SOCIAL",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Deception",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/6/6f/SF-skill-Deception_0.png/300px-SF-skill-Deception_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/b/b4/SF-skill-Deception_1.png/300px-SF-skill-Deception_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/9/9b/SF-skill-Deception_2.png/300px-SF-skill-Deception_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/e/ef/SF-skill-Deception_3.png/300px-SF-skill-Deception_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/a/a8/SF-skill-Deception_4.png/300px-SF-skill-Deception_4.png"
+        }
+    },
+    {
+        "name": "Scavenging",
+        "category": "SOCIAL",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Scavenging",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/5/5b/SF-skill-Scavenging_0.png/300px-SF-skill-Scavenging_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/1/17/SF-skill-Scavenging_1.png/300px-SF-skill-Scavenging_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/b/bc/SF-skill-Scavenging_2.png/300px-SF-skill-Scavenging_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/9/9d/SF-skill-Scavenging_3.png/300px-SF-skill-Scavenging_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/c/c6/SF-skill-Scavenging_4.png/300px-SF-skill-Scavenging_4.png"
+        }
+    },
+    {
+        "name": "Leadership",
+        "category": "SOCIAL",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Leadership",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/f/f5/SF-skill-Leadership_0.png/300px-SF-skill-Leadership_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/6/6f/SF-skill-Leadership_1.png/300px-SF-skill-Leadership_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/3/32/SF-skill-Leadership_2.png/300px-SF-skill-Leadership_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/b/b1/SF-skill-Leadership_3.png/300px-SF-skill-Leadership_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/c/cd/SF-skill-Leadership_4.png/300px-SF-skill-Leadership_4.png"
+        }
+    },
+    {
+        "name": "Ship Command",
+        "category": "SOCIAL",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Ship_Command",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/6/6f/SF-skill-Ship_Command_0.png/300px-SF-skill-Ship_Command_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/6/6a/SF-skill-Ship_Command_1.png/300px-SF-skill-Ship_Command_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/c/c1/SF-skill-Ship_Command_2.png/300px-SF-skill-Ship_Command_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/0/08/SF-skill-Ship_Command_3.png/300px-SF-skill-Ship_Command_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/e/ee/SF-skill-Ship_Command_4.png/300px-SF-skill-Ship_Command_4.png"
+        }
+    },
+    {
+        "name": "Isolation",
+        "category": "SOCIAL",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Isolation",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/c/ca/SF-skill-Isolation_0.png/300px-SF-skill-Isolation_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/a/a5/SF-skill-Isolation_1.png/300px-SF-skill-Isolation_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/0/00/SF-skill-Isolation_2.png/300px-SF-skill-Isolation_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/7/70/SF-skill-Isolation_3.png/300px-SF-skill-Isolation_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/c/c5/SF-skill-Isolation_4.png/300px-SF-skill-Isolation_4.png"
+        }
+    },
+    {
+        "name": "Gastronomy",
+        "category": "SOCIAL",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Gastronomy",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/7/7c/SF-skill-Gastronomy_0.png/300px-SF-skill-Gastronomy_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/5/5f/SF-skill-Gastronomy_1.png/300px-SF-skill-Gastronomy_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/0/05/SF-skill-Gastronomy_2.png/300px-SF-skill-Gastronomy_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/1/18/SF-skill-Gastronomy_3.png/300px-SF-skill-Gastronomy_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/f/fe/SF-skill-Gastronomy_4.png/300px-SF-skill-Gastronomy_4.png"
+        }
+    },
+    {
+        "name": "Outpost Management",
+        "category": "SOCIAL",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Outpost_Management",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/f/f5/SF-skill-Outpost_Management_0.png/300px-SF-skill-Outpost_Management_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/9/9b/SF-skill-Outpost_Management_1.png/300px-SF-skill-Outpost_Management_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/b/bc/SF-skill-Outpost_Management_2.png/300px-SF-skill-Outpost_Management_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/4/45/SF-skill-Outpost_Management_3.png/300px-SF-skill-Outpost_Management_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/7/70/SF-skill-Outpost_Management_4.png/300px-SF-skill-Outpost_Management_4.png"
+        }
+    },
+    {
+        "name": "Ballistics",
+        "category": "COMBAT",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Ballistics",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/4/4c/SF-skill-Ballistics_0.png/300px-SF-skill-Ballistics_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/3/34/SF-skill-Ballistics_1.png/300px-SF-skill-Ballistics_1.png",
+            "3": "https://images.starfieldwiki.net/thumb/2/27/SF-skill-Ballistics_3.png/300px-SF-skill-Ballistics_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/0/09/SF-skill-Ballistics_4.png/300px-SF-skill-Ballistics_4.png"
+        }
+    },
+    {
+        "name": "Dueling",
+        "category": "COMBAT",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Dueling",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/8/8a/SF-skill-Dueling_0.png/300px-SF-skill-Dueling_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/0/00/SF-skill-Dueling_1.png/300px-SF-skill-Dueling_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/a/a3/SF-skill-Dueling_2.png/300px-SF-skill-Dueling_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/6/6a/SF-skill-Dueling_3.png/300px-SF-skill-Dueling_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/5/5d/SF-skill-Dueling_4.png/300px-SF-skill-Dueling_4.png"
+        }
+    },
+    {
+        "name": "Heavy Weapons Certification",
+        "category": "COMBAT",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Heavy_Weapons_Certification",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/0/0a/SF-skill-Heavy_Weapons_Certification_0.png/300px-SF-skill-Heavy_Weapons_Certification_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/0/0d/SF-skill-Heavy_Weapons_Certification_1.png/300px-SF-skill-Heavy_Weapons_Certification_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/a/aa/SF-skill-Heavy_Weapons_Certification_2.png/300px-SF-skill-Heavy_Weapons_Certification_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/6/6f/SF-skill-Heavy_Weapons_Certification_3.png/300px-SF-skill-Heavy_Weapons_Certification_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/1/1b/SF-skill-Heavy_Weapons_Certification_4.png/300px-SF-skill-Heavy_Weapons_Certification_4.png"
+        }
+    },
+    {
+        "name": "Incapacitation",
+        "category": "COMBAT",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Incapacitation",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/8/8b/SF-skill-Incapacitation_0.png/300px-SF-skill-Incapacitation_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/d/dd/SF-skill-Incapacitation_1.png/300px-SF-skill-Incapacitation_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/7/73/SF-skill-Incapacitation_2.png/300px-SF-skill-Incapacitation_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/3/31/SF-skill-Incapacitation_3.png/300px-SF-skill-Incapacitation_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/8/86/SF-skill-Incapacitation_4.png/300px-SF-skill-Incapacitation_4.png"
+        }
+    },
+    {
+        "name": "Lasers",
+        "category": "COMBAT",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Lasers",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/2/29/SF-skill-Lasers_0.png/300px-SF-skill-Lasers_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/6/65/SF-skill-Lasers_1.png/300px-SF-skill-Lasers_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/3/3e/SF-skill-Lasers_2.png/300px-SF-skill-Lasers_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/0/06/SF-skill-Lasers_3.png/300px-SF-skill-Lasers_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/e/ed/SF-skill-Lasers_4.png/300px-SF-skill-Lasers_4.png"
+        }
+    },
+    {
+        "name": "Particle Beams",
+        "category": "COMBAT",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Particle_Beams",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/c/c2/SF-skill-Particle_Beams_0.png/300px-SF-skill-Particle_Beams_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/2/2e/SF-skill-Particle_Beams_1.png/300px-SF-skill-Particle_Beams_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/f/fe/SF-skill-Particle_Beams_2.png/300px-SF-skill-Particle_Beams_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/4/4f/SF-skill-Particle_Beams_3.png/300px-SF-skill-Particle_Beams_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/8/84/SF-skill-Particle_Beams_4.png/300px-SF-skill-Particle_Beams_4.png"
+        }
+    },
+    {
+        "name": "Pistol Certification",
+        "category": "COMBAT",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Pistol_Certification",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/6/65/SF-skill-Pistol_Certification_0.png/300px-SF-skill-Pistol_Certification_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/d/da/SF-skill-Pistol_Certification_1.png/300px-SF-skill-Pistol_Certification_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/f/f9/SF-skill-Pistol_Certification_2.png/300px-SF-skill-Pistol_Certification_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/9/91/SF-skill-Pistol_Certification_3.png/300px-SF-skill-Pistol_Certification_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/9/97/SF-skill-Pistol_Certification_4.png/300px-SF-skill-Pistol_Certification_4.png"
+        }
+    },
+    {
+        "name": "Rifle Certification",
+        "category": "COMBAT",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Rifle_Certification",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/8/8e/SF-skill-Rifle_Certification_0.png/300px-SF-skill-Rifle_Certification_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/6/6f/SF-skill-Rifle_Certification_1.png/300px-SF-skill-Rifle_Certification_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/1/17/SF-skill-Rifle_Certification_2.png/300px-SF-skill-Rifle_Certification_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/7/7d/SF-skill-Rifle_Certification_3.png/300px-SF-skill-Rifle_Certification_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/9/93/SF-skill-Rifle_Certification_4.png/300px-SF-skill-Rifle_Certification_4.png"
+        }
+    },
+    {
+        "name": "Shotgun Certification",
+        "category": "COMBAT",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Shotgun_Certification",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/7/73/SF-skill-Shotgun_Certification_0.png/300px-SF-skill-Shotgun_Certification_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/a/ab/SF-skill-Shotgun_Certification_1.png/300px-SF-skill-Shotgun_Certification_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/8/8f/SF-skill-Shotgun_Certification_2.png/300px-SF-skill-Shotgun_Certification_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/1/1a/SF-skill-Shotgun_Certification_3.png/300px-SF-skill-Shotgun_Certification_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/4/4f/SF-skill-Shotgun_Certification_4.png/300px-SF-skill-Shotgun_Certification_4.png"
+        }
+    },
+    {
+        "name": "Sniper Certification",
+        "category": "COMBAT",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Sniper_Certification",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/9/9d/SF-skill-Sniper_Certification_0.png/300px-SF-skill-Sniper_Certification_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/7/7b/SF-skill-Sniper_Certification_1.png/300px-SF-skill-Sniper_Certification_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/1/18/SF-skill-Sniper_Certification_2.png/300px-SF-skill-Sniper_Certification_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/c/cc/SF-skill-Sniper_Certification_3.png/300px-SF-skill-Sniper_Certification_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/4/4c/SF-skill-Sniper_Certification_4.png/300px-SF-skill-Sniper_Certification_4.png"
+        }
+    },
+    {
+        "name": "Armor Penetration",
+        "category": "COMBAT",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Armor_Penetration",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/1/1b/SF-skill-Armor_Penetration_0.png/300px-SF-skill-Armor_Penetration_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/9/9d/SF-skill-Armor_Penetration_1.png/300px-SF-skill-Armor_Penetration_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/b/b4/SF-skill-Armor_Penetration_2.png/300px-SF-skill-Armor_Penetration_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/d/d8/SF-skill-Armor_Penetration_3.png/300px-SF-skill-Armor_Penetration_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/2/23/SF-skill-Armor_Penetration_4.png/300px-SF-skill-Armor_Penetration_4.png"
+        }
+    },
+    {
+        "name": "Rapid Reloading",
+        "category": "COMBAT",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Rapid_Reloading",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/c/c6/SF-skill-Rapid_Reloading_0.png/300px-SF-skill-Rapid_Reloading_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/c/cd/SF-skill-Rapid_Reloading_1.png/300px-SF-skill-Rapid_Reloading_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/1/1f/SF-skill-Rapid_Reloading_2.png/300px-SF-skill-Rapid_Reloading_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/8/83/SF-skill-Rapid_Reloading_3.png/300px-SF-skill-Rapid_Reloading_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/6/68/SF-skill-Rapid_Reloading_4.png/300px-SF-skill-Rapid_Reloading_4.png"
+        }
+    },
+    {
+        "name": "Targeting",
+        "category": "COMBAT",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Targeting",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/4/41/SF-skill-Targeting_0.png/300px-SF-skill-Targeting_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/a/a4/SF-skill-Targeting_1.png/300px-SF-skill-Targeting_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/3/38/SF-skill-Targeting_2.png/300px-SF-skill-Targeting_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/6/66/SF-skill-Targeting_3.png/300px-SF-skill-Targeting_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/9/91/SF-skill-Targeting_4.png/300px-SF-skill-Targeting_4.png"
+        }
+    },
+    {
+        "name": "Marksmanship",
+        "category": "COMBAT",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Marksmanship",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/b/bf/SF-skill-Marksmanship_0.png/300px-SF-skill-Marksmanship_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/3/3e/SF-skill-Marksmanship_1.png/300px-SF-skill-Marksmanship_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/8/84/SF-skill-Marksmanship_2.png/300px-SF-skill-Marksmanship_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/0/0e/SF-skill-Marksmanship_3.png/300px-SF-skill-Marksmanship_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/b/ba/SF-skill-Marksmanship_4.png/300px-SF-skill-Marksmanship_4.png"
+        }
+    },
+    {
+        "name": "Crippling",
+        "category": "COMBAT",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Crippling",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/7/7e/SF-skill-Crippling_0.png/300px-SF-skill-Crippling_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/5/53/SF-skill-Crippling_1.png/300px-SF-skill-Crippling_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/7/79/SF-skill-Crippling_2.png/300px-SF-skill-Crippling_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/5/54/SF-skill-Crippling_3.png/300px-SF-skill-Crippling_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/b/b5/SF-skill-Crippling_4.png/300px-SF-skill-Crippling_4.png"
+        }
+    },
+    {
+        "name": "Astrophysics",
+        "category": "SCIENCE",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Astrophysics",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/a/a3/SF-skill-Astrophysics_0.png/300px-SF-skill-Astrophysics_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/6/6f/SF-skill-Astrophysics_1.png/300px-SF-skill-Astrophysics_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/9/98/SF-skill-Astrophysics_2.png/300px-SF-skill-Astrophysics_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/2/2e/SF-skill-Astrophysics_3.png/300px-SF-skill-Astrophysics_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/1/14/SF-skill-Astrophysics_4.png/300px-SF-skill-Astrophysics_4.png"
+        }
+    },
+    {
+        "name": "Botany",
+        "category": "SCIENCE",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Botany",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/3/3b/SF-skill-Botany_0.png/300px-SF-skill-Botany_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/b/bf/SF-skill-Botany_1.png/300px-SF-skill-Botany_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/0/0d/SF-skill-Botany_2.png/300px-SF-skill-Botany_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/9/9f/SF-skill-Botany_3.png/300px-SF-skill-Botany_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/1/1b/SF-skill-Botany_4.png/300px-SF-skill-Botany_4.png"
+        }
+    },
+    {
+        "name": "Scanning",
+        "category": "SCIENCE",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Scanning",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/a/af/SF-skill-Scanning_0.png/300px-SF-skill-Scanning_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/8/8b/SF-skill-Scanning_1.png/300px-SF-skill-Scanning_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/1/13/SF-skill-Scanning_2.png/300px-SF-skill-Scanning_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/7/77/SF-skill-Scanning_3.png/300px-SF-skill-Scanning_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/e/e0/SF-skill-Scanning_4.png/300px-SF-skill-Scanning_4.png"
+        }
+    },
+    {
+        "name": "Surveying",
+        "category": "SCIENCE",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Surveying",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/a/a0/SF-skill-Surveying_0.png/300px-SF-skill-Surveying_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/1/1b/SF-skill-Surveying_1.png/300px-SF-skill-Surveying_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/2/26/SF-skill-Surveying_2.png/300px-SF-skill-Surveying_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/a/a7/SF-skill-Surveying_3.png/300px-SF-skill-Surveying_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/c/c6/SF-skill-Surveying_4.png/300px-SF-skill-Surveying_4.png"
+        }
+    },
+    {
+        "name": "Zoology",
+        "category": "SCIENCE",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Zoology",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/a/ab/SF-skill-Zoology_0.png/300px-SF-skill-Zoology_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/0/0d/SF-skill-Zoology_1.png/300px-SF-skill-Zoology_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/9/91/SF-skill-Zoology_2.png/300px-SF-skill-Zoology_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/b/b2/SF-skill-Zoology_3.png/300px-SF-skill-Zoology_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/d/d1/SF-skill-Zoology_4.png/300px-SF-skill-Zoology_4.png"
+        }
+    },
+    {
+        "name": "Geology",
+        "category": "SCIENCE",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Geology",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/a/ae/SF-skill-Geology_0.png/300px-SF-skill-Geology_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/2/2f/SF-skill-Geology_1.png/300px-SF-skill-Geology_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/b/bc/SF-skill-Geology_2.png/300px-SF-skill-Geology_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/2/25/SF-skill-Geology_3.png/300px-SF-skill-Geology_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/8/88/SF-skill-Geology_4.png/300px-SF-skill-Geology_4.png"
+        }
+    },
+    {
+        "name": "Chemistry",
+        "category": "SCIENCE",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Chemistry",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/5/53/SF-skill-Chemistry_0.png/300px-SF-skill-Chemistry_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/b/bf/SF-skill-Chemistry_1.png/300px-SF-skill-Chemistry_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/2/2a/SF-skill-Chemistry_2.png/300px-SF-skill-Chemistry_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/3/36/SF-skill-Chemistry_3.png/300px-SF-skill-Chemistry_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/5/55/SF-skill-Chemistry_4.png/300px-SF-skill-Chemistry_4.png"
+        }
+    },
+    {
+        "name": "Research Methods",
+        "category": "SCIENCE",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Research_Methods",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/4/48/SF-skill-Research_Methods_0.png/300px-SF-skill-Research_Methods_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/a/a4/SF-skill-Research_Methods_1.png/300px-SF-skill-Research_Methods_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/b/b9/SF-skill-Research_Methods_2.png/300px-SF-skill-Research_Methods_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/5/52/SF-skill-Research_Methods_3.png/300px-SF-skill-Research_Methods_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/f/f5/SF-skill-Research_Methods_4.png/300px-SF-skill-Research_Methods_4.png"
+        }
+    },
+    {
+        "name": "Spacesuit Design",
+        "category": "SCIENCE",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Spacesuit_Design",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/6/6e/SF-skill-Spacesuit_Design_0.png/300px-SF-skill-Spacesuit_Design_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/8/86/SF-skill-Spacesuit_Design_1.png/300px-SF-skill-Spacesuit_Design_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/6/61/SF-skill-Spacesuit_Design_2.png/300px-SF-skill-Spacesuit_Design_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/1/18/SF-skill-Spacesuit_Design_3.png/300px-SF-skill-Spacesuit_Design_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/d/dd/SF-skill-Spacesuit_Design_4.png/300px-SF-skill-Spacesuit_Design_4.png"
+        }
+    },
+    {
+        "name": "Special Projects",
+        "category": "SCIENCE",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Special_Projects",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/7/7c/SF-skill-Special_Projects_0.png/300px-SF-skill-Special_Projects_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/c/c1/SF-skill-Special_Projects_1.png/300px-SF-skill-Special_Projects_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/9/90/SF-skill-Special_Projects_2.png/300px-SF-skill-Special_Projects_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/a/ad/SF-skill-Special_Projects_3.png/300px-SF-skill-Special_Projects_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/b/ba/SF-skill-Special_Projects_4.png/300px-SF-skill-Special_Projects_4.png"
+        }
+    },
+    {
+        "name": "Weapon Engineering",
+        "category": "SCIENCE",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Weapon_Engineering",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/0/09/SF-skill-Weapon_Engineering_0.png/300px-SF-skill-Weapon_Engineering_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/0/0c/SF-skill-Weapon_Engineering_1.png/300px-SF-skill-Weapon_Engineering_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/1/12/SF-skill-Weapon_Engineering_2.png/300px-SF-skill-Weapon_Engineering_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/a/ae/SF-skill-Weapon_Engineering_3.png/300px-SF-skill-Weapon_Engineering_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/d/d3/SF-skill-Weapon_Engineering_4.png/300px-SF-skill-Weapon_Engineering_4.png"
+        }
+    },
+    {
+        "name": "Aneutronic Fusion",
+        "category": "SCIENCE",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Aneutronic_Fusion",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/a/a3/SF-skill-Aneutronic_Fusion_0.png/300px-SF-skill-Aneutronic_Fusion_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/3/3c/SF-skill-Aneutronic_Fusion_1.png/300px-SF-skill-Aneutronic_Fusion_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/1/19/SF-skill-Aneutronic_Fusion_2.png/300px-SF-skill-Aneutronic_Fusion_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/a/a9/SF-skill-Aneutronic_Fusion_3.png/300px-SF-skill-Aneutronic_Fusion_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/c/cd/SF-skill-Aneutronic_Fusion_4.png/300px-SF-skill-Aneutronic_Fusion_4.png"
+        }
+    },
+    {
+        "name": "Astrodynamics",
+        "category": "SCIENCE",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Astrodynamics",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/4/48/SF-skill-Astrodynamics_0.png/300px-SF-skill-Astrodynamics_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/0/08/SF-skill-Astrodynamics_1.png/300px-SF-skill-Astrodynamics_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/a/ad/SF-skill-Astrodynamics_2.png/300px-SF-skill-Astrodynamics_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/7/75/SF-skill-Astrodynamics_3.png/300px-SF-skill-Astrodynamics_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/4/4b/SF-skill-Astrodynamics_4.png/300px-SF-skill-Astrodynamics_4.png"
+        }
+    },
+    {
+        "name": "Outpost Engineering",
+        "category": "SCIENCE",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Outpost_Engineering",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/e/e4/SF-skill-Outpost_Engineering_0.png/300px-SF-skill-Outpost_Engineering_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/5/54/SF-skill-Outpost_Engineering_1.png/300px-SF-skill-Outpost_Engineering_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/a/a9/SF-skill-Outpost_Engineering_2.png/300px-SF-skill-Outpost_Engineering_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/7/72/SF-skill-Outpost_Engineering_3.png/300px-SF-skill-Outpost_Engineering_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/b/b2/SF-skill-Outpost_Engineering_4.png/300px-SF-skill-Outpost_Engineering_4.png"
+        }
+    },
+    {
+        "name": "Planetary Habitation",
+        "category": "SCIENCE",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Planetary_Habitation",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/9/98/SF-skill-Planetary_Habitation_0.png/300px-SF-skill-Planetary_Habitation_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/7/7b/SF-skill-Planetary_Habitation_1.png/300px-SF-skill-Planetary_Habitation_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/7/7d/SF-skill-Planetary_Habitation_2.png/300px-SF-skill-Planetary_Habitation_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/3/38/SF-skill-Planetary_Habitation_3.png/300px-SF-skill-Planetary_Habitation_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/8/8b/SF-skill-Planetary_Habitation_4.png/300px-SF-skill-Planetary_Habitation_4.png"
+        }
+    },
+    {
+        "name": "Medicine",
+        "category": "SCIENCE",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Medicine",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/9/91/SF-skill-Medicine_0.png/300px-SF-skill-Medicine_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/1/18/SF-skill-Medicine_1.png/300px-SF-skill-Medicine_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/0/0e/SF-skill-Medicine_2.png/300px-SF-skill-Medicine_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/c/c4/SF-skill-Medicine_3.png/300px-SF-skill-Medicine_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/0/02/SF-skill-Medicine_4.png/300px-SF-skill-Medicine_4.png"
+        }
+    },
+    {
+        "name": "Automated Weapon Systems",
+        "category": "TECH",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Automated_Weapon_Systems",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/5/5f/SF-skill-Automated_Weapon_Systems_0.png/300px-SF-skill-Automated_Weapon_Systems_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/d/dd/SF-skill-Automated_Weapon_Systems_1.png/300px-SF-skill-Automated_Weapon_Systems_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/1/1c/SF-skill-Automated_Weapon_Systems_2.png/300px-SF-skill-Automated_Weapon_Systems_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/4/45/SF-skill-Automated_Weapon_Systems_3.png/300px-SF-skill-Automated_Weapon_Systems_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/4/47/SF-skill-Automated_Weapon_Systems_4.png/300px-SF-skill-Automated_Weapon_Systems_4.png"
+        }
+    },
+    {
+        "name": "Ballistic Weapon Systems",
+        "category": "TECH",
+        "tier": "NOVICE",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Ballistic_Weapon_Systems",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/d/d1/SF-skill-Ballistic_Weapon_Systems_0.png/300px-SF-skill-Ballistic_Weapon_Systems_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/3/3b/SF-skill-Ballistic_Weapon_Systems_1.png/300px-SF-skill-Ballistic_Weapon_Systems_1.png",
+            "3": "https://images.starfieldwiki.net/thumb/e/e7/SF-skill-Ballistic_Weapon_Systems_3.png/300px-SF-skill-Ballistic_Weapon_Systems_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/0/00/SF-skill-Ballistic_Weapon_Systems_4.png/300px-SF-skill-Ballistic_Weapon_Systems_4.png"
+        }
+    },
+    {
+        "name": "Energy Weapon Systems",
+        "category": "TECH",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Energy_Weapon_Systems",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/a/a5/SF-skill-Energy_Weapon_Systems_0.png/300px-SF-skill-Energy_Weapon_Systems_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/f/ff/SF-skill-Energy_Weapon_Systems_1.png/300px-SF-skill-Energy_Weapon_Systems_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/0/02/SF-skill-Energy_Weapon_Systems_2.png/300px-SF-skill-Energy_Weapon_Systems_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/1/13/SF-skill-Energy_Weapon_Systems_3.png/300px-SF-skill-Energy_Weapon_Systems_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/b/bd/SF-skill-Energy_Weapon_Systems_4.png/300px-SF-skill-Energy_Weapon_Systems_4.png"
+        }
+    },
+    {
+        "name": "Missile Weapon Systems",
+        "category": "TECH",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Missile_Weapon_Systems",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/8/8b/SF-skill-Missile_Weapon_Systems_0.png/300px-SF-skill-Missile_Weapon_Systems_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/4/4d/SF-skill-Missile_Weapon_Systems_1.png/300px-SF-skill-Missile_Weapon_Systems_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/3/30/SF-skill-Missile_Weapon_Systems_2.png/300px-SF-skill-Missile_Weapon_Systems_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/f/fc/SF-skill-Missile_Weapon_Systems_3.png/300px-SF-skill-Missile_Weapon_Systems_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/4/47/SF-skill-Missile_Weapon_Systems_4.png/300px-SF-skill-Missile_Weapon_Systems_4.png"
+        }
+    },
+    {
+        "name": "Particle Beam Weapon Systems",
+        "category": "TECH",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Particle_Beam_Weapon_Systems",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/d/d4/SF-skill-Particle_Beam_Weapon_Systems_0.png/300px-SF-skill-Particle_Beam_Weapon_Systems_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/c/c0/SF-skill-Particle_Beam_Weapon_Systems_1.png/300px-SF-skill-Particle_Beam_Weapon_Systems_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/3/36/SF-skill-Particle_Beam_Weapon_Systems_2.png/300px-SF-skill-Particle_Beam_Weapon_Systems_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/2/25/SF-skill-Particle_Beam_Weapon_Systems_3.png/300px-SF-skill-Particle_Beam_Weapon_Systems_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/8/83/SF-skill-Particle_Beam_Weapon_Systems_4.png/300px-SF-skill-Particle_Beam_Weapon_Systems_4.png"
+        }
+    },
+    {
+        "name": "Payloads",
+        "category": "TECH",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Payloads",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/e/ec/SF-skill-Payloads_0.png/300px-SF-skill-Payloads_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/1/1e/SF-skill-Payloads_1.png/300px-SF-skill-Payloads_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/e/eb/SF-skill-Payloads_2.png/300px-SF-skill-Payloads_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/b/b0/SF-skill-Payloads_3.png/300px-SF-skill-Payloads_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/6/6b/SF-skill-Payloads_4.png/300px-SF-skill-Payloads_4.png"
+        }
+    },
+    {
+        "name": "Shield Systems",
+        "category": "TECH",
+        "tier": "ADVANCED",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Shield_Systems",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/8/8e/SF-skill-Shield_Systems_0.png/300px-SF-skill-Shield_Systems_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/5/57/SF-skill-Shield_Systems_1.png/300px-SF-skill-Shield_Systems_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/9/99/SF-skill-Shield_Systems_2.png/300px-SF-skill-Shield_Systems_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/0/07/SF-skill-Shield_Systems_3.png/300px-SF-skill-Shield_Systems_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/f/f3/SF-skill-Shield_Systems_4.png/300px-SF-skill-Shield_Systems_4.png"
+        }
+    },
+    {
+        "name": "Starship Design",
+        "category": "TECH",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Starship_Design",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/0/02/SF-skill-Starship_Design_0.png/300px-SF-skill-Starship_Design_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/a/aa/SF-skill-Starship_Design_1.png/300px-SF-skill-Starship_Design_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/2/2b/SF-skill-Starship_Design_2.png/300px-SF-skill-Starship_Design_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/0/06/SF-skill-Starship_Design_3.png/300px-SF-skill-Starship_Design_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/a/a7/SF-skill-Starship_Design_4.png/300px-SF-skill-Starship_Design_4.png"
+        }
+    },
+    {
+        "name": "Starship Engineering",
+        "category": "TECH",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Starship_Engineering",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/e/e8/SF-skill-Starship_Engineering_0.png/300px-SF-skill-Starship_Engineering_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/1/12/SF-skill-Starship_Engineering_1.png/300px-SF-skill-Starship_Engineering_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/3/3d/SF-skill-Starship_Engineering_2.png/300px-SF-skill-Starship_Engineering_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/3/3f/SF-skill-Starship_Engineering_3.png/300px-SF-skill-Starship_Engineering_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/b/b2/SF-skill-Starship_Engineering_4.png/300px-SF-skill-Starship_Engineering_4.png"
+        }
+    },
+    {
+        "name": "Boost Assault Training",
+        "category": "TECH",
+        "tier": "MASTER",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Boost_Assault_Training",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/7/7e/SF-skill-Boost_Assault_Training_0.png/300px-SF-skill-Boost_Assault_Training_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/e/e2/SF-skill-Boost_Assault_Training_1.png/300px-SF-skill-Boost_Assault_Training_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/f/f4/SF-skill-Boost_Assault_Training_2.png/300px-SF-skill-Boost_Assault_Training_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/b/b3/SF-skill-Boost_Assault_Training_3.png/300px-SF-skill-Boost_Assault_Training_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/6/64/SF-skill-Boost_Assault_Training_4.png/300px-SF-skill-Boost_Assault_Training_4.png"
+        }
+    },
+    {
+        "name": "Robotics",
+        "category": "TECH",
+        "tier": "EXPERT",
+        "url": "https://starfieldwiki.net/wiki/Starfield:Robotics",
+        "ranks": {
+            "0": "https://images.starfieldwiki.net/thumb/5/5c/SF-skill-Robotics_0.png/300px-SF-skill-Robotics_0.png",
+            "1": "https://images.starfieldwiki.net/thumb/8/8a/SF-skill-Robotics_1.png/300px-SF-skill-Robotics_1.png",
+            "2": "https://images.starfieldwiki.net/thumb/0/01/SF-skill-Robotics_2.png/300px-SF-skill-Robotics_2.png",
+            "3": "https://images.starfieldwiki.net/thumb/0/01/SF-skill-Robotics_3.png/300px-SF-skill-Robotics_3.png",
+            "4": "https://images.starfieldwiki.net/thumb/c/cd/SF-skill-Robotics_4.png/300px-SF-skill-Robotics_4.png"
+        }
+    }
+]
