@@ -20,7 +20,7 @@ fun perkView(section: String? = null) {
             navButtons()
             div {
                 id = "sections"
-                perks.values.groupBy { it.category }.forEach { (category, categoryPerks) ->
+                perks.values.groupBy { it.category }.entries.sortedBy { it.key.ordinal }.forEach { (category, categoryPerks) ->
                     div("section-view-box") {
                         div("perk-header") {
                             style = "background-color: ${category.color};"
@@ -37,7 +37,7 @@ fun perkView(section: String? = null) {
                             categoryPerks.groupBy { it.tier }.entries.sortedBy { it.key.ordinal }
                                 .forEach { (tier, perks) ->
                                     div("perk-row perk-row-$tier") {
-                                        perks.forEach { perk ->
+                                        perks.sortedBy { it.name }.forEach { perk ->
                                             val rank = inMemoryStorage.perks[perk.name] ?: 0
                                             div("perk-cell perk-cell-$tier") {
                                                 a(perk.url, target = "_blank") {
