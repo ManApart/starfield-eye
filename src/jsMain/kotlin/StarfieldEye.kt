@@ -129,6 +129,10 @@ fun doRouting(windowHash: String) {
             miscStatView()
         }
 
+        windowHash.startsWith("#perks") -> {
+            perkView()
+        }
+
         windowHash.startsWith("#system/") -> {
             val parts = windowHash.replace("#system/", "").split("/")
             if (parts.size == 2) {

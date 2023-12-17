@@ -24,6 +24,7 @@ data class InMemoryStorage(
     val connectionSettings: GameConnectionSettings = GameConnectionSettings(),
     var quests: List<Quest> = listOf(),
     var stats: MiscStats = MiscStats(),
+    var perks: MutableMap<String, Int> = mutableMapOf(),
     var showUndiscovered: Boolean? = true,
     var outpostResourceView: Boolean? = false,
     var paintBackgroundStars: Boolean? = null,
