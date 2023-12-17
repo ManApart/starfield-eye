@@ -17,8 +17,10 @@ fun genStars() {
     replaceElement("stars") {
         if (inMemoryStorage.paintBackgroundStars ?: !isMobile()) {
             backgroundStars()
-            starLayers = (0 until layerCount).mapNotNull { el<HTMLElement?>("star-layer-$it") }
         }
+    }
+    if (inMemoryStorage.paintBackgroundStars ?: !isMobile()) {
+        starLayers = (0 until layerCount).mapNotNull { el<HTMLElement?>("star-layer-$it") }
     }
 }
 
