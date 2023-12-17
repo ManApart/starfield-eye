@@ -162,7 +162,7 @@ private fun TagConsumer<HTMLElement>.manageData() {
                 onClickFunction = { exportPictures() }
             }
         }
-        p{
+        p {
             id = "load-status"
         }
     }
@@ -258,8 +258,11 @@ private fun TagConsumer<HTMLElement>.prepareToDock() {
         h4 { +"Self Hosting (Optional)" }
         p { +"Host the site from the companion app mod. Only needed for things like your phone to get live access." }
         ul {
-            li { +"The local site will only be up when the game is running" }
-            li { +"Data fetched while the site is up should persist once you close the game" }
+            li {
+                +"Download the latest version of the mod (starfield-eye.zip) from the "
+                a("https://github.com/ManApart/starfield-eye/releases", target = "_blank") { +"Releases Page" }
+            }
+            li { +"Install and enable the mod. Make sure it's loaded after than Console API and Web Application." }
             li {
                 +"Access the site from the local url and port, something like: "
                 code { +"192.168.0.100:55555/starfield-eye.html" }
@@ -268,7 +271,15 @@ private fun TagConsumer<HTMLElement>.prepareToDock() {
                 +"Dock using the IP and port in "
                 code { +"sfse_plugin_console_api.ini " }
             }
-            li { +"You can also import and export data to share across browsers without self hosting the site." }
+            li {
+                +"Note:"
+                ul {
+                    li { +"The local site will only be up when the game is running" }
+                    li { +"Data fetched while the site is up should persist once you close the game" }
+                    li { +"You can also import and export data to share across browsers without self hosting the site." }
+
+                }
+            }
         }
 
     }
