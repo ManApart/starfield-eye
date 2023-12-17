@@ -59,6 +59,7 @@ fun crewView() {
                         li { a("https://starfieldradio.com/", target = "_blank") { +"Starfield Radio" } }
                         li { a("https://www.nexusmods.com/starfield/mods/7689", target = "_blank") { +"Starfield External Map Helper" } }
                         li { a("http://starfieldalmanac.com/", target = "_blank") { +"Starfield Almanac" } }
+                        li { a("https://www.nexusmods.com/starfield/mods/7074", target = "_blank") { +"Starfield ISS" } }
                     }
                 }
             }
