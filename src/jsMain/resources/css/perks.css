@@ -1,10 +1,17 @@
 .perk-row {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 
 .perk-cell {
+    display: inline-block;
     text-align: center;
     text-wrap: balance;
+    width: 120px;
+    overflow: hidden;
+    word-break: break-word;
 }
 
 .perk-cell a {
@@ -13,6 +20,7 @@
 
 .perk-cell input {
     display: block;
+    width: 100px;
 }
 
 .perk-image {

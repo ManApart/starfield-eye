@@ -57,7 +57,7 @@ data class FloraWikiData(
     val uniqueId = "$planetId-$name"
 }
 
-enum class PerkCategory { PHYSICAL, SOCIAL, COMBAT, SCIENCE, TECHNICAL, OTHER }
+enum class PerkCategory { PHYSICAL, SOCIAL, COMBAT, SCIENCE, TECH, OTHER }
 enum class PerkTier { NOVICE, ADVANCED, EXPERT, MASTER }
 
 @Serializable

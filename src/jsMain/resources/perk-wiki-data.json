@@ -131,7 +131,7 @@
     },
     {
         "name": "Piloting",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "NOVICE",
         "url": "https://starfieldwiki.net/wiki/Starfield:Piloting",
         "ranks": {
@@ -143,17 +143,8 @@
         }
     },
     {
-        "name": "Ships",
-        "category": "OTHER",
-        "tier": "NOVICE",
-        "url": "https://starfieldwiki.net/wiki/Starfield:Ships",
-        "ranks": {
-            "4": "https://images.starfieldwiki.net/thumb/a/a8/SF-concept-Frontier.jpg/300px-SF-concept-Frontier.jpg"
-        }
-    },
-    {
         "name": "Boost Pack Training",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "NOVICE",
         "url": "https://starfieldwiki.net/wiki/Starfield:Boost_Pack_Training",
         "ranks": {
@@ -165,16 +156,8 @@
         }
     },
     {
-        "name": "Packs",
-        "category": "OTHER",
-        "tier": "NOVICE",
-        "url": "https://starfieldwiki.net/wiki/Starfield:Packs",
-        "ranks": {
-        }
-    },
-    {
         "name": "Security (Tech Skill)",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "NOVICE",
         "url": "https://starfieldwiki.net/wiki/Starfield:Security_(Tech_Skill)",
         "ranks": {
@@ -187,7 +170,7 @@
     },
     {
         "name": "Targeting Control Systems",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "NOVICE",
         "url": "https://starfieldwiki.net/wiki/Starfield:Targeting_Control_Systems",
         "ranks": {
@@ -200,7 +183,7 @@
     },
     {
         "name": "Engine Systems",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "ADVANCED",
         "url": "https://starfieldwiki.net/wiki/Starfield:Engine_Systems",
         "ranks": {
@@ -494,15 +477,6 @@
             "2": "https://images.starfieldwiki.net/thumb/0/05/SF-skill-Gastronomy_2.png/300px-SF-skill-Gastronomy_2.png",
             "3": "https://images.starfieldwiki.net/thumb/1/18/SF-skill-Gastronomy_3.png/300px-SF-skill-Gastronomy_3.png",
             "4": "https://images.starfieldwiki.net/thumb/f/fe/SF-skill-Gastronomy_4.png/300px-SF-skill-Gastronomy_4.png"
-        }
-    },
-    {
-        "name": "Outposts",
-        "category": "OTHER",
-        "tier": "NOVICE",
-        "url": "https://starfieldwiki.net/wiki/Starfield:Outposts",
-        "ranks": {
-            "4": "https://images.starfieldwiki.net/thumb/2/21/SF-misc-Outpost_Building.jpg/300px-SF-misc-Outpost_Building.jpg"
         }
     },
     {
@@ -922,7 +896,7 @@
     },
     {
         "name": "Automated Weapon Systems",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "MASTER",
         "url": "https://starfieldwiki.net/wiki/Starfield:Automated_Weapon_Systems",
         "ranks": {
@@ -935,7 +909,7 @@
     },
     {
         "name": "Ballistic Weapon Systems",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "NOVICE",
         "url": "https://starfieldwiki.net/wiki/Starfield:Ballistic_Weapon_Systems",
         "ranks": {
@@ -947,7 +921,7 @@
     },
     {
         "name": "Energy Weapon Systems",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "ADVANCED",
         "url": "https://starfieldwiki.net/wiki/Starfield:Energy_Weapon_Systems",
         "ranks": {
@@ -960,7 +934,7 @@
     },
     {
         "name": "Missile Weapon Systems",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "EXPERT",
         "url": "https://starfieldwiki.net/wiki/Starfield:Missile_Weapon_Systems",
         "ranks": {
@@ -973,7 +947,7 @@
     },
     {
         "name": "Particle Beam Weapon Systems",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "EXPERT",
         "url": "https://starfieldwiki.net/wiki/Starfield:Particle_Beam_Weapon_Systems",
         "ranks": {
@@ -986,7 +960,7 @@
     },
     {
         "name": "Payloads",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "ADVANCED",
         "url": "https://starfieldwiki.net/wiki/Starfield:Payloads",
         "ranks": {
@@ -999,7 +973,7 @@
     },
     {
         "name": "Shield Systems",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "ADVANCED",
         "url": "https://starfieldwiki.net/wiki/Starfield:Shield_Systems",
         "ranks": {
@@ -1012,7 +986,7 @@
     },
     {
         "name": "Starship Design",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "EXPERT",
         "url": "https://starfieldwiki.net/wiki/Starfield:Starship_Design",
         "ranks": {
@@ -1025,7 +999,7 @@
     },
     {
         "name": "Starship Engineering",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "EXPERT",
         "url": "https://starfieldwiki.net/wiki/Starfield:Starship_Engineering",
         "ranks": {
@@ -1038,7 +1012,7 @@
     },
     {
         "name": "Boost Assault Training",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "MASTER",
         "url": "https://starfieldwiki.net/wiki/Starfield:Boost_Assault_Training",
         "ranks": {
@@ -1051,7 +1025,7 @@
     },
     {
         "name": "Robotics",
-        "category": "OTHER",
+        "category": "TECH",
         "tier": "EXPERT",
         "url": "https://starfieldwiki.net/wiki/Starfield:Robotics",
         "ranks": {

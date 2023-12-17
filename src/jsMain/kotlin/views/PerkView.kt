@@ -32,20 +32,17 @@ fun perkView() {
 
                     perks.values.groupBy { it.category }.forEach { (category, categoryPerks) ->
                         h3 { +category.name.lowercase().capitalize() }
-                        table("perk-table") {
+                        div("perk-table") {
                             categoryPerks.groupBy { it.tier }.entries.sortedBy { it.key.ordinal }
                                 .forEach { (tier, perks) ->
-                                    tr("perk-row perk-row-$tier") {
+                                    div("perk-row perk-row-$tier") {
                                         perks.forEach { perk ->
                                             val rank = inMemoryStorage.perks[perk.name] ?: 0
-                                            td("perk-cell perk-cell-$tier") {
+                                            div("perk-cell perk-cell-$tier") {
                                                 a(perk.url, target = "_blank") {
                                                     img(classes = "perk-image", src = perk.ranks[rank]) {
                                                         id = "${perk.name}-badge"
                                                     }
-                                                }
-                                                div {
-                                                    +perk.name.replace("_", " ")
                                                 }
                                                 input(type = InputType.range) {
                                                     id = "${perk.name}-slider"
@@ -63,6 +60,9 @@ fun perkView() {
                                                             perk.ranks[newValue] ?: ""
                                                         persistMemory()
                                                     }
+                                                }
+                                                div {
+                                                    +perk.name.replace("_", " ")
                                                 }
                                             }
                                         }

@@ -35,6 +35,8 @@ private fun parsePerk(url: String, page: Document): List<Perk> {
 
     page.select(".thumbinner").flatMap { it.select("img") }.firstOrNull()?.attr("src")?.let { ranks[4] = "https:$it" }
 
-    return listOf(Perk(name, category, tier, url, ranks))
+    if(category == PerkCategory.OTHER) println("Skipping $name")
+
+    return if (category == PerkCategory.OTHER) listOf() else listOf(Perk(name, category, tier, url, ranks))
 }
 
