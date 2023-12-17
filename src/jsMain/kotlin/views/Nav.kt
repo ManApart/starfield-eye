@@ -70,6 +70,12 @@ fun TagConsumer<HTMLElement>.navButtons(navClass: String = "header-nav") {
                 title = "View Misc Stats"
                 onClickFunction = { miscStatView() }
             }
+            button {
+                id = "perks-button"
+                +"Perks"
+                title = "View Player Perks"
+                onClickFunction = { perkView() }
+            }
             div("toggle-wrapper") {
                 +"X-ray"
                 title = "Show all data, or only what you've discovered so far"
