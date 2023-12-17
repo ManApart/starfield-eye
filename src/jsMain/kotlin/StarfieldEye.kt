@@ -131,7 +131,7 @@ fun doRouting(windowHash: String) {
         }
 
         windowHash.startsWith("#perks") -> {
-            perkView()
+            perkView(section)
         }
 
         windowHash.startsWith("#system/") -> {

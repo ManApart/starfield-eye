@@ -1,6 +1,6 @@
 package views
 
-import Perk
+import components.linkableH2
 import el
 import inMemoryStorage
 import kotlinx.html.*
@@ -12,26 +12,27 @@ import persistMemory
 import replaceElement
 import updateUrl
 
-fun perkView() {
-    updateUrl("perks")
+fun perkView(section: String? = null) {
+    updateUrl("perks", section)
     replaceElement {
         div {
             id = "perk-view"
             navButtons()
             div {
                 id = "sections"
-                div("section-view-box") {
-                    id = "perk-tables"
-                    h2 { +"Perks" }
-                    div("accent-line") { +"" }
+                perks.values.groupBy { it.category }.forEach { (category, categoryPerks) ->
+                    div("section-view-box") {
+                        div("perk-header") {
+                            style = "background-color: ${category.color};"
 
-                    dataList {
-                        id = "ticks"
-                        (0..4).forEach { option { value = "$it" } }
-                    }
+                            linkableH2("perks", category.name.lowercase().capitalize())
+                        }
 
-                    perks.values.groupBy { it.category }.forEach { (category, categoryPerks) ->
-                        h3 { +category.name.lowercase().capitalize() }
+                        dataList {
+                            id = "ticks"
+                            (0..4).forEach { option { value = "$it" } }
+                        }
+
                         div("perk-table") {
                             categoryPerks.groupBy { it.tier }.entries.sortedBy { it.key.ordinal }
                                 .forEach { (tier, perks) ->
