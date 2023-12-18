@@ -1,3 +1,4 @@
+
 .by-resource-view {
     max-width: unset;
     max-height: unset;
@@ -32,5 +33,7 @@
 }
 
 .favorite-image {
-    width: 40px;
+    width: 30px;
+    margin-right: 5px;
+    margin-bottom: -6px;
 }
