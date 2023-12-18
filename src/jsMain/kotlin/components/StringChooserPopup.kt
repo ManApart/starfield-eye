@@ -31,7 +31,7 @@ fun showStringPicker(choices: Set<String>, result: (String) -> Unit) {
     popupClickListener()
 }
 private var popupClickCount = 0
-private fun popupClickListener() {
+fun popupClickListener() {
     window.onclick = { e ->
         popupClickCount++
         if (popupClickCount > 1 && e.target != el("popup")) {
@@ -40,7 +40,7 @@ private fun popupClickListener() {
     }
 }
 
-private fun closePopup() {
+fun closePopup() {
     val root = el("popup")
     root.addClass("hidden")
     root.style.display = "hidden"

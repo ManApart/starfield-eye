@@ -90,22 +90,3 @@ fun showResourcePicker(resources: Set<ResourceType>, result: (ResourceType) -> U
     }
     popupClickListener()
 }
-
-private var popupClickCount = 0
-private fun popupClickListener() {
-    window.onclick = { e ->
-        popupClickCount++
-        if (popupClickCount > 1 && e.target != el("popup")) {
-            closePopup()
-        }
-    }
-}
-
-private fun closePopup() {
-    val root = el("popup")
-    root.addClass("hidden")
-    root.style.display = "hidden"
-    root.innerHTML = ""
-    window.onclick = {}
-    popupClickCount = 0
-}

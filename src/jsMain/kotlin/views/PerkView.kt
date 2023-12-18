@@ -1,10 +1,12 @@
 package views
 
 import components.linkableH2
+import components.sliderPopup
 import el
 import inMemoryStorage
 import kotlinx.html.*
 import kotlinx.html.js.onChangeFunction
+import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLImageElement
 import org.w3c.dom.HTMLInputElement
 import perks
@@ -28,11 +30,6 @@ fun perkView(section: String? = null) {
                             linkableH2("perks", category.name.lowercase().capitalize())
                         }
 
-                        dataList {
-                            id = "ticks"
-                            (0..4).forEach { option { value = "$it" } }
-                        }
-
                         div("perk-table") {
                             categoryPerks.groupBy { it.tier }.entries.sortedBy { it.key.ordinal }
                                 .forEach { (tier, perks) ->
@@ -40,29 +37,18 @@ fun perkView(section: String? = null) {
                                         perks.sortedBy { it.name }.forEach { perk ->
                                             val rank = inMemoryStorage.perks[perk.name] ?: 0
                                             div("perk-cell perk-cell-$tier") {
-                                                a(perk.url, target = "_blank") {
                                                     img(classes = "perk-image", src = perk.ranks[rank]) {
                                                         id = "${perk.name}-badge"
+                                                        onClickFunction = {
+                                                            sliderPopup(0..4, inMemoryStorage.perks[perk.name] ?: 0){newValue ->
+                                                                inMemoryStorage.perks[perk.name] = newValue
+                                                                el<HTMLImageElement>("${perk.name}-badge").src =
+                                                                    perk.ranks[newValue] ?: ""
+                                                                persistMemory()
+                                                            }
+                                                        }
                                                     }
-                                                }
-                                                input(type = InputType.range) {
-                                                    id = "${perk.name}-slider"
-                                                    list = "ticks"
-                                                    min = "0"
-                                                    max = "4"
-                                                    value = rank.toString()
-                                                    step = "1"
-                                                    onChangeFunction = {
-                                                        val newValue =
-                                                            el<HTMLInputElement>("${perk.name}-slider").value.toIntOrNull()
-                                                                ?: 0
-                                                        inMemoryStorage.perks[perk.name] = newValue
-                                                        el<HTMLImageElement>("${perk.name}-badge").src =
-                                                            perk.ranks[newValue] ?: ""
-                                                        persistMemory()
-                                                    }
-                                                }
-                                                div {
+                                                a(perk.url, target = "_blank") {
                                                     +perk.name.replace("_", " ")
                                                 }
                                             }
