@@ -41,15 +41,16 @@
 
 .perk-cell a {
     display: block;
+    text-decoration: none;
 }
 
-.perk-cell input {
-    display: block;
-    width: 100px;
+.perk-cell a:hover{
+    text-decoration: underline;
 }
 
 .perk-image {
     display: block;
     margin: auto;
-    width: 100px;
+    width: 125px;
+    cursor: context-menu;
 }

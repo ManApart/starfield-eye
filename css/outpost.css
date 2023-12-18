@@ -1,3 +1,4 @@
+
 .by-resource-view {
     max-width: unset;
     max-height: unset;
@@ -29,4 +30,10 @@
 }
 
 .outpost-rename {
+}
+
+.favorite-image {
+    width: 30px;
+    margin-right: 5px;
+    margin-bottom: -6px;
 }
