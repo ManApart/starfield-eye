@@ -8,6 +8,7 @@ import components.*
 import el
 import galaxy
 import inMemoryStorage
+import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
@@ -60,7 +61,7 @@ private fun TagConsumer<HTMLElement>.viewAllOutposts() {
     inMemoryStorage.planetUserInfo.values
         .filter { it.outPosts.isNotEmpty() }
         .map { it to galaxy.planets[it.planetId]!! }
-        .sortedWith(compareBy ({ (info, _) -> info.outPosts.none { it.favorite } }, {it.second.name}))
+        .sortedWith(compareBy({ (info, _) -> info.outPosts.none { it.favorite } }, { it.second.name }))
         .forEach { (planetInfo, planet) ->
             div("section-view-box") {
                 id = "outpost-view-${planet.uniqueId}"
@@ -214,11 +215,16 @@ private fun TagConsumer<HTMLElement>.outpostHeader(
 ) {
     var renameMode = false
     h4 {
-        img("Favorite", src = "images/favorite-${if(outpost.favorite) "on" else "off"}.svg", classes = "favorite-image") {
+        img(
+            "Favorite",
+            src = "images/favorite-${if (outpost.favorite) "on" else "off"}.svg",
+            classes = "favorite-image"
+        ) {
             id = "outpost-${planet.uniqueId}-${outpost.id}-favorite"
             onClickFunction = {
                 outpost.favorite = !outpost.favorite
-                el<HTMLImageElement>("outpost-${planet.uniqueId}-${outpost.id}-favorite").src = "images/favorite-${if(outpost.favorite) "on" else "off"}.svg"
+                el<HTMLImageElement>("outpost-${planet.uniqueId}-${outpost.id}-favorite").src =
+                    "images/favorite-${if (outpost.favorite) "on" else "off"}.svg"
                 persistMemory()
             }
         }
@@ -267,8 +273,10 @@ private fun TagConsumer<HTMLElement>.outpostHeader(
             id = "delete-outpost-$i"
             +"Del"
             onClickFunction = {
-                info.outPosts.remove(outpost)
-                saveOutpostInfo(planet, info)
+                if (window.confirm("Are you sure you want to delete ${outpost.name}?")) {
+                    info.outPosts.remove(outpost)
+                    saveOutpostInfo(planet, info)
+                }
             }
         }
     }
