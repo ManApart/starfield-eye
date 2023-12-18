@@ -19,6 +19,7 @@ import kotlinx.html.h5
 import kotlinx.html.hr
 import kotlinx.html.js.*
 import org.w3c.dom.HTMLElement
+import org.w3c.dom.HTMLImageElement
 import org.w3c.dom.HTMLInputElement
 import org.w3c.dom.HTMLTextAreaElement
 import org.w3c.dom.events.KeyboardEvent
@@ -59,7 +60,7 @@ private fun TagConsumer<HTMLElement>.viewAllOutposts() {
     inMemoryStorage.planetUserInfo.values
         .filter { it.outPosts.isNotEmpty() }
         .map { it to galaxy.planets[it.planetId]!! }
-        .sortedBy { it.second.name }
+        .sortedWith(compareBy ({ (info, _) -> info.outPosts.none { it.favorite } }, {it.second.name}))
         .forEach { (planetInfo, planet) ->
             div("section-view-box") {
                 id = "outpost-view-${planet.uniqueId}"
@@ -213,6 +214,14 @@ private fun TagConsumer<HTMLElement>.outpostHeader(
 ) {
     var renameMode = false
     h4 {
+        img("Favorite", src = "images/favorite-${if(outpost.favorite) "on" else "off"}.svg", classes = "favorite-image") {
+            id = "outpost-${planet.uniqueId}-${outpost.id}-favorite"
+            onClickFunction = {
+                outpost.favorite = !outpost.favorite
+                el<HTMLImageElement>("outpost-${planet.uniqueId}-${outpost.id}-favorite").src = "images/favorite-${if(outpost.favorite) "on" else "off"}.svg"
+                persistMemory()
+            }
+        }
         span {
             id = "outpost-$i-header"
             +outpost.name

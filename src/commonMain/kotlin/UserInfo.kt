@@ -18,6 +18,7 @@ data class PlanetInfo(
 data class Outpost(
     val id: Int,
     var name: String = "",
+    var favorite: Boolean = false,
     val organicResources: MutableSet<String> = mutableSetOf(),
     val inorganicResources: MutableSet<ResourceType> = mutableSetOf(),
     var notes: String = "",
