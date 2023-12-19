@@ -69,10 +69,7 @@ private fun TagConsumer<HTMLElement>.resourceSquare(
 
 fun showResourcePicker(resources: Set<ResourceType>, result: (ResourceType) -> Unit) {
     val root = el("popup")
-    root.removeClass("hidden")
-    root.style.top = "${mouseY}px"
-    root.style.left = "${mouseX}px"
-    root.innerHTML = ""
+    openPopup(root)
     root.append {
         resources.forEach { resource ->
             div("resource") {

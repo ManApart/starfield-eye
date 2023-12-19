@@ -1,20 +1,14 @@
 package components
 
 import el
-import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onChangeFunction
-import mouseX
-import mouseY
 import org.w3c.dom.HTMLInputElement
 
 fun sliderPopup(steps: IntRange, current: Int, onChange: (Int) -> Unit){
     val root = el("popup")
-    root.removeClass("hidden")
-    root.style.top = "${mouseY}px"
-    root.style.left = "${mouseX}px"
-    root.innerHTML = ""
+    openPopup(root, 157)
     root.append {
         dataList {
             id = "ticks"
