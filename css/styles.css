@@ -164,7 +164,7 @@ summary::-webkit-details-marker {
     position: relative;
 }
 
-.section-view-box{
+.section-view-box {
     display: block;
     border: 1px solid gray;
     padding: 10px;
