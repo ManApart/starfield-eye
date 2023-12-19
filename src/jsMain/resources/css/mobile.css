@@ -13,7 +13,7 @@
     }
 
     #sections {
-        margin: 5%;
+        margin: 0%;
         margin-top: 1%;
         max-width: unset;
     }
@@ -28,6 +28,14 @@
         height: 98vh;
         overflow-x: scroll;
         overflow-y: scroll;
+    }
+
+    .section-view-box {
+        width: 95%;
+    }
+
+    #sections .section-view-box {
+        margin-bottom: 10px;
     }
 
     #galaxy {
