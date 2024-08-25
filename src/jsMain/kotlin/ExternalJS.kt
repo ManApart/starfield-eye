@@ -1,3 +1,4 @@
+import kotlin.js.Json
 import kotlin.js.Promise
 
 @JsModule("localforage")
@@ -9,3 +10,17 @@ external object LocalForage {
 }
 
 data class LocalForageConfig(val name: String)
+
+@JsModule("vis-network")
+@JsNonModule
+@JsName("vis")
+external object Vis {
+    class Network {
+        fun on(event: String, handler: (Json) -> Unit)
+    }
+}
+
+@JsModule("vis-data")
+@JsNonModule
+@JsName("vis")
+external object VisData

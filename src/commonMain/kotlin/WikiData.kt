@@ -18,14 +18,14 @@ data class PlanetWikiData(
     val water: String = "",
     val resources: List<String> = listOf(),
     val traits: List<String> = listOf(),
-): WikiData
+) : WikiData
 
 @Serializable
 data class MissionWikiData(
     override val name: String = "",
     val id: String = "",
     val type: MissionType = MissionType.OTHER,
-): WikiData
+) : WikiData
 
 @Serializable
 data class FaunaWikiData(
@@ -38,7 +38,7 @@ data class FaunaWikiData(
     val resource: String,
     val abilities: List<String> = listOf(),
     val other: Map<String, String> = mapOf()
-): WikiData {
+) : WikiData {
     @Transient
     val uniqueId = "$planetId-$name"
 }
@@ -52,7 +52,7 @@ data class FloraWikiData(
     val biomes: List<String> = listOf(),
     val resource: String,
     val other: Map<String, String> = mapOf()
-): WikiData {
+) : WikiData {
     @Transient
     val uniqueId = "$planetId-$name"
 }
@@ -69,7 +69,11 @@ data class Perk(
     val ranks: Map<Int, String>,
 ) : WikiData
 
-enum class ResearchCategory{ PHARMACOLOGY, FOOD_AND_DRINK, OUTPOST_MANAGEMENT, EQUIPMENT, WEAPONRY, OTHER}
+enum class ResearchCategory {
+    PHARMACOLOGY, FOOD_AND_DRINK, OUTPOST_MANAGEMENT, EQUIPMENT, WEAPONRY, OTHER;
+
+    val pic = "./images/research/${name.lowercase()}.svg"
+}
 
 @Serializable
 data class ResearchProject(
@@ -80,7 +84,10 @@ data class ResearchProject(
     val prerequisites: Map<String, Int>,
     val perks: Map<String, Int>,
     val materials: List<Material>
-) : WikiData
+) : WikiData {
+    @Transient
+    val id = "$name $rank"
+}
 
 @Serializable
 data class Material(

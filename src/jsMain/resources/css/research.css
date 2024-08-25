@@ -3,11 +3,15 @@
     color: #030303;
     font-family: Architekt;
 }
-.research:hover {
+.research2:hover {
     background-color: #71777a;
 }
 
 .research-accent {
     background-color: #596365;
     color: white;
+}
+
+#research-network-canvas {
+    height: 95vh;
 }
