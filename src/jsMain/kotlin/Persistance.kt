@@ -2,7 +2,6 @@ import LocalForage.config
 import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.serialization.Serializable
-import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement
