@@ -69,7 +69,7 @@ data class Perk(
     val ranks: Map<Int, String>,
 ) : WikiData
 
-enum class ResearchCategory{ PHARMACOLOGY, OTHER}
+enum class ResearchCategory{ PHARMACOLOGY, FOOD_AND_DRINK, OUTPOST_MANAGEMENT, EQUIPMENT, WEAPONRY, OTHER}
 
 @Serializable
 data class ResearchProject(

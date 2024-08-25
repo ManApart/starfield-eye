@@ -21,16 +21,21 @@ fun main() {
 }
 
 private fun parseResearch(page: Document): List<ResearchProject> {
-    return page.select(".wikitable").take(1).flatMap { table ->
-        val category = table.select("caption").text().replace(" Research Tree", "").let { r -> ResearchCategory.entries.firstOrNull { it.name.lowercase() == r.lowercase() } } ?: ResearchCategory.OTHER
-        table.select("tr").drop(1).map { row ->
+
+
+    return page.select(".wikitable").flatMapIndexed { categoryIndex: Int, table: Element? ->
+        val category = ResearchCategory.entries[categoryIndex]
+        table!!.select("tr").drop(1).map { row ->
+            val colCount = row.select("td").count()
             val rawName = row.selectTdClean(0)?.split(" ") ?: listOf()
             val name = rawName.dropLast(1).joinToString(" ")
             val rank = rawName.last().toIntOrNull() ?: 1
-            val preReqs = row.selectTd(1)?.text()?.toRankMap() ?: mapOf()
-            val perks = row.selectTd(2)?.text()?.toRankMap() ?: mapOf()
+            val preReqs = if (colCount == 5) row.selectTd(1)?.text()?.toRankMap() ?: mapOf() else mapOf()
+            val perkRow = if (colCount == 5) 2 else 1
+            val perks = row.selectTd(perkRow)?.text()?.toRankMap() ?: mapOf()
             val description = row.selectTdClean(4) ?: ""
-            val materials = row.selectTd(3).parseMaterials()
+            val matRow = if (colCount == 5) 3 else 2
+            val materials = row.selectTd(matRow).parseMaterials()
 
             ResearchProject(name, category, rank, description, preReqs, perks, materials)
         }
@@ -38,11 +43,20 @@ private fun parseResearch(page: Document): List<ResearchProject> {
 }
 
 private fun String.toRankMap(): Map<String, Int> {
-    val parts = split(Regex("(?<=\\D)(?=\\d)")).flatMap { line ->
-        val lineParts = line.replace("Rank", "").split(" ")
+    val parts = split(Regex("(?<=\\D)(?=\\d)")).map {
+        it.replace("Rank", "")
+            .replace("None", "")
+            .replace("and", "")
+            .replace(",", "")
+            .replace("Requires ", "")
+            .replace("no trained skills", "")
+            .replace(" at level ", "")
+            .trim()
+    }.flatMap { line ->
+        val lineParts = line.split(" ")
         if (lineParts.first().toIntOrNull() != null) {
             listOf(lineParts.first(), lineParts.drop(1).joinToString(" "))
-        } else listOf(line.replace("Rank", "").trim())
+        } else listOf(line)
     }.filter { it.isNotEmpty() }
 
     return if (parts.size >= 2) {
@@ -50,10 +64,13 @@ private fun String.toRankMap(): Map<String, Int> {
     } else mapOf()
 }
 
-private fun Element?.parseMaterials() : List<Material>{
+private fun Element?.parseMaterials(): List<Material> {
     if (this == null) return listOf()
 
-    val amounts = this.html().split("<br>").map { it.substring(it.indexOf("x")+1).toIntOrNull() ?: 1 }
+    val rawAmounts1 = this.html().split("<br>").map { it.substring(it.indexOf("x") + 1).toIntOrNull() ?: 1 }
+    val rawAmounts2 = this.text().split(" ", ",").mapNotNull { it.toIntOrNull() }
+    val amounts = if (rawAmounts1.size > rawAmounts2.size) rawAmounts1 else rawAmounts2
+
     return select("a").mapIndexed { i, a ->
         Material(a.text(), amounts[i], a.attr("href"))
     }
