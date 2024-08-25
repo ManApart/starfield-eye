@@ -22,9 +22,13 @@ fun researchView(section: String? = null) {
                 //Track  User progress
                 //Mark complete marks skill complete/incomplete
                 //Marking in/complete marks parents/children
-                researchProjects.values.forEach { category ->
-                    category.forEach { project ->
-                        p { +"${project.name} ${project.rank}" }
+                researchProjects.entries.forEach { (category, projects) ->
+                    div {
+                        h3 { +category }
+                        img { src = "./images/research/${category.lowercase()}.svg" }
+                        projects.forEach { project ->
+                            p { +"${project.name} ${project.rank}" }
+                        }
                     }
                 }
 
