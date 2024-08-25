@@ -1,0 +1,406 @@
+[
+    {
+        "name": "Performance Enhancement",
+        "category": "PHARMACOLOGY",
+        "rank": 1,
+        "description": "Discover how to create Amp and Red Trench at a Pharmaceutical Lab.",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+            {
+                "name": "Argon",
+                "count": 2,
+                "url": "/wiki/Starfield:Argon"
+            },
+            {
+                "name": "Tetrafluorides",
+                "count": 2,
+                "url": "/wiki/Starfield:Tetrafluorides"
+            },
+            {
+                "name": "Metabolic Agent",
+                "count": 3,
+                "url": "/wiki/Starfield:Metabolic_Agent"
+            }
+        ]
+    },
+    {
+        "name": "Performance Enhancement",
+        "category": "PHARMACOLOGY",
+        "rank": 2,
+        "description": "Discover how to create Panopticon and Paramour at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Performance Enhancement": 1
+        },
+        "perks": {
+            "Chemistry": 1
+        },
+        "materials": [
+            {
+                "name": "Solvent",
+                "count": 10,
+                "url": "/wiki/Starfield:Solvent"
+            },
+            {
+                "name": "Carboxylic Acids",
+                "count": 1,
+                "url": "/wiki/Starfield:Carboxylic_Acids"
+            },
+            {
+                "name": "Membrane",
+                "count": 5,
+                "url": "/wiki/Starfield:Membrane"
+            },
+            {
+                "name": "Hippolyta",
+                "count": 5,
+                "url": "/wiki/Starfield:Hippolyta"
+            },
+            {
+                "name": "Infantry Alpha",
+                "count": 5,
+                "url": "/wiki/Starfield:Infantry_Alpha"
+            }
+        ]
+    },
+    {
+        "name": "Performance Enhancement",
+        "category": "PHARMACOLOGY",
+        "rank": 3,
+        "description": "Discover how to create Whiteout and Neurajack at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Performance Enhancement": 2
+        },
+        "perks": {
+            "Chemistry": 2
+        },
+        "materials": [
+            {
+                "name": "Ionic Liquids",
+                "count": 10,
+                "url": "/wiki/Starfield:Ionic_Liquids"
+            },
+            {
+                "name": "Stimulant",
+                "count": 10,
+                "url": "/wiki/Starfield:Stimulant"
+            },
+            {
+                "name": "Toxin",
+                "count": 1,
+                "url": "/wiki/Starfield:Toxin"
+            },
+            {
+                "name": "Squall",
+                "count": 5,
+                "url": "/wiki/Starfield:Squall"
+            },
+            {
+                "name": "Synapse Alpha",
+                "count": 5,
+                "url": "/wiki/Starfield:Synapse_Alpha"
+            }
+        ]
+    },
+    {
+        "name": "Performance Enhancement",
+        "category": "PHARMACOLOGY",
+        "rank": 4,
+        "description": "Discover how to create Frostwolf at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Performance Enhancement": 3
+        },
+        "perks": {
+            "Chemistry": 3
+        },
+        "materials": [
+            {
+                "name": "Stimulant",
+                "count": 20,
+                "url": "/wiki/Starfield:Stimulant"
+            },
+            {
+                "name": "Aurora",
+                "count": 10,
+                "url": "/wiki/Starfield:Aurora"
+            },
+            {
+                "name": "CQB-X",
+                "count": 10,
+                "url": "/wiki/Starfield:CQB-X"
+            },
+            {
+                "name": "Squall",
+                "count": 10,
+                "url": "/wiki/Starfield:Squall"
+            },
+            {
+                "name": "Whiteout",
+                "count": 8,
+                "url": "/wiki/Starfield:Whiteout"
+            }
+        ]
+    },
+    {
+        "name": "Medical Treatment",
+        "category": "PHARMACOLOGY",
+        "rank": 1,
+        "description": "Discover how to create Antibiotic Paste and Infused Bandages at a Pharmaceutical Lab.",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+            {
+                "name": "Antimicrobial",
+                "count": 3,
+                "url": "/wiki/Starfield:Antimicrobial"
+            },
+            {
+                "name": "Amino Acids",
+                "count": 2,
+                "url": "/wiki/Starfield:Amino_Acids"
+            },
+            {
+                "name": "Aluminum",
+                "count": 2,
+                "url": "/wiki/Starfield:Aluminum"
+            }
+        ]
+    },
+    {
+        "name": "Medical Treatment",
+        "category": "PHARMACOLOGY",
+        "rank": 2,
+        "description": "Discover how to create Antibiotic Paste and Infused Bandages at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Medical Treatment": 1
+        },
+        "perks": {
+            "Chemistry": 1
+        },
+        "materials": [
+            {
+                "name": "Amino Acids",
+                "count": 10,
+                "url": "/wiki/Starfield:Amino_Acids"
+            },
+            {
+                "name": "Analgesic",
+                "count": 10,
+                "url": "/wiki/Starfield:Analgesic"
+            },
+            {
+                "name": "Antimicrobial",
+                "count": 10,
+                "url": "/wiki/Starfield:Antimicrobial"
+            },
+            {
+                "name": "Battlestim",
+                "count": 5,
+                "url": "/wiki/Starfield:Battlestim"
+            },
+            {
+                "name": "Heart+",
+                "count": 5,
+                "url": "/wiki/Starfield:Heart%2B"
+            }
+        ]
+    },
+    {
+        "name": "Medical Treatment",
+        "category": "PHARMACOLOGY",
+        "rank": 3,
+        "description": "Discover how to create Antibiotic Injector and Repairing Immobilizer at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Medical Treatment": 2
+        },
+        "perks": {
+            "Chemistry": 2
+        },
+        "materials": [
+            {
+                "name": "Sedative",
+                "count": 10,
+                "url": "/wiki/Starfield:Sedative"
+            },
+            {
+                "name": "Metabolic Agent",
+                "count": 20,
+                "url": "/wiki/Starfield:Metabolic_Agent"
+            },
+            {
+                "name": "Antibiotics",
+                "count": 10,
+                "url": "/wiki/Starfield:Antibiotics"
+            },
+            {
+                "name": "Sealant",
+                "count": 10,
+                "url": "/wiki/Starfield:Sealant"
+            }
+        ]
+    },
+    {
+        "name": "Medical Treatment",
+        "category": "PHARMACOLOGY",
+        "rank": 4,
+        "description": "Discover how to create Panacea and Junk Flush at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Medical Treatment": 3
+        },
+        "perks": {
+            "Chemistry": 3
+        },
+        "materials": [
+            {
+                "name": "Immunostimulant",
+                "count": 5,
+                "url": "/wiki/Starfield:Immunostimulant"
+            },
+            {
+                "name": "Membrane",
+                "count": 20,
+                "url": "/wiki/Starfield:Membrane"
+            },
+            {
+                "name": "Heart+",
+                "count": 10,
+                "url": "/wiki/Starfield:Heart%2B"
+            },
+            {
+                "name": "Trauma Pack",
+                "count": 10,
+                "url": "/wiki/Starfield:Trauma_Pack"
+            }
+        ]
+    },
+    {
+        "name": "Innovative Synthesis",
+        "category": "PHARMACOLOGY",
+        "rank": 1,
+        "description": "Discover how to create Black Hole Heart and Dwarf Star Heart at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Medical Treatment": 4,
+            "Performance Enhancement ": 4
+        },
+        "perks": {
+            "Chemistry": 3,
+            "Special Projects  ": 1
+        },
+        "materials": [
+            {
+                "name": "Alien Genetic Material",
+                "count": 3,
+                "url": "/wiki/Starfield:Alien_Genetic_Material"
+            },
+            {
+                "name": "Carboxylic Acids",
+                "count": 1,
+                "url": "/wiki/Starfield:Carboxylic_Acids"
+            },
+            {
+                "name": "Mercury",
+                "count": 10,
+                "url": "/wiki/Starfield:Mercury"
+            },
+            {
+                "name": "Solvent",
+                "count": 5,
+                "url": "/wiki/Starfield:Solvent"
+            },
+            {
+                "name": "Tetrafluorides",
+                "count": 5,
+                "url": "/wiki/Starfield:Tetrafluorides"
+            }
+        ]
+    },
+    {
+        "name": "Innovative Synthesis",
+        "category": "PHARMACOLOGY",
+        "rank": 2,
+        "description": "Discover how to create Subgiant Heart and Giant Heart at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Innovative Synthesis": 1
+        },
+        "perks": {
+            "Chemistry": 3,
+            "Special Projects  ": 1
+        },
+        "materials": [
+            {
+                "name": "Alien Genetic Material",
+                "count": 5,
+                "url": "/wiki/Starfield:Alien_Genetic_Material"
+            },
+            {
+                "name": "Solvent",
+                "count": 5,
+                "url": "/wiki/Starfield:Solvent"
+            },
+            {
+                "name": "Carboxylic Acids",
+                "count": 1,
+                "url": "/wiki/Starfield:Carboxylic_Acids"
+            },
+            {
+                "name": "Dwarf Star Heart",
+                "count": 5,
+                "url": "/wiki/Starfield:Dwarf_Star_Heart"
+            },
+            {
+                "name": "Aurora",
+                "count": 5,
+                "url": "/wiki/Starfield:Aurora"
+            }
+        ]
+    },
+    {
+        "name": "Innovative Synthesis",
+        "category": "PHARMACOLOGY",
+        "rank": 3,
+        "description": "Discover how to create Supermassive Black Heart and Hypergiant Heart at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Innovative Synthesis": 2
+        },
+        "perks": {
+            "Chemistry": 3,
+            "Special Projects  ": 1
+        },
+        "materials": [
+            {
+                "name": "Alien Genetic Material",
+                "count": 10,
+                "url": "/wiki/Starfield:Alien_Genetic_Material"
+            },
+            {
+                "name": "Ionic Liquids",
+                "count": 8,
+                "url": "/wiki/Starfield:Ionic_Liquids"
+            },
+            {
+                "name": "Solvent",
+                "count": 10,
+                "url": "/wiki/Starfield:Solvent"
+            },
+            {
+                "name": "Carboxylic Acids",
+                "count": 1,
+                "url": "/wiki/Starfield:Carboxylic_Acids"
+            },
+            {
+                "name": "Subgiant Heart",
+                "count": 5,
+                "url": "/wiki/Starfield:Subgiant_Heart"
+            },
+            {
+                "name": "Black Hole Heart",
+                "count": 5,
+                "url": "/wiki/Starfield:Black_Hole_Heart"
+            }
+        ]
+    }
+]

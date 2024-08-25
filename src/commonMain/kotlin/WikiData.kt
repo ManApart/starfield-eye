@@ -77,7 +77,14 @@ data class ResearchProject(
     val category: ResearchCategory,
     val rank: Int,
     val description: String,
-    val prerequisites: List<String>,
+    val prerequisites: Map<String, Int>,
     val perks: Map<String, Int>,
-    val materials: Map<String, Int>
+    val materials: List<Material>
 ) : WikiData
+
+@Serializable
+data class Material(
+    val name: String,
+    val count: Int,
+    val url: String,
+)
