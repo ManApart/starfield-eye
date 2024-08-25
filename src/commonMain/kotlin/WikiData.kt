@@ -68,3 +68,16 @@ data class Perk(
     val url: String,
     val ranks: Map<Int, String>,
 ) : WikiData
+
+enum class ResearchCategory{ PHARMACOLOGY, OTHER}
+
+@Serializable
+data class ResearchProject(
+    override val name: String,
+    val category: ResearchCategory,
+    val rank: Int,
+    val description: String,
+    val prerequisites: List<String>,
+    val perks: Map<String, Int>,
+    val materials: Map<String, Int>
+) : WikiData

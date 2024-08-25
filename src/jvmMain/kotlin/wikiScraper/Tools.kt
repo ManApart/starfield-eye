@@ -162,8 +162,9 @@ fun Element.selectBelow(headerText: String): Element? {
     }
 }
 
-fun Element.selectTdClean(col: Int): String? {
-    return select("td").takeIf { it.size > col }?.get(col).cleanText()
+fun Element.selectTdClean(col: Int) = selectTd(col).cleanText()
+fun Element.selectTd(col: Int): Element? {
+    return select("td").takeIf { it.size > col }?.get(col)
 }
 
 fun parseName(box: Element): String {
