@@ -73,6 +73,7 @@ enum class ResearchCategory {
     PHARMACOLOGY, FOOD_AND_DRINK, OUTPOST_MANAGEMENT, EQUIPMENT, WEAPONRY, OTHER;
 
     val pic = "./images/research/${name.lowercase()}.svg"
+    val prettyName = name.capitalize().replace("_", " ")
 }
 
 @Serializable

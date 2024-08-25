@@ -2,16 +2,40 @@
     background-color: #c8ccc9;
     color: #030303;
     font-family: Architekt;
+    padding: 50px;
 }
+.research-accent {
+    font-size: xx-large;
+    margin-top: -20px;
+    margin-right: -50px;
+    margin-left: -50px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
 .research2:hover {
     background-color: #71777a;
+}
+
+.research-category{
+    background-color: #a9aead;
+    margin: 10px;
+    min-height: 100px;
+    position: relative;
+    padding-left: 120px;
+}
+
+.research-category h2{
+}
+
+
+.research-pic {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .research-accent {
     background-color: #596365;
     color: white;
-}
-
-#research-network-canvas {
-    height: 95vh;
 }

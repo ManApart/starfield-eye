@@ -66,8 +66,6 @@ kotlin {
                 implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1")
-                implementation(npm("vis-network", "9.1.9"))
-                implementation(npm("vis-data", "7.1.9"))
             }
         }
         val jsTest by getting
