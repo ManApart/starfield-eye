@@ -38,6 +38,15 @@ data class Edge(
     }
 }
 
+private val currentCategory = ResearchCategory.PHARMACOLOGY
+
+//TODO - filter by category
+//Highlight current category
+//Highlight current project
+//Track  User progress
+//Mark complete marks skill complete/incomplete
+//Marking in/complete marks parents/children
+
 fun researchView(section: String? = null) {
     updateUrl("research", section)
     replaceElement {
@@ -45,24 +54,109 @@ fun researchView(section: String? = null) {
             id = "research-view"
             navButtons()
             div("research") {
-                div("research-accent") { +"Research Laboratory" }
+                div("research-accent") {
+                    id = "research-title"
+                    +"Research Laboratory"
+                }
 
-
-                //TODO - filter by category
-                //Display as graph
-                //Track  User progress
-                //Mark complete marks skill complete/incomplete
-                //Marking in/complete marks parents/children
-
-                researchProjects.keys.forEach { category ->
-                    div("research-category") {
-                        img(classes ="research-pic") {
-                            src = category.pic
-
+                div("research-section") {
+                    id = "categories"
+                    researchProjects.keys.forEach { category ->
+                        div("research-category") {
+                            img(classes = "research-pic") {
+                                src = category.pic
+                            }
+                            onClickFunction = {
+                                el("research-title").innerText = "Research Laboratory - ${category.prettyName}"
+                                displayCategory(category)
+                            }
                         }
-                        h2 { +category.prettyName }
-                        +"Available projects: ${researchProjects[category]!!.size}"
                     }
+                }
+
+                div("research-section") {
+                    id = "projects"
+                    h3 { +"Research Projects" }
+                }
+
+                div("research-section") {
+                    id = "skills"
+                    h3 { +"Required Skills" }
+                }
+
+                div("research-section") {
+                    id = "pre-reqs"
+                    h3 { +"Required Research" }
+                }
+                div("research-section") {
+                    id = "materials"
+                    h3 { +"Required Materials" }
+                }
+                div("research-section") {
+                    id = "description"
+                }
+            }
+        }
+    }
+    displayCategory(currentCategory)
+}
+
+private fun displayCategory(category: ResearchCategory) {
+    replaceElement("projects") {
+        div("research-section") {
+            id = "projects"
+            h3 { +"Research Projects" }
+            researchProjects[category]!!.forEach { project ->
+                div("research-project") {
+                    +project.id
+                    onClickFunction = { displayProject(project)}
+                }
+            }
+        }
+    }
+    displayProject(researchProjects[category]!!.first())
+}
+
+private fun displayProject(project: ResearchProject) {
+    replaceElement("skills") {
+        h3 { +"Required Skills" }
+        if (project.perks.isEmpty()){
+            div("research-perk") { +"None" }
+        }
+        project.perks.forEach { perk ->
+            div("research-perk") {
+                +"${perk.key} ${perk.value}"
+            }
+        }
+    }
+    replaceElement("pre-reqs") {
+        h3 { +"Required Research" }
+        if (project.prerequisites.isEmpty()){
+            div("research-perk") { +"None" }
+        }
+        project.prerequisites.forEach { req ->
+            div("research-perk") {
+                +"${req.key} ${req.value}"
+            }
+        }
+    }
+    replaceElement("materials") {
+        h3 { +"Required Materials" }
+        if (project.materials.isEmpty()){
+            div("research-perk") { +"None" }
+        }
+        project.materials.forEach { material ->
+            div("research-perk") {
+                +"${material.name} ${material.count}"
+            }
+        }
+    }
+    replaceElement("description") {
+        if (project.description != "") {
+            h3 { +"Description" }
+            div("research-perk") {
+                unsafe {
+                    +project.description
                 }
             }
         }

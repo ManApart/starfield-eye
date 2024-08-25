@@ -117,7 +117,7 @@ fun loadResearchProjects(): Promise<*> {
     return loadJson("research-wiki-data.json").then { json ->
         researchProjects = jsonMapper.decodeFromString<List<ResearchProject>>(json)
             .groupBy { it.category }
-        println("Read ${researchProjects.keys.size} research projects from json")
+        println("Read ${researchProjects.values.flatten().size} research projects from json")
     }
 }
 

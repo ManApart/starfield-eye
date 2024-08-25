@@ -3,8 +3,12 @@
     color: #030303;
     font-family: Architekt;
     padding: 50px;
+    position: relative;
+    margin: auto;
 }
 .research-accent {
+    background-color: #596365;
+    color: white;
     font-size: xx-large;
     margin-top: -20px;
     margin-right: -50px;
@@ -20,22 +24,17 @@
 .research-category{
     background-color: #a9aead;
     margin: 10px;
-    min-height: 100px;
-    position: relative;
-    padding-left: 120px;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    display: flex;
 }
-
-.research-category h2{
-}
-
 
 .research-pic {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    margin: auto;
+    display: block;
 }
 
-.research-accent {
-    background-color: #596365;
-    color: white;
+.research-section {
+
 }
