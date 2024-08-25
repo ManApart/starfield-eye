@@ -533,6 +533,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Manufacturing": 1
         },
         "perks": {
             "Outpost Engineering": 1
@@ -581,6 +582,7 @@
         "rank": 3,
         "description": "",
         "prerequisites": {
+            "Manufacturing": 2
         },
         "perks": {
             "Outpost Engineering": 2
@@ -677,6 +679,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Resource Extraction": 1
         },
         "perks": {
             "Outpost Engineering": 2
@@ -747,6 +750,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Decoration": 1
         },
         "perks": {
             "Outpost Engineering": 1
@@ -785,6 +789,7 @@
         "rank": 3,
         "description": "",
         "prerequisites": {
+            "Decoration": 2
         },
         "perks": {
             "Outpost Engineering": 2
@@ -866,6 +871,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Horticulture": 1
         },
         "perks": {
             "Outpost Engineering": 2,
@@ -948,6 +954,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Domestication": 1
         },
         "perks": {
             "Outpost Engineering": 2,
@@ -1035,6 +1042,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Power Generation": 1
         },
         "perks": {
             "Outpost Engineering": 2
@@ -1083,6 +1091,7 @@
         "rank": 3,
         "description": "",
         "prerequisites": {
+            "Power Generation": 2
         },
         "perks": {
             "Outpost Engineering": 3
@@ -1141,6 +1150,7 @@
         "rank": 4,
         "description": "",
         "prerequisites": {
+            "Power Generation": 3
         },
         "perks": {
             "Outpost Engineering": 3,
@@ -1227,6 +1237,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Robots": 1
         },
         "perks": {
             "Outpost Engineering": 1
@@ -1318,6 +1329,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Outpost Defense": 1
         },
         "perks": {
             "Outpost Engineering": 3
@@ -1393,6 +1405,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Helmet Mods": 1
         },
         "perks": {
             "Spacesuit Design": 1
@@ -1431,6 +1444,7 @@
         "rank": 3,
         "description": "",
         "prerequisites": {
+            "Helmet Mods": 2
         },
         "perks": {
             "Spacesuit Design": 2
@@ -1502,6 +1516,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Spacesuit Mods": 1
         },
         "perks": {
             "Spacesuit Design": 2
@@ -1540,6 +1555,7 @@
         "rank": 3,
         "description": "",
         "prerequisites": {
+            "Spacesuit Mods": 2
         },
         "perks": {
             "Spacesuit Design": 3
@@ -1616,6 +1632,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Pack Mods": 1
         },
         "perks": {
             "Spacesuit Design": 2
@@ -1654,6 +1671,7 @@
         "rank": 3,
         "description": "",
         "prerequisites": {
+            "Pack Mods": 2
         },
         "perks": {
             "Spacesuit Design": 3,
@@ -1725,6 +1743,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Barrel Mods": 1
         },
         "perks": {
             "Weapon Engineering": 1
@@ -1780,6 +1799,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Grip and Stock Mods": 1
         },
         "perks": {
             "Weapon Engineering": 1
@@ -1808,6 +1828,7 @@
         "rank": 3,
         "description": "",
         "prerequisites": {
+            "Grip and Stock Mods": 2
         },
         "perks": {
             "Weapon Engineering": 2
@@ -1863,6 +1884,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Optic and Laser Mods": 1
         },
         "perks": {
             "Weapon Engineering": 1
@@ -1896,6 +1918,7 @@
         "rank": 3,
         "description": "",
         "prerequisites": {
+            "Optic and Laser Mods": 2
         },
         "perks": {
             "Weapon Engineering": 2
@@ -1957,6 +1980,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Muzzle Mods": 1
         },
         "perks": {
             "Weapon Engineering": 2
@@ -1990,6 +2014,7 @@
         "rank": 3,
         "description": "",
         "prerequisites": {
+            "Muzzle Mods": 2
         },
         "perks": {
             "Weapon Engineering": 3,
@@ -2057,6 +2082,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Magazine and Battery Mods": 1
         },
         "perks": {
             "Weapon Engineering": 3
@@ -2095,6 +2121,7 @@
         "rank": 3,
         "description": "",
         "prerequisites": {
+            "Magazine and Battery Mods": 2
         },
         "perks": {
             "Weapon Engineering": 3,
@@ -2167,6 +2194,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Internal Mods": 1
         },
         "perks": {
             "Weapon Engineering": 3
@@ -2205,6 +2233,7 @@
         "rank": 3,
         "description": "",
         "prerequisites": {
+            "Internal Mods": 2
         },
         "perks": {
             "Weapon Engineering": 4
@@ -2286,6 +2315,7 @@
         "rank": 2,
         "description": "",
         "prerequisites": {
+            "Receiver Mods": 1
         },
         "perks": {
             "Weapon Engineering": 4

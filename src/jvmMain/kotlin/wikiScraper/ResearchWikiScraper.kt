@@ -30,7 +30,11 @@ private fun parseResearch(page: Document): List<ResearchProject> {
             val rawName = row.selectTdClean(0)?.split(" ") ?: listOf()
             val name = rawName.dropLast(1).joinToString(" ")
             val rank = rawName.last().toIntOrNull() ?: 1
-            val preReqs = if (colCount == 5) row.selectTd(1)?.text()?.toRankMap() ?: mapOf() else mapOf()
+            val preReqs = if (colCount == 5) row.selectTd(1)?.text()?.toRankMap() ?: mapOf() else {
+                if (rank > 1) {
+                    mapOf(name to rank - 1)
+                } else mapOf()
+            }
             val perkRow = if (colCount == 5) 2 else 1
             val perks = row.selectTd(perkRow)?.text()?.toRankMap() ?: mapOf()
             val description = row.selectTdClean(4) ?: ""
