@@ -1,0 +1,13 @@
+.research {
+    background-color: #c8ccc9;
+    color: #030303;
+    font-family: Architekt;
+}
+.research:hover {
+    background-color: #71777a;
+}
+
+.research-accent {
+    background-color: #596365;
+    color: white;
+}

@@ -59,9 +59,12 @@ fun loadAll(progress: HTMLElement): Promise<*> {
                     loadFaunaReference().then {
                         progress.innerText = "Loading Perks"
                         loadPerks().then {
-                            progress.innerText = "Loading User Pictures"
-                            loadPictures().then {
-                                return@then
+                            progress.innerText = "Loading Research"
+                            loadResearchProjects().then {
+                                progress.innerText = "Loading User Pictures"
+                                loadPictures().then {
+                                    return@then
+                                }
                             }
                         }
                     }
@@ -108,6 +111,14 @@ fun loadPerks(): Promise<*> {
         perks = jsonMapper.decodeFromString<List<Perk>>(json)
             .associateBy { it.name }
         println("Read ${perks.keys.size} perks from json")
+    }
+}
+
+fun loadResearchProjects(): Promise<*> {
+    return loadJson("research-wiki-data.json").then { json ->
+        researchProjects = jsonMapper.decodeFromString<List<ResearchProject>>(json)
+            .groupBy { it.category.name }
+        println("Read ${researchProjects.keys.size} research projects from json")
     }
 }
 

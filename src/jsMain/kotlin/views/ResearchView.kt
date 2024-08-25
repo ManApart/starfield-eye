@@ -5,46 +5,29 @@ import kotlinx.html.*
 import kotlinx.html.js.onClickFunction
 import loadSampleData
 import replaceElement
+import researchProjects
 import updateUrl
 
 fun researchView(section: String? = null) {
     updateUrl("research", section)
     replaceElement {
         div {
-            id = "about-view"
+            id = "research-view"
             navButtons()
-            div {
-                id = "sections"
-                div("section-view-box") {
-                    id = "how-to-use"
-                    div("accent-line") { +"The winks and the nods" }
+            div("research") {
+                div("research-accent") { +"Research Laboratory" }
 
-                    p { +"Starfield Eye is an Ad Free Companion App for Starfield." }
-
-                    p { +"Open it on a second monitor while playing, or on your phone to plan your next adventure." }
-
-                    p {
-                        span {
-                            id = "load-sample-data-text"
-                            +"If you'd like to explore with sample data, click this button: "
-                        }
-                        button {
-                            +"Load Sample Data"
-                            onClickFunction = { loadSampleData(el("load-sample-data-text")) }
-                        }
+                //TODO - filter by category
+                //Display as graph
+                //Track  User progress
+                //Mark complete marks skill complete/incomplete
+                //Marking in/complete marks parents/children
+                researchProjects.values.forEach { category ->
+                    category.forEach { project ->
+                        p { +"${project.name} ${project.rank}" }
                     }
-
-                    p { +"The Crew page also links to similar sites made by others, so you can pick the one that works best for you." }
-
-                    p {
-                        +"Please report any issues as "
-                        a(
-                            href = "https://github.com/ManApart/starfield-eye/issues",
-                            target = "_blank"
-                        ) { +"github issues." }
-                    }
-
                 }
+
             }
         }
     }
