@@ -94,45 +94,17 @@ fun doRouting(windowHash: String) {
     val section = windowHash.split("/").takeIf { it.size == 2 }?.last()
     section?.let { println("Section: $it") }
     when {
-        windowHash.startsWith("#about") -> {
-            aboutView(section)
-        }
-
-        windowHash.startsWith("#manual") -> {
-            manualView(section)
-        }
-
-        windowHash.startsWith("#catalogue") -> {
-            catalogueView()
-        }
-
-        windowHash.startsWith("#lifesigns") -> {
-            lifeSignsView()
-        }
-
-        windowHash.startsWith("#crew") -> {
-            crewView()
-        }
-
-        windowHash.startsWith("#dock") -> {
-            dockView(section)
-        }
-
-        windowHash.startsWith("#quests") -> {
-            questView()
-        }
-
-        windowHash.startsWith("#outposts") -> {
-            outpostsPage()
-        }
-
-        windowHash.startsWith("#misc-stats") -> {
-            miscStatView()
-        }
-
-        windowHash.startsWith("#perks") -> {
-            perkView(section)
-        }
+        windowHash.startsWith("#about") -> aboutView(section)
+        windowHash.startsWith("#manual") -> manualView(section)
+        windowHash.startsWith("#catalogue") -> catalogueView()
+        windowHash.startsWith("#lifesigns") -> lifeSignsView()
+        windowHash.startsWith("#crew") -> crewView()
+        windowHash.startsWith("#dock") -> dockView(section)
+        windowHash.startsWith("#quests") -> questView()
+        windowHash.startsWith("#outposts") -> outpostsPage()
+        windowHash.startsWith("#misc-stats") -> miscStatView()
+        windowHash.startsWith("#perks") -> perkView(section)
+        windowHash.startsWith("#research") -> researchView(section)
 
         windowHash.startsWith("#system/") -> {
             val parts = windowHash.replace("#system/", "").split("/")
