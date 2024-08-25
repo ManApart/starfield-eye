@@ -138,7 +138,9 @@ fun replaceElement(id: String = "root", rootClasses: String? = null, newHtml: Ta
     if (root != null) {
         val newRoot = document.createElement("div") {
             this.id = id
-            rootClasses?.split(" ")?.forEach { this.addClass(it) }
+            rootClasses?.split(" ")?.forEach {
+                this.addClass(it)
+            }
         }
         newRoot.append {
             newHtml()

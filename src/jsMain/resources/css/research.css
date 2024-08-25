@@ -2,39 +2,76 @@
     background-color: #c8ccc9;
     color: #030303;
     font-family: Architekt;
-    padding: 50px;
+    padding: 20px;
     position: relative;
     margin: auto;
 }
+
 .research-accent {
     background-color: #596365;
     color: white;
     font-size: xx-large;
     margin-top: -20px;
-    margin-right: -50px;
-    margin-left: -50px;
+    margin-right: -20px;
+    margin-left: -20px;
     padding: 10px;
     padding-left: 20px;
 }
 
-.research2:hover {
-    background-color: #71777a;
+#categories {
+    border: none;
+    margin: 0px;
+    padding: 0px;
 }
 
-.research-category{
+.research-category {
     background-color: #a9aead;
     margin: 10px;
-    width: 90px;
-    height: 90px;
-    padding: 10px;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
     display: flex;
 }
 
 .research-pic {
     margin: auto;
     display: block;
+    width: 60%;
+}
+
+.research-wrapper {
+    display: inline-block;
+    width: 70%;
 }
 
 .research-section {
+    display: inline-block;
+    border: 1px solid #4f6b61;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 40px;
+    vertical-align: top;
+}
 
+.research-section h2 {
+    margin-top: -55px;
+    color: #4f6b61;
+}
+
+.research-project {
+    border-left: 5px solid #c8ccc9;
+}
+
+.research-project:hover {
+    background-color: #71777a;
+    border-left: 5px solid #4f6b61;
+}
+
+.category-active {
+    background-color: #71777a;
+}
+
+.project-active {
+    background-color: #71777a;
+    border-left: 5px solid #4f6b61;
 }

@@ -5,6 +5,8 @@ import ResearchProject
 import Vis
 import VisData
 import el
+import kotlinx.dom.addClass
+import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.js.div
 import kotlinx.html.js.onClickFunction
@@ -40,7 +42,7 @@ data class Edge(
 
 private val currentCategory = ResearchCategory.PHARMACOLOGY
 
-//TODO - filter by category
+//TODO
 //Highlight current category
 //Highlight current project
 //Track  User progress
@@ -63,6 +65,7 @@ fun researchView(section: String? = null) {
                     id = "categories"
                     researchProjects.keys.forEach { category ->
                         div("research-category") {
+                            id = category.name
                             img(classes = "research-pic") {
                                 src = category.pic
                             }
@@ -73,27 +76,29 @@ fun researchView(section: String? = null) {
                         }
                     }
                 }
+                div("research-wrapper") {
 
-                div("research-section") {
-                    id = "projects"
-                    h3 { +"Research Projects" }
-                }
+                    div("research-section") {
+                        id = "projects"
+                        h2 { +"Research Projects" }
+                    }
 
-                div("research-section") {
-                    id = "skills"
-                    h3 { +"Required Skills" }
-                }
+                    div("research-section") {
+                        id = "skills"
+                        h2 { +"Required Skills" }
+                    }
 
-                div("research-section") {
-                    id = "pre-reqs"
-                    h3 { +"Required Research" }
-                }
-                div("research-section") {
-                    id = "materials"
-                    h3 { +"Required Materials" }
-                }
-                div("research-section") {
-                    id = "description"
+                    div("research-section") {
+                        id = "pre-reqs"
+                        h2 { +"Required Research" }
+                    }
+                    div("research-section") {
+                        id = "materials"
+                        h2 { +"Required Materials" }
+                    }
+                    div("research-section") {
+                        id = "description"
+                    }
                 }
             }
         }
@@ -102,25 +107,30 @@ fun researchView(section: String? = null) {
 }
 
 private fun displayCategory(category: ResearchCategory) {
-    replaceElement("projects") {
-        div("research-section") {
-            id = "projects"
-            h3 { +"Research Projects" }
-            researchProjects[category]!!.forEach { project ->
-                div("research-project") {
-                    +project.id
-                    onClickFunction = { displayProject(project)}
-                }
+    replaceElement("projects", "research-section") {
+        h2 { +"Research Projects" }
+        researchProjects[category]!!.forEach { project ->
+            val styles = if (researchProjects[category]?.first() == project){
+                "research-project project-active"
+            } else "research-project"
+            div(styles) {
+                id = project.id
+                +project.id
+                onClickFunction = { displayProject(category, project) }
             }
         }
     }
-    displayProject(researchProjects[category]!!.first())
+    displayProject(category, researchProjects[category]!!.first())
+    ResearchCategory.entries.forEach {
+        el<HTMLElement?>(it.name)?.removeClass("category-active")
+    }
+    el(category.name).addClass("category-active")
 }
 
-private fun displayProject(project: ResearchProject) {
-    replaceElement("skills") {
-        h3 { +"Required Skills" }
-        if (project.perks.isEmpty()){
+private fun displayProject(category: ResearchCategory, project: ResearchProject) {
+    replaceElement("skills", "research-section") {
+        h2 { +"Required Skills" }
+        if (project.perks.isEmpty()) {
             div("research-perk") { +"None" }
         }
         project.perks.forEach { perk ->
@@ -129,9 +139,9 @@ private fun displayProject(project: ResearchProject) {
             }
         }
     }
-    replaceElement("pre-reqs") {
-        h3 { +"Required Research" }
-        if (project.prerequisites.isEmpty()){
+    replaceElement("pre-reqs", "research-section") {
+        h2 { +"Required Research" }
+        if (project.prerequisites.isEmpty()) {
             div("research-perk") { +"None" }
         }
         project.prerequisites.forEach { req ->
@@ -140,9 +150,9 @@ private fun displayProject(project: ResearchProject) {
             }
         }
     }
-    replaceElement("materials") {
-        h3 { +"Required Materials" }
-        if (project.materials.isEmpty()){
+    replaceElement("materials", "research-section") {
+        h2 { +"Required Materials" }
+        if (project.materials.isEmpty()) {
             div("research-perk") { +"None" }
         }
         project.materials.forEach { material ->
@@ -151,9 +161,9 @@ private fun displayProject(project: ResearchProject) {
             }
         }
     }
-    replaceElement("description") {
+    replaceElement("description", "research-section") {
         if (project.description != "") {
-            h3 { +"Description" }
+            h2 { +"Description" }
             div("research-perk") {
                 unsafe {
                     +project.description
@@ -161,4 +171,8 @@ private fun displayProject(project: ResearchProject) {
             }
         }
     }
+    researchProjects[category]?.forEach {
+        el<HTMLElement?>(it.id)?.removeClass("project-active")
+    }
+    el(project.id).addClass("project-active")
 }
