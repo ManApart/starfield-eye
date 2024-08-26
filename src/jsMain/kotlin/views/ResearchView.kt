@@ -1,10 +1,12 @@
 package views
 
+import ProjectState
 import ResearchCategory
 import ResearchProject
 import Vis
 import VisData
 import el
+import getProjectState
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
@@ -14,6 +16,7 @@ import loadSampleData
 import org.w3c.dom.HTMLElement
 import replaceElement
 import researchProjects
+import updateState
 import updateUrl
 
 class Node(
@@ -43,11 +46,14 @@ data class Edge(
 private val currentCategory = ResearchCategory.PHARMACOLOGY
 
 //TODO
-//Highlight current category
-//Highlight current project
-//Track  User progress
+//Link to skill on wiki, or perks page (scroll to category)
+//Link to Project on Wiki
+//Link to materials on wiki, or catalog
+//Mark Material as tracked
+//Track User progress
 //Mark complete marks skill complete/incomplete
 //Marking in/complete marks parents/children
+//Page for all tracked materials
 
 fun researchView(section: String? = null) {
     updateUrl("research", section)
@@ -110,13 +116,31 @@ private fun displayCategory(category: ResearchCategory) {
     replaceElement("projects", "research-section") {
         h2 { +"Research Projects" }
         researchProjects[category]!!.forEach { project ->
-            val styles = if (researchProjects[category]?.first() == project){
+            val styles = if (researchProjects[category]?.first() == project) {
                 "research-project project-active"
             } else "research-project"
             div(styles) {
                 id = project.id
-                +project.id
-                onClickFunction = { displayProject(category, project) }
+                span {
+                    +project.id
+                    onClickFunction = { displayProject(category, project) }
+                }
+                span("project-state") {
+                    when (project.getProjectState()){
+                        ProjectState.COMPLETED -> +"Completed"
+                        ProjectState.BLOCKED -> +"Blocked"
+                        ProjectState.NONE -> +"None"
+                    }
+                    onClickFunction = {
+                        val newState = when (project.getProjectState()){
+                            ProjectState.COMPLETED -> ProjectState.NONE
+                            ProjectState.NONE -> ProjectState.COMPLETED
+                            ProjectState.BLOCKED -> ProjectState.BLOCKED
+                        }
+                        project.updateState(newState)
+                        displayCategory(category)
+                    }
+                }
             }
         }
     }
@@ -162,9 +186,9 @@ private fun displayProject(category: ResearchCategory, project: ResearchProject)
         }
     }
     replaceElement("description", "research-section") {
-        if (project.description != "") {
-            h2 { +"Description" }
-            div("research-perk") {
+        h2 { +"Description" }
+        div("research-perk") {
+            if (project.description != "") {
                 unsafe {
                     +project.description
                 }

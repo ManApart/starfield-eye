@@ -76,6 +76,8 @@ enum class ResearchCategory {
     val prettyName = name.capitalize().replace("_", " ")
 }
 
+enum class ProjectState {COMPLETED, BLOCKED, NONE}
+
 @Serializable
 data class ResearchProject(
     override val name: String,

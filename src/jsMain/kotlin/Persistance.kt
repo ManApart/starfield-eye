@@ -24,6 +24,7 @@ data class InMemoryStorage(
     var quests: List<Quest> = listOf(),
     var stats: MiscStats = MiscStats(),
     var perks: MutableMap<String, Int> = mutableMapOf(),
+    var research: MutableMap<String, Int> = mutableMapOf(),
     var showUndiscovered: Boolean? = true,
     var outpostResourceView: Boolean? = false,
     var paintBackgroundStars: Boolean? = null,
@@ -270,4 +271,24 @@ fun loadSampleData(status: HTMLElement) {
         status.innerText = "Loading sample data failed"
     }
 
+}
+
+
+fun ResearchProject.getProjectState(): ProjectState {
+    return when {
+        (inMemoryStorage.research[name] ?: 0) >= rank -> ProjectState.COMPLETED
+        //TODO - blocked if pre-reqs not met
+        else -> ProjectState.NONE
+    }
+}
+
+fun ResearchProject.updateState(newState: ProjectState) {
+    if (newState == ProjectState.COMPLETED) {
+        inMemoryStorage.research[name] = rank
+        //TODO Update other things
+    } else if (newState == ProjectState.NONE) {
+        inMemoryStorage.research[name] = rank - 1
+        //TODO Update other things
+    }
+    persistMemory()
 }

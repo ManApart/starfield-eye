@@ -75,3 +75,8 @@
     background-color: #71777a;
     border-left: 5px solid #4f6b61;
 }
+
+.project-state {
+    margin-left: 20px;
+    float: right;
+}
