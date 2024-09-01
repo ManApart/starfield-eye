@@ -3,8 +3,7 @@ package views
 import ProjectState
 import ResearchCategory
 import ResearchProject
-import Vis
-import VisData
+import components.externalLink
 import el
 import getProjectState
 import kotlinx.dom.addClass
@@ -12,7 +11,6 @@ import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.js.div
 import kotlinx.html.js.onClickFunction
-import loadSampleData
 import org.w3c.dom.HTMLElement
 import replaceElement
 import researchProjects
@@ -126,13 +124,13 @@ private fun displayCategory(category: ResearchCategory) {
                     onClickFunction = { displayProject(category, project) }
                 }
                 span("project-state") {
-                    when (project.getProjectState()){
+                    when (project.getProjectState()) {
                         ProjectState.COMPLETED -> +"Completed"
                         ProjectState.BLOCKED -> +"Blocked"
                         ProjectState.NONE -> +"None"
                     }
                     onClickFunction = {
-                        val newState = when (project.getProjectState()){
+                        val newState = when (project.getProjectState()) {
                             ProjectState.COMPLETED -> ProjectState.NONE
                             ProjectState.NONE -> ProjectState.COMPLETED
                             ProjectState.BLOCKED -> ProjectState.BLOCKED
@@ -181,7 +179,7 @@ private fun displayProject(category: ResearchCategory, project: ResearchProject)
         }
         project.materials.forEach { material ->
             div("research-perk") {
-                +"${material.name} ${material.count}"
+                externalLink("${material.name} x${material.count}", "https://starfieldwiki.net${material.url}")
             }
         }
     }

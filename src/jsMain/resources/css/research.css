@@ -7,6 +7,15 @@
     margin: auto;
 }
 
+.research a {
+    color: #030303;
+    text-decoration: none;
+}
+
+.research a:hover {
+    text-decoration: underline;
+}
+
 .research-accent {
     background-color: #596365;
     color: white;
