@@ -6,6 +6,7 @@ import ResearchProject
 import components.externalLink
 import el
 import getProjectState
+import inMemoryStorage
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
@@ -110,7 +111,7 @@ fun researchView(section: String? = null) {
     displayCategory(currentCategory)
 }
 
-private fun displayCategory(category: ResearchCategory) {
+private fun displayCategory(category: ResearchCategory, currentProject: ResearchProject = researchProjects[category]!!.first()) {
     replaceElement("projects", "research-section") {
         h2 { +"Research Projects" }
         researchProjects[category]!!.forEach { project ->
@@ -125,8 +126,16 @@ private fun displayCategory(category: ResearchCategory) {
                 }
                 span("project-state") {
                     when (project.getProjectState()) {
-                        ProjectState.COMPLETED -> +"Completed"
-                        ProjectState.BLOCKED -> +"Blocked"
+                        ProjectState.COMPLETED -> {
+                            completePic()
+                            +"Completed"
+                        }
+
+                        ProjectState.BLOCKED -> {
+                            blockedPic()
+                            +"Blocked"
+                        }
+
                         ProjectState.NONE -> +"None"
                     }
                     onClickFunction = {
@@ -142,7 +151,7 @@ private fun displayCategory(category: ResearchCategory) {
             }
         }
     }
-    displayProject(category, researchProjects[category]!!.first())
+    displayProject(category, currentProject)
     ResearchCategory.entries.forEach {
         el<HTMLElement?>(it.name)?.removeClass("category-active")
     }
@@ -155,12 +164,14 @@ private fun displayProject(category: ResearchCategory, project: ResearchProject)
         if (project.perks.isEmpty()) {
             div("research-perk") { +"None" }
         }
-        project.perks.forEach { perk ->
+        project.perks.forEach { (perk, _) ->
             div("research-perk") {
-                +"${perk.key} ${perk.value}"
+                span { id = "perk-req-${perk}" }
             }
         }
     }
+    project.perks.forEach { (perkName, perkLevel) -> setPerkReqs(perkName, perkLevel, project) }
+
     replaceElement("pre-reqs", "research-section") {
         h2 { +"Required Research" }
         if (project.prerequisites.isEmpty()) {
@@ -197,4 +208,37 @@ private fun displayProject(category: ResearchCategory, project: ResearchProject)
         el<HTMLElement?>(it.id)?.removeClass("project-active")
     }
     el(project.id).addClass("project-active")
+}
+
+private fun setPerkReqs(perkName: String, perkLevel: Int, project: ResearchProject) {
+    replaceElement("perk-req-$perkName") {
+        span {
+            id = "perk-req-${perkName}"
+            if (inMemoryStorage.perkLevel(perkName) >= perkLevel) completePic() else blockedPic()
+            +"$perkName $perkLevel"
+            externalLink(" ", perkName)
+            onClickFunction = {
+                if (inMemoryStorage.perkLevel(perkName) >= perkLevel) {
+                    inMemoryStorage.perks[perkName] = perkLevel - 1
+                } else {
+                    inMemoryStorage.perks[perkName] = perkLevel
+                }
+                setPerkReqs(perkName, perkLevel, project)
+                displayCategory(currentCategory, project)
+            }
+        }
+    }
+}
+
+
+private fun TagConsumer<HTMLElement>.completePic() {
+    img(classes = "link-pic") {
+        src = "./images/research/complete.svg"
+    }
+}
+
+private fun TagConsumer<HTMLElement>.blockedPic() {
+    img(classes = "link-pic") {
+        src = "./images/research/blocked.svg"
+    }
 }

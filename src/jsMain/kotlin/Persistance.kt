@@ -33,6 +33,8 @@ data class InMemoryStorage(
 
     fun isDiscovered(system: Int) =
         if (inMemoryStorage.showUndiscovered == true) true else inMemoryStorage.discoveredStars.contains(system)
+
+    fun perkLevel(name: String) = perks[name] ?: 0
 }
 
 val planetSearchOptions: PlanetSearchOptions = PlanetSearchOptions()
@@ -273,11 +275,13 @@ fun loadSampleData(status: HTMLElement) {
 
 }
 
-
 fun ResearchProject.getProjectState(): ProjectState {
+    val current = (inMemoryStorage.research[name] ?: 0)
     return when {
-        (inMemoryStorage.research[name] ?: 0) >= rank -> ProjectState.COMPLETED
-        //TODO - blocked if pre-reqs not met
+        current >= rank -> ProjectState.COMPLETED
+        current < rank - 1 -> ProjectState.BLOCKED
+        perks.entries.any { (reqPerk, reqLevel) -> (inMemoryStorage.perks[reqPerk] ?: 0) < reqLevel } -> ProjectState.BLOCKED
+
         else -> ProjectState.NONE
     }
 }
