@@ -21,8 +21,9 @@ import updateUrl
 import views.lifeSigns.clearFloraFaunaView
 import views.system.detailView
 
-fun catalogueView() {
-    updateUrl("catalogue")
+fun catalogueView(searchText: String = planetSearchOptions.searchText) {
+    updateUrl("catalogue", searchText)
+    planetSearchOptions.searchText = searchText
     replaceElement {
         div {
             id = "catalogue-view"
@@ -32,7 +33,7 @@ fun catalogueView() {
                 input(classes = "search") {
                     id = "search"
                     placeholder = "Filter: Name, Resources etc. Comma separated"
-                    value = planetSearchOptions.searchText
+                    value = searchText
                     onKeyUpFunction = {
                         planetSearchOptions.searchText = el<HTMLInputElement>("search").value
                         searchPlanets()

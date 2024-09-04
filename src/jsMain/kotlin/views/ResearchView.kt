@@ -3,7 +3,9 @@ package views
 import ProjectState
 import ResearchCategory
 import ResearchProject
+import ResourceType
 import components.externalLink
+import components.resourceSquare
 import el
 import getProjectState
 import inMemoryStorage
@@ -189,8 +191,25 @@ private fun displayProject(category: ResearchCategory, project: ResearchProject)
             div("research-perk") { +"None" }
         }
         project.materials.forEach { material ->
+            val resource = ResourceType.entries.firstOrNull { it.matches(material.name) }
             div("research-perk") {
-                externalLink("${material.name} x${material.count}", "https://starfieldwiki.net${material.url}")
+                if (resource != null) {
+                    resourceSquare(resource, "research-resource")
+                } else {
+                    a("https://starfieldwiki.net${material.url}", classes = "misc-resource") {
+                        target = "_blank"
+                        img {
+                            src = "./images/research/misc.svg"
+                            title = material.name
+                        }
+                    }
+                }
+                + "${material.name} x${material.count}"
+                a("#catalogue/${material.name}", classes="search-icon") {
+                    img {
+                        src = "./images/research/search.svg"
+                    }
+                }
             }
         }
     }
@@ -216,7 +235,7 @@ private fun setPerkReqs(perkName: String, perkLevel: Int, project: ResearchProje
             id = "perk-req-${perkName}"
             if (inMemoryStorage.perkLevel(perkName) >= perkLevel) completePic() else blockedPic()
             +"$perkName $perkLevel"
-            externalLink(" ", perkName)
+            externalLink(" ", "https://starfieldwiki.net/wiki/Starfield:$perkName")
             onClickFunction = {
                 if (inMemoryStorage.perkLevel(perkName) >= perkLevel) {
                     inMemoryStorage.perks[perkName] = perkLevel - 1

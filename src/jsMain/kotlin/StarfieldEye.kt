@@ -97,7 +97,6 @@ fun doRouting(windowHash: String) {
     when {
         windowHash.startsWith("#about") -> aboutView(section)
         windowHash.startsWith("#manual") -> manualView(section)
-        windowHash.startsWith("#catalogue") -> catalogueView()
         windowHash.startsWith("#lifesigns") -> lifeSignsView()
         windowHash.startsWith("#crew") -> crewView()
         windowHash.startsWith("#dock") -> dockView(section)
@@ -106,6 +105,11 @@ fun doRouting(windowHash: String) {
         windowHash.startsWith("#misc-stats") -> miscStatView()
         windowHash.startsWith("#perks") -> perkView(section)
         windowHash.startsWith("#research") -> researchView(section)
+        windowHash.startsWith("#catalogue") -> {
+            val parts = windowHash.replace("#catalogue", "").split("/").filter { it.isNotEmpty() }
+            val text = parts.firstOrNull()?.replace("%20", " ") ?: planetSearchOptions.searchText
+            catalogueView(text)
+        }
 
         windowHash.startsWith("#system/") -> {
             val parts = windowHash.replace("#system/", "").split("/")

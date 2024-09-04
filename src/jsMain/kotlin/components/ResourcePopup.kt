@@ -27,8 +27,11 @@ fun TagConsumer<HTMLElement>.resourceSquares(
     }
 }
 
-fun TagConsumer<HTMLElement>.resourceSquare(resource: ResourceType) {
-    div("resource") {
+fun TagConsumer<HTMLElement>.resourceSquare(resource: ResourceType, additionalClass: String? = null) {
+    val classList = if (additionalClass != null){
+        "resource $additionalClass"
+    } else "resource"
+    div(classList) {
         style = "background-color: #${resource.color}"
         div("resource-inner") {
             a(
