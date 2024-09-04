@@ -1,0 +1,2351 @@
+[
+    {
+        "name": "Performance Enhancement",
+        "category": "PHARMACOLOGY",
+        "rank": 1,
+        "description": "Discover how to create Amp and Red Trench at a Pharmaceutical Lab.",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+            {
+                "name": "Argon",
+                "count": 2,
+                "url": "/wiki/Starfield:Argon"
+            },
+            {
+                "name": "Tetrafluorides",
+                "count": 2,
+                "url": "/wiki/Starfield:Tetrafluorides"
+            },
+            {
+                "name": "Metabolic Agent",
+                "count": 3,
+                "url": "/wiki/Starfield:Metabolic_Agent"
+            }
+        ]
+    },
+    {
+        "name": "Performance Enhancement",
+        "category": "PHARMACOLOGY",
+        "rank": 2,
+        "description": "Discover how to create Panopticon and Paramour at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Performance Enhancement": 1
+        },
+        "perks": {
+            "Chemistry": 1
+        },
+        "materials": [
+            {
+                "name": "Solvent",
+                "count": 10,
+                "url": "/wiki/Starfield:Solvent"
+            },
+            {
+                "name": "Carboxylic Acids",
+                "count": 1,
+                "url": "/wiki/Starfield:Carboxylic_Acids"
+            },
+            {
+                "name": "Membrane",
+                "count": 5,
+                "url": "/wiki/Starfield:Membrane"
+            },
+            {
+                "name": "Hippolyta",
+                "count": 5,
+                "url": "/wiki/Starfield:Hippolyta"
+            },
+            {
+                "name": "Infantry Alpha",
+                "count": 5,
+                "url": "/wiki/Starfield:Infantry_Alpha"
+            }
+        ]
+    },
+    {
+        "name": "Performance Enhancement",
+        "category": "PHARMACOLOGY",
+        "rank": 3,
+        "description": "Discover how to create Whiteout and Neurajack at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Performance Enhancement": 2
+        },
+        "perks": {
+            "Chemistry": 2
+        },
+        "materials": [
+            {
+                "name": "Ionic Liquids",
+                "count": 10,
+                "url": "/wiki/Starfield:Ionic_Liquids"
+            },
+            {
+                "name": "Stimulant",
+                "count": 10,
+                "url": "/wiki/Starfield:Stimulant"
+            },
+            {
+                "name": "Toxin",
+                "count": 1,
+                "url": "/wiki/Starfield:Toxin"
+            },
+            {
+                "name": "Squall",
+                "count": 5,
+                "url": "/wiki/Starfield:Squall"
+            },
+            {
+                "name": "Synapse Alpha",
+                "count": 5,
+                "url": "/wiki/Starfield:Synapse_Alpha"
+            }
+        ]
+    },
+    {
+        "name": "Performance Enhancement",
+        "category": "PHARMACOLOGY",
+        "rank": 4,
+        "description": "Discover how to create Frostwolf at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Performance Enhancement": 3
+        },
+        "perks": {
+            "Chemistry": 3
+        },
+        "materials": [
+            {
+                "name": "Stimulant",
+                "count": 20,
+                "url": "/wiki/Starfield:Stimulant"
+            },
+            {
+                "name": "Aurora",
+                "count": 10,
+                "url": "/wiki/Starfield:Aurora"
+            },
+            {
+                "name": "CQB-X",
+                "count": 10,
+                "url": "/wiki/Starfield:CQB-X"
+            },
+            {
+                "name": "Squall",
+                "count": 10,
+                "url": "/wiki/Starfield:Squall"
+            },
+            {
+                "name": "Whiteout",
+                "count": 8,
+                "url": "/wiki/Starfield:Whiteout"
+            }
+        ]
+    },
+    {
+        "name": "Medical Treatment",
+        "category": "PHARMACOLOGY",
+        "rank": 1,
+        "description": "Discover how to create Antibiotic Paste and Infused Bandages at a Pharmaceutical Lab.",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+            {
+                "name": "Antimicrobial",
+                "count": 3,
+                "url": "/wiki/Starfield:Antimicrobial"
+            },
+            {
+                "name": "Amino Acids",
+                "count": 2,
+                "url": "/wiki/Starfield:Amino_Acids"
+            },
+            {
+                "name": "Aluminum",
+                "count": 2,
+                "url": "/wiki/Starfield:Aluminum"
+            }
+        ]
+    },
+    {
+        "name": "Medical Treatment",
+        "category": "PHARMACOLOGY",
+        "rank": 2,
+        "description": "Discover how to create Antibiotic Paste and Infused Bandages at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Medical Treatment": 1
+        },
+        "perks": {
+            "Chemistry": 1
+        },
+        "materials": [
+            {
+                "name": "Amino Acids",
+                "count": 10,
+                "url": "/wiki/Starfield:Amino_Acids"
+            },
+            {
+                "name": "Analgesic",
+                "count": 10,
+                "url": "/wiki/Starfield:Analgesic"
+            },
+            {
+                "name": "Antimicrobial",
+                "count": 10,
+                "url": "/wiki/Starfield:Antimicrobial"
+            },
+            {
+                "name": "Battlestim",
+                "count": 5,
+                "url": "/wiki/Starfield:Battlestim"
+            },
+            {
+                "name": "Heart+",
+                "count": 5,
+                "url": "/wiki/Starfield:Heart%2B"
+            }
+        ]
+    },
+    {
+        "name": "Medical Treatment",
+        "category": "PHARMACOLOGY",
+        "rank": 3,
+        "description": "Discover how to create Antibiotic Injector and Repairing Immobilizer at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Medical Treatment": 2
+        },
+        "perks": {
+            "Chemistry": 2
+        },
+        "materials": [
+            {
+                "name": "Sedative",
+                "count": 10,
+                "url": "/wiki/Starfield:Sedative"
+            },
+            {
+                "name": "Metabolic Agent",
+                "count": 20,
+                "url": "/wiki/Starfield:Metabolic_Agent"
+            },
+            {
+                "name": "Antibiotics",
+                "count": 10,
+                "url": "/wiki/Starfield:Antibiotics"
+            },
+            {
+                "name": "Sealant",
+                "count": 10,
+                "url": "/wiki/Starfield:Sealant"
+            }
+        ]
+    },
+    {
+        "name": "Medical Treatment",
+        "category": "PHARMACOLOGY",
+        "rank": 4,
+        "description": "Discover how to create Panacea and Junk Flush at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Medical Treatment": 3
+        },
+        "perks": {
+            "Chemistry": 3
+        },
+        "materials": [
+            {
+                "name": "Immunostimulant",
+                "count": 5,
+                "url": "/wiki/Starfield:Immunostimulant"
+            },
+            {
+                "name": "Membrane",
+                "count": 20,
+                "url": "/wiki/Starfield:Membrane"
+            },
+            {
+                "name": "Heart+",
+                "count": 10,
+                "url": "/wiki/Starfield:Heart%2B"
+            },
+            {
+                "name": "Trauma Pack",
+                "count": 10,
+                "url": "/wiki/Starfield:Trauma_Pack"
+            }
+        ]
+    },
+    {
+        "name": "Innovative Synthesis",
+        "category": "PHARMACOLOGY",
+        "rank": 1,
+        "description": "Discover how to create Black Hole Heart and Dwarf Star Heart at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Medical Treatment": 4,
+            "Performance Enhancement": 4
+        },
+        "perks": {
+            "Chemistry": 3,
+            "Special Projects": 1
+        },
+        "materials": [
+            {
+                "name": "Alien Genetic Material",
+                "count": 3,
+                "url": "/wiki/Starfield:Alien_Genetic_Material"
+            },
+            {
+                "name": "Carboxylic Acids",
+                "count": 1,
+                "url": "/wiki/Starfield:Carboxylic_Acids"
+            },
+            {
+                "name": "Mercury",
+                "count": 10,
+                "url": "/wiki/Starfield:Mercury"
+            },
+            {
+                "name": "Solvent",
+                "count": 5,
+                "url": "/wiki/Starfield:Solvent"
+            },
+            {
+                "name": "Tetrafluorides",
+                "count": 5,
+                "url": "/wiki/Starfield:Tetrafluorides"
+            }
+        ]
+    },
+    {
+        "name": "Innovative Synthesis",
+        "category": "PHARMACOLOGY",
+        "rank": 2,
+        "description": "Discover how to create Subgiant Heart and Giant Heart at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Innovative Synthesis": 1
+        },
+        "perks": {
+            "Chemistry": 3,
+            "Special Projects": 1
+        },
+        "materials": [
+            {
+                "name": "Alien Genetic Material",
+                "count": 5,
+                "url": "/wiki/Starfield:Alien_Genetic_Material"
+            },
+            {
+                "name": "Solvent",
+                "count": 5,
+                "url": "/wiki/Starfield:Solvent"
+            },
+            {
+                "name": "Carboxylic Acids",
+                "count": 1,
+                "url": "/wiki/Starfield:Carboxylic_Acids"
+            },
+            {
+                "name": "Dwarf Star Heart",
+                "count": 5,
+                "url": "/wiki/Starfield:Dwarf_Star_Heart"
+            },
+            {
+                "name": "Aurora",
+                "count": 5,
+                "url": "/wiki/Starfield:Aurora"
+            }
+        ]
+    },
+    {
+        "name": "Innovative Synthesis",
+        "category": "PHARMACOLOGY",
+        "rank": 3,
+        "description": "Discover how to create Supermassive Black Heart and Hypergiant Heart at a Pharmaceutical Lab.",
+        "prerequisites": {
+            "Innovative Synthesis": 2
+        },
+        "perks": {
+            "Chemistry": 3,
+            "Special Projects": 1
+        },
+        "materials": [
+            {
+                "name": "Alien Genetic Material",
+                "count": 10,
+                "url": "/wiki/Starfield:Alien_Genetic_Material"
+            },
+            {
+                "name": "Ionic Liquids",
+                "count": 8,
+                "url": "/wiki/Starfield:Ionic_Liquids"
+            },
+            {
+                "name": "Solvent",
+                "count": 10,
+                "url": "/wiki/Starfield:Solvent"
+            },
+            {
+                "name": "Carboxylic Acids",
+                "count": 1,
+                "url": "/wiki/Starfield:Carboxylic_Acids"
+            },
+            {
+                "name": "Subgiant Heart",
+                "count": 5,
+                "url": "/wiki/Starfield:Subgiant_Heart"
+            },
+            {
+                "name": "Black Hole Heart",
+                "count": 5,
+                "url": "/wiki/Starfield:Black_Hole_Heart"
+            }
+        ]
+    },
+    {
+        "name": "Old Earth Cuisine",
+        "category": "FOOD_AND_DRINK",
+        "rank": 1,
+        "description": "Discover how to prepare a Reuben and Meatloaf at a Cooking Station.",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+        ]
+    },
+    {
+        "name": "Old Earth Cuisine",
+        "category": "FOOD_AND_DRINK",
+        "rank": 2,
+        "description": "Discover how to prepare Carbonara, Chicken Marsala, and Latkes at a Cooking Station.",
+        "prerequisites": {
+            "Old Earth Cuisine": 1
+        },
+        "perks": {
+            "Gastronomy": 1
+        },
+        "materials": [
+        ]
+    },
+    {
+        "name": "Old Earth Cuisine",
+        "category": "FOOD_AND_DRINK",
+        "rank": 3,
+        "description": "Discover how to prepare a Barbacoa Wrap, Chapaguri, and Chicken Tikka at a Cooking Station.",
+        "prerequisites": {
+            "Old Earth Cuisine": 2
+        },
+        "perks": {
+            "Gastronomy": 2
+        },
+        "materials": [
+        ]
+    },
+    {
+        "name": "Beverage Development",
+        "category": "FOOD_AND_DRINK",
+        "rank": 1,
+        "description": "Discover how to prepare Alien Tonic, Yellow Giant Splash, and Boba Alien Tea at a Cooking Station.",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+        ]
+    },
+    {
+        "name": "Beverage Development",
+        "category": "FOOD_AND_DRINK",
+        "rank": 2,
+        "description": "Discover how to prepare an Alien Energy Drink and Sunray Tonic at a Cooking Station.",
+        "prerequisites": {
+            "Beverage Development": 1
+        },
+        "perks": {
+            "Gastronomy": 1
+        },
+        "materials": [
+        ]
+    },
+    {
+        "name": "Mixology",
+        "category": "FOOD_AND_DRINK",
+        "rank": 1,
+        "description": "Discover how to prepare Alien Liquor at a Cooking Station.",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+        ]
+    },
+    {
+        "name": "Mixology",
+        "category": "FOOD_AND_DRINK",
+        "rank": 2,
+        "description": "Discover how to prepare Colonel's Choice and Lumberjack Julep at a Cooking Station.",
+        "prerequisites": {
+            "Mixology": 1
+        },
+        "perks": {
+            "Gastronomy": 1
+        },
+        "materials": [
+        ]
+    },
+    {
+        "name": "Manufacturing",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+            {
+                "name": "Zero Wire",
+                "count": 2,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Adaptive Frame",
+                "count": 3,
+                "url": "/wiki/Starfield:Adaptive_Frame"
+            },
+            {
+                "name": "Iron",
+                "count": 3,
+                "url": "/wiki/Starfield:Iron"
+            },
+            {
+                "name": "Sealant",
+                "count": 3,
+                "url": "/wiki/Starfield:Sealant"
+            }
+        ]
+    },
+    {
+        "name": "Manufacturing",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Manufacturing": 1
+        },
+        "perks": {
+            "Outpost Engineering": 1
+        },
+        "materials": [
+            {
+                "name": "Zero Wire",
+                "count": 10,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Reactive Gauge",
+                "count": 5,
+                "url": "/wiki/Starfield:Reactive_Gauge"
+            },
+            {
+                "name": "Adaptive Frame",
+                "count": 30,
+                "url": "/wiki/Starfield:Adaptive_Frame"
+            },
+            {
+                "name": "Iron",
+                "count": 30,
+                "url": "/wiki/Starfield:Iron"
+            },
+            {
+                "name": "Tungsten",
+                "count": 20,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Sealant",
+                "count": 20,
+                "url": "/wiki/Starfield:Sealant"
+            },
+            {
+                "name": "Lubricant",
+                "count": 10,
+                "url": "/wiki/Starfield:Lubricant"
+            }
+        ]
+    },
+    {
+        "name": "Manufacturing",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 3,
+        "description": "",
+        "prerequisites": {
+            "Manufacturing": 2
+        },
+        "perks": {
+            "Outpost Engineering": 2
+        },
+        "materials": [
+            {
+                "name": "Zero Wire",
+                "count": 20,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Reactive Gauge",
+                "count": 10,
+                "url": "/wiki/Starfield:Reactive_Gauge"
+            },
+            {
+                "name": "Positron Battery",
+                "count": 5,
+                "url": "/wiki/Starfield:Positron_Battery"
+            },
+            {
+                "name": "Adaptive Frame",
+                "count": 30,
+                "url": "/wiki/Starfield:Adaptive_Frame"
+            },
+            {
+                "name": "Iron",
+                "count": 40,
+                "url": "/wiki/Starfield:Iron"
+            },
+            {
+                "name": "Tungsten",
+                "count": 30,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Sealant",
+                "count": 30,
+                "url": "/wiki/Starfield:Sealant"
+            },
+            {
+                "name": "Lubricant",
+                "count": 10,
+                "url": "/wiki/Starfield:Lubricant"
+            }
+        ]
+    },
+    {
+        "name": "Resource Extraction",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+            "Outpost Engineering": 1
+        },
+        "materials": [
+            {
+                "name": "Drilling Rig",
+                "count": 5,
+                "url": "/wiki/Starfield:Drilling_Rig"
+            },
+            {
+                "name": "Mag Pressure Tank",
+                "count": 8,
+                "url": "/wiki/Starfield:Mag_Pressure_Tank"
+            },
+            {
+                "name": "Adaptive Frame",
+                "count": 10,
+                "url": "/wiki/Starfield:Adaptive_Frame"
+            },
+            {
+                "name": "Aluminum",
+                "count": 30,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Copper",
+                "count": 20,
+                "url": "/wiki/Starfield:Copper"
+            },
+            {
+                "name": "Chlorosilanes",
+                "count": 10,
+                "url": "/wiki/Starfield:Chlorosilanes"
+            }
+        ]
+    },
+    {
+        "name": "Resource Extraction",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Resource Extraction": 1
+        },
+        "perks": {
+            "Outpost Engineering": 2
+        },
+        "materials": [
+            {
+                "name": "Aldumite Drilling Rig",
+                "count": 5,
+                "url": "/wiki/Starfield:Aldumite_Drilling_Rig"
+            },
+            {
+                "name": "Microsecond Regulator",
+                "count": 8,
+                "url": "/wiki/Starfield:Microsecond_Regulator"
+            },
+            {
+                "name": "Adaptive Frame",
+                "count": 20,
+                "url": "/wiki/Starfield:Adaptive_Frame"
+            },
+            {
+                "name": "Aluminum",
+                "count": 40,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Caesium",
+                "count": 20,
+                "url": "/wiki/Starfield:Caesium"
+            },
+            {
+                "name": "Chlorosilanes",
+                "count": 20,
+                "url": "/wiki/Starfield:Chlorosilanes"
+            }
+        ]
+    },
+    {
+        "name": "Decoration",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+            {
+                "name": "Structural",
+                "count": 3,
+                "url": "/wiki/Starfield:Structural"
+            },
+            {
+                "name": "Fiber",
+                "count": 3,
+                "url": "/wiki/Starfield:Fiber"
+            },
+            {
+                "name": "Ornamental",
+                "count": 2,
+                "url": "/w/index.php?title=Starfield:Ornamental&action=edit&redlink=1"
+            }
+        ]
+    },
+    {
+        "name": "Decoration",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Decoration": 1
+        },
+        "perks": {
+            "Outpost Engineering": 1
+        },
+        "materials": [
+            {
+                "name": "Structural",
+                "count": 10,
+                "url": "/wiki/Starfield:Structural"
+            },
+            {
+                "name": "Aluminum",
+                "count": 10,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Fiber",
+                "count": 10,
+                "url": "/wiki/Starfield:Fiber"
+            },
+            {
+                "name": "Pigment",
+                "count": 10,
+                "url": "/wiki/Starfield:Pigment"
+            },
+            {
+                "name": "Adhesive",
+                "count": 10,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Decoration",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 3,
+        "description": "",
+        "prerequisites": {
+            "Decoration": 2
+        },
+        "perks": {
+            "Outpost Engineering": 2
+        },
+        "materials": [
+            {
+                "name": "Structural",
+                "count": 30,
+                "url": "/wiki/Starfield:Structural"
+            },
+            {
+                "name": "Aluminum",
+                "count": 30,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Fiber",
+                "count": 20,
+                "url": "/wiki/Starfield:Fiber"
+            },
+            {
+                "name": "Nickel",
+                "count": 20,
+                "url": "/wiki/Starfield:Nickel"
+            },
+            {
+                "name": "Adhesive",
+                "count": 30,
+                "url": "/wiki/Starfield:Adhesive"
+            },
+            {
+                "name": "Luxury Textile",
+                "count": 5,
+                "url": "/wiki/Starfield:Luxury_Textile"
+            }
+        ]
+    },
+    {
+        "name": "Horticulture",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+            "Outpost Engineering  Botany": 1
+        },
+        "materials": [
+            {
+                "name": "Mag Pressure Tank",
+                "count": 8,
+                "url": "/wiki/Starfield:Mag_Pressure_Tank"
+            },
+            {
+                "name": "Adaptive Frame",
+                "count": 10,
+                "url": "/wiki/Starfield:Adaptive_Frame"
+            },
+            {
+                "name": "Tungsten",
+                "count": 10,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Nutrient",
+                "count": 10,
+                "url": "/wiki/Starfield:Nutrient"
+            },
+            {
+                "name": "Metabolic Agent",
+                "count": 10,
+                "url": "/wiki/Starfield:Metabolic_Agent"
+            }
+        ]
+    },
+    {
+        "name": "Horticulture",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Horticulture": 1
+        },
+        "perks": {
+            "Outpost Engineering": 2,
+            " Botany": 1
+        },
+        "materials": [
+            {
+                "name": "Mag Pressure Tank",
+                "count": 10,
+                "url": "/wiki/Starfield:Mag_Pressure_Tank"
+            },
+            {
+                "name": "Adaptive Frame",
+                "count": 20,
+                "url": "/wiki/Starfield:Adaptive_Frame"
+            },
+            {
+                "name": "Tungsten",
+                "count": 20,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Nutrient",
+                "count": 30,
+                "url": "/wiki/Starfield:Nutrient"
+            },
+            {
+                "name": "Metabolic Agent",
+                "count": 30,
+                "url": "/wiki/Starfield:Metabolic_Agent"
+            },
+            {
+                "name": "Amino Acids",
+                "count": 10,
+                "url": "/wiki/Starfield:Amino_Acids"
+            }
+        ]
+    },
+    {
+        "name": "Domestication",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+            "Outpost Engineering  Zoology": 1
+        },
+        "materials": [
+            {
+                "name": "Molecular Sieve",
+                "count": 5,
+                "url": "/wiki/Starfield:Molecular_Sieve"
+            },
+            {
+                "name": "Adaptive Frame",
+                "count": 10,
+                "url": "/wiki/Starfield:Adaptive_Frame"
+            },
+            {
+                "name": "Aluminum",
+                "count": 30,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Sealant",
+                "count": 30,
+                "url": "/wiki/Starfield:Sealant"
+            },
+            {
+                "name": "Adhesive",
+                "count": 10,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Domestication",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Domestication": 1
+        },
+        "perks": {
+            "Outpost Engineering": 2,
+            " Zoology": 1
+        },
+        "materials": [
+            {
+                "name": "Substrate Molecule Sieve",
+                "count": 8,
+                "url": "/wiki/Starfield:Substrate_Molecule_Sieve"
+            },
+            {
+                "name": "Adaptive Frame",
+                "count": 20,
+                "url": "/wiki/Starfield:Adaptive_Frame"
+            },
+            {
+                "name": "Aluminum",
+                "count": 40,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Sealant",
+                "count": 30,
+                "url": "/wiki/Starfield:Sealant"
+            },
+            {
+                "name": "Adhesive",
+                "count": 30,
+                "url": "/wiki/Starfield:Adhesive"
+            },
+            {
+                "name": "Hypercatalyst",
+                "count": 10,
+                "url": "/wiki/Starfield:Hypercatalyst"
+            }
+        ]
+    },
+    {
+        "name": "Power Generation",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+            "Outpost Engineering": 1
+        },
+        "materials": [
+            {
+                "name": "Zero Wire",
+                "count": 10,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Isocentered Magnet",
+                "count": 8,
+                "url": "/wiki/Starfield:Isocentered_Magnet"
+            },
+            {
+                "name": "Adaptive Frame",
+                "count": 10,
+                "url": "/wiki/Starfield:Adaptive_Frame"
+            },
+            {
+                "name": "Silver",
+                "count": 30,
+                "url": "/wiki/Starfield:Silver"
+            },
+            {
+                "name": "Copper",
+                "count": 20,
+                "url": "/wiki/Starfield:Copper"
+            },
+            {
+                "name": "Cobalt",
+                "count": 10,
+                "url": "/wiki/Starfield:Cobalt"
+            }
+        ]
+    },
+    {
+        "name": "Power Generation",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Power Generation": 1
+        },
+        "perks": {
+            "Outpost Engineering": 2
+        },
+        "materials": [
+            {
+                "name": "Zero Wire",
+                "count": 23,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Tau Grade Rheostat",
+                "count": 5,
+                "url": "/wiki/Starfield:Tau_Grade_Rheostat"
+            },
+            {
+                "name": "Supercooled Magnet",
+                "count": 3,
+                "url": "/wiki/Starfield:Supercooled_Magnet"
+            },
+            {
+                "name": "Power Circuit",
+                "count": 3,
+                "url": "/wiki/Starfield:Power_Circuit"
+            },
+            {
+                "name": "Caesium",
+                "count": 20,
+                "url": "/wiki/Starfield:Caesium"
+            },
+            {
+                "name": "Beryllium",
+                "count": 30,
+                "url": "/wiki/Starfield:Beryllium"
+            },
+            {
+                "name": "Titanium",
+                "count": 30,
+                "url": "/wiki/Starfield:Titanium"
+            }
+        ]
+    },
+    {
+        "name": "Power Generation",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 3,
+        "description": "",
+        "prerequisites": {
+            "Power Generation": 2
+        },
+        "perks": {
+            "Outpost Engineering": 3
+        },
+        "materials": [
+            {
+                "name": "Paramagnon Conductor",
+                "count": 10,
+                "url": "/wiki/Starfield:Paramagnon_Conductor"
+            },
+            {
+                "name": "Tau Grade Rheostat",
+                "count": 10,
+                "url": "/wiki/Starfield:Tau_Grade_Rheostat"
+            },
+            {
+                "name": "Isotopic Coolant",
+                "count": 10,
+                "url": "/wiki/Starfield:Isotopic_Coolant"
+            },
+            {
+                "name": "Nuclear Fuel Rod",
+                "count": 10,
+                "url": "/wiki/Starfield:Nuclear_Fuel_Rod"
+            },
+            {
+                "name": "Control Rod",
+                "count": 8,
+                "url": "/wiki/Starfield:Control_Rod"
+            },
+            {
+                "name": "Supercooled Magnet",
+                "count": 5,
+                "url": "/wiki/Starfield:Supercooled_Magnet"
+            },
+            {
+                "name": "Power Circuit",
+                "count": 5,
+                "url": "/wiki/Starfield:Power_Circuit"
+            },
+            {
+                "name": "Tungsten",
+                "count": 30,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Lead",
+                "count": 30,
+                "url": "/wiki/Starfield:Lead"
+            }
+        ]
+    },
+    {
+        "name": "Power Generation",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 4,
+        "description": "",
+        "prerequisites": {
+            "Power Generation": 3
+        },
+        "perks": {
+            "Outpost Engineering": 3,
+            " Special Projects": 1
+        },
+        "materials": [
+            {
+                "name": "Tasine Superconductor",
+                "count": 8,
+                "url": "/wiki/Starfield:Tasine_Superconductor"
+            },
+            {
+                "name": "Tau Grade Rheostat",
+                "count": 30,
+                "url": "/wiki/Starfield:Tau_Grade_Rheostat"
+            },
+            {
+                "name": "Isotopic Coolant",
+                "count": 20,
+                "url": "/wiki/Starfield:Isotopic_Coolant"
+            },
+            {
+                "name": "Vytinium Fuel Rod",
+                "count": 10,
+                "url": "/wiki/Starfield:Vytinium_Fuel_Rod"
+            },
+            {
+                "name": "Control Rod",
+                "count": 10,
+                "url": "/wiki/Starfield:Control_Rod"
+            },
+            {
+                "name": "Rothicite Magnet",
+                "count": 5,
+                "url": "/wiki/Starfield:Rothicite_Magnet"
+            },
+            {
+                "name": "Power Circuit",
+                "count": 10,
+                "url": "/wiki/Starfield:Power_Circuit"
+            },
+            {
+                "name": "Tungsten",
+                "count": 40,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Lead",
+                "count": 50,
+                "url": "/wiki/Starfield:Lead"
+            }
+        ]
+    },
+    {
+        "name": "Robots",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+            {
+                "name": "Zero Wire",
+                "count": 2,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Aluminum",
+                "count": 3,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Beryllium",
+                "count": 3,
+                "url": "/wiki/Starfield:Beryllium"
+            }
+        ]
+    },
+    {
+        "name": "Robots",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Robots": 1
+        },
+        "perks": {
+            "Outpost Engineering": 1
+        },
+        "materials": [
+            {
+                "name": "Positron Battery",
+                "count": 8,
+                "url": "/wiki/Starfield:Positron_Battery"
+            },
+            {
+                "name": "Zero Wire",
+                "count": 30,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Austenitic Manifold",
+                "count": 8,
+                "url": "/wiki/Starfield:Austenitic_Manifold"
+            },
+            {
+                "name": "Titanium",
+                "count": 30,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Chlorosilanes",
+                "count": 30,
+                "url": "/wiki/Starfield:Chlorosilanes"
+            },
+            {
+                "name": "Cobalt",
+                "count": 30,
+                "url": "/wiki/Starfield:Cobalt"
+            },
+            {
+                "name": "Polymer",
+                "count": 10,
+                "url": "/wiki/Starfield:Polymer"
+            }
+        ]
+    },
+    {
+        "name": "Outpost Defense",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+            "Outpost Engineering": 2
+        },
+        "materials": [
+            {
+                "name": "Zero Wire",
+                "count": 8,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Positron Battery",
+                "count": 3,
+                "url": "/wiki/Starfield:Positron_Battery"
+            },
+            {
+                "name": "Aluminum",
+                "count": 30,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Titanium",
+                "count": 10,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Copper",
+                "count": 5,
+                "url": "/wiki/Starfield:Copper"
+            },
+            {
+                "name": "Fluorine",
+                "count": 5,
+                "url": "/wiki/Starfield:Fluorine"
+            }
+        ]
+    },
+    {
+        "name": "Outpost Defense",
+        "category": "OUTPOST_MANAGEMENT",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Outpost Defense": 1
+        },
+        "perks": {
+            "Outpost Engineering": 3
+        },
+        "materials": [
+            {
+                "name": "Positron Battery",
+                "count": 8,
+                "url": "/wiki/Starfield:Positron_Battery"
+            },
+            {
+                "name": "Veryl-Treated Manifold",
+                "count": 3,
+                "url": "/wiki/Starfield:Veryl-Treated_Manifold"
+            },
+            {
+                "name": "Power Circuit",
+                "count": 3,
+                "url": "/wiki/Starfield:Power_Circuit"
+            },
+            {
+                "name": "Titanium",
+                "count": 30,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Aluminum",
+                "count": 40,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Copper",
+                "count": 10,
+                "url": "/wiki/Starfield:Copper"
+            },
+            {
+                "name": "Neon",
+                "count": 10,
+                "url": "/wiki/Starfield:Neon"
+            }
+        ]
+    },
+    {
+        "name": "Helmet Mods",
+        "category": "EQUIPMENT",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+            {
+                "name": "Tungsten",
+                "count": 3,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Cosmetic",
+                "count": 3,
+                "url": "/wiki/Starfield:Cosmetic"
+            },
+            {
+                "name": "Polymer",
+                "count": 3,
+                "url": "/wiki/Starfield:Polymer"
+            }
+        ]
+    },
+    {
+        "name": "Helmet Mods",
+        "category": "EQUIPMENT",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Helmet Mods": 1
+        },
+        "perks": {
+            "Spacesuit Design": 1
+        },
+        "materials": [
+            {
+                "name": "Sterile Nanotubes",
+                "count": 5,
+                "url": "/wiki/Starfield:Sterile_Nanotubes"
+            },
+            {
+                "name": "Postitron Battery",
+                "count": 5,
+                "url": "/wiki/Starfield:Positron_Battery"
+            },
+            {
+                "name": "Zero Wire",
+                "count": 8,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Titanium",
+                "count": 10,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Adhesive",
+                "count": 10,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Helmet Mods",
+        "category": "EQUIPMENT",
+        "rank": 3,
+        "description": "",
+        "prerequisites": {
+            "Helmet Mods": 2
+        },
+        "perks": {
+            "Spacesuit Design": 2
+        },
+        "materials": [
+            {
+                "name": "Microsecond Regulator",
+                "count": 8,
+                "url": "/wiki/Starfield:Microsecond_Regulator"
+            },
+            {
+                "name": "Indicite Wafer",
+                "count": 5,
+                "url": "/wiki/Starfield:Indicite_Wafer"
+            },
+            {
+                "name": "High-Tensile Spidroin",
+                "count": 8,
+                "url": "/wiki/Starfield:High-Tensile_Spidroin"
+            },
+            {
+                "name": "Caelumite",
+                "count": 10,
+                "url": "/wiki/Starfield:Caelumite"
+            },
+            {
+                "name": "Tungsten",
+                "count": 30,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Polymer",
+                "count": 10,
+                "url": "/wiki/Starfield:Polymer"
+            }
+        ]
+    },
+    {
+        "name": "Spacesuit Mods",
+        "category": "EQUIPMENT",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+            "Spacesuit Design": 1
+        },
+        "materials": [
+            {
+                "name": "Polytextile",
+                "count": 8,
+                "url": "/wiki/Starfield:Polytextile"
+            },
+            {
+                "name": "Copper",
+                "count": 5,
+                "url": "/wiki/Starfield:Copper"
+            },
+            {
+                "name": "Cosmetic",
+                "count": 5,
+                "url": "/wiki/Starfield:Cosmetic"
+            }
+        ]
+    },
+    {
+        "name": "Spacesuit Mods",
+        "category": "EQUIPMENT",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Spacesuit Mods": 1
+        },
+        "perks": {
+            "Spacesuit Design": 2
+        },
+        "materials": [
+            {
+                "name": "Semimetal Wafer",
+                "count": 5,
+                "url": "/wiki/Starfield:Semimetal_Wafer"
+            },
+            {
+                "name": "Positron Battery",
+                "count": 5,
+                "url": "/wiki/Starfield:Positron_Battery"
+            },
+            {
+                "name": "Polytextile",
+                "count": 10,
+                "url": "/wiki/Starfield:Polytextile"
+            },
+            {
+                "name": "Titanium",
+                "count": 10,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Adhesive",
+                "count": 10,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Spacesuit Mods",
+        "category": "EQUIPMENT",
+        "rank": 3,
+        "description": "",
+        "prerequisites": {
+            "Spacesuit Mods": 2
+        },
+        "perks": {
+            "Spacesuit Design": 3
+        },
+        "materials": [
+            {
+                "name": "Microsecond Regulator",
+                "count": 8,
+                "url": "/wiki/Starfield:Microsecond_Regulator"
+            },
+            {
+                "name": "Indicite Wafer",
+                "count": 5,
+                "url": "/wiki/Starfield:Indicite_Wafer"
+            },
+            {
+                "name": "Positron Battery",
+                "count": 8,
+                "url": "/wiki/Starfield:Positron_Battery"
+            },
+            {
+                "name": "Caelumite",
+                "count": 10,
+                "url": "/wiki/Starfield:Caelumite"
+            },
+            {
+                "name": "Tungsten",
+                "count": 30,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Lubricant",
+                "count": 20,
+                "url": "/wiki/Starfield:Lubricant"
+            }
+        ]
+    },
+    {
+        "name": "Pack Mods",
+        "category": "EQUIPMENT",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+            "Spacesuit Design": 1
+        },
+        "materials": [
+            {
+                "name": "Monopropellant",
+                "count": 5,
+                "url": "/wiki/Starfield:Monopropellant"
+            },
+            {
+                "name": "Mag Pressure Tank",
+                "count": 8,
+                "url": "/wiki/Starfield:Mag_Pressure_Tank"
+            },
+            {
+                "name": "Aluminum",
+                "count": 10,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Beryllium",
+                "count": 10,
+                "url": "/wiki/Starfield:Beryllium"
+            }
+        ]
+    },
+    {
+        "name": "Pack Mods",
+        "category": "EQUIPMENT",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Pack Mods": 1
+        },
+        "perks": {
+            "Spacesuit Design": 2
+        },
+        "materials": [
+            {
+                "name": "Zero-G Gimbal",
+                "count": 5,
+                "url": "/wiki/Starfield:Zero-G_Gimbal"
+            },
+            {
+                "name": "Monopropellant",
+                "count": 10,
+                "url": "/wiki/Starfield:Monopropellant"
+            },
+            {
+                "name": "Beryllium",
+                "count": 10,
+                "url": "/wiki/Starfield:Beryllium"
+            },
+            {
+                "name": "Polymer",
+                "count": 8,
+                "url": "/wiki/Starfield:Polymer"
+            },
+            {
+                "name": "Sealant",
+                "count": 10,
+                "url": "/wiki/Starfield:Sealant"
+            }
+        ]
+    },
+    {
+        "name": "Pack Mods",
+        "category": "EQUIPMENT",
+        "rank": 3,
+        "description": "",
+        "prerequisites": {
+            "Pack Mods": 2
+        },
+        "perks": {
+            "Spacesuit Design": 3,
+            " Special Projects": 1
+        },
+        "materials": [
+            {
+                "name": "Zero-G Gimbal",
+                "count": 10,
+                "url": "/wiki/Starfield:Zero-G_Gimbal"
+            },
+            {
+                "name": "Monopropellant",
+                "count": 20,
+                "url": "/wiki/Starfield:Monopropellant"
+            },
+            {
+                "name": "Tau Grade Rheostat",
+                "count": 10,
+                "url": "/wiki/Starfield:Tau_Grade_Rheostat"
+            },
+            {
+                "name": "Beryllium",
+                "count": 20,
+                "url": "/wiki/Starfield:Beryllium"
+            },
+            {
+                "name": "Biosuppressant",
+                "count": 10,
+                "url": "/wiki/Starfield:Biosuppressant"
+            },
+            {
+                "name": "Amino Acids",
+                "count": 20,
+                "url": "/wiki/Starfield:Amino_Acids"
+            }
+        ]
+    },
+    {
+        "name": "Barrel Mods",
+        "category": "WEAPONRY",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+            {
+                "name": "Iron",
+                "count": 20,
+                "url": "/wiki/Starfield:Iron"
+            },
+            {
+                "name": "Nickel",
+                "count": 20,
+                "url": "/wiki/Starfield:Nickel"
+            },
+            {
+                "name": "Sealant",
+                "count": 10,
+                "url": "/wiki/Starfield:Sealant"
+            }
+        ]
+    },
+    {
+        "name": "Barrel Mods",
+        "category": "WEAPONRY",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Barrel Mods": 1
+        },
+        "perks": {
+            "Weapon Engineering": 1
+        },
+        "materials": [
+            {
+                "name": "Tungsten",
+                "count": 5,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Nickel",
+                "count": 10,
+                "url": "/wiki/Starfield:Nickel"
+            },
+            {
+                "name": "Lubricant",
+                "count": 5,
+                "url": "/wiki/Starfield:Lubricant"
+            }
+        ]
+    },
+    {
+        "name": "Grip and Stock Mods",
+        "category": "WEAPONRY",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+            {
+                "name": "Aluminum",
+                "count": 3,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Nickel",
+                "count": 3,
+                "url": "/wiki/Starfield:Nickel"
+            },
+            {
+                "name": "Sealant",
+                "count": 3,
+                "url": "/wiki/Starfield:Sealant"
+            }
+        ]
+    },
+    {
+        "name": "Grip and Stock Mods",
+        "category": "WEAPONRY",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Grip and Stock Mods": 1
+        },
+        "perks": {
+            "Weapon Engineering": 1
+        },
+        "materials": [
+            {
+                "name": "Tungsten",
+                "count": 8,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Polymer",
+                "count": 5,
+                "url": "/wiki/Starfield:Polymer"
+            },
+            {
+                "name": "Adhesive",
+                "count": 10,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Grip and Stock Mods",
+        "category": "WEAPONRY",
+        "rank": 3,
+        "description": "",
+        "prerequisites": {
+            "Grip and Stock Mods": 2
+        },
+        "perks": {
+            "Weapon Engineering": 2
+        },
+        "materials": [
+            {
+                "name": "Titanium",
+                "count": 10,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Polymer",
+                "count": 10,
+                "url": "/wiki/Starfield:Polymer"
+            },
+            {
+                "name": "Adhesive",
+                "count": 20,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Optic and Laser Mods",
+        "category": "WEAPONRY",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+        },
+        "materials": [
+            {
+                "name": "Aluminum",
+                "count": 3,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Chlorosilanes",
+                "count": 2,
+                "url": "/wiki/Starfield:Chlorosilanes"
+            },
+            {
+                "name": "Sealant",
+                "count": 3,
+                "url": "/wiki/Starfield:Sealant"
+            }
+        ]
+    },
+    {
+        "name": "Optic and Laser Mods",
+        "category": "WEAPONRY",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Optic and Laser Mods": 1
+        },
+        "perks": {
+            "Weapon Engineering": 1
+        },
+        "materials": [
+            {
+                "name": "Zero Wire",
+                "count": 8,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Chlorosilanes",
+                "count": 8,
+                "url": "/wiki/Starfield:Chlorosilanes"
+            },
+            {
+                "name": "Aluminum",
+                "count": 10,
+                "url": "/wiki/Starfield:Aluminum"
+            },
+            {
+                "name": "Adhesive",
+                "count": 8,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Optic and Laser Mods",
+        "category": "WEAPONRY",
+        "rank": 3,
+        "description": "",
+        "prerequisites": {
+            "Optic and Laser Mods": 2
+        },
+        "perks": {
+            "Weapon Engineering": 2
+        },
+        "materials": [
+            {
+                "name": "Zero Wire",
+                "count": 10,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Vanadium",
+                "count": 20,
+                "url": "/wiki/Starfield:Vanadium"
+            },
+            {
+                "name": "Iridium",
+                "count": 20,
+                "url": "/wiki/Starfield:Iridium"
+            },
+            {
+                "name": "Adhesive",
+                "count": 20,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Muzzle Mods",
+        "category": "WEAPONRY",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+            "Weapon Engineering": 1
+        },
+        "materials": [
+            {
+                "name": "Titanium",
+                "count": 5,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Tungsten",
+                "count": 10,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Sealant",
+                "count": 5,
+                "url": "/wiki/Starfield:Sealant"
+            }
+        ]
+    },
+    {
+        "name": "Muzzle Mods",
+        "category": "WEAPONRY",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Muzzle Mods": 1
+        },
+        "perks": {
+            "Weapon Engineering": 2
+        },
+        "materials": [
+            {
+                "name": "Zero Wire",
+                "count": 8,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Tantalum",
+                "count": 10,
+                "url": "/wiki/Starfield:Tantalum"
+            },
+            {
+                "name": "Titanium",
+                "count": 10,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Polymer",
+                "count": 10,
+                "url": "/wiki/Starfield:Polymer"
+            }
+        ]
+    },
+    {
+        "name": "Muzzle Mods",
+        "category": "WEAPONRY",
+        "rank": 3,
+        "description": "",
+        "prerequisites": {
+            "Muzzle Mods": 2
+        },
+        "perks": {
+            "Weapon Engineering": 3,
+            "Special Projects": 1
+        },
+        "materials": [
+            {
+                "name": "Isotopic Coolant",
+                "count": 10,
+                "url": "/wiki/Starfield:Isotopic_Coolant"
+            },
+            {
+                "name": "Ytterbium",
+                "count": 10,
+                "url": "/wiki/Starfield:Ytterbium"
+            },
+            {
+                "name": "Titanium",
+                "count": 17,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Polymer",
+                "count": 10,
+                "url": "/wiki/Starfield:Polymer"
+            },
+            {
+                "name": "Adhesive",
+                "count": 20,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Magazine and Battery Mods",
+        "category": "WEAPONRY",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+            "Weapon Engineering": 2
+        },
+        "materials": [
+            {
+                "name": "Titanium",
+                "count": 5,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Lead",
+                "count": 8,
+                "url": "/wiki/Starfield:Lead"
+            },
+            {
+                "name": "Adhesive",
+                "count": 5,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Magazine and Battery Mods",
+        "category": "WEAPONRY",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Magazine and Battery Mods": 1
+        },
+        "perks": {
+            "Weapon Engineering": 3
+        },
+        "materials": [
+            {
+                "name": "Isocentered Magnet",
+                "count": 8,
+                "url": "/wiki/Starfield:Isocentered_Magnet"
+            },
+            {
+                "name": "Tau Grade Rheostat",
+                "count": 8,
+                "url": "/wiki/Starfield:Tau_Grade_Rheostat"
+            },
+            {
+                "name": "Uranium",
+                "count": 10,
+                "url": "/wiki/Starfield:Uranium"
+            },
+            {
+                "name": "Lead",
+                "count": 20,
+                "url": "/wiki/Starfield:Lead"
+            },
+            {
+                "name": "Adhesive",
+                "count": 10,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Magazine and Battery Mods",
+        "category": "WEAPONRY",
+        "rank": 3,
+        "description": "",
+        "prerequisites": {
+            "Magazine and Battery Mods": 2
+        },
+        "perks": {
+            "Weapon Engineering": 3,
+            "Special Projects": 1
+        },
+        "materials": [
+            {
+                "name": "Positron Battery",
+                "count": 8,
+                "url": "/wiki/Starfield:Positron_Battery"
+            },
+            {
+                "name": "Toxin",
+                "count": 20,
+                "url": "/wiki/Starfield:Toxin"
+            },
+            {
+                "name": "Ytterbium",
+                "count": 17,
+                "url": "/wiki/Starfield:Ytterbium"
+            },
+            {
+                "name": "Lead",
+                "count": 30,
+                "url": "/wiki/Starfield:Lead"
+            },
+            {
+                "name": "Adhesive",
+                "count": 17,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Internal Mods",
+        "category": "WEAPONRY",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+            "Weapon Engineering": 2
+        },
+        "materials": [
+            {
+                "name": "Zero Wire",
+                "count": 5,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Iridium",
+                "count": 8,
+                "url": "/wiki/Starfield:Iridium"
+            },
+            {
+                "name": "Tungsten",
+                "count": 10,
+                "url": "/wiki/Starfield:Tungsten"
+            },
+            {
+                "name": "Sealant",
+                "count": 10,
+                "url": "/wiki/Starfield:Sealant"
+            }
+        ]
+    },
+    {
+        "name": "Internal Mods",
+        "category": "WEAPONRY",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Internal Mods": 1
+        },
+        "perks": {
+            "Weapon Engineering": 3
+        },
+        "materials": [
+            {
+                "name": "Isocentered Magnet",
+                "count": 8,
+                "url": "/wiki/Starfield:Isocentered_Magnet"
+            },
+            {
+                "name": "Zero Wire",
+                "count": 8,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Tantalum",
+                "count": 10,
+                "url": "/wiki/Starfield:Tantalum"
+            },
+            {
+                "name": "Titanium",
+                "count": 10,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Adhesive",
+                "count": 10,
+                "url": "/wiki/Starfield:Adhesive"
+            }
+        ]
+    },
+    {
+        "name": "Internal Mods",
+        "category": "WEAPONRY",
+        "rank": 3,
+        "description": "",
+        "prerequisites": {
+            "Internal Mods": 2
+        },
+        "perks": {
+            "Weapon Engineering": 4
+        },
+        "materials": [
+            {
+                "name": "Power Circuit",
+                "count": 2,
+                "url": "/wiki/Starfield:Power_Circuit"
+            },
+            {
+                "name": "Zero Wire",
+                "count": 10,
+                "url": "/wiki/Starfield:Zero_Wire"
+            },
+            {
+                "name": "Europium",
+                "count": 20,
+                "url": "/wiki/Starfield:Europium"
+            },
+            {
+                "name": "Ytterbium",
+                "count": 10,
+                "url": "/wiki/Starfield:Ytterbium"
+            },
+            {
+                "name": "Titanium",
+                "count": 20,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Polymer",
+                "count": 10,
+                "url": "/wiki/Starfield:Polymer"
+            }
+        ]
+    },
+    {
+        "name": "Receiver Mods",
+        "category": "WEAPONRY",
+        "rank": 1,
+        "description": "",
+        "prerequisites": {
+        },
+        "perks": {
+            "Weapon Engineering": 3
+        },
+        "materials": [
+            {
+                "name": "Isotopic Coolant",
+                "count": 5,
+                "url": "/wiki/Starfield:Isotopic_Coolant"
+            },
+            {
+                "name": "Microsecond Regulator",
+                "count": 3,
+                "url": "/wiki/Starfield:Microsecond_Regulator"
+            },
+            {
+                "name": "Ytterbium",
+                "count": 10,
+                "url": "/wiki/Starfield:Ytterbium"
+            },
+            {
+                "name": "Titanium",
+                "count": 30,
+                "url": "/wiki/Starfield:Titanium"
+            },
+            {
+                "name": "Lubricant",
+                "count": 10,
+                "url": "/wiki/Starfield:Lubricant"
+            }
+        ]
+    },
+    {
+        "name": "Receiver Mods",
+        "category": "WEAPONRY",
+        "rank": 2,
+        "description": "",
+        "prerequisites": {
+            "Receiver Mods": 1
+        },
+        "perks": {
+            "Weapon Engineering": 4
+        },
+        "materials": [
+            {
+                "name": "Isotopic Coolant",
+                "count": 7,
+                "url": "/wiki/Starfield:Isotopic_Coolant"
+            },
+            {
+                "name": "Microsecond Regulator",
+                "count": 4,
+                "url": "/wiki/Starfield:Microsecond_Regulator"
+            },
+            {
+                "name": "Ytterbium",
+                "count": 17,
+                "url": "/wiki/Starfield:Ytterbium"
+            },
+            {
+                "name": "Polymer",
+                "count": 17,
+                "url": "/wiki/Starfield:Polymer"
+            },
+            {
+                "name": "Lubricant",
+                "count": 17,
+                "url": "/wiki/Starfield:Lubricant"
+            }
+        ]
+    }
+]

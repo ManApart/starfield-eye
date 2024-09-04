@@ -245,3 +245,10 @@ summary::-webkit-details-marker {
 .hidden {
     display: none;
 }
+
+.link-pic {
+    display: inline;
+    width: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
