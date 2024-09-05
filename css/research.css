@@ -104,6 +104,10 @@
     margin-right: 10px;
 }
 
+.research-resource a {
+    color: white;
+}
+
 .search-icon {
     margin-left: 5px;
 }
