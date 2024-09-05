@@ -67,5 +67,17 @@
         width: 90px;
     }
 
+    .research-wrapper {
+        width: 100%;
+    }
+
+    .research-section {
+        display: block;
+    }
+
+    .research-category {
+        display: inline-block;
+    }
+
 
 }
