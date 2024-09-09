@@ -71,6 +71,19 @@
         width: 100%;
     }
 
+    .research {
+        padding: 5px;
+    }
+
+    .research-accent {
+        margin-top: -5px;
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+
+    .research-pic {
+    }
+
     .research-section {
         display: block;
     }
