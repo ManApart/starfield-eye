@@ -82,6 +82,9 @@
     }
 
     .research-pic {
+        width: unset;
+        max-width: 90%;
+        max-height: 90%;
     }
 
     .research-section {
