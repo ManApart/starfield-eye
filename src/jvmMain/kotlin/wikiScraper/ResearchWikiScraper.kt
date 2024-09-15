@@ -21,8 +21,6 @@ fun main() {
 }
 
 private fun parseResearch(page: Document): List<ResearchProject> {
-
-
     return page.select(".wikitable").flatMapIndexed { categoryIndex: Int, table: Element? ->
         val category = ResearchCategory.entries[categoryIndex]
         table!!.select("tr").drop(1).map { row ->
@@ -38,7 +36,11 @@ private fun parseResearch(page: Document): List<ResearchProject> {
             val perkRow = if (colCount == 5) 2 else 1
             val perks = row.selectTd(perkRow)?.text()?.toRankMap() ?: mapOf()
             val description = row.selectTdClean(4) ?: ""
-            val matRow = if (colCount == 5) 3 else 2
+            val matRow = when {
+                category == ResearchCategory.FOOD_AND_DRINK -> 3
+                colCount == 5 -> 3
+                else -> 2
+            }
             val materials = row.selectTd(matRow).parseMaterials()
 
             ResearchProject(name, category, rank, description, preReqs, perks, materials)
@@ -75,7 +77,18 @@ private fun Element?.parseMaterials(): List<Material> {
     val rawAmounts2 = this.text().split(" ", ",").mapNotNull { it.toIntOrNull() }
     val amounts = if (rawAmounts1.size > rawAmounts2.size) rawAmounts1 else rawAmounts2
 
-    return select("a").mapIndexed { i, a ->
-        Material(a.text(), amounts[i], a.attr("href"))
+    val links = select("a")
+    return if (links.isNotEmpty()) {
+        links.mapIndexed { i, a ->
+            Material(a.text(), amounts[i], a.attr("href"))
+        }
+    } else {
+        val names = html().split("<br>").filter { it.isNotEmpty() }
+            .map { it.substring(0, it.indexOf("x")).trim() }
+
+        names.mapIndexed { i, name ->
+            val url = "/wiki/Starfield:${name.replace(" ", "_")}"
+                Material(name, amounts[i], url)
+        }
     }
 }
