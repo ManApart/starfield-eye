@@ -108,7 +108,6 @@
         "description": "The Mars Launchpad is an old NASA launch site near Cydonia.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:Mars_Launchpad",
-        "starSystem": "",
         "planet": "Mars, in the Sol System"
     },
     {
@@ -156,7 +155,6 @@
         "description": "Ikuchi Market is a section of Neon's busy city core containing a number of shops and Ryujin Tower.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:Ikuchi_Market",
-        "starSystem": "",
         "planet": "Volii Alpha, in the Volii System"
     },
     {
@@ -180,7 +178,6 @@
         "description": "Ebbside is a lower level of Neon containing less fortunate residents along with a few shops and services.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:Ebbside",
-        "starSystem": "",
         "planet": "Volii Alpha, in the Volii System"
     },
     {
@@ -188,7 +185,6 @@
         "description": "Underbelly is the lowest level of Neon.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:Underbelly",
-        "starSystem": "",
         "planet": "Volii Alpha, in the Volii System"
     },
     {
@@ -283,225 +279,192 @@
         "name": "Kelly Hughes Farm",
         "description": "",
         "type": "FARM",
-        "wikiLink": "/w/index.php?title=Starfield:Kelly_Hughes_Farm&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Kelly_Hughes_Farm&action=edit&redlink=1"
     },
     {
         "name": "Deserted Trade Authority Starstation",
         "description": "Deserted Trade Authority Starstation is a trade authority starstation that has been overrun by Spacers",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:Deserted_Trade_Authority_Starstation",
-        "starSystem": "Prax System",
-        "planet": ""
+        "starSystem": "Prax System"
     },
     {
         "name": "Eklund Excavation Site CL25",
         "description": "Eklund Excavation Site CL25 is an abandoned asteroid mining facility around Bonner, Sakharov System. The facility is mostly deserted, but some robots are still operational. Maya Cruz hid here after escaping The Clinic during Surgical Strike.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:Eklund_Excavation_Site_CL25",
-        "starSystem": "Sakharov System",
-        "planet": ""
+        "starSystem": "Sakharov System"
     },
     {
         "name": "Etherea Ruins",
         "description": "Etherea Ruins is a ruined starstation located in the Wolf System.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:Etherea_Ruins",
-        "starSystem": "Wolf System",
-        "planet": ""
+        "starSystem": "Wolf System"
     },
     {
         "name": "The Almagest",
         "description": "The Almagest is a starstation in orbit around Nesoi. The station is an abandoned zero-G casino, currently occupied by spacers.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:The_Almagest",
-        "starSystem": "Olympus System",
-        "planet": ""
+        "starSystem": "Olympus System"
     },
     {
         "name": "The Clinic",
         "description": "The Clinic is a state-of-the art medical facility aboard a starstation. It is headed by Dr. Lara Darvish.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:The_Clinic",
-        "starSystem": "Narion System",
-        "planet": ""
+        "starSystem": "Narion System"
     },
     {
         "name": "The Den",
         "description": "The Den is a starstation located in the Wolf System.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:The_Den",
-        "starSystem": "Wolf System",
-        "planet": ""
+        "starSystem": "Wolf System"
     },
     {
         "name": "The Eye",
         "description": "The Eye is a starstation owned by Constellation and maintained by Vladimir Sall. The Eye serves as a deep space scanner.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:The_Eye",
-        "starSystem": "Alpha Centauri System",
-        "planet": ""
+        "starSystem": "Alpha Centauri System"
     },
     {
         "name": "The Key",
         "description": "",
         "type": "STARSTATION",
-        "wikiLink": "/wiki/Starfield:The_Key",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/wiki/Starfield:The_Key"
     },
     {
         "name": "The Sonder",
         "description": "The Sonder is a starstation located in the Bessel System, orbiting Bessel II.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:The_Sonder",
-        "starSystem": "Bessel System",
-        "planet": ""
+        "starSystem": "Bessel System"
     },
     {
         "name": "Starstation RE-939",
         "description": "Starstation RE-939 is an explorable starstation located in the Alpha Centauri System.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:Starstation_RE-939",
-        "starSystem": "Alpha Centauri System",
-        "planet": ""
+        "starSystem": "Alpha Centauri System"
     },
     {
         "name": "Starstation UCN-48",
         "description": "Starstation UCN-48 is an abandoned Serpent's Crusade era starstation coopted as a covert base of operations by Va'ruun agents.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:Starstation_UCN-48",
-        "starSystem": "Muphrid System",
-        "planet": ""
+        "starSystem": "Muphrid System"
     },
     {
         "name": "SY-920",
         "description": "SY-920 is a classified UC research station in orbit around Luyten's Rock.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:SY-920",
-        "starSystem": "Luyten's Star System",
-        "planet": ""
+        "starSystem": "Luyten's Star System"
     },
     {
         "name": "Deimos Staryard",
         "description": "Deimos Staryard is a major United Colonies staryard near Deimos. It is operated by the spaceship manufacturer Deimos Staryards Inc.",
         "type": "STARYARD",
         "wikiLink": "/wiki/Starfield:Deimos_Staryard",
-        "starSystem": "Sol System",
-        "planet": ""
+        "starSystem": "Sol System"
     },
     {
         "name": "Stroud-Eklund Staryard",
         "description": "Stroud-Eklund Staryard is a Staryard operated by Stroud-Eklund that orbits the moon Dalvik in the Narion System. You must dock and speak to Havershaw to purchase ship parts.",
         "type": "STARYARD",
         "wikiLink": "/wiki/Starfield:Stroud-Eklund_Staryard",
-        "starSystem": "Narion System",
-        "planet": ""
+        "starSystem": "Narion System"
     },
     {
         "name": "Trident Luxury Lines Staryard",
         "description": "Trident Luxury Lines Staryard is a Staryard orbiting Akila, specializing in luxury ships.",
         "type": "STARYARD",
         "wikiLink": "/wiki/Starfield:Trident_Luxury_Lines_Staryard",
-        "starSystem": "Cheyenne System",
-        "planet": ""
+        "starSystem": "Cheyenne System"
     },
     {
         "name": "Nova Galactic Staryard",
         "description": "Nova Galactic Staryard is a staryard near Earth's Moon. It is no longer operating and spacers have taken up residence.",
         "type": "STARYARD",
         "wikiLink": "/wiki/Starfield:Nova_Galactic_Staryard",
-        "starSystem": "Sol System",
-        "planet": ""
+        "starSystem": "Sol System"
     },
     {
         "name": "Autonomous Staryard",
         "description": "Autonomous Staryard is an abandoned staryard orbiting Volii Psi in the Volii System. It is no longer operating and the robots have taken over.",
         "type": "STARYARD",
         "wikiLink": "/wiki/Starfield:Autonomous_Staryard",
-        "starSystem": "Volii System",
-        "planet": ""
+        "starSystem": "Volii System"
     },
     {
         "name": "Chunks To Go",
         "description": "",
         "type": "SHIP",
-        "wikiLink": "/wiki/Starfield:Chunks_To_Go",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/wiki/Starfield:Chunks_To_Go"
     },
     {
         "name": "Deimos Armored Transport",
         "description": "Deimos Armored Transport is an abandoned transport ship with a malfunctioning grav drive and can be filled with either Spacers or the Crimson Fleet.",
         "type": "SHIP",
         "wikiLink": "/wiki/Starfield:Deimos_Armored_Transport",
-        "starSystem": "Alpha Centauri System",
-        "planet": ""
+        "starSystem": "Alpha Centauri System"
     },
     {
         "name": "Distress Call - Lucky Lu",
         "description": "",
         "type": "SHIP",
-        "wikiLink": "/w/index.php?title=Starfield:Distress_Call_-_Lucky_Lu&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Distress_Call_-_Lucky_Lu&action=edit&redlink=1"
     },
     {
         "name": "ECS Constant",
         "description": "The ECS Constant is a generation ship that has been traveling in isolation for 200 years. After entering the Porrima System, a mysterious ship can be seen orbiting Porrima II. Attempting to hail the ship only results in hearing distorted screeching noises. It's also possible to receive a distress call from Jiro Sugiyama requesting you to speak with him on Paradiso regarding the ship. Either docking and boarding the ship or speaking with Jiro will begin the mission \"First Contact\".",
         "type": "SHIP",
         "wikiLink": "/wiki/Starfield:ECS_Constant",
-        "starSystem": "Porrima System",
-        "planet": ""
+        "starSystem": "Porrima System"
     },
     {
         "name": "Fortuna",
         "description": "",
         "type": "SHIP",
-        "wikiLink": "/w/index.php?title=Starfield:Fortuna&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Fortuna&action=edit&redlink=1"
     },
     {
         "name": "GalBank Legacy",
         "description": "GalBank Legacy is an abandoned GalBank transport vessel in orbit around Bannoc IV.",
         "type": "SHIP",
         "wikiLink": "/wiki/Starfield:GalBank_Legacy",
-        "starSystem": "Bannoc System",
-        "planet": ""
+        "starSystem": "Bannoc System"
     },
     {
         "name": "Siren of the Stars",
         "description": "Siren of the Stars is a luxury space vessel owned and operated by Trident Luxury Lines.",
         "type": "SHIP",
         "wikiLink": "/wiki/Starfield:Siren_of_the_Stars",
-        "starSystem": "Aranae System",
-        "planet": ""
+        "starSystem": "Aranae System"
     },
     {
         "name": "Deimos Armored Transport",
         "description": "Deimos Armored Transport is an abandoned transport ship with a malfunctioning grav drive and can be filled with either Spacers or the Crimson Fleet.",
         "type": "DERELICT_SHIP",
         "wikiLink": "/wiki/Starfield:Deimos_Armored_Transport",
-        "starSystem": "Alpha Centauri System",
-        "planet": ""
+        "starSystem": "Alpha Centauri System"
     },
     {
         "name": "GalBank Legacy",
         "description": "GalBank Legacy is an abandoned GalBank transport vessel in orbit around Bannoc IV.",
         "type": "DERELICT_SHIP",
         "wikiLink": "/wiki/Starfield:GalBank_Legacy",
-        "starSystem": "Bannoc System",
-        "planet": ""
+        "starSystem": "Bannoc System"
     },
     {
         "name": "The Colander",
         "description": "The Colander is an abandoned research ship harboring an unwelcome guest.",
         "type": "DERELICT_SHIP",
         "wikiLink": "/wiki/Starfield:The_Colander",
-        "starSystem": "Schrodinger System",
-        "planet": ""
+        "starSystem": "Schrodinger System"
     },
     {
         "name": "Apollo Landing Site",
@@ -732,8 +695,7 @@
         "description": "Eklund Excavation Site CL25 is an abandoned asteroid mining facility around Bonner, Sakharov System. The facility is mostly deserted, but some robots are still operational. Maya Cruz hid here after escaping The Clinic during Surgical Strike.",
         "type": "MINING_BASE",
         "wikiLink": "/wiki/Starfield:Eklund_Excavation_Site_CL25",
-        "starSystem": "Sakharov System",
-        "planet": ""
+        "starSystem": "Sakharov System"
     },
     {
         "name": "Hephaestus Mine H-363",
@@ -859,9 +821,7 @@
         "name": "Ancient Ruins",
         "description": "",
         "type": "LANDING_SITE",
-        "wikiLink": "/w/index.php?title=Starfield:Ancient_Ruins&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Ancient_Ruins&action=edit&redlink=1"
     },
     {
         "name": "Sonny Di Falco's Island",
@@ -883,192 +843,144 @@
         "name": "Temple Alpha",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Alpha&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Alpha&action=edit&redlink=1"
     },
     {
         "name": "Temple Beta",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Beta&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Beta&action=edit&redlink=1"
     },
     {
         "name": "Temple Gamma",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Gamma&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Gamma&action=edit&redlink=1"
     },
     {
         "name": "Temple Delta",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Delta&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Delta&action=edit&redlink=1"
     },
     {
         "name": "Temple Epsilon",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Epsilon&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Epsilon&action=edit&redlink=1"
     },
     {
         "name": "Temple Zeta",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Zeta&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Zeta&action=edit&redlink=1"
     },
     {
         "name": "Temple Eta",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Eta&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Eta&action=edit&redlink=1"
     },
     {
         "name": "Temple Theta",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Theta&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Theta&action=edit&redlink=1"
     },
     {
         "name": "Temple Iota",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Iota&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Iota&action=edit&redlink=1"
     },
     {
         "name": "Temple Kappa",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Kappa&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Kappa&action=edit&redlink=1"
     },
     {
         "name": "Temple Lambda",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Lambda&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Lambda&action=edit&redlink=1"
     },
     {
         "name": "Temple Mu",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Mu&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Mu&action=edit&redlink=1"
     },
     {
         "name": "Temple Nu",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Nu&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Nu&action=edit&redlink=1"
     },
     {
         "name": "Temple Xi",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Xi&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Xi&action=edit&redlink=1"
     },
     {
         "name": "Temple Omicron",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Omicron&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Omicron&action=edit&redlink=1"
     },
     {
         "name": "Temple Pi",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Pi&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Pi&action=edit&redlink=1"
     },
     {
         "name": "Temple Rho",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Rho&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Rho&action=edit&redlink=1"
     },
     {
         "name": "Temple Sigma",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Sigma&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Sigma&action=edit&redlink=1"
     },
     {
         "name": "Temple Tau",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Tau&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Tau&action=edit&redlink=1"
     },
     {
         "name": "Temple Upsilon",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Upsilon&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Upsilon&action=edit&redlink=1"
     },
     {
         "name": "Temple Phi",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Phi&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Phi&action=edit&redlink=1"
     },
     {
         "name": "Temple Chi",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Chi&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Chi&action=edit&redlink=1"
     },
     {
         "name": "Temple Psi",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Psi&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Psi&action=edit&redlink=1"
     },
     {
         "name": "Temple Omega",
         "description": "",
         "type": "TEMPLE",
-        "wikiLink": "/w/index.php?title=Starfield:Temple_Omega&action=edit&redlink=1",
-        "starSystem": "",
-        "planet": ""
+        "wikiLink": "/w/index.php?title=Starfield:Temple_Omega&action=edit&redlink=1"
     }
 ]

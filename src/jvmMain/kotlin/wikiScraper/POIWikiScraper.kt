@@ -36,8 +36,8 @@ private fun parsePOI(page: Document): List<PointOfInterest> {
             val infoSystem = detailPage.select("table.infobox").firstOrNull()?.selectHeader("System")?.text()
 
 
-            val planet = locationStringPlanet ?: infoPlanet ?: ""
-            val system = locationStringSystem ?: infoSystem ?: ""
+            val planet = locationStringPlanet ?: infoPlanet
+            val system = locationStringSystem ?: infoSystem
 
             PointOfInterest(link!!.text(), description, type, url, system, planet)
         }

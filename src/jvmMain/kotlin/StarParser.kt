@@ -5,6 +5,7 @@ import java.io.File
 val jsonMapper = kotlinx.serialization.json.Json {
     ignoreUnknownKeys = true
     prettyPrint = true
+    encodeDefaults = false
 }
 
 private val failedPlanetResourceLookups = mutableSetOf<String>()
