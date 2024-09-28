@@ -105,10 +105,10 @@ private fun saveHtmlRefs() {
     starDivs = galaxy.systems.values.associate { it.star.id.toString() to el(it.star.name) }
 }
 
-fun filterPlanets(shown: List<Planet>) {
+fun filterPlanets(shown: List<Planet>, additionalStars: List<Int>) {
     val shownMap = shown.associateBy { it.uniqueId }
     val (shownHtml, hiddenHtml) = planetDivs.entries.partition { (id, _) -> shownMap.containsKey(id) }
-    val shownStars = shown.groupBy { it.starId.toString() }.keys
+    val shownStars = shown.groupBy { it.starId.toString() }.keys + additionalStars
     val (shownStarHtml, hiddenStarHtml) = starDivs.entries.partition { (id, _) -> shownStars.contains(id) }
 
     (shownStarHtml + shownHtml).forEach { (_, html) ->

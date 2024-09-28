@@ -1,16 +1,18 @@
 import views.filterPlanets
 
 fun searchPlanets() {
-    val planets = getPlanets().filterSearch(planetSearchOptions.searchText)
-    filterPlanets(planets)
+    val (planets, additionalStars) = getPlanets().filterSearch(planetSearchOptions.searchText)
+    filterPlanets(planets, additionalStars)
 }
 
-private fun List<Planet>.filterSearch(searchText: String): List<Planet> {
-    return if (searchText.isBlank()) this else {
+private fun List<Planet>.filterSearch(searchText: String): Pair<List<Planet>, List<Int>> {
+    return if (searchText.isBlank()) this to listOf() else {
         val terms = searchText.lowercase().split(",")
         val poi = poiMatches(terms)
         println("Search found poi: $poi")
-        terms.fold(this) { acc, s -> filterPlanet(acc, s.trim(), poi) }
+        val planets = terms.fold(this) { acc, s -> filterPlanet(acc, s.trim(), poi) }
+        //TODO - get list of additional stars as well
+        planets to listOf()
     }
 }
 
