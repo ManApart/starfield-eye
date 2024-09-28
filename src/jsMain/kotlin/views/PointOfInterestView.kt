@@ -13,8 +13,6 @@ import org.w3c.dom.HTMLElement
 import poiReference
 import views.system.attemptTravel
 
-//TODO - add to search results
-//TODO - allow searching by POI
 fun pointOfInterestView(system: StarSystem, planetId: Int? = null) {
     val planet = planetId?.let { system.planets[it] }
     val planetHtmlId = planet?.id ?: "none"

@@ -7,17 +7,20 @@ fun searchPlanets() {
 
 private fun List<Planet>.filterSearch(searchText: String): List<Planet> {
     return if (searchText.isBlank()) this else {
-        searchText.lowercase().split(",").fold(this) { acc, s -> filterPlanet(acc, s.trim()) }
+        val terms = searchText.lowercase().split(",")
+        val poi = poiMatches(terms)
+        println("Search found poi: $poi")
+        terms.fold(this) { acc, s -> filterPlanet(acc, s.trim(), poi) }
     }
 }
 
-private fun filterPlanet(initial: List<Planet>, searchText: String): List<Planet> {
+private fun filterPlanet(initial: List<Planet>, searchText: String, poi: List<PointOfInterest>): List<Planet> {
     return initial.filter { planet ->
-        planetMatches(planet, searchText) || planetInfoMatches(planet, searchText)
+        planetMatches(planet, searchText, poi) || planetInfoMatches(planet, searchText)
     }
 }
 
-private fun planetMatches(planet: Planet, searchText: String): Boolean {
+private fun planetMatches(planet: Planet, searchText: String, poi: List<PointOfInterest>): Boolean {
     return with(planet) {
         name.lowercase().contains(searchText)
                 || bodyType == searchText.toIntOrNull()
@@ -29,6 +32,8 @@ private fun planetMatches(planet: Planet, searchText: String): Boolean {
                 || planetClass.lowercase().contains(searchText)
                 || magneticField.lowercase().contains(searchText)
                 || life.lowercase().contains(searchText)
+                || poi.any { it.planet?.lowercase() == name.lowercase()}
+//                || poi.any { it.planet == null && it.starSystem == planet.parentId}
                 || biomes.any { it.lowercase().contains(searchText) }
                 || traits.any { it.lowercase().contains(searchText) }
                 || flora.any { it.lowercase().contains(searchText) }
@@ -46,3 +51,5 @@ private fun planetInfoMatches(planet: Planet, searchText: String): Boolean {
                 || outPosts.any { it.name.lowercase().contains(searchText) }
     }
 }
+
+private fun poiMatches(terms: List<String>) = poiReference.values.flatten().filter { poi ->  terms.any { term -> poi.name.lowercase().contains(term) } }
