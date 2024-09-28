@@ -49,6 +49,7 @@ fun catalogueView(searchText: String = planetSearchOptions.searchText) {
                 div("section-view-box") {
                     id = "detail-view"
                 }
+                div { id = "poi-view" }
                 div { id = "outpost-view" }
             }
         }
@@ -66,11 +67,13 @@ private fun TagConsumer<HTMLElement>.planetList() {
                 +system.star.name
                 onClickFunction = {
                     detailView(system, 0, false, true)
+                    pointOfInterestView(system)
                     clearOutpostsView()
                     clearFloraFaunaView()
                 }
                 onMouseOverFunction = {
                     detailView(system, 0, false, true)
+                    pointOfInterestView(system)
                     clearOutpostsView()
                     clearFloraFaunaView()
                 }
@@ -83,10 +86,12 @@ private fun TagConsumer<HTMLElement>.planetList() {
                     +planet.name
                     onClickFunction = {
                         detailView(system, planet.id, false, true)
+                        pointOfInterestView(system, planet.id)
                         views.system.outpostsView(system, planet.id)
                     }
                     onMouseOverFunction = {
                         detailView(system, planet.id, false, true)
+                        pointOfInterestView(system, planet.id)
                         views.system.outpostsView(system, planet.id)
                     }
                 }
