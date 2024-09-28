@@ -15,6 +15,7 @@ import views.lifeSigns.clearFloraFaunaView
 import views.clearOutpostsView
 import views.lifeSigns.faunaView
 import views.lifeSigns.floraView
+import views.pointOfInterestView
 
 private var currentPlanet = 0
 private var currentPlanetType = "star"
@@ -35,11 +36,13 @@ fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                     setSelected("star", 0)
                     detailView(system, 0)
                     clearOutpostsView()
+                    pointOfInterestView(system)
                     clearFloraFaunaView()
                 }
                 onMouseOverFunction = {
                     detailView(system, 0, false)
                     clearOutpostsView()
+                    pointOfInterestView(system)
                     clearFloraFaunaView()
                 }
                 onMouseOutFunction = { detailView(system, currentPlanet, false) }
@@ -54,18 +57,21 @@ fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
                         onClickFunction = {
                             setSelected("planet", planetId)
                             detailView(system, planetId)
+                            pointOfInterestView(system, planetId)
                             outpostsView(system, planetId)
                             floraView(system.star.id, planetId)
                             faunaView(system.star.id, planetId)
                         }
                         onMouseOverFunction = {
                             detailView(system, planetId, false)
+                            pointOfInterestView(system, planetId)
                             outpostsView(system, planetId)
                             floraView(system.star.id, planetId)
                             faunaView(system.star.id, planetId)
                         }
                         onMouseOutFunction = {
                             detailView(system, currentPlanet, false)
+                            pointOfInterestView(system, currentPlanet)
                             outpostsView(system, currentPlanet)
                             floraView(system.star.id, currentPlanet)
                             faunaView(system.star.id, currentPlanet)

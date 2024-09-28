@@ -59,13 +59,16 @@ fun loadAll(progress: HTMLElement): Promise<*> {
                 loadFloraReference().then {
                     progress.innerText = "Loading Fauna"
                     loadFaunaReference().then {
-                        progress.innerText = "Loading Perks"
-                        loadPerks().then {
-                            progress.innerText = "Loading Research"
-                            loadResearchProjects().then {
-                                progress.innerText = "Loading User Pictures"
-                                loadPictures().then {
-                                    return@then
+                        progress.innerText = "Loading Points of Interest"
+                        loadPoiReference().then {
+                            progress.innerText = "Loading Perks"
+                            loadPerks().then {
+                                progress.innerText = "Loading Research"
+                                loadResearchProjects().then {
+                                    progress.innerText = "Loading User Pictures"
+                                    loadPictures().then {
+                                        return@then
+                                    }
                                 }
                             }
                         }
@@ -105,6 +108,14 @@ fun loadFaunaReference(): Promise<*> {
             .filter { it.planetId != null }
             .groupBy { it.planetId!! }
         println("Read ${faunaReference.keys.size} fauna from json")
+    }
+}
+
+fun loadPoiReference(): Promise<*> {
+    return loadJson("poi-wiki-data.json").then { json ->
+        poiReference = jsonMapper.decodeFromString<List<PointOfInterest>>(json)
+            .groupBy { it.starSystem }
+        println("Read ${poiReference.keys.size} points of interest from json")
     }
 }
 

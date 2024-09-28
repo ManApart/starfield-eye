@@ -37,7 +37,7 @@ private fun parsePOI(page: Document): List<PointOfInterest> {
 
 
             val planet = locationStringPlanet ?: infoPlanet
-            val system = locationStringSystem ?: infoSystem
+            val system = (locationStringSystem ?: infoSystem)?.replace("System", "")?.trim()
 
             PointOfInterest(link!!.text(), description, type, url, system, planet)
         }

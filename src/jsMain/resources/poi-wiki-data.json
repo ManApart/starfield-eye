@@ -12,7 +12,7 @@
         "description": "The New Atlantis Spaceport is where you first arrive when travelling to New Atlantis. A few conveniently located services can be found past the UC Security checkpoint, including The Viewport, Jemison Mercantile, and TerraBrew Coffee. The New Atlantis Transit (NAT) can take you to other districts and an elevator, tucked away between Jemison Mercantile and TerraBrew, can carry you down to The Well.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:New_Atlantis_Spaceport",
-        "starSystem": "Alpha Centauri System",
+        "starSystem": "Alpha Centauri",
         "planet": "Jemison"
     },
     {
@@ -20,7 +20,7 @@
         "description": "The Commercial District is one of three major districts within New Atlantis. Home to several New Atlantis businesses, including UC Distribution, SSNN, Infinity LTD, TerraBrew Coffee, and Valberg. You can fast travel to this location using the Commercial District or New Atlantis West End fast travel markers.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:Commercial_District",
-        "starSystem": "Alpha Centauri System",
+        "starSystem": "Alpha Centauri",
         "planet": "Jemison"
     },
     {
@@ -28,7 +28,7 @@
         "description": "The MAST District (also known as the Embassy District) is one of three major districts within New Atlantis, home to the MAST. The most notable buildings in the district are the MAST tower, Freestar Collective embassy and the abandoned Va'ruun embassy. The Lodge is also in this district.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:MAST_District",
-        "starSystem": "Alpha Centauri System",
+        "starSystem": "Alpha Centauri",
         "planet": "Jemison"
     },
     {
@@ -36,7 +36,7 @@
         "description": "The Residential District is one of three major districts within New Atlantis. Features a number of high density high-rises and a number of shops and services.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:Residential_District",
-        "starSystem": "Alpha Centauri System",
+        "starSystem": "Alpha Centauri",
         "planet": "Jemison"
     },
     {
@@ -44,7 +44,7 @@
         "description": "The Lodge is Constellation's headquarters in MAST district of New Atlantis.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:The_Lodge",
-        "starSystem": "Alpha Centauri System",
+        "starSystem": "Alpha Centauri",
         "planet": "Jemison"
     },
     {
@@ -52,7 +52,7 @@
         "description": "The Well is the underbelly of New Atlantis, housing the city's poorer residents.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:The_Well",
-        "starSystem": "Alpha Centauri System",
+        "starSystem": "Alpha Centauri",
         "planet": "Jemison"
     },
     {
@@ -68,7 +68,7 @@
         "description": "The Core is the oldest and most prestigious district in Akila City.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:The_Core",
-        "starSystem": "Cheyenne System",
+        "starSystem": "Cheyenne",
         "planet": "Akila"
     },
     {
@@ -76,7 +76,7 @@
         "description": "Midtown is the commercial district of Akila City.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:Midtown",
-        "starSystem": "Cheyenne System",
+        "starSystem": "Cheyenne",
         "planet": "Akila"
     },
     {
@@ -84,7 +84,7 @@
         "description": "The Rock is a large building in the center of Akila City, hosting services and the Freestar Rangers' headquarters. The building is owned by the City.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:The_Rock",
-        "starSystem": "Cheyenne System",
+        "starSystem": "Cheyenne",
         "planet": "Akila"
     },
     {
@@ -92,7 +92,7 @@
         "description": "The Stretch is the poorest district of Akila City.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:The_Stretch",
-        "starSystem": "Cheyenne System",
+        "starSystem": "Cheyenne",
         "planet": "Akila"
     },
     {
@@ -115,7 +115,7 @@
         "description": "The Freighter Site is an abandoned ship landed on Mars, near Cydonia.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:Freighter_Site",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Mars"
     },
     {
@@ -123,7 +123,7 @@
         "description": "Deep Mines Employee Exit is an access to the Deep Mines. This appears to be connected to an elevator within the Deep Mines that is not usable. As a result, this location can not be easily found.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:Deep_Mines_Employee_Exit",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Mars"
     },
     {
@@ -131,7 +131,7 @@
         "description": "The Red Devils HQ is an abandoned military base on Mars, near Cydonia. Name changes from Red Devils HQ to TMD Headquarters after completion of UC quest line. It is located deep underground, and is connected to both a landing pad on the Martian surface via an elevator, and to the Deep Mines by a large cavern. Before it was abandoned, it served as the headquarters of the Red Devils.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:TMD_Headquarters",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Mars"
     },
     {
@@ -147,7 +147,7 @@
         "description": "Bayu Plaza is a section of Neon's busy city core containing a number of shops and the Trade Tower.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:Bayu_Plaza",
-        "starSystem": "Volii System",
+        "starSystem": "Volii",
         "planet": "Volii Alpha"
     },
     {
@@ -162,7 +162,7 @@
         "description": "Trade Tower is a building that houses a number of corporate offices on Neon. The Astral Lounge occupies the ground floor.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:Trade_Tower",
-        "starSystem": "Volii System",
+        "starSystem": "Volii",
         "planet": "Volii Alpha"
     },
     {
@@ -170,7 +170,7 @@
         "description": "Ryujin Tower is a building containing various Ryujin corporate shops and offices.",
         "type": "CITY",
         "wikiLink": "/wiki/Starfield:Ryujin_Tower",
-        "starSystem": "Volii System",
+        "starSystem": "Volii",
         "planet": "Volii Alpha"
     },
     {
@@ -224,7 +224,7 @@
         "description": "",
         "type": "SETTLEMENT",
         "wikiLink": "/wiki/Starfield:Red_Mile",
-        "starSystem": "Porrima System",
+        "starSystem": "Porrima",
         "planet": "Porrima III"
     },
     {
@@ -232,7 +232,7 @@
         "description": "Crucible is a secret settlement on Charybdis III, Charybdis System.",
         "type": "SETTLEMENT",
         "wikiLink": "/wiki/Starfield:Crucible",
-        "starSystem": "Charybdis System",
+        "starSystem": "Charybdis",
         "planet": "Charybdis III"
     },
     {
@@ -240,7 +240,7 @@
         "description": "Eren's Camp is Eren Bascolm's former hiding spot on Hyla II. The base consists of a three-floor home; next to it is a hangar with industrial facilities and a watchtower.",
         "type": "SETTLEMENT",
         "wikiLink": "/wiki/Starfield:Eren%27s_Camp",
-        "starSystem": "Hyla System",
+        "starSystem": "Hyla",
         "planet": "Hyla II"
     },
     {
@@ -248,7 +248,7 @@
         "description": "Please add a description for Vlad's Villa.",
         "type": "SETTLEMENT",
         "wikiLink": "/wiki/Starfield:Vlad%27s_Villa",
-        "starSystem": "Syrma System",
+        "starSystem": "Syrma",
         "planet": "Syrma VII-a"
     },
     {
@@ -256,7 +256,7 @@
         "description": "The Eleos Retreat is a settlement on Ixyll II that is under construction as a rehabilitation center for convicts.",
         "type": "SETTLEMENT",
         "wikiLink": "/wiki/Starfield:The_Eleos_Retreat",
-        "starSystem": "Ixyll System",
+        "starSystem": "Ixyll",
         "planet": "Ixyll II"
     },
     {
@@ -264,7 +264,7 @@
         "description": "Pilgrim's Rest is the former camp of the pilgrim.",
         "type": "FARM",
         "wikiLink": "/wiki/Starfield:Pilgrim%27s_Rest",
-        "starSystem": "Indum System",
+        "starSystem": "Indum",
         "planet": "Indum II"
     },
     {
@@ -272,7 +272,7 @@
         "description": "Waggoner Farm is a farm on Montara Luna, Cheyenne System. It is inhabited by Mikaela Waggoner and her father, Waylon Waggoner.",
         "type": "FARM",
         "wikiLink": "/wiki/Starfield:Waggoner_Farm",
-        "starSystem": "Cheyenne System",
+        "starSystem": "Cheyenne",
         "planet": "Montara Luna"
     },
     {
@@ -286,49 +286,49 @@
         "description": "Deserted Trade Authority Starstation is a trade authority starstation that has been overrun by Spacers",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:Deserted_Trade_Authority_Starstation",
-        "starSystem": "Prax System"
+        "starSystem": "Prax"
     },
     {
         "name": "Eklund Excavation Site CL25",
         "description": "Eklund Excavation Site CL25 is an abandoned asteroid mining facility around Bonner, Sakharov System. The facility is mostly deserted, but some robots are still operational. Maya Cruz hid here after escaping The Clinic during Surgical Strike.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:Eklund_Excavation_Site_CL25",
-        "starSystem": "Sakharov System"
+        "starSystem": "Sakharov"
     },
     {
         "name": "Etherea Ruins",
         "description": "Etherea Ruins is a ruined starstation located in the Wolf System.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:Etherea_Ruins",
-        "starSystem": "Wolf System"
+        "starSystem": "Wolf"
     },
     {
         "name": "The Almagest",
         "description": "The Almagest is a starstation in orbit around Nesoi. The station is an abandoned zero-G casino, currently occupied by spacers.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:The_Almagest",
-        "starSystem": "Olympus System"
+        "starSystem": "Olympus"
     },
     {
         "name": "The Clinic",
         "description": "The Clinic is a state-of-the art medical facility aboard a starstation. It is headed by Dr. Lara Darvish.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:The_Clinic",
-        "starSystem": "Narion System"
+        "starSystem": "Narion"
     },
     {
         "name": "The Den",
         "description": "The Den is a starstation located in the Wolf System.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:The_Den",
-        "starSystem": "Wolf System"
+        "starSystem": "Wolf"
     },
     {
         "name": "The Eye",
         "description": "The Eye is a starstation owned by Constellation and maintained by Vladimir Sall. The Eye serves as a deep space scanner.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:The_Eye",
-        "starSystem": "Alpha Centauri System"
+        "starSystem": "Alpha Centauri"
     },
     {
         "name": "The Key",
@@ -341,63 +341,63 @@
         "description": "The Sonder is a starstation located in the Bessel System, orbiting Bessel II.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:The_Sonder",
-        "starSystem": "Bessel System"
+        "starSystem": "Bessel"
     },
     {
         "name": "Starstation RE-939",
         "description": "Starstation RE-939 is an explorable starstation located in the Alpha Centauri System.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:Starstation_RE-939",
-        "starSystem": "Alpha Centauri System"
+        "starSystem": "Alpha Centauri"
     },
     {
         "name": "Starstation UCN-48",
         "description": "Starstation UCN-48 is an abandoned Serpent's Crusade era starstation coopted as a covert base of operations by Va'ruun agents.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:Starstation_UCN-48",
-        "starSystem": "Muphrid System"
+        "starSystem": "Muphrid"
     },
     {
         "name": "SY-920",
         "description": "SY-920 is a classified UC research station in orbit around Luyten's Rock.",
         "type": "STARSTATION",
         "wikiLink": "/wiki/Starfield:SY-920",
-        "starSystem": "Luyten's Star System"
+        "starSystem": "Luyten's Star"
     },
     {
         "name": "Deimos Staryard",
         "description": "Deimos Staryard is a major United Colonies staryard near Deimos. It is operated by the spaceship manufacturer Deimos Staryards Inc.",
         "type": "STARYARD",
         "wikiLink": "/wiki/Starfield:Deimos_Staryard",
-        "starSystem": "Sol System"
+        "starSystem": "Sol"
     },
     {
         "name": "Stroud-Eklund Staryard",
         "description": "Stroud-Eklund Staryard is a Staryard operated by Stroud-Eklund that orbits the moon Dalvik in the Narion System. You must dock and speak to Havershaw to purchase ship parts.",
         "type": "STARYARD",
         "wikiLink": "/wiki/Starfield:Stroud-Eklund_Staryard",
-        "starSystem": "Narion System"
+        "starSystem": "Narion"
     },
     {
         "name": "Trident Luxury Lines Staryard",
         "description": "Trident Luxury Lines Staryard is a Staryard orbiting Akila, specializing in luxury ships.",
         "type": "STARYARD",
         "wikiLink": "/wiki/Starfield:Trident_Luxury_Lines_Staryard",
-        "starSystem": "Cheyenne System"
+        "starSystem": "Cheyenne"
     },
     {
         "name": "Nova Galactic Staryard",
         "description": "Nova Galactic Staryard is a staryard near Earth's Moon. It is no longer operating and spacers have taken up residence.",
         "type": "STARYARD",
         "wikiLink": "/wiki/Starfield:Nova_Galactic_Staryard",
-        "starSystem": "Sol System"
+        "starSystem": "Sol"
     },
     {
         "name": "Autonomous Staryard",
         "description": "Autonomous Staryard is an abandoned staryard orbiting Volii Psi in the Volii System. It is no longer operating and the robots have taken over.",
         "type": "STARYARD",
         "wikiLink": "/wiki/Starfield:Autonomous_Staryard",
-        "starSystem": "Volii System"
+        "starSystem": "Volii"
     },
     {
         "name": "Chunks To Go",
@@ -410,7 +410,7 @@
         "description": "Deimos Armored Transport is an abandoned transport ship with a malfunctioning grav drive and can be filled with either Spacers or the Crimson Fleet.",
         "type": "SHIP",
         "wikiLink": "/wiki/Starfield:Deimos_Armored_Transport",
-        "starSystem": "Alpha Centauri System"
+        "starSystem": "Alpha Centauri"
     },
     {
         "name": "Distress Call - Lucky Lu",
@@ -423,7 +423,7 @@
         "description": "The ECS Constant is a generation ship that has been traveling in isolation for 200 years. After entering the Porrima System, a mysterious ship can be seen orbiting Porrima II. Attempting to hail the ship only results in hearing distorted screeching noises. It's also possible to receive a distress call from Jiro Sugiyama requesting you to speak with him on Paradiso regarding the ship. Either docking and boarding the ship or speaking with Jiro will begin the mission \"First Contact\".",
         "type": "SHIP",
         "wikiLink": "/wiki/Starfield:ECS_Constant",
-        "starSystem": "Porrima System"
+        "starSystem": "Porrima"
     },
     {
         "name": "Fortuna",
@@ -436,42 +436,42 @@
         "description": "GalBank Legacy is an abandoned GalBank transport vessel in orbit around Bannoc IV.",
         "type": "SHIP",
         "wikiLink": "/wiki/Starfield:GalBank_Legacy",
-        "starSystem": "Bannoc System"
+        "starSystem": "Bannoc"
     },
     {
         "name": "Siren of the Stars",
         "description": "Siren of the Stars is a luxury space vessel owned and operated by Trident Luxury Lines.",
         "type": "SHIP",
         "wikiLink": "/wiki/Starfield:Siren_of_the_Stars",
-        "starSystem": "Aranae System"
+        "starSystem": "Aranae"
     },
     {
         "name": "Deimos Armored Transport",
         "description": "Deimos Armored Transport is an abandoned transport ship with a malfunctioning grav drive and can be filled with either Spacers or the Crimson Fleet.",
         "type": "DERELICT_SHIP",
         "wikiLink": "/wiki/Starfield:Deimos_Armored_Transport",
-        "starSystem": "Alpha Centauri System"
+        "starSystem": "Alpha Centauri"
     },
     {
         "name": "GalBank Legacy",
         "description": "GalBank Legacy is an abandoned GalBank transport vessel in orbit around Bannoc IV.",
         "type": "DERELICT_SHIP",
         "wikiLink": "/wiki/Starfield:GalBank_Legacy",
-        "starSystem": "Bannoc System"
+        "starSystem": "Bannoc"
     },
     {
         "name": "The Colander",
         "description": "The Colander is an abandoned research ship harboring an unwelcome guest.",
         "type": "DERELICT_SHIP",
         "wikiLink": "/wiki/Starfield:The_Colander",
-        "starSystem": "Schrodinger System"
+        "starSystem": "Schrodinger"
     },
     {
         "name": "Apollo Landing Site",
         "description": "The Apollo Landing Site is a historical site marking the spot where humans first set foot on a planetary body other than Earth.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:Apollo_Landing_Site",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Luna"
     },
     {
@@ -479,7 +479,7 @@
         "description": "The Cairo Landmark is a historical site marking a pyramid near where Cairo once was.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:Cairo_Landmark",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Earth"
     },
     {
@@ -487,7 +487,7 @@
         "description": "The Dubai Landmark is a historical site marking ruined remains of the Burj Khalifa.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:Dubai_Landmark",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Earth"
     },
     {
@@ -495,7 +495,7 @@
         "description": "The Hong Kong Landmark is a historical site marking the remains of the International Commerce Centre, once a skyscraper in a city known as Hong Kong.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:Hong_Kong_Landmark",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Earth"
     },
     {
@@ -503,7 +503,7 @@
         "description": "The London Landmark is a historical site marking what's left of the Shard, formerly a skyscraper in Southwark, London.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:London_Landmark",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Earth"
     },
     {
@@ -511,7 +511,7 @@
         "description": "The Los Angeles Landmark is a historical site marking the structure that once was the US Bank Tower in the area formerly known as Los Angeles, California.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:Los_Angeles_Landmark",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Earth"
     },
     {
@@ -519,7 +519,7 @@
         "description": "The NASA Launch Tower is an abandoned NASA facility on Earth. It is located at Cape Canaveral.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:NASA_Launch_Tower",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Earth"
     },
     {
@@ -527,7 +527,7 @@
         "description": "The New York Landmark is a historical site marking the location of the Empire State Building on the Earth-That-Was.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:New_York_Landmark",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Earth"
     },
     {
@@ -535,7 +535,7 @@
         "description": "The Opportunity Rover is a historical site marking the last known location of one of NASA's robotic explorers.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:Opportunity_Rover",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Mars"
     },
     {
@@ -543,7 +543,7 @@
         "description": "The Osaka Landmark is a historical site marking remains of the Abeno Harukas, once the tallest skyscraper in the old earth country of Japan.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:Osaka_Landmark",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Earth"
     },
     {
@@ -551,7 +551,7 @@
         "description": "The Pisa Landmark is an unmarked, historical site where the remains of the Leaning Tower of Pisa are located.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:Pisa_Landmark",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Earth"
     },
     {
@@ -559,7 +559,7 @@
         "description": "The Shanghai Landmark is a historical site marking the remains of the Shanghai Tower, once the tallest building in China.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:Shanghai_Landmark",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Earth"
     },
     {
@@ -567,7 +567,7 @@
         "description": "The St. Louis Landmark is a historical site marking the still standing Gateway Arch in a region formerly known as St. Louis, Missouri.",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:St._Louis_Landmark",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Earth"
     },
     {
@@ -575,7 +575,7 @@
         "description": "Face of Mars Landmark is an unmarked natural landmark on Mars",
         "type": "FRACTURED_EARTH_LANDMARK",
         "wikiLink": "/wiki/Starfield:Face_of_Mars_Landmark",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Mars"
     },
     {
@@ -583,7 +583,7 @@
         "description": "1-Of-A-Kind Salvage is an abandoned Freestar Militia military base converted into a salvage yard. It is located on Niira, the site of the fiercest battle of the Colony War, and overlooks a large battlefield to the north. Acid rain, feral xenoweapons, and Ecliptic mercenaries make salvage operations a dangerous but lucrative prospect. The name is an inside joke on the facts that they are the only place in the area and that most of the mechs they are harvesting come from a group known as The First Cavalry.",
         "type": "INDUSTRIAL_OUTPOST",
         "wikiLink": "/wiki/Starfield:1-Of-A-Kind_Salvage",
-        "starSystem": "Narion System",
+        "starSystem": "Narion",
         "planet": "Niira"
     },
     {
@@ -591,7 +591,7 @@
         "description": "Please add a description for Freestar Mech Factory.",
         "type": "INDUSTRIAL_OUTPOST",
         "wikiLink": "/wiki/Starfield:Freestar_Mech_Factory",
-        "starSystem": "Arcturus System",
+        "starSystem": "Arcturus",
         "planet": "Arcturus II"
     },
     {
@@ -599,7 +599,7 @@
         "description": "Lair of the Mantis is the Mantis's headquarters.",
         "type": "INDUSTRIAL_OUTPOST",
         "wikiLink": "/wiki/Starfield:Lair_of_the_Mantis",
-        "starSystem": "Denebola System",
+        "starSystem": "Denebola",
         "planet": "Denebola I-b, in the Denebola System"
     },
     {
@@ -607,7 +607,7 @@
         "description": "Tau Gourmet Production Center is is a defunct meat processing facility on Tau Ceti II.",
         "type": "INDUSTRIAL_OUTPOST",
         "wikiLink": "/wiki/Starfield:Tau_Gourmet_Production_Center",
-        "starSystem": "Tau Ceti System",
+        "starSystem": "Tau Ceti",
         "planet": "Tau Ceti II"
     },
     {
@@ -615,7 +615,7 @@
         "description": "The Research Camp is a small Freestar Collective outpost on Altair II.",
         "type": "INDUSTRIAL_OUTPOST",
         "wikiLink": "/wiki/Starfield:Research_Camp",
-        "starSystem": "Altair System",
+        "starSystem": "Altair",
         "planet": "Altair II"
     },
     {
@@ -623,7 +623,7 @@
         "description": "Please add a description for Safe House Gamma.",
         "type": "INDUSTRIAL_OUTPOST",
         "wikiLink": "/wiki/Starfield:Safe_House_Gamma",
-        "starSystem": "Andromas System",
+        "starSystem": "Andromas",
         "planet": "Andromas II"
     },
     {
@@ -631,7 +631,7 @@
         "description": "Please add a description for Buried Temple.",
         "type": "MILITARY_BASE",
         "wikiLink": "/wiki/Starfield:Buried_Temple",
-        "starSystem": "Masada System",
+        "starSystem": "Masada",
         "planet": "Masada III"
     },
     {
@@ -639,7 +639,7 @@
         "description": "Forward Base 441 is a military base overlooking the ruins of Londinion.",
         "type": "MILITARY_BASE",
         "wikiLink": "/wiki/Starfield:Forward_Base_441",
-        "starSystem": "Toliman System",
+        "starSystem": "Toliman",
         "planet": "Toliman II"
     },
     {
@@ -647,7 +647,7 @@
         "description": "Mars Mech Factory is a Point of Interest (POI) on Mars, in the Sol System.",
         "type": "MILITARY_BASE",
         "wikiLink": "/wiki/Starfield:Mars_Mech_Factory",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Mars"
     },
     {
@@ -655,7 +655,7 @@
         "description": "The Lock is a former United Colonies prison, now in ruins.",
         "type": "MILITARY_BASE",
         "wikiLink": "/wiki/Starfield:The_Lock",
-        "starSystem": "Kryx System",
+        "starSystem": "Kryx",
         "planet": "Suvorov"
     },
     {
@@ -663,7 +663,7 @@
         "description": "Please add a description for Victor Compound.",
         "type": "MILITARY_BASE",
         "wikiLink": "/wiki/Starfield:Victor_Compound",
-        "starSystem": "McClure System",
+        "starSystem": "McClure",
         "planet": "McClure II"
     },
     {
@@ -671,7 +671,7 @@
         "description": "Argos Extractors Mining Outpost is a Mining Base operated by Argos Extractors on Vectera, Narion System. The player starts the game working in this mine with Supervisor Lin and Heller.",
         "type": "MINING_BASE",
         "wikiLink": "/wiki/Starfield:Argos_Extractors_Mining_Outpost",
-        "starSystem": "Narion System",
+        "starSystem": "Narion",
         "planet": "Vectera"
     },
     {
@@ -679,7 +679,7 @@
         "description": "Bindi Mining Outpost is a defunct mining outpost on Akila's moon Bindi, now operated by Crimson Fleet.",
         "type": "MINING_BASE",
         "wikiLink": "/wiki/Starfield:Bindi_Mining_Outpost",
-        "starSystem": "Cheyenne System",
+        "starSystem": "Cheyenne",
         "planet": "Bindi"
     },
     {
@@ -687,7 +687,7 @@
         "description": "CM Station RC-1 is an abandoned mining outpost of Consolidated Mining.",
         "type": "MINING_BASE",
         "wikiLink": "/wiki/Starfield:CM_Station_RC-1",
-        "starSystem": "Carinae System",
+        "starSystem": "Carinae",
         "planet": "Carinae III-a"
     },
     {
@@ -695,14 +695,14 @@
         "description": "Eklund Excavation Site CL25 is an abandoned asteroid mining facility around Bonner, Sakharov System. The facility is mostly deserted, but some robots are still operational. Maya Cruz hid here after escaping The Clinic during Surgical Strike.",
         "type": "MINING_BASE",
         "wikiLink": "/wiki/Starfield:Eklund_Excavation_Site_CL25",
-        "starSystem": "Sakharov System"
+        "starSystem": "Sakharov"
     },
     {
         "name": "Hephaestus Mine H-363",
         "description": "Please add a description for Hephaestus Mine H-363.",
         "type": "MINING_BASE",
         "wikiLink": "/wiki/Starfield:Hephaestus_Mine_H-363",
-        "starSystem": "Alpha Centauri System",
+        "starSystem": "Alpha Centauri",
         "planet": "Gagarin"
     },
     {
@@ -710,7 +710,7 @@
         "description": "Please add a description for Ka'zaal Sulfur Mine.",
         "type": "MINING_BASE",
         "wikiLink": "/wiki/Starfield:Ka%27zaal_Sulfur_Mine",
-        "starSystem": "Nirah System",
+        "starSystem": "Nirah",
         "planet": "Ka'zaal"
     },
     {
@@ -718,7 +718,7 @@
         "description": "The Empty Nest is a camp held by the Shaw Gang near Akila City",
         "type": "MINING_BASE",
         "wikiLink": "/wiki/Starfield:The_Empty_Nest_(place)",
-        "starSystem": "Cheyenne System",
+        "starSystem": "Cheyenne",
         "planet": "Akila"
     },
     {
@@ -726,7 +726,7 @@
         "description": "Please add a description for Vulture's Roost.",
         "type": "MINING_BASE",
         "wikiLink": "/wiki/Starfield:Vulture%27s_Roost",
-        "starSystem": "Jaffa System",
+        "starSystem": "Jaffa",
         "planet": "Jaffa IV"
     },
     {
@@ -734,7 +734,7 @@
         "description": "Please add a description for Dauntless Crew's Crash Site.",
         "type": "CRASHED_STARSHIP",
         "wikiLink": "/wiki/Starfield:Dauntless_Crew%27s_Crash_Site",
-        "starSystem": "Eta Cassiopeia System",
+        "starSystem": "Eta Cassiopeia",
         "planet": "Cassiopeia I"
     },
     {
@@ -742,7 +742,7 @@
         "description": "ECS Constant Shuttle Crash Site is a crashed shuttle from the ECS Constant.",
         "type": "CRASHED_STARSHIP",
         "wikiLink": "/wiki/Starfield:ECS_Constant_Shuttle_Crash_Site",
-        "starSystem": "Bardeen System",
+        "starSystem": "Bardeen",
         "planet": "Bardeen I"
     },
     {
@@ -750,7 +750,7 @@
         "description": "Please add a description for Sarah Morgan's Crash Site.",
         "type": "CRASHED_STARSHIP",
         "wikiLink": "/wiki/Starfield:Sarah_Morgan%27s_Crash_Site",
-        "starSystem": "Eta Cassiopeia System",
+        "starSystem": "Eta Cassiopeia",
         "planet": "Cassiopeia I"
     },
     {
@@ -758,7 +758,7 @@
         "description": "The Kreet Research Lab is an abandoned United Colonies Xenowarfare lab on Kreet. Originally constructed just prior to the Colony War in order to perform research on Kreet Stalkers, the lab was eventually made part of the Terrormorph research project. The project ended in disaster when a Terrormorph escaped containment and slaughtered the laboratory staff.",
         "type": "SCIENCE_LAB",
         "wikiLink": "/wiki/Starfield:Kreet_Research_Lab",
-        "starSystem": "Narion System",
+        "starSystem": "Narion",
         "planet": "Kreet"
     },
     {
@@ -766,7 +766,7 @@
         "description": "Please add a description for Meteorite Testing Site.",
         "type": "SCIENCE_LAB",
         "wikiLink": "/wiki/Starfield:Meteorite_Testing_Site",
-        "starSystem": "Hyla System",
+        "starSystem": "Hyla",
         "planet": "Hyla II-a"
     },
     {
@@ -774,7 +774,7 @@
         "description": "NeuraDyne Botany Laboratory is a science lab located on Beta Marae I. It has been taken over by Ecliptic mercenaries.",
         "type": "SCIENCE_LAB",
         "wikiLink": "/wiki/Starfield:NeuraDyne_Botany_Laboratory",
-        "starSystem": "Beta Marae System",
+        "starSystem": "Beta Marae",
         "planet": "Beta Marae I"
     },
     {
@@ -782,7 +782,7 @@
         "description": "The Nishina Research Station is a research station on Freya III, Freya System.",
         "type": "SCIENCE_LAB",
         "wikiLink": "/wiki/Starfield:Nishina_Research_Station",
-        "starSystem": "Freya System",
+        "starSystem": "Freya",
         "planet": "Freya III"
     },
     {
@@ -790,7 +790,7 @@
         "description": "The Nova Galactic Research Station is an abandoned research station on Luna, Sol System. The research station contains a supercomputer, named \"Voltaire\", and was used by Nova Galactic to research faster-than-light travel.",
         "type": "SCIENCE_LAB",
         "wikiLink": "/wiki/Starfield:Nova_Galactic_Research_Station",
-        "starSystem": "Sol System",
+        "starSystem": "Sol",
         "planet": "Luna"
     },
     {
@@ -798,7 +798,7 @@
         "description": "Please add a description for Reclaimed Outpost.",
         "type": "SCIENCE_LAB",
         "wikiLink": "/wiki/Starfield:Reclaimed_Outpost",
-        "starSystem": "Alpha Centauri System",
+        "starSystem": "Alpha Centauri",
         "planet": "Hawley"
     },
     {
@@ -806,7 +806,7 @@
         "description": "Reliant Medical Organics Lab is a Reliant Medical facility. The Facility houses Project Sumeria,\"the Settled Systems largest and most pertinent backup of medicinal plants\". The goal of Project Sumeria is to, \"protect and maintain the well-being of thousands of years of studies in botany and medicine\". The facility was staffed with only one person; whose job was to grow and care for the plants, maintain the robots in the facility, and maintain the water filtration system.",
         "type": "SCIENCE_LAB",
         "wikiLink": "/wiki/Starfield:Reliant_Medical_Organics_Lab",
-        "starSystem": "Beta Ternion System",
+        "starSystem": "Beta Ternion",
         "planet": "Beta Ternion I"
     },
     {
@@ -814,7 +814,7 @@
         "description": "Research Outpost U3-09 is a Freestar Collective research lab on Altair II.",
         "type": "SCIENCE_LAB",
         "wikiLink": "/wiki/Starfield:Research_Outpost_U3-09",
-        "starSystem": "Altair System",
+        "starSystem": "Altair",
         "planet": "Altair II"
     },
     {
@@ -828,7 +828,7 @@
         "description": "Sonny Di Falco's Island is a luxurious estate located on Maheo I",
         "type": "LANDING_SITE",
         "wikiLink": "/wiki/Starfield:Sonny_Di_Falco%27s_Island",
-        "starSystem": "Maheo System",
+        "starSystem": "Maheo",
         "planet": "Maheo I"
     },
     {
@@ -836,7 +836,7 @@
         "description": "Please add a description for Valerie's Cache.",
         "type": "LANDING_SITE",
         "wikiLink": "/wiki/Starfield:Valerie%27s_Cache",
-        "starSystem": "Andromas System",
+        "starSystem": "Andromas",
         "planet": "Andromas III"
     },
     {
