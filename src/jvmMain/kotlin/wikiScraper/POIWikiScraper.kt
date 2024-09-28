@@ -27,7 +27,9 @@ private fun parsePOI(page: Document): List<PointOfInterest> {
 
         contents.select("li").map { li ->
             val link = li.select("a").toList().first { it.hasAttr("title") }
-            PointOfInterest(link!!.text(), "", type, link.attr("href"), "", "")
+            val url = link.attr("href")
+            val detailPage = fetch("https://starfieldwiki.net:$url", "places", true)
+            PointOfInterest(link!!.text(), "", type, url, "", "")
         }
     }
 

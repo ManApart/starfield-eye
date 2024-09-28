@@ -33,12 +33,17 @@ fun getPage(url: String, headers: Map<String, String> = mapOf()): String? {
         }
         connect()
     }
+    try {
     Scanner(
         connection.getInputStream(),
         StandardCharsets.UTF_8.toString()
     ).use { scanner ->
         scanner.useDelimiter("\\A")
         return if (scanner.hasNext()) scanner.next() else null.also { println("Unable to fetch $url") }
+    }
+    } catch (e: Exception){
+        println("Unable to fetch $url")
+        return null
     }
 }
 
@@ -94,16 +99,16 @@ inline fun <reified T : WikiData> readFromUrls(
     output.writeText(jsonMapper.encodeToString(data))
 }
 
-fun fetch(url: String, cacheDir: String): Document {
-    return Jsoup.parse(fetchPage(url, cacheDir))
+fun fetch(url: String, cacheDir: String, cacheOnly: Boolean = false): Document {
+    return Jsoup.parse(fetchPage(url, cacheDir, cacheOnly))
 }
 
-fun fetchPage(url: String, cacheDir: String): String {
+fun fetchPage(url: String, cacheDir: String, cacheOnly: Boolean = false): String {
     val file = File("raw-data/cache/$cacheDir/${url.substring(url.lastIndexOf("/"))}.html").also { it.parentFile.mkdirs() }
-    if (!file.exists()) {
-        file.writeText(getPage(url)!!)
+    if (!file.exists() && !cacheOnly) {
+        getPage(url)?.let { file.writeText(it) }
     }
-    return file.readText()
+    return if (file.exists()) file.readText() else ""
 }
 
 fun Element?.cleanText(): String? {
