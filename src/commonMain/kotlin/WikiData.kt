@@ -76,7 +76,7 @@ enum class ResearchCategory {
     val prettyName = name.capitalize().replace("_", " ")
 }
 
-enum class ProjectState {COMPLETED, BLOCKED, NONE}
+enum class ProjectState { COMPLETED, BLOCKED, NONE }
 
 @Serializable
 data class ResearchProject(
@@ -98,3 +98,20 @@ data class Material(
     val count: Int,
     val url: String,
 )
+
+enum class POIType { CITY, SETTLEMENT, FARM, STARSTATION, STARYARD, SHIP, DERELICT_SHIP, FRACTURED_EARTH_LANDMARK, INDUSTRIAL_OUTPOST, MILITARY_BASE, MINING_BASE, CRASHED_STARSHIP, SCIENCE_LAB, LANDING_SITE, TEMPLE, OTHER }
+
+fun String.toPOIType(): POIType {
+    val clean = uppercase().dropLast(1).replace("CITIE", "CITY").replace("OTHER_SETTLEMENTS_AND_OUTPOST", "SETTLEMENT")
+    return POIType.entries.firstOrNull { it.name == clean } ?: POIType.OTHER.also { println("No match for POI Type $clean") }
+}
+
+@Serializable
+data class PointOfInterest(
+    override val name: String,
+    val description: String,
+    val type: POIType,
+    val wikiLink: String,
+    val starSystem: String,
+    val planet: String,
+) : WikiData

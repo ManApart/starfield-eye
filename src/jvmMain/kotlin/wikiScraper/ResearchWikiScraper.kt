@@ -21,8 +21,6 @@ fun main() {
 }
 
 private fun parseResearch(page: Document): List<ResearchProject> {
-
-
     return page.select(".wikitable").flatMapIndexed { categoryIndex: Int, table: Element? ->
         val category = ResearchCategory.entries[categoryIndex]
         table!!.select("tr").drop(1).map { row ->
