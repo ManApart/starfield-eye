@@ -413,6 +413,21 @@
         "perks": {
         },
         "materials": [
+            {
+                "name": "Bread",
+                "count": 3,
+                "url": "/wiki/Starfield:Bread"
+            },
+            {
+                "name": "Red Meat",
+                "count": 2,
+                "url": "/wiki/Starfield:Red_Meat"
+            },
+            {
+                "name": "Cheese",
+                "count": 2,
+                "url": "/wiki/Starfield:Cheese"
+            }
         ]
     },
     {
@@ -427,6 +442,31 @@
             "Gastronomy": 1
         },
         "materials": [
+            {
+                "name": "Spice",
+                "count": 5,
+                "url": "/wiki/Starfield:Spice"
+            },
+            {
+                "name": "Cheese",
+                "count": 5,
+                "url": "/wiki/Starfield:Cheese"
+            },
+            {
+                "name": "Egg",
+                "count": 5,
+                "url": "/wiki/Starfield:Egg"
+            },
+            {
+                "name": "Butter",
+                "count": 5,
+                "url": "/wiki/Starfield:Butter"
+            },
+            {
+                "name": "Poultry",
+                "count": 5,
+                "url": "/wiki/Starfield:Poultry"
+            }
         ]
     },
     {
@@ -441,6 +481,36 @@
             "Gastronomy": 2
         },
         "materials": [
+            {
+                "name": "Spice",
+                "count": 10,
+                "url": "/wiki/Starfield:Spice"
+            },
+            {
+                "name": "Nutrient",
+                "count": 20,
+                "url": "/wiki/Starfield:Nutrient"
+            },
+            {
+                "name": "Beer",
+                "count": 10,
+                "url": "/wiki/Starfield:Beer"
+            },
+            {
+                "name": "Poultry",
+                "count": 10,
+                "url": "/wiki/Starfield:Poultry"
+            },
+            {
+                "name": "Dairy",
+                "count": 10,
+                "url": "/wiki/Starfield:Dairy"
+            },
+            {
+                "name": "Egg",
+                "count": 10,
+                "url": "/wiki/Starfield:Egg"
+            }
         ]
     },
     {
@@ -453,6 +523,21 @@
         "perks": {
         },
         "materials": [
+            {
+                "name": "Spice",
+                "count": 2,
+                "url": "/wiki/Starfield:Spice"
+            },
+            {
+                "name": "Fiber",
+                "count": 3,
+                "url": "/wiki/Starfield:Fiber"
+            },
+            {
+                "name": "Water",
+                "count": 3,
+                "url": "/wiki/Starfield:Water"
+            }
         ]
     },
     {
@@ -467,6 +552,31 @@
             "Gastronomy": 1
         },
         "materials": [
+            {
+                "name": "Aromatic",
+                "count": 5,
+                "url": "/wiki/Starfield:Aromatic"
+            },
+            {
+                "name": "Benzene",
+                "count": 5,
+                "url": "/wiki/Starfield:Benzene"
+            },
+            {
+                "name": "Spice",
+                "count": 5,
+                "url": "/wiki/Starfield:Spice"
+            },
+            {
+                "name": "Metabolic Agent",
+                "count": 10,
+                "url": "/wiki/Starfield:Metabolic_Agent"
+            },
+            {
+                "name": "Tranquilitea Sunray",
+                "count": 5,
+                "url": "/wiki/Starfield:Tranquilitea_Sunray"
+            }
         ]
     },
     {
@@ -479,6 +589,21 @@
         "perks": {
         },
         "materials": [
+            {
+                "name": "Aromatic",
+                "count": 2,
+                "url": "/wiki/Starfield:Aromatic"
+            },
+            {
+                "name": "Alkanes",
+                "count": 2,
+                "url": "/wiki/Starfield:Alkanes"
+            },
+            {
+                "name": "Spice",
+                "count": 3,
+                "url": "/wiki/Starfield:Spice"
+            }
         ]
     },
     {
@@ -493,6 +618,26 @@
             "Gastronomy": 1
         },
         "materials": [
+            {
+                "name": "Aromatic",
+                "count": 10,
+                "url": "/wiki/Starfield:Aromatic"
+            },
+            {
+                "name": "Spice",
+                "count": 10,
+                "url": "/wiki/Starfield:Spice"
+            },
+            {
+                "name": "Liquor",
+                "count": 5,
+                "url": "/wiki/Starfield:Liquor"
+            },
+            {
+                "name": "Can-Uck! Poutine",
+                "count": 5,
+                "url": "/wiki/Starfield:Can-Uck!_Poutine"
+            }
         ]
     },
     {
