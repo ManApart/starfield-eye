@@ -76,12 +76,8 @@ private fun attemptParseWikiData(name: String, document: Document): PlanetWikiDa
 
     val resources = data["Resources"]?.flatMap { it.replace("  ", " ").split(" ") } ?: listOf()
 
-    val image = document.select(".thumbinner").flatMap { it.select("img") }.firstOrNull()
-    val url = image?.attr("srcset")?.split(" ")?.firstOrNull()?.let { "https:$it" } ?: image?.attr("src")
-
     return PlanetWikiData(
         name.replace("_", " "),
-        url,
         data["Type"]?.first() ?: "",
         data["Temperature"]?.first() ?: "",
         data["Atmosphere"]?.first() ?: "",

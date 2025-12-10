@@ -46,12 +46,12 @@ private fun parseFauna(url: String, page: Document): List<FaunaWikiData> {
             listOf()
         }
 
-        variantTables.isEmpty() -> listOf(parseTable(singleTable!!, name, imageUrl))
-        else -> variantTables.map { parseTable(it, name, imageUrl) }
+        variantTables.isEmpty() -> listOf(parseTable(singleTable!!, name))
+        else -> variantTables.map { parseTable(it, name) }
     }
 }
 
-private fun parseTable(table: Element, name: String, imageUrl: String?): FaunaWikiData {
+private fun parseTable(table: Element, name: String): FaunaWikiData {
     val planet = table.selectHeaderClean("Planet") ?: table.selectHeaderClean("Location")  ?: parsePlanet(table.select("th").first()!!)
     if (name == planet) throw IllegalStateException("Non-fauna table detected")
     val abilities = table.selectHeaderClean("Abilities")?.split(",") ?: emptyList()
@@ -76,5 +76,5 @@ private fun parseTable(table: Element, name: String, imageUrl: String?): FaunaWi
     ).toMap()
     val planetId = planetsByName[planet]?.uniqueId
     if (planetId == null) println("Could not find planet $planet")
-    return FaunaWikiData(name, imageUrl, temperament, planet, planetId, biomes, resource, abilities, other)
+    return FaunaWikiData(name, temperament, planet, planetId, biomes, resource, abilities, other)
 }

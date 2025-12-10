@@ -46,7 +46,7 @@ private fun TagConsumer<HTMLElement>.display(flora: FloraWikiData, linkToSystem:
         div("flora-entry") {
             p { +name }
 
-            screenshot("flora/$name", flora.imageUrl)
+            screenshot("flora/$name")
 
             if (linkToSystem) {
                 flora.planetId?.let { id -> id.split("-").map { it.toInt() } }?.let { id ->

@@ -30,13 +30,10 @@ private fun parseFlora(url: String, page: Document): List<FloraWikiData> {
     val singleTable = allTables.firstOrNull { it.hasClass("infobox") }!!
     val variantTables = allTables.toMutableList().also { it.remove(singleTable) }
 
-    val image = page.select(".thumbinner").flatMap { it.select("img") }.firstOrNull()
-    val imageUrl = image?.attr("srcset")?.split(" ")?.firstOrNull()?.let { "https:$it" } ?: image?.attr("src")
-
-    return variantTables.flatMap { parseFloraTable(it, name, imageUrl) }
+    return variantTables.flatMap { parseFloraTable(it, name) }
 }
 
-private fun parseFloraTable(table: Element, name: String, imageUrl: String?): List<FloraWikiData> {
+private fun parseFloraTable(table: Element, name: String): List<FloraWikiData> {
     return table.select("tr").drop(1).map { row ->
 
         val planet = row.selectTdClean(0)
@@ -50,7 +47,6 @@ private fun parseFloraTable(table: Element, name: String, imageUrl: String?): Li
 
         val planetId = planetsByName[planet]?.uniqueId
         if (planetId == null) println("Could not find planet $planet")
-        FloraWikiData(name, imageUrl, planet, planetId, biomes, resource, other)
+        FloraWikiData(name, planet, planetId, biomes, resource, other)
     }
 }
-

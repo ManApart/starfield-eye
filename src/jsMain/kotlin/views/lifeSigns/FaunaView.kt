@@ -46,7 +46,7 @@ private fun TagConsumer<HTMLElement>.display(fauna: FaunaWikiData, linkToSystem:
         div("fauna-entry") {
             p { +name }
 
-            screenshot("fauna/$name", fauna.imageUrl)
+            screenshot("fauna/$name")
 
             if (linkToSystem) {
                 fauna.planetId?.let { id -> id.split("-").map { it.toInt() } }?.let { id ->

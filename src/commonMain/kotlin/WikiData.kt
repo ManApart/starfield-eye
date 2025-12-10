@@ -8,7 +8,6 @@ interface WikiData {
 @Serializable
 data class PlanetWikiData(
     override val name: String = "",
-    val imageUrl: String? = null,
     val type: String = "",
     val temperature: String = "",
     val atmosphere: String = "",
@@ -30,7 +29,6 @@ data class MissionWikiData(
 @Serializable
 data class FaunaWikiData(
     override val name: String = "",
-    val imageUrl: String? = null,
     val temperament: Temperament = Temperament.UNKNOWN,
     val planet: String? = null,
     val planetId: String? = null,
@@ -46,7 +44,6 @@ data class FaunaWikiData(
 @Serializable
 data class FloraWikiData(
     override val name: String = "",
-    val imageUrl: String? = null,
     val planet: String? = null,
     val planetId: String? = null,
     val biomes: List<String> = listOf(),

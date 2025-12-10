@@ -91,7 +91,6 @@ private fun parseSystem(
                     starId,
                     parentId,
                     name,
-                    wikiData.imageUrl,
                     planetClass,
                     bodyType,
                     wikiData.type,

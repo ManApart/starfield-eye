@@ -37,6 +37,5 @@ private fun parsePerk(url: String, page: Document): List<Perk> {
 
     if(category == PerkCategory.OTHER) println("Skipping $name")
 
-    return if (category == PerkCategory.OTHER) listOf() else listOf(Perk(name, category, tier, url, ranks))
+    return if (category == PerkCategory.OTHER) listOf() else listOf(Perk(name, category, tier, url, ""))
 }
-

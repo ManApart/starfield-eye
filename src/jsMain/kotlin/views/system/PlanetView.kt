@@ -25,7 +25,7 @@ fun TagConsumer<HTMLElement>.detailView(system: StarSystem, planet: Planet, link
         val info = inMemoryStorage.planetInfo(uniqueId)
         h2 { +name }
 
-        screenshot("planets/${uniqueId}", imageUrl)
+        screenshot("planets/${uniqueId}")
 
         if (linkToSystem) {
             button {
