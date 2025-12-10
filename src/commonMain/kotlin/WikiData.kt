@@ -66,7 +66,7 @@ data class Perk(
     val category: PerkCategory,
     val tier: PerkTier,
     val url: String,
-    val ranks: Map<Int, String>,
+    val perkId: String,
 ) : WikiData
 
 enum class ResearchCategory {

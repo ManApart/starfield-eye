@@ -52,5 +52,6 @@
     display: block;
     margin: auto;
     width: 125px;
+    height: 125px;
     cursor: context-menu;
 }

@@ -37,17 +37,18 @@ fun perkView(section: String? = null) {
                                         perks.sortedBy { it.name }.forEach { perk ->
                                             val rank = inMemoryStorage.perks[perk.name] ?: 0
                                             div("perk-cell perk-cell-$tier") {
-                                                    img(classes = "perk-image", src = perk.ranks[rank]) {
-                                                        id = "${perk.name}-badge"
-                                                        onClickFunction = {
-                                                            sliderPopup(0..4, inMemoryStorage.perks[perk.name] ?: 0){newValue ->
-                                                                inMemoryStorage.perks[perk.name] = newValue
-                                                                el<HTMLImageElement>("${perk.name}-badge").src =
-                                                                    perk.ranks[newValue] ?: ""
-                                                                persistMemory()
-                                                            }
+                                                //TODO - hard code the size so we don't have pop in
+                                                img(classes = "perk-image", src = "./images/skills/${perk.perkId}_rank$rank.png") {
+                                                    id = "${perk.name}-badge"
+                                                    onClickFunction = {
+                                                        sliderPopup(0..4, inMemoryStorage.perks[perk.name] ?: 0) { newValue ->
+                                                            inMemoryStorage.perks[perk.name] = newValue
+                                                            el<HTMLImageElement>("${perk.name}-badge").src =
+                                                                "./images/skills/${perk.perkId}_rank$newValue.png"
                                                         }
+                                                        persistMemory()
                                                     }
+                                                }
                                                 a(perk.url, target = "_blank") {
                                                     +perk.name.replace("_", " ")
                                                 }
