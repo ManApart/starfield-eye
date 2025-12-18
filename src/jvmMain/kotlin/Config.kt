@@ -6,6 +6,6 @@ import java.io.File
 data class Config(val botCreds: BotCreds)
 
 @Serializable
-data class BotCreds(val name: String, val pass: String, val cookie: String)
+data class BotCreds(val name: String, val pass: String, val cookie: String, val sessionKey: String? = null)
 
 fun readConfig() = File("./config.json").readText().let { jsonMapper.decodeFromString<Config>(it) }

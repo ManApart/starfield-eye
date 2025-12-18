@@ -38,29 +38,31 @@ class WikiApi(val creds: BotCreds) {
         install(ContentNegotiation) { json(jsonMapper) }
     }
 
-    fun close(){
+    fun close() {
         client.close()
     }
 
-    suspend fun auth() {
-        val token = client.get("https://starfieldwiki.net/w/api.php?action=query&meta=tokens&type=login&format=json") {
-            userAgent()
-            cookie()
-        }.body<TokenResp>().query.tokens.logintoken
+    suspend fun auth(sessionKey: String?) {
+        val session = if (sessionKey != null) sessionKey else {
+            val token = client.get("https://starfieldwiki.net/w/api.php?action=query&meta=tokens&type=login&format=json") {
+                userAgent()
+                cookie()
+            }.body<TokenResp>().query.tokens.logintoken
 
-        val authResp = client.post("https://starfieldwiki.net/w/api.php?action=login&format=json") {
-            userAgent()
-            cookie()
-            setBody(FormDataContent(Parameters.build {
-                append("lgname", creds.name)
-                append("lgpassword", creds.pass)
-                append("lgtoken", token)
-                append("action", "login")
-                append("format", "json")
-            }))
+            val authResp = client.post("https://starfieldwiki.net/w/api.php?action=login&format=json") {
+                userAgent()
+                cookie()
+                setBody(FormDataContent(Parameters.build {
+                    append("lgname", creds.name)
+                    append("lgpassword", creds.pass)
+                    append("lgtoken", token)
+                    append("action", "login")
+                    append("format", "json")
+                }))
+            }
+
+            authResp.setCookie()["sfwiki_BPsession"]!!.value
         }
-
-        val session = authResp.setCookie()["sfwiki_BPsession"]!!.value
         cookie += "; sfwiki_BPsession=${session}"
         println("Updated cookie with session $session")
     }
