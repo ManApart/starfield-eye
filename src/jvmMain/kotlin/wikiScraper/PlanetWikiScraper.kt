@@ -19,8 +19,10 @@ fun main() {
     val config = readConfig()
     val api = WikiApi(config.botCreds)
     runBlocking {
-//        api.auth()
-        api.getPage("Starfield:Star_Systems")
+        api.auth()
+        val pageText = api.getPage("Starfield:Star_Systems")
+        File("./raw-data/cache/planets/Starfield:Star_Systems.html").writeText(pageText)
+        api.close()
     }
 //    val output = File("raw-data/planet-wiki-data.json")
 //    val existing = (if (output.exists()) {

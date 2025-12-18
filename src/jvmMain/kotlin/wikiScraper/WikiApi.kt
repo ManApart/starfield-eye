@@ -2,12 +2,13 @@ package wikiScraper
 
 import BotCreds
 import io.ktor.client.*
-import io.ktor.client.call.body
+import io.ktor.client.call.*
 import io.ktor.client.engine.jetty.*
 import io.ktor.client.plugins.contentnegotiation.*
+import io.ktor.client.plugins.cookies.*
 import io.ktor.client.request.*
-import io.ktor.client.statement.bodyAsText
-import io.ktor.http.HttpMessageBuilder
+import io.ktor.client.request.forms.*
+import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import jsonMapper
 import kotlinx.serialization.SerialName
@@ -32,9 +33,13 @@ private data class PageParse(val title: String, @SerialName("pageid") val pageId
 private data class PageText(@SerialName("*") val text: String)
 
 class WikiApi(val creds: BotCreds) {
-    val cookie = creds.cookie.replace("\n", "")
-    val client = HttpClient(Jetty) {
+    private var cookie = creds.cookie.replace("\n", "")
+    private val client = HttpClient(Jetty) {
         install(ContentNegotiation) { json(jsonMapper) }
+    }
+
+    fun close(){
+        client.close()
     }
 
     suspend fun auth() {
@@ -46,19 +51,26 @@ class WikiApi(val creds: BotCreds) {
         val authResp = client.post("https://starfieldwiki.net/w/api.php?action=login&format=json") {
             userAgent()
             cookie()
-            parameter("lgname", creds.name)
-            parameter("lgpassword", creds.pass)
-            parameter("lgtoken", token)
+            setBody(FormDataContent(Parameters.build {
+                append("lgname", creds.name)
+                append("lgpassword", creds.pass)
+                append("lgtoken", token)
+                append("action", "login")
+                append("format", "json")
+            }))
         }
-        println("Token $authResp")
+
+        val session = authResp.setCookie()["sfwiki_BPsession"]!!.value
+        cookie += "; sfwiki_BPsession=${session}"
+        println("Updated cookie with session $session")
     }
 
-    suspend fun getPage(pageId: String) {
+    suspend fun getPage(pageId: String): String {
         val page = client.get("https://starfieldwiki.net/w/api.php?action=parse&page=$pageId&format=json") {
             userAgent()
             cookie()
         }.body<PageResult>()
-        println(page.parse.text)
+        return page.parse.text.text
     }
 
     private fun HttpMessageBuilder.cookie() = header("Cookie", cookie)

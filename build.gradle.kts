@@ -58,6 +58,7 @@ kotlin {
                 implementation("io.ktor:ktor-client-content-negotiation:${ktor_version}")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:${ktor_version}")
                 implementation("io.ktor:ktor-client-jetty:${ktor_version}")
+                implementation("org.slf4j:slf4j-nop:2.0.17")
 
             }
         }
