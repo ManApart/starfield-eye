@@ -28,18 +28,19 @@ class WikiApi(val creds: BotCreds) {
     }
 
     suspend fun auth() {
-        val resp = client.get("https://starfieldwiki.net/w/api.php?action=query&meta=tokens&type=login&format=json") {
+        val token = client.get("https://starfieldwiki.net/w/api.php?action=query&meta=tokens&type=login&format=json") {
             header("Cookie", creds.cookie)
             userAgent()
+        }.body<TokenResp>().query.tokens.logintoken
+
+        val authResp = client.post("https://starfieldwiki.net/w/api.php?action=login&format=json") {
+            userAgent()
+            header("Cookie", creds.cookie)
+            parameter("lgname", creds.name)
+            parameter("lgpassword", creds.pass)
+            parameter("lgtoken", token)
         }
-        val token = resp.body<TokenResp>().query.tokens.logintoken
-//        val resp = client.post("https://starfieldwiki.net/w/api.php?action=login&format=json") {
-//            parameter("lgname", creds.name)
-//            parameter("lgpassword", creds.pass)
-//            parameter("lgtoken", creds.token)
-//            header("Cookie", creds.cookie)
-//        }
-        println("Token $token")
+        println("Token $authResp")
     }
 
     private fun HttpMessageBuilder.userAgent() = header("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36")
