@@ -2,6 +2,7 @@ package wikiScraper
 
 import PointOfInterest
 import jsonMapper
+import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.encodeToString
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
@@ -14,11 +15,14 @@ fun main() {
     val output = File("src/jsMain/resources/poi-wiki-data.json")
 
     println("Reading poi")
-    parsePOI(Jsoup.parse(inputFile.readText())).let { output.writeText(jsonMapper.encodeToString(it)) }
+    runBlocking {
+        parsePOI(Jsoup.parse(inputFile.readText())).let { output.writeText(jsonMapper.encodeToString(it)) }
+    }
 
 }
 
-private fun parsePOI(page: Document): List<PointOfInterest> {
+private suspend fun parsePOI(page: Document): List<PointOfInterest> {
+    val api = authedApi()
     return page.select("li.tocsection-4").first()!!.select("a").flatMap { page.select(it.attr("href")) }.filter { it.id() != "Fixed_Points_of_Interest" }.flatMap { section ->
         val type = section.id().toPOIType()
         var contents = section.parent()!!.nextElementSibling()!!
@@ -27,7 +31,9 @@ private fun parsePOI(page: Document): List<PointOfInterest> {
         contents.select("li").map { li ->
             val link = li.select("a").toList().first { it.hasAttr("title") }
             val url = link.attr("href")
-            val detailPage = fetch("https://starfieldwiki.net:$url", "places", true)
+            //TODO - test
+            val detailPage = api.fetch(url, "places", true)
+//            val detailPage = fetch("https://starfieldwiki.net:$url", "places", true)
             val description = detailPage.select("p").first()?.text() ?: ""
             val locationSentence = detailPage.select("table").select("td").map { it.text() }.firstOrNull { it.startsWith("On the planet") }
             val locationStringPlanet = locationSentence?.split(",")?.first()?.replace("On the planet ", "")?.trim()

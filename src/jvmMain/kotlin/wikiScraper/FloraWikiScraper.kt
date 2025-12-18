@@ -4,6 +4,7 @@ import FloraWikiData
 import Galaxy
 import Planet
 import jsonMapper
+import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.decodeFromString
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
@@ -13,15 +14,18 @@ private lateinit var planetsByName: Map<String, Planet>
 
 fun main() {
     val options = ScraperOptions("flora")
-    val urlFile = File("raw-data/flora-pages.txt")
-    if (!urlFile.exists()) urlFile.writeText("")
-    fetchPagesIfEmpty(urlFile, listOf("https://starfieldwiki.net/wiki/Starfield:Flora"), options.onlyOne)
-    val output = File("src/jsMain/resources/flora-wiki-data.json")
+    val pageFile = File("raw-data/flora-pages.txt")
+    if (!pageFile.exists()) pageFile.writeText("")
+    runBlocking {
+        val api = authedApi()
+        api.fetchPagesIfEmpty(pageFile, listOf("https://starfieldwiki.net/wiki/Starfield:Flora"), options.onlyOne)
+        val output = File("src/jsMain/resources/flora-wiki-data.json")
 
-    println("Reading Flora")
-    planetsByName =
-        jsonMapper.decodeFromString<Galaxy>(File("src/jsMain/resources/data.json").readText()).planets.values.associateBy { it.name }
-    readFromUrls(urlFile, output, ::parseFlora, options)
+        println("Reading Flora")
+        planetsByName =
+            jsonMapper.decodeFromString<Galaxy>(File("src/jsMain/resources/data.json").readText()).planets.values.associateBy { it.name }
+        api.readFromUrls(pageFile, output, ::parseFlora, options)
+    }
 }
 
 private fun parseFlora(url: String, page: Document): List<FloraWikiData> {

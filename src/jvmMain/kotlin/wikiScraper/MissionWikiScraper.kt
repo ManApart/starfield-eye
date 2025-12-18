@@ -1,18 +1,15 @@
 package wikiScraper
 
 import MissionWikiData
-import jsonMapper
-import kotlinx.serialization.decodeFromString
-import kotlinx.serialization.encodeToString
-import org.jsoup.Jsoup
+import kotlinx.coroutines.runBlocking
 import org.jsoup.nodes.Document
 import toMissionType
 import java.io.File
 
 fun main() {
     val options = ScraperOptions("missions")
-    val urlFile = File("raw-data/mission-pages.txt")
-    if (!urlFile.exists()) urlFile.writeText("")
+    val pageFile = File("raw-data/mission-pages.txt")
+    if (!pageFile.exists()) pageFile.writeText("")
     val missionBaseUrls = listOf(
         "https://starfieldwiki.net/wiki/Category:Starfield-Missions",
         "https://starfieldwiki.net/wiki/Starfield:Missions",
@@ -20,14 +17,19 @@ fun main() {
         "https://starfieldwiki.net/wiki/Starfield:Crimson_Fleet_Missions",
         "https://starfieldwiki.net/wiki/Starfield:Freestar_Rangers_Missions",
         "https://starfieldwiki.net/wiki/Starfield:Ryujin_Industries_Missions",
-        "https://starfieldwiki.net/wiki/Starfield:UC_Vanguard_Missions")
-    fetchPagesIfEmpty(urlFile, missionBaseUrls, options.onlyOne)
+        "https://starfieldwiki.net/wiki/Starfield:UC_Vanguard_Missions"
+    )
+    runBlocking {
+        val api = authedApi()
+        api.fetchPagesIfEmpty(pageFile, missionBaseUrls, options.onlyOne)
 
-    val output = File("src/jsMain/resources/mission-wiki-data.json")
+        val output = File("src/jsMain/resources/mission-wiki-data.json")
 
-    println("Reading Missions")
-    readFromUrls(urlFile, output, ::parseMission, options)
+        println("Reading Missions")
+        api.readFromUrls(pageFile, output, ::parseMission, options)
+    }
 }
+
 private fun parseMission(url: String, page: Document): List<MissionWikiData> {
     val name = page.select("#firstHeading").firstOrNull()?.text()?.replace("Starfield:", "")
     val id = page.select(".missionHeader").firstOrNull()

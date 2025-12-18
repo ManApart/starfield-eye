@@ -4,6 +4,7 @@ import FaunaWikiData
 import Galaxy
 import Planet
 import jsonMapper
+import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.decodeFromString
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
@@ -15,19 +16,22 @@ private lateinit var planetsByName: Map<String, Planet>
 
 fun main() {
     val options = ScraperOptions("fauna")
-    val urlFile = File("raw-data/fauna-pages.txt")
-    if (!urlFile.exists()) urlFile.writeText("")
-    fetchPagesIfEmpty(
-        urlFile,
-        listOf("https://starfieldwiki.net/wiki/Category:Starfield-Creatures-All"),
-        options.onlyOne
-    )
+    val pageFile = File("raw-data/fauna-pages.txt")
+    if (!pageFile.exists()) pageFile.writeText("")
+    runBlocking {
+        val api = authedApi()
+        api.fetchPagesIfEmpty(
+            pageFile,
+            listOf("Category:Starfield-Creatures-All"),
+            options.onlyOne
+        )
 
-    val output = File("src/jsMain/resources/fauna-wiki-data.json")
+        val output = File("src/jsMain/resources/fauna-wiki-data.json")
 
-    println("Reading Fauna")
-    planetsByName = jsonMapper.decodeFromString<Galaxy>(File("src/jsMain/resources/data.json").readText()).planets.values.associateBy { it.name }
-    readFromUrls(urlFile, output, ::parseFauna, options)
+        println("Reading Fauna")
+        planetsByName = jsonMapper.decodeFromString<Galaxy>(File("src/jsMain/resources/data.json").readText()).planets.values.associateBy { it.name }
+        api.readFromUrls(pageFile, output, ::parseFauna, options)
+    }
 }
 
 private fun parseFauna(url: String, page: Document): List<FaunaWikiData> {
@@ -52,7 +56,7 @@ private fun parseFauna(url: String, page: Document): List<FaunaWikiData> {
 }
 
 private fun parseTable(table: Element, name: String): FaunaWikiData {
-    val planet = table.selectHeaderClean("Planet") ?: table.selectHeaderClean("Location")  ?: parsePlanet(table.select("th").first()!!)
+    val planet = table.selectHeaderClean("Planet") ?: table.selectHeaderClean("Location") ?: parsePlanet(table.select("th").first()!!)
     if (name == planet) throw IllegalStateException("Non-fauna table detected")
     val abilities = table.selectHeaderClean("Abilities")?.split(",") ?: emptyList()
     val temperament = table.selectHeaderClean("Temperament").toTemperament()

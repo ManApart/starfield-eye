@@ -1,12 +1,8 @@
 package wikiScraper
 
 import PlanetWikiData
-import jsonMapper
 import kotlinx.coroutines.runBlocking
-import kotlinx.serialization.decodeFromString
-import kotlinx.serialization.encodeToString
 import org.jsoup.nodes.Document
-import readConfig
 import toPlanet
 import java.io.File
 
@@ -16,11 +12,9 @@ private const val limit = 0
 private const val chunkSize = 100
 
 fun main() {
-    val config = readConfig()
-    val api = WikiApi(config.botCreds)
     runBlocking {
-        api.auth(config.botCreds.sessionKey)
-        val pageText = api.getPage("Starfield:Star_Systems")
+        val api = authedApi()
+        val pageText = api.getPage("Starfield:Star_Systems")!!
         File("./raw-data/cache/planets/Starfield:Star_Systems.html").writeText(pageText)
         api.close()
     }
