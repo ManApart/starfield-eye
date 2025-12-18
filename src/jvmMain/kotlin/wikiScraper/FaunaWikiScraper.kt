@@ -31,6 +31,7 @@ fun main() {
         println("Reading Fauna")
         planetsByName = jsonMapper.decodeFromString<Galaxy>(File("src/jsMain/resources/data.json").readText()).planets.values.associateBy { it.name }
         api.readFromUrls(pageFile, output, ::parseFauna, options)
+        api.close()
     }
 }
 
@@ -40,9 +41,6 @@ private fun parseFauna(url: String, page: Document): List<FaunaWikiData> {
     val allTables = page.select(".wikitable")
     val singleTable = allTables.firstOrNull { it.hasClass("infobox") }
     val variantTables = allTables.toMutableList().also { it.remove(singleTable) }
-
-    val image = page.select(".thumbinner").flatMap { it.select("img") }.firstOrNull()
-    val imageUrl = image?.attr("srcset")?.split(" ")?.firstOrNull()?.let { "https:$it" } ?: image?.attr("src")
 
     return when {
         singleTable == null && variantTables.isEmpty() -> {

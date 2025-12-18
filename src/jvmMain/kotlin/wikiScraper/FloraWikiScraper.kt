@@ -25,6 +25,7 @@ fun main() {
         planetsByName =
             jsonMapper.decodeFromString<Galaxy>(File("src/jsMain/resources/data.json").readText()).planets.values.associateBy { it.name }
         api.readFromUrls(pageFile, output, ::parseFlora, options)
+        api.close()
     }
 }
 

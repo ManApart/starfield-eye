@@ -53,6 +53,7 @@ class WikiApi(val creds: BotCreds) {
     }
 
     suspend fun getPage(pageId: String): String? {
+        println("Fetching $pageId")
         return try {
             client.get("https://starfieldwiki.net/w/api.php?action=parse&page=$pageId&format=json") {
                 userAgent()

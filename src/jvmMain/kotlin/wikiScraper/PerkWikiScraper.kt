@@ -21,7 +21,7 @@ fun main() {
     }
 }
 
-private fun parsePerk(url: String, page: Document): List<Perk> {
+private fun parsePerk(pageId: String, page: Document): List<Perk> {
     val name = page.title().replace("Starfield:", "").replace(" - Starfield Wiki", "").trim()
     val table = page.select(".wikitable").first()!!
     val category = table.selectRightTdClean("Category")
@@ -41,5 +41,5 @@ private fun parsePerk(url: String, page: Document): List<Perk> {
 
     if (category == PerkCategory.OTHER) println("Skipping $name")
 
-    return if (category == PerkCategory.OTHER) listOf() else listOf(Perk(name, category, tier, url, ""))
+    return if (category == PerkCategory.OTHER) listOf() else listOf(Perk(name, category, tier, pageId, ""))
 }

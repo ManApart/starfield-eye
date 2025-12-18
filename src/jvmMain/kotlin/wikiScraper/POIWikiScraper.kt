@@ -16,13 +16,14 @@ fun main() {
 
     println("Reading poi")
     runBlocking {
-        parsePOI(Jsoup.parse(inputFile.readText())).let { output.writeText(jsonMapper.encodeToString(it)) }
+        val api = authedApi()
+        api.parsePOI(Jsoup.parse(inputFile.readText())).let { output.writeText(jsonMapper.encodeToString(it)) }
+        api.close()
     }
 
 }
 
-private suspend fun parsePOI(page: Document): List<PointOfInterest> {
-    val api = authedApi()
+private suspend fun WikiApi.parsePOI(page: Document): List<PointOfInterest> {
     return page.select("li.tocsection-4").first()!!.select("a").flatMap { page.select(it.attr("href")) }.filter { it.id() != "Fixed_Points_of_Interest" }.flatMap { section ->
         val type = section.id().toPOIType()
         var contents = section.parent()!!.nextElementSibling()!!
@@ -32,7 +33,7 @@ private suspend fun parsePOI(page: Document): List<PointOfInterest> {
             val link = li.select("a").toList().first { it.hasAttr("title") }
             val url = link.attr("href")
             //TODO - test
-            val detailPage = api.fetch(url, "places", true)
+            val detailPage = fetch(url, "places", true)
 //            val detailPage = fetch("https://starfieldwiki.net:$url", "places", true)
             val description = detailPage.select("p").first()?.text() ?: ""
             val locationSentence = detailPage.select("table").select("td").map { it.text() }.firstOrNull { it.startsWith("On the planet") }
@@ -48,5 +49,4 @@ private suspend fun parsePOI(page: Document): List<PointOfInterest> {
             PointOfInterest(link!!.text(), description, type, url, system, planet)
         }
     }
-
 }

@@ -27,10 +27,11 @@ fun main() {
 
         println("Reading Missions")
         api.readFromUrls(pageFile, output, ::parseMission, options)
+        api.close()
     }
 }
 
-private fun parseMission(url: String, page: Document): List<MissionWikiData> {
+private fun parseMission(pageId: String, page: Document): List<MissionWikiData> {
     val name = page.select("#firstHeading").firstOrNull()?.text()?.replace("Starfield:", "")
     val id = page.select(".missionHeader").firstOrNull()
         ?.select("tr")?.firstOrNull { row ->
@@ -39,5 +40,5 @@ private fun parseMission(url: String, page: Document): List<MissionWikiData> {
     return if (name != null && id != null) {
         val type = id.toMissionType()
         listOf(MissionWikiData(name, id, type))
-    } else emptyList<MissionWikiData>().also { println("Did not find info for ${page.baseUri()}") }
+    } else emptyList<MissionWikiData>().also { println("Did not find info for $pageId") }
 }
