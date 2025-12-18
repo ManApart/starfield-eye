@@ -6,3 +6,4 @@ raw-data
 mod/Data/SFSE/plugins/sfse_plugin_console_web/
 mod/starfield-eye.zip
 .kotlin/
+config.json

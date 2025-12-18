@@ -2,9 +2,11 @@ package wikiScraper
 
 import PlanetWikiData
 import jsonMapper
+import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import org.jsoup.nodes.Document
+import readConfig
 import toPlanet
 import java.io.File
 
@@ -14,29 +16,34 @@ private const val limit = 0
 private const val chunkSize = 100
 
 fun main() {
-    val output = File("raw-data/planet-wiki-data.json")
-    val existing = (if (output.exists()) {
-        jsonMapper.decodeFromString<Map<String, PlanetWikiData>>(output.readText()).toMutableMap()
-    } else mapOf()).toMutableMap()
-
-    getPlanetNames()
-        .also { println("Reading ${it.size} Planets") }
-        .chunked(chunkSize)
-        .flatMap { chunk ->
-            chunk.mapNotNull { name ->
-                try {
-                    fetch("https://starfieldwiki.net/wiki/Starfield:$name", "planets").let { name to it }
-                } catch (e: Exception) {
-                    null
-                }
-            }.also {
-                println("Downloaded ${it.size}")
-            }
-        }
-        .mapNotNull { (name, data) -> parseWikiData(name, data) }
-        .forEach { existing[it.name] = it }
-
-    output.writeText(jsonMapper.encodeToString(existing))
+    val config = readConfig()
+    val api = WikiApi(config.botCreds)
+    runBlocking {
+        api.auth()
+    }
+//    val output = File("raw-data/planet-wiki-data.json")
+//    val existing = (if (output.exists()) {
+//        jsonMapper.decodeFromString<Map<String, PlanetWikiData>>(output.readText()).toMutableMap()
+//    } else mapOf()).toMutableMap()
+//
+//    getPlanetNames()
+//        .also { println("Reading ${it.size} Planets") }
+//        .chunked(chunkSize)
+//        .flatMap { chunk ->
+//            chunk.mapNotNull { name ->
+//                try {
+//                    fetch("https://starfieldwiki.net/wiki/Starfield:$name", "planets").let { name to it }
+//                } catch (e: Exception) {
+//                    null
+//                }
+//            }.also {
+//                println("Downloaded ${it.size}")
+//            }
+//        }
+//        .mapNotNull { (name, data) -> parseWikiData(name, data) }
+//        .forEach { existing[it.name] = it }
+//
+//    output.writeText(jsonMapper.encodeToString(existing))
 }
 
 private fun getPlanetNames(): List<String> {
