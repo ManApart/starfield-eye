@@ -1,68 +1,64 @@
 package wikiScraper
 
 import PlanetWikiData
+import jsonMapper
 import kotlinx.coroutines.runBlocking
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.encodeToString
 import org.jsoup.nodes.Document
-import toPlanet
 import java.io.File
 
-private const val onlyOne = false
-private const val start = 0
-private const val limit = 0
 private const val chunkSize = 100
 
 fun main() {
+    val output = File("raw-data/planet-wiki-data.json")
+    val existing = (if (output.exists()) {
+        jsonMapper.decodeFromString<Map<String, PlanetWikiData>>(output.readText()).toMutableMap()
+    } else mapOf()).toMutableMap()
+
     runBlocking {
         val api = authedApi()
-        val pageText = api.getPage("Starfield:Star_Systems")!!
-        File("./raw-data/cache/planets/Starfield:Star_Systems.html").writeText(pageText)
+        getPlanetNames(api)
+            .also { println("Reading ${it.size} Planets") }
+            .chunked(chunkSize)
+            .flatMap { chunk ->
+                chunk.mapNotNull { id ->
+                    try {
+                        api.fetch(id, "planets").let { id to it }
+                    } catch (e: Exception) {
+                        null
+                    }
+                }.also {
+                    println("Downloaded ${it.size}")
+                }
+            }
+            .mapNotNull { (id, data) -> parseWikiData(id, data) }
+            .forEach { existing[it.name] = it }
         api.close()
     }
-//    val output = File("raw-data/planet-wiki-data.json")
-//    val existing = (if (output.exists()) {
-//        jsonMapper.decodeFromString<Map<String, PlanetWikiData>>(output.readText()).toMutableMap()
-//    } else mapOf()).toMutableMap()
-//
-//    getPlanetNames()
-//        .also { println("Reading ${it.size} Planets") }
-//        .chunked(chunkSize)
-//        .flatMap { chunk ->
-//            chunk.mapNotNull { name ->
-//                try {
-//                    fetch("https://starfieldwiki.net/wiki/Starfield:$name", "planets").let { name to it }
-//                } catch (e: Exception) {
-//                    null
-//                }
-//            }.also {
-//                println("Downloaded ${it.size}")
-//            }
-//        }
-//        .mapNotNull { (name, data) -> parseWikiData(name, data) }
-//        .forEach { existing[it.name] = it }
-//
-//    output.writeText(jsonMapper.encodeToString(existing))
+
+    output.writeText(jsonMapper.encodeToString(existing))
 }
 
-private fun getPlanetNames(): List<String> {
-    return if (onlyOne) listOf("Earth") else {
-        File("./raw-data/galaxy.csv")
-            .readLines().drop(2).map { it.toPlanet() }
-            .map { it.name.replace(" ", "_") }
-            .drop(start)
-            .let { if (limit == 0) it else it.take(limit) }
+private suspend fun getPlanetNames(api: WikiApi): List<String> {
+    val doc = api.fetch("Starfield:Star_Systems", "planets")
+    return doc.select("table").first()!!.select("tr").drop(1).flatMap { row ->
+        val planets = row.selectTd(2)?.select("a")?.map { it.attr("href").split("/").last() } ?: emptyList()
+        val moons = row.selectTd(3)?.select("a")?.map { it.attr("href").split("/").last() } ?: emptyList()
+        planets + moons
     }
 }
 
-private fun parseWikiData(name: String, document: Document): PlanetWikiData? {
+private fun parseWikiData(id: String, document: Document): PlanetWikiData? {
     return try {
-        attemptParseWikiData(name, document)
+        attemptParseWikiData(id, document)
     } catch (e: Exception) {
-        println("Unable to get data for $name")
+        println("Unable to get data for $id")
         null
     }
 }
 
-private fun attemptParseWikiData(name: String, document: Document): PlanetWikiData {
+private fun attemptParseWikiData(id: String, document: Document): PlanetWikiData {
     val data: Map<String, List<String>> = document.select(".infobox").select("tr").mapNotNull { row ->
         val title = row.selectFirst("th")?.text()?.trim()
         val cols = row.select("td")
@@ -81,7 +77,7 @@ private fun attemptParseWikiData(name: String, document: Document): PlanetWikiDa
     val resources = data["Resources"]?.flatMap { it.replace("  ", " ").split(" ") } ?: listOf()
 
     return PlanetWikiData(
-        name.replace("_", " "),
+        id.replace("_", " "),
         data["Type"]?.first() ?: "",
         data["Temperature"]?.first() ?: "",
         data["Atmosphere"]?.first() ?: "",

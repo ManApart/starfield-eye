@@ -8,10 +8,12 @@ import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.plugins.cookies.*
 import io.ktor.client.request.*
 import io.ktor.client.request.forms.*
+import io.ktor.client.statement.bodyAsText
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import jsonMapper
 import readConfig
+import red
 
 suspend fun authedApi(): WikiApi {
     val creds = readConfig().botCreds
@@ -45,8 +47,12 @@ class WikiApi(val creds: BotCreds) {
                     append("format", "json")
                 }))
             }
+            val responseCookie = authResp.setCookie()["sfwiki_BPsession"] ?: authResp.setCookie()["sfwiki_session"]
+            if (responseCookie == null){
+                println(red(authResp.bodyAsText()))
+            }
 
-            authResp.setCookie()["sfwiki_BPsession"]!!.value
+            responseCookie!!.value
         }
         cookie += "; sfwiki_BPsession=${session}"
         println("Updated cookie with session $session")
