@@ -64,6 +64,10 @@ fun Element.selectTd(col: Int): Element? {
     return select("td").takeIf { it.size > col }?.get(col)
 }
 
+fun Element.selectColumn(cell: Int): List<Element> {
+    return select("tr").mapNotNull { it.select("td").getOrNull(cell) }
+}
+
 fun parseName(box: Element): String {
     return if (box.text().contains(")")) {
         box.text().let { it.substring(0, it.indexOf(")") + 1) }.trim()
@@ -77,5 +81,26 @@ fun parsePlanet(box: Element): String {
         box.select("a").first()!!.text().trim()
     } else {
         box.text()
+    }
+}
+
+fun Element.getUrlId(): String? {
+    return select("a").firstOrNull()?.attr("href")?.split("/")?.lastOrNull()
+}
+
+fun Element.getUrlIds(): List<String> {
+    return select("a").mapNotNull { it.attr("href").split("/").lastOrNull() }
+}
+
+fun Element?.rowsToMap(): Map<String, List<String>> {
+    return if(this == null) mapOf () else {
+        select("tr").mapNotNull { row ->
+            val title = row.selectFirst("th")?.text()?.trim()
+            val cols = row.select("td")
+            if (title == null || cols.isEmpty()) null else {
+                val data = cols.map { it.text().replace("◆", "").trim() }
+                title to data
+            }
+        }.toMap()
     }
 }

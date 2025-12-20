@@ -12,6 +12,7 @@ private val failedPlanetResourceLookups = mutableSetOf<String>()
 private val failedSystemResourceLookups = mutableSetOf<String>()
 private val failedWikiResourceLookups = mutableSetOf<String>()
 
+//TODO - union both wiki and csv data for things like shattered space
 fun main() {
     val rawBiomes = File("./raw-data/biomedata.csv").readLines().drop(2).map { it.toBiome() }.groupBy { it.starId }
     val rawStars = File("./raw-data/stars.csv").readLines().drop(2).map { it.toStar() }

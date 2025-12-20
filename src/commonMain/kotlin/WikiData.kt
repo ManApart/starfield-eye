@@ -6,6 +6,19 @@ interface WikiData {
 }
 
 @Serializable
+data class StarWikiData(
+    override val name: String,
+    val catalogueId: String,
+    val level: Int,
+    val spectral: String,
+    val temp: Int,
+    val mass: Float,
+    val radius: Float,
+    val magnitude: Float,
+    val planetIds: List<String>,
+): WikiData
+
+@Serializable
 data class PlanetWikiData(
     override val name: String = "",
     val type: String = "",
@@ -17,6 +30,7 @@ data class PlanetWikiData(
     val water: String = "",
     val resources: List<String> = listOf(),
     val traits: List<String> = listOf(),
+    val moonIds: List<String> = listOf(),
 ) : WikiData
 
 @Serializable

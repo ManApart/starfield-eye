@@ -9,15 +9,15 @@ import org.jsoup.nodes.Document
 import toPOIType
 import java.io.File
 
-
+//TODO - redo to read from planets
 fun main() {
-    val inputFile = File("raw-data/places.html")
     val output = File("src/jsMain/resources/poi-wiki-data.json")
 
     println("Reading poi")
     runBlocking {
         val api = authedApi()
-        api.parsePOI(Jsoup.parse(inputFile.readText())).let { output.writeText(jsonMapper.encodeToString(it)) }
+        val doc = api.fetch("Starfield:Places", "places")
+        api.parsePOI(doc).let { output.writeText(jsonMapper.encodeToString(it)) }
         api.close()
     }
 

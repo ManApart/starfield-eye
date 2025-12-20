@@ -12,23 +12,34 @@ import io.ktor.client.statement.bodyAsText
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import jsonMapper
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import readConfig
 import red
 
-suspend fun authedApi(): WikiApi {
+fun authedApi(): WikiApi {
     val creds = readConfig().botCreds
-    return WikiApi(creds).also { it.auth(creds.sessionKey) }
+    return WikiApi(creds)
 }
 
 class WikiApi(val creds: BotCreds) {
+    private var isAuthed = false
+    private val mutex = Mutex()
     private var cookie = creds.cookie.replace("\n", "")
+    private val sessionKey = creds.sessionKey
     private val client = HttpClient(Jetty) {
         install(ContentNegotiation) { json(jsonMapper) }
     }
 
     fun close() = client.close()
 
-    suspend fun auth(sessionKey: String?) {
+    private suspend fun authIfNeeded() {
+        mutex.withLock {
+            if (!isAuthed) auth(sessionKey)
+        }
+    }
+
+    suspend fun auth(sessionKey: String? = null) {
         val session = if (sessionKey != null) sessionKey else {
             println("Fetching Session Key")
             val token = client.get("https://starfieldwiki.net/w/api.php?action=query&meta=tokens&type=login&format=json") {
@@ -48,7 +59,7 @@ class WikiApi(val creds: BotCreds) {
                 }))
             }
             val responseCookie = authResp.setCookie()["sfwiki_BPsession"] ?: authResp.setCookie()["sfwiki_session"]
-            if (responseCookie == null){
+            if (responseCookie == null) {
                 println(red(authResp.bodyAsText()))
             }
 
@@ -56,9 +67,11 @@ class WikiApi(val creds: BotCreds) {
         }
         cookie += "; sfwiki_BPsession=${session}"
         println("Updated cookie with session $session")
+        isAuthed = true
     }
 
     suspend fun getPage(pageId: String): String? {
+        authIfNeeded()
         println("Fetching $pageId")
         return try {
             client.get("https://starfieldwiki.net/w/api.php?action=parse&page=$pageId&format=json") {
