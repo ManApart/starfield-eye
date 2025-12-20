@@ -3079,11 +3079,6 @@
         "type": "CITY_OTHER"
     },
     {
-        "name": "Residential: Scenic View / Earth",
-        "id": "City_NA_FAB_Quest09",
-        "type": "CITY_OTHER"
-    },
-    {
         "name": "Residential: Thrift Store",
         "id": "City_NA_FAB_Quest11",
         "type": "CITY_OTHER"
@@ -4202,6 +4197,11 @@
     {
         "name": "Secret Lives",
         "id": "Crucible01"
+    },
+    {
+        "name": "One Small Step",
+        "id": "MQ101",
+        "type": "MAIN"
     },
     {
         "name": "The Old Neighborhood",

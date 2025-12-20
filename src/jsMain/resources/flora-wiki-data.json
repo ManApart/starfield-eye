@@ -1,7 +1,6 @@
 [
     {
         "name": "Abyss Pine Seedling",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/61/SF-flora-Abyss_Pine_Seedling.jpg/450px-SF-flora-Abyss_Pine_Seedling.jpg",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
         "biomes": [
@@ -16,7 +15,6 @@
     },
     {
         "name": "Abyss Pine Seedling",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/61/SF-flora-Abyss_Pine_Seedling.jpg/450px-SF-flora-Abyss_Pine_Seedling.jpg",
         "planet": "Bel II",
         "planetId": "69192-2",
         "biomes": [
@@ -26,7 +24,6 @@
     },
     {
         "name": "Abyss Pine Seedling",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/61/SF-flora-Abyss_Pine_Seedling.jpg/450px-SF-flora-Abyss_Pine_Seedling.jpg",
         "planet": "Beta Ternion III",
         "planetId": "119058-3",
         "biomes": [
@@ -37,7 +34,6 @@
     },
     {
         "name": "Abyss Pine Seedling",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/61/SF-flora-Abyss_Pine_Seedling.jpg/450px-SF-flora-Abyss_Pine_Seedling.jpg",
         "planet": "Charybdis II",
         "planetId": "56075-2",
         "biomes": [
@@ -49,7 +45,6 @@
     },
     {
         "name": "Abyss Pine Seedling",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/61/SF-flora-Abyss_Pine_Seedling.jpg/450px-SF-flora-Abyss_Pine_Seedling.jpg",
         "planet": "Moloch II",
         "planetId": "68463-2",
         "biomes": [
@@ -61,7 +56,6 @@
     },
     {
         "name": "Abyss Pine Seedling",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/61/SF-flora-Abyss_Pine_Seedling.jpg/450px-SF-flora-Abyss_Pine_Seedling.jpg",
         "planet": "Rutherford III",
         "planetId": "64587-3",
         "biomes": [
@@ -73,7 +67,6 @@
     },
     {
         "name": "Abyss Pine Seedling",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/61/SF-flora-Abyss_Pine_Seedling.jpg/450px-SF-flora-Abyss_Pine_Seedling.jpg",
         "planet": "Sumati",
         "planetId": "88327-2",
         "biomes": [
@@ -85,7 +78,6 @@
     },
     {
         "name": "Abyss Pine Seedling",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/61/SF-flora-Abyss_Pine_Seedling.jpg/450px-SF-flora-Abyss_Pine_Seedling.jpg",
         "planet": "Ursa Minor II",
         "planetId": "118743-2",
         "biomes": [
@@ -115,7 +107,6 @@
     },
     {
         "name": "Apollo Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/ef/SF-flora-Apollo_Fireleaf.jpg/450px-SF-flora-Apollo_Fireleaf.jpg",
         "planet": "Cassiopeia I",
         "biomes": [
             "Deciduous Forest",
@@ -127,7 +118,6 @@
     },
     {
         "name": "Apollo Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/ef/SF-flora-Apollo_Fireleaf.jpg/450px-SF-flora-Apollo_Fireleaf.jpg",
         "planet": "Feynman III",
         "planetId": "86469-3",
         "biomes": [
@@ -138,7 +128,6 @@
     },
     {
         "name": "Apollo Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/ef/SF-flora-Apollo_Fireleaf.jpg/450px-SF-flora-Apollo_Fireleaf.jpg",
         "planet": "Maheo I",
         "planetId": "118988-1",
         "biomes": [
@@ -150,7 +139,6 @@
     },
     {
         "name": "Arc Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/5e/SF-flora-Arc_Root.jpg/450px-SF-flora-Arc_Root.jpg",
         "planet": "Cassiopeia IV-a",
         "biomes": [
             "Plateau",
@@ -160,7 +148,6 @@
     },
     {
         "name": "Arc Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/5e/SF-flora-Arc_Root.jpg/450px-SF-flora-Arc_Root.jpg",
         "planet": "Vesta",
         "planetId": "83865-2",
         "biomes": [
@@ -192,7 +179,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Algorab III-b",
         "planetId": "60776-9",
         "biomes": [
@@ -204,7 +190,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Bel I",
         "planetId": "69192-1",
         "biomes": [
@@ -216,7 +201,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Huygens IV",
         "planetId": "73082-4",
         "biomes": [
@@ -226,7 +210,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Hyla II",
         "planetId": "70096-2",
         "biomes": [
@@ -236,7 +219,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Ka'zaal",
         "planetId": "76835-2",
         "biomes": [
@@ -247,7 +229,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Polvo",
         "planetId": "119198-1",
         "biomes": [
@@ -258,7 +239,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Rana VI-a",
         "planetId": "69766-17",
         "biomes": [
@@ -268,7 +248,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Schrodinger III",
         "planetId": "87902-3",
         "biomes": [
@@ -279,7 +258,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Serpentis III",
         "biomes": [
             "Swamp"
@@ -288,7 +266,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Tau Ceti II",
         "planetId": "8087-2",
         "biomes": [
@@ -298,7 +275,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Tirna VIII-c",
         "planetId": "57270-25",
         "biomes": [
@@ -311,7 +287,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Xi Ophiuchi VIII-b",
         "planetId": "84636-24",
         "biomes": [
@@ -322,7 +297,6 @@
     },
     {
         "name": "Aruna Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Aruna_Goldenglow.jpg/450px-SF-flora-Aruna_Goldenglow.jpg",
         "planet": "Zeta Ophiuchi I",
         "planetId": "119147-1",
         "biomes": [
@@ -358,7 +332,6 @@
     },
     {
         "name": "Ash Sweeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8b/SF-flora-Ash_Sweeper.jpg/450px-SF-flora-Ash_Sweeper.jpg",
         "planet": "Gamma Vulpes II-a",
         "planetId": "75489-7",
         "biomes": [
@@ -369,7 +342,6 @@
     },
     {
         "name": "Ash Sweeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8b/SF-flora-Ash_Sweeper.jpg/450px-SF-flora-Ash_Sweeper.jpg",
         "planet": "Guniibuu VI-b",
         "planetId": "84147-23",
         "biomes": [
@@ -380,7 +352,6 @@
     },
     {
         "name": "Ash Sweeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8b/SF-flora-Ash_Sweeper.jpg/450px-SF-flora-Ash_Sweeper.jpg",
         "planet": "Khayyam II",
         "planetId": "65150-2",
         "biomes": [
@@ -392,7 +363,6 @@
     },
     {
         "name": "Ash Sweeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8b/SF-flora-Ash_Sweeper.jpg/450px-SF-flora-Ash_Sweeper.jpg",
         "planet": "Rivera I",
         "planetId": "118819-1",
         "biomes": [
@@ -404,7 +374,6 @@
     },
     {
         "name": "Ash Sweeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/8/8b/SF-flora-Ash_Sweeper.jpg/450px-SF-flora-Ash_Sweeper.jpg",
         "planet": "Sparta III",
         "planetId": "79252-3",
         "biomes": [
@@ -560,7 +529,6 @@
     },
     {
         "name": "Aurora Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-flora-Aurora_Palm.jpg/450px-SF-flora-Aurora_Palm.jpg",
         "planet": "Alpha Andraste II",
         "planetId": "5325-2",
         "biomes": [
@@ -570,7 +538,6 @@
     },
     {
         "name": "Aurora Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-flora-Aurora_Palm.jpg/450px-SF-flora-Aurora_Palm.jpg",
         "planet": "Beta Marae I",
         "planetId": "119159-1",
         "biomes": [
@@ -583,7 +550,6 @@
     },
     {
         "name": "Aurora Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-flora-Aurora_Palm.jpg/450px-SF-flora-Aurora_Palm.jpg",
         "planet": "Copernicus III",
         "planetId": "76816-3",
         "biomes": [
@@ -594,7 +560,6 @@
     },
     {
         "name": "Aurora Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-flora-Aurora_Palm.jpg/450px-SF-flora-Aurora_Palm.jpg",
         "planet": "Groombridge VIII-a",
         "planetId": "57767-24",
         "biomes": [
@@ -606,7 +571,6 @@
     },
     {
         "name": "Aurora Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-flora-Aurora_Palm.jpg/450px-SF-flora-Aurora_Palm.jpg",
         "planet": "Jemison",
         "planetId": "71456-3",
         "biomes": [
@@ -617,7 +581,6 @@
     },
     {
         "name": "Aurora Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-flora-Aurora_Palm.jpg/450px-SF-flora-Aurora_Palm.jpg",
         "planet": "Kang III",
         "planetId": "71517-3",
         "biomes": [
@@ -628,7 +591,6 @@
     },
     {
         "name": "Aurora Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-flora-Aurora_Palm.jpg/450px-SF-flora-Aurora_Palm.jpg",
         "planet": "Marduk III",
         "planetId": "60805-3",
         "biomes": [
@@ -638,7 +600,6 @@
     },
     {
         "name": "Aurora Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-flora-Aurora_Palm.jpg/450px-SF-flora-Aurora_Palm.jpg",
         "planet": "Rasalhague II",
         "planetId": "85769-2",
         "biomes": [
@@ -649,7 +610,6 @@
     },
     {
         "name": "Aurora Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-flora-Aurora_Palm.jpg/450px-SF-flora-Aurora_Palm.jpg",
         "planet": "Strix I",
         "planetId": "72407-1",
         "biomes": [
@@ -659,7 +619,6 @@
     },
     {
         "name": "Aurora Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-flora-Aurora_Palm.jpg/450px-SF-flora-Aurora_Palm.jpg",
         "planet": "Tau Ceti VIII-b",
         "planetId": "8087-19",
         "biomes": [
@@ -670,7 +629,6 @@
     },
     {
         "name": "Aurora Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-flora-Aurora_Palm.jpg/450px-SF-flora-Aurora_Palm.jpg",
         "planet": "Tirna II",
         "planetId": "57270-2",
         "biomes": [
@@ -681,7 +639,6 @@
     },
     {
         "name": "Aurora Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c2/SF-flora-Aurora_Palm.jpg/450px-SF-flora-Aurora_Palm.jpg",
         "planet": "Vesta",
         "planetId": "83865-2",
         "biomes": [
@@ -831,7 +788,6 @@
     },
     {
         "name": "Bitter Bramble",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/9/91/SF-flora-Bitter_Bramble.jpg/450px-SF-flora-Bitter_Bramble.jpg",
         "planet": "Feynman IV",
         "planetId": "86469-4",
         "biomes": [
@@ -846,7 +802,6 @@
     },
     {
         "name": "Bitter Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/8/88/SF-flora-Bitter_Goldenglow.jpg/450px-SF-flora-Bitter_Goldenglow.jpg",
         "planet": "Altair II",
         "planetId": "97338-2",
         "biomes": [
@@ -856,7 +811,6 @@
     },
     {
         "name": "Bitter Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/8/88/SF-flora-Bitter_Goldenglow.jpg/450px-SF-flora-Bitter_Goldenglow.jpg",
         "planet": "Eridani II",
         "planetId": "15471-2",
         "biomes": [
@@ -868,7 +822,6 @@
     },
     {
         "name": "Bitter Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/8/88/SF-flora-Bitter_Goldenglow.jpg/450px-SF-flora-Bitter_Goldenglow.jpg",
         "planet": "Gagarin",
         "planetId": "71456-2",
         "biomes": [
@@ -878,7 +831,6 @@
     },
     {
         "name": "Bitter Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/8/88/SF-flora-Bitter_Goldenglow.jpg/450px-SF-flora-Bitter_Goldenglow.jpg",
         "planet": "Heisenberg II",
         "planetId": "83344-2",
         "biomes": [
@@ -890,7 +842,6 @@
     },
     {
         "name": "Bitter Goldenglow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/8/88/SF-flora-Bitter_Goldenglow.jpg/450px-SF-flora-Bitter_Goldenglow.jpg",
         "planet": "Marduk III",
         "planetId": "60805-3",
         "biomes": [
@@ -909,7 +860,6 @@
     },
     {
         "name": "Bleeding Heart Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/56/SF-flora-Bleeding_Heart_Vine.jpg/450px-SF-flora-Bleeding_Heart_Vine.jpg",
         "planet": "Al-Battani II",
         "planetId": "65147-2",
         "biomes": [
@@ -919,7 +869,6 @@
     },
     {
         "name": "Bleeding Heart Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/56/SF-flora-Bleeding_Heart_Vine.jpg/450px-SF-flora-Bleeding_Heart_Vine.jpg",
         "planet": "Bardeen III",
         "planetId": "90582-3",
         "biomes": [
@@ -930,7 +879,6 @@
     },
     {
         "name": "Bleeding Heart Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/56/SF-flora-Bleeding_Heart_Vine.jpg/450px-SF-flora-Bleeding_Heart_Vine.jpg",
         "planet": "Celebrai II",
         "biomes": [
             "Mountains",
@@ -940,7 +888,6 @@
     },
     {
         "name": "Bleeding Heart Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/56/SF-flora-Bleeding_Heart_Vine.jpg/450px-SF-flora-Bleeding_Heart_Vine.jpg",
         "planet": "Polvo",
         "planetId": "119198-1",
         "biomes": [
@@ -951,7 +898,6 @@
     },
     {
         "name": "Bleeding Heart Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/56/SF-flora-Bleeding_Heart_Vine.jpg/450px-SF-flora-Bleeding_Heart_Vine.jpg",
         "planet": "Rana III",
         "planetId": "69766-3",
         "biomes": [
@@ -962,7 +908,6 @@
     },
     {
         "name": "Bleeding Heart Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/56/SF-flora-Bleeding_Heart_Vine.jpg/450px-SF-flora-Bleeding_Heart_Vine.jpg",
         "planet": "Rivera I",
         "planetId": "118819-1",
         "biomes": [
@@ -974,7 +919,6 @@
     },
     {
         "name": "Bleeding Heart Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/56/SF-flora-Bleeding_Heart_Vine.jpg/450px-SF-flora-Bleeding_Heart_Vine.jpg",
         "planet": "Schrodinger III",
         "planetId": "87902-3",
         "biomes": [
@@ -986,7 +930,6 @@
     },
     {
         "name": "Blistered Hornbulb",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/e4/SF-flora-Blistered_Hornbulb.jpg/450px-SF-flora-Blistered_Hornbulb.jpg",
         "planet": "Feynman IV",
         "planetId": "86469-4",
         "biomes": [
@@ -1032,7 +975,6 @@
     },
     {
         "name": "Blooming Slopefeather",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4d/SF-flora-Blooming_Slopefeather.jpg/450px-SF-flora-Blooming_Slopefeather.jpg",
         "planet": "Denebola I-b",
         "planetId": "57459-6",
         "biomes": [
@@ -1043,7 +985,6 @@
     },
     {
         "name": "Blooming Slopefeather",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4d/SF-flora-Blooming_Slopefeather.jpg/450px-SF-flora-Blooming_Slopefeather.jpg",
         "planet": "Ixyll II",
         "planetId": "62328-2",
         "biomes": [
@@ -1056,7 +997,6 @@
     },
     {
         "name": "Blooming Slopefeather",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4d/SF-flora-Blooming_Slopefeather.jpg/450px-SF-flora-Blooming_Slopefeather.jpg",
         "planet": "Lantana VIII-b",
         "planetId": "57584-17",
         "biomes": [
@@ -1066,7 +1006,6 @@
     },
     {
         "name": "Blooming Slopefeather",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4d/SF-flora-Blooming_Slopefeather.jpg/450px-SF-flora-Blooming_Slopefeather.jpg",
         "planet": "Montara Luna",
         "planetId": "72432-18",
         "biomes": [
@@ -1153,7 +1092,6 @@
     },
     {
         "name": "Bog Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4a/SF-flora-Bog_Bloom.jpg/450px-SF-flora-Bog_Bloom.jpg",
         "planet": "Beta Marae I",
         "planetId": "119159-1",
         "biomes": [
@@ -1164,7 +1102,6 @@
     },
     {
         "name": "Bog Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4a/SF-flora-Bog_Bloom.jpg/450px-SF-flora-Bog_Bloom.jpg",
         "planet": "Procyon III",
         "planetId": "37173-3",
         "biomes": [
@@ -1177,7 +1114,6 @@
     },
     {
         "name": "Bog Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4a/SF-flora-Bog_Bloom.jpg/450px-SF-flora-Bog_Bloom.jpg",
         "planet": "Pyraas II",
         "planetId": "68415-2",
         "biomes": [
@@ -1187,7 +1123,6 @@
     },
     {
         "name": "Bog Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4a/SF-flora-Bog_Bloom.jpg/450px-SF-flora-Bog_Bloom.jpg",
         "planet": "Pyraas VII-b",
         "planetId": "68415-14",
         "biomes": [
@@ -1197,7 +1132,6 @@
     },
     {
         "name": "Boreas Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1b/SF-flora-Boreas_Root.jpg/450px-SF-flora-Boreas_Root.jpg",
         "planet": "Decaran I",
         "planetId": "119105-1",
         "biomes": [
@@ -1207,7 +1141,6 @@
     },
     {
         "name": "Boreas Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1b/SF-flora-Boreas_Root.jpg/450px-SF-flora-Boreas_Root.jpg",
         "planet": "Eridani III",
         "planetId": "15471-3",
         "biomes": [
@@ -1217,7 +1150,6 @@
     },
     {
         "name": "Boreas Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1b/SF-flora-Boreas_Root.jpg/450px-SF-flora-Boreas_Root.jpg",
         "planet": "Freya III",
         "planetId": "72341-3",
         "biomes": [
@@ -1228,7 +1160,6 @@
     },
     {
         "name": "Boreas Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1b/SF-flora-Boreas_Root.jpg/450px-SF-flora-Boreas_Root.jpg",
         "planet": "Jemison",
         "planetId": "71456-3",
         "biomes": [
@@ -1240,7 +1171,6 @@
     },
     {
         "name": "Boreas Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1b/SF-flora-Boreas_Root.jpg/450px-SF-flora-Boreas_Root.jpg",
         "planet": "Khayyam II",
         "planetId": "65150-2",
         "biomes": [
@@ -1253,7 +1183,6 @@
     },
     {
         "name": "Boreas Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1b/SF-flora-Boreas_Root.jpg/450px-SF-flora-Boreas_Root.jpg",
         "planet": "Tidacha I",
         "planetId": "82337-1",
         "biomes": [
@@ -1265,7 +1194,6 @@
     },
     {
         "name": "Bowing Shadeleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d5/SF-flora-Bowing_Shadeleaf.jpg/450px-SF-flora-Bowing_Shadeleaf.jpg",
         "planet": "Bardeen III",
         "planetId": "90582-3",
         "biomes": [
@@ -1278,7 +1206,6 @@
     },
     {
         "name": "Bowing Shadeleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d5/SF-flora-Bowing_Shadeleaf.jpg/450px-SF-flora-Bowing_Shadeleaf.jpg",
         "planet": "Celebrai II",
         "biomes": [
             "Mountains",
@@ -1288,7 +1215,6 @@
     },
     {
         "name": "Bowing Shadeleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d5/SF-flora-Bowing_Shadeleaf.jpg/450px-SF-flora-Bowing_Shadeleaf.jpg",
         "planet": "Kumasi II",
         "planetId": "56828-2",
         "biomes": [
@@ -1300,7 +1226,6 @@
     },
     {
         "name": "Bowing Shadeleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d5/SF-flora-Bowing_Shadeleaf.jpg/450px-SF-flora-Bowing_Shadeleaf.jpg",
         "planet": "Masada III",
         "planetId": "83021-3",
         "biomes": [
@@ -1312,7 +1237,6 @@
     },
     {
         "name": "Bowing Shadeleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d5/SF-flora-Bowing_Shadeleaf.jpg/450px-SF-flora-Bowing_Shadeleaf.jpg",
         "planet": "Polvo",
         "planetId": "119198-1",
         "biomes": [
@@ -1323,7 +1247,6 @@
     },
     {
         "name": "Bowing Shadeleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d5/SF-flora-Bowing_Shadeleaf.jpg/450px-SF-flora-Bowing_Shadeleaf.jpg",
         "planet": "Syrma III",
         "biomes": [
             "Volcanic",
@@ -1374,7 +1297,6 @@
     },
     {
         "name": "Broadleaf Rose",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f4/SF-Flora-Broadleaf-Rose.jpg/450px-SF-Flora-Broadleaf-Rose.jpg",
         "planet": "Hawking I",
         "planetId": "73489-1",
         "biomes": [
@@ -1384,7 +1306,6 @@
     },
     {
         "name": "Broadleaf Rose",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f4/SF-Flora-Broadleaf-Rose.jpg/450px-SF-Flora-Broadleaf-Rose.jpg",
         "planet": "Jemison",
         "planetId": "71456-3",
         "biomes": [
@@ -1398,7 +1319,6 @@
     },
     {
         "name": "Broadleaf Rose",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f4/SF-Flora-Broadleaf-Rose.jpg/450px-SF-Flora-Broadleaf-Rose.jpg",
         "planet": "Khayyam II",
         "planetId": "65150-2",
         "biomes": [
@@ -1409,7 +1329,6 @@
     },
     {
         "name": "Broadleaf Rose",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f4/SF-Flora-Broadleaf-Rose.jpg/450px-SF-Flora-Broadleaf-Rose.jpg",
         "planet": "McClure II",
         "planetId": "119106-2",
         "biomes": [
@@ -1420,7 +1339,6 @@
     },
     {
         "name": "Broadleaf Rose",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f4/SF-Flora-Broadleaf-Rose.jpg/450px-SF-Flora-Broadleaf-Rose.jpg",
         "planet": "Oborum I",
         "planetId": "119143-1",
         "biomes": [
@@ -1432,7 +1350,6 @@
     },
     {
         "name": "Broadleaf Rose",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f4/SF-Flora-Broadleaf-Rose.jpg/450px-SF-Flora-Broadleaf-Rose.jpg",
         "planet": "Porrima III",
         "planetId": "61748-3",
         "biomes": [
@@ -1444,7 +1361,6 @@
     },
     {
         "name": "Broadleaf Rose",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f4/SF-Flora-Broadleaf-Rose.jpg/450px-SF-Flora-Broadleaf-Rose.jpg",
         "planet": "Rivera I",
         "planetId": "118819-1",
         "biomes": [
@@ -1456,7 +1372,6 @@
     },
     {
         "name": "Broadleaf Rose",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f4/SF-Flora-Broadleaf-Rose.jpg/450px-SF-Flora-Broadleaf-Rose.jpg",
         "planet": "Syrma VII-a",
         "biomes": [
             "Deciduous Forest",
@@ -1468,7 +1383,6 @@
     },
     {
         "name": "Broadleaf Rose",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f4/SF-Flora-Broadleaf-Rose.jpg/450px-SF-Flora-Broadleaf-Rose.jpg",
         "planet": "Vega II-c",
         "planetId": "90979-7",
         "biomes": [
@@ -1563,7 +1477,6 @@
     },
     {
         "name": "Caelus Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/06/SF-flora-Caelus_Pokeweed.jpg/450px-SF-flora-Caelus_Pokeweed.jpg",
         "planet": "Hyla II",
         "planetId": "70096-2",
         "biomes": [
@@ -1573,7 +1486,6 @@
     },
     {
         "name": "Caelus Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/06/SF-flora-Caelus_Pokeweed.jpg/450px-SF-flora-Caelus_Pokeweed.jpg",
         "planet": "Indum II",
         "planetId": "119135-2",
         "biomes": [
@@ -1587,7 +1499,6 @@
     },
     {
         "name": "Caelus Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/06/SF-flora-Caelus_Pokeweed.jpg/450px-SF-flora-Caelus_Pokeweed.jpg",
         "planet": "Serpentis III",
         "biomes": [
             "Swamp"
@@ -1690,7 +1601,6 @@
     },
     {
         "name": "Canary Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f0/SF-flora-Canary_Reed.jpg/450px-SF-flora-Canary_Reed.jpg",
         "planet": "Akila",
         "planetId": "72432-2",
         "biomes": [
@@ -1701,7 +1611,6 @@
     },
     {
         "name": "Canary Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f0/SF-flora-Canary_Reed.jpg/450px-SF-flora-Canary_Reed.jpg",
         "planet": "Algorab II",
         "planetId": "60776-2",
         "biomes": [
@@ -1711,7 +1620,6 @@
     },
     {
         "name": "Canary Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f0/SF-flora-Canary_Reed.jpg/450px-SF-flora-Canary_Reed.jpg",
         "planet": "Archimedes III",
         "planetId": "75150-3",
         "biomes": [
@@ -1722,7 +1630,6 @@
     },
     {
         "name": "Canary Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f0/SF-flora-Canary_Reed.jpg/450px-SF-flora-Canary_Reed.jpg",
         "planet": "Archimedes V-a",
         "planetId": "75150-13",
         "biomes": [
@@ -1734,7 +1641,6 @@
     },
     {
         "name": "Canary Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f0/SF-flora-Canary_Reed.jpg/450px-SF-flora-Canary_Reed.jpg",
         "planet": "Bel II",
         "planetId": "69192-2",
         "biomes": [
@@ -1744,7 +1650,6 @@
     },
     {
         "name": "Canary Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f0/SF-flora-Canary_Reed.jpg/450px-SF-flora-Canary_Reed.jpg",
         "planet": "Charybdis II",
         "planetId": "56075-2",
         "biomes": [
@@ -1756,7 +1661,6 @@
     },
     {
         "name": "Canary Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f0/SF-flora-Canary_Reed.jpg/450px-SF-flora-Canary_Reed.jpg",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
         "biomes": [
@@ -1766,7 +1670,6 @@
     },
     {
         "name": "Canary Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f0/SF-flora-Canary_Reed.jpg/450px-SF-flora-Canary_Reed.jpg",
         "planet": "Ixyll III-b",
         "planetId": "62328-12",
         "biomes": [
@@ -1777,7 +1680,6 @@
     },
     {
         "name": "Canary Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f0/SF-flora-Canary_Reed.jpg/450px-SF-flora-Canary_Reed.jpg",
         "planet": "Muphrid V-b",
         "planetId": "67711-19",
         "biomes": [
@@ -1788,7 +1690,6 @@
     },
     {
         "name": "Canary Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f0/SF-flora-Canary_Reed.jpg/450px-SF-flora-Canary_Reed.jpg",
         "planet": "Zeta Ophiuchi I",
         "planetId": "119147-1",
         "biomes": [
@@ -1798,7 +1699,6 @@
     },
     {
         "name": "Canis Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/ee/SF-Flora-Canis-Palm.jpg/450px-SF-Flora-Canis-Palm.jpg",
         "planet": "Altair II",
         "planetId": "97338-2",
         "biomes": [
@@ -1811,7 +1711,6 @@
     },
     {
         "name": "Canis Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/ee/SF-Flora-Canis-Palm.jpg/450px-SF-Flora-Canis-Palm.jpg",
         "planet": "Polvo",
         "planetId": "119198-1",
         "biomes": [
@@ -1933,7 +1832,6 @@
     },
     {
         "name": "Cliff Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/43/SF-flora-Cliff_Laurel.jpg/450px-SF-flora-Cliff_Laurel.jpg",
         "planet": "Archimedes III",
         "planetId": "75150-3",
         "biomes": [
@@ -1944,7 +1842,6 @@
     },
     {
         "name": "Cliff Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/43/SF-flora-Cliff_Laurel.jpg/450px-SF-flora-Cliff_Laurel.jpg",
         "planet": "Beta Ternion II",
         "planetId": "119058-2",
         "biomes": [
@@ -1956,7 +1853,6 @@
     },
     {
         "name": "Cliff Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/43/SF-flora-Cliff_Laurel.jpg/450px-SF-flora-Cliff_Laurel.jpg",
         "planet": "Decaran I",
         "planetId": "119105-1",
         "biomes": [
@@ -1969,7 +1865,6 @@
     },
     {
         "name": "Cliff Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/43/SF-flora-Cliff_Laurel.jpg/450px-SF-flora-Cliff_Laurel.jpg",
         "planet": "Eridani II",
         "planetId": "15471-2",
         "biomes": [
@@ -1981,7 +1876,6 @@
     },
     {
         "name": "Cliff Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/43/SF-flora-Cliff_Laurel.jpg/450px-SF-flora-Cliff_Laurel.jpg",
         "planet": "Jemison",
         "planetId": "71456-3",
         "biomes": [
@@ -1997,7 +1891,6 @@
     },
     {
         "name": "Cliff Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/43/SF-flora-Cliff_Laurel.jpg/450px-SF-flora-Cliff_Laurel.jpg",
         "planet": "Newton II",
         "planetId": "91756-2",
         "biomes": [
@@ -2008,7 +1901,6 @@
     },
     {
         "name": "Cliff Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/43/SF-flora-Cliff_Laurel.jpg/450px-SF-flora-Cliff_Laurel.jpg",
         "planet": "Newton III",
         "planetId": "91756-3",
         "biomes": [
@@ -2021,7 +1913,6 @@
     },
     {
         "name": "Cliff Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/43/SF-flora-Cliff_Laurel.jpg/450px-SF-flora-Cliff_Laurel.jpg",
         "planet": "Shoza IV",
         "planetId": "67063-4",
         "biomes": [
@@ -2033,7 +1924,6 @@
     },
     {
         "name": "Cliff Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/43/SF-flora-Cliff_Laurel.jpg/450px-SF-flora-Cliff_Laurel.jpg",
         "planet": "Sparta III",
         "planetId": "79252-3",
         "biomes": [
@@ -2043,7 +1933,6 @@
     },
     {
         "name": "Cliff Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/43/SF-flora-Cliff_Laurel.jpg/450px-SF-flora-Cliff_Laurel.jpg",
         "planet": "Syrma III",
         "biomes": [
             "Mountains"
@@ -2052,7 +1941,6 @@
     },
     {
         "name": "Cliff Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/43/SF-flora-Cliff_Laurel.jpg/450px-SF-flora-Cliff_Laurel.jpg",
         "planet": "Tau Ceti VIII-b",
         "planetId": "8087-19",
         "biomes": [
@@ -2066,7 +1954,6 @@
     },
     {
         "name": "Cliff Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/43/SF-flora-Cliff_Laurel.jpg/450px-SF-flora-Cliff_Laurel.jpg",
         "planet": "Tirna II",
         "planetId": "57270-2",
         "biomes": [
@@ -2177,7 +2064,6 @@
     },
     {
         "name": "Cold Cave Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/05/SF-flora-Cold_Cave_Nettle.jpg/450px-SF-flora-Cold_Cave_Nettle.jpg",
         "planet": "Akila",
         "planetId": "72432-2",
         "biomes": [
@@ -2187,7 +2073,6 @@
     },
     {
         "name": "Cold Cave Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/05/SF-flora-Cold_Cave_Nettle.jpg/450px-SF-flora-Cold_Cave_Nettle.jpg",
         "planet": "Bara III",
         "biomes": [
             "Frozen Plains",
@@ -2197,7 +2082,6 @@
     },
     {
         "name": "Cold Cave Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/05/SF-flora-Cold_Cave_Nettle.jpg/450px-SF-flora-Cold_Cave_Nettle.jpg",
         "planet": "Jemison",
         "planetId": "71456-3",
         "biomes": [
@@ -2211,7 +2095,6 @@
     },
     {
         "name": "Cold Cave Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/05/SF-flora-Cold_Cave_Nettle.jpg/450px-SF-flora-Cold_Cave_Nettle.jpg",
         "planet": "Lantana IV",
         "planetId": "57584-4",
         "biomes": [
@@ -2222,7 +2105,6 @@
     },
     {
         "name": "Cold Cave Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/05/SF-flora-Cold_Cave_Nettle.jpg/450px-SF-flora-Cold_Cave_Nettle.jpg",
         "planet": "Linnaeus II",
         "planetId": "91156-2",
         "biomes": [
@@ -2236,7 +2118,6 @@
     },
     {
         "name": "Cold Cave Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/05/SF-flora-Cold_Cave_Nettle.jpg/450px-SF-flora-Cold_Cave_Nettle.jpg",
         "planet": "Porrima IV-c",
         "planetId": "61748-17",
         "biomes": [
@@ -2248,7 +2129,6 @@
     },
     {
         "name": "Cold Cave Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/05/SF-flora-Cold_Cave_Nettle.jpg/450px-SF-flora-Cold_Cave_Nettle.jpg",
         "planet": "Procyon III",
         "planetId": "37173-3",
         "biomes": [
@@ -2261,7 +2141,6 @@
     },
     {
         "name": "Cold Cave Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/05/SF-flora-Cold_Cave_Nettle.jpg/450px-SF-flora-Cold_Cave_Nettle.jpg",
         "planet": "Schrodinger III",
         "planetId": "87902-3",
         "biomes": [
@@ -2275,7 +2154,6 @@
     },
     {
         "name": "Cold Cave Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/05/SF-flora-Cold_Cave_Nettle.jpg/450px-SF-flora-Cold_Cave_Nettle.jpg",
         "planet": "Verne II",
         "planetId": "63947-2",
         "biomes": [
@@ -2287,7 +2165,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Bohr II",
         "planetId": "73018-2",
         "biomes": [
@@ -2298,7 +2175,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Fermi III",
         "planetId": "73788-3",
         "biomes": [
@@ -2309,7 +2185,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
         "biomes": [
@@ -2324,7 +2199,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
         "biomes": [
@@ -2337,7 +2211,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Heinlein IV-b",
         "planetId": "71731-16",
         "biomes": [
@@ -2349,7 +2222,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Heisenberg II",
         "planetId": "83344-2",
         "biomes": [
@@ -2361,7 +2233,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Huygens III",
         "planetId": "73082-3",
         "biomes": [
@@ -2373,7 +2244,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Hyla I",
         "planetId": "70096-1",
         "biomes": [
@@ -2383,7 +2253,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Ixyll II",
         "planetId": "62328-2",
         "biomes": [
@@ -2395,7 +2264,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Ixyll III-b",
         "planetId": "62328-12",
         "biomes": [
@@ -2407,7 +2275,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Kumasi II",
         "planetId": "56828-2",
         "biomes": [
@@ -2420,7 +2287,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Magnar",
         "planetId": "98924-2",
         "biomes": [
@@ -2433,7 +2299,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Montara Luna",
         "planetId": "72432-18",
         "biomes": [
@@ -2443,7 +2308,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Newton II",
         "planetId": "91756-2",
         "biomes": [
@@ -2454,7 +2318,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Serpentis IV",
         "biomes": [
             "Coniferous Forest",
@@ -2467,7 +2330,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Syrma IV",
         "biomes": [
             "Swamp"
@@ -2476,7 +2338,6 @@
     },
     {
         "name": "Crag Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c0/SF-flora-Crag_Root.jpg/450px-SF-flora-Crag_Root.jpg",
         "planet": "Verne II",
         "planetId": "63947-2",
         "biomes": [
@@ -2604,7 +2465,6 @@
     },
     {
         "name": "Crimson Gibbet",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/7/77/SF-flora-Crimson_Gibbet.jpg/450px-SF-flora-Crimson_Gibbet.jpg",
         "planet": "Beta Ternion II",
         "planetId": "119058-2",
         "biomes": [
@@ -2614,7 +2474,6 @@
     },
     {
         "name": "Crimson Gibbet",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/7/77/SF-flora-Crimson_Gibbet.jpg/450px-SF-flora-Crimson_Gibbet.jpg",
         "planet": "Ixyll II",
         "planetId": "62328-2",
         "biomes": [
@@ -2629,7 +2488,6 @@
     },
     {
         "name": "Crimson Gibbet",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/7/77/SF-flora-Crimson_Gibbet.jpg/450px-SF-flora-Crimson_Gibbet.jpg",
         "planet": "Maheo I",
         "planetId": "118988-1",
         "biomes": [
@@ -2639,7 +2497,6 @@
     },
     {
         "name": "Crimson Gibbet",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/7/77/SF-flora-Crimson_Gibbet.jpg/450px-SF-flora-Crimson_Gibbet.jpg",
         "planet": "Tau Ceti II",
         "planetId": "8087-2",
         "biomes": [
@@ -2649,7 +2506,6 @@
     },
     {
         "name": "Crusher Leaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/bc/SF-flora-Crusher_Leaf.jpg/450px-SF-flora-Crusher_Leaf.jpg",
         "planet": "Denebola I-b",
         "planetId": "57459-6",
         "biomes": [
@@ -2761,7 +2617,6 @@
     },
     {
         "name": "Dust Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/bc/Kreet-Flora-Dust-Root.png/450px-Kreet-Flora-Dust-Root.png",
         "planet": "Kreet",
         "planetId": "88327-16",
         "biomes": [
@@ -2983,7 +2838,6 @@
     },
     {
         "name": "Fallen Star Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Fallen_Star_Palm.jpg/450px-SF-flora-Fallen_Star_Palm.jpg",
         "planet": "Andromas II",
         "planetId": "86705-2",
         "biomes": [
@@ -2993,7 +2847,6 @@
     },
     {
         "name": "Fallen Star Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Fallen_Star_Palm.jpg/450px-SF-flora-Fallen_Star_Palm.jpg",
         "planet": "Bel I",
         "planetId": "69192-1",
         "biomes": [
@@ -3003,7 +2856,6 @@
     },
     {
         "name": "Fallen Star Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Fallen_Star_Palm.jpg/450px-SF-flora-Fallen_Star_Palm.jpg",
         "planet": "Bel II",
         "planetId": "69192-2",
         "biomes": [
@@ -3013,7 +2865,6 @@
     },
     {
         "name": "Fallen Star Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Fallen_Star_Palm.jpg/450px-SF-flora-Fallen_Star_Palm.jpg",
         "planet": "Beta Ternion II",
         "planetId": "119058-2",
         "biomes": [
@@ -3025,7 +2876,6 @@
     },
     {
         "name": "Fallen Star Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Fallen_Star_Palm.jpg/450px-SF-flora-Fallen_Star_Palm.jpg",
         "planet": "Proxima Ternion III",
         "planetId": "119059-3",
         "biomes": [
@@ -3037,7 +2887,6 @@
     },
     {
         "name": "Fallen Star Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Fallen_Star_Palm.jpg/450px-SF-flora-Fallen_Star_Palm.jpg",
         "planet": "Ternion III",
         "planetId": "119060-3",
         "biomes": [
@@ -3047,7 +2896,6 @@
     },
     {
         "name": "Fallen Star Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Fallen_Star_Palm.jpg/450px-SF-flora-Fallen_Star_Palm.jpg",
         "planet": "Tirna VIII-c",
         "planetId": "57270-25",
         "biomes": [
@@ -3060,7 +2908,6 @@
     },
     {
         "name": "Fallen Star Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Fallen_Star_Palm.jpg/450px-SF-flora-Fallen_Star_Palm.jpg",
         "planet": "Ursa Major II",
         "planetId": "118742-2",
         "biomes": [
@@ -3071,7 +2918,6 @@
     },
     {
         "name": "Fallen Star Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Fallen_Star_Palm.jpg/450px-SF-flora-Fallen_Star_Palm.jpg",
         "planet": "Zeta Ophiuchi I",
         "planetId": "119147-1",
         "biomes": [
@@ -3084,7 +2930,6 @@
     },
     {
         "name": "Fallen Star Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Fallen_Star_Palm.jpg/450px-SF-flora-Fallen_Star_Palm.jpg",
         "planet": "Zosma V-a",
         "planetId": "54712-12",
         "biomes": [
@@ -3324,7 +3169,6 @@
     },
     {
         "name": "Frigid Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4f/SF-flora-Frigid_Palm.jpg/450px-SF-flora-Frigid_Palm.jpg",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
         "biomes": [
@@ -3338,7 +3182,6 @@
     },
     {
         "name": "Frigid Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4f/SF-flora-Frigid_Palm.jpg/450px-SF-flora-Frigid_Palm.jpg",
         "planet": "Kumasi II",
         "planetId": "56828-2",
         "biomes": [
@@ -3349,7 +3192,6 @@
     },
     {
         "name": "Frigid Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4f/SF-flora-Frigid_Palm.jpg/450px-SF-flora-Frigid_Palm.jpg",
         "planet": "Linnaeus II",
         "planetId": "91156-2",
         "biomes": [
@@ -3363,7 +3205,6 @@
     },
     {
         "name": "Frigid Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4f/SF-flora-Frigid_Palm.jpg/450px-SF-flora-Frigid_Palm.jpg",
         "planet": "Strix I",
         "planetId": "72407-1",
         "biomes": [
@@ -3374,7 +3215,6 @@
     },
     {
         "name": "Frigid Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/4/4f/SF-flora-Frigid_Palm.jpg/450px-SF-flora-Frigid_Palm.jpg",
         "planet": "Zeta Ophiuchi I",
         "planetId": "119147-1",
         "biomes": [
@@ -3388,7 +3228,6 @@
     },
     {
         "name": "Frost Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Frost_Reed.jpg/450px-SF-flora-Frost_Reed.jpg",
         "planet": "Bardeen III",
         "planetId": "90582-3",
         "biomes": [
@@ -3402,7 +3241,6 @@
     },
     {
         "name": "Frost Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Frost_Reed.jpg/450px-SF-flora-Frost_Reed.jpg",
         "planet": "Bohr II",
         "planetId": "73018-2",
         "biomes": [
@@ -3412,7 +3250,6 @@
     },
     {
         "name": "Frost Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Frost_Reed.jpg/450px-SF-flora-Frost_Reed.jpg",
         "planet": "Kreet",
         "planetId": "88327-16",
         "biomes": [
@@ -3425,7 +3262,6 @@
     },
     {
         "name": "Frost Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Frost_Reed.jpg/450px-SF-flora-Frost_Reed.jpg",
         "planet": "Procyon III",
         "planetId": "37173-3",
         "biomes": [
@@ -3438,7 +3274,6 @@
     },
     {
         "name": "Frost Reed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/e/eb/SF-flora-Frost_Reed.jpg/450px-SF-flora-Frost_Reed.jpg",
         "planet": "Toliman II",
         "planetId": "71453-2",
         "biomes": [
@@ -3450,7 +3285,6 @@
     },
     {
         "name": "Gasping Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/7/77/SF-Flora-Gasping_Fireleaf.jpg/450px-SF-Flora-Gasping_Fireleaf.jpg",
         "planet": "Altair II",
         "planetId": "97338-2",
         "biomes": [
@@ -3460,7 +3294,6 @@
     },
     {
         "name": "Gasping Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/7/77/SF-Flora-Gasping_Fireleaf.jpg/450px-SF-Flora-Gasping_Fireleaf.jpg",
         "planet": "Kang III",
         "planetId": "71517-3",
         "biomes": [
@@ -3470,7 +3303,6 @@
     },
     {
         "name": "Gasping Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/7/77/SF-Flora-Gasping_Fireleaf.jpg/450px-SF-Flora-Gasping_Fireleaf.jpg",
         "planet": "Rivera I",
         "planetId": "118819-1",
         "biomes": [
@@ -3827,7 +3659,6 @@
     },
     {
         "name": "Haviva Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b8/SF-flora-Haviva_Vine.jpg/450px-SF-flora-Haviva_Vine.jpg",
         "planet": "Alpha Andraste II",
         "planetId": "5325-2",
         "biomes": [
@@ -3840,7 +3671,6 @@
     },
     {
         "name": "Haviva Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b8/SF-flora-Haviva_Vine.jpg/450px-SF-flora-Haviva_Vine.jpg",
         "planet": "Andromas III",
         "planetId": "86705-3",
         "biomes": [
@@ -3964,7 +3794,6 @@
     },
     {
         "name": "Ice Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f5/SF-flora-Ice_Creeper.jpg/450px-SF-flora-Ice_Creeper.jpg",
         "planet": "Decaran I",
         "planetId": "119105-1",
         "biomes": [
@@ -3978,7 +3807,6 @@
     },
     {
         "name": "Ice Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f5/SF-flora-Ice_Creeper.jpg/450px-SF-flora-Ice_Creeper.jpg",
         "planet": "Hyla II",
         "planetId": "70096-2",
         "biomes": [
@@ -3989,7 +3817,6 @@
     },
     {
         "name": "Ice Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f5/SF-flora-Ice_Creeper.jpg/450px-SF-flora-Ice_Creeper.jpg",
         "planet": "Lantana IV",
         "planetId": "57584-4",
         "biomes": [
@@ -4000,7 +3827,6 @@
     },
     {
         "name": "Ice Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f5/SF-flora-Ice_Creeper.jpg/450px-SF-flora-Ice_Creeper.jpg",
         "planet": "Serpentis III",
         "biomes": [
             "Frozen Plains"
@@ -4012,7 +3838,6 @@
     },
     {
         "name": "Ice Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f5/SF-flora-Ice_Creeper.jpg/450px-SF-flora-Ice_Creeper.jpg",
         "planet": "Tidacha I",
         "planetId": "82337-1",
         "biomes": [
@@ -4024,7 +3849,6 @@
     },
     {
         "name": "Ice Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/f5/SF-flora-Ice_Creeper.jpg/450px-SF-flora-Ice_Creeper.jpg",
         "planet": "Zelazny III",
         "planetId": "59092-3",
         "biomes": [
@@ -4038,7 +3862,6 @@
     },
     {
         "name": "Iceblood Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/26/SF-flora-Iceblood_Vine.jpg/450px-SF-flora-Iceblood_Vine.jpg",
         "planet": "Decaran I",
         "planetId": "119105-1",
         "biomes": [
@@ -4048,7 +3871,6 @@
     },
     {
         "name": "Iceblood Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/26/SF-flora-Iceblood_Vine.jpg/450px-SF-flora-Iceblood_Vine.jpg",
         "planet": "Gamma Vulpes I",
         "planetId": "75489-1",
         "biomes": [
@@ -4058,7 +3880,6 @@
     },
     {
         "name": "Iceblood Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/26/SF-flora-Iceblood_Vine.jpg/450px-SF-flora-Iceblood_Vine.jpg",
         "planet": "Hyla II",
         "planetId": "70096-2",
         "biomes": [
@@ -4179,7 +4000,6 @@
     },
     {
         "name": "Kingshead Bugloss",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/13/SF-flora-Kingshead_Bugloss.jpg/450px-SF-flora-Kingshead_Bugloss.jpg",
         "planet": "Archimedes II",
         "planetId": "75150-2",
         "biomes": [
@@ -4189,7 +4009,6 @@
     },
     {
         "name": "Kingshead Bugloss",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/13/SF-flora-Kingshead_Bugloss.jpg/450px-SF-flora-Kingshead_Bugloss.jpg",
         "planet": "Guniibuu VI-b",
         "planetId": "84147-23",
         "biomes": [
@@ -4203,7 +4022,6 @@
     },
     {
         "name": "Kingshead Bugloss",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/13/SF-flora-Kingshead_Bugloss.jpg/450px-SF-flora-Kingshead_Bugloss.jpg",
         "planet": "Jaffa III",
         "planetId": "79431-3",
         "biomes": [
@@ -4279,7 +4097,6 @@
     },
     {
         "name": "Lattice Leaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a2/SF-flora-Lattice_Leaf.jpg/450px-SF-flora-Lattice_Leaf.jpg",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
         "biomes": [
@@ -4293,7 +4110,6 @@
     },
     {
         "name": "Lattice Leaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a2/SF-flora-Lattice_Leaf.jpg/450px-SF-flora-Lattice_Leaf.jpg",
         "planet": "Bolivar I",
         "planetId": "118818-1",
         "biomes": [
@@ -4306,7 +4122,6 @@
     },
     {
         "name": "Lattice Leaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a2/SF-flora-Lattice_Leaf.jpg/450px-SF-flora-Lattice_Leaf.jpg",
         "planet": "Maal V",
         "planetId": "74746-5",
         "biomes": [
@@ -4387,7 +4202,6 @@
     },
     {
         "name": "Leaning Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3c/SF-flora-Leaning_Fireleaf.jpg/450px-SF-flora-Leaning_Fireleaf.jpg",
         "planet": "Bradbury IV",
         "planetId": "81444-4",
         "biomes": [
@@ -4397,7 +4211,6 @@
     },
     {
         "name": "Leaning Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3c/SF-flora-Leaning_Fireleaf.jpg/450px-SF-flora-Leaning_Fireleaf.jpg",
         "planet": "Guniibuu VI-b",
         "planetId": "84147-23",
         "biomes": [
@@ -4408,7 +4221,6 @@
     },
     {
         "name": "Leaning Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3c/SF-flora-Leaning_Fireleaf.jpg/450px-SF-flora-Leaning_Fireleaf.jpg",
         "planet": "Khayyam II",
         "planetId": "65150-2",
         "biomes": [
@@ -4420,7 +4232,6 @@
     },
     {
         "name": "Leaning Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3c/SF-flora-Leaning_Fireleaf.jpg/450px-SF-flora-Leaning_Fireleaf.jpg",
         "planet": "Marduk IV",
         "planetId": "60805-4",
         "biomes": [
@@ -4431,7 +4242,6 @@
     },
     {
         "name": "Leaning Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3c/SF-flora-Leaning_Fireleaf.jpg/450px-SF-flora-Leaning_Fireleaf.jpg",
         "planet": "Piazzi I",
         "planetId": "103879-1",
         "biomes": [
@@ -4582,7 +4392,6 @@
     },
     {
         "name": "Mountain Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Mountain_Silkweed.jpg/450px-SF-flora-Mountain_Silkweed.jpg",
         "planet": "Al-Battani II",
         "planetId": "65147-2",
         "biomes": [
@@ -4592,7 +4401,6 @@
     },
     {
         "name": "Mountain Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Mountain_Silkweed.jpg/450px-SF-flora-Mountain_Silkweed.jpg",
         "planet": "Celebrai II",
         "biomes": [
             "Mountains",
@@ -4603,7 +4411,6 @@
     },
     {
         "name": "Mountain Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Mountain_Silkweed.jpg/450px-SF-flora-Mountain_Silkweed.jpg",
         "planet": "Decaran I",
         "planetId": "119105-1",
         "biomes": [
@@ -4613,7 +4420,6 @@
     },
     {
         "name": "Mountain Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Mountain_Silkweed.jpg/450px-SF-flora-Mountain_Silkweed.jpg",
         "planet": "Hyla II",
         "planetId": "70096-2",
         "biomes": [
@@ -4624,7 +4430,6 @@
     },
     {
         "name": "Mountain Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Mountain_Silkweed.jpg/450px-SF-flora-Mountain_Silkweed.jpg",
         "planet": "Linnaeus II",
         "planetId": "91156-2",
         "biomes": [
@@ -4634,7 +4439,6 @@
     },
     {
         "name": "Mountain Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Mountain_Silkweed.jpg/450px-SF-flora-Mountain_Silkweed.jpg",
         "planet": "Masada III",
         "planetId": "83021-3",
         "biomes": [
@@ -4645,7 +4449,6 @@
     },
     {
         "name": "Mountain Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Mountain_Silkweed.jpg/450px-SF-flora-Mountain_Silkweed.jpg",
         "planet": "Nemeria IV-a",
         "planetId": "84604-12",
         "biomes": [
@@ -4658,7 +4461,6 @@
     },
     {
         "name": "Mountain Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Mountain_Silkweed.jpg/450px-SF-flora-Mountain_Silkweed.jpg",
         "planet": "Strix III-a",
         "planetId": "72407-12",
         "biomes": [
@@ -4668,7 +4470,6 @@
     },
     {
         "name": "Mountain Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Mountain_Silkweed.jpg/450px-SF-flora-Mountain_Silkweed.jpg",
         "planet": "Ternion III",
         "planetId": "119060-3",
         "biomes": [
@@ -4679,7 +4480,6 @@
     },
     {
         "name": "Mountain Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Mountain_Silkweed.jpg/450px-SF-flora-Mountain_Silkweed.jpg",
         "planet": "Zeta Ophiuchi I",
         "planetId": "119147-1",
         "biomes": [
@@ -4693,7 +4493,6 @@
     },
     {
         "name": "Mustard Bugweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c3/SF-flora-Mustard_Bugweed.jpg/450px-SF-flora-Mustard_Bugweed.jpg",
         "planet": "Maal IV",
         "planetId": "74746-4",
         "biomes": [
@@ -4704,7 +4503,6 @@
     },
     {
         "name": "Mustard Bugweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c3/SF-flora-Mustard_Bugweed.jpg/450px-SF-flora-Mustard_Bugweed.jpg",
         "planet": "Schrodinger III",
         "planetId": "87902-3",
         "biomes": [
@@ -4715,7 +4513,6 @@
     },
     {
         "name": "Mustard Bugweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c3/SF-flora-Mustard_Bugweed.jpg/450px-SF-flora-Mustard_Bugweed.jpg",
         "planet": "Tirna II",
         "planetId": "57270-2",
         "biomes": [
@@ -4726,7 +4523,6 @@
     },
     {
         "name": "Mustard Bugweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/c/c3/SF-flora-Mustard_Bugweed.jpg/450px-SF-flora-Mustard_Bugweed.jpg",
         "planet": "Ursa Major I",
         "planetId": "118742-1",
         "biomes": [
@@ -4737,7 +4533,6 @@
     },
     {
         "name": "Nebula Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-flora-Nebula_Vine.jpg/450px-SF-flora-Nebula_Vine.jpg",
         "planet": "Alpha Andraste II",
         "planetId": "5325-2",
         "biomes": [
@@ -4747,7 +4542,6 @@
     },
     {
         "name": "Nebula Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-flora-Nebula_Vine.jpg/450px-SF-flora-Nebula_Vine.jpg",
         "planet": "Bara III",
         "biomes": [
             "Frozen Plains",
@@ -4758,7 +4552,6 @@
     },
     {
         "name": "Nebula Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-flora-Nebula_Vine.jpg/450px-SF-flora-Nebula_Vine.jpg",
         "planet": "Bradbury III",
         "planetId": "81444-3",
         "biomes": [
@@ -4769,7 +4562,6 @@
     },
     {
         "name": "Nebula Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-flora-Nebula_Vine.jpg/450px-SF-flora-Nebula_Vine.jpg",
         "planet": "Enlil II",
         "planetId": "78498-2",
         "biomes": [
@@ -4779,7 +4571,6 @@
     },
     {
         "name": "Nebula Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-flora-Nebula_Vine.jpg/450px-SF-flora-Nebula_Vine.jpg",
         "planet": "Gamma Vulpes II-a",
         "planetId": "75489-7",
         "biomes": [
@@ -4790,7 +4581,6 @@
     },
     {
         "name": "Nebula Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-flora-Nebula_Vine.jpg/450px-SF-flora-Nebula_Vine.jpg",
         "planet": "Heisenberg II",
         "planetId": "83344-2",
         "biomes": [
@@ -4802,7 +4592,6 @@
     },
     {
         "name": "Nebula Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-flora-Nebula_Vine.jpg/450px-SF-flora-Nebula_Vine.jpg",
         "planet": "Heisenberg V-a",
         "planetId": "83344-12",
         "biomes": [
@@ -4812,7 +4601,6 @@
     },
     {
         "name": "Nebula Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-flora-Nebula_Vine.jpg/450px-SF-flora-Nebula_Vine.jpg",
         "planet": "Hyla II",
         "planetId": "70096-2",
         "biomes": [
@@ -4823,7 +4611,6 @@
     },
     {
         "name": "Nebula Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-flora-Nebula_Vine.jpg/450px-SF-flora-Nebula_Vine.jpg",
         "planet": "Kreet",
         "planetId": "88327-16",
         "biomes": [
@@ -4833,7 +4620,6 @@
     },
     {
         "name": "Nebula Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-flora-Nebula_Vine.jpg/450px-SF-flora-Nebula_Vine.jpg",
         "planet": "Shoza III",
         "planetId": "67063-3",
         "biomes": [
@@ -4844,7 +4630,6 @@
     },
     {
         "name": "Nebula Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/54/SF-flora-Nebula_Vine.jpg/450px-SF-flora-Nebula_Vine.jpg",
         "planet": "Zelazny II",
         "planetId": "59092-2",
         "biomes": [
@@ -5132,7 +4917,6 @@
     },
     {
         "name": "Rotting Stinkroot",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Rotting_Stinkroot.jpg/450px-SF-flora-Rotting_Stinkroot.jpg",
         "planet": "Bardeen III",
         "planetId": "90582-3",
         "biomes": [
@@ -5145,7 +4929,6 @@
     },
     {
         "name": "Rotting Stinkroot",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Rotting_Stinkroot.jpg/450px-SF-flora-Rotting_Stinkroot.jpg",
         "planet": "Ka'zaal",
         "planetId": "76835-2",
         "biomes": [
@@ -5159,7 +4942,6 @@
     },
     {
         "name": "Rotting Stinkroot",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Rotting_Stinkroot.jpg/450px-SF-flora-Rotting_Stinkroot.jpg",
         "planet": "Procyon III",
         "planetId": "37173-3",
         "biomes": [
@@ -5172,7 +4954,6 @@
     },
     {
         "name": "Rotting Stinkroot",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Rotting_Stinkroot.jpg/450px-SF-flora-Rotting_Stinkroot.jpg",
         "planet": "Serpentis IV",
         "biomes": [
             "Wetlands",
@@ -5358,7 +5139,6 @@
     },
     {
         "name": "Satellite Ghostvine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1f/SF-flora-Satellite_Ghostvine.jpg/450px-SF-flora-Satellite_Ghostvine.jpg",
         "planet": "Charybdis III",
         "planetId": "56075-3",
         "biomes": [
@@ -5368,7 +5148,6 @@
     },
     {
         "name": "Satellite Ghostvine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1f/SF-flora-Satellite_Ghostvine.jpg/450px-SF-flora-Satellite_Ghostvine.jpg",
         "planet": "Enlil II",
         "planetId": "78498-2",
         "biomes": [
@@ -5379,7 +5158,6 @@
     },
     {
         "name": "Satellite Ghostvine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1f/SF-flora-Satellite_Ghostvine.jpg/450px-SF-flora-Satellite_Ghostvine.jpg",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
         "biomes": [
@@ -5389,7 +5167,6 @@
     },
     {
         "name": "Satellite Ghostvine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1f/SF-flora-Satellite_Ghostvine.jpg/450px-SF-flora-Satellite_Ghostvine.jpg",
         "planet": "Ixyll III-b",
         "planetId": "62328-12",
         "biomes": [
@@ -5400,7 +5177,6 @@
     },
     {
         "name": "Satellite Ghostvine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1f/SF-flora-Satellite_Ghostvine.jpg/450px-SF-flora-Satellite_Ghostvine.jpg",
         "planet": "Moloch II",
         "planetId": "68463-2",
         "biomes": [
@@ -5411,7 +5187,6 @@
     },
     {
         "name": "Satellite Ghostvine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1f/SF-flora-Satellite_Ghostvine.jpg/450px-SF-flora-Satellite_Ghostvine.jpg",
         "planet": "Nemeria IV-a",
         "planetId": "84604-12",
         "biomes": [
@@ -5423,7 +5198,6 @@
     },
     {
         "name": "Satellite Ghostvine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1f/SF-flora-Satellite_Ghostvine.jpg/450px-SF-flora-Satellite_Ghostvine.jpg",
         "planet": "Pyraas II",
         "planetId": "68415-2",
         "biomes": [
@@ -5434,7 +5208,6 @@
     },
     {
         "name": "Satellite Ghostvine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/1f/SF-flora-Satellite_Ghostvine.jpg/450px-SF-flora-Satellite_Ghostvine.jpg",
         "planet": "Serpentis IV",
         "biomes": [
             "Wetlands",
@@ -5575,7 +5348,6 @@
     },
     {
         "name": "Spike Spit Trap",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Spike_Spit_Trap.jpg/450px-SF-flora-Spike_Spit_Trap.jpg",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
         "biomes": [
@@ -5586,7 +5358,6 @@
     },
     {
         "name": "Spike Spit Trap",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Spike_Spit_Trap.jpg/450px-SF-flora-Spike_Spit_Trap.jpg",
         "planet": "Ixyll III-b",
         "planetId": "62328-12",
         "biomes": [
@@ -5597,7 +5368,6 @@
     },
     {
         "name": "Spike Spit Trap",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Spike_Spit_Trap.jpg/450px-SF-flora-Spike_Spit_Trap.jpg",
         "planet": "Moloch II",
         "planetId": "68463-2",
         "biomes": [
@@ -5609,7 +5379,6 @@
     },
     {
         "name": "Spike Spit Trap",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Spike_Spit_Trap.jpg/450px-SF-flora-Spike_Spit_Trap.jpg",
         "planet": "Rana VI-a",
         "planetId": "69766-17",
         "biomes": [
@@ -5619,7 +5388,6 @@
     },
     {
         "name": "Spike Spit Trap",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Spike_Spit_Trap.jpg/450px-SF-flora-Spike_Spit_Trap.jpg",
         "planet": "Rutherford III",
         "planetId": "64587-3",
         "biomes": [
@@ -5630,7 +5398,6 @@
     },
     {
         "name": "Spike Spit Trap",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Spike_Spit_Trap.jpg/450px-SF-flora-Spike_Spit_Trap.jpg",
         "planet": "Syrma IV",
         "biomes": [
             "Swamp"
@@ -5720,7 +5487,6 @@
     },
     {
         "name": "Spiral Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2d/SF-flora-Spiral_Bloom.jpg/450px-SF-flora-Spiral_Bloom.jpg",
         "planet": "Codos",
         "planetId": "72432-14",
         "biomes": [
@@ -5730,7 +5496,6 @@
     },
     {
         "name": "Spiral Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2d/SF-flora-Spiral_Bloom.jpg/450px-SF-flora-Spiral_Bloom.jpg",
         "planet": "Feynman IV",
         "planetId": "86469-4",
         "biomes": [
@@ -5746,7 +5511,6 @@
     },
     {
         "name": "Spiral Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2d/SF-flora-Spiral_Bloom.jpg/450px-SF-flora-Spiral_Bloom.jpg",
         "planet": "Hawking I",
         "planetId": "73489-1",
         "biomes": [
@@ -5759,7 +5523,6 @@
     },
     {
         "name": "Spiral Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2d/SF-flora-Spiral_Bloom.jpg/450px-SF-flora-Spiral_Bloom.jpg",
         "planet": "Hyla II",
         "planetId": "70096-2",
         "biomes": [
@@ -5769,7 +5532,6 @@
     },
     {
         "name": "Spiral Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2d/SF-flora-Spiral_Bloom.jpg/450px-SF-flora-Spiral_Bloom.jpg",
         "planet": "Ixyll II",
         "planetId": "62328-2",
         "biomes": [
@@ -5781,7 +5543,6 @@
     },
     {
         "name": "Spiral Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2d/SF-flora-Spiral_Bloom.jpg/450px-SF-flora-Spiral_Bloom.jpg",
         "planet": "Leonis IV",
         "planetId": "55476-4",
         "biomes": [
@@ -5792,7 +5553,6 @@
     },
     {
         "name": "Spiral Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2d/SF-flora-Spiral_Bloom.jpg/450px-SF-flora-Spiral_Bloom.jpg",
         "planet": "Leonis V",
         "planetId": "55476-5",
         "biomes": [
@@ -5803,7 +5563,6 @@
     },
     {
         "name": "Spiral Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2d/SF-flora-Spiral_Bloom.jpg/450px-SF-flora-Spiral_Bloom.jpg",
         "planet": "Maal V",
         "planetId": "74746-5",
         "biomes": [
@@ -5814,7 +5573,6 @@
     },
     {
         "name": "Spiral Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2d/SF-flora-Spiral_Bloom.jpg/450px-SF-flora-Spiral_Bloom.jpg",
         "planet": "Shoza II",
         "planetId": "67063-2",
         "biomes": [
@@ -5826,7 +5584,6 @@
     },
     {
         "name": "Spiral Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2d/SF-flora-Spiral_Bloom.jpg/450px-SF-flora-Spiral_Bloom.jpg",
         "planet": "Shoza III",
         "planetId": "67063-3",
         "biomes": [
@@ -5837,7 +5594,6 @@
     },
     {
         "name": "Spiral Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/2d/SF-flora-Spiral_Bloom.jpg/450px-SF-flora-Spiral_Bloom.jpg",
         "planet": "Zelazny II",
         "planetId": "59092-2",
         "biomes": [
@@ -5849,7 +5605,6 @@
     },
     {
         "name": "Spiral Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d6/SF-flora-Spiral_Creeper.jpg/450px-SF-flora-Spiral_Creeper.jpg",
         "planet": "Fermi III",
         "planetId": "73788-3",
         "biomes": [
@@ -5860,7 +5615,6 @@
     },
     {
         "name": "Spiral Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d6/SF-flora-Spiral_Creeper.jpg/450px-SF-flora-Spiral_Creeper.jpg",
         "planet": "Feynman III",
         "planetId": "86469-3",
         "biomes": [
@@ -5875,7 +5629,6 @@
     },
     {
         "name": "Spiral Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d6/SF-flora-Spiral_Creeper.jpg/450px-SF-flora-Spiral_Creeper.jpg",
         "planet": "Jemison",
         "planetId": "71456-3",
         "biomes": [
@@ -5886,7 +5639,6 @@
     },
     {
         "name": "Spiral Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d6/SF-flora-Spiral_Creeper.jpg/450px-SF-flora-Spiral_Creeper.jpg",
         "planet": "Muphrid IV",
         "planetId": "67711-4",
         "biomes": [
@@ -5899,7 +5651,6 @@
     },
     {
         "name": "Spiral Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d6/SF-flora-Spiral_Creeper.jpg/450px-SF-flora-Spiral_Creeper.jpg",
         "planet": "Nesoi",
         "planetId": "72957-1",
         "biomes": [
@@ -5909,7 +5660,6 @@
     },
     {
         "name": "Spirit Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Spirit_Laurel.jpg/450px-SF-flora-Spirit_Laurel.jpg",
         "planet": "Fermi III",
         "planetId": "73788-3",
         "biomes": [
@@ -5921,7 +5671,6 @@
     },
     {
         "name": "Spirit Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Spirit_Laurel.jpg/450px-SF-flora-Spirit_Laurel.jpg",
         "planet": "Gamma Vulpes II-a",
         "planetId": "75489-7",
         "biomes": [
@@ -5933,7 +5682,6 @@
     },
     {
         "name": "Spirit Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Spirit_Laurel.jpg/450px-SF-flora-Spirit_Laurel.jpg",
         "planet": "Groombridge VIII-a",
         "planetId": "57767-24",
         "biomes": [
@@ -5943,7 +5691,6 @@
     },
     {
         "name": "Spirit Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Spirit_Laurel.jpg/450px-SF-flora-Spirit_Laurel.jpg",
         "planet": "Ixyll II",
         "planetId": "62328-2",
         "biomes": [
@@ -5954,7 +5701,6 @@
     },
     {
         "name": "Spirit Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Spirit_Laurel.jpg/450px-SF-flora-Spirit_Laurel.jpg",
         "planet": "Ixyll III-b",
         "planetId": "62328-12",
         "biomes": [
@@ -5964,7 +5710,6 @@
     },
     {
         "name": "Spirit Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Spirit_Laurel.jpg/450px-SF-flora-Spirit_Laurel.jpg",
         "planet": "Jaffa II",
         "planetId": "79431-2",
         "biomes": [
@@ -5976,7 +5721,6 @@
     },
     {
         "name": "Spirit Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Spirit_Laurel.jpg/450px-SF-flora-Spirit_Laurel.jpg",
         "planet": "Kumasi III",
         "planetId": "56828-3",
         "biomes": [
@@ -5987,7 +5731,6 @@
     },
     {
         "name": "Spirit Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Spirit_Laurel.jpg/450px-SF-flora-Spirit_Laurel.jpg",
         "planet": "Nemeria I",
         "planetId": "84604-1",
         "biomes": [
@@ -5997,7 +5740,6 @@
     },
     {
         "name": "Spirit Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Spirit_Laurel.jpg/450px-SF-flora-Spirit_Laurel.jpg",
         "planet": "Sparta IV",
         "planetId": "79252-4",
         "biomes": [
@@ -6008,7 +5750,6 @@
     },
     {
         "name": "Spirit Laurel",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Spirit_Laurel.jpg/450px-SF-flora-Spirit_Laurel.jpg",
         "planet": "Ursa Major II",
         "planetId": "118742-2",
         "biomes": [
@@ -6021,7 +5762,6 @@
     },
     {
         "name": "Spitting Goatweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/27/SF-flora-Spitting_Goatweed.jpg/450px-SF-flora-Spitting_Goatweed.jpg",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
         "biomes": [
@@ -6036,7 +5776,6 @@
     },
     {
         "name": "Spitting Goatweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/27/SF-flora-Spitting_Goatweed.jpg/450px-SF-flora-Spitting_Goatweed.jpg",
         "planet": "Bara III",
         "biomes": [
             "Savanna"
@@ -6045,7 +5784,6 @@
     },
     {
         "name": "Spitting Goatweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/27/SF-flora-Spitting_Goatweed.jpg/450px-SF-flora-Spitting_Goatweed.jpg",
         "planet": "Charybdis III",
         "planetId": "56075-3",
         "biomes": [
@@ -6055,7 +5793,6 @@
     },
     {
         "name": "Spitting Goatweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/27/SF-flora-Spitting_Goatweed.jpg/450px-SF-flora-Spitting_Goatweed.jpg",
         "planet": "Huygens III",
         "planetId": "73082-3",
         "biomes": [
@@ -6067,7 +5804,6 @@
     },
     {
         "name": "Spitting Goatweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/27/SF-flora-Spitting_Goatweed.jpg/450px-SF-flora-Spitting_Goatweed.jpg",
         "planet": "Ixyll II",
         "planetId": "62328-2",
         "biomes": [
@@ -6080,7 +5816,6 @@
     },
     {
         "name": "Spitting Goatweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/27/SF-flora-Spitting_Goatweed.jpg/450px-SF-flora-Spitting_Goatweed.jpg",
         "planet": "Leonis V",
         "planetId": "55476-5",
         "biomes": [
@@ -6091,7 +5826,6 @@
     },
     {
         "name": "Spitting Goatweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/27/SF-flora-Spitting_Goatweed.jpg/450px-SF-flora-Spitting_Goatweed.jpg",
         "planet": "Masada III",
         "planetId": "83021-3",
         "biomes": [
@@ -6104,7 +5838,6 @@
     },
     {
         "name": "Spitting Goatweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/2/27/SF-flora-Spitting_Goatweed.jpg/450px-SF-flora-Spitting_Goatweed.jpg",
         "planet": "Ternion III",
         "planetId": "119060-3",
         "biomes": [
@@ -6114,7 +5847,6 @@
     },
     {
         "name": "Spitting Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Spitting_Pokeweed.jpg/450px-SF-flora-Spitting_Pokeweed.jpg",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
         "biomes": [
@@ -6127,7 +5859,6 @@
     },
     {
         "name": "Spitting Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Spitting_Pokeweed.jpg/450px-SF-flora-Spitting_Pokeweed.jpg",
         "planet": "Archimedes V-a",
         "planetId": "75150-13",
         "biomes": [
@@ -6139,7 +5870,6 @@
     },
     {
         "name": "Spitting Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Spitting_Pokeweed.jpg/450px-SF-flora-Spitting_Pokeweed.jpg",
         "planet": "Beta Marae I",
         "planetId": "119159-1",
         "biomes": [
@@ -6150,7 +5880,6 @@
     },
     {
         "name": "Spitting Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Spitting_Pokeweed.jpg/450px-SF-flora-Spitting_Pokeweed.jpg",
         "planet": "Freya III",
         "planetId": "72341-3",
         "biomes": [
@@ -6163,7 +5892,6 @@
     },
     {
         "name": "Spitting Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Spitting_Pokeweed.jpg/450px-SF-flora-Spitting_Pokeweed.jpg",
         "planet": "Ixyll II",
         "planetId": "62328-2",
         "biomes": [
@@ -6174,7 +5902,6 @@
     },
     {
         "name": "Spitting Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Spitting_Pokeweed.jpg/450px-SF-flora-Spitting_Pokeweed.jpg",
         "planet": "Nemeria IV-a",
         "planetId": "84604-12",
         "biomes": [
@@ -6188,7 +5915,6 @@
     },
     {
         "name": "Spitting Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Spitting_Pokeweed.jpg/450px-SF-flora-Spitting_Pokeweed.jpg",
         "planet": "Nesoi",
         "planetId": "72957-1",
         "biomes": [
@@ -6199,7 +5925,6 @@
     },
     {
         "name": "Spitting Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Spitting_Pokeweed.jpg/450px-SF-flora-Spitting_Pokeweed.jpg",
         "planet": "Sparta III",
         "planetId": "79252-3",
         "biomes": [
@@ -6210,7 +5935,6 @@
     },
     {
         "name": "Spitting Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Spitting_Pokeweed.jpg/450px-SF-flora-Spitting_Pokeweed.jpg",
         "planet": "Syrma VII-a",
         "biomes": [
             "Deciduous Forest",
@@ -6223,7 +5947,6 @@
     },
     {
         "name": "Spitting Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Spitting_Pokeweed.jpg/450px-SF-flora-Spitting_Pokeweed.jpg",
         "planet": "Ternion III",
         "planetId": "119060-3",
         "biomes": [
@@ -6234,7 +5957,6 @@
     },
     {
         "name": "Spitting Pokeweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d9/SF-flora-Spitting_Pokeweed.jpg/450px-SF-flora-Spitting_Pokeweed.jpg",
         "planet": "Vesta",
         "planetId": "83865-2",
         "biomes": [
@@ -6273,7 +5995,6 @@
     },
     {
         "name": "Star Bloom Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Star_Bloom_Root.jpg/450px-SF-flora-Star_Bloom_Root.jpg",
         "planet": "Al-Battani II",
         "planetId": "65147-2",
         "biomes": [
@@ -6284,7 +6005,6 @@
     },
     {
         "name": "Star Bloom Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Star_Bloom_Root.jpg/450px-SF-flora-Star_Bloom_Root.jpg",
         "planet": "Beta Ternion II",
         "planetId": "119058-2",
         "biomes": [
@@ -6297,7 +6017,6 @@
     },
     {
         "name": "Star Bloom Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Star_Bloom_Root.jpg/450px-SF-flora-Star_Bloom_Root.jpg",
         "planet": "Denebola I-b",
         "planetId": "57459-6",
         "biomes": [
@@ -6309,7 +6028,6 @@
     },
     {
         "name": "Star Bloom Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Star_Bloom_Root.jpg/450px-SF-flora-Star_Bloom_Root.jpg",
         "planet": "Feynman III",
         "planetId": "86469-3",
         "biomes": [
@@ -6325,7 +6043,6 @@
     },
     {
         "name": "Star Bloom Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Star_Bloom_Root.jpg/450px-SF-flora-Star_Bloom_Root.jpg",
         "planet": "Freya III",
         "planetId": "72341-3",
         "biomes": [
@@ -6336,7 +6053,6 @@
     },
     {
         "name": "Star Bloom Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Star_Bloom_Root.jpg/450px-SF-flora-Star_Bloom_Root.jpg",
         "planet": "Hawking I",
         "planetId": "73489-1",
         "biomes": [
@@ -6349,7 +6065,6 @@
     },
     {
         "name": "Star Bloom Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Star_Bloom_Root.jpg/450px-SF-flora-Star_Bloom_Root.jpg",
         "planet": "Leonis IV",
         "planetId": "55476-4",
         "biomes": [
@@ -6360,7 +6075,6 @@
     },
     {
         "name": "Star Bloom Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Star_Bloom_Root.jpg/450px-SF-flora-Star_Bloom_Root.jpg",
         "planet": "Magnar",
         "planetId": "98924-2",
         "biomes": [
@@ -6376,7 +6090,6 @@
     },
     {
         "name": "Star Bloom Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Star_Bloom_Root.jpg/450px-SF-flora-Star_Bloom_Root.jpg",
         "planet": "Nemeria I",
         "planetId": "84604-1",
         "biomes": [
@@ -6386,7 +6099,6 @@
     },
     {
         "name": "Star Bloom Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Star_Bloom_Root.jpg/450px-SF-flora-Star_Bloom_Root.jpg",
         "planet": "Nirvana II",
         "planetId": "58401-2",
         "biomes": [
@@ -6397,7 +6109,6 @@
     },
     {
         "name": "Star Bloom Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/b/b7/SF-flora-Star_Bloom_Root.jpg/450px-SF-flora-Star_Bloom_Root.jpg",
         "planet": "Xi Ophiuchi VIII-b",
         "planetId": "84636-24",
         "biomes": [
@@ -6408,7 +6119,6 @@
     },
     {
         "name": "Starburst Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/30/SF-Flora-Starburst-Silkweed.jpg/450px-SF-Flora-Starburst-Silkweed.jpg",
         "planet": "Beta Marae I",
         "planetId": "119159-1",
         "biomes": [
@@ -6419,7 +6129,6 @@
     },
     {
         "name": "Starburst Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/30/SF-Flora-Starburst-Silkweed.jpg/450px-SF-Flora-Starburst-Silkweed.jpg",
         "planet": "Cassiopeia I",
         "biomes": [
             "Coniferous Forest"
@@ -6428,7 +6137,6 @@
     },
     {
         "name": "Starburst Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/30/SF-Flora-Starburst-Silkweed.jpg/450px-SF-Flora-Starburst-Silkweed.jpg",
         "planet": "Copernicus III",
         "planetId": "76816-3",
         "biomes": [
@@ -6442,7 +6150,6 @@
     },
     {
         "name": "Starburst Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/30/SF-Flora-Starburst-Silkweed.jpg/450px-SF-Flora-Starburst-Silkweed.jpg",
         "planet": "Eridani IV",
         "planetId": "15471-4",
         "biomes": [
@@ -6452,7 +6159,6 @@
     },
     {
         "name": "Starburst Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/30/SF-Flora-Starburst-Silkweed.jpg/450px-SF-Flora-Starburst-Silkweed.jpg",
         "planet": "Marduk IV",
         "planetId": "60805-4",
         "biomes": [
@@ -6462,7 +6168,6 @@
     },
     {
         "name": "Starburst Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/30/SF-Flora-Starburst-Silkweed.jpg/450px-SF-Flora-Starburst-Silkweed.jpg",
         "planet": "Rana IV",
         "planetId": "69766-4",
         "biomes": [
@@ -6472,7 +6177,6 @@
     },
     {
         "name": "Starburst Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/30/SF-Flora-Starburst-Silkweed.jpg/450px-SF-Flora-Starburst-Silkweed.jpg",
         "planet": "Schrodinger IV",
         "planetId": "87902-4",
         "biomes": [
@@ -6483,7 +6187,6 @@
     },
     {
         "name": "Starburst Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/30/SF-Flora-Starburst-Silkweed.jpg/450px-SF-Flora-Starburst-Silkweed.jpg",
         "planet": "Shoza IV",
         "planetId": "67063-4",
         "biomes": [
@@ -6497,7 +6200,6 @@
     },
     {
         "name": "Starburst Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/30/SF-Flora-Starburst-Silkweed.jpg/450px-SF-Flora-Starburst-Silkweed.jpg",
         "planet": "Ursa Minor II",
         "planetId": "118743-2",
         "biomes": [
@@ -6508,7 +6210,6 @@
     },
     {
         "name": "Starburst Silkweed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/30/SF-Flora-Starburst-Silkweed.jpg/450px-SF-Flora-Starburst-Silkweed.jpg",
         "planet": "Vega II-c",
         "planetId": "90979-7",
         "biomes": [
@@ -6675,7 +6376,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Beta Ternion I",
         "planetId": "119058-1",
         "biomes": [
@@ -6686,7 +6386,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Cassiopeia IV-a",
         "biomes": [
             "Mountains"
@@ -6695,7 +6394,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Fermi III",
         "planetId": "73788-3",
         "biomes": [
@@ -6707,7 +6405,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
         "biomes": [
@@ -6722,7 +6419,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Heisenberg V-a",
         "planetId": "83344-12",
         "biomes": [
@@ -6735,7 +6431,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Hyla I",
         "planetId": "70096-1",
         "biomes": [
@@ -6745,7 +6440,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Leviathan IV",
         "planetId": "89684-4",
         "biomes": [
@@ -6758,7 +6452,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Piazzi I",
         "planetId": "103879-1",
         "biomes": [
@@ -6768,7 +6461,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Porrima IV-c",
         "planetId": "61748-17",
         "biomes": [
@@ -6780,7 +6472,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Pyraas II",
         "planetId": "68415-2",
         "biomes": [
@@ -6791,7 +6482,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Rana IV",
         "planetId": "69766-4",
         "biomes": [
@@ -6803,7 +6493,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Rivera I",
         "planetId": "118819-1",
         "biomes": [
@@ -6813,7 +6502,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Shoza II",
         "planetId": "67063-2",
         "biomes": [
@@ -6826,7 +6514,6 @@
     },
     {
         "name": "Stunted Pine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/3b/SF-flora-Stunted_Pine.jpg/450px-SF-flora-Stunted_Pine.jpg",
         "planet": "Tidacha I",
         "planetId": "82337-1",
         "biomes": [
@@ -6979,7 +6666,6 @@
     },
     {
         "name": "Swamp Weed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-flora-Swamp_Weed.jpg/450px-SF-flora-Swamp_Weed.jpg",
         "planet": "Ka'zaal",
         "planetId": "76835-2",
         "biomes": [
@@ -6993,7 +6679,6 @@
     },
     {
         "name": "Swamp Weed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-flora-Swamp_Weed.jpg/450px-SF-flora-Swamp_Weed.jpg",
         "planet": "Masada III",
         "planetId": "83021-3",
         "biomes": [
@@ -7004,7 +6689,6 @@
     },
     {
         "name": "Swamp Weed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-flora-Swamp_Weed.jpg/450px-SF-flora-Swamp_Weed.jpg",
         "planet": "Procyon III",
         "planetId": "37173-3",
         "biomes": [
@@ -7017,7 +6701,6 @@
     },
     {
         "name": "Swamp Weed",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/01/SF-flora-Swamp_Weed.jpg/450px-SF-flora-Swamp_Weed.jpg",
         "planet": "Zelazny III",
         "planetId": "59092-3",
         "biomes": [
@@ -7077,7 +6760,6 @@
     },
     {
         "name": "Sweet Canis Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/67/SF-flora-Sweet_Canis_Vine.jpg/450px-SF-flora-Sweet_Canis_Vine.jpg",
         "planet": "Bardeen V-c",
         "planetId": "90582-20",
         "biomes": [
@@ -7088,7 +6770,6 @@
     },
     {
         "name": "Sweet Canis Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/67/SF-flora-Sweet_Canis_Vine.jpg/450px-SF-flora-Sweet_Canis_Vine.jpg",
         "planet": "Eridani IV",
         "planetId": "15471-4",
         "biomes": [
@@ -7099,7 +6780,6 @@
     },
     {
         "name": "Sweet Canis Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/67/SF-flora-Sweet_Canis_Vine.jpg/450px-SF-flora-Sweet_Canis_Vine.jpg",
         "planet": "Indum II",
         "planetId": "119135-2",
         "biomes": [
@@ -7112,7 +6792,6 @@
     },
     {
         "name": "Sweet Canis Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/67/SF-flora-Sweet_Canis_Vine.jpg/450px-SF-flora-Sweet_Canis_Vine.jpg",
         "planet": "Lantana III",
         "planetId": "57584-3",
         "biomes": [
@@ -7125,7 +6804,6 @@
     },
     {
         "name": "Sweet Canis Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/67/SF-flora-Sweet_Canis_Vine.jpg/450px-SF-flora-Sweet_Canis_Vine.jpg",
         "planet": "Marduk IV",
         "planetId": "60805-4",
         "biomes": [
@@ -7136,7 +6814,6 @@
     },
     {
         "name": "Sweet Canis Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/67/SF-flora-Sweet_Canis_Vine.jpg/450px-SF-flora-Sweet_Canis_Vine.jpg",
         "planet": "Montara Luna",
         "planetId": "72432-18",
         "biomes": [
@@ -7148,7 +6825,6 @@
     },
     {
         "name": "Sweet Canis Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/67/SF-flora-Sweet_Canis_Vine.jpg/450px-SF-flora-Sweet_Canis_Vine.jpg",
         "planet": "Porrima III",
         "planetId": "61748-3",
         "biomes": [
@@ -7160,7 +6836,6 @@
     },
     {
         "name": "Sweet Canis Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/67/SF-flora-Sweet_Canis_Vine.jpg/450px-SF-flora-Sweet_Canis_Vine.jpg",
         "planet": "Syrma III",
         "biomes": [
             "Mountains",
@@ -7171,7 +6846,6 @@
     },
     {
         "name": "Sweet Canis Vine",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/67/SF-flora-Sweet_Canis_Vine.jpg/450px-SF-flora-Sweet_Canis_Vine.jpg",
         "planet": "Vega II-c",
         "planetId": "90979-7",
         "biomes": [
@@ -7181,7 +6855,6 @@
     },
     {
         "name": "Sweet Fumewort",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/17/SF-flora-Sweet_Fumewort.jpg/450px-SF-flora-Sweet_Fumewort.jpg",
         "planet": "Eridani III",
         "planetId": "15471-3",
         "biomes": [
@@ -7191,7 +6864,6 @@
     },
     {
         "name": "Sweet Fumewort",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/17/SF-flora-Sweet_Fumewort.jpg/450px-SF-flora-Sweet_Fumewort.jpg",
         "planet": "Fermi III",
         "planetId": "73788-3",
         "biomes": [
@@ -7202,7 +6874,6 @@
     },
     {
         "name": "Sweet Fumewort",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/17/SF-flora-Sweet_Fumewort.jpg/450px-SF-flora-Sweet_Fumewort.jpg",
         "planet": "Feynman III",
         "planetId": "86469-3",
         "biomes": [
@@ -7217,7 +6888,6 @@
     },
     {
         "name": "Sweet Fumewort",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/17/SF-flora-Sweet_Fumewort.jpg/450px-SF-flora-Sweet_Fumewort.jpg",
         "planet": "Gamma Vulpes I",
         "planetId": "75489-1",
         "biomes": [
@@ -7227,7 +6897,6 @@
     },
     {
         "name": "Sweet Fumewort",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/17/SF-flora-Sweet_Fumewort.jpg/450px-SF-flora-Sweet_Fumewort.jpg",
         "planet": "Marduk III",
         "planetId": "60805-3",
         "biomes": [
@@ -7237,7 +6906,6 @@
     },
     {
         "name": "Sweet Fumewort",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/17/SF-flora-Sweet_Fumewort.jpg/450px-SF-flora-Sweet_Fumewort.jpg",
         "planet": "Nesoi",
         "planetId": "72957-1",
         "biomes": [
@@ -7249,7 +6917,6 @@
     },
     {
         "name": "Sweet Fumewort",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/17/SF-flora-Sweet_Fumewort.jpg/450px-SF-flora-Sweet_Fumewort.jpg",
         "planet": "Ursa Major I",
         "planetId": "118742-1",
         "biomes": [
@@ -7288,7 +6955,6 @@
     },
     {
         "name": "Sweet Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/6b/SF-flora-Sweet_Root.jpg/450px-SF-flora-Sweet_Root.jpg",
         "planet": "Alpha Andraste III",
         "planetId": "5325-3",
         "biomes": [
@@ -7302,7 +6968,6 @@
     },
     {
         "name": "Sweet Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/6b/SF-flora-Sweet_Root.jpg/450px-SF-flora-Sweet_Root.jpg",
         "planet": "Tau Ceti VIII-b",
         "planetId": "8087-19",
         "biomes": [
@@ -7316,7 +6981,6 @@
     },
     {
         "name": "Sweet Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/6b/SF-flora-Sweet_Root.jpg/450px-SF-flora-Sweet_Root.jpg",
         "planet": "Zeta Ophiuchi I",
         "planetId": "119147-1",
         "biomes": [
@@ -7340,7 +7004,6 @@
     },
     {
         "name": "Sweet Yellow Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Sweet_Yellow_Creeper.jpg/450px-SF-flora-Sweet_Yellow_Creeper.jpg",
         "planet": "Ixyll II",
         "planetId": "62328-2",
         "biomes": [
@@ -7351,7 +7014,6 @@
     },
     {
         "name": "Sweet Yellow Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Sweet_Yellow_Creeper.jpg/450px-SF-flora-Sweet_Yellow_Creeper.jpg",
         "planet": "Muphrid IV",
         "planetId": "67711-4",
         "biomes": [
@@ -7363,7 +7025,6 @@
     },
     {
         "name": "Sweet Yellow Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Sweet_Yellow_Creeper.jpg/450px-SF-flora-Sweet_Yellow_Creeper.jpg",
         "planet": "Nemeria IV-a",
         "planetId": "84604-12",
         "biomes": [
@@ -7377,7 +7038,6 @@
     },
     {
         "name": "Sweet Yellow Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Sweet_Yellow_Creeper.jpg/450px-SF-flora-Sweet_Yellow_Creeper.jpg",
         "planet": "Schrodinger VIII-a",
         "planetId": "87902-20",
         "biomes": [
@@ -7388,7 +7048,6 @@
     },
     {
         "name": "Sweet Yellow Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Sweet_Yellow_Creeper.jpg/450px-SF-flora-Sweet_Yellow_Creeper.jpg",
         "planet": "Shoza II",
         "planetId": "67063-2",
         "biomes": [
@@ -7399,7 +7058,6 @@
     },
     {
         "name": "Sweet Yellow Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Sweet_Yellow_Creeper.jpg/450px-SF-flora-Sweet_Yellow_Creeper.jpg",
         "planet": "Sparta IV",
         "planetId": "79252-4",
         "biomes": [
@@ -7410,7 +7068,6 @@
     },
     {
         "name": "Sweet Yellow Creeper",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/1/16/SF-flora-Sweet_Yellow_Creeper.jpg/450px-SF-flora-Sweet_Yellow_Creeper.jpg",
         "planet": "Zeta Ophiuchi I",
         "planetId": "119147-1",
         "biomes": [
@@ -7424,7 +7081,6 @@
     },
     {
         "name": "Sweetwater Cactus",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/65/SF-Flora-Sweetwater-Cactus.jpg/450px-SF-Flora-Sweetwater-Cactus.jpg",
         "planet": "Gagarin",
         "planetId": "71456-2",
         "biomes": [
@@ -7435,7 +7091,6 @@
     },
     {
         "name": "Sweetwater Cactus",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/65/SF-Flora-Sweetwater-Cactus.jpg/450px-SF-Flora-Sweetwater-Cactus.jpg",
         "planet": "Hyla I",
         "planetId": "70096-1",
         "biomes": [
@@ -7445,7 +7100,6 @@
     },
     {
         "name": "Sweetwater Cactus",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/65/SF-Flora-Sweetwater-Cactus.jpg/450px-SF-Flora-Sweetwater-Cactus.jpg",
         "planet": "Vega II-c",
         "planetId": "90979-7",
         "biomes": [
@@ -7460,7 +7114,6 @@
     },
     {
         "name": "Sweetwater Cactus",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/6/65/SF-Flora-Sweetwater-Cactus.jpg/450px-SF-Flora-Sweetwater-Cactus.jpg",
         "planet": "Zosma V-a",
         "planetId": "54712-12",
         "biomes": [
@@ -7589,7 +7242,6 @@
     },
     {
         "name": "Titan Coleus",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a8/SF-Flora-Titan-Coleus.jpg/450px-SF-Flora-Titan-Coleus.jpg",
         "planet": "Beta Marae I",
         "planetId": "119159-1",
         "biomes": [
@@ -7601,7 +7253,6 @@
     },
     {
         "name": "Titan Coleus",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/a/a8/SF-Flora-Titan-Coleus.jpg/450px-SF-Flora-Titan-Coleus.jpg",
         "planet": "Vega II-c",
         "planetId": "90979-7",
         "biomes": [
@@ -7613,7 +7264,6 @@
     },
     {
         "name": "Tremor Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/31/SF-Flora-Tremor_Root.jpg/450px-SF-Flora-Tremor_Root.jpg",
         "planet": "Altair II",
         "planetId": "97338-2",
         "biomes": [
@@ -7623,7 +7273,6 @@
     },
     {
         "name": "Tremor Root",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/3/31/SF-Flora-Tremor_Root.jpg/450px-SF-Flora-Tremor_Root.jpg",
         "planet": "Kumasi II",
         "planetId": "56828-2",
         "biomes": [
@@ -7633,7 +7282,6 @@
     },
     {
         "name": "Tropical Maw Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/59/SF-flora-Tropical_Maw_Palm.jpg/450px-SF-flora-Tropical_Maw_Palm.jpg",
         "planet": "Enlil II",
         "planetId": "78498-2",
         "biomes": [
@@ -7643,7 +7291,6 @@
     },
     {
         "name": "Tropical Maw Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/59/SF-flora-Tropical_Maw_Palm.jpg/450px-SF-flora-Tropical_Maw_Palm.jpg",
         "planet": "Eridani II",
         "planetId": "15471-2",
         "biomes": [
@@ -7653,7 +7300,6 @@
     },
     {
         "name": "Tropical Maw Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/59/SF-flora-Tropical_Maw_Palm.jpg/450px-SF-flora-Tropical_Maw_Palm.jpg",
         "planet": "Feynman III",
         "planetId": "86469-3",
         "biomes": [
@@ -7666,7 +7312,6 @@
     },
     {
         "name": "Tropical Maw Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/59/SF-flora-Tropical_Maw_Palm.jpg/450px-SF-flora-Tropical_Maw_Palm.jpg",
         "planet": "Groombridge VIII-a",
         "planetId": "57767-24",
         "biomes": [
@@ -7676,7 +7321,6 @@
     },
     {
         "name": "Tropical Maw Palm",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/5/59/SF-flora-Tropical_Maw_Palm.jpg/450px-SF-flora-Tropical_Maw_Palm.jpg",
         "planet": "Zeta Ophiuchi I",
         "planetId": "119147-1",
         "biomes": [
@@ -7690,7 +7334,6 @@
     },
     {
         "name": "Tufted Snow Willow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/db/SF-flora-Tufted_Snow_Willow.jpg/450px-SF-flora-Tufted_Snow_Willow.jpg",
         "planet": "Archimedes II",
         "planetId": "75150-2",
         "biomes": [
@@ -7700,7 +7343,6 @@
     },
     {
         "name": "Tufted Snow Willow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/db/SF-flora-Tufted_Snow_Willow.jpg/450px-SF-flora-Tufted_Snow_Willow.jpg",
         "planet": "Feynman IV",
         "planetId": "86469-4",
         "biomes": [
@@ -7714,7 +7356,6 @@
     },
     {
         "name": "Tufted Snow Willow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/db/SF-flora-Tufted_Snow_Willow.jpg/450px-SF-flora-Tufted_Snow_Willow.jpg",
         "planet": "Jemison",
         "planetId": "71456-3",
         "biomes": [
@@ -7726,7 +7367,6 @@
     },
     {
         "name": "Tufted Snow Willow",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/db/SF-flora-Tufted_Snow_Willow.jpg/450px-SF-flora-Tufted_Snow_Willow.jpg",
         "planet": "Toliman II",
         "planetId": "71453-2",
         "biomes": [
@@ -7768,7 +7408,6 @@
     },
     {
         "name": "Twilight Cradleleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Twilight_Cradleleaf.jpg/450px-SF-flora-Twilight_Cradleleaf.jpg",
         "planet": "Bel I",
         "planetId": "69192-1",
         "biomes": [
@@ -7779,7 +7418,6 @@
     },
     {
         "name": "Twilight Cradleleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Twilight_Cradleleaf.jpg/450px-SF-flora-Twilight_Cradleleaf.jpg",
         "planet": "Magnar",
         "planetId": "98924-2",
         "biomes": [
@@ -7795,7 +7433,6 @@
     },
     {
         "name": "Twilight Cradleleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Twilight_Cradleleaf.jpg/450px-SF-flora-Twilight_Cradleleaf.jpg",
         "planet": "Montara Luna",
         "planetId": "72432-18",
         "biomes": [
@@ -7807,7 +7444,6 @@
     },
     {
         "name": "Twilight Cradleleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Twilight_Cradleleaf.jpg/450px-SF-flora-Twilight_Cradleleaf.jpg",
         "planet": "Proxima Ternion III",
         "planetId": "119059-3",
         "biomes": [
@@ -7819,7 +7455,6 @@
     },
     {
         "name": "Twilight Cradleleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Twilight_Cradleleaf.jpg/450px-SF-flora-Twilight_Cradleleaf.jpg",
         "planet": "Pyraas II",
         "planetId": "68415-2",
         "biomes": [
@@ -7829,7 +7464,6 @@
     },
     {
         "name": "Twilight Cradleleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Twilight_Cradleleaf.jpg/450px-SF-flora-Twilight_Cradleleaf.jpg",
         "planet": "Rana III",
         "planetId": "69766-3",
         "biomes": [
@@ -7839,7 +7473,6 @@
     },
     {
         "name": "Twilight Cradleleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Twilight_Cradleleaf.jpg/450px-SF-flora-Twilight_Cradleleaf.jpg",
         "planet": "Rasalhague II",
         "planetId": "85769-2",
         "biomes": [
@@ -7850,7 +7483,6 @@
     },
     {
         "name": "Twilight Cradleleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Twilight_Cradleleaf.jpg/450px-SF-flora-Twilight_Cradleleaf.jpg",
         "planet": "Rutherford III",
         "planetId": "64587-3",
         "biomes": [
@@ -7861,7 +7493,6 @@
     },
     {
         "name": "Twilight Cradleleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Twilight_Cradleleaf.jpg/450px-SF-flora-Twilight_Cradleleaf.jpg",
         "planet": "Schrodinger IV",
         "planetId": "87902-4",
         "biomes": [
@@ -7872,7 +7503,6 @@
     },
     {
         "name": "Twilight Cradleleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d0/SF-flora-Twilight_Cradleleaf.jpg/450px-SF-flora-Twilight_Cradleleaf.jpg",
         "planet": "Shoza IV",
         "planetId": "67063-4",
         "biomes": [
@@ -7882,7 +7512,6 @@
     },
     {
         "name": "Velvet Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/03/SF-flora-Velvet_Bloom.jpg/450px-SF-flora-Velvet_Bloom.jpg",
         "planet": "Archimedes III",
         "planetId": "75150-3",
         "biomes": [
@@ -7892,7 +7521,6 @@
     },
     {
         "name": "Velvet Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/03/SF-flora-Velvet_Bloom.jpg/450px-SF-flora-Velvet_Bloom.jpg",
         "planet": "Gagarin",
         "planetId": "71456-2",
         "biomes": [
@@ -7903,7 +7531,6 @@
     },
     {
         "name": "Velvet Bloom",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/0/03/SF-flora-Velvet_Bloom.jpg/450px-SF-flora-Velvet_Bloom.jpg",
         "planet": "Indum II",
         "planetId": "119135-2",
         "biomes": [
@@ -7915,7 +7542,6 @@
     },
     {
         "name": "Wanderer's Husk",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Wanderer%27s_Husk.jpg/450px-SF-flora-Wanderer%27s_Husk.jpg",
         "planet": "Alpha Andraste II",
         "planetId": "5325-2",
         "biomes": [
@@ -7928,7 +7554,6 @@
     },
     {
         "name": "Wanderer's Husk",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Wanderer%27s_Husk.jpg/450px-SF-flora-Wanderer%27s_Husk.jpg",
         "planet": "Beta Ternion I",
         "planetId": "119058-1",
         "biomes": [
@@ -7938,7 +7563,6 @@
     },
     {
         "name": "Wanderer's Husk",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Wanderer%27s_Husk.jpg/450px-SF-flora-Wanderer%27s_Husk.jpg",
         "planet": "Codos",
         "planetId": "72432-14",
         "biomes": [
@@ -7949,7 +7573,6 @@
     },
     {
         "name": "Wanderer's Husk",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Wanderer%27s_Husk.jpg/450px-SF-flora-Wanderer%27s_Husk.jpg",
         "planet": "Fermi III",
         "planetId": "73788-3",
         "biomes": [
@@ -7960,7 +7583,6 @@
     },
     {
         "name": "Wanderer's Husk",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Wanderer%27s_Husk.jpg/450px-SF-flora-Wanderer%27s_Husk.jpg",
         "planet": "Gamma Vulpes I",
         "planetId": "75489-1",
         "biomes": [
@@ -7971,7 +7593,6 @@
     },
     {
         "name": "Wanderer's Husk",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Wanderer%27s_Husk.jpg/450px-SF-flora-Wanderer%27s_Husk.jpg",
         "planet": "Huygens VII-b",
         "planetId": "73082-17",
         "biomes": [
@@ -7981,7 +7602,6 @@
     },
     {
         "name": "Wanderer's Husk",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Wanderer%27s_Husk.jpg/450px-SF-flora-Wanderer%27s_Husk.jpg",
         "planet": "Lantana VIII-b",
         "planetId": "57584-17",
         "biomes": [
@@ -7992,7 +7612,6 @@
     },
     {
         "name": "Wanderer's Husk",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/d/d2/SF-flora-Wanderer%27s_Husk.jpg/450px-SF-flora-Wanderer%27s_Husk.jpg",
         "planet": "Strix I",
         "planetId": "72407-1",
         "biomes": [
@@ -8002,7 +7621,6 @@
     },
     {
         "name": "Warren Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/9/90/SF-flora-Warren_Nettle.jpg/450px-SF-flora-Warren_Nettle.jpg",
         "planet": "Andromas II",
         "planetId": "86705-2",
         "biomes": [
@@ -8012,7 +7630,6 @@
     },
     {
         "name": "Warren Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/9/90/SF-flora-Warren_Nettle.jpg/450px-SF-flora-Warren_Nettle.jpg",
         "planet": "Celebrai II",
         "biomes": [
             "Mountains",
@@ -8023,7 +7640,6 @@
     },
     {
         "name": "Warren Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/9/90/SF-flora-Warren_Nettle.jpg/450px-SF-flora-Warren_Nettle.jpg",
         "planet": "Copernicus II",
         "planetId": "76816-2",
         "biomes": [
@@ -8035,7 +7651,6 @@
     },
     {
         "name": "Warren Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/9/90/SF-flora-Warren_Nettle.jpg/450px-SF-flora-Warren_Nettle.jpg",
         "planet": "Heisenberg II",
         "planetId": "83344-2",
         "biomes": [
@@ -8047,7 +7662,6 @@
     },
     {
         "name": "Warren Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/9/90/SF-flora-Warren_Nettle.jpg/450px-SF-flora-Warren_Nettle.jpg",
         "planet": "Tau Ceti II",
         "planetId": "8087-2",
         "biomes": [
@@ -8057,7 +7671,6 @@
     },
     {
         "name": "Warren Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/9/90/SF-flora-Warren_Nettle.jpg/450px-SF-flora-Warren_Nettle.jpg",
         "planet": "Tirna VIII-c",
         "planetId": "57270-25",
         "biomes": [
@@ -8070,7 +7683,6 @@
     },
     {
         "name": "Warren Nettle",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/9/90/SF-flora-Warren_Nettle.jpg/450px-SF-flora-Warren_Nettle.jpg",
         "planet": "Xi Ophiuchi VIII-b",
         "planetId": "84636-24",
         "biomes": [
@@ -8081,7 +7693,6 @@
     },
     {
         "name": "Weeping Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/fa/SF-flora-Weeping_Fireleaf.jpg/450px-SF-flora-Weeping_Fireleaf.jpg",
         "planet": "Guniibuu II",
         "planetId": "84147-2",
         "biomes": [
@@ -8095,7 +7706,6 @@
     },
     {
         "name": "Weeping Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/fa/SF-flora-Weeping_Fireleaf.jpg/450px-SF-flora-Weeping_Fireleaf.jpg",
         "planet": "Leviathan IV",
         "planetId": "89684-4",
         "biomes": [
@@ -8108,7 +7718,6 @@
     },
     {
         "name": "Weeping Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/fa/SF-flora-Weeping_Fireleaf.jpg/450px-SF-flora-Weeping_Fireleaf.jpg",
         "planet": "Magnar",
         "planetId": "98924-2",
         "biomes": [
@@ -8121,7 +7730,6 @@
     },
     {
         "name": "Weeping Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/fa/SF-flora-Weeping_Fireleaf.jpg/450px-SF-flora-Weeping_Fireleaf.jpg",
         "planet": "Maheo I",
         "planetId": "118988-1",
         "biomes": [
@@ -8132,7 +7740,6 @@
     },
     {
         "name": "Weeping Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/fa/SF-flora-Weeping_Fireleaf.jpg/450px-SF-flora-Weeping_Fireleaf.jpg",
         "planet": "Serpentis III",
         "biomes": [
             "Swamp"
@@ -8144,7 +7751,6 @@
     },
     {
         "name": "Weeping Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/fa/SF-flora-Weeping_Fireleaf.jpg/450px-SF-flora-Weeping_Fireleaf.jpg",
         "planet": "Shoza III",
         "planetId": "67063-3",
         "biomes": [
@@ -8158,7 +7764,6 @@
     },
     {
         "name": "Weeping Fireleaf",
-        "imageUrl": "https://images.starfieldwiki.net/thumb/f/fa/SF-flora-Weeping_Fireleaf.jpg/450px-SF-flora-Weeping_Fireleaf.jpg",
         "planet": "Ursa Major II",
         "planetId": "118742-2",
         "biomes": [
