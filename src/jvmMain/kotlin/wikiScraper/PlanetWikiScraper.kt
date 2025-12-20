@@ -73,7 +73,7 @@ private fun attemptParseWikiData(id: String, document: Document): PlanetWikiData
     val moons = document.select("h2").firstOrNull { it.text().contains("Moons") }?.nextElementSibling()?.selectColumn(1)?.mapNotNull { it.getUrlId() } ?: emptyList()
 
     return PlanetWikiData(
-        id.replace("_", " ").replace("Starfield:", "").trim(),
+        id.urlIdToName(),
         data["Type"]?.first() ?: "",
         data["Temperature"]?.first() ?: "",
         data["Atmosphere"]?.first() ?: "",
