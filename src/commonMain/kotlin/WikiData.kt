@@ -7,6 +7,8 @@ interface WikiData {
 
 @Serializable
 data class StarWikiData(
+    val wikiUrlId: String,
+    val id: String,
     override val name: String,
     val catalogueId: String,
     val level: Int,
