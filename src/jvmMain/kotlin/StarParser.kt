@@ -1,5 +1,6 @@
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
+import wikiScraper.urlIdToId
 import java.io.File
 
 val jsonMapper = kotlinx.serialization.json.Json {
@@ -49,21 +50,23 @@ fun main() {
         GalaxySummary(minX, maxX, minY, maxY, minZ, maxZ, distX, distY, distZ)
     }
 
-    //TODO - use the pair of stars to parse now instead of just rawStars
-    val systems = rawStars.associate { star ->
-        val planets = rawPlanets[star.starId] ?: emptyList()
-        val biomes = rawBiomes[star.starId] ?: emptyList()
-        val resources = resourceLookup[star.name] ?: emptyMap<String, List<ResourceType>>().also {
-            failedSystemResourceLookups.add(star.name)
+    val systems = stars.associate { (wikiStar, rawStar) ->
+        val id = wikiStar?.id ?: rawStar!!.starId.toString()
+        val rawPlanetList = rawStar?.starId?.let { rawPlanets[it] } ?: emptyList()
+        val biomes = rawStar?.starId?.let { rawBiomes[it] } ?: emptyList()
+        val resources = rawStar?.name?.let { resourceLookup[it] } ?: emptyMap<String, List<ResourceType>>().also {
+            failedSystemResourceLookups.add(id)
         }
-        star.starId to parseSystem(star, planets, biomes, floraWikiData, faunaWikiData, resources, planetWikiData)
+        val wikiPlanetList = wikiStar?.planetIds?.mapNotNull { planetWikiData[it.urlIdToId()] } ?: emptyList()
+        id to parseSystem(wikiStar, rawStar, rawPlanetList, wikiPlanetList, biomes, floraWikiData, faunaWikiData, resources)
     }
 
     println("Failed to find resources for ${failedSystemResourceLookups.size} systems: ${failedSystemResourceLookups.joinToString()}.")
     println("Failed to find resources for ${failedPlanetResourceLookups.size} planets: ${failedPlanetResourceLookups.joinToString()}.")
     println("Failed to find resources for ${failedWikiResourceLookups.size} wiki resources: ${failedWikiResourceLookups.joinToString()}.")
 
-    File("src/jsMain/resources/data.json").writeText(jsonMapper.encodeToString(Galaxy(systems, galaxySummary)))
+    //TODO - galaxy should be string
+//    File("src/jsMain/resources/data.json").writeText(jsonMapper.encodeToString(Galaxy(systems, galaxySummary)))
 }
 
 private fun matchStars(starWikiData: Collection<StarWikiData>, rawStars: List<RawStar>): List<Pair<StarWikiData?, RawStar?>> {
@@ -76,77 +79,93 @@ private fun matchStars(starWikiData: Collection<StarWikiData>, rawStars: List<Ra
         }
     }
     val missing = rawStars - stars.map { it.second }.toSet()
-    if (missing.isNotEmpty()) println("Missing Wiki for ${missing.joinToString{it?.name ?: ""}}")
+    if (missing.isNotEmpty()) println("Missing Wiki for ${missing.joinToString { it?.name ?: "" }}")
 
     return stars + missing.map { null to it }
 }
 
 private fun parseSystem(
-    rawStar: RawStar,
+    wikiStar: StarWikiData?,
+    rawStar: RawStar?,
     rawPlanets: List<RawPlanet>,
+    wikiPlanets: List<PlanetWikiData>,
     rawBiomes: List<RawBiome>,
     floraResources: Map<String, List<FloraWikiData>>,
     faunaResources: Map<String, List<FaunaWikiData>>,
     systemResources: Map<String, List<ResourceType>>,
-    wikiDataMap: Map<String, PlanetWikiData>
 ): StarSystem {
-    val star = with(rawStar) { Star(starId, catalogueId, name, spectral, temp, mass, radius, magnitude) }
-    val pos = with(rawStar) { Pos(x, y, z) }
-    val planets = rawPlanets.associate { rawPlanet ->
-        val biomes = rawBiomes.filter { it.planetId == rawPlanet.planetId }.map { it.name }
-
-        val planetWikiData = wikiDataMap[rawPlanet.name] ?: PlanetWikiData()
-        val inorganicResources = determineResources(rawPlanet, systemResources, planetWikiData)
-        val uniqueId = "${rawPlanet.starId}-${rawPlanet.planetId}"
-
-        val floraList = floraResources[uniqueId]?.map { it.resource } ?: listOf()
-        val faunaList = faunaResources[uniqueId]?.map { it.resource } ?: listOf()
-        val organicResources = (floraList + faunaList).sorted().toSet()
-
-        val flora = planetWikiData.flora.replace("[[#Flora|]]", "")
-        val fauna = planetWikiData.fauna.replace("[[#Fauna|]]", "")
-
-        val planet =
-            with(rawPlanet) {
-                Planet(
-                    planetId,
-                    starId,
-                    parentId,
-                    name,
-                    planetClass,
-                    bodyType,
-                    planetWikiData.type,
-                    radius,
-                    density,
-                    mass,
-                    gravity,
-                    year,
-                    day,
-                    asteroids,
-                    rings,
-                    planetWikiData.atmosphere,
-                    heat,
-                    planetWikiData.temperature,
-                    type,
-                    magneticField collapse planetWikiData.magnetosphere,
-                    planetWikiData.water,
-                    life,
-                    settled,
-                    flora,
-                    fauna,
-                    biomes,
-                    planetWikiData.traits,
-                    organicResources,
-                    inorganicResources
-                )
-            }
-        rawPlanet.planetId to planet
-    }
-    val nestedPlanets = planets.values.filter { it.parentId == 0 }.associate { it.id to mutableListOf<Int>() }
-    planets.values.filter { it.parentId != 0 }.forEach { moon ->
-        nestedPlanets[moon.parentId]?.add(moon.id)
-    }
+    //TODO - parse Star from both wiki and raw
+    val star = parseStar(wikiStar, rawStar)
+    val pos = with(rawStar!!) { Pos(x, y, z) }
+    val planets = parsePlanets(rawPlanets, rawBiomes, wikiPlanets, systemResources, floraResources, faunaResources)
+    val nestedPlanets = parseNestedPlanets(planets)
     return StarSystem(star, pos, planets, nestedPlanets)
+}
+
+private fun parseStar(wikiStar: StarWikiData?, rawStar: RawStar?): Star {
+    return with(rawStar!!) { Star(starId, catalogueId, name, spectral, temp, mass, radius, magnitude) }
+}
+
+private fun parsePlanets(
+    rawPlanets: List<RawPlanet>,
+    rawBiomes: List<RawBiome>,
+    wikiPlanets: List<PlanetWikiData>,
+    systemResources: Map<String, List<ResourceType>>,
+    floraResources: Map<String, List<FloraWikiData>>,
+    faunaResources: Map<String, List<FaunaWikiData>>
+): Map<Int, Planet> {
+    return emptyMap()
+//    return rawPlanets.associate { rawPlanet ->
+//        val biomes = rawBiomes.filter { it.planetId == rawPlanet.planetId }.map { it.name }
+//
+//        //TODO - match wiki data to raw
+//        val planetWikiData = wikiDataMap[rawPlanet.name] ?: PlanetWikiData()
+//        val inorganicResources = determineResources(rawPlanet, systemResources, planetWikiData)
+//        val uniqueId = "${rawPlanet.starId}-${rawPlanet.planetId}"
+//
+//        val floraList = floraResources[uniqueId]?.map { it.resource } ?: listOf()
+//        val faunaList = faunaResources[uniqueId]?.map { it.resource } ?: listOf()
+//        val organicResources = (floraList + faunaList).sorted().toSet()
+//
+//        val flora = planetWikiData.flora.replace("[[#Flora|]]", "")
+//        val fauna = planetWikiData.fauna.replace("[[#Fauna|]]", "")
+//
+//        val planet =
+//            with(rawPlanet) {
+//                Planet(
+//                    planetId,
+//                    starId,
+//                    parentId,
+//                    name,
+//                    planetClass,
+//                    bodyType,
+//                    planetWikiData.type,
+//                    radius,
+//                    density,
+//                    mass,
+//                    gravity,
+//                    year,
+//                    day,
+//                    asteroids,
+//                    rings,
+//                    planetWikiData.atmosphere,
+//                    heat,
+//                    planetWikiData.temperature,
+//                    type,
+//                    magneticField collapse planetWikiData.magnetosphere,
+//                    planetWikiData.water,
+//                    life,
+//                    settled,
+//                    flora,
+//                    fauna,
+//                    biomes,
+//                    planetWikiData.traits,
+//                    organicResources,
+//                    inorganicResources
+//                )
+//            }
+//        rawPlanet.planetId to planet
+//    }
 }
 
 private fun determineResources(
@@ -188,6 +207,15 @@ private fun parseResourceLookup(lines: List<String>): Map<String, Map<String, Li
     }
 
     return lookup
+}
+
+
+private fun parseNestedPlanets(planets: Map<Int, Planet>): Map<Int, MutableList<Int>> {
+    val nestedPlanets = planets.values.filter { it.parentId == 0 }.associate { it.id to mutableListOf<Int>() }
+    planets.values.filter { it.parentId != 0 }.forEach { moon ->
+        nestedPlanets[moon.parentId]?.add(moon.id)
+    }
+    return nestedPlanets
 }
 
 private infix fun String.collapse(other: String): String {
