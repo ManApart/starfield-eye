@@ -1,5 +1,4 @@
 import kotlinx.serialization.decodeFromString
-import kotlinx.serialization.encodeToString
 import wikiScraper.urlIdToId
 import java.io.File
 
@@ -52,13 +51,12 @@ fun main() {
 
     val systems = stars.associate { (wikiStar, rawStar) ->
         val id = wikiStar?.id ?: rawStar!!.starId.toString()
-        val rawPlanetList = rawStar?.starId?.let { rawPlanets[it] } ?: emptyList()
+        val rawPlanetsByName = (rawStar?.starId?.let { rawPlanets[it] } ?: emptyList()).associateBy { it.name }
         val biomes = rawStar?.starId?.let { rawBiomes[it] } ?: emptyList()
         val resources = rawStar?.name?.let { resourceLookup[it] } ?: emptyMap<String, List<ResourceType>>().also {
             failedSystemResourceLookups.add(id)
         }
-        val wikiPlanetList = wikiStar?.planetIds?.mapNotNull { planetWikiData[it.urlIdToId()] } ?: emptyList()
-        id to parseSystem(wikiStar, rawStar, rawPlanetList, wikiPlanetList, biomes, floraWikiData, faunaWikiData, resources)
+        id to parseSystem(wikiStar, rawStar, rawPlanetsByName, planetWikiData, biomes, floraWikiData, faunaWikiData, resources)
     }
 
     println("Failed to find resources for ${failedSystemResourceLookups.size} systems: ${failedSystemResourceLookups.joinToString()}.")
@@ -84,11 +82,22 @@ private fun matchStars(starWikiData: Collection<StarWikiData>, rawStars: List<Ra
     return stars + missing.map { null to it }
 }
 
+private fun matchPlanets(wikiPlanets: List<PlanetWikiData>, rawPlanetsByName: Map<String, RawPlanet>): List<Pair<PlanetWikiData, RawPlanet?>> {
+    val planetPairs = wikiPlanets.map { wiki ->
+        val raw = rawPlanetsByName[wiki.name]
+        if (raw == null) println("Unable to find raw planet for ${wiki.name}")
+        wiki to raw
+    }
+    val missing = rawPlanetsByName.values - planetPairs.map { it.second }.toSet()
+    if (missing.isNotEmpty()) println("Missing Wiki for ${missing.joinToString { it?.name ?: "" }}")
+    return planetPairs
+}
+
 private fun parseSystem(
     wikiStar: StarWikiData?,
     rawStar: RawStar?,
-    rawPlanets: List<RawPlanet>,
-    wikiPlanets: List<PlanetWikiData>,
+    rawPlanetsByName: Map<String, RawPlanet>,
+    planetWikiData: Map<String, PlanetWikiData>,
     rawBiomes: List<RawBiome>,
     floraResources: Map<String, List<FloraWikiData>>,
     faunaResources: Map<String, List<FaunaWikiData>>,
@@ -97,7 +106,13 @@ private fun parseSystem(
     //TODO - parse Star from both wiki and raw
     val star = parseStar(wikiStar, rawStar)
     val pos = with(rawStar!!) { Pos(x, y, z) }
-    val planets = parsePlanets(rawPlanets, rawBiomes, wikiPlanets, systemResources, floraResources, faunaResources)
+
+    val wikiPlanetList = wikiStar?.planetIds?.mapNotNull { planetWikiData[it.urlIdToId()] } ?: emptyList()
+    val planetPairs = matchPlanets(wikiPlanetList, rawPlanetsByName)
+
+    val planets = parsePlanets(planetPairs, rawBiomes, systemResources, floraResources, faunaResources)
+
+    //TODO - use wiki and raw
     val nestedPlanets = parseNestedPlanets(planets)
     return StarSystem(star, pos, planets, nestedPlanets)
 }
@@ -107,9 +122,8 @@ private fun parseStar(wikiStar: StarWikiData?, rawStar: RawStar?): Star {
 }
 
 private fun parsePlanets(
-    rawPlanets: List<RawPlanet>,
+    planetPairs: List<Pair<PlanetWikiData, RawPlanet?>>,
     rawBiomes: List<RawBiome>,
-    wikiPlanets: List<PlanetWikiData>,
     systemResources: Map<String, List<ResourceType>>,
     floraResources: Map<String, List<FloraWikiData>>,
     faunaResources: Map<String, List<FaunaWikiData>>
