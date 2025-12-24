@@ -71,7 +71,10 @@ data class RawStar(
     val magnitude: Float,
 ) {
     @Transient
-    val wikiUrlId = "Starfield:" + name.replace(" ", "-") + "_System"
+    val id =  name.replace(" ", "-")
+
+    @Transient
+    val wikiUrlId = "Starfield:${id}_System"
 }
 
 fun String.toStar(): RawStar {

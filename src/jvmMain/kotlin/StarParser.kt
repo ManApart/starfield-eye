@@ -118,7 +118,7 @@ private fun parseSystem(
 
 private fun parseStar(w: StarWikiData?, r: RawStar?): Star {
     return Star(
-        w?.id ?: r!!.starId.toString(),
+        w?.id ?: r!!.id,
         r?.starId,
         w?.wikiUrlId ?: r!!.wikiUrlId,
         w?.catalogueId ?: r!!.catalogueId,
