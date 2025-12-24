@@ -103,9 +103,8 @@ private fun parseSystem(
     faunaResources: Map<String, List<FaunaWikiData>>,
     systemResources: Map<String, List<ResourceType>>,
 ): StarSystem {
-    //TODO - parse Star from both wiki and raw
     val star = parseStar(wikiStar, rawStar)
-    val pos = with(rawStar!!) { Pos(x, y, z) }
+    val pos = rawStar?.let { Pos(it.x, it.y, it.z) } ?: Pos()
 
     val wikiPlanetList = wikiStar?.planetIds?.mapNotNull { planetWikiData[it.urlIdToId()] } ?: emptyList()
     val planetPairs = matchPlanets(wikiPlanetList, rawPlanetsByName)
@@ -117,8 +116,20 @@ private fun parseSystem(
     return StarSystem(star, pos, planets, nestedPlanets)
 }
 
-private fun parseStar(wikiStar: StarWikiData?, rawStar: RawStar?): Star {
-    return with(rawStar!!) { Star(starId, catalogueId, name, spectral, temp, mass, radius, magnitude) }
+private fun parseStar(w: StarWikiData?, r: RawStar?): Star {
+    return Star(
+        w?.id ?: r!!.starId.toString(),
+        r?.starId,
+        w?.wikiUrlId ?: r!!.wikiUrlId,
+        w?.catalogueId ?: r!!.catalogueId,
+        w?.name ?: r!!.name,
+        w?.level ?: 0,
+        w?.spectral ?: r!!.spectral,
+        w?.temp ?: r!!.temp.toString(),
+        w?.mass ?: r!!.mass.toString(),
+        w?.radius ?: r!!.radius,
+        w?.magnitude ?: r!!.magnitude,
+    )
 }
 
 private fun parsePlanets(

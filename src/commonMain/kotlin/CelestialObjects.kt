@@ -3,12 +3,15 @@ import kotlinx.serialization.Transient
 
 @Serializable
 data class Star(
-    val id: Int,
+    val id: String,
+    val rawId: Int?,
+    val wikiUrlId: String,
     val catalogueId: String,
     val name: String,
+    val level: Int,
     val spectral: String,
-    val temp: Int,
-    val mass: Float,
+    val temp: String,
+    val mass: String,
     val radius: Float,
     val magnitude: Float,
 )
@@ -50,7 +53,8 @@ data class Planet(
 }
 
 @Serializable
-data class Pos(val x: Float, val y: Float, val z: Float)
+data class Pos(val x: Float = 0f, val y: Float = 0f, val z: Float = 0f)
+
 @Serializable
 data class StarSystem(
     val star: Star,

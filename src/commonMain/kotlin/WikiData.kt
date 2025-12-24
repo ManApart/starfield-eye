@@ -9,8 +9,8 @@ interface WikiData {
 data class StarWikiData(
     val wikiUrlId: String,
     val id: String,
-    override val name: String,
     val catalogueId: String,
+    override val name: String,
     val level: Int,
     val spectral: String,
     val temp: String,
