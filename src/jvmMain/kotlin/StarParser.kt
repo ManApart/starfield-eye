@@ -139,7 +139,6 @@ private fun parsePlanets(
     floraResources: Map<String, List<FloraWikiData>>,
     faunaResources: Map<String, List<FaunaWikiData>>
 ): Map<Int, Planet> {
-    return emptyMap()
 //    return rawPlanets.associate { rawPlanet ->
 //        val biomes = rawBiomes.filter { it.planetId == rawPlanet.planetId }.map { it.name }
 //
@@ -191,6 +190,7 @@ private fun parsePlanets(
 //            }
 //        rawPlanet.planetId to planet
 //    }
+    return emptyMap()
 }
 
 private fun determineResources(

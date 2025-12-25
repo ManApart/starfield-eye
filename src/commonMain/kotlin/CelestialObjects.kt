@@ -18,7 +18,8 @@ data class Star(
 
 @Serializable
 data class Planet(
-    val id: Int,
+    val id: String,
+    val planetId: Int,
     val starId: Int,
     val parentId: Int,
     val name: String,
