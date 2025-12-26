@@ -48,7 +48,6 @@ data class FaunaWikiData(
     override val name: String = "",
     val temperament: Temperament = Temperament.UNKNOWN,
     val planet: String? = null,
-    //TODO - use system+ planet id, NOT int id
     val planetId: String? = null,
     val biomes: List<String> = listOf(),
     val resource: String,
@@ -56,21 +55,20 @@ data class FaunaWikiData(
     val other: Map<String, String> = mapOf()
 ) : WikiData {
     @Transient
-    val uniqueId = "$planetId-$name"
+    val uniqueId = "$planetId:$name"
 }
 
 @Serializable
 data class FloraWikiData(
     override val name: String = "",
     val planet: String? = null,
-    //TODO - use system+ planet id, NOT int id
     val planetId: String? = null,
     val biomes: List<String> = listOf(),
     val resource: String,
     val other: Map<String, String> = mapOf()
 ) : WikiData {
     @Transient
-    val uniqueId = "$planetId-$name"
+    val uniqueId = "$planetId:$name"
 }
 
 enum class PerkCategory(val color: String) { PHYSICAL("#4b5e46"), SOCIAL("#a68d4f"), COMBAT("#944236"), SCIENCE("#43688a"), TECH("#6b5887"), OTHER("#000") }

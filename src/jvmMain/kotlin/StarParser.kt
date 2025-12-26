@@ -151,7 +151,7 @@ private fun parsePlanets(
         val biomes = rawBiomes.filter { it.planetId == r.planetId }.map { it.name }
 
         val inorganicResources = determineResources(r, systemResources, w)
-        val uniqueId = "${star.id}-${w.id}"
+        val uniqueId = "${star.id}:${w.id}"
 
         val floraList = floraResources[uniqueId]?.map { it.resource } ?: listOf()
         val faunaList = faunaResources[uniqueId]?.map { it.resource } ?: listOf()
@@ -243,16 +243,20 @@ private fun parseResourceLookup(lines: List<String>): Map<String, Map<String, Li
 
 private fun parseNestedPlanets(planets: Map<String, Planet>): Map<String, List<String>> {
     val nestedPlanets = mutableMapOf<String, MutableList<String>>()
+    val children = mutableSetOf<Planet>()
     planets.values.forEach { parent ->
         if (parent.moonIds.isNotEmpty()) nestedPlanets[parent.id] = mutableListOf()
         parent.moonIds.forEach { moonId ->
             planets[moonId]?.let { moon ->
                 moon.parentId = parent.id
                 nestedPlanets[parent.id]?.add(moon.id)
+                children.add(moon)
             } ?: println("Unable to find with $moonId referenced by ${parent.id} in ${parent.parentId}")
         }
     }
-    return nestedPlanets
+    //Add planets who have no children
+    (planets.values.toSet() - children).forEach { nestedPlanets.putIfAbsent(it.id, mutableListOf()) }
+    return nestedPlanets.toSortedMap()
 }
 
 private infix fun String.collapse(other: String): String {

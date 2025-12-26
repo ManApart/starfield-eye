@@ -213,6 +213,16 @@
                     "traits": [
                         "Global Glacial Recession"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Analgesic",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Metabolic Agent",
+                        "Ornamental",
+                        "Sealant",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Pb",
                         "Ni",
@@ -790,6 +800,8 @@
                     "Al-Battani_I-a",
                     "Al-Battani_I-b",
                     "Al-Battani_I-c"
+                ],
+                "Al-Battani_II": [
                 ],
                 "Al-Battani_III": [
                     "Al-Battani_III-a",
@@ -1819,6 +1831,8 @@
                 }
             },
             "planetChildren": {
+                "Alchiba_I": [
+                ],
                 "Alchiba_II": [
                     "Alchiba_II-a"
                 ],
@@ -1829,6 +1843,9 @@
                 ],
                 "Alchiba_IV": [
                     "Alchiba_IV-a"
+                ],
+                "Alchiba_IX": [
+                    "Alchiba_IX-a"
                 ],
                 "Alchiba_V": [
                     "Alchiba_V-a"
@@ -1847,9 +1864,6 @@
                 "Alchiba_VIII": [
                     "Alchiba_VIII-a",
                     "Alchiba_VIII-b"
-                ],
-                "Alchiba_IX": [
-                    "Alchiba_IX-a"
                 ],
                 "Alchiba_X": [
                     "Alchiba_X-a",
@@ -1956,6 +1970,12 @@
                         "Ecological Consortium",
                         "Psychotropic Biota",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "RCOOH",
@@ -2084,6 +2104,16 @@
                         "Global Glacial Recession",
                         "Psychotropic Biota"
                     ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Fiber",
+                        "Lubricant",
+                        "Membrane",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Structural"
+                    ],
                     "inorganicResources": [
                         "RCOOH",
                         "RCOC",
@@ -2204,6 +2234,10 @@
                 }
             },
             "planetChildren": {
+                "Algorab_I": [
+                ],
+                "Algorab_II": [
+                ],
                 "Algorab_III": [
                     "Algorab_III-a",
                     "Algorab_III-b",
@@ -2344,6 +2378,12 @@
                     "traits": [
                         "Continual Conductor"
                     ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Spice"
+                    ],
                     "inorganicResources": [
                         "Ta",
                         "He3",
@@ -2389,6 +2429,17 @@
                     "traits": [
                         "Psychotropic Biota",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Biosuppressant",
+                        "Cosmetic",
+                        "Hallucinogen",
+                        "Metabolic Agent",
+                        "Sealant",
+                        "Sedative",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Xe",
@@ -2538,6 +2589,16 @@
             "planetChildren": {
                 "Alpha_Andraste_I": [
                     "Alpha_Andraste_I-a"
+                ],
+                "Alpha_Andraste_II": [
+                ],
+                "Alpha_Andraste_III": [
+                ],
+                "Alpha_Andraste_IV": [
+                ],
+                "Alpha_Andraste_V": [
+                ],
+                "Alpha_Andraste_VI": [
                 ]
             }
         },
@@ -2721,6 +2782,18 @@
                     "traits": [
                         "Coralline Landmass"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Antimicrobial",
+                        "Cosmetic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "SiH3Cl",
                         "Pb",
@@ -2768,6 +2841,17 @@
                     ],
                     "moonIds": [
                         "Kurtz"
+                    ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sedative",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -3068,6 +3152,8 @@
                     "Curbeam",
                     "Grissom"
                 ],
+                "Gagarin": [
+                ],
                 "Jemison": [
                     "Kurtz"
                 ],
@@ -3135,6 +3221,10 @@
                     "traits": [
                         "Continual Conductor",
                         "Global Glacial Recession"
+                    ],
+                    "organicResources": [
+                        "Sealant",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "V",
@@ -3568,6 +3658,8 @@
                 }
             },
             "planetChildren": {
+                "Alpha_Marae_I": [
+                ],
                 "Alpha_Marae_II": [
                     "Alpha_Marae_II-a"
                 ],
@@ -3580,6 +3672,8 @@
                 "Alpha_Marae_IV": [
                     "Alpha_Marae_IV-a",
                     "Alpha_Marae_IV-b"
+                ],
+                "Alpha_Marae_V": [
                 ]
             }
         },
@@ -3722,6 +3816,20 @@
                     ],
                     "moonIds": [
                         "Ternion_III-a"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Polymer",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "W",
@@ -4305,8 +4413,20 @@
                 }
             },
             "planetChildren": {
+                "Ternion_I": [
+                ],
+                "Ternion_II": [
+                ],
                 "Ternion_III": [
                     "Ternion_III-a"
+                ],
+                "Ternion_IV": [
+                ],
+                "Ternion_IX": [
+                    "Ternion_IX-a",
+                    "Ternion_IX-b",
+                    "Ternion_IX-c",
+                    "Ternion_IX-d"
                 ],
                 "Ternion_V": [
                     "Ternion_V-a",
@@ -4315,11 +4435,9 @@
                 "Ternion_VI": [
                     "Ternion_VI-a"
                 ],
-                "Ternion_IX": [
-                    "Ternion_IX-a",
-                    "Ternion_IX-b",
-                    "Ternion_IX-c",
-                    "Ternion_IX-d"
+                "Ternion_VII": [
+                ],
+                "Ternion_VIII": [
                 ]
             }
         },
@@ -4424,6 +4542,17 @@
                     ],
                     "moonIds": [
                         "Tirna_II-a"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Cosmetic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Pb",
@@ -5300,6 +5429,17 @@
                         "Amphibious Foothold",
                         "Sentient Microbial Colonies"
                     ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Fiber",
+                        "Lubricant",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "W",
                         "Ti",
@@ -5516,6 +5656,10 @@
                         "SavannahBarren",
                         "Polar Ice"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Sealant"
+                    ],
                     "inorganicResources": [
                         "W",
                         "Ti",
@@ -5601,6 +5745,8 @@
                 }
             },
             "planetChildren": {
+                "Tirna_I": [
+                ],
                 "Tirna_II": [
                     "Tirna_II-a"
                 ],
@@ -5611,6 +5757,10 @@
                 ],
                 "Tirna_IV": [
                     "Tirna_IV-a"
+                ],
+                "Tirna_IX": [
+                ],
+                "Tirna_V": [
                 ],
                 "Tirna_VI": [
                     "Tirna_VI-a",
@@ -5742,6 +5892,15 @@
                         "Ecological Consortium",
                         "Psychotropic Biota",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Amino Acids",
+                        "Membrane",
+                        "None",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "U",
@@ -6177,6 +6336,10 @@
                 }
             },
             "planetChildren": {
+                "Altair_I": [
+                ],
+                "Altair_II": [
+                ],
                 "Altair_III": [
                     "Altair_III-a",
                     "Altair_III-b",
@@ -6297,6 +6460,15 @@
                     "traits": [
                         "Aeriform Life"
                     ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Cosmetic",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Metabolic Agent",
+                        "Sealant",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "SiH3Cl",
                         "RCOOH",
@@ -6340,6 +6512,13 @@
                         "Cratered",
                         "Ocean",
                         "Polar Ice"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "Hallucinogen",
+                        "Ornamental",
+                        "Sealant",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "Ne",
@@ -6662,6 +6841,12 @@
                 }
             },
             "planetChildren": {
+                "Andromas_I": [
+                ],
+                "Andromas_II": [
+                ],
+                "Andromas_III": [
+                ],
                 "Andromas_IV": [
                     "Andromas_IV-a"
                 ],
@@ -6727,6 +6912,11 @@
                     ],
                     "traits": [
                         "Bolide Bombardment"
+                    ],
+                    "organicResources": [
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant"
                     ],
                     "inorganicResources": [
                         "He3",
@@ -7094,15 +7284,21 @@
                 }
             },
             "planetChildren": {
+                "Aranae_I": [
+                ],
                 "Aranae_II": [
                     "Aranae_II-a",
                     "Aranae_II-b"
+                ],
+                "Aranae_III": [
                 ],
                 "Aranae_IV": [
                     "Aranae_IV-a",
                     "Aranae_IV-b",
                     "Aranae_IV-c",
                     "Aranae_IV-d"
+                ],
+                "Aranae_V": [
                 ]
             }
         },
@@ -7244,6 +7440,14 @@
                         "Ocean",
                         "Polar Ice"
                     ],
+                    "organicResources": [
+                        "Aromatic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Sealant",
+                        "Sedative",
+                        "Structural"
+                    ],
                     "inorganicResources": [
                         "U",
                         "H2O",
@@ -7289,6 +7493,17 @@
                     "traits": [
                         "Aeriform Life",
                         "Global Glacial Recession"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Fiber",
+                        "Lubricant",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant"
                     ],
                     "inorganicResources": [
                         "W",
@@ -7463,6 +7678,12 @@
                         "Amphibious Foothold",
                         "Global Glacial Recession",
                         "Psychotropic Biota"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Yb",
@@ -7652,6 +7873,10 @@
                 "Archimedes_I": [
                     "Archimedes_I-a"
                 ],
+                "Archimedes_II": [
+                ],
+                "Archimedes_III": [
+                ],
                 "Archimedes_IV": [
                     "Archimedes_IV-a"
                 ],
@@ -7765,6 +7990,15 @@
                     "traits": [
                         "Ecological Consortium"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Amino Acids",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Polymer",
+                        "Sealant",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Ir",
@@ -7847,6 +8081,10 @@
                 }
             },
             "planetChildren": {
+                "Arcturus_I": [
+                ],
+                "Arcturus_II": [
+                ],
                 "Arcturus_III": [
                     "Arcturus_III-a"
                 ]
@@ -7910,6 +8148,8 @@
                 }
             },
             "planetChildren": {
+                "Bannoc_Secondus_I": [
+                ]
             }
         },
         "Bannoc": {
@@ -8015,6 +8255,15 @@
                     ],
                     "traits": [
                         "Aeriform Life"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "Membrane",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "V",
@@ -8221,6 +8470,10 @@
                 }
             },
             "planetChildren": {
+                "Bannoc_I": [
+                ],
+                "Bannoc_II": [
+                ],
                 "Bannoc_III": [
                     "Bannoc_III-a"
                 ],
@@ -8315,6 +8568,9 @@
                     "moonIds": [
                         "Bara_II-a"
                     ],
+                    "organicResources": [
+                        "Sealant"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Ir",
@@ -8390,6 +8646,18 @@
                     ],
                     "moonIds": [
                         "Bara_III-a"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Antimicrobial",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant",
+                        "Stimulant",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -8843,11 +9111,15 @@
                 }
             },
             "planetChildren": {
+                "Bara_I": [
+                ],
                 "Bara_II": [
                     "Bara_II-a"
                 ],
                 "Bara_III": [
                     "Bara_III-a"
+                ],
+                "Bara_IV": [
                 ],
                 "Bara_V": [
                     "Bara_V-a"
@@ -9059,6 +9331,24 @@
                     "moonIds": [
                         "Bardeen_III-a",
                         "Bardeen_III-b"
+                    ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Analgesic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Gastronomic Delight",
+                        "Lubricant",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Polymer",
+                        "Sealant",
+                        "Sedative",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -9374,6 +9664,15 @@
                         "Forest",
                         "Ocean",
                         "Polar Ice"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Cosmetic",
+                        "Fiber",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Xe",
@@ -9699,6 +9998,8 @@
                 "Bardeen_I": [
                     "Bardeen_I-a"
                 ],
+                "Bardeen_II": [
+                ],
                 "Bardeen_III": [
                     "Bardeen_III-a",
                     "Bardeen_III-b"
@@ -9782,6 +10083,8 @@
                 }
             },
             "planetChildren": {
+                "Frost": [
+                ]
             }
         },
         "Bel": {
@@ -9842,6 +10145,20 @@
                     ],
                     "moonIds": [
                         "Bel_I-a"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Amino Acids",
+                        "Analgesic",
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Polymer",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -9930,6 +10247,17 @@
                     ],
                     "moonIds": [
                         "Bel_II-a"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Fiber",
+                        "Memory Substrate",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Li",
@@ -10546,6 +10874,10 @@
                 ],
                 "Bel_V": [
                     "Bel_V-a"
+                ],
+                "Bel_VI": [
+                ],
+                "Bel_VII": [
                 ]
             }
         },
@@ -10760,6 +11092,10 @@
                 }
             },
             "planetChildren": {
+                "Bessel_I": [
+                ],
+                "Bessel_II": [
+                ],
                 "Bessel_III": [
                     "Bessel_III-a",
                     "Bessel_III-b"
@@ -10857,6 +11193,10 @@
                         "Hills",
                         "Ocean",
                         "Polar Ice"
+                    ],
+                    "organicResources": [
+                        "Sealant",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "V",
@@ -11046,6 +11386,23 @@
                     ],
                     "moonIds": [
                         "Beta_Marae_I-a"
+                    ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Aromatic",
+                        "Biosuppressant",
+                        "Cosmetic",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Lubricant",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Sedative",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -11906,6 +12263,13 @@
                     "moonIds": [
                         "Beta_Ternion_I-a"
                     ],
+                    "organicResources": [
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Stimulant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "SiH3Cl",
                         "Li",
@@ -11986,6 +12350,23 @@
                     "traits": [
                         "Ecological Consortium"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Amino Acids",
+                        "Analgesic",
+                        "Biosuppressant",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Spice",
+                        "Stimulant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Pt",
@@ -12036,6 +12417,15 @@
                     ],
                     "moonIds": [
                         "Beta_Ternion_III-a"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Pb",
@@ -12098,6 +12488,8 @@
                 "Beta_Ternion_I": [
                     "Beta_Ternion_I-a"
                 ],
+                "Beta_Ternion_II": [
+                ],
                 "Beta_Ternion_III": [
                     "Beta_Ternion_III-a"
                 ]
@@ -12158,6 +12550,8 @@
                 }
             },
             "planetChildren": {
+                "Tirna_B": [
+                ]
             }
         },
         "Bohr": {
@@ -12298,6 +12692,20 @@
                     "traits": [
                         "Aeriform Life",
                         "Diseased Biosphere"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Aromatic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Polymer",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Ni",
@@ -12796,15 +13204,25 @@
                 "Bohr_I": [
                     "Bohr_I-a"
                 ],
+                "Bohr_II": [
+                ],
                 "Bohr_III": [
                     "Bohr_III-a",
                     "Bohr_III-b"
+                ],
+                "Bohr_IV": [
+                ],
+                "Bohr_V": [
                 ],
                 "Bohr_VI": [
                     "Bohr_VI-a",
                     "Bohr_VI-b",
                     "Bohr_VI-c",
                     "Bohr_VI-d"
+                ],
+                "Bohr_VII": [
+                ],
+                "Bohr_VIII": [
                 ]
             }
         },
@@ -12866,6 +13284,15 @@
                     "traits": [
                         "Ecological Consortium"
                     ],
+                    "organicResources": [
+                        "Fiber",
+                        "Hallucinogen",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "W",
                         "Pb",
@@ -12877,6 +13304,8 @@
                 }
             },
             "planetChildren": {
+                "Bolivar_I": [
+                ]
             }
         },
         "Bradbury": {
@@ -13101,6 +13530,14 @@
                     "traits": [
                         "Diseased Biosphere"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Antimicrobial",
+                        "Cosmetic",
+                        "Metabolic Agent",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Ti",
@@ -13149,6 +13586,14 @@
                     ],
                     "moonIds": [
                         "Bradbury_IV-a"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Hallucinogen",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -13271,6 +13716,10 @@
                 "Bradbury_I": [
                     "Bradbury_I-a",
                     "Bradbury_I-b"
+                ],
+                "Bradbury_II": [
+                ],
+                "Bradbury_III": [
                 ],
                 "Bradbury_IV": [
                     "Bradbury_IV-a"
@@ -13840,6 +14289,8 @@
                 }
             },
             "planetChildren": {
+                "Carinae_I": [
+                ],
                 "Carinae_II": [
                     "Carinae_II-a"
                 ],
@@ -13944,6 +14395,22 @@
                     "fauna": "Moderate (9)",
                     "traits": [
                         "Aeriform Life"
+                    ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Analgesic",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Lubricant",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant",
+                        "Sedative",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -14125,10 +14592,16 @@
                 }
             },
             "planetChildren": {
+                "Celebrai_I": [
+                ],
+                "Celebrai_II": [
+                ],
                 "Celebrai_III": [
                     "Celebrai_III-a",
                     "Celebrai_III-b",
                     "Celebrai_III-c"
+                ],
+                "Celebrai_IV": [
                 ]
             }
         },
@@ -14229,6 +14702,22 @@
                     "traits": [
                         "Aeriform Life"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Amino Acids",
+                        "Cosmetic",
+                        "Fiber",
+                        "Hypercatalyst",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "SiH3Cl",
                         "Nd",
@@ -14277,6 +14766,19 @@
                         "Coralline Landmass",
                         "Primordial Network"
                     ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Lubricant",
+                        "Membrane",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Solvent",
+                        "Spice",
+                        "Structural"
+                    ],
                     "inorganicResources": [
                         "SiH3Cl",
                         "H2O",
@@ -14324,6 +14826,10 @@
                     ],
                     "moonIds": [
                         "Charybdis_IV-a"
+                    ],
+                    "organicResources": [
+                        "Nutrient",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "U",
@@ -14919,8 +15425,16 @@
                 }
             },
             "planetChildren": {
+                "Charybdis_I": [
+                ],
+                "Charybdis_II": [
+                ],
+                "Charybdis_III": [
+                ],
                 "Charybdis_IV": [
                     "Charybdis_IV-a"
+                ],
+                "Charybdis_IX": [
                 ],
                 "Charybdis_V": [
                     "Charybdis_V-a"
@@ -15049,6 +15563,17 @@
                         "Bindi",
                         "Antharum"
                     ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Cosmetic",
+                        "Hallucinogen",
+                        "Nutrient",
+                        "Sealant",
+                        "Solvent",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Ni",
                         "H2O",
@@ -15091,6 +15616,15 @@
                         "Ocean",
                         "SavannahBarren",
                         "Polar Ice"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Nutrient",
+                        "Sealant",
+                        "Solvent"
                     ],
                     "inorganicResources": [
                         "RCOOH",
@@ -15567,6 +16101,19 @@
                     ],
                     "moonIds": [
                         "Montara_Luna_Station"
+                    ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Antimicrobial",
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "RCOOH",
@@ -16341,17 +16888,24 @@
                 }
             },
             "planetChildren": {
+                "Agamon": [
+                    "Agamon_A",
+                    "Agamon_B",
+                    "Agamon_C",
+                    "Agamon_D"
+                ],
                 "Akila": [
                     "Codos",
                     "Bindi",
                     "Antharum"
                 ],
-                "Washakie": [
-                    "Smet"
-                ],
                 "Burran": [
                     "Rell",
                     "Grizzit"
+                ],
+                "Fenn": [
+                    "Tahrnis",
+                    "Cragg"
                 ],
                 "Montara": [
                     "Wellish",
@@ -16362,11 +16916,14 @@
                 ],
                 "Montara_Luna": [
                 ],
-                "Agamon": [
-                    "Agamon_A",
-                    "Agamon_B",
-                    "Agamon_C",
-                    "Agamon_D"
+                "Navaha": [
+                    "Olaran",
+                    "Hardpoint",
+                    "Laramie",
+                    "Bismark",
+                    "Belwah"
+                ],
+                "Skink": [
                 ],
                 "Stellis": [
                     "Stellis_A",
@@ -16374,16 +16931,8 @@
                     "Stellis_C",
                     "Stellis_D"
                 ],
-                "Fenn": [
-                    "Tahrnis",
-                    "Cragg"
-                ],
-                "Navaha": [
-                    "Olaran",
-                    "Hardpoint",
-                    "Laramie",
-                    "Bismark",
-                    "Belwah"
+                "Washakie": [
+                    "Smet"
                 ]
             }
         },
@@ -16474,6 +17023,11 @@
                     ],
                     "traits": [
                         "Coralline Landmass"
+                    ],
+                    "organicResources": [
+                        "Nutrient",
+                        "Spice",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Li",
@@ -16636,6 +17190,18 @@
                         "Amphibious Foothold",
                         "Sentient Microbial Colonies"
                     ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Analgesic",
+                        "Cosmetic",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Solvent",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Ti",
                         "Pb",
@@ -16688,6 +17254,13 @@
                     ],
                     "moonIds": [
                         "Copernicus_III-a"
+                    ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Antimicrobial",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "Pb",
@@ -16772,6 +17345,13 @@
                     ],
                     "traits": [
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "Membrane",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "Ni",
@@ -17173,8 +17753,18 @@
                 }
             },
             "planetChildren": {
+                "Copernicus_I": [
+                ],
+                "Copernicus_II": [
+                ],
                 "Copernicus_III": [
                     "Copernicus_III-a"
+                ],
+                "Copernicus_IV": [
+                ],
+                "Copernicus_V": [
+                ],
+                "Copernicus_VI": [
                 ],
                 "Copernicus_VII": [
                     "Copernicus_VII-a",
@@ -17243,6 +17833,17 @@
                     "traits": [
                         "Ecological Consortium",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Antimicrobial",
+                        "Fiber",
+                        "Lubricant",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "RCOOH",
@@ -17812,6 +18413,16 @@
                 }
             },
             "planetChildren": {
+                "Decaran_I": [
+                ],
+                "Decaran_II": [
+                ],
+                "Decaran_III": [
+                ],
+                "Decaran_IV": [
+                ],
+                "Decaran_IX": [
+                ],
                 "Decaran_V": [
                     "Decaran_V-a",
                     "Decaran_V-b"
@@ -17923,6 +18534,18 @@
                         "Diseased Biosphere",
                         "Global Glacial Recession",
                         "Psychotropic Biota"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Biosuppressant",
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Pb",
@@ -18598,22 +19221,26 @@
                     "Bitsy",
                     "Itsy"
                 ],
-                "Gamow": [
-                    "Bose"
-                ],
-                "Nascent": [
-                    "Rudiment",
-                    "Fundament"
-                ],
                 "Bode": [
                     "Herald",
                     "Augur"
+                ],
+                "Curie": [
                 ],
                 "Faraday": [
                     "Coulomb",
                     "Ampere",
                     "Volt",
                     "Ohm"
+                ],
+                "Gamow": [
+                    "Bose"
+                ],
+                "Magnar": [
+                ],
+                "Nascent": [
+                    "Rudiment",
+                    "Fundament"
                 ]
             }
         },
@@ -19003,6 +19630,11 @@
                         "Ocean",
                         "Polar Ice"
                     ],
+                    "organicResources": [
+                        "Nutrient",
+                        "Sealant",
+                        "Structural"
+                    ],
                     "inorganicResources": [
                         "xF4",
                         "U",
@@ -19198,6 +19830,10 @@
                 }
             },
             "planetChildren": {
+                "Delta_Vulpes_I": [
+                ],
+                "Delta_Vulpes_II": [
+                ],
                 "Delta_Vulpes_III": [
                     "Delta_Vulpes_III-a"
                 ],
@@ -19213,6 +19849,8 @@
                 ],
                 "Delta_Vulpes_VI": [
                     "Delta_Vulpes_VI-a"
+                ],
+                "Delta_Vulpes_VII": [
                 ]
             }
         },
@@ -19343,6 +19981,16 @@
                     "traits": [
                         "Amphibious Foothold",
                         "Emerging Tectonics"
+                    ],
+                    "organicResources": [
+                        "Aromatic",
+                        "Fiber",
+                        "Hypercatalyst",
+                        "Membrane",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -19679,6 +20327,11 @@
                     "traits": [
                         "Prismatic Plumes"
                     ],
+                    "organicResources": [
+                        "Sedative",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Pb",
@@ -19726,6 +20379,19 @@
                     ],
                     "moonIds": [
                         "Enlil_II-a"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Biosuppressant",
+                        "Cosmetic",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sedative",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Ta",
@@ -20216,8 +20882,12 @@
                 "Enlil_II": [
                     "Enlil_II-a"
                 ],
+                "Enlil_III": [
+                ],
                 "Enlil_IV": [
                     "Enlil_IV-a"
+                ],
+                "Enlil_V": [
                 ],
                 "Enlil_VI": [
                     "Enlil_VI-a",
@@ -20305,6 +20975,13 @@
                         "Aeriform Life",
                         "Amphibious Foothold",
                         "Psychotropic Biota"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Sealant",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "Ni",
@@ -20536,6 +21213,17 @@
                         "Prismatic Plumes",
                         "Sentient Microbial Colonies"
                     ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Ta",
@@ -20614,6 +21302,8 @@
                 }
             },
             "planetChildren": {
+                "Cassiopeia_I": [
+                ],
                 "Cassiopeia_II": [
                     "Cassiopeia_II-a"
                 ],
@@ -20816,6 +21506,19 @@
                     "moonIds": [
                         "Fermi_III-a",
                         "Fermi_III-b"
+                    ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Cosmetic",
+                        "Fiber",
+                        "Hypercatalyst",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "V",
@@ -21265,6 +21968,11 @@
                     ],
                     "traits": [
                         "Pelted Fields"
+                    ],
+                    "organicResources": [
+                        "Memory Substrate",
+                        "Stimulant",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -21813,6 +22521,8 @@
                 }
             },
             "planetChildren": {
+                "Fermi_I": [
+                ],
                 "Fermi_II": [
                     "Fermi_II-a"
                 ],
@@ -21823,6 +22533,13 @@
                 "Fermi_IV": [
                     "Fermi_IV-a",
                     "Fermi_IV-b"
+                ],
+                "Fermi_IX": [
+                    "Fermi_IX-a",
+                    "Fermi_IX-b",
+                    "Fermi_IX-c",
+                    "Fermi_IX-d",
+                    "Fermi_IX-e"
                 ],
                 "Fermi_V": [
                     "Fermi_V-a"
@@ -21841,12 +22558,7 @@
                     "Fermi_VIII-c",
                     "Fermi_VIII-d"
                 ],
-                "Fermi_IX": [
-                    "Fermi_IX-a",
-                    "Fermi_IX-b",
-                    "Fermi_IX-c",
-                    "Fermi_IX-d",
-                    "Fermi_IX-e"
+                "Fermi_X": [
                 ]
             }
         },
@@ -21906,6 +22618,11 @@
                     ],
                     "traits": [
                         "Continual Conductor"
+                    ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "xF4",
@@ -22002,6 +22719,17 @@
                         "Global Glacial Recession",
                         "Sentient Microbial Colonies"
                     ],
+                    "organicResources": [
+                        "Aromatic",
+                        "Biosuppressant",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "V",
                         "U",
@@ -22050,6 +22778,15 @@
                     "traits": [
                         "Psychotropic Biota",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Sedative",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -22799,6 +23536,17 @@
                 }
             },
             "planetChildren": {
+                "Feynman_I": [
+                ],
+                "Feynman_II": [
+                ],
+                "Feynman_III": [
+                ],
+                "Feynman_IV": [
+                ],
+                "Feynman_IX": [
+                    "Feynman_IX-a"
+                ],
                 "Feynman_V": [
                     "Feynman_V-a",
                     "Feynman_V-b"
@@ -22819,9 +23567,6 @@
                     "Feynman_VIII-c",
                     "Feynman_VIII-d",
                     "Feynman_VIII-e"
-                ],
-                "Feynman_IX": [
-                    "Feynman_IX-a"
                 ]
             }
         },
@@ -22990,6 +23735,11 @@
                     "moonIds": [
                         "Foucault_II-a",
                         "Foucault_II-b"
+                    ],
+                    "organicResources": [
+                        "Lubricant",
+                        "Nutrient",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -24003,6 +24753,8 @@
                     "Foucault_III-a",
                     "Foucault_III-b"
                 ],
+                "Foucault_IV": [
+                ],
                 "Foucault_V": [
                     "Foucault_V-a",
                     "Foucault_V-b",
@@ -24169,6 +24921,19 @@
                     ],
                     "traits": [
                         "Psychotropic Biota"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Polymer",
+                        "Sealant",
+                        "Sedative",
+                        "Spice",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Pb",
@@ -24683,6 +25448,11 @@
                         "Wetlands",
                         "Ocean"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Pt",
@@ -24738,21 +25508,31 @@
                 }
             },
             "planetChildren": {
+                "Freya_I": [
+                ],
+                "Freya_II": [
+                ],
+                "Freya_III": [
+                ],
                 "Freya_IV": [
                     "Freya_IV-a",
                     "Freya_IV-b",
                     "Freya_IV-c"
+                ],
+                "Freya_IX": [
+                    "Freya_IX-a",
+                    "Freya_IX-b",
+                    "Freya_IX-c"
+                ],
+                "Freya_V": [
+                ],
+                "Freya_VI": [
                 ],
                 "Freya_VII": [
                     "Freya_VII-a"
                 ],
                 "Freya_VIII": [
                     "Freya_VIII-a"
-                ],
-                "Freya_IX": [
-                    "Freya_IX-a",
-                    "Freya_IX-b",
-                    "Freya_IX-c"
                 ]
             }
         },
@@ -24811,6 +25591,18 @@
                     "traits": [
                         "Ecological Consortium",
                         "Global Glacial Recession"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Polymer",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -24896,6 +25688,18 @@
                         "Amphibious Foothold",
                         "Ecological Consortium",
                         "Psychotropic Biota"
+                    ],
+                    "organicResources": [
+                        "Aromatic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -25287,6 +26091,8 @@
                 }
             },
             "planetChildren": {
+                "Gamma_Vulpes_I": [
+                ],
                 "Gamma_Vulpes_II": [
                     "Gamma_Vulpes_II-a",
                     "Gamma_Vulpes_II-b",
@@ -25358,6 +26164,10 @@
                     ],
                     "traits": [
                         "Global Glacial Recession"
+                    ],
+                    "organicResources": [
+                        "Sealant",
+                        "Sedative"
                     ],
                     "inorganicResources": [
                         "V",
@@ -26197,6 +27007,18 @@
                     "traits": [
                         "Psychotropic Biota"
                     ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant",
+                        "Stimulant",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "RCOOH",
                         "Pb",
@@ -26335,6 +27157,8 @@
                 }
             },
             "planetChildren": {
+                "Groombridge_I": [
+                ],
                 "Groombridge_II": [
                     "Groombridge_II-a",
                     "Groombridge_II-b",
@@ -26543,6 +27367,20 @@
                     ],
                     "traits": [
                         "Global Glacial Recession"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Sedative",
+                        "Spice",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "H2O",
@@ -27163,6 +28001,13 @@
                         "Aeriform Life",
                         "Ecological Consortium"
                     ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Membrane",
+                        "Nutrient",
+                        "Ornamental",
+                        "Structural"
+                    ],
                     "inorganicResources": [
                         "Pd",
                         "Ni",
@@ -27444,6 +28289,8 @@
                     "Guniibuu_I-a",
                     "Guniibuu_I-b"
                 ],
+                "Guniibuu_II": [
+                ],
                 "Guniibuu_III": [
                     "Guniibuu_III-a",
                     "Guniibuu_III-b",
@@ -27534,6 +28381,18 @@
                     ],
                     "moonIds": [
                         "Hawking_I-a"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Solvent",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "W",
@@ -27948,6 +28807,10 @@
                 "Hawking_I": [
                     "Hawking_I-a"
                 ],
+                "Hawking_II": [
+                ],
+                "Hawking_III": [
+                ],
                 "Hawking_IV": [
                     "Hawking_IV-a"
                 ],
@@ -28345,6 +29208,14 @@
                         "Global Glacial Recession",
                         "Psychotropic Biota"
                     ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Fiber",
+                        "Sealant",
+                        "Sedative",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Pb",
                         "HnCn",
@@ -28714,6 +29585,11 @@
                     "traits": [
                         "Amphibious Foothold"
                     ],
+                    "organicResources": [
+                        "Nutrient",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Xe",
                         "SiH3Cl",
@@ -28913,6 +29789,8 @@
                 }
             },
             "planetChildren": {
+                "Heinlein_I": [
+                ],
                 "Heinlein_II": [
                     "Heinlein_II-a",
                     "Heinlein_II-b"
@@ -28938,6 +29816,8 @@
                     "Heinlein_VI-c",
                     "Heinlein_VI-d",
                     "Heinlein_VI-e"
+                ],
+                "Heinlein_VII": [
                 ]
             }
         },
@@ -29029,6 +29909,18 @@
                     "traits": [
                         "Ecological Consortium",
                         "Psychotropic Biota"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Polymer",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "xF4",
@@ -29223,6 +30115,11 @@
                     "traits": [
                         "Aeriform Life",
                         "Diseased Biosphere"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "Nutrient",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -29719,6 +30616,16 @@
                 }
             },
             "planetChildren": {
+                "Heisenberg_I": [
+                ],
+                "Heisenberg_II": [
+                ],
+                "Heisenberg_III": [
+                ],
+                "Heisenberg_IV": [
+                ],
+                "Heisenberg_IX": [
+                ],
                 "Heisenberg_V": [
                     "Heisenberg_V-a"
                 ],
@@ -29735,6 +30642,8 @@
                     "Heisenberg_VIII-b",
                     "Heisenberg_VIII-c",
                     "Heisenberg_VIII-d"
+                ],
+                "Heisenberg_X": [
                 ]
             }
         },
@@ -30029,6 +30938,19 @@
                         "Global Glacial Recession",
                         "Sentient Microbial Colonies"
                     ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Hallucinogen",
+                        "Lubricant",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Pb",
                         "HnCn",
@@ -30074,6 +30996,13 @@
                     "traits": [
                         "Amphibious Foothold",
                         "Coralline Landmass"
+                    ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Fiber",
+                        "Nutrient",
+                        "Sedative",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Ni",
@@ -30401,6 +31330,14 @@
                         "Diseased Biosphere",
                         "Sentient Microbial Colonies"
                     ],
+                    "organicResources": [
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Stimulant",
+                        "Structural"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Ir",
@@ -30564,6 +31501,10 @@
                     "Huygens_II-a",
                     "Huygens_II-b"
                 ],
+                "Huygens_III": [
+                ],
+                "Huygens_IV": [
+                ],
                 "Huygens_V": [
                     "Huygens_V-a",
                     "Huygens_V-b"
@@ -30577,6 +31518,8 @@
                     "Huygens_VII-c",
                     "Huygens_VII-d",
                     "Huygens_VII-e"
+                ],
+                "Huygens_VIII": [
                 ]
             }
         },
@@ -30638,6 +31581,12 @@
                     ],
                     "moonIds": [
                         "Hyla_I-a"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "U",
@@ -30729,6 +31678,18 @@
                     "moonIds": [
                         "Hyla_II-a",
                         "Hyla_II-b"
+                    ],
+                    "organicResources": [
+                        "Aromatic",
+                        "Biosuppressant",
+                        "Cosmetic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "RCOOH",
@@ -31483,6 +32444,8 @@
                     "Hyla_II-a",
                     "Hyla_II-b"
                 ],
+                "Hyla_III": [
+                ],
                 "Hyla_IV": [
                     "Hyla_IV-a",
                     "Hyla_IV-b"
@@ -31648,6 +32611,13 @@
                     "traits": [
                         "Aeriform Life",
                         "Psychotropic Biota"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -32126,6 +33096,8 @@
                 "Indum_I": [
                     "Indum_I-a"
                 ],
+                "Indum_II": [
+                ],
                 "Indum_III": [
                     "Indum_III-a",
                     "Indum_III-b",
@@ -32254,6 +33226,19 @@
                     ],
                     "moonIds": [
                         "Ixyll_II-a"
+                    ],
+                    "organicResources": [
+                        "Aromatic",
+                        "Fiber",
+                        "Hypercatalyst",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -32422,6 +33407,19 @@
                     "traits": [
                         "Primordial Network",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Stimulant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -33214,12 +34212,24 @@
                 }
             },
             "planetChildren": {
+                "Ixyll_I": [
+                ],
                 "Ixyll_II": [
                     "Ixyll_II-a"
                 ],
                 "Ixyll_III": [
                     "Ixyll_III-a",
                     "Ixyll_III-b"
+                ],
+                "Ixyll_IV": [
+                ],
+                "Ixyll_IX": [
+                    "Ixyll_IX-a",
+                    "Ixyll_IX-b",
+                    "Ixyll_IX-c",
+                    "Ixyll_IX-d"
+                ],
+                "Ixyll_V": [
                 ],
                 "Ixyll_VI": [
                     "Ixyll_VI-a",
@@ -33236,12 +34246,6 @@
                 "Ixyll_VIII": [
                     "Ixyll_VIII-a",
                     "Ixyll_VIII-b"
-                ],
-                "Ixyll_IX": [
-                    "Ixyll_IX-a",
-                    "Ixyll_IX-b",
-                    "Ixyll_IX-c",
-                    "Ixyll_IX-d"
                 ]
             }
         },
@@ -33392,6 +34396,14 @@
                     "moonIds": [
                         "Jaffa_II-a"
                     ],
+                    "organicResources": [
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Pb",
                         "Li",
@@ -33487,6 +34499,17 @@
                         "Diseased Biosphere",
                         "Psychotropic Biota"
                     ],
+                    "organicResources": [
+                        "Fiber",
+                        "Hallucinogen",
+                        "Hypercatalyst",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "V",
                         "U",
@@ -33537,6 +34560,10 @@
                     ],
                     "moonIds": [
                         "Jaffa_IV-a"
+                    ],
+                    "organicResources": [
+                        "Membrane",
+                        "Sedative"
                     ],
                     "inorganicResources": [
                         "V",
@@ -34084,6 +35111,8 @@
                 "Jaffa_II": [
                     "Jaffa_II-a"
                 ],
+                "Jaffa_III": [
+                ],
                 "Jaffa_IV": [
                     "Jaffa_IV-a"
                 ],
@@ -34101,6 +35130,8 @@
                     "Jaffa_VII-c",
                     "Jaffa_VII-d",
                     "Jaffa_VII-e"
+                ],
+                "Jaffa_VIII": [
                 ]
             }
         },
@@ -34239,6 +35270,15 @@
                         "Amphibious Foothold",
                         "Emerging Tectonics",
                         "Prismatic Plumes"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Fiber",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Spice",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Pb",
@@ -34894,6 +35934,9 @@
                         "Ocean",
                         "Polar Ice"
                     ],
+                    "organicResources": [
+                        "Sealant"
+                    ],
                     "inorganicResources": [
                         "Yb",
                         "SiH3Cl",
@@ -34942,10 +35985,18 @@
                 }
             },
             "planetChildren": {
+                "Kang_I": [
+                ],
+                "Kang_II": [
+                ],
+                "Kang_III": [
+                ],
                 "Kang_IV": [
                     "Kang_IV-a",
                     "Kang_IV-b",
                     "Kang_IV-c"
+                ],
+                "Kang_V": [
                 ],
                 "Kang_VI": [
                     "Kang_VI-a"
@@ -35056,6 +36107,10 @@
                 }
             },
             "planetChildren": {
+                "Kapteyn_I": [
+                ],
+                "Kapteyn_II": [
+                ]
             }
         },
         "Katydid": {
@@ -35143,6 +36198,16 @@
                     "traits": [
                         "Amphibious Foothold",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Yb",
@@ -35289,6 +36354,10 @@
                 "Katydid_I": [
                     "Katydid_I-a",
                     "Katydid_I-b"
+                ],
+                "Katydid_II": [
+                ],
+                "Katydid_III": [
                 ]
             }
         },
@@ -35814,6 +36883,20 @@
                     ],
                     "moonIds": [
                         "Khayyam_II-a"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Antimicrobial",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Polymer",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Xe",
@@ -36488,6 +37571,10 @@
                         "Rocklock",
                         "Ice"
                     ],
+                    "organicResources": [
+                        "Nutrient",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "H2O",
                         "F",
@@ -36531,6 +37618,11 @@
                     ],
                     "traits": [
                         "Energetic Rifting"
+                    ],
+                    "organicResources": [
+                        "Nutrient",
+                        "Sealant",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "U",
@@ -36840,6 +37932,20 @@
                     "moonIds": [
                         "Kumasi_I-a"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Antimicrobial",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Sedative",
+                        "Stimulant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Pb",
                         "Ne",
@@ -36924,6 +38030,20 @@
                     "moonIds": [
                         "Kumasi_II-a"
                     ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Biosuppressant",
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Pu",
@@ -37007,6 +38127,15 @@
                     ],
                     "moonIds": [
                         "Kumasi_III-a"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Sealant",
+                        "Solvent",
+                        "Spice",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Ni",
@@ -37916,6 +39045,9 @@
                 "Kumasi_IV": [
                     "Kumasi_IV-a"
                 ],
+                "Kumasi_IX": [
+                    "Kumasi_IX-a"
+                ],
                 "Kumasi_V": [
                     "Kumasi_V-a",
                     "Kumasi_V-b",
@@ -37937,9 +39069,6 @@
                     "Kumasi_VIII-b",
                     "Kumasi_VIII-c",
                     "Kumasi_VIII-d"
-                ],
-                "Kumasi_IX": [
-                    "Kumasi_IX-a"
                 ]
             }
         },
@@ -38086,6 +39215,19 @@
                     "moonIds": [
                         "Lantana_III-a"
                     ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Polymer",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "SiH3Cl",
                         "Ni",
@@ -38168,6 +39310,13 @@
                     ],
                     "traits": [
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Ni",
@@ -38488,6 +39637,12 @@
                         "Hills",
                         "Ocean",
                         "Polar Ice"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "Nutrient",
+                        "Ornamental",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -38822,18 +39977,14 @@
                 }
             },
             "planetChildren": {
+                "Lantana_I": [
+                ],
+                "Lantana_II": [
+                ],
                 "Lantana_III": [
                     "Lantana_III-a"
                 ],
-                "Lantana_V": [
-                    "Lantana_V-a",
-                    "Lantana_V-b"
-                ],
-                "Lantana_VIII": [
-                    "Lantana_VIII-a",
-                    "Lantana_VIII-b",
-                    "Lantana_VIII-c",
-                    "Lantana_VIII-d"
+                "Lantana_IV": [
                 ],
                 "Lantana_IX": [
                     "Lantana_IX-a",
@@ -38841,6 +39992,20 @@
                     "Lantana_IX-c",
                     "Lantana_IX-d",
                     "Lantana_IX-e"
+                ],
+                "Lantana_V": [
+                    "Lantana_V-a",
+                    "Lantana_V-b"
+                ],
+                "Lantana_VI": [
+                ],
+                "Lantana_VII": [
+                ],
+                "Lantana_VIII": [
+                    "Lantana_VIII-a",
+                    "Lantana_VIII-b",
+                    "Lantana_VIII-c",
+                    "Lantana_VIII-d"
                 ]
             }
         },
@@ -39120,6 +40285,19 @@
                         "Amphibious Foothold",
                         "Sentient Microbial Colonies"
                     ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Lubricant",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Pu",
@@ -39164,6 +40342,15 @@
                     "traits": [
                         "Aeriform Life",
                         "Amphibious Foothold"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -39218,6 +40405,16 @@
                     ],
                     "moonIds": [
                         "Leonis_V-a"
+                    ],
+                    "organicResources": [
+                        "Aromatic",
+                        "Fiber",
+                        "Hypercatalyst",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -39461,6 +40658,9 @@
                         "Emerging Tectonics",
                         "Solar Storm Seasons"
                     ],
+                    "organicResources": [
+                        "Lubricant"
+                    ],
                     "inorganicResources": [
                         "Pb",
                         "H2O",
@@ -39593,11 +40793,19 @@
                 "Leonis_II": [
                     "Leonis_II-a"
                 ],
+                "Leonis_III": [
+                ],
+                "Leonis_IV": [
+                ],
+                "Leonis_IX": [
+                ],
                 "Leonis_V": [
                     "Leonis_V-a"
                 ],
                 "Leonis_VI": [
                     "Leonis_VI-a"
+                ],
+                "Leonis_VII": [
                 ],
                 "Leonis_VIII": [
                     "Leonis_VIII-a",
@@ -39777,6 +40985,16 @@
                     "traits": [
                         "Ecological Consortium",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Yb",
@@ -40013,12 +41231,22 @@
                 }
             },
             "planetChildren": {
+                "Leviathan_I": [
+                ],
+                "Leviathan_II": [
+                ],
+                "Leviathan_III": [
+                ],
+                "Leviathan_IV": [
+                ],
                 "Leviathan_V": [
                     "Leviathan_V-a"
                 ],
                 "Leviathan_VI": [
                     "Leviathan_VI-a",
                     "Leviathan_VI-b"
+                ],
+                "Leviathan_VII": [
                 ]
             }
         },
@@ -40120,6 +41348,14 @@
                     ],
                     "moonIds": [
                         "Linnaeus_II-a"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "High-Tensile Spidroin",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant"
                     ],
                     "inorganicResources": [
                         "Pb",
@@ -40527,6 +41763,8 @@
                 }
             },
             "planetChildren": {
+                "Linnaeus_I": [
+                ],
                 "Linnaeus_II": [
                     "Linnaeus_II-a"
                 ],
@@ -40537,6 +41775,12 @@
                     "Linnaeus_IV-a",
                     "Linnaeus_IV-b",
                     "Linnaeus_IV-c"
+                ],
+                "Linnaeus_V": [
+                ],
+                "Linnaeus_VI": [
+                ],
+                "Linnaeus_VII": [
                 ]
             }
         },
@@ -40721,6 +41965,17 @@
                     ],
                     "moonIds": [
                         "Vesta_Lunaris"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Pb",
@@ -41495,24 +42750,23 @@
                 }
             },
             "planetChildren": {
-                "Numitor": [
-                    "Romulus",
-                    "Remus"
+                "Cassini": [
+                    "Lillius",
+                    "Gasparis",
+                    "Abetti"
                 ],
-                "Vesta": [
-                    "Vesta_Lunaris"
-                ],
-                "Petria": [
-                    "Earrach"
+                "Cthol": [
+                    "Uvhan",
+                    "Nyarloth",
+                    "Az-Valok"
                 ],
                 "Gaea": [
                     "Coeus",
                     "Crius"
                 ],
-                "Cassini": [
-                    "Lillius",
-                    "Gasparis",
-                    "Abetti"
+                "Numitor": [
+                    "Romulus",
+                    "Remus"
                 ],
                 "Okoro": [
                     "Okoro_Alpha",
@@ -41521,10 +42775,13 @@
                     "Okoro_Delta",
                     "Okoro_Epsilon"
                 ],
-                "Cthol": [
-                    "Uvhan",
-                    "Nyarloth",
-                    "Az-Valok"
+                "Petria": [
+                    "Earrach"
+                ],
+                "Reva%27s_World": [
+                ],
+                "Vesta": [
+                    "Vesta_Lunaris"
                 ]
             }
         },
@@ -41599,6 +42856,8 @@
                 }
             },
             "planetChildren": {
+                "Luyten%27s_Rock": [
+                ]
             }
         },
         "Maal": {
@@ -41940,6 +43199,14 @@
                         "Diseased Biosphere",
                         "Global Glacial Recession"
                     ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Metabolic Agent",
+                        "Ornamental",
+                        "Sealant",
+                        "Spice",
+                        "Structural"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Pb",
@@ -41991,6 +43258,15 @@
                     ],
                     "moonIds": [
                         "Maal_V-a"
+                    ],
+                    "organicResources": [
+                        "Aromatic",
+                        "Fiber",
+                        "Hypercatalyst",
+                        "Metabolic Agent",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant"
                     ],
                     "inorganicResources": [
                         "Pb",
@@ -42439,6 +43715,10 @@
                     "traits": [
                         "Pelted Fields"
                     ],
+                    "organicResources": [
+                        "Biosuppressant",
+                        "Structural"
+                    ],
                     "inorganicResources": [
                         "V",
                         "U",
@@ -42570,6 +43850,14 @@
                 "Maal_III": [
                     "Maal_III-a"
                 ],
+                "Maal_IV": [
+                ],
+                "Maal_IX": [
+                    "Maal_IX-a",
+                    "Maal_IX-b",
+                    "Maal_IX-c",
+                    "Maal_IX-d"
+                ],
                 "Maal_V": [
                     "Maal_V-a"
                 ],
@@ -42578,14 +43866,12 @@
                     "Maal_VI-b",
                     "Maal_VI-c"
                 ],
+                "Maal_VII": [
+                ],
                 "Maal_VIII": [
                     "Maal_VIII-a"
                 ],
-                "Maal_IX": [
-                    "Maal_IX-a",
-                    "Maal_IX-b",
-                    "Maal_IX-c",
-                    "Maal_IX-d"
+                "Maal_X": [
                 ]
             }
         },
@@ -42646,6 +43932,10 @@
                     "traits": [
                         "Diseased Biosphere",
                         "Global Glacial Recession"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "Nutrient"
                     ],
                     "inorganicResources": [
                         "Pb",
@@ -43239,6 +44529,10 @@
                 }
             },
             "planetChildren": {
+                "Maheo_I": [
+                ],
+                "Maheo_II": [
+                ],
                 "Maheo_III": [
                     "Maheo_III-a",
                     "Maheo_III-b"
@@ -43451,6 +44745,10 @@
                     "moonIds": [
                         "Marduk_III-a"
                     ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Structural"
+                    ],
                     "inorganicResources": [
                         "U",
                         "SiH3Cl",
@@ -43536,6 +44834,22 @@
                         "Aeriform Life",
                         "Psychotropic Biota",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Antimicrobial",
+                        "Biosuppressant",
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Sedative",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "RCOOH",
@@ -44018,11 +45332,21 @@
                 "Marduk_I": [
                     "Marduk_I-a"
                 ],
+                "Marduk_II": [
+                ],
                 "Marduk_III": [
                     "Marduk_III-a"
                 ],
+                "Marduk_IV": [
+                ],
+                "Marduk_IX": [
+                    "Marduk_IX-a",
+                    "Marduk_IX-b"
+                ],
                 "Marduk_V": [
                     "Marduk_V-a"
+                ],
+                "Marduk_VI": [
                 ],
                 "Marduk_VII": [
                     "Marduk_VII-a",
@@ -44030,9 +45354,7 @@
                     "Marduk_VII-c",
                     "Marduk_VII-d"
                 ],
-                "Marduk_IX": [
-                    "Marduk_IX-a",
-                    "Marduk_IX-b"
+                "Marduk_VIII": [
                 ]
             }
         },
@@ -44167,6 +45489,21 @@
                     "traits": [
                         "Amphibious Foothold",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Antimicrobial",
+                        "Cosmetic",
+                        "Fiber",
+                        "Hypercatalyst",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Solvent",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Yb",
@@ -44698,8 +46035,16 @@
                 }
             },
             "planetChildren": {
+                "Masada_I": [
+                ],
+                "Masada_II": [
+                ],
+                "Masada_III": [
+                ],
                 "Masada_IV": [
                     "Masada_IV-a"
+                ],
+                "Masada_IX": [
                 ],
                 "Masada_V": [
                     "Masada_V-a",
@@ -44854,6 +46199,17 @@
                         "McClure_II-a",
                         "McClure_II-b",
                         "McClure_II-c"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Solvent",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -45024,6 +46380,8 @@
                     "McClure_II-a",
                     "McClure_II-b",
                     "McClure_II-c"
+                ],
+                "McClure_III": [
                 ]
             }
         },
@@ -45172,6 +46530,21 @@
                         "Aeriform Life",
                         "Amphibious Foothold",
                         "Ecological Consortium"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Analgesic",
+                        "Antimicrobial",
+                        "Cosmetic",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "RCOOH",
@@ -45624,6 +46997,12 @@
                 "Moloch_I": [
                     "Moloch_I-a"
                 ],
+                "Moloch_II": [
+                ],
+                "Moloch_III": [
+                ],
+                "Moloch_IV": [
+                ],
                 "Moloch_V": [
                     "Moloch_V-a",
                     "Moloch_V-b",
@@ -45633,6 +47012,8 @@
                 "Moloch_VI": [
                     "Moloch_VI-a",
                     "Moloch_VI-b"
+                ],
+                "Moloch_VII": [
                 ]
             }
         },
@@ -46058,6 +47439,18 @@
                         "Ecological Consortium",
                         "Global Glacial Recession"
                     ],
+                    "organicResources": [
+                        "Aromatic",
+                        "Fiber",
+                        "Lubricant",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Polymer",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "SiH3Cl",
                         "Li",
@@ -46180,6 +47573,16 @@
                     ],
                     "traits": [
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Xe",
@@ -46842,6 +48245,8 @@
                     "Muphrid_III-b",
                     "Muphrid_III-c"
                 ],
+                "Muphrid_IV": [
+                ],
                 "Muphrid_V": [
                     "Muphrid_V-a",
                     "Muphrid_V-b",
@@ -46927,6 +48332,13 @@
                         "Coralline Landmass",
                         "Global Glacial Recession"
                     ],
+                    "organicResources": [
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Spice",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Ni",
                         "IL",
@@ -46980,6 +48392,13 @@
                     ],
                     "moonIds": [
                         "Andraphon"
+                    ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Hypercatalyst",
+                        "Nutrient",
+                        "Sealant",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "xF4",
@@ -47450,6 +48869,11 @@
                     "traits": [
                         "Boiled Seas"
                     ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Fiber",
+                        "Nutrient"
+                    ],
                     "inorganicResources": [
                         "Pb",
                         "Ne",
@@ -47501,23 +48925,27 @@
                 }
             },
             "planetChildren": {
-                "Sumati": [
-                    "Andraphon"
+                "Anselon": [
+                    "Vectera",
+                    "Kreet"
+                ],
+                "Cruth": [
                 ],
                 "Danra": [
                     "Podius",
                     "Gryphus"
                 ],
-                "Magreth": [
-                    "Hyperia"
-                ],
                 "Deepala": [
                     "Grimsey",
                     "Dalvik"
                 ],
-                "Anselon": [
-                    "Vectera",
-                    "Kreet"
+                "Magreth": [
+                    "Hyperia"
+                ],
+                "Niira": [
+                ],
+                "Sumati": [
+                    "Andraphon"
                 ]
             }
         },
@@ -47580,6 +49008,12 @@
                         "Ecological Consortium",
                         "Primordial Network"
                     ],
+                    "organicResources": [
+                        "Fiber",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural"
+                    ],
                     "inorganicResources": [
                         "RCOOH",
                         "RCOC",
@@ -47634,6 +49068,15 @@
                     "moonIds": [
                         "Nemeria_II-a",
                         "Nemeria_II-b"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Polymer",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "W",
@@ -47870,6 +49313,17 @@
                     "traits": [
                         "Diseased Biosphere",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Sedative",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Sb",
@@ -48305,6 +49759,8 @@
                 }
             },
             "planetChildren": {
+                "Nemeria_I": [
+                ],
                 "Nemeria_II": [
                     "Nemeria_II-a",
                     "Nemeria_II-b"
@@ -48326,6 +49782,8 @@
                     "Nemeria_VI-b",
                     "Nemeria_VI-c",
                     "Nemeria_VI-d"
+                ],
+                "Nemeria_VII": [
                 ]
             }
         },
@@ -48465,6 +49923,20 @@
                         "Newton_II-a",
                         "Newton_II-b"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Antimicrobial",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Hypercatalyst",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "xF4",
                         "V",
@@ -48589,6 +50061,13 @@
                     ],
                     "traits": [
                         "Diseased Biosphere"
+                    ],
+                    "organicResources": [
+                        "Nutrient",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "W",
@@ -48843,10 +50322,16 @@
                     "Newton_II-a",
                     "Newton_II-b"
                 ],
+                "Newton_III": [
+                ],
+                "Newton_IV": [
+                ],
                 "Newton_V": [
                     "Newton_V-a",
                     "Newton_V-b",
                     "Newton_V-c"
+                ],
+                "Newton_VI": [
                 ]
             }
         },
@@ -49607,6 +51092,8 @@
                 }
             },
             "planetChildren": {
+                "Nikola_I": [
+                ],
                 "Nikola_II": [
                     "Nikola_II-a"
                 ],
@@ -49616,6 +51103,10 @@
                 ],
                 "Nikola_IV": [
                     "Nikola_IV-a"
+                ],
+                "Nikola_IX": [
+                ],
+                "Nikola_V": [
                 ],
                 "Nikola_VI": [
                     "Nikola_VI-a",
@@ -49789,6 +51280,18 @@
                         "Primordial Network",
                         "Psychotropic Biota"
                     ],
+                    "organicResources": [
+                        "Aromatic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Solvent",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Ni",
                         "H2O",
@@ -49897,11 +51400,17 @@
                 }
             },
             "planetChildren": {
+                "Delah": [
+                ],
                 "Kazarah": [
                     "Ka%27zaal"
                 ],
+                "Lontrah": [
+                ],
                 "Nirah_Prime": [
                     "N%27raal"
+                ],
+                "Umanah": [
                 ]
             }
         },
@@ -50007,6 +51516,19 @@
                     ],
                     "moonIds": [
                         "Nirvana_II-a"
+                    ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Aromatic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Spice",
+                        "Stimulant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "xF4",
@@ -50218,6 +51740,8 @@
                 }
             },
             "planetChildren": {
+                "Nirvana_I": [
+                ],
                 "Nirvana_II": [
                     "Nirvana_II-a"
                 ],
@@ -50283,6 +51807,19 @@
                     ],
                     "traits": [
                         "Diseased Biosphere"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Fiber",
+                        "Hypercatalyst",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -50619,6 +52156,8 @@
                 }
             },
             "planetChildren": {
+                "Oborum_I": [
+                ],
                 "Oborum_II": [
                     "Oborum_II-a",
                     "Oborum_II-b"
@@ -50628,6 +52167,8 @@
                     "Oborum_III-b",
                     "Oborum_III-c",
                     "Oborum_III-d"
+                ],
+                "Oborum_IV": [
                 ]
             }
         },
@@ -50689,6 +52230,8 @@
                 }
             },
             "planetChildren": {
+                "Oborum_Proxima_I": [
+                ]
             }
         },
         "Olympus": {
@@ -50749,6 +52292,20 @@
                     "traits": [
                         "Ecological Consortium",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Antimicrobial",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant",
+                        "Sedative",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -51233,18 +52790,24 @@
                 }
             },
             "planetChildren": {
-                "Erebus": [
-                    "Pontus",
-                    "Thalassa"
-                ],
-                "Thanatos": [
-                    "Hypnos"
-                ],
                 "Aion": [
                     "Cybele",
                     "Dionysus",
                     "Orphius",
                     "Mithras"
+                ],
+                "Ananke": [
+                ],
+                "Erebus": [
+                    "Pontus",
+                    "Thalassa"
+                ],
+                "Nesoi": [
+                ],
+                "Ourea": [
+                ],
+                "Thanatos": [
+                    "Hypnos"
                 ]
             }
         },
@@ -51397,6 +52960,12 @@
                     "traits": [
                         "Active Faulting",
                         "Prismatic Plumes"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "Ornamental",
+                        "Pigment",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Pb"
@@ -51709,6 +53278,14 @@
                         "Aeriform Life",
                         "Amphibious Foothold",
                         "Primordial Network"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Nutrient",
+                        "Sealant",
+                        "Solvent",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Xe",
@@ -52172,6 +53749,10 @@
                 }
             },
             "planetChildren": {
+                "Piazzi_I": [
+                ],
+                "Piazzi_II": [
+                ],
                 "Piazzi_III": [
                     "Piazzi_III-a",
                     "Piazzi_III-b"
@@ -52372,6 +53953,14 @@
                         "Porrima_II-b",
                         "Porrima_II-c"
                     ],
+                    "organicResources": [
+                        "Aromatic",
+                        "Fiber",
+                        "Nutrient",
+                        "Sealant",
+                        "Spice",
+                        "Structural"
+                    ],
                     "inorganicResources": [
                         "Li",
                         "H2O",
@@ -52528,6 +54117,16 @@
                     "moonIds": [
                         "Porrima_III-a",
                         "Porrima_III-b"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Li",
@@ -52764,6 +54363,13 @@
                     "traits": [
                         "Amphibious Foothold",
                         "Psychotropic Biota"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Cosmetic",
+                        "Fiber",
+                        "Nutrient",
+                        "Sealant"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -53278,6 +54884,20 @@
                     "moonIds": [
                         "Procyon_III-a"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Antimicrobial",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Sedative",
+                        "Spice",
+                        "Stimulant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "xF4",
                         "Ne",
@@ -53730,6 +55350,8 @@
                 "Procyon_I": [
                     "Procyon_I-a"
                 ],
+                "Procyon_II": [
+                ],
                 "Procyon_III": [
                     "Procyon_III-a"
                 ],
@@ -53811,6 +55433,8 @@
                 }
             },
             "planetChildren": {
+                "Procyon-B_I": [
+                ]
             }
         },
         "Proxima_Ternion": {
@@ -54060,6 +55684,16 @@
                         "Ecological Consortium",
                         "Primordial Network"
                     ],
+                    "organicResources": [
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Sedative",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Ni",
                         "H2O",
@@ -54105,6 +55739,10 @@
                     ],
                     "moonIds": [
                         "Proxima_Ternion_IV-a"
+                    ],
+                    "organicResources": [
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -54158,6 +55796,10 @@
                     "Proxima_Ternion_I-a",
                     "Proxima_Ternion_I-b",
                     "Proxima_Ternion_I-c"
+                ],
+                "Proxima_Ternion_II": [
+                ],
+                "Proxima_Ternion_III": [
                 ],
                 "Proxima_Ternion_IV": [
                     "Proxima_Ternion_IV-a"
@@ -54262,6 +55904,22 @@
                     ],
                     "moonIds": [
                         "Pyraas_II-a"
+                    ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Antimicrobial",
+                        "Cosmetic",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Solvent",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -54833,6 +56491,10 @@
                     "traits": [
                         "Coralline Landmass"
                     ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Sealant"
+                    ],
                     "inorganicResources": [
                         "SiH3Cl",
                         "Li",
@@ -54911,6 +56573,10 @@
                         "Mountains",
                         "Volcanic",
                         "Ocean"
+                    ],
+                    "organicResources": [
+                        "Sealant",
+                        "Sedative"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -55032,12 +56698,18 @@
                 }
             },
             "planetChildren": {
+                "Pyraas_I": [
+                ],
                 "Pyraas_II": [
                     "Pyraas_II-a"
                 ],
                 "Pyraas_III": [
                     "Pyraas_III-a",
                     "Pyraas_III-b"
+                ],
+                "Pyraas_IV": [
+                ],
+                "Pyraas_V": [
                 ],
                 "Pyraas_VI": [
                     "Pyraas_VI-a",
@@ -55368,6 +57040,19 @@
                     "moonIds": [
                         "Rana_III-a"
                     ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant",
+                        "Toxin",
+                        "Toxin Rosy Tendril Weed"
+                    ],
                     "inorganicResources": [
                         "W",
                         "Pt",
@@ -55451,6 +57136,12 @@
                     "traits": [
                         "Aeriform Life",
                         "Ecological Consortium"
+                    ],
+                    "organicResources": [
+                        "Hypercatalyst",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "Pb",
@@ -55620,6 +57311,13 @@
                     ],
                     "traits": [
                         "Coralline Landmass"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Cosmetic",
+                        "Nutrient",
+                        "Sealant",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "H2O",
@@ -56051,6 +57749,12 @@
                 "Rana_III": [
                     "Rana_III-a"
                 ],
+                "Rana_IV": [
+                ],
+                "Rana_IX": [
+                    "Rana_IX-a",
+                    "Rana_IX-b"
+                ],
                 "Rana_V": [
                     "Rana_V-a"
                 ],
@@ -56065,9 +57769,7 @@
                     "Rana_VII-a",
                     "Rana_VII-b"
                 ],
-                "Rana_IX": [
-                    "Rana_IX-a",
-                    "Rana_IX-b"
+                "Rana_VIII": [
                 ]
             }
         },
@@ -56210,6 +57912,13 @@
                     ],
                     "traits": [
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Fiber",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "Ni",
@@ -56369,9 +58078,13 @@
                 "Rasalhague_I": [
                     "Rasalhague_I-a"
                 ],
+                "Rasalhague_II": [
+                ],
                 "Rasalhague_III": [
                     "Rasalhague_III-a",
                     "Rasalhague_III-b"
+                ],
+                "Rasalhague_IV": [
                 ]
             }
         },
@@ -56437,6 +58150,19 @@
                     ],
                     "moonIds": [
                         "Rivera_I-a"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Lubricant",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -56834,6 +58560,8 @@
                     "Rivera_II-b",
                     "Rivera_II-c"
                 ],
+                "Rivera_III": [
+                ],
                 "Rivera_IV": [
                     "Rivera_IV-a"
                 ],
@@ -57102,6 +58830,18 @@
                     ],
                     "moonIds": [
                         "Rutherford_III-a"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "Hallucinogen",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Polymer",
+                        "Sealant",
+                        "Spice",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -57794,6 +59534,8 @@
                 }
             },
             "planetChildren": {
+                "Sagan_I": [
+                ]
             }
         },
         "Sakharov": {
@@ -58073,6 +59815,21 @@
                     "moonIds": [
                         "Schrodinger_III-a"
                     ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Antimicrobial",
+                        "Fiber",
+                        "Luxury Textile",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Sedative",
+                        "Stimulant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Ni",
                         "H2O",
@@ -58157,6 +59914,14 @@
                         "Amphibious Foothold",
                         "Primordial Network",
                         "Sentient Microbial Colonies"
+                    ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -58643,6 +60408,15 @@
                         "Amphibious Foothold",
                         "Psychotropic Biota"
                     ],
+                    "organicResources": [
+                        "Lubricant",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Sedative",
+                        "Structural"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Pb",
@@ -58811,8 +60585,12 @@
                 "Schrodinger_I": [
                     "Schrodinger_I-a"
                 ],
+                "Schrodinger_II": [
+                ],
                 "Schrodinger_III": [
                     "Schrodinger_III-a"
+                ],
+                "Schrodinger_IV": [
                 ],
                 "Schrodinger_V": [
                     "Schrodinger_V-a"
@@ -58930,6 +60708,13 @@
                         "Serpentis_II-a",
                         "Serpentis_II-b"
                     ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural Rosy Tendril Weed",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "W",
                         "SiH3Cl",
@@ -59035,6 +60820,17 @@
                     "traits": [
                         "Amphibious Foothold"
                     ],
+                    "organicResources": [
+                        "Cosmetic",
+                        "Fiber",
+                        "Lubricant",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Pb",
                         "H2O",
@@ -59074,6 +60870,20 @@
                     ],
                     "moonIds": [
                         "Serpentis_IV-a"
+                    ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Analgesic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Sedative",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -59408,9 +61218,13 @@
                 }
             },
             "planetChildren": {
+                "Serpentis_I": [
+                ],
                 "Serpentis_II": [
                     "Serpentis_II-a",
                     "Serpentis_II-b"
+                ],
+                "Serpentis_III": [
                 ],
                 "Serpentis_IV": [
                     "Serpentis_IV-a"
@@ -59575,6 +61389,20 @@
                     "moonIds": [
                         "Shoza_II-a"
                     ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Biosuppressant",
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Pb",
                         "Ni",
@@ -59675,6 +61503,21 @@
                     "moonIds": [
                         "Shoza_III-a"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Pigment",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "SiH3Cl",
                         "Pb",
@@ -59766,6 +61609,15 @@
                         "Primordial Network",
                         "Sentient Microbial Colonies"
                     ],
+                    "organicResources": [
+                        "Biosuppressant",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "RCOOH",
                         "RCOC",
@@ -59812,6 +61664,10 @@
                     ],
                     "traits": [
                         "Aeriform Life"
+                    ],
+                    "organicResources": [
+                        "Polymer",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "W",
@@ -60316,6 +62172,12 @@
                 "Shoza_III": [
                     "Shoza_III-a"
                 ],
+                "Shoza_IV": [
+                ],
+                "Shoza_IX": [
+                ],
+                "Shoza_V": [
+                ],
                 "Shoza_VI": [
                     "Shoza_VI-a"
                 ],
@@ -60605,6 +62467,8 @@
                 }
             },
             "planetChildren": {
+                "Sirius_I": [
+                ],
                 "Sirius_II": [
                     "Sirius_II-a"
                 ],
@@ -61750,15 +63614,23 @@
                 "Earth": [
                     "Luna"
                 ],
-                "Mars": [
-                    "Phobos",
-                    "Deimos_(planet)"
-                ],
                 "Jupiter": [
                     "Io",
                     "Europa",
                     "Ganymede",
                     "Callisto"
+                ],
+                "Mars": [
+                    "Phobos",
+                    "Deimos_(planet)"
+                ],
+                "Mercury": [
+                ],
+                "Neptune": [
+                    "Triton"
+                ],
+                "Pluto": [
+                    "Charon"
                 ],
                 "Saturn": [
                     "Mimas",
@@ -61776,11 +63648,7 @@
                     "Titania",
                     "Oberon"
                 ],
-                "Neptune": [
-                    "Triton"
-                ],
-                "Pluto": [
-                    "Charon"
+                "Venus": [
                 ]
             }
         },
@@ -62005,6 +63873,13 @@
                     "moonIds": [
                         "Sparta_III-a"
                     ],
+                    "organicResources": [
+                        "Fiber",
+                        "Pigment",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Pb",
                         "Ni",
@@ -62086,6 +63961,18 @@
                     ],
                     "traits": [
                         "Aeriform Life"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Stimulant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -62654,12 +64541,16 @@
                 }
             },
             "planetChildren": {
+                "Sparta_I": [
+                ],
                 "Sparta_II": [
                     "Sparta_II-a",
                     "Sparta_II-b"
                 ],
                 "Sparta_III": [
                     "Sparta_III-a"
+                ],
+                "Sparta_IV": [
                 ],
                 "Sparta_V": [
                     "Sparta_V-a"
@@ -62741,6 +64632,17 @@
                     ],
                     "moonIds": [
                         "Strix_I-a"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "Hallucinogen",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sedative",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -62901,6 +64803,12 @@
                         "Mountains",
                         "Hills",
                         "Polar Ice"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Fiber",
+                        "Nutrient",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "U",
@@ -63310,6 +65218,8 @@
                 "Strix_I": [
                     "Strix_I-a"
                 ],
+                "Strix_II": [
+                ],
                 "Strix_III": [
                     "Strix_III-a",
                     "Strix_III-b",
@@ -63318,6 +65228,8 @@
                 ],
                 "Strix_IV": [
                     "Strix_IV-a"
+                ],
+                "Strix_V": [
                 ],
                 "Strix_VI": [
                     "Strix_VI-a",
@@ -63558,6 +65470,15 @@
                     "settled": "",
                     "flora": "Marginal (5)",
                     "fauna": "Marginal (3)",
+                    "organicResources": [
+                        "Cosmetic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "RCOOH",
                         "Ni",
@@ -63602,6 +65523,15 @@
                     ],
                     "moonIds": [
                         "Syrma_IV-a"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "H2O",
@@ -63958,6 +65888,16 @@
                     "traits": [
                         "Amphibious Foothold"
                     ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Antimicrobial",
+                        "Cosmetic",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "SiH3Cl",
                         "Pt",
@@ -64009,6 +65949,8 @@
                 ],
                 "Syrma_II": [
                     "Syrma_II-a"
+                ],
+                "Syrma_III": [
                 ],
                 "Syrma_IV": [
                     "Syrma_IV-a"
@@ -64134,6 +66076,15 @@
                     ],
                     "moonIds": [
                         "Tau_Ceti_II-a"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "None",
+                        "Nutrient",
+                        "Sealant",
+                        "Solvent",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "HnCn",
@@ -64652,6 +66603,19 @@
                         "Ecological Consortium",
                         "Psychotropic Biota"
                     ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Hypercatalyst",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Ta",
                         "SiH3Cl",
@@ -64773,12 +66737,20 @@
                 }
             },
             "planetChildren": {
+                "Tau_Ceti_I": [
+                ],
                 "Tau_Ceti_II": [
                     "Tau_Ceti_II-a"
+                ],
+                "Tau_Ceti_III": [
                 ],
                 "Tau_Ceti_IV": [
                     "Tau_Ceti_IV-a",
                     "Tau_Ceti_IV-b"
+                ],
+                "Tau_Ceti_IX": [
+                ],
+                "Tau_Ceti_V": [
                 ],
                 "Tau_Ceti_VI": [
                     "Tau_Ceti_VI-a"
@@ -64853,6 +66825,8 @@
                 }
             },
             "planetChildren": {
+                "Pup_I": [
+                ]
             }
         },
         "Tidacha": {
@@ -64917,6 +66891,19 @@
                         "Tidacha_I-a",
                         "Tidacha_I-b",
                         "Tidacha_I-c"
+                    ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "RCOOH",
@@ -65150,6 +67137,17 @@
                         "Toliman_II-b",
                         "Toliman_II-c"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Hallucinogen",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Pb",
                         "H2O",
@@ -65274,6 +67272,8 @@
                 }
             },
             "planetChildren": {
+                "Toliman_I": [
+                ],
                 "Toliman_II": [
                     "Toliman_II-a",
                     "Toliman_II-b",
@@ -65342,6 +67342,12 @@
                         "Ursa_Major_I-a",
                         "Ursa_Major_I-b",
                         "Ursa_Major_I-c"
+                    ],
+                    "organicResources": [
+                        "Metabolic Agent",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "U",
@@ -65501,6 +67507,20 @@
                         "Global Glacial Recession",
                         "Psychotropic Biota"
                     ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Solvent",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Ta",
                         "SiH3Cl",
@@ -65554,6 +67574,10 @@
                     "Ursa_Major_I-a",
                     "Ursa_Major_I-b",
                     "Ursa_Major_I-c"
+                ],
+                "Ursa_Major_II": [
+                ],
+                "Ursa_Major_III": [
                 ]
             }
         },
@@ -65743,6 +67767,17 @@
                     "moonIds": [
                         "Ursa_Minor_II-a"
                     ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Aromatic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "xF4",
                         "RCOOH",
@@ -65842,6 +67877,8 @@
                 ],
                 "Ursa_Minor_II": [
                     "Ursa_Minor_II-a"
+                ],
+                "Ursa_Minor_III": [
                 ]
             }
         },
@@ -65906,6 +67943,20 @@
                     "moonIds": [
                         "Miatha",
                         "Navacci"
+                    ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Antimicrobial",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Solvent",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "V",
@@ -66286,15 +68337,21 @@
                 }
             },
             "planetChildren": {
-                "Polvo": [
-                    "Miatha",
-                    "Navacci"
+                "Cantra": [
+                ],
+                "Hillex": [
                 ],
                 "Lumos": [
                     "Golga",
                     "Kindi",
                     "Shorun",
                     "Virum"
+                ],
+                "Polvo": [
+                    "Miatha",
+                    "Navacci"
+                ],
+                "Prax": [
                 ]
             }
         },
@@ -66355,6 +68412,8 @@
                 }
             },
             "planetChildren": {
+                "Van_Maanen_I": [
+                ]
             }
         },
         "Vega": {
@@ -66677,6 +68736,18 @@
                     "traits": [
                         "Primordial Network"
                     ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Metabolic Agent",
+                        "None",
+                        "Nutrient",
+                        "Pigment",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Pb",
                         "Ni",
@@ -66931,6 +69002,18 @@
                     ],
                     "moonIds": [
                         "Verne_II-a"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Cosmetic",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "W",
@@ -67516,6 +69599,10 @@
                 "Verne_III": [
                     "Verne_III-a"
                 ],
+                "Verne_IV": [
+                ],
+                "Verne_V": [
+                ],
                 "Verne_VI": [
                     "Verne_VI-a",
                     "Verne_VI-b"
@@ -67656,6 +69743,10 @@
                     "moonIds": [
                         "Volii_Station"
                     ],
+                    "organicResources": [
+                        "None",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "H2O",
                         "C6Hn"
@@ -67700,6 +69791,10 @@
                     ],
                     "moonIds": [
                         "Volii_Gamma"
+                    ],
+                    "organicResources": [
+                        "Lubricant",
+                        "Structural"
                     ],
                     "inorganicResources": [
                         "SiH3Cl",
@@ -67965,20 +70060,22 @@
                 }
             },
             "planetChildren": {
+                "Volii_Alpha": [
+                ],
                 "Volii_Beta": [
                     "Volii_Delta"
                 ],
-                "Volii_Alpha": [
+                "Volii_Chi": [
                 ],
                 "Volii_Epsilon": [
                     "Volii_Gamma"
                 ],
+                "Volii_Omega": [
+                    "Volii_Upsilon"
+                ],
                 "Volii_Tau": [
                     "Volii_Psi",
                     "Volii_Phi"
-                ],
-                "Volii_Omega": [
-                    "Volii_Upsilon"
                 ]
             }
         },
@@ -68105,6 +70202,8 @@
                 }
             },
             "planetChildren": {
+                "Chthonia": [
+                ],
                 "Etherea": [
                     "Pontem"
                 ]
@@ -68907,6 +71006,16 @@
                     "traits": [
                         "Amphibious Foothold"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Ornamental",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "Ni",
                         "H2O",
@@ -69069,8 +71178,16 @@
                 }
             },
             "planetChildren": {
+                "Xi_Ophiuchi_I": [
+                ],
+                "Xi_Ophiuchi_II": [
+                ],
                 "Xi_Ophiuchi_III": [
                     "Xi_Ophiuchi_III-a"
+                ],
+                "Xi_Ophiuchi_IV": [
+                ],
+                "Xi_Ophiuchi_IX": [
                 ],
                 "Xi_Ophiuchi_V": [
                     "Xi_Ophiuchi_V-a"
@@ -69199,6 +71316,18 @@
                     "moonIds": [
                         "Zelazny_II-a"
                     ],
+                    "organicResources": [
+                        "Adhesive",
+                        "Aromatic",
+                        "Cosmetic",
+                        "Fiber",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "W",
                         "Ti",
@@ -69287,6 +71416,18 @@
                     "traits": [
                         "Ecological Consortium",
                         "Psychotropic Biota"
+                    ],
+                    "organicResources": [
+                        "Antimicrobial",
+                        "Fiber",
+                        "Hallucinogen",
+                        "Immunostimulant",
+                        "Membrane",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "W",
@@ -69871,8 +72012,18 @@
                 }
             },
             "planetChildren": {
+                "Zelazny_I": [
+                ],
                 "Zelazny_II": [
                     "Zelazny_II-a"
+                ],
+                "Zelazny_III": [
+                ],
+                "Zelazny_IV": [
+                ],
+                "Zelazny_V": [
+                ],
+                "Zelazny_VI": [
                 ],
                 "Zelazny_VII": [
                     "Zelazny_VII-a",
@@ -69948,6 +72099,19 @@
                         "Ecological Consortium",
                         "Global Glacial Recession",
                         "Psychotropic Biota"
+                    ],
+                    "organicResources": [
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Neurologic",
+                        "Nutrient",
+                        "Pigment",
+                        "Polymer",
+                        "Sealant",
+                        "Sedative",
+                        "Spice",
+                        "Structural",
+                        "Toxin"
                     ],
                     "inorganicResources": [
                         "Yb",
@@ -70471,6 +72635,10 @@
                     "traits": [
                         "Emerging Tectonics"
                     ],
+                    "organicResources": [
+                        "Analgesic",
+                        "Spice"
+                    ],
                     "inorganicResources": [
                         "U",
                         "Sb",
@@ -70648,6 +72816,10 @@
                 }
             },
             "planetChildren": {
+                "Zeta_Ophiuchi_I": [
+                ],
+                "Zeta_Ophiuchi_II": [
+                ],
                 "Zeta_Ophiuchi_III": [
                     "Zeta_Ophiuchi_III-a"
                 ],
@@ -71124,6 +73296,17 @@
                         "Ocean",
                         "SavannahBarren"
                     ],
+                    "organicResources": [
+                        "Amino Acids",
+                        "Antimicrobial",
+                        "Biosuppressant",
+                        "Fiber",
+                        "Metabolic Agent",
+                        "Nutrient",
+                        "Sealant",
+                        "Structural",
+                        "Toxin"
+                    ],
                     "inorganicResources": [
                         "U",
                         "SiH3Cl",
@@ -71209,6 +73392,8 @@
             "planetChildren": {
                 "Zosma_I": [
                     "Zosma_I-a"
+                ],
+                "Zosma_II": [
                 ],
                 "Zosma_III": [
                     "Zosma_III-a"

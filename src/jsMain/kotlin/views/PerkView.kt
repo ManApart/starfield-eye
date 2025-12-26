@@ -37,7 +37,6 @@ fun perkView(section: String? = null) {
                                         perks.sortedBy { it.name }.forEach { perk ->
                                             val rank = inMemoryStorage.perks[perk.name] ?: 0
                                             div("perk-cell perk-cell-$tier") {
-                                                //TODO - hard code the size so we don't have pop in
                                                 img(classes = "perk-image", src = "./images/skills/${perk.perkId}_rank$rank.png") {
                                                     id = "${perk.name}-badge"
                                                     onClickFunction = {

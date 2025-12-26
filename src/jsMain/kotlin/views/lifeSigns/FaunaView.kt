@@ -20,7 +20,7 @@ import kotlin.math.max
 import kotlin.math.min
 
 fun faunaView(system: String, planet: String) {
-    val fauna = faunaReference["$system-$planet"]
+    val fauna = faunaReference["$system:$planet"]
     val classes = if (fauna != null) "section-view-box" else ""
     replaceElement("fauna-view", classes) {
         fauna?.let { planetFauna ->
@@ -49,7 +49,7 @@ private fun TagConsumer<HTMLElement>.display(fauna: FaunaWikiData, linkToSystem:
             screenshot("fauna/$name")
 
             if (linkToSystem) {
-                fauna.planetId?.let { id -> id.split("-").map { it } }?.let { id ->
+                fauna.planetId?.split(":")?.let { id ->
                     button {
                         +"View System"
                         onClickFunction = {

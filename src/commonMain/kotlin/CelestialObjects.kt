@@ -51,7 +51,7 @@ data class Planet(
     val inorganicResources: Set<ResourceType> = emptySet(),
 ) {
     @Transient
-    val uniqueId = "$starId-$id"
+    val uniqueId = "$starId:$id"
 }
 
 @Serializable
