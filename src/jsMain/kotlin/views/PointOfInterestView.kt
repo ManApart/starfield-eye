@@ -13,7 +13,7 @@ import org.w3c.dom.HTMLElement
 import poiReference
 import views.system.attemptTravel
 
-fun pointOfInterestView(system: StarSystem, planetId: Int? = null) {
+fun pointOfInterestView(system: StarSystem, planetId: String? = null) {
     val planet = planetId?.let { system.planets[it] }
     val planetHtmlId = planet?.id ?: "none"
     val genericRoot = el<HTMLElement?>("poi-view")

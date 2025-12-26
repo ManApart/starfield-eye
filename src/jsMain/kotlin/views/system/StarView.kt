@@ -19,11 +19,12 @@ fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, linkToSy
         if (linkToSystem) {
             button {
                 +"View System"
-                onClickFunction = { systemView(system, 0) }
+                onClickFunction = { systemView(system) }
             }
         }
         wikiLink(name.replace(" ", "_"))
 
+        //TODO - test
         checkBox(star.id, "Discovered", inMemoryStorage::discoveredStars) {
             replaceElement("${star.id}-details") {
                 detailsTable(star, system)

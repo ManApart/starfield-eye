@@ -19,7 +19,7 @@ val jsonMapper = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
 @Serializable
 data class InMemoryStorage(
     val planetUserInfo: MutableMap<String, PlanetInfo> = mutableMapOf(),
-    val discoveredStars: MutableSet<Int> = mutableSetOf(),
+    val discoveredStars: MutableSet<String> = mutableSetOf(),
     val connectionSettings: GameConnectionSettings = GameConnectionSettings(),
     var quests: List<Quest> = listOf(),
     var stats: MiscStats = MiscStats(),
@@ -31,7 +31,7 @@ data class InMemoryStorage(
 ) {
     fun planetInfo(uniqueId: String) = planetUserInfo.getOrPut(uniqueId) { PlanetInfo(uniqueId) }
 
-    fun isDiscovered(system: Int) =
+    fun isDiscovered(system: String) =
         if (inMemoryStorage.showUndiscovered == true) true else inMemoryStorage.discoveredStars.contains(system)
 
     fun perkLevel(name: String) = perks[name] ?: 0

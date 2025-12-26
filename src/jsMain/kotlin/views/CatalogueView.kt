@@ -55,7 +55,7 @@ fun catalogueView(searchText: String = planetSearchOptions.searchText) {
         }
     }
     saveHtmlRefs()
-    detailView(galaxy.systems.values.first(), 0, false, true)
+    detailView(galaxy.systems.values.first(), "", false, true)
     searchPlanets()
 }
 
@@ -66,13 +66,13 @@ private fun TagConsumer<HTMLElement>.planetList() {
             span {
                 +system.star.name
                 onClickFunction = {
-                    detailView(system, 0, false, true)
+                    detailView(system, "", false, true)
                     pointOfInterestView(system)
                     clearOutpostsView()
                     clearFloraFaunaView()
                 }
                 onMouseOverFunction = {
-                    detailView(system, 0, false, true)
+                    detailView(system, "", false, true)
                     pointOfInterestView(system)
                     clearOutpostsView()
                     clearFloraFaunaView()
@@ -108,7 +108,7 @@ private fun saveHtmlRefs() {
 fun filterPlanets(shown: List<Planet>, additionalStars: List<Int>) {
     val shownMap = shown.associateBy { it.uniqueId }
     val (shownHtml, hiddenHtml) = planetDivs.entries.partition { (id, _) -> shownMap.containsKey(id) }
-    val shownStars = shown.groupBy { it.starId.toString() }.keys + additionalStars
+    val shownStars = shown.groupBy { it.starId }.keys + additionalStars
     val (shownStarHtml, hiddenStarHtml) = starDivs.entries.partition { (id, _) -> shownStars.contains(id) }
 
     (shownStarHtml + shownHtml).forEach { (_, html) ->

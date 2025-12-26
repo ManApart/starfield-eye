@@ -20,7 +20,7 @@ import views.system.systemView
 import kotlin.math.max
 import kotlin.math.min
 
-fun floraView(system: Int, planet: Int) {
+fun floraView(system: String, planet: String) {
     val flora = floraReference["$system-$planet"]
     val classes = if (flora != null) "section-view-box" else ""
     replaceElement("flora-view", classes) {
@@ -49,7 +49,7 @@ private fun TagConsumer<HTMLElement>.display(flora: FloraWikiData, linkToSystem:
             screenshot("flora/$name")
 
             if (linkToSystem) {
-                flora.planetId?.let { id -> id.split("-").map { it.toInt() } }?.let { id ->
+                flora.planetId?.let { id -> id.split("-").map { it } }?.let { id ->
                     button {
                         +"View System"
                         onClickFunction = {

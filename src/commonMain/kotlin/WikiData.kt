@@ -22,7 +22,6 @@ data class StarWikiData(
 
 @Serializable
 data class PlanetWikiData(
-    //TODO - parse
     val id: String = "",
     override val name: String = "",
     val type: String = "",

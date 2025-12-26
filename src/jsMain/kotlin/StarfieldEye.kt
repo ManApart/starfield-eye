@@ -115,8 +115,8 @@ fun doRouting(windowHash: String) {
         windowHash.startsWith("#system/") -> {
             val parts = windowHash.replace("#system/", "").split("/")
             if (parts.size == 2) {
-                val system = galaxy.systems[parts.first().toInt()]!!
-                val planet = parts.last().toIntOrNull() ?: 0
+                val system = galaxy.systems[parts.first()]!!
+                val planet = parts.last()
                 systemView(system, planet)
             }
         }

@@ -17,7 +17,7 @@ import views.lifeSigns.faunaView
 import views.lifeSigns.floraView
 import views.pointOfInterestView
 
-private var currentPlanet = 0
+private var currentPlanet = ""
 private var currentPlanetType = "star"
 
 fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
@@ -33,14 +33,14 @@ fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
             div("system-star-circle") {
                 id = "star-0"
                 onClickFunction = {
-                    setSelected("star", 0)
-                    detailView(system, 0)
+                    setSelected("star", "")
+                    detailView(system, "")
                     clearOutpostsView()
                     pointOfInterestView(system)
                     clearFloraFaunaView()
                 }
                 onMouseOverFunction = {
-                    detailView(system, 0, false)
+                    detailView(system, "", false)
                     clearOutpostsView()
                     pointOfInterestView(system)
                     clearFloraFaunaView()
@@ -111,16 +111,16 @@ fun TagConsumer<HTMLElement>.orrery(system: StarSystem) {
 }
 
 
-private fun setSelected(system: StarSystem, planetId: Int) {
+private fun setSelected(system: StarSystem, planetId: String) {
     val prefix = when {
-        planetId == 0 -> "star"
+        planetId == "" -> "star"
         system.planetChildren.keys.contains(planetId) -> "planet"
         else -> "moon"
     }
     setSelected(prefix, planetId)
 }
 
-fun setSelected(prefix: String, planetId: Int) {
+fun setSelected(prefix: String, planetId: String) {
     el<HTMLElement?>("$currentPlanetType-$currentPlanet")?.removeClass("selected-circle")
     currentPlanetType = prefix
     currentPlanet = planetId
@@ -141,10 +141,10 @@ fun navigateOrrery(key: KeyboardEvent) {
 }
 
 private fun selectNextPlanet(system: StarSystem, shift: Int = 1) {
-    val planetIds = listOf(0) + system.planetChildren.keys.toList()
+    val planetIds = listOf("") + system.planetChildren.keys.toList()
     var i = planetIds.indexOf(currentPlanet)
     if (i == -1) {
-        i = system.planetChildren.entries.first { (_, moons) -> moons.contains(currentPlanet) }.key
+        i = planetIds.indexOf(system.planetChildren.entries.first { (_, moons) -> moons.contains(currentPlanet) }.key)
     }
     i += shift
     if (i >= planetIds.size) i = 0
@@ -152,7 +152,7 @@ private fun selectNextPlanet(system: StarSystem, shift: Int = 1) {
     val planetId = planetIds[i]
     setSelected(system, planetId)
     detailView(system, planetId)
-    if (planetId == 0) {
+    if (planetId == "") {
         clearOutpostsView()
         clearFloraFaunaView()
     } else {
@@ -162,29 +162,28 @@ private fun selectNextPlanet(system: StarSystem, shift: Int = 1) {
     }
 }
 
+//TODO - test
 private fun selectNextMoon(system: StarSystem, shift: Int = 1) {
-    val planetIds = listOf(0) + system.planetChildren.keys.toList()
-    var parentId = planetIds.indexOf(currentPlanet)
-    if (parentId == -1) parentId =
-        system.planetChildren.entries.first { (_, moons) -> moons.contains(currentPlanet) }.key
+    system.planets[currentPlanet]?.let { current ->
+        system.planets[current.parentId]?.let { parent ->
+            val moons = listOf(parent.id) + parent.moonIds
+            var i = moons.indexOf(currentPlanet) + shift
 
-    val moons = listOf(parentId) + (system.planetChildren[parentId] ?: listOf())
+            if (i >= moons.size) i = 0
+            if (i < 0) i = moons.size - 1
+            val planetId = moons[i]
 
-    var i = moons.indexOf(currentPlanet) + shift
+            setSelected(system, planetId)
+            detailView(system, planetId)
 
-    if (i >= moons.size) i = 0
-    if (i < 0) i = moons.size - 1
-    val planetId = moons[i]
-
-    setSelected(system, planetId)
-    detailView(system, planetId)
-
-    if (planetId == 0) {
-        clearOutpostsView()
-        clearFloraFaunaView()
-    } else {
-        outpostsView(system, planetId)
-        floraView(system.star.id, planetId)
-        faunaView(system.star.id, planetId)
+            if (planetId == "") {
+                clearOutpostsView()
+                clearFloraFaunaView()
+            } else {
+                outpostsView(system, planetId)
+                floraView(system.star.id, planetId)
+                faunaView(system.star.id, planetId)
+            }
+        }
     }
 }

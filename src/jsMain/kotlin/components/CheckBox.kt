@@ -86,3 +86,48 @@ fun TagConsumer<HTMLElement>.checkBox(
         }
     }
 }
+
+fun TagConsumer<HTMLElement>.checkBox(
+    index: String,
+    name: String,
+    property: KProperty0<MutableSet<String>>,
+    onChange: (Boolean) -> Unit = {}
+) {
+    span("checkbox-wrapper") {
+        checkBox(index, property, onChange)
+        span {
+            +name
+            onClickFunction = {
+                val checkBox = el<HTMLInputElement>("${property.name}-$index-checkbox")
+                val newVal = !checkBox.checked
+                checkBox.checked = newVal
+                if (newVal) {
+                    property.get().add(index)
+                } else {
+                    property.get().remove(index)
+                }
+                onChange(newVal)
+            }
+        }
+    }
+}
+
+fun TagConsumer<HTMLElement>.checkBox(
+    index: String,
+    property: KProperty0<MutableSet<String>>,
+    onChange: (Boolean) -> Unit = {}
+) {
+    input(InputType.checkBox, classes = "checkbox") {
+        id = "${property.name}-$index-checkbox"
+        checked = property.get().contains(index)
+        onChangeFunction = {
+            val newVal = el<HTMLInputElement>(this.id).checked
+            if (newVal) {
+                property.get().add(index)
+            } else {
+                property.get().remove(index)
+            }
+            onChange(newVal)
+        }
+    }
+}

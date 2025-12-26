@@ -67,7 +67,7 @@ data class StarSystem(
 
 @Serializable
 data class Galaxy(
-    val systems: Map<Int, StarSystem> = mapOf(),
+    val systems: Map<String, StarSystem> = mapOf(),
     val summary: GalaxySummary = GalaxySummary()
 ) {
     @Transient

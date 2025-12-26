@@ -23,14 +23,15 @@ import updateUrl
 import views.*
 import views.lifeSigns.faunaView
 import views.lifeSigns.floraView
+import views.system.setSelected
 import kotlin.reflect.KProperty0
 
 
 var currentSystem: StarSystem? = null
 
-fun systemView(system: StarSystem, planetId: Int = 0) {
+fun systemView(system: StarSystem, planetId: String = "") {
     currentSystem = system
-    updateUrl(system, planetId)
+    updateUrl("system", planetId)
     replaceElement {
         div {
             id = "system-view"
@@ -53,7 +54,7 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
     faunaView(system.star.id, planetId)
 
     val planetType = when {
-        planetId == 0 -> "star"
+        planetId == "" -> "star"
         system.planetChildren.keys.contains(planetId) -> "planet"
         else -> "moon"
     }
@@ -61,26 +62,26 @@ fun systemView(system: StarSystem, planetId: Int = 0) {
     keyPressedHook = ::navigateOrrery
 }
 
-private fun updateUrl(system: StarSystem, planetId: Int) {
+private fun updateUrl(system: StarSystem, planetId: String) {
     updateUrl("system/${system.star.id}/$planetId")
 }
 
-fun detailView(system: StarSystem, planetId: Int, updateUrl: Boolean = true, linkToSystem: Boolean = false) {
+fun detailView(system: StarSystem, planetId: String, updateUrl: Boolean = true, linkToSystem: Boolean = false) {
     if (updateUrl) updateUrl(system, planetId)
     replaceElement("detail-view", "section-view-box") {
-        if (planetId == 0) detailView(system.star, system, linkToSystem) else detailView(
+        if (planetId == "") detailView(system.star, system, linkToSystem) else detailView(
             system,
             system.planets[planetId]!!,
             linkToSystem
         )
     }
-    if (planetId != 0) {
+    if (planetId != "") {
         system.planets[planetId]?.let { userInfo(it) }
     }
 }
 
-fun outpostsView(system: StarSystem, planetId: Int) {
-    if (planetId != 0) {
+fun outpostsView(system: StarSystem, planetId: String) {
+    if (planetId != "") {
         val planet = system.planets[planetId]!!
         val info = inMemoryStorage.planetInfo(planet.uniqueId)
         outpostsView(planet, info)
