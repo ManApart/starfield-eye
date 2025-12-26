@@ -105,5 +105,5 @@ fun Element?.rowsToMap(): Map<String, List<String>> {
     }
 }
 
-fun String.urlIdToName() = urlIdToId().replace("-", " ").trim()
-fun String.urlIdToId() = replace("_", " ").replace("Starfield:", "").trim()
+fun String.urlIdToName() = urlIdToId().replace("_", " ").trim()
+fun String.urlIdToId() = replace("Starfield:", "").trim()

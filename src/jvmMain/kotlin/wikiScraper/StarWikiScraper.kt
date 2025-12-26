@@ -63,12 +63,12 @@ private fun attemptParseWikiData(id: String, document: Document): StarWikiData {
 
     val planets = document.select("table").firstOrNull { !it.hasClass("infobox") && !it.hasClass("navbox") }?.selectColumn(1)?.mapNotNull { it.getUrlId() } ?: emptyList()
 
-    val cleanId = id.urlIdToId().replace("System", "").trim()
+    val cleanId = id.urlIdToId().replace("_System", "").trim()
     return StarWikiData(
         id,
         cleanId,
-        cleanId.replace("-", " "),
         data["Catalogue ID"]?.first() ?: "",
+        cleanId.urlIdToName(),
         data["Level"]?.first()?.toIntOrNull() ?: 0,
         data["Spectral Class"]?.first() ?: "",
         data["Temperature"]?.first() ?: "",

@@ -35,7 +35,7 @@ fun main() {
                 }.awaitAll().filterNotNull()
             }
             .mapNotNull { (id, data) -> parseWikiData(id, data) }
-            .forEach { existing[it.name] = it }
+            .forEach { existing[it.id] = it }
         api.close()
     }
 
@@ -60,7 +60,7 @@ private fun parseWikiData(id: String, document: Document): PlanetWikiData? {
     }
 }
 
-private fun attemptParseWikiData(id: String, document: Document): PlanetWikiData {
+private fun attemptParseWikiData(urlId: String, document: Document): PlanetWikiData {
     val data: Map<String, List<String>> = document.select(".infobox").first().rowsToMap()
 
     val traits = document.select(".infobox").select("tr")
@@ -70,11 +70,11 @@ private fun attemptParseWikiData(id: String, document: Document): PlanetWikiData
 
 
     val resources = data["Resources"]?.flatMap { it.replace("  ", " ").split(" ") } ?: listOf()
-    val moons = document.select("h2").firstOrNull { it.text().contains("Moons") }?.nextElementSibling()?.selectColumn(1)?.mapNotNull { it.getUrlId() } ?: emptyList()
+    val moons = document.select("h2").firstOrNull { it.text().contains("Moons") }?.nextElementSibling()?.selectColumn(1)?.mapNotNull { it.getUrlId() }?.map { it.urlIdToId() } ?: emptyList()
 
     return PlanetWikiData(
-        id,
-        id.urlIdToName(),
+        urlId.urlIdToId(),
+        urlId.urlIdToName(),
         data["Type"]?.first() ?: "",
         data["Temperature"]?.first() ?: "",
         data["Atmosphere"]?.first() ?: "",
