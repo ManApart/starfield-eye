@@ -18,7 +18,7 @@ fun pointOfInterestView(system: StarSystem, planetId: String? = null) {
     val genericRoot = el<HTMLElement?>("poi-view")
     val root = genericRoot ?: el("poi-view-${system.star.name}-$planetHtmlId")
     root.innerHTML = ""
-    val poiList = poiReference[system.star.name]?.filter { it.planet == planet?.name }?.toList() ?: listOf()
+    val poiList = poiReference[system.star.id]?.filter { it.planet == planet?.id }?.toList() ?: listOf()
 //    println("${system.star.name} with planet ${planet?.name} has poi: $poiList")
 
     if (poiList.isNotEmpty()) {

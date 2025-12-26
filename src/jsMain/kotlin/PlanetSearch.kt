@@ -9,7 +9,6 @@ private fun List<Planet>.filterSearch(searchText: String): Pair<List<Planet>, Li
     return if (searchText.isBlank()) this to listOf() else {
         val terms = searchText.lowercase().split(",")
         val poi = poiMatches(terms)
-//        println("Search found poi: $poi")
         val planets = terms.fold(this) { acc, s -> filterPlanet(acc, s.trim(), poi) }
         //TODO - get list of additional stars as well
         planets to listOf()
@@ -34,8 +33,7 @@ private fun planetMatches(planet: Planet, searchText: String, poi: List<PointOfI
                 || planetClass.lowercase().contains(searchText)
                 || magneticField.lowercase().contains(searchText)
                 || life.lowercase().contains(searchText)
-                || poi.any { it.planet?.lowercase() == name.lowercase()}
-//                || poi.any { it.planet == null && it.starSystem == planet.parentId}
+                || poi.any { it.planet == id }
                 || biomes.any { it.lowercase().contains(searchText) }
                 || traits.any { it.lowercase().contains(searchText) }
                 || flora.any { it.lowercase().contains(searchText) }
@@ -54,4 +52,6 @@ private fun planetInfoMatches(planet: Planet, searchText: String): Boolean {
     }
 }
 
-private fun poiMatches(terms: List<String>) = poiReference.values.flatten().filter { poi ->  terms.any { term -> poi.name.lowercase().contains(term) } }
+private fun poiMatches(terms: List<String>) = poiReference.values.flatten().filter { poi ->
+    terms.any { term -> poi.name.lowercase().contains(term) }
+}

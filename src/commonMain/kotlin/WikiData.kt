@@ -126,6 +126,6 @@ data class PointOfInterest(
     override val name: String,
     val description: String,
     val type: POIType,
-    val starSystem: String? = null,
-    val planet: String? = null,
+    val starSystem: String,
+    val planet: String,
 ) : WikiData

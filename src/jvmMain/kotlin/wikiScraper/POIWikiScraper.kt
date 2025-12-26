@@ -39,7 +39,7 @@ private fun parsePOI(starId: String, planetId: String, page: Document): List<Poi
 private fun parsePOIRow(starId: String, planetId: String, row: Map<String, Element>): PointOfInterest{
     return PointOfInterest(
         row["Place"]?.select("a")?.lastOrNull()?.attr("href")?.replace("/wiki/", "")?.urlIdToId() ?: "",
-        row["Place"]?.text()?.replace(" ", "") ?: "",
+        row["Place"]?.text()?.replace(" ", "")?.trim() ?: "",
         row["Description"]?.text() ?: "",
         row["Type"]?.text()?.toPOIType() ?: POIType.OTHER,
         starId,
