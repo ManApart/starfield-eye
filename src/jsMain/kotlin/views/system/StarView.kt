@@ -24,7 +24,6 @@ fun TagConsumer<HTMLElement>.detailView(star: Star, system: StarSystem, linkToSy
         }
         wikiLink(name.replace(" ", "_"))
 
-        //TODO - test
         checkBox(star.id, "Discovered", inMemoryStorage::discoveredStars) {
             replaceElement("${star.id}-details") {
                 detailsTable(star, system)

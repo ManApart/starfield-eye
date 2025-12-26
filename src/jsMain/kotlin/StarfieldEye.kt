@@ -94,7 +94,6 @@ fun doRouting(windowHash: String) {
     pollHook = {}
     keyPressedHook = {}
     val section = windowHash.split("/").takeIf { it.size == 2 }?.last()
-    section?.let { println("Section: $it") }
     when {
         windowHash.startsWith("#about") -> aboutView(section)
         windowHash.startsWith("#manual") -> manualView(section)

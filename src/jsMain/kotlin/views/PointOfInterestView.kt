@@ -5,7 +5,6 @@ import PointOfInterest
 import StarSystem
 import el
 import kotlinx.dom.addClass
-import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.dom.append
 import kotlinx.html.js.onClickFunction
@@ -46,7 +45,7 @@ private fun TagConsumer<HTMLElement>.poiView(system: StarSystem, planet: Planet?
             onClickFunction = { attemptTravel(planet?.name ?: system.star.name) }
         }
         button {
-            a("https://starfieldwiki.net${poi.wikiLink}", target = "_blank") {
+            a("https://starfieldwiki.net$/wiki/Starfield:${poi.id}", target = "_blank") {
                 +"Wiki"
             }
             title = "View on the wiki"

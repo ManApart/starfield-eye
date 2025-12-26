@@ -1,52 +1,48 @@
 package wikiScraper
 
+import Galaxy
+import PlanetWikiData
 import PointOfInterest
 import jsonMapper
 import kotlinx.coroutines.runBlocking
+import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
+import org.jsoup.nodes.Element
 import toPOIType
 import java.io.File
 
-//TODO - redo to read from planets
 fun main() {
     val output = File("src/jsMain/resources/poi-wiki-data.json")
 
-    println("Reading poi")
-    runBlocking {
-        val api = authedApi()
-        val doc = api.fetch("Starfield:Places", "places")
-        api.parsePOI(doc).let { output.writeText(jsonMapper.encodeToString(it)) }
-        api.close()
-    }
+    val systems = jsonMapper.decodeFromString<Galaxy>(File("src/jsMain/resources/data.json").readText()).systems.values
 
+    val docs = getAllPlanets()
+    val poi = systems.flatMap { sys ->
+        sys.planets.values.mapNotNull { planet ->
+            docs["Starfield:" + planet.id]?.let { doc ->
+                parsePOI(sys.star.id, planet.id, doc)
+            } ?: null.also { println("Unable to find doc for ${sys.star.id}: ${planet.id}") }
+        }.flatten()
+    }.sortedBy { it.id }
+
+    output.writeText(jsonMapper.encodeToString(poi))
 }
 
-private suspend fun WikiApi.parsePOI(page: Document): List<PointOfInterest> {
-    return page.select("li.tocsection-4").first()!!.select("a").flatMap { page.select(it.attr("href")) }.filter { it.id() != "Fixed_Points_of_Interest" }.flatMap { section ->
-        val type = section.id().toPOIType()
-        var contents = section.parent()!!.nextElementSibling()!!
-        if (contents.`is`("p")) contents = contents.nextElementSibling()!!
-
-        contents.select("li").map { li ->
-            val link = li.select("a").toList().first { it.hasAttr("title") }
-            val url = link.attr("href")
-            //TODO - test
-            val detailPage = fetch(url, "places", true)
-//            val detailPage = fetch("https://starfieldwiki.net:$url", "places", true)
-            val description = detailPage.select("p").first()?.text() ?: ""
-            val locationSentence = detailPage.select("table").select("td").map { it.text() }.firstOrNull { it.startsWith("On the planet") }
-            val locationStringPlanet = locationSentence?.split(",")?.first()?.replace("On the planet ", "")?.trim()
-            val locationStringSystem = locationSentence?.split(",")?.last()?.replace("in the", "")?.replace("System.", "")?.trim()
-            val infoPlanet = detailPage.select("table.infobox").firstOrNull()?.selectHeader("Planet")?.text()
-            val infoSystem = detailPage.select("table.infobox").firstOrNull()?.selectHeader("System")?.text()
-
-
-            val planet = locationStringPlanet ?: infoPlanet
-            val system = (locationStringSystem ?: infoSystem)?.replace("System", "")?.trim()
-
-            PointOfInterest(link!!.text(), description, type, url, system, planet)
-        }
+private fun parsePOI(starId: String, planetId: String, page: Document): List<PointOfInterest> {
+    return page.tablesWithHeaders("Place", "Type", "Description").flatMap { tbl ->
+        tbl.tableWithHeaderRowToMap().map { parsePOIRow(starId, planetId, it) }
     }
+}
+
+private fun parsePOIRow(starId: String, planetId: String, row: Map<String, Element>): PointOfInterest{
+    return PointOfInterest(
+        row["Place"]?.select("a")?.lastOrNull()?.attr("href")?.replace("/wiki/", "")?.urlIdToId() ?: "",
+        row["Place"]?.text()?.replace(" ", "") ?: "",
+        row["Description"]?.text() ?: "",
+        row["Type"]?.text()?.toPOIType() ?: POIType.OTHER,
+        starId,
+        planetId
+    )
 }

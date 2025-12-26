@@ -113,7 +113,7 @@ data class Material(
     val url: String,
 )
 
-enum class POIType { CITY, SETTLEMENT, FARM, STARSTATION, STARYARD, SHIP, DERELICT_SHIP, FRACTURED_EARTH_LANDMARK, INDUSTRIAL_OUTPOST, MILITARY_BASE, MINING_BASE, CRASHED_STARSHIP, SCIENCE_LAB, LANDING_SITE, TEMPLE, OTHER }
+enum class POIType { CITY, DERELICT_SHIPS, SETTLEMENT, FARM, STARSTATION, STARYARD, SHIP, DERELICT_SHIP, FRACTURED_EARTH_LANDMARK, INDUSTRIAL_OUTPOST, MILITARY_BASE, MINING_BASE, CRASHED_STARSHIP, SCIENCE_LAB, LANDING_SITE, TEMPLE, OTHER }
 
 fun String.toPOIType(): POIType {
     val clean = uppercase().dropLast(1).replace("CITIE", "CITY").replace("OTHER_SETTLEMENTS_AND_OUTPOST", "SETTLEMENT")
@@ -122,10 +122,10 @@ fun String.toPOIType(): POIType {
 
 @Serializable
 data class PointOfInterest(
+    val id: String,
     override val name: String,
     val description: String,
     val type: POIType,
-    val wikiLink: String,
     val starSystem: String? = null,
     val planet: String? = null,
 ) : WikiData

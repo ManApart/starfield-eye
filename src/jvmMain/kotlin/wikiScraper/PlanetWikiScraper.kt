@@ -18,7 +18,15 @@ fun main() {
         jsonMapper.decodeFromString<Map<String, PlanetWikiData>>(output.readText()).toMutableMap()
     } else mapOf()).toMutableMap()
 
-    runBlocking {
+    getAllPlanets()
+        .mapNotNull { (id, data) -> parseWikiData(id, data) }
+        .forEach { existing[it.id] = it }
+
+    output.writeText(jsonMapper.encodeToString(existing))
+}
+
+fun getAllPlanets(): Map<String, Document> {
+    return runBlocking {
         val api = authedApi()
         getPlanetNames(api)
             .also { println("Reading ${it.size} Planets") }
@@ -33,13 +41,8 @@ fun main() {
                         }
                     }
                 }.awaitAll().filterNotNull()
-            }
-            .mapNotNull { (id, data) -> parseWikiData(id, data) }
-            .forEach { existing[it.id] = it }
-        api.close()
+            }.toMap().also { api.close() }
     }
-
-    output.writeText(jsonMapper.encodeToString(existing))
 }
 
 private suspend fun getPlanetNames(api: WikiApi): List<String> {

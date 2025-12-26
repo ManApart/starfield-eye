@@ -1,10 +1,21 @@
 package wikiScraper
 
+import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 
 
 fun Element?.cleanText(): String? {
     return this?.text()?.replace("(?)", "")?.ifBlank { null }
+}
+
+/*
+Get all tables in the doc that have table headers matching at least all the passed in strings
+ */
+fun Document.tablesWithHeaders(vararg headers: String): List<Element> {
+    val needed = headers.toList()
+    return select("table").filter { table ->
+        table.select("th").map { it.text() }.containsAll(needed)
+    }
 }
 
 fun Element.select(row: Int, cell: Int): Element? {
@@ -93,7 +104,7 @@ fun Element.getUrlIds(): List<String> {
 }
 
 fun Element?.rowsToMap(): Map<String, List<String>> {
-    return if(this == null) mapOf () else {
+    return if (this == null) mapOf() else {
         select("tr").mapNotNull { row ->
             val title = row.selectFirst("th")?.text()?.trim()
             val cols = row.select("td")
@@ -104,6 +115,21 @@ fun Element?.rowsToMap(): Map<String, List<String>> {
         }.toMap()
     }
 }
+/*
+Take a table with a header row and transfrom into a list of maps
+Each map is one row of data, the key being the header
+ */
+
+fun Element.tableWithHeaderRowToMap(): List<Map<String, Element>> {
+    val headers = select("th").map { it.text() }
+    return select("tr").drop(1).map { row ->
+        val td = row.select("td")
+        headers.mapIndexed { i, h ->
+            h to td[i]
+        }.toMap()
+    }
+}
 
 fun String.urlIdToName() = urlIdToId().replace("_", " ").replace("%27", "'").trim()
+
 fun String.urlIdToId() = replace("Starfield:", "").trim()
