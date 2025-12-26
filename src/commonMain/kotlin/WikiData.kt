@@ -22,6 +22,8 @@ data class StarWikiData(
 
 @Serializable
 data class PlanetWikiData(
+    //TODO - parse
+    val id: String = "",
     override val name: String = "",
     val type: String = "",
     val temperature: String = "",
@@ -47,6 +49,7 @@ data class FaunaWikiData(
     override val name: String = "",
     val temperament: Temperament = Temperament.UNKNOWN,
     val planet: String? = null,
+    //TODO - use system+ planet id, NOT int id
     val planetId: String? = null,
     val biomes: List<String> = listOf(),
     val resource: String,
@@ -61,6 +64,7 @@ data class FaunaWikiData(
 data class FloraWikiData(
     override val name: String = "",
     val planet: String? = null,
+    //TODO - use system+ planet id, NOT int id
     val planetId: String? = null,
     val biomes: List<String> = listOf(),
     val resource: String,

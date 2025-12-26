@@ -19,9 +19,9 @@ data class Star(
 @Serializable
 data class Planet(
     val id: String,
-    val planetId: Int,
-    val starId: Int,
-    val parentId: Int,
+    val rawId: Int?,
+    val starId: String,
+    var parentId: String,
     val name: String,
     val planetClass: String,
     val bodyType: Int,
@@ -44,10 +44,11 @@ data class Planet(
     val settled: String,
     val flora: String,
     val fauna: String,
-    val biomes: List<String>,
-    val traits: List<String>,
-    val organicResources: Set<String>,
-    val inorganicResources: Set<ResourceType>,
+    val biomes: List<String> = emptyList(),
+    val traits: List<String> = emptyList(),
+    val moonIds: List<String> = listOf(),
+    val organicResources: Set<String> = emptySet(),
+    val inorganicResources: Set<ResourceType> = emptySet(),
 ) {
     @Transient
     val uniqueId = "$starId-$id"
@@ -60,8 +61,8 @@ data class Pos(val x: Float = 0f, val y: Float = 0f, val z: Float = 0f)
 data class StarSystem(
     val star: Star,
     val pos: Pos,
-    val planets: Map<Int, Planet>,
-    val planetChildren: Map<Int, List<Int>>
+    val planets: Map<String, Planet>,
+    val planetChildren: Map<String, List<String>>
 )
 
 @Serializable
