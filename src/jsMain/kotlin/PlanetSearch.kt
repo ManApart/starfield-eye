@@ -9,7 +9,7 @@ private fun List<Planet>.filterSearch(searchText: String): Pair<List<Planet>, Li
     return if (searchText.isBlank()) this to listOf() else {
         val terms = searchText.lowercase().split(",")
         val poi = poiMatches(terms)
-        println("Search found poi: $poi")
+//        println("Search found poi: $poi")
         val planets = terms.fold(this) { acc, s -> filterPlanet(acc, s.trim(), poi) }
         //TODO - get list of additional stars as well
         planets to listOf()

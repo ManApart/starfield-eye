@@ -162,28 +162,26 @@ private fun selectNextPlanet(system: StarSystem, shift: Int = 1) {
     }
 }
 
-//TODO - test
 private fun selectNextMoon(system: StarSystem, shift: Int = 1) {
     system.planets[currentPlanet]?.let { current ->
-        system.planets[current.parentId]?.let { parent ->
-            val moons = listOf(parent.id) + parent.moonIds
-            var i = moons.indexOf(currentPlanet) + shift
+        val parent = system.planets[current.parentId] ?: current
+        val moons = listOf(parent.id) + parent.moonIds
+        var i = moons.indexOf(currentPlanet) + shift
 
-            if (i >= moons.size) i = 0
-            if (i < 0) i = moons.size - 1
-            val planetId = moons[i]
+        if (i >= moons.size) i = 0
+        if (i < 0) i = moons.size - 1
+        val planetId = moons[i]
 
-            setSelected(system, planetId)
-            detailView(system, planetId)
+        setSelected(system, planetId)
+        detailView(system, planetId)
 
-            if (planetId == "") {
-                clearOutpostsView()
-                clearFloraFaunaView()
-            } else {
-                outpostsView(system, planetId)
-                floraView(system.star.id, planetId)
-                faunaView(system.star.id, planetId)
-            }
+        if (planetId == "") {
+            clearOutpostsView()
+            clearFloraFaunaView()
+        } else {
+            outpostsView(system, planetId)
+            floraView(system.star.id, planetId)
+            faunaView(system.star.id, planetId)
         }
     }
 }

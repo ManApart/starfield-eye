@@ -1,4 +1,3 @@
-import com.sun.org.apache.xalan.internal.lib.ExsltDatetime.year
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import wikiScraper.urlIdToId
@@ -247,9 +246,10 @@ private fun parseNestedPlanets(planets: Map<String, Planet>): Map<String, List<S
     planets.values.forEach { parent ->
         if (parent.moonIds.isNotEmpty()) nestedPlanets[parent.id] = mutableListOf()
         parent.moonIds.forEach { moonId ->
-            val moon = planets[moonId]!!
-            moon.parentId = parent.id
-            nestedPlanets[parent.id]?.add(moon.id)
+            planets[moonId]?.let { moon ->
+                moon.parentId = parent.id
+                nestedPlanets[parent.id]?.add(moon.id)
+            } ?: println("Unable to find with $moonId referenced by ${parent.id} in ${parent.parentId}")
         }
     }
     return nestedPlanets

@@ -61,7 +61,7 @@ private fun parseWikiData(id: String, document: Document): StarWikiData? {
 private fun attemptParseWikiData(id: String, document: Document): StarWikiData {
     val data: Map<String, List<String>> = document.select(".infobox").first().rowsToMap()
 
-    val planets = document.select("table").firstOrNull { !it.hasClass("infobox") && !it.hasClass("navbox") }?.selectColumn(1)?.mapNotNull { it.getUrlId() } ?: emptyList()
+    val planets = document.select("table").filter { !it.hasClass("infobox") && !it.hasClass("navbox") }.map { el -> el.selectColumn(1).mapNotNull { it.getUrlId() }}.flatten()
 
     val cleanId = id.urlIdToId().replace("_System", "").trim()
     return StarWikiData(
