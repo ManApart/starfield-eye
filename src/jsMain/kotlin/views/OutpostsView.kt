@@ -98,7 +98,7 @@ fun outpostsView(planet: Planet?, info: PlanetInfo) {
         root.innerHTML = ""
         root.addClass("section-view-box")
         root.append {
-            outpostsView(planet, info, true, showLink)
+            outpostsView(planet, info, !showLink, showLink)
         }
     }
 }
@@ -497,5 +497,4 @@ private fun TagConsumer<HTMLElement>.moveOptions(info: PlanetInfo, outpost: Outp
             }
         }
     }
-    //TODO -CSS formatting dropdowns
 }
