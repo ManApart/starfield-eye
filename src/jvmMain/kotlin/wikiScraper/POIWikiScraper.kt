@@ -1,13 +1,11 @@
 package wikiScraper
 
 import Galaxy
-import PlanetWikiData
 import PointOfInterest
+import StarWikiData
 import jsonMapper
-import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
-import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import toPOIType
@@ -17,8 +15,9 @@ fun main() {
     val output = File("src/jsMain/resources/poi-wiki-data.json")
 
     val systems = jsonMapper.decodeFromString<Galaxy>(File("src/jsMain/resources/data.json").readText()).systems.values
+    val starWikiData = jsonMapper.decodeFromString<Map<String, StarWikiData>>(File("raw-data/star-wiki-data.json").readText()).values.toList()
 
-    val docs = getAllPlanets()
+    val docs = getAllPlanets(starWikiData)
     val poi = systems.flatMap { sys ->
         sys.planets.values.mapNotNull { planet ->
             docs["Starfield:" + planet.id]?.let { doc ->

@@ -8,6 +8,7 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import org.jsoup.nodes.Document
+import org.jsoup.safety.Safelist.none
 import java.io.File
 
 private const val chunkSize = 5
@@ -61,7 +62,7 @@ private fun parseWikiData(id: String, document: Document): StarWikiData? {
 private fun attemptParseWikiData(id: String, document: Document): StarWikiData {
     val data: Map<String, List<String>> = document.select(".infobox").first().rowsToMap()
 
-    val planets = document.select("table").filter { !it.hasClass("infobox") && !it.hasClass("navbox") }.map { el -> el.selectColumn(1).mapNotNull { it.getUrlId() }}.flatten()
+    val planets = document.select("table").filter { !it.hasClass("infobox") && !it.hasClass("navbox") }.map { el -> el.selectColumn(1).mapNotNull { it.getUrlId() }}.flatten().filter { it.startsWith("Starfield") && POIType.entries.none { p -> it.contains(p.name, ignoreCase = true) } }
 
     val cleanId = id.urlIdToId().replace("_System", "").trim()
     return StarWikiData(

@@ -60,9 +60,10 @@ fun main() {
         id to parseSystem(wikiStar, rawStar, planetWikiData, planetWikiToRaw, biomes, floraWikiData, faunaWikiData, resources)
     }
 
-    println("Failed to find resources for ${failedSystemResourceLookups.size} systems: ${failedSystemResourceLookups.joinToString()}.")
-    println("Failed to find resources for ${failedPlanetResourceLookups.size} planets: ${failedPlanetResourceLookups.joinToString()}.")
-    println("Failed to find resources for ${failedWikiResourceLookups.size} wiki resources: ${failedWikiResourceLookups.joinToString()}.")
+    println()
+    if(failedSystemResourceLookups.isNotEmpty()) println("Failed to find resources for ${failedSystemResourceLookups.size} systems: ${failedSystemResourceLookups.joinToString()}.")
+    if(failedPlanetResourceLookups.isNotEmpty()) println("Failed to find resources for ${failedPlanetResourceLookups.size} planets: ${failedPlanetResourceLookups.joinToString()}.")
+    if(failedWikiResourceLookups.isNotEmpty()) println("Failed to find resources for ${failedWikiResourceLookups.size} wiki resources: ${failedWikiResourceLookups.joinToString()}.")
 
     File("src/jsMain/resources/data.json").writeText(jsonMapper.encodeToString(Galaxy(systems, galaxySummary)))
 }
@@ -95,10 +96,10 @@ private fun matchPlanets(wikiPlanets: List<PlanetWikiData>, rawPlanetsByName: Ma
     }.toMap().also {
         val missing = rawPlanetsByName.values - it.values.toSet()
         if (missing.isNotEmpty()) {
-            println("Missing Planet Wiki for ${missing.joinToString { m -> m.name }}")
+            println("Missing ${missing.size} Planet Wiki for raw names: ${missing.joinToString { m -> m.name }}")
         }
         if (missingRaw.isNotEmpty()) {
-            println("Unable to find raw planets for ${missingRaw.joinToString()}")
+            println("Unable to find ${missingRaw.size} raw planets for wiki names: ${missingRaw.joinToString()}")
         }
     }
 }
@@ -251,7 +252,7 @@ private fun parseNestedPlanets(planets: Map<String, Planet>): Map<String, List<S
                 moon.parentId = parent.id
                 nestedPlanets[parent.id]?.add(moon.id)
                 children.add(moon)
-            } ?: println("Unable to find with $moonId referenced by ${parent.id} in ${parent.parentId}")
+            } ?: println("Unable to find moon $moonId referenced by ${parent.id} in ${parent.parentId}")
         }
     }
     //Add planets who have no children

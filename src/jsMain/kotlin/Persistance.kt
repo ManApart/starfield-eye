@@ -201,7 +201,7 @@ fun importPlayerInfo(status: HTMLElement) {
             decodeInMemoryStorage(data, status)
             println("Imported ${inMemoryStorage.planetUserInfo.size} user info pieces")
             persistMemory()
-            status.innerText = "Player Info Imported"
+            status.innerText = "Player Info Imported. Check console for additional logs"
         } catch (e: Exception) {
             println("Import failed")
             status.innerText = "Import failed"

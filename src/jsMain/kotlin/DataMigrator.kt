@@ -1,8 +1,4 @@
-import io.ktor.client.utils.EmptyContent.status
 import kotlinx.serialization.Serializable
-import org.w3c.dom.HTMLElement
-
-//TODO - missing Eridani planets and children
 
 fun starsByLegacy() = galaxy.systems.values.map { it.star }.associateBy { it.rawId }
 fun planetsByLegacy(): Map<String, Map<Int?, Planet>> = galaxy.systems.values.associate { sys ->
@@ -10,10 +6,10 @@ fun planetsByLegacy(): Map<String, Map<Int?, Planet>> = galaxy.systems.values.as
 }
 
 fun String.isOldNumberId() = split("-").firstOrNull()?.toIntOrNull() != null
-fun String.legacyNumberIdToModern(starsByLegacy: Map<Int?, Star>, planetsByLegacy: Map<String, Map<Int?, Planet>>): String {
+fun String.legacyNumberIdToModern(starsByLegacy: Map<Int?, Star>, planetsByLegacy: Map<String, Map<Int?, Planet>>): String? {
     val (star, planet) = split("-").map { it.toInt() }
-    val starId = starsByLegacy[star]?.id ?: throw IllegalArgumentException("Could not find $star")
-    val planetId = planetsByLegacy[starId]?.get(planet)?.id  ?: throw IllegalArgumentException("Could not find $starId $planet in ${planetsByLegacy[starId]?.keys}")
+    val starId = starsByLegacy[star]?.id ?: return null.also { println("Could not find $star by legacy id") }
+    val planetId = planetsByLegacy[starId]?.get(planet)?.id ?: return null.also { println("Could not find legacy $star ($starId) $planet in ${planetsByLegacy[starId]?.keys}")}
     return "$starId:$planetId"
 }
 
@@ -64,8 +60,7 @@ fun LegacyInMemoryStorage.migrate(): InMemoryStorage {
 private fun Map<String, PlanetInfo>.migrate(starsByLegacy: Map<Int?, Star>, planetsByLegacy: Map<String, Map<Int?, Planet>>): MutableMap<String, PlanetInfo> {
     return values.map { old ->
         with(old) {
-            val newId = planetId.legacyNumberIdToModern(starsByLegacy, planetsByLegacy)
-            println(old.planetId + " -> " + newId)
+            val newId = planetId.legacyNumberIdToModern(starsByLegacy, planetsByLegacy) ?: old.planetId
             PlanetInfo(newId, labels, notes, outPosts, scan)
         }
     }.associateBy { it.planetId }.toMutableMap()

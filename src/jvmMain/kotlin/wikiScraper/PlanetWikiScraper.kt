@@ -1,6 +1,7 @@
 package wikiScraper
 
 import PlanetWikiData
+import StarWikiData
 import jsonMapper
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -17,18 +18,19 @@ fun main() {
     val existing = (if (output.exists()) {
         jsonMapper.decodeFromString<Map<String, PlanetWikiData>>(output.readText()).toMutableMap()
     } else mapOf()).toMutableMap()
+    val starWikiData = jsonMapper.decodeFromString<Map<String, StarWikiData>>(File("raw-data/star-wiki-data.json").readText()).values.toList()
 
-    getAllPlanets()
+    getAllPlanets(starWikiData)
         .mapNotNull { (id, data) -> parseWikiData(id, data) }
         .forEach { existing[it.id] = it }
 
     output.writeText(jsonMapper.encodeToString(existing))
 }
 
-fun getAllPlanets(): Map<String, Document> {
+fun getAllPlanets(starWikiData: List<StarWikiData>): Map<String, Document> {
     return runBlocking {
         val api = authedApi()
-        getPlanetNames(api)
+        starWikiData.flatMap { it.planetIds }
             .also { println("Reading ${it.size} Planets") }
             .chunked(chunkSize)
             .flatMap { chunk ->
@@ -42,15 +44,6 @@ fun getAllPlanets(): Map<String, Document> {
                     }
                 }.awaitAll().filterNotNull()
             }.toMap().also { api.close() }
-    }
-}
-
-private suspend fun getPlanetNames(api: WikiApi): List<String> {
-    val doc = api.fetch("Starfield:Star_Systems", "planets")
-    return doc.select("table").first()!!.select("tr").drop(1).flatMap { row ->
-        val planets = row.selectTd(2)?.getUrlIds() ?: emptyList()
-        val moons = row.selectTd(3)?.getUrlIds() ?: emptyList()
-        planets + moons
     }
 }
 

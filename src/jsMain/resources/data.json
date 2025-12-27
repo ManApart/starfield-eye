@@ -20920,8 +20920,970 @@
                 "z": -4.127499
             },
             "planets": {
+                "Eridani_I": {
+                    "id": "Eridani_I",
+                    "rawId": 1,
+                    "starId": "Eridani",
+                    "parentId": "Eridani",
+                    "name": "Eridani I",
+                    "planetClass": "G8",
+                    "bodyType": 2,
+                    "bodyTypeDescription": "Rock",
+                    "radius": 5132.0,
+                    "density": 5.28,
+                    "mass": 2.99E24,
+                    "gravity": 0.77,
+                    "year": 101.0,
+                    "day": 14.000001,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "Extreme CO₂ (Corrosive)",
+                    "heat": 12,
+                    "temperature": "Inferno (476°)",
+                    "type": "Rock",
+                    "magneticField": "Very Strong Powerful",
+                    "water": "None",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Desert Rocky",
+                        "Volcanic",
+                        "SavannahBarren"
+                    ],
+                    "traits": [
+                        "Emerging Tectonics",
+                        "Energetic Rifting",
+                        "Prismatic Plumes"
+                    ],
+                    "inorganicResources": [
+                        "U",
+                        "Cl"
+                    ]
+                },
+                "Eridani_II": {
+                    "id": "Eridani_II",
+                    "rawId": 2,
+                    "starId": "Eridani",
+                    "parentId": "Eridani",
+                    "name": "Eridani II",
+                    "planetClass": "G8",
+                    "bodyType": 2,
+                    "bodyTypeDescription": "Rock",
+                    "radius": 8479.0,
+                    "density": 3.57,
+                    "mass": 9.12E24,
+                    "gravity": 0.86,
+                    "year": 280.0,
+                    "day": 18.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "Standard O₂",
+                    "heat": 8,
+                    "temperature": "Temperate (32°)",
+                    "type": "Rock",
+                    "magneticField": "Average",
+                    "water": "Safe",
+                    "life": "Yes",
+                    "settled": "",
+                    "flora": "Moderate (7)",
+                    "fauna": "Moderate (7)",
+                    "biomes": [
+                        "Desert Rocky",
+                        "Forest",
+                        "Mountains",
+                        "Hills",
+                        "Ocean",
+                        "Polar Ice"
+                    ],
+                    "traits": [
+                        "Diseased Biosphere",
+                        "Ecological Consortium",
+                        "Psychotropic Biota"
+                    ],
+                    "inorganicResources": [
+                        "Ni",
+                        "H2O",
+                        "Fe",
+                        "F",
+                        "Cu",
+                        "Co",
+                        "Cl",
+                        "Au"
+                    ]
+                },
+                "Eridani_III": {
+                    "id": "Eridani_III",
+                    "rawId": 3,
+                    "starId": "Eridani",
+                    "parentId": "Eridani",
+                    "name": "Eridani III",
+                    "planetClass": "G8",
+                    "bodyType": 2,
+                    "bodyTypeDescription": "Rock",
+                    "radius": 11322.0,
+                    "density": 6.01,
+                    "mass": 3.65E25,
+                    "gravity": 1.94,
+                    "year": 550.0,
+                    "day": 33.0,
+                    "asteroids": 1,
+                    "rings": 0,
+                    "atmosphere": "Standard O₂",
+                    "heat": 3,
+                    "temperature": "Temperate (0°)",
+                    "type": "Rock",
+                    "magneticField": "Average",
+                    "water": "Heavy Metal",
+                    "life": "Yes",
+                    "settled": "",
+                    "flora": "Abundant (5)",
+                    "fauna": "Abundant (6)",
+                    "biomes": [
+                        "Desert Sandy",
+                        "Ocean",
+                        "Polar Ice"
+                    ],
+                    "traits": [
+                        "Ecological Consortium",
+                        "Global Glacial Recession",
+                        "Sentient Microbial Colonies"
+                    ],
+                    "moonIds": [
+                        "Eridani_III-a",
+                        "Eridani_III-b",
+                        "Eridani_III-c"
+                    ],
+                    "inorganicResources": [
+                        "V",
+                        "U",
+                        "Pu",
+                        "Ir",
+                        "H2O",
+                        "Ar"
+                    ]
+                },
+                "Eridani_III-a": {
+                    "id": "Eridani_III-a",
+                    "rawId": 14,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_III",
+                    "name": "Eridani III-a",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Barren",
+                    "radius": 2517.0,
+                    "density": 2.75,
+                    "mass": 1.84E23,
+                    "gravity": 0.2,
+                    "year": 3.31,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "None",
+                    "heat": 3,
+                    "temperature": "Temperate (0°)",
+                    "type": "Barren",
+                    "magneticField": "None",
+                    "water": "None",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Cratered"
+                    ],
+                    "inorganicResources": [
+                        "HnCn",
+                        "He3",
+                        "Fe"
+                    ]
+                },
+                "Eridani_III-b": {
+                    "id": "Eridani_III-b",
+                    "rawId": 12,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_III",
+                    "name": "Eridani III-b",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Rock",
+                    "radius": 6758.0,
+                    "density": 2.14,
+                    "mass": 2.77E24,
+                    "gravity": 0.41,
+                    "year": 6.7,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "Thin CO₂",
+                    "heat": 3,
+                    "temperature": "Temperate (4°)",
+                    "type": "Rock",
+                    "magneticField": "None",
+                    "water": "Safe",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Desert Rocky",
+                        "Desert Sandy",
+                        "Cratered",
+                        "Polar Ice"
+                    ],
+                    "traits": [
+                        "Solar Storm Seasons"
+                    ],
+                    "inorganicResources": [
+                        "V",
+                        "U",
+                        "Ni",
+                        "Ir",
+                        "He3",
+                        "H2O",
+                        "Fe",
+                        "Cl"
+                    ]
+                },
+                "Eridani_III-c": {
+                    "id": "Eridani_III-c",
+                    "rawId": 13,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_III",
+                    "name": "Eridani III-c",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Barren",
+                    "radius": 1481.0,
+                    "density": 2.37,
+                    "mass": 3.22E22,
+                    "gravity": 0.1,
+                    "year": 10.48,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "None",
+                    "heat": 3,
+                    "temperature": "Cold (-2°)",
+                    "type": "Barren",
+                    "magneticField": "None",
+                    "water": "None",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Cratered"
+                    ],
+                    "traits": [
+                        "Bolide Bombardment"
+                    ],
+                    "inorganicResources": [
+                        "He3",
+                        "Al"
+                    ]
+                },
+                "Eridani_IV": {
+                    "id": "Eridani_IV",
+                    "rawId": 4,
+                    "starId": "Eridani",
+                    "parentId": "Eridani",
+                    "name": "Eridani IV",
+                    "planetClass": "G8",
+                    "bodyType": 2,
+                    "bodyTypeDescription": "Rock",
+                    "radius": 7405.0,
+                    "density": 3.8,
+                    "mass": 6.46E24,
+                    "gravity": 0.8,
+                    "year": 696.0,
+                    "day": 48.0,
+                    "asteroids": 2,
+                    "rings": 0,
+                    "atmosphere": "Standard M (Corrosive)",
+                    "heat": 0,
+                    "temperature": "Cold (-16°)",
+                    "type": "Rock",
+                    "magneticField": "Weak",
+                    "water": "Chemical",
+                    "life": "Yes",
+                    "settled": "",
+                    "flora": "Marginal (3)",
+                    "fauna": "Marginal (3)",
+                    "biomes": [
+                        "Forest",
+                        "Ocean",
+                        "Polar Ice"
+                    ],
+                    "traits": [
+                        "Aeriform Life",
+                        "Ecological Consortium",
+                        "Sentient Microbial Colonies"
+                    ],
+                    "moonIds": [
+                        "Eridani_IV-a",
+                        "Eridani_IV-b",
+                        "Eridani_IV-c"
+                    ],
+                    "inorganicResources": [
+                        "H2O",
+                        "F",
+                        "Ar"
+                    ]
+                },
+                "Eridani_IV-a": {
+                    "id": "Eridani_IV-a",
+                    "rawId": 15,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_IV",
+                    "name": "Eridani IV-a",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Barren",
+                    "radius": 2798.0,
+                    "density": 2.69,
+                    "mass": 2.47E23,
+                    "gravity": 0.21,
+                    "year": 9.79,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "None",
+                    "heat": 0,
+                    "temperature": "Cold (-16°)",
+                    "type": "Barren",
+                    "magneticField": "None",
+                    "water": "None",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Cratered"
+                    ],
+                    "traits": [
+                        "Bolide Bombardment"
+                    ],
+                    "inorganicResources": [
+                        "He3",
+                        "Al"
+                    ]
+                },
+                "Eridani_IV-b": {
+                    "id": "Eridani_IV-b",
+                    "rawId": 16,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_IV",
+                    "name": "Eridani IV-b",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Barren",
+                    "radius": 2582.0,
+                    "density": 3.42,
+                    "mass": 2.47E23,
+                    "gravity": 0.25,
+                    "year": 12.59,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "None",
+                    "heat": 0,
+                    "temperature": "Cold (-16°)",
+                    "type": "Barren",
+                    "magneticField": "None",
+                    "water": "None",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Cratered"
+                    ],
+                    "inorganicResources": [
+                        "Nd",
+                        "He3",
+                        "Eu",
+                        "Be",
+                        "Al"
+                    ]
+                },
+                "Eridani_IV-c": {
+                    "id": "Eridani_IV-c",
+                    "rawId": 17,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_IV",
+                    "name": "Eridani IV-c",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Barren",
+                    "radius": 1246.0,
+                    "density": 3.69,
+                    "mass": 2.99E22,
+                    "gravity": 0.13,
+                    "year": 36.88,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "None",
+                    "heat": 0,
+                    "temperature": "Cold (-18°)",
+                    "type": "Barren",
+                    "magneticField": "None",
+                    "water": "None",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Cratered"
+                    ],
+                    "traits": [
+                        "Bolide Bombardment"
+                    ],
+                    "inorganicResources": [
+                        "He3",
+                        "Eu",
+                        "Al"
+                    ]
+                },
+                "Eridani_V": {
+                    "id": "Eridani_V",
+                    "rawId": 5,
+                    "starId": "Eridani",
+                    "parentId": "Eridani",
+                    "name": "Eridani V",
+                    "planetClass": "G8",
+                    "bodyType": 2,
+                    "bodyTypeDescription": "Rock",
+                    "radius": 5013.0,
+                    "density": 3.79,
+                    "mass": 2.0E24,
+                    "gravity": 0.54,
+                    "year": 1011.0,
+                    "day": 38.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "Standard M",
+                    "heat": -5,
+                    "temperature": "Cold (-48°)",
+                    "type": "Rock",
+                    "magneticField": "Weak",
+                    "water": "Safe",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Desert Rocky",
+                        "Mountains",
+                        "Hills",
+                        "Polar Ice"
+                    ],
+                    "traits": [
+                        "Active Faulting",
+                        "Crystalline Crust"
+                    ],
+                    "inorganicResources": [
+                        "Pb",
+                        "Ni",
+                        "H2O",
+                        "Cl",
+                        "Ag"
+                    ]
+                },
+                "Eridani_VI": {
+                    "id": "Eridani_VI",
+                    "rawId": 6,
+                    "starId": "Eridani",
+                    "parentId": "Eridani",
+                    "name": "Eridani VI",
+                    "planetClass": "G8",
+                    "bodyType": 2,
+                    "bodyTypeDescription": "Ice Giant",
+                    "radius": 20279.0,
+                    "density": 1.73,
+                    "mass": 6.04E25,
+                    "gravity": 1.0,
+                    "year": 8219.0,
+                    "day": 10.0,
+                    "asteroids": 3,
+                    "rings": 3,
+                    "atmosphere": "H₂",
+                    "heat": -71,
+                    "temperature": "Deep Freeze (-178°)",
+                    "type": "Ice G.",
+                    "magneticField": "Weak",
+                    "water": "",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Ocean"
+                    ],
+                    "moonIds": [
+                        "Eridani_VI-a"
+                    ]
+                },
+                "Eridani_VI-a": {
+                    "id": "Eridani_VI-a",
+                    "rawId": 18,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_VI",
+                    "name": "Eridani VI-a",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Ice",
+                    "radius": 3221.0,
+                    "density": 2.03,
+                    "mass": 2.84E23,
+                    "gravity": 0.19,
+                    "year": 0.0,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "None",
+                    "heat": -71,
+                    "temperature": "Deep Freeze (-180°)",
+                    "type": "Ice",
+                    "magneticField": "None",
+                    "water": "Safe",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Polar Ice"
+                    ],
+                    "inorganicResources": [
+                        "Pb",
+                        "H2O"
+                    ]
+                },
+                "Eridani_VII": {
+                    "id": "Eridani_VII",
+                    "rawId": 7,
+                    "starId": "Eridani",
+                    "parentId": "Eridani",
+                    "name": "Eridani VII",
+                    "planetClass": "G8",
+                    "bodyType": 2,
+                    "bodyTypeDescription": "Gas Giant",
+                    "radius": 57323.0,
+                    "density": 1.7,
+                    "mass": 1.34E27,
+                    "gravity": 2.78,
+                    "year": 14979.0,
+                    "day": 24.0,
+                    "asteroids": 9,
+                    "rings": 1,
+                    "atmosphere": "H₂",
+                    "heat": -115,
+                    "temperature": "Deep Freeze (-196°)",
+                    "type": "Gas G.",
+                    "magneticField": "Powerful Strong",
+                    "water": "",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Ocean"
+                    ],
+                    "moonIds": [
+                        "Eridani_VII-a",
+                        "Eridani_VII-b",
+                        "Eridani_VII-c"
+                    ]
+                },
+                "Eridani_VII-a": {
+                    "id": "Eridani_VII-a",
+                    "rawId": 20,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_VII",
+                    "name": "Eridani VII-a",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Ice",
+                    "radius": 1012.0,
+                    "density": 1.52,
+                    "mass": 6.6E21,
+                    "gravity": 0.04,
+                    "year": 0.0,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "None",
+                    "heat": -71,
+                    "temperature": "Deep Freeze (-197°)",
+                    "type": "Ice",
+                    "magneticField": "None",
+                    "water": "Safe",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Polar Ice"
+                    ],
+                    "inorganicResources": [
+                        "Ne",
+                        "H2O",
+                        "Ar"
+                    ]
+                },
+                "Eridani_VII-b": {
+                    "id": "Eridani_VII-b",
+                    "rawId": 21,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_VII",
+                    "name": "Eridani VII-b",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Ice",
+                    "radius": 2199.0,
+                    "density": 1.58,
+                    "mass": 7.04E22,
+                    "gravity": 0.1,
+                    "year": 0.0,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "None",
+                    "heat": -71,
+                    "temperature": "Deep Freeze (-197°)",
+                    "type": "Ice",
+                    "magneticField": "None",
+                    "water": "Chemical",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Polar Ice"
+                    ],
+                    "inorganicResources": [
+                        "H2O",
+                        "Ar"
+                    ]
+                },
+                "Eridani_VII-c": {
+                    "id": "Eridani_VII-c",
+                    "rawId": 19,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_VII",
+                    "name": "Eridani VII-c",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Rock",
+                    "radius": 4604.0,
+                    "density": 2.51,
+                    "mass": 1.03E24,
+                    "gravity": 0.33,
+                    "year": 0.0,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "Thin CO₂",
+                    "heat": -19,
+                    "temperature": "Deep Freeze (-168°)",
+                    "type": "Rock",
+                    "magneticField": "None",
+                    "water": "Chemical",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Desert Rocky",
+                        "Desert Sandy",
+                        "Cratered",
+                        "Polar Ice"
+                    ],
+                    "traits": [
+                        "Pelted Fields"
+                    ],
+                    "inorganicResources": [
+                        "W",
+                        "U",
+                        "Ti",
+                        "Pb",
+                        "He3",
+                        "H2O",
+                        "Eu",
+                        "Al"
+                    ]
+                },
+                "Eridani_VIII": {
+                    "id": "Eridani_VIII",
+                    "rawId": 8,
+                    "starId": "Eridani",
+                    "parentId": "Eridani",
+                    "name": "Eridani VIII",
+                    "planetClass": "G8",
+                    "bodyType": 2,
+                    "bodyTypeDescription": "Gas Giant",
+                    "radius": 120148.0,
+                    "density": 1.23,
+                    "mass": 8.94E27,
+                    "gravity": 4.21,
+                    "year": 44884.0,
+                    "day": 18.0,
+                    "asteroids": 8,
+                    "rings": 2,
+                    "atmosphere": "H₂",
+                    "heat": -257,
+                    "temperature": "Deep Freeze (-219°)",
+                    "type": "Gas G.",
+                    "magneticField": "Extreme Massive",
+                    "water": "",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Ocean"
+                    ],
+                    "moonIds": [
+                        "Eridani_VIII-a",
+                        "Eridani_VIII-b",
+                        "Eridani_VIII-c",
+                        "Eridani_VIII-d"
+                    ]
+                },
+                "Eridani_VIII-a": {
+                    "id": "Eridani_VIII-a",
+                    "rawId": 25,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_VIII",
+                    "name": "Eridani VIII-a",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Ice",
+                    "radius": 3917.0,
+                    "density": 3.1,
+                    "mass": 7.8E23,
+                    "gravity": 0.35,
+                    "year": 0.0,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "None",
+                    "heat": -59,
+                    "temperature": "Deep Freeze (-219°)",
+                    "type": "Ice",
+                    "magneticField": "None",
+                    "water": "None",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Polar Ice"
+                    ],
+                    "inorganicResources": [
+                        "H2O",
+                        "Cu"
+                    ]
+                },
+                "Eridani_VIII-b": {
+                    "id": "Eridani_VIII-b",
+                    "rawId": 26,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_VIII",
+                    "name": "Eridani VIII-b",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Rock",
+                    "radius": 4108.0,
+                    "density": 3.33,
+                    "mass": 9.67E23,
+                    "gravity": 0.39,
+                    "year": 0.0,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "Thin N₂",
+                    "heat": -51,
+                    "temperature": "Deep Freeze (-215°)",
+                    "type": "Rock",
+                    "magneticField": "None",
+                    "water": "Heavy Metal",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Desert Rocky",
+                        "Cratered",
+                        "Hills",
+                        "Polar Ice"
+                    ],
+                    "inorganicResources": [
+                        "Pb",
+                        "Ni",
+                        "He3",
+                        "H2O",
+                        "Co",
+                        "Be",
+                        "Al",
+                        "Ag"
+                    ]
+                },
+                "Eridani_VIII-c": {
+                    "id": "Eridani_VIII-c",
+                    "rawId": 23,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_VIII",
+                    "name": "Eridani VIII-c",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Ice",
+                    "radius": 2661.0,
+                    "density": 1.36,
+                    "mass": 1.07E23,
+                    "gravity": 0.1,
+                    "year": 0.0,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "None",
+                    "heat": -71,
+                    "temperature": "Deep Freeze (-219°)",
+                    "type": "Ice",
+                    "magneticField": "None",
+                    "water": "Chemical",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Polar Ice"
+                    ],
+                    "inorganicResources": [
+                        "SiH3Cl",
+                        "Li",
+                        "H2O",
+                        "Cs",
+                        "Cl"
+                    ]
+                },
+                "Eridani_VIII-d": {
+                    "id": "Eridani_VIII-d",
+                    "rawId": 24,
+                    "starId": "Eridani",
+                    "parentId": "Eridani_VIII",
+                    "name": "Eridani VIII-d",
+                    "planetClass": "G8",
+                    "bodyType": 3,
+                    "bodyTypeDescription": "Rock",
+                    "radius": 5512.0,
+                    "density": 3.18,
+                    "mass": 2.23E24,
+                    "gravity": 0.5,
+                    "year": 0.0,
+                    "day": 27.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "Thin N₂",
+                    "heat": 1,
+                    "temperature": "Deep Freeze (-195°)",
+                    "type": "Rock",
+                    "magneticField": "None",
+                    "water": "Safe",
+                    "life": "Extremophile",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Mountains",
+                        "Hills",
+                        "Ocean",
+                        "SavannahBarren",
+                        "Polar Ice"
+                    ],
+                    "inorganicResources": [
+                        "U",
+                        "Ni",
+                        "Li",
+                        "HnCn",
+                        "H2O",
+                        "Fe",
+                        "Co",
+                        "Cl"
+                    ]
+                },
+                "Eridani_IX": {
+                    "id": "Eridani_IX",
+                    "rawId": 9,
+                    "starId": "Eridani",
+                    "parentId": "Eridani",
+                    "name": "Eridani IX",
+                    "planetClass": "G8",
+                    "bodyType": 2,
+                    "bodyTypeDescription": "Ice",
+                    "radius": 1922.0,
+                    "density": 2.77,
+                    "mass": 8.24E22,
+                    "gravity": 0.15,
+                    "year": 71169.0,
+                    "day": 13.0,
+                    "asteroids": 1,
+                    "rings": 0,
+                    "atmosphere": "None",
+                    "heat": -356,
+                    "temperature": "Deep Freeze (-225°)",
+                    "type": "Ice",
+                    "magneticField": "None",
+                    "water": "Chemical",
+                    "life": "",
+                    "settled": "",
+                    "flora": "None",
+                    "fauna": "None",
+                    "biomes": [
+                        "Polar Ice"
+                    ],
+                    "inorganicResources": [
+                        "Ni",
+                        "H2O"
+                    ]
+                }
             },
             "planetChildren": {
+                "Eridani_I": [
+                ],
+                "Eridani_II": [
+                ],
+                "Eridani_III": [
+                    "Eridani_III-a",
+                    "Eridani_III-b",
+                    "Eridani_III-c"
+                ],
+                "Eridani_IV": [
+                    "Eridani_IV-a",
+                    "Eridani_IV-b",
+                    "Eridani_IV-c"
+                ],
+                "Eridani_IX": [
+                ],
+                "Eridani_V": [
+                ],
+                "Eridani_VI": [
+                    "Eridani_VI-a"
+                ],
+                "Eridani_VII": [
+                    "Eridani_VII-a",
+                    "Eridani_VII-b",
+                    "Eridani_VII-c"
+                ],
+                "Eridani_VIII": [
+                    "Eridani_VIII-a",
+                    "Eridani_VIII-b",
+                    "Eridani_VIII-c",
+                    "Eridani_VIII-d"
+                ]
             }
         },
         "Eta_Cassiopeia": {
@@ -52787,6 +53749,34 @@
                         "H2O",
                         "Co"
                     ]
+                },
+                "Player_Houses": {
+                    "id": "Player_Houses",
+                    "rawId": 0,
+                    "starId": "Olympus",
+                    "parentId": "Olympus",
+                    "name": "Player Houses",
+                    "planetClass": "",
+                    "bodyType": 0,
+                    "bodyTypeDescription": "",
+                    "radius": 0.0,
+                    "density": 0.0,
+                    "mass": 0.0,
+                    "gravity": 0.0,
+                    "year": 0.0,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "",
+                    "heat": 0,
+                    "temperature": "",
+                    "type": "",
+                    "magneticField": "",
+                    "water": "",
+                    "life": "",
+                    "settled": "",
+                    "flora": "",
+                    "fauna": ""
                 }
             },
             "planetChildren": {
@@ -52805,6 +53795,8 @@
                 "Nesoi": [
                 ],
                 "Ourea": [
+                ],
+                "Player_Houses": [
                 ],
                 "Thanatos": [
                     "Hypnos"
@@ -63608,11 +64600,41 @@
                         "H2O",
                         "Cu"
                     ]
+                },
+                "Historical_Landmarks": {
+                    "id": "Historical_Landmarks",
+                    "rawId": 0,
+                    "starId": "Sol",
+                    "parentId": "Sol",
+                    "name": "Historical Landmarks",
+                    "planetClass": "",
+                    "bodyType": 0,
+                    "bodyTypeDescription": "",
+                    "radius": 0.0,
+                    "density": 0.0,
+                    "mass": 0.0,
+                    "gravity": 0.0,
+                    "year": 0.0,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "",
+                    "heat": 0,
+                    "temperature": "",
+                    "type": "",
+                    "magneticField": "",
+                    "water": "",
+                    "life": "",
+                    "settled": "",
+                    "flora": "",
+                    "fauna": ""
                 }
             },
             "planetChildren": {
                 "Earth": [
                     "Luna"
+                ],
+                "Historical_Landmarks": [
                 ],
                 "Jupiter": [
                     "Io",
@@ -65940,9 +66962,39 @@
                         "H2O",
                         "Ar"
                     ]
+                },
+                "Residences": {
+                    "id": "Residences",
+                    "rawId": 0,
+                    "starId": "Syrma",
+                    "parentId": "Syrma",
+                    "name": "Residences",
+                    "planetClass": "",
+                    "bodyType": 0,
+                    "bodyTypeDescription": "",
+                    "radius": 0.0,
+                    "density": 0.0,
+                    "mass": 0.0,
+                    "gravity": 0.0,
+                    "year": 0.0,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "",
+                    "heat": 0,
+                    "temperature": "",
+                    "type": "",
+                    "magneticField": "",
+                    "water": "",
+                    "life": "",
+                    "settled": "",
+                    "flora": "",
+                    "fauna": ""
                 }
             },
             "planetChildren": {
+                "Residences": [
+                ],
                 "Syrma_I": [
                     "Syrma_I-a",
                     "Syrma_I-b"
@@ -69752,6 +70804,34 @@
                         "C6Hn"
                     ]
                 },
+                "Volii_Station": {
+                    "id": "Volii_Station",
+                    "rawId": 0,
+                    "starId": "Volii",
+                    "parentId": "Volii_Alpha",
+                    "name": "Volii Station",
+                    "planetClass": "",
+                    "bodyType": 0,
+                    "bodyTypeDescription": "",
+                    "radius": 0.0,
+                    "density": 0.0,
+                    "mass": 0.0,
+                    "gravity": 0.0,
+                    "year": 0.0,
+                    "day": 0.0,
+                    "asteroids": 0,
+                    "rings": 0,
+                    "atmosphere": "",
+                    "heat": 0,
+                    "temperature": "",
+                    "type": "",
+                    "magneticField": "Unknown",
+                    "water": "",
+                    "life": "",
+                    "settled": "",
+                    "flora": "",
+                    "fauna": ""
+                },
                 "Volii_Epsilon": {
                     "id": "Volii_Epsilon",
                     "rawId": 3,
@@ -70061,6 +71141,7 @@
             },
             "planetChildren": {
                 "Volii_Alpha": [
+                    "Volii_Station"
                 ],
                 "Volii_Beta": [
                     "Volii_Delta"
