@@ -10,6 +10,7 @@ import galaxy
 import inMemoryStorage
 import kotlinx.browser.window
 import kotlinx.dom.addClass
+import kotlinx.dom.hasClass
 import kotlinx.dom.removeClass
 import kotlinx.html.*
 import kotlinx.html.button
@@ -22,6 +23,7 @@ import kotlinx.html.js.*
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLImageElement
 import org.w3c.dom.HTMLInputElement
+import org.w3c.dom.HTMLSelectElement
 import org.w3c.dom.HTMLTextAreaElement
 import org.w3c.dom.events.KeyboardEvent
 import persistMemory
@@ -29,7 +31,6 @@ import replaceElement
 import updateUrl
 import views.system.attemptTravel
 import views.system.landAndDiscover
-import views.system.outpostsView
 import views.system.systemView
 
 
@@ -64,7 +65,7 @@ private fun TagConsumer<HTMLElement>.viewAllOutposts() {
         .filter { it.outPosts.isNotEmpty() }
         .map {
             val planet = galaxy.planets[it.planetId]
-            if (planet == null){
+            if (planet == null) {
                 println("Unable to find ${it.planetId} in galaxy")
                 foundMissingPlanets = true
             }
@@ -89,12 +90,14 @@ fun clearOutpostsView() {
 
 fun outpostsView(planet: Planet?, info: PlanetInfo) {
     val genericRoot = el<HTMLElement?>("outpost-view")
-    val root = genericRoot ?: el("outpost-view-${info.planetId}")
-    val showLink = genericRoot == null
-    root.innerHTML = ""
-    root.addClass("section-view-box")
-    root.append {
-        outpostsView(planet, info, true, showLink)
+    val root = genericRoot ?: el<HTMLElement?>("outpost-view-${info.planetId}")
+    if (root != null) {
+        val showLink = genericRoot == null
+        root.innerHTML = ""
+        root.addClass("section-view-box")
+        root.append {
+            outpostsView(planet, info, true, showLink)
+        }
     }
 }
 
@@ -267,12 +270,14 @@ private fun TagConsumer<HTMLElement>.outpostHeader(
                     outpost.name = name
                     el("outpost-$oid-header").innerText = name
                     el("delete-outpost-$oid").removeClass("hidden")
+                    el("move-outpost-$oid").removeClass("hidden")
                     input.addClass("hidden")
                     saveOutpostInfo(planet, info)
                 } else {
                     input.value = header.innerText
                     header.textContent = ""
                     el("delete-outpost-$oid").addClass("hidden")
+                    el("move-outpost-$oid").addClass("hidden")
                     input.removeClass("hidden")
                 }
                 renameMode = !renameMode
@@ -288,6 +293,17 @@ private fun TagConsumer<HTMLElement>.outpostHeader(
                 }
             }
         }
+        button(classes = "add-info-button") {
+            id = "move-outpost-$oid"
+            +"Move"
+            title = "move outpost"
+            onClickFunction = {
+                with(el("move-outpost-options-$oid")) {
+                    if (hasClass("hidden")) removeClass("hidden") else addClass("hidden")
+                }
+            }
+        }
+        moveOptions(info, outpost, planet, oid)
     }
 }
 
@@ -409,4 +425,68 @@ private fun TD.outpostCell(planetId: String, name: String) {
             onClickFunction = { attemptTravel(planet.name) }
         }
     }
+}
+
+private fun TagConsumer<HTMLElement>.moveOptions(info: PlanetInfo, outpost: Outpost, outpostPlanet: Planet?, oid: String) {
+    div("hidden") {
+        id = "move-outpost-options-$oid"
+        val starSelectId = "outpost-system-$oid"
+        val planetSelectId = "outpost-planet-$oid"
+        val stars = galaxy.systems.values.toList()
+        var currentStar = outpostPlanet?.starId?.let { galaxy.systems[it] } ?: stars.first()
+
+        select {
+            id = starSelectId
+            stars.forEach { system ->
+                option {
+                    +system.star.name
+                    value = system.star.id
+                    selected = system == currentStar
+                }
+            }
+            onChangeFunction = {
+                currentStar = el<HTMLSelectElement>(starSelectId).selectedIndex.let { stars[it] }
+                val planetSelect = el<HTMLSelectElement>(planetSelectId)
+                planetSelect.innerText = ""
+                planetSelect.append {
+                    currentStar.planets.values.forEach { planet ->
+                        option {
+                            value = planet.id
+                            +planet.name
+                        }
+                    }
+                }
+            }
+        }
+        select {
+            id = planetSelectId
+            currentStar.planets.values.forEach { planet ->
+                option {
+                    +planet.name
+                    value = planet.id
+                    selected = planet == outpostPlanet
+                }
+            }
+        }
+
+        button {
+            +"Transfer"
+            onClickFunction = {
+                val selectedPlanet = el<HTMLSelectElement>(planetSelectId).selectedIndex.let { currentStar.planets.values.toList()[it] }
+                val newInfo = inMemoryStorage.planetInfo(selectedPlanet.uniqueId)
+                //TODO - move picture
+                newInfo.outPosts.add(outpost)
+                info.outPosts.remove(outpost)
+                inMemoryStorage.planetUserInfo[info.planetId] = info
+                inMemoryStorage.planetUserInfo[newInfo.planetId] = newInfo
+                if (window.location.hash.startsWith("#outposts")){
+                    outpostsPage()
+                } else {
+                    outpostsView(galaxy.planets[info.planetId], info)
+                }
+                persistMemory()
+            }
+        }
+    }
+    //TODO -CSS formatting dropdowns
 }

@@ -2,6 +2,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class PlanetInfo(
+    //This is the planet's uniqueId (starId+planetId)
     val planetId: String,
     val labels: MutableSet<Label> = mutableSetOf(),
     var notes: String = "",
