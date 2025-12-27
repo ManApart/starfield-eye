@@ -29,6 +29,7 @@ import replaceElement
 import updateUrl
 import views.system.attemptTravel
 import views.system.landAndDiscover
+import views.system.outpostsView
 import views.system.systemView
 
 
@@ -58,16 +59,25 @@ fun outpostsPage() {
 }
 
 private fun TagConsumer<HTMLElement>.viewAllOutposts() {
+    var foundMissingPlanets = false
     inMemoryStorage.planetUserInfo.values
         .filter { it.outPosts.isNotEmpty() }
-        .map { it to galaxy.planets[it.planetId]!! }
-        .sortedWith(compareBy({ (info, _) -> info.outPosts.none { it.favorite } }, { it.second.name }))
+        .map {
+            val planet = galaxy.planets[it.planetId]
+            if (planet == null){
+                println("Unable to find ${it.planetId} in galaxy")
+                foundMissingPlanets = true
+            }
+            it to planet
+        }
+        .sortedWith(compareBy({ (info, _) -> info.outPosts.none { it.favorite } }, { it.second?.name }))
         .forEach { (planetInfo, planet) ->
             div("section-view-box") {
-                id = "outpost-view-${planet.uniqueId}"
+                id = "outpost-view-${planetInfo.planetId}"
                 outpostsView(planet, planetInfo, false, true)
             }
         }
+    if (foundMissingPlanets) println(galaxy.planets.keys)
 }
 
 fun clearOutpostsView() {
@@ -77,9 +87,9 @@ fun clearOutpostsView() {
     }
 }
 
-fun outpostsView(planet: Planet, info: PlanetInfo) {
+fun outpostsView(planet: Planet?, info: PlanetInfo) {
     val genericRoot = el<HTMLElement?>("outpost-view")
-    val root = genericRoot ?: el("outpost-view-${planet.uniqueId}")
+    val root = genericRoot ?: el("outpost-view-${info.planetId}")
     val showLink = genericRoot == null
     root.innerHTML = ""
     root.addClass("section-view-box")
@@ -89,13 +99,13 @@ fun outpostsView(planet: Planet, info: PlanetInfo) {
 }
 
 private fun TagConsumer<HTMLElement>.outpostsView(
-    planet: Planet,
+    planet: Planet?,
     info: PlanetInfo,
     showAddButton: Boolean,
     linkToSystem: Boolean = false
 ) {
-    h2 { +"${planet.name} Outposts" }
-    if (linkToSystem) {
+    h2 { +"${planet?.name ?: info.planetId} Outposts" }
+    if (linkToSystem && planet != null) {
         button {
             +"View System"
             onClickFunction = {
@@ -104,7 +114,7 @@ private fun TagConsumer<HTMLElement>.outpostsView(
             }
         }
     }
-    if (info.outPosts.isNotEmpty()) {
+    if (info.outPosts.isNotEmpty() && planet != null) {
         button {
             +"Travel"
             title = "Set course to planet. In Future hopefully direct to outpost"
@@ -112,7 +122,7 @@ private fun TagConsumer<HTMLElement>.outpostsView(
         }
     }
     div {
-        id = "existing-outposts-${planet.name}"
+        id = "existing-outposts-${info.planetId}"
         info.outPosts.dropLast(1).forEach { outpost ->
             outpost(outpost, info, planet)
             hr { }
@@ -121,7 +131,7 @@ private fun TagConsumer<HTMLElement>.outpostsView(
             outpost(info.outPosts.last(), info, planet)
         }
     }
-    if (showAddButton) {
+    if (showAddButton && planet != null) {
         hr { }
         addOutpost(info, planet)
     }
@@ -130,14 +140,13 @@ private fun TagConsumer<HTMLElement>.outpostsView(
 private fun TagConsumer<HTMLElement>.outpost(
     outpost: Outpost,
     info: PlanetInfo,
-    planet: Planet
+    planet: Planet?
 ) {
-    val i = info.outPosts.indexOf(outpost)
     outpostHeader(outpost, planet, info)
 
-    screenshot("outposts/${planet.uniqueId}/${outpost.id}")
+    screenshot("outposts/${info.planetId}/${outpost.id}")
 
-    if (planet.organicResources.isNotEmpty()) {
+    if (planet?.organicResources?.isNotEmpty() ?: false) {
         h5 { +"Organic Resources" }
         div {
             button(classes = "add-info-button") {
@@ -165,7 +174,7 @@ private fun TagConsumer<HTMLElement>.outpost(
             +outpost.organicResources.joinToString()
         }
     }
-    if (planet.inorganicResources.isNotEmpty()) {
+    if (planet?.inorganicResources?.isNotEmpty() ?: false) {
         h5 { +"Inorganic Resources" }
         div {
             button(classes = "add-info-button") {
@@ -196,11 +205,11 @@ private fun TagConsumer<HTMLElement>.outpost(
     h5 { +"Notes" }
     div {
         textArea {
-            id = "outpost-player-info-notes-${planet.uniqueId}-${outpost.name}"
+            id = "outpost-player-info-notes-${info.planetId}-${outpost.name}"
             +info.notes
             onChangeFunction = {
                 info.notes =
-                    el<HTMLTextAreaElement>("outpost-player-info-notes-${planet.uniqueId}-${outpost.name}").value
+                    el<HTMLTextAreaElement>("outpost-player-info-notes-${info.planetId}-${outpost.name}").value
                 saveOutpostInfo(planet, info)
             }
         }
@@ -209,21 +218,21 @@ private fun TagConsumer<HTMLElement>.outpost(
 
 private fun TagConsumer<HTMLElement>.outpostHeader(
     outpost: Outpost,
-    planet: Planet,
+    planet: Planet?,
     info: PlanetInfo,
 ) {
     var renameMode = false
-    val oid = "${info.planetId}-${outpost.id}"
+    val oid = "${info.planetId}:${outpost.id}"
     h4 {
         img(
             "Favorite",
             src = "images/favorite-${if (outpost.favorite) "on" else "off"}.svg",
             classes = "favorite-image"
         ) {
-            id = "outpost-${planet.uniqueId}-${outpost.id}-favorite"
+            id = "outpost-${info.planetId}-${outpost.id}-favorite"
             onClickFunction = {
                 outpost.favorite = !outpost.favorite
-                el<HTMLImageElement>("outpost-${planet.uniqueId}-${outpost.id}-favorite").src =
+                el<HTMLImageElement>("outpost-${info.planetId}-${outpost.id}-favorite").src =
                     "images/favorite-${if (outpost.favorite) "on" else "off"}.svg"
                 persistMemory()
             }
@@ -310,8 +319,8 @@ private fun TagConsumer<HTMLElement>.addOutpost(info: PlanetInfo, planet: Planet
     }
 }
 
-private fun saveOutpostInfo(planet: Planet, info: PlanetInfo) {
-    inMemoryStorage.planetUserInfo[planet.uniqueId] = info
+private fun saveOutpostInfo(planet: Planet?, info: PlanetInfo) {
+    inMemoryStorage.planetUserInfo[info.planetId] = info
     outpostsView(planet, info)
     persistMemory()
 }

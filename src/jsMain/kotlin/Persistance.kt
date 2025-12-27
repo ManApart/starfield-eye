@@ -266,13 +266,15 @@ fun loadSampleData(status: HTMLElement) {
         loadJson("sample/StarfieldEye.json").then { playerJson ->
             loadJson("sample/StarfieldPictures.json").then { pictureJson ->
                 try {
-                    decodeInMemoryStorage(playerJson, status)
-                    status.innerText = "Loading Pictures"
-                    decodePictures(pictureJson, status)
+                    var success = decodeInMemoryStorage(playerJson, status)
+                    if(success) status.innerText = "Loading Pictures"
+                    success = success && decodePictures(pictureJson, status)
                     println("Imported ${pictureStorage.keys.size} pictures")
                     persistMemory()
                     persistPictures()
-                    status.innerText = "Loaded sample data!"
+                    if (success) {
+                        status.innerText = "Loaded sample data!"
+                    }
                 } catch (e: Throwable) {
                     status.innerText = "Loading sample data failed"
                 }
@@ -283,23 +285,35 @@ fun loadSampleData(status: HTMLElement) {
     }
 }
 
-private fun decodeInMemoryStorage(json: String, status: HTMLElement) {
-    try {
+private fun decodeInMemoryStorage(json: String, status: HTMLElement): Boolean {
+    return try {
         jsonMapper.decodeFromString<InMemoryStorage>(json).also { inMemoryStorage = it }
+        true
     } catch (e: Exception) {
         status.innerText = "Decoding Data Failed. Running migration"
-        migrateInMemoryStorage(json, status)
+        val migrated = migrateInMemoryStorage(json)
+        if (!migrated) {
+            val message = "Failed to migrate data! Consider saving json from the console. Then delete user data and rebuild it."
+            status.innerText = message
+            println(message)
+        }
+        migrated
     }
 }
 
-private fun decodePictures(json: String, status: HTMLElement) {
-    try {
+private fun decodePictures(json: String, status: HTMLElement): Boolean {
+    return try {
         jsonMapper.decodeFromString<Map<String, String>>(json)
             .also { pictureStorage = it.toMutableMap() }
-        if (isLegacyPictureStorage()) migratePictures(pictureStorage, status)
+        if (isLegacyPictureStorage()) {
+            val migrated = migratePictures(pictureStorage)
+            if (!migrated) status.innerText = "Failed to migrate pictures! Consider saving json from the console. Then delete user data and rebuild it."
+            migrated
+        } else true
     } catch (e: Exception) {
         status.innerText = "Failed to parse pictures. Try deleting user data and rebuilding it."
         println("Failed to parse pictures. Try deleting user data and rebuilding it.")
+        false
     }
 }
 
