@@ -27,6 +27,8 @@ import org.w3c.dom.HTMLSelectElement
 import org.w3c.dom.HTMLTextAreaElement
 import org.w3c.dom.events.KeyboardEvent
 import persistMemory
+import persistPictures
+import pictureStorage
 import replaceElement
 import updateUrl
 import views.system.attemptTravel
@@ -474,11 +476,18 @@ private fun TagConsumer<HTMLElement>.moveOptions(info: PlanetInfo, outpost: Outp
             onClickFunction = {
                 val selectedPlanet = el<HTMLSelectElement>(planetSelectId).selectedIndex.let { currentStar.planets.values.toList()[it] }
                 val newInfo = inMemoryStorage.planetInfo(selectedPlanet.uniqueId)
-                //TODO - move picture
                 newInfo.outPosts.add(outpost)
                 info.outPosts.remove(outpost)
                 inMemoryStorage.planetUserInfo[info.planetId] = info
                 inMemoryStorage.planetUserInfo[newInfo.planetId] = newInfo
+
+                val oldPicKey = "outposts/${info.planetId}/${outpost.id}"
+                if (pictureStorage.contains(oldPicKey)){
+                    pictureStorage[oldPicKey]?.let { pictureStorage["outposts/${newInfo.planetId}/${outpost.id}"] = it}
+                    pictureStorage.remove(oldPicKey)
+                    persistPictures()
+                }
+
                 if (window.location.hash.startsWith("#outposts")){
                     outpostsPage()
                 } else {
