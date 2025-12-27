@@ -37,7 +37,7 @@ private fun TagConsumer<HTMLElement>.poiView(system: StarSystem, planet: Planet?
         id = "poi-list-${system.star.name}-${planet?.name}"
         h3 { +poi.name }
         //TODO - show an image for the type
-        p { +poi.type.name }
+        p { +poi.type.name.replace("_", " ") }
         p { +poi.description }
         button {
             +"Travel"

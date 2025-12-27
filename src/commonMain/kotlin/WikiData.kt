@@ -18,7 +18,7 @@ data class StarWikiData(
     val radius: Float,
     val magnitude: Float,
     val planetIds: List<String>,
-): WikiData
+) : WikiData
 
 @Serializable
 data class PlanetWikiData(
@@ -113,11 +113,14 @@ data class Material(
     val url: String,
 )
 
-enum class POIType { CITY, DERELICT_SHIPS, SETTLEMENT, FARM, STARSTATION, STARYARD, SHIP, DERELICT_SHIP, FRACTURED_EARTH_LANDMARK, INDUSTRIAL_OUTPOST, MILITARY_BASE, MINING_BASE, CRASHED_STARSHIP, SCIENCE_LAB, LANDING_SITE, TEMPLE, HISTORICAL_LANDMARK, RESIDENCE, OTHER }
+enum class POIType {
+    ANCIENT_RUIN, BAR, BEACON, BUILDING, BUSINESS, CAMP, CAVE, CITY, CORPORATE_OFFICE, CRASHED_STARSHIP, DEPOT, DERELICT_SHIP, DERELICT_SHIPS, DISTRICT, FACILITY, FARM, FRACTURED_EARTH_LANDMARK, GOVERNMENT, GOVERNMENT_OFFICE, HISTORICAL_LANDMARK, HOTEL, HOUSE, INDUSTRIAL, INDUSTRIAL_OUTPOST, LANDING_SITE, LAUNCHPAD, MILITARY_BASE, MINING_BASE, MUSEUM, OTHER, PLAYER_HOUSE, POI, PUBLIC_SPACE, RELIGIOUS_ORGANIZATION, RESIDENCE, RESTAURANT, RUIN, SCIENCE_LAB, SERVICE, SETTLEMENT, SHIP, SHOP, STARSTATION, STARYARD, STORAGE, STRUCTURE, TEMPLE, TOMB, TOURIST_ATTRACTION, TOWER, WAYSHRINE
+}
 
 fun String.toPOIType(): POIType {
-    val clean = uppercase().dropLast(1).replace("CITIE", "CITY").replace("OTHER_SETTLEMENTS_AND_OUTPOST", "SETTLEMENT")
-    return POIType.entries.firstOrNull { it.name == clean } ?: POIType.OTHER.also { println("No match for POI Type $clean") }
+    val clean = uppercase().replace("CITIE", "CITY").replace("OTHER_SETTLEMENTS_AND_OUTPOST", "SETTLEMENT").trim().replace(" ", "_")
+    return POIType.entries.firstOrNull { it.name == clean }
+        ?: POIType.OTHER.also { println("No match for POI Type $clean") }
 }
 
 @Serializable

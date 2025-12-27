@@ -3,7 +3,7 @@
         "id": "1-Of-A-Kind_Salvage",
         "name": "1-Of-A-Kind Salvage",
         "description": "An abandoned Freestar Militia military base converted into a salvage yard.",
-        "type": "OTHER",
+        "type": "INDUSTRIAL_OUTPOST",
         "starSystem": "Narion",
         "planet": "Niira"
     },
@@ -11,7 +11,7 @@
         "id": "Abbas_Seaweed_Farm",
         "name": "Abbas Seaweed Farm",
         "description": "A seaweed farm on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "FARM",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -19,7 +19,7 @@
         "id": "Aggie%27s",
         "name": "Aggie's",
         "description": "",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -27,7 +27,7 @@
         "id": "Akila_City",
         "name": "Akila City",
         "description": "The capital city of the Freestar Collective, located on the planet Akila, in the Cheyenne System.",
-        "type": "OTHER",
+        "type": "CITY",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -35,7 +35,7 @@
         "id": "Alteration_Clinic",
         "name": "Alteration Clinic",
         "description": "The Alteration Clinic is House Va'ruun in Dazra.",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -43,7 +43,7 @@
         "id": "Apartment_Stack_1",
         "name": "Apartment Stack 1",
         "description": "An apartment building in Gagarin Landing.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -51,7 +51,7 @@
         "id": "Apex_Electronics",
         "name": "Apex Electronics",
         "description": "An electronics shop located in The Well of New Atlantis",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -59,7 +59,7 @@
         "id": "Aphelion_Realty",
         "name": "Aphelion Realty",
         "description": "The realty office for New Atlantis; only UC citizens can purchase property.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -67,7 +67,7 @@
         "id": "Apollo_Landing_Site",
         "name": "Apollo Landing Site",
         "description": "A historical site marking the spot where humans first set foot on a planetary body other than Earth.",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Luna"
     },
@@ -75,7 +75,7 @@
         "id": "Apollo_Tower",
         "name": "Apollo Tower",
         "description": "An empty residential tower in New Atlantis.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -83,7 +83,7 @@
         "id": "Arboron_(Office)",
         "name": "Arboron",
         "description": "An office in the Ryujin Tower of Neon that serves as the headquarters of Arboron.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -91,7 +91,7 @@
         "id": "Arboron_Store",
         "name": "Arboron Store",
         "description": "",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -99,7 +99,7 @@
         "id": "Arc_Might_(Place)",
         "name": "Arc Might",
         "description": "An Arc Might manufacturing facility on Gagarin.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -107,7 +107,7 @@
         "id": "Arches_Overlook_Apartment",
         "name": "Arches Overlook Apartment",
         "description": "An apartment in Gagarin Landing with no accessible inside.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -115,7 +115,7 @@
         "id": "Argos_Extractors_(place)",
         "name": "Argos Extractors",
         "description": "An office in the Valberg Building of New Atlantis that serves as the headquarters of Argos Extractors.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -123,7 +123,7 @@
         "id": "Argos_Extractors_Mining_Outpost",
         "name": "Argos Extractors Mining Outpost",
         "description": "A Mining Base operated by Argos Extractors on Vectera, Narion System.",
-        "type": "OTHER",
+        "type": "MINING_BASE",
         "starSystem": "Narion",
         "planet": "Vectera"
     },
@@ -131,7 +131,7 @@
         "id": "Armistice_Archives",
         "name": "Armistice Archives",
         "description": "An underground complex in New Atlantis containing highly classified information from the Colony War.",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -139,7 +139,7 @@
         "id": "Astral_Lounge",
         "name": "Astral Lounge",
         "description": "A club at the base of the Trade Tower of Neon. It is the only place where it is legal to purchase Aurora.",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -147,7 +147,7 @@
         "id": "Athena_Tower",
         "name": "Athena Tower",
         "description": "A residential tower in New Atlantis.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -155,7 +155,7 @@
         "id": "Autonomous_Staryard",
         "name": "Autonomous Staryard",
         "description": "An abandoned staryard orbiting Volii Psi in the Volii System. It is no longer operating and the robots have taken over.",
-        "type": "OTHER",
+        "type": "STARYARD",
         "starSystem": "Volii",
         "planet": "Volii_Psi"
     },
@@ -163,7 +163,7 @@
         "id": "Badlands_Power_Station",
         "name": "Badlands Power Station",
         "description": "An industrial facility on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "FACILITY",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -171,7 +171,7 @@
         "id": "Barracks_(Akila_City)",
         "name": "Barracks",
         "description": "",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -179,7 +179,7 @@
         "id": "Bayu_Plaza",
         "name": "Bayu Plaza",
         "description": "A section of Neon's busy city core containing a number of shops and the Trade Tower.",
-        "type": "OTHER",
+        "type": "DISTRICT",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -187,7 +187,7 @@
         "id": "Beagle_Navigation_Beacon",
         "name": "Beagle Navigation Beacon",
         "description": "A beacon showing the path of The Beagle.",
-        "type": "OTHER",
+        "type": "BEACON",
         "starSystem": "Bel",
         "planet": "Bel_V"
     },
@@ -195,7 +195,7 @@
         "id": "Berry_Mule",
         "name": "Berry Mule",
         "description": "",
-        "type": "OTHER",
+        "type": "SHIP",
         "starSystem": "Sol",
         "planet": "Triton"
     },
@@ -203,7 +203,7 @@
         "id": "Best_Defense",
         "name": "Best Defense",
         "description": "",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Valo",
         "planet": "Polvo"
     },
@@ -211,7 +211,7 @@
         "id": "Bindi_Mining_Outpost",
         "name": "Bindi Mining Outpost",
         "description": "A defunct mining outpost on Akila's moon Bindi, now operated by Crimson Fleet.",
-        "type": "OTHER",
+        "type": "MINING_BASE",
         "starSystem": "Cheyenne",
         "planet": "Bindi"
     },
@@ -219,7 +219,7 @@
         "id": "Broken_Spear",
         "name": "Broken Spear",
         "description": "A veteran bar in Cydonia on Mars in the Sol System.",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -227,7 +227,7 @@
         "id": "Brown_Horse_Tavern",
         "name": "Brown Horse Tavern",
         "description": "The longest running establishment in existence and an active tavern.",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Sol",
         "planet": "Titan"
     },
@@ -235,7 +235,7 @@
         "id": "Buried_Temple",
         "name": "Buried Temple",
         "description": "",
-        "type": "OTHER",
+        "type": "MILITARY_BASE",
         "starSystem": "Masada",
         "planet": "Masada_III"
     },
@@ -243,7 +243,7 @@
         "id": "CJ%27s",
         "name": "CJ's",
         "description": "A small convenience store in the Residential District.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -251,7 +251,7 @@
         "id": "CM_Station_RC-1",
         "name": "CM Station RC-1",
         "description": "An abandoned mining outpost of Consolidated Mining.",
-        "type": "OTHER",
+        "type": "MINING_BASE",
         "starSystem": "Carinae",
         "planet": "Carinae_III-a"
     },
@@ -259,7 +259,7 @@
         "id": "Cafe_Luxe",
         "name": "Cafe Luxe",
         "description": "A high-end cafe located in the lobby of Paradiso Hotel.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Porrima",
         "planet": "Porrima_II"
     },
@@ -267,7 +267,7 @@
         "id": "Cairo_Landmark",
         "name": "Cairo Landmark",
         "description": "A historical site marking a pyramid near where Cairo once was.",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Earth"
     },
@@ -275,7 +275,7 @@
         "id": "Cartwright_Manor",
         "name": "Cartwright Manor",
         "description": "A house in the Core of Akila City.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -283,7 +283,7 @@
         "id": "CeltCorp_(Place)",
         "name": "CeltCorp",
         "description": "An office in the Trade Tower of Neon that serves as the headquarters of CeltCorp.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -291,7 +291,7 @@
         "id": "Centauri_Mills_(Place)",
         "name": "Centauri Mills",
         "description": "",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -299,7 +299,7 @@
         "id": "Centaurian_Arsenal",
         "name": "Centaurian Arsenal",
         "description": "A weapons store in the Residential District.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -307,7 +307,7 @@
         "id": "Chez_Simon",
         "name": "Chez Simon",
         "description": "The rooftop bar of Paradiso Hotel.",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Porrima",
         "planet": "Porrima_II"
     },
@@ -315,7 +315,7 @@
         "id": "Chop_Shop",
         "name": "Chop Shop",
         "description": "A illegal ship salvaging station run by Hannibal Eutropio",
-        "type": "OTHER",
+        "type": "STARSTATION",
         "starSystem": "Andromas",
         "planet": "Andromas_IV-a"
     },
@@ -323,7 +323,7 @@
         "id": "Chunks_(Akila_City)",
         "name": "Chunks",
         "description": "",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -331,7 +331,7 @@
         "id": "Chunks_(Dazra)",
         "name": "Chunks",
         "description": "A dilapidated Chunks branch in Dazra.",
-        "type": "OTHER",
+        "type": "RUIN",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -339,7 +339,7 @@
         "id": "Chunks_(New_Atlantis)",
         "name": "Chunks",
         "description": "New Atlantis' branch of Chunks.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -347,7 +347,7 @@
         "id": "Chunks_(New_Homestead)",
         "name": "Chunks",
         "description": "A location of Chunks in New Homestead.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Sol",
         "planet": "Titan"
     },
@@ -355,7 +355,7 @@
         "id": "Chunks_(Paradiso)",
         "name": "Chunks",
         "description": "High-end \"Gourmet\" location of the Chunks chain. Unlike normal locations, wine is served.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Porrima",
         "planet": "Porrima_II"
     },
@@ -363,7 +363,7 @@
         "id": "Chunks_Express_(Neon)",
         "name": "Chunks Express",
         "description": "Is a location of Chunks in Neon's Underbelly district. Unlike the chain's other location in Ebbside, this dingy outlet is unmanned and consists only of three vending machines - selling Chunks (obviously), Boom Pops and cups of Terrabrew coffee, plus empty refrigerators.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -371,7 +371,7 @@
         "id": "Clinic_(Gagarin_Landing)",
         "name": "Clinic",
         "description": "The local healthcare office in Gagarin Landing.",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -379,7 +379,7 @@
         "id": "Clinic_(New_Homestead)",
         "name": "Clinic",
         "description": "The medical center for new Homestead.",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Sol",
         "planet": "Titan"
     },
@@ -387,7 +387,7 @@
         "id": "Clint%27s_Collectables",
         "name": "Clint's Collectables",
         "description": "Gagarin Landing's only general goods store.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -395,7 +395,7 @@
         "id": "Coe_Estate",
         "name": "Coe Estate",
         "description": "",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -403,7 +403,7 @@
         "id": "Coe_Heritage_Museum",
         "name": "Coe Heritage Museum",
         "description": "",
-        "type": "OTHER",
+        "type": "MUSEUM",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -411,7 +411,7 @@
         "id": "Commercial_District",
         "name": "Commercial District",
         "description": "One of three major districts within New Atlantis.",
-        "type": "OTHER",
+        "type": "DISTRICT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -419,7 +419,7 @@
         "id": "Community_Center",
         "name": "Community Center",
         "description": "A small public space in the bottom tunnels of Cydonia",
-        "type": "OTHER",
+        "type": "PUBLIC_SPACE",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -427,7 +427,7 @@
         "id": "Core_House",
         "name": "Core House",
         "description": "",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -435,7 +435,7 @@
         "id": "Crucible",
         "name": "Crucible",
         "description": "A secret settlement on Charybdis III, Charybdis System.",
-        "type": "OTHER",
+        "type": "SETTLEMENT",
         "starSystem": "Charybdis",
         "planet": "Charybdis_III"
     },
@@ -443,7 +443,7 @@
         "id": "Cydonia",
         "name": "Cydonia",
         "description": "An underground mining city on Mars in the Sol System.",
-        "type": "OTHER",
+        "type": "CITY",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -451,7 +451,7 @@
         "id": "DRONE_(Neon)",
         "name": "DRONE",
         "description": "An office in the Ryujin Tower of Neon that serves as the headquarters of DRONE.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -459,7 +459,7 @@
         "id": "Dauntless_Crew%27s_Crash_Site",
         "name": "Dauntless Crew's Crash Site",
         "description": "",
-        "type": "OTHER",
+        "type": "CRASHED_STARSHIP",
         "starSystem": "Eta_Cassiopeia",
         "planet": "Cassiopeia_I"
     },
@@ -467,7 +467,7 @@
         "id": "Dawn%27s_Roost",
         "name": "Dawn's Roost",
         "description": "A high-end coffee shop located in the lobby of Pioneer Tower.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -475,7 +475,7 @@
         "id": "Dazra",
         "name": "Dazra",
         "description": "The capital city of House Va'ruun, located on the planet Va'ruun'kai, in the Kavnyk System.",
-        "type": "OTHER",
+        "type": "CITY",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -483,7 +483,7 @@
         "id": "Deep_Gorge_Refinery",
         "name": "Deep Gorge Refinery",
         "description": "An industrial facility on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "FACILITY",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -491,7 +491,7 @@
         "id": "Deep_Mines",
         "name": "Deep Mines",
         "description": "An abandoned mine leading to the Red Devils HQ.",
-        "type": "OTHER",
+        "type": "MINING_BASE",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -499,7 +499,7 @@
         "id": "Deep_Mines_Employee_Exit",
         "name": "Deep Mines Employee Exit",
         "description": "An access to the Deep Mines.",
-        "type": "OTHER",
+        "type": "MINING_BASE",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -507,7 +507,7 @@
         "id": "Deimos_Armored_Transport",
         "name": "Deimos Armored Transport",
         "description": "An abandoned transport ship with a malfunctioning grav drive and can be filled with either Spacers or the Crimson Fleet.",
-        "type": "OTHER",
+        "type": "DERELICT_SHIP",
         "starSystem": "Alpha_Centauri",
         "planet": "Grissom"
     },
@@ -515,7 +515,7 @@
         "id": "Deimos_Corporate_Quarters",
         "name": "Deimos Corporate Quarters",
         "description": "An office space for Deimos in Cydonia to manage their mines and production facility.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -523,7 +523,7 @@
         "id": "Deimos_Miner_Quarters",
         "name": "Deimos Miner Quarters",
         "description": "A rough quarters for miners employed by Deimos.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -531,7 +531,7 @@
         "id": "Deimos_Staryard",
         "name": "Deimos Staryard",
         "description": "A major United Colonies staryard near Deimos.",
-        "type": "OTHER",
+        "type": "STARYARD",
         "starSystem": "Sol",
         "planet": "Deimos_(planet)"
     },
@@ -539,7 +539,7 @@
         "id": "Deimos_Staryards_Engineering",
         "name": "Deimos Staryards Engineering",
         "description": "A Deimos manufacturing facility near the surface of Cydonia.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -547,7 +547,7 @@
         "id": "Dream_Home_(Place)",
         "name": "Dream Home",
         "description": "An empty house located on the planet Nesoi in the Olympus System. It is obtained by choosing the Dream Home trait during character creation.",
-        "type": "OTHER",
+        "type": "PLAYER_HOUSE",
         "starSystem": "Olympus",
         "planet": "Nesoi"
     },
@@ -555,7 +555,7 @@
         "id": "Dubai_Landmark",
         "name": "Dubai Landmark",
         "description": "A historical site marking ruined remains of the Burj Khalifa.",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Earth"
     },
@@ -563,7 +563,7 @@
         "id": "Dubib_Seaweed_Farm",
         "name": "Dubib Seaweed Farm",
         "description": "A seaweed farm on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "FARM",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -571,7 +571,7 @@
         "id": "ECS_Constant",
         "name": "ECS Constant",
         "description": "A generation ship that has been traveling in isolation for 200 years.",
-        "type": "OTHER",
+        "type": "SHIP",
         "starSystem": "Porrima",
         "planet": "Porrima_II"
     },
@@ -579,7 +579,7 @@
         "id": "ECS_Constant_Shuttle_Crash_Site",
         "name": "ECS Constant Shuttle Crash Site",
         "description": "A crashed shuttle from the ECS Constant.",
-        "type": "OTHER",
+        "type": "CRASHED_STARSHIP",
         "starSystem": "Bardeen",
         "planet": "Bardeen_I"
     },
@@ -587,7 +587,7 @@
         "id": "EIT_Clothiers",
         "name": "EIT Clothiers",
         "description": "A high-end clothing store.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -595,7 +595,7 @@
         "id": "Ebbside",
         "name": "Ebbside",
         "description": "A lower level of Neon containing less fortunate residents along with a few shops and services.",
-        "type": "OTHER",
+        "type": "DISTRICT",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -603,7 +603,7 @@
         "id": "Eklund_Excavation_Site_CL25",
         "name": "Eklund Excavation Site CL25",
         "description": "An abandoned asteroid mining facility around Bonner, Sakharov System.",
-        "type": "OTHER",
+        "type": "MINING_BASE",
         "starSystem": "Sakharov",
         "planet": "Bonner"
     },
@@ -611,7 +611,7 @@
         "id": "Energy_Systems_Office",
         "name": "Energy Systems Office",
         "description": "An office that manages power production and distribution for New Homestead.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Sol",
         "planet": "Titan"
     },
@@ -619,7 +619,7 @@
         "id": "Enhance!_(Akila_City)",
         "name": "Enhance!",
         "description": "",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -627,7 +627,7 @@
         "id": "Enhance!_(Cydonia)",
         "name": "Enhance!",
         "description": "A branch of Enhance! in Cydonia",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -635,7 +635,7 @@
         "id": "Enhance!_(Neon)",
         "name": "Enhance!",
         "description": "",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -643,7 +643,7 @@
         "id": "Enhance!_(New_Atlantis)",
         "name": "Enhance!",
         "description": "",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -651,7 +651,7 @@
         "id": "Enhance!_(Paradiso)",
         "name": "Enhance!",
         "description": "A location of the Enhance! plastic surgery chain located next to the Paradiso Hotel.",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Porrima",
         "planet": "Porrima_II"
     },
@@ -659,7 +659,7 @@
         "id": "Eren%27s_Camp",
         "name": "Eren's Camp",
         "description": "Eren Bascolm's former hiding spot on Hyla II.",
-        "type": "OTHER",
+        "type": "SETTLEMENT",
         "starSystem": "Hyla",
         "planet": "Hyla_II"
     },
@@ -667,7 +667,7 @@
         "id": "Etherea_Ruins",
         "name": "Etherea Ruins",
         "description": "A ruined starstation located in the Wolf System.",
-        "type": "OTHER",
+        "type": "STARSTATION",
         "starSystem": "Wolf",
         "planet": "Etherea"
     },
@@ -675,7 +675,7 @@
         "id": "Euphorika",
         "name": "Euphorika",
         "description": "A bar located in the Ebbside in Neon.",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -683,7 +683,7 @@
         "id": "Face_of_Mars_Landmark",
         "name": "Face of Mars Landmark",
         "description": "An unmarked natural landmark on Mars",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -691,7 +691,7 @@
         "id": "Filburn_Agricultural_Systems",
         "name": "Filburn Agricultural Systems",
         "description": "A family-owned farming and brewing enterprise.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -699,7 +699,7 @@
         "id": "Fortuna_(Place)",
         "name": "Fortuna",
         "description": "A parked ship owned by Marco",
-        "type": "OTHER",
+        "type": "SHIP",
         "starSystem": "Cheyenne",
         "planet": "Codos"
     },
@@ -707,7 +707,7 @@
         "id": "Forward_Base_441",
         "name": "Forward Base 441",
         "description": "A military base overlooking the ruins of Londinion.",
-        "type": "OTHER",
+        "type": "MILITARY_BASE",
         "starSystem": "Toliman",
         "planet": "Toliman_II"
     },
@@ -723,7 +723,7 @@
         "id": "Frankie%27s_Grab_%26_Go",
         "name": "Frankie's Grab & Go",
         "description": "A general store in Neon.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -731,7 +731,7 @@
         "id": "Freestar_Collective_Consulate",
         "name": "Freestar Collective Consulate",
         "description": "",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -739,7 +739,7 @@
         "id": "Freestar_Collective_Embassy",
         "name": "Freestar Collective Embassy",
         "description": "",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -747,7 +747,7 @@
         "id": "Freestar_Mech_Factory",
         "name": "Freestar Mech Factory",
         "description": "",
-        "type": "OTHER",
+        "type": "INDUSTRIAL_OUTPOST",
         "starSystem": "Arcturus",
         "planet": "Arcturus_II"
     },
@@ -755,7 +755,7 @@
         "id": "Freestar_Ranger%27s_Outpost",
         "name": "Freestar Ranger's Outpost",
         "description": "",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -763,7 +763,7 @@
         "id": "Freestar_Rangers_Office_(HopeTown)",
         "name": "Freestar Rangers Office",
         "description": "",
-        "type": "OTHER",
+        "type": "GOVERNMENT",
         "starSystem": "Valo",
         "planet": "Polvo"
     },
@@ -771,7 +771,7 @@
         "id": "Freighter_Site",
         "name": "Freighter Site",
         "description": "An abandoned ship landed on Mars, near Cydonia.",
-        "type": "OTHER",
+        "type": "CRASHED_STARSHIP",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -779,7 +779,7 @@
         "id": "Gagarin_Landing",
         "name": "Gagarin Landing",
         "description": "A former industrial town on the planet Gagarin, in the Alpha Centauri System.",
-        "type": "OTHER",
+        "type": "SETTLEMENT",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -787,7 +787,7 @@
         "id": "GalBank_(Akila_City)",
         "name": "GalBank",
         "description": "",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -795,7 +795,7 @@
         "id": "GalBank_(Neon)",
         "name": "GalBank",
         "description": "",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -803,7 +803,7 @@
         "id": "GalBank_(New_Atlantis)",
         "name": "GalBank",
         "description": "The central business administration for GalBank.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -811,7 +811,7 @@
         "id": "GalBank_Archives",
         "name": "GalBank Archives",
         "description": "GalBank corporate archives.",
-        "type": "OTHER",
+        "type": "CORPORATE_OFFICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -819,7 +819,7 @@
         "id": "GalBank_Legacy",
         "name": "GalBank Legacy",
         "description": "An abandoned GalBank transport vessel in orbit around Bannoc IV.",
-        "type": "OTHER",
+        "type": "DERELICT_SHIP",
         "starSystem": "Bannoc",
         "planet": "Bannoc_IV"
     },
@@ -827,7 +827,7 @@
         "id": "Generdyne_Industries_(Office)",
         "name": "Generdyne Industries",
         "description": "An office in the Trade Tower of Neon that serves as the headquarters of Generdyne Industries.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -843,7 +843,7 @@
         "id": "Goods_Exchange",
         "name": "Goods Exchange",
         "description": "Goods Exchange exchanges items for House Va'ruun in Dazra.",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -851,7 +851,7 @@
         "id": "Governor_Hurst%27s_Ship",
         "name": "Governor Hurst's Ship",
         "description": "",
-        "type": "OTHER",
+        "type": "SHIP",
         "starSystem": "Sol",
         "planet": "Umbriel"
     },
@@ -859,7 +859,7 @@
         "id": "Halls_of_Healing",
         "name": "Halls of Healing",
         "description": "A medical center in Dazra.",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -867,7 +867,7 @@
         "id": "Hamadi_Station",
         "name": "Hamadi Station",
         "description": "A small research outpost on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "SCIENCE_LAB",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -875,7 +875,7 @@
         "id": "Harbhajan%27s_Apartment",
         "name": "Harbhajan's Apartment",
         "description": "Behind the owner's workshop, adjacent to Aldwin Wright's workshop.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -883,7 +883,7 @@
         "id": "Hasanov_Manor",
         "name": "Hasanov Manor",
         "description": "",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -891,7 +891,7 @@
         "id": "Hazia_Seaweed_Farm",
         "name": "Hazia Seaweed Farm",
         "description": "A seaweed farm on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "FARM",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -899,7 +899,7 @@
         "id": "Henry_Filburn%27s_House",
         "name": "Henry Filburn's House",
         "description": "In the Midtown Residential section adjacent to Filburn Agricultural Systems, down the stair from the House of Enlightenment.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -907,7 +907,7 @@
         "id": "Hephaestus_Mine_H-363",
         "name": "Hephaestus Mine H-363",
         "description": "",
-        "type": "OTHER",
+        "type": "MINING_BASE",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -915,7 +915,7 @@
         "id": "Herald%27s_Rest",
         "name": "Herald's Rest",
         "description": "A bar in Dazra.",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -923,7 +923,7 @@
         "id": "Hillcountry_Power_Relay",
         "name": "Hillcountry Power Relay",
         "description": "An industrial facility on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "FACILITY",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -931,7 +931,7 @@
         "id": "Hollow_Bluff_Depot",
         "name": "Hollow Bluff Depot",
         "description": "A supply depot the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "DEPOT",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -939,7 +939,7 @@
         "id": "Honest_Earl%27s_Alien_Extravaganza",
         "name": "Honest Earl's Alien Extravaganza",
         "description": "A business in Akila City on Akila in the Cheyenne System.",
-        "type": "OTHER",
+        "type": "TOURIST_ATTRACTION",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -947,7 +947,7 @@
         "id": "Hong_Kong_Landmark",
         "name": "Hong Kong Landmark",
         "description": "A historical site marking the remains of the International Commerce Centre, once a skyscraper in a city known as Hong Kong.",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Earth"
     },
@@ -955,7 +955,7 @@
         "id": "HopeTech_(Office)",
         "name": "HopeTech",
         "description": "",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Valo",
         "planet": "Polvo"
     },
@@ -963,7 +963,7 @@
         "id": "HopeTown",
         "name": "HopeTown",
         "description": "HopeTech's company town in Polvo, Valo System.",
-        "type": "OTHER",
+        "type": "SETTLEMENT",
         "starSystem": "Valo",
         "planet": "Polvo"
     },
@@ -971,7 +971,7 @@
         "id": "House_Ka%27dic_(Place)",
         "name": "House Ka'dic",
         "description": "Is the headquarters of House Ka'dic located in the House Va'ruun city of Dazra on Va'ruun'kai.",
-        "type": "OTHER",
+        "type": "HOUSE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -979,7 +979,7 @@
         "id": "House_Va%27ruun_Embassy",
         "name": "House Va'ruun Embassy",
         "description": "The former embassy of House Va'ruun to the Settled Systems. It is currently nearly entirely abandoned, with one reclusive Ambassador remaining.",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -987,7 +987,7 @@
         "id": "House_of_Enlightenment_(Akila_City)",
         "name": "House of Enlightenment",
         "description": "",
-        "type": "OTHER",
+        "type": "RELIGIOUS_ORGANIZATION",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -995,7 +995,7 @@
         "id": "House_of_the_Enlightened_(The_Well)",
         "name": "House of the Enlightened",
         "description": "The headquarters for the charitable efforts of the Enlightened in New Atlantis's Well. It can be found next to Apex Electronics and the local Trade Authority.",
-        "type": "OTHER",
+        "type": "RELIGIOUS_ORGANIZATION",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1003,7 +1003,7 @@
         "id": "Ice_Mines",
         "name": "Ice Mines",
         "description": "A mine under New Homestead where ice is mined for municipal water use.",
-        "type": "OTHER",
+        "type": "MINING_BASE",
         "starSystem": "Sol",
         "planet": "Titan"
     },
@@ -1011,7 +1011,7 @@
         "id": "Ikuchi_Market",
         "name": "Ikuchi Market",
         "description": "A section of Neon's busy city core containing a number of shops and Ryujin Tower.",
-        "type": "OTHER",
+        "type": "DISTRICT",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1019,7 +1019,7 @@
         "id": "Infinity_LTD_(Jemison)",
         "name": "Infinity LTD",
         "description": "",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1027,7 +1027,7 @@
         "id": "Infinity_LTD_(Neon)",
         "name": "Infinity LTD",
         "description": "An office in the Ryujin Tower of Neon.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1035,7 +1035,7 @@
         "id": "Ivasir_Groat_Farm",
         "name": "Ivasir Groat Farm",
         "description": "A farm on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "FARM",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -1043,7 +1043,7 @@
         "id": "Jake%27s",
         "name": "Jake's",
         "description": "Jake's is a dive bar located within New Atlantis's Well. It is the most dominant structure in the southwestern section.",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1051,7 +1051,7 @@
         "id": "Jane%27s_Goods",
         "name": "Jane's Goods",
         "description": "A shop located in the bottom levels of Cydonia near the Community Center.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -1059,7 +1059,7 @@
         "id": "Jemison_Mercantile",
         "name": "Jemison Mercantile",
         "description": "A general merchant offering a wide variety of personal and ship supplies.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1067,7 +1067,7 @@
         "id": "Ka%27zaal_Sulfur_Mine",
         "name": "Ka'zaal Sulfur Mine",
         "description": "",
-        "type": "OTHER",
+        "type": "MINING_BASE",
         "starSystem": "Nirah",
         "planet": "Ka%27zaal"
     },
@@ -1075,7 +1075,7 @@
         "id": "Kay%27s_House",
         "name": "Kay's House",
         "description": "A restaurant in the Well in New Atlantis, operated by Kay Mason and her daughter Theresa.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1083,7 +1083,7 @@
         "id": "Kore_Kinetics_(Office)",
         "name": "Kore Kinetics",
         "description": "An office in the Trade Tower of Neon that serves as the headquarters of Kore Kinetics.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1091,7 +1091,7 @@
         "id": "Kreet_Research_Lab",
         "name": "Kreet Research Lab",
         "description": "An abandoned United Colonies Xenowarfare lab on Kreet.",
-        "type": "OTHER",
+        "type": "SCIENCE_LAB",
         "starSystem": "Narion",
         "planet": "Kreet"
     },
@@ -1099,7 +1099,7 @@
         "id": "Lair_of_the_Mantis",
         "name": "Lair of the Mantis",
         "description": "The Mantis's headquarters.",
-        "type": "OTHER",
+        "type": "INDUSTRIAL_OUTPOST",
         "starSystem": "Denebola",
         "planet": "Denebola_I-b"
     },
@@ -1107,7 +1107,7 @@
         "id": "Lake_Watchtower",
         "name": "Lake Watchtower",
         "description": "A military base on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "MILITARY_BASE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -1115,7 +1115,7 @@
         "id": "Lakelands_Power_Station",
         "name": "Lakelands Power Station",
         "description": "A power facility on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "INDUSTRIAL",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -1123,7 +1123,7 @@
         "id": "Lakeside_Dock",
         "name": "Lakeside Dock",
         "description": "A on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "STRUCTURE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -1131,7 +1131,7 @@
         "id": "Lance_Estate",
         "name": "Lance Estate",
         "description": "",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -1139,7 +1139,7 @@
         "id": "Langston_Estate",
         "name": "Langston Estate",
         "description": "",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -1147,7 +1147,7 @@
         "id": "Laredo_Firearms",
         "name": "Laredo Firearms",
         "description": "",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -1155,7 +1155,7 @@
         "id": "LeGrande%27s_Liquors",
         "name": "LeGrande's Liquors",
         "description": "LeGrande's Liquors is a liquor store in Neon ran by Yannick Legrande. This vendor uniquely sells Blend.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1163,7 +1163,7 @@
         "id": "Listening_Post_Alpha",
         "name": "Listening Post Alpha",
         "description": "A military listening post on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "MILITARY_BASE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -1171,7 +1171,7 @@
         "id": "Listening_Post_Beta",
         "name": "Listening Post Beta",
         "description": "A military listening post on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "MILITARY_BASE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -1179,7 +1179,7 @@
         "id": "Lizzy%27s",
         "name": "Lizzy's",
         "description": "A bar owned and operated by Lizzy Ajello",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -1187,7 +1187,7 @@
         "id": "Londinion",
         "name": "Londinion",
         "description": "A former United Colonies settlement on Toliman II, in the Toliman System.",
-        "type": "OTHER",
+        "type": "CITY",
         "starSystem": "Toliman",
         "planet": "Toliman_II"
     },
@@ -1195,7 +1195,7 @@
         "id": "London_Landmark",
         "name": "London Landmark",
         "description": "A historical site marking what's left of the Shard, formerly a skyscraper in Southwark, London.",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Earth"
     },
@@ -1203,7 +1203,7 @@
         "id": "Los_Angeles_Landmark",
         "name": "Los Angeles Landmark",
         "description": "A historical site marking the structure that once was the US Bank Tower in the area formerly known as Los Angeles, California.",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Earth"
     },
@@ -1211,7 +1211,7 @@
         "id": "Luxe_Condominiums",
         "name": "Luxe Condominiums",
         "description": "Higher end apartments in Cydonia.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -1219,7 +1219,7 @@
         "id": "MAST_District",
         "name": "MAST District",
         "description": "One of three major districts within New Atlantis, home to the MAST.",
-        "type": "OTHER",
+        "type": "DISTRICT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1227,7 +1227,7 @@
         "id": "MAST_Tower",
         "name": "MAST Tower",
         "description": "The headquarters of MAST, the primary governing body of the United Colonies.",
-        "type": "OTHER",
+        "type": "GOVERNMENT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1235,7 +1235,7 @@
         "id": "Ma%27leen_Dam",
         "name": "Ma'leen Dam",
         "description": "A dam on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "STRUCTURE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -1243,7 +1243,7 @@
         "id": "Madame_Sauvage%27s_Place",
         "name": "Madame Sauvage's Place",
         "description": "A restaurant located in the Ebbside in Neon. There are three floors. On the first two floors, a variety of aid items can be bought from Madame Sauvage, as well as found lying around on surfaces. These items include Velocity, which can be given to Gladys Coffin to complete the Fueling Greatness mission. The third floor hosts the Ebbing Strikers gang and can be accessed by speaking with Andrea Sandoval on the first floor next to the bar.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1251,7 +1251,7 @@
         "id": "Malik%27s_Groat_Farm",
         "name": "Malik's Groat Farm",
         "description": "A farm on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "FARM",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -1259,7 +1259,7 @@
         "id": "Mandela_Foundry_and_Mines",
         "name": "Mandela Foundry and Mines",
         "description": "",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -1267,7 +1267,7 @@
         "id": "Mars_Launchpad",
         "name": "Mars Launchpad",
         "description": "An old NASA launch site near Cydonia.",
-        "type": "OTHER",
+        "type": "LAUNCHPAD",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -1275,7 +1275,7 @@
         "id": "Mars_Mech_Factory",
         "name": "Mars Mech Factory",
         "description": "A Point of Interest (POI) on Mars, in the Sol System.",
-        "type": "OTHER",
+        "type": "MILITARY_BASE",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -1283,7 +1283,7 @@
         "id": "MedBay_(The_Well)",
         "name": "MedBay",
         "description": "Is the original medical facility of New Atlantis's original colony ship, found within The Well. It is run by Talia O'Shea.",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1291,7 +1291,7 @@
         "id": "Mercury_Tower",
         "name": "Mercury Tower",
         "description": "A residential tower in New Atlantis and houses the Mercury Tower Penthouse.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1299,7 +1299,7 @@
         "id": "Mercury_Tower_Penthouse",
         "name": "Mercury Tower Penthouse",
         "description": "A player home in New Atlantis' Residential District, rewarded for completing the mission Friends Like These.",
-        "type": "OTHER",
+        "type": "PLAYER_HOUSE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1307,7 +1307,7 @@
         "id": "Meteorite_Testing_Site",
         "name": "Meteorite Testing Site",
         "description": "",
-        "type": "OTHER",
+        "type": "SCIENCE_LAB",
         "starSystem": "Hyla",
         "planet": "Hyla_II-a"
     },
@@ -1315,7 +1315,7 @@
         "id": "Midtown",
         "name": "Midtown",
         "description": "A commercial and residential district located between the first (innermost) and second walls of Akila City.",
-        "type": "OTHER",
+        "type": "DISTRICT",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -1323,7 +1323,7 @@
         "id": "Midtown_Minerals",
         "name": "Midtown Minerals",
         "description": "",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -1331,7 +1331,7 @@
         "id": "Mineral_Caverns",
         "name": "Mineral Caverns",
         "description": "",
-        "type": "OTHER",
+        "type": "CAVE",
         "starSystem": "Ixyll",
         "planet": "Ixyll_II"
     },
@@ -1339,7 +1339,7 @@
         "id": "Misthaze_Cavern",
         "name": "Misthaze Cavern",
         "description": "A hidden cavern on the east side of Dazra.",
-        "type": "OTHER",
+        "type": "CAVE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -1347,7 +1347,7 @@
         "id": "Mourning_Ship_Cockpit",
         "name": "Mourning Ship Cockpit",
         "description": "",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -1355,7 +1355,7 @@
         "id": "NASA_Launch_Tower",
         "name": "NASA Launch Tower",
         "description": "An abandoned NASA facility on Earth.",
-        "type": "OTHER",
+        "type": "STRUCTURE",
         "starSystem": "Sol",
         "planet": "Earth"
     },
@@ -1363,7 +1363,7 @@
         "id": "Neon",
         "name": "Neon",
         "description": "A pleasure city built by the Xenofresh Corporation on Volii Alpha in the Volii System.",
-        "type": "OTHER",
+        "type": "CITY",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1371,7 +1371,7 @@
         "id": "Neon_Mining_League",
         "name": "Neon Mining League",
         "description": "A seller of mining equipment in Neon.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1379,7 +1379,7 @@
         "id": "Neon_Security_HQ",
         "name": "Neon Security HQ",
         "description": "",
-        "type": "OTHER",
+        "type": "GOVERNMENT",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1387,7 +1387,7 @@
         "id": "Neon_Tactical",
         "name": "Neon Tactical",
         "description": "A seller of weapons in Neon.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1395,7 +1395,7 @@
         "id": "New_Atlantis",
         "name": "New Atlantis",
         "description": "The capital city of the United Colonies, located on the planet Jemison, in the Alpha Centauri System.",
-        "type": "OTHER",
+        "type": "CITY",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1403,7 +1403,7 @@
         "id": "New_Atlantis_Spaceport",
         "name": "New Atlantis Spaceport",
         "description": "Where you first arrive when travelling to New Atlantis.",
-        "type": "OTHER",
+        "type": "DISTRICT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1411,7 +1411,7 @@
         "id": "New_Homestead",
         "name": "New Homestead",
         "description": "",
-        "type": "OTHER",
+        "type": "SETTLEMENT",
         "starSystem": "Sol",
         "planet": "Titan"
     },
@@ -1419,7 +1419,7 @@
         "id": "New_Homestead_Farms",
         "name": "New Homestead Farms",
         "description": "A working historical farm in New Homestead Farms.",
-        "type": "OTHER",
+        "type": "FARM",
         "starSystem": "Sol",
         "planet": "Titan"
     },
@@ -1427,7 +1427,7 @@
         "id": "New_Homestead_Museum",
         "name": "New Homestead Museum",
         "description": "A museum of old Earth artifacts in New Homestead.",
-        "type": "OTHER",
+        "type": "MUSEUM",
         "starSystem": "Sol",
         "planet": "Titan"
     },
@@ -1435,7 +1435,7 @@
         "id": "New_Homestead_Museum_Gift_Shop",
         "name": "New Homestead Museum Gift Shop",
         "description": "A store located within the New Homestead Museum.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Sol",
         "planet": "Titan"
     },
@@ -1443,7 +1443,7 @@
         "id": "New_York_Landmark",
         "name": "New York Landmark",
         "description": "A historical site marking the location of the Empire State Building on the Earth-That-Was.",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Earth"
     },
@@ -1451,7 +1451,7 @@
         "id": "Newill%27s_Goods",
         "name": "Newill's Goods",
         "description": "",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1459,7 +1459,7 @@
         "id": "Nishina_Research_Station",
         "name": "Nishina Research Station",
         "description": "A research station on Freya III, Freya System.",
-        "type": "OTHER",
+        "type": "SCIENCE_LAB",
         "starSystem": "Freya",
         "planet": "Freya_III"
     },
@@ -1467,7 +1467,7 @@
         "id": "Nova_Galactic_Research_Station",
         "name": "Nova Galactic Research Station",
         "description": "An abandoned research station on Luna, Sol System.",
-        "type": "OTHER",
+        "type": "SCIENCE_LAB",
         "starSystem": "Sol",
         "planet": "Luna"
     },
@@ -1475,7 +1475,7 @@
         "id": "Nova_Galactic_Staryard",
         "name": "Nova Galactic Staryard",
         "description": "A staryard near Earth's Moon. It is no longer operating and spacers have taken up residence.",
-        "type": "OTHER",
+        "type": "STARYARD",
         "starSystem": "Sol",
         "planet": "Luna"
     },
@@ -1483,7 +1483,7 @@
         "id": "Offworld_Eats",
         "name": "Offworld Eats",
         "description": "",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1491,7 +1491,7 @@
         "id": "Opportunity_Rover",
         "name": "Opportunity Rover",
         "description": "A historical site marking the last known location of one of NASA's robotic explorers.",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -1499,7 +1499,7 @@
         "id": "Orahim%27s_Shack",
         "name": "Orahim's Shack",
         "description": "A shack on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "STRUCTURE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -1507,7 +1507,7 @@
         "id": "Orion_Tower",
         "name": "Orion Tower",
         "description": "A residential tower in New Atlantis.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1515,7 +1515,7 @@
         "id": "Orm_Filtration_Facility",
         "name": "Orm Filtration Facility",
         "description": "An industrial facility on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "INDUSTRIAL_OUTPOST",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -1523,7 +1523,7 @@
         "id": "Osaka_Landmark",
         "name": "Osaka Landmark",
         "description": "A historical site marking remains of the Abeno Harukas, once the tallest skyscraper in the old earth country of Japan.",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Earth"
     },
@@ -1531,7 +1531,7 @@
         "id": "Outland",
         "name": "Outland",
         "description": "An equipment shop in New Atlantis popular with trackers.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1539,7 +1539,7 @@
         "id": "Paradiso",
         "name": "Paradiso",
         "description": "A luxury resort on Porrima II.",
-        "type": "OTHER",
+        "type": "SETTLEMENT",
         "starSystem": "Porrima",
         "planet": "Porrima_II"
     },
@@ -1547,7 +1547,7 @@
         "id": "Paradiso_General_Store",
         "name": "Paradiso General Store",
         "description": "A general store in the lobby of the Paradiso Hotel.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Porrima",
         "planet": "Porrima_II"
     },
@@ -1555,7 +1555,7 @@
         "id": "Paradiso_Hotel",
         "name": "Paradiso Hotel",
         "description": "A grand hotel occupying the entirety of Porrima II",
-        "type": "OTHER",
+        "type": "HOTEL",
         "starSystem": "Porrima",
         "planet": "Porrima_II"
     },
@@ -1563,7 +1563,7 @@
         "id": "Paradiso_Security_Office",
         "name": "Paradiso Security Office",
         "description": "The security office for the Paradiso Hotel and planet.",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Porrima",
         "planet": "Porrima_II"
     },
@@ -1571,7 +1571,7 @@
         "id": "Pilgrim%27s_Rest",
         "name": "Pilgrim's Rest",
         "description": "The former camp of the pilgrim.",
-        "type": "OTHER",
+        "type": "SETTLEMENT",
         "starSystem": "Indum",
         "planet": "Indum_II"
     },
@@ -1579,7 +1579,7 @@
         "id": "Pioneer_Tower",
         "name": "Pioneer Tower",
         "description": "A residential tower in New Atlantis with Dawn's Roost in the lobby.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1587,7 +1587,7 @@
         "id": "Pisa_Landmark",
         "name": "Pisa Landmark",
         "description": "An unmarked, historical site where the remains of the Leaning Tower of Pisa are located.",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Earth"
     },
@@ -1595,7 +1595,7 @@
         "id": "Polvo_Station",
         "name": "Polvo Station",
         "description": "A starstation which cannot be entered or interacted with.",
-        "type": "OTHER",
+        "type": "STARSTATION",
         "starSystem": "Valo",
         "planet": "Polvo"
     },
@@ -1603,7 +1603,7 @@
         "id": "Prison_(Akila_City)",
         "name": "Prison",
         "description": "",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -1611,7 +1611,7 @@
         "id": "Quikshop",
         "name": "Quikshop",
         "description": "",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1619,7 +1619,7 @@
         "id": "Ransacked_Research_Outpost",
         "name": "Ransacked Research Outpost",
         "description": "A research outpost taken over by the Crimson Fleet.",
-        "type": "OTHER",
+        "type": "SCIENCE_LAB",
         "starSystem": "Bessel",
         "planet": "Bessel_III"
     },
@@ -1627,7 +1627,7 @@
         "id": "Raptor_(Place)",
         "name": "Raptor",
         "description": "",
-        "type": "OTHER",
+        "type": "SHIP",
         "starSystem": "Groombridge",
         "planet": "Groombridge_II"
     },
@@ -1635,7 +1635,7 @@
         "id": "Reclaimed_Outpost",
         "name": "Reclaimed Outpost",
         "description": "",
-        "type": "OTHER",
+        "type": "INDUSTRIAL_OUTPOST",
         "starSystem": "Alpha_Centauri",
         "planet": "Hawley"
     },
@@ -1643,7 +1643,7 @@
         "id": "Red_Devils_HQ",
         "name": "Red Devils HQ",
         "description": "An abandoned military base on Mars, near Cydonia. Name changes from Red Devils HQ to TMD Headquarters after completion of UC quest line.",
-        "type": "OTHER",
+        "type": "MILITARY_BASE",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -1651,7 +1651,7 @@
         "id": "Red_Mile",
         "name": "Red Mile",
         "description": "A casino on Porrima III, Porrima System.",
-        "type": "OTHER",
+        "type": "SETTLEMENT",
         "starSystem": "Porrima",
         "planet": "Porrima_III"
     },
@@ -1659,7 +1659,7 @@
         "id": "Reliant_Medical_(Cydonia)",
         "name": "Reliant Medical",
         "description": "A small clinic of the Reliant Medical chain providing medical services in Cydonia.",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -1667,7 +1667,7 @@
         "id": "Reliant_Medical_(Gagarin_Landing)",
         "name": "Reliant Medical",
         "description": "A corporate office building located in Gagarin Landing.",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -1675,7 +1675,7 @@
         "id": "Reliant_Medical_(Neon)",
         "name": "Reliant Medical",
         "description": "A clinic of the Reliant Medical chain providing medical and addiction recovery services in Neon.",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1683,7 +1683,7 @@
         "id": "Reliant_Medical_(New_Atlantis)",
         "name": "Reliant Medical",
         "description": "A branch of the Reliant Medical chain that provides medical service in New Atlantis.",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1691,7 +1691,7 @@
         "id": "Reliant_Medical_Organics_Lab",
         "name": "Reliant Medical Organics Lab",
         "description": "A Reliant Medical facility.",
-        "type": "OTHER",
+        "type": "SCIENCE_LAB",
         "starSystem": "Beta_Ternion",
         "planet": "Beta_Ternion_I"
     },
@@ -1699,7 +1699,7 @@
         "id": "Research_Camp",
         "name": "Research Camp",
         "description": "A small Freestar Collective outpost on Altair II.",
-        "type": "OTHER",
+        "type": "INDUSTRIAL_OUTPOST",
         "starSystem": "Altair",
         "planet": "Altair_II"
     },
@@ -1707,7 +1707,7 @@
         "id": "Research_Outpost_U3-09",
         "name": "Research Outpost U3-09",
         "description": "A Freestar Collective research lab on Altair II.",
-        "type": "OTHER",
+        "type": "SCIENCE_LAB",
         "starSystem": "Altair",
         "planet": "Altair_II"
     },
@@ -1715,7 +1715,7 @@
         "id": "Residential_District",
         "name": "Residential District",
         "description": "One of three major districts within New Atlantis.",
-        "type": "OTHER",
+        "type": "DISTRICT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1723,7 +1723,7 @@
         "id": "Rowland_Arms",
         "name": "Rowland Arms",
         "description": "The second business on the left side of the entrance going into Akila City from its spaceport.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -1731,7 +1731,7 @@
         "id": "Ryujin_Apartments",
         "name": "Ryujin Apartments",
         "description": "An apartment building in Neon.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1739,7 +1739,7 @@
         "id": "Ryujin_Industries_HQ",
         "name": "Ryujin Industries HQ",
         "description": "The corporate headquarters in the Ryujin Tower.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1747,7 +1747,7 @@
         "id": "Ryujin_Industries_Product_Store",
         "name": "Ryujin Industries Product Store",
         "description": "",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1755,7 +1755,7 @@
         "id": "Ryujin_Tower",
         "name": "Ryujin Tower",
         "description": "A building containing various Ryujin corporate shops and offices.",
-        "type": "OTHER",
+        "type": "TOWER",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1763,7 +1763,7 @@
         "id": "SY-920",
         "name": "SY-920",
         "description": "A classified UC research station in orbit around Luyten's Rock.",
-        "type": "OTHER",
+        "type": "STARSTATION",
         "starSystem": "Luyten%27s_Star",
         "planet": "Luyten%27s_Rock"
     },
@@ -1771,7 +1771,7 @@
         "id": "Safe_House_Gamma",
         "name": "Safe House Gamma",
         "description": "A location on Andromas II.",
-        "type": "OTHER",
+        "type": "INDUSTRIAL_OUTPOST",
         "starSystem": "Andromas",
         "planet": "Andromas_II"
     },
@@ -1779,7 +1779,7 @@
         "id": "Sahar%27s_Farm",
         "name": "Sahar's Farm",
         "description": "An abandoned Wildlife Research Post in the north of Akila, Cheyenne System.",
-        "type": "OTHER",
+        "type": "FARM",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -1787,7 +1787,7 @@
         "id": "Sanctum_Universum_(Akila_City)",
         "name": "Sanctum Universum",
         "description": "A building in Akila City that serves as the local headquarters of the Sanctum Universum.",
-        "type": "OTHER",
+        "type": "RELIGIOUS_ORGANIZATION",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -1795,7 +1795,7 @@
         "id": "Sanctum_Universum_(New_Atlantis)",
         "name": "Sanctum Universum",
         "description": "A building in New Atlantis that serves as the headquarters of the Sanctum Universum.",
-        "type": "OTHER",
+        "type": "RELIGIOUS_ORGANIZATION",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1803,7 +1803,7 @@
         "id": "Sarah_Morgan%27s_Crash_Site",
         "name": "Sarah Morgan's Crash Site",
         "description": "",
-        "type": "OTHER",
+        "type": "CRASHED_STARSHIP",
         "starSystem": "Eta_Cassiopeia",
         "planet": "Cassiopeia_I"
     },
@@ -1811,7 +1811,7 @@
         "id": "Scorpion%27s_Sting",
         "name": "Scorpion's Sting",
         "description": "An ancient ruin which points to a secret site",
-        "type": "OTHER",
+        "type": "ANCIENT_RUIN",
         "starSystem": "Hyla",
         "planet": "Hyla_II"
     },
@@ -1827,7 +1827,7 @@
         "id": "Settled_Systems_News_Network_(Office)",
         "name": "Settled Systems News Network",
         "description": "",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1835,7 +1835,7 @@
         "id": "Shanghai_Landmark",
         "name": "Shanghai Landmark",
         "description": "A historical site marking the remains of the Shanghai Tower, once the tallest building in China.",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Earth"
     },
@@ -1843,7 +1843,7 @@
         "id": "Shepherd%27s_General_Store",
         "name": "Shepherd's General Store",
         "description": "A business on the left side of the entrance going into Akila City from its spaceport.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -1851,7 +1851,7 @@
         "id": "Sieghart%27s_Outfitters",
         "name": "Sieghart's Outfitters",
         "description": "",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1859,7 +1859,7 @@
         "id": "Sinclair%27s_Books",
         "name": "Sinclair's Books",
         "description": "A small bookstore in Akila City. It is run by Ahnjong Sinclair and offers a selection of physical books.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -1867,7 +1867,7 @@
         "id": "Siren_of_the_Stars",
         "name": "Siren of the Stars",
         "description": "A luxury space vessel owned and operated by Trident Luxury Lines. Siren of the Stars only exists during the Breaking the Bank mission and no longer exists after its completion.",
-        "type": "OTHER",
+        "type": "SHIP",
         "starSystem": "Aranae",
         "planet": "Aranae_IV"
     },
@@ -1875,7 +1875,7 @@
         "id": "Sixth_Circle",
         "name": "Sixth Circle",
         "description": "A bar for former members of the Red Devils in Cydonia.",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -1883,7 +1883,7 @@
         "id": "Sky_Suite",
         "name": "Sky Suite",
         "description": "",
-        "type": "OTHER",
+        "type": "PLAYER_HOUSE",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1891,7 +1891,7 @@
         "id": "Slayton_Aerospace_(Place)",
         "name": "Slayton Aerospace",
         "description": "An office in the Trade Tower of Neon that serves as the headquarters of Slayton Aerospace.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1899,7 +1899,7 @@
         "id": "Sleepcrate_Rents",
         "name": "Sleepcrate Rents",
         "description": "A collection of sleeping rooms inside old metal shipping containers.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1907,7 +1907,7 @@
         "id": "Sleepcrate_Unit_A-003",
         "name": "Sleepcrate Unit A-003",
         "description": "A tiny player sleeping room inside an old metal shipping container.",
-        "type": "OTHER",
+        "type": "PLAYER_HOUSE",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1915,7 +1915,7 @@
         "id": "Sonny_Di_Falco%27s_Island",
         "name": "Sonny Di Falco's Island",
         "description": "A luxurious estate located on Maheo I",
-        "type": "OTHER",
+        "type": "POI",
         "starSystem": "Maheo",
         "planet": "Maheo_I"
     },
@@ -1923,7 +1923,7 @@
         "id": "St._Louis_Landmark",
         "name": "St. Louis Landmark",
         "description": "A historical site marking the still standing Gateway Arch in a region formerly known as St. Louis, Missouri.",
-        "type": "OTHER",
+        "type": "HISTORICAL_LANDMARK",
         "starSystem": "Sol",
         "planet": "Earth"
     },
@@ -1931,7 +1931,7 @@
         "id": "Starrett_House",
         "name": "Starrett House",
         "description": "In the Midtown Residential section adjacent to Weston Filburn's House.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -1939,7 +1939,7 @@
         "id": "Starsap_Tours_(Place)",
         "name": "Starsap Tours",
         "description": "A tour booth operated by Bill Starsap.",
-        "type": "OTHER",
+        "type": "TOURIST_ATTRACTION",
         "starSystem": "Sol",
         "planet": "Titan"
     },
@@ -1947,7 +1947,7 @@
         "id": "Starstation_RE-939",
         "name": "Starstation RE-939",
         "description": "An explorable starstation located in the Alpha Centauri System.",
-        "type": "OTHER",
+        "type": "STARSTATION",
         "starSystem": "Alpha_Centauri",
         "planet": "Voss"
     },
@@ -1955,7 +1955,7 @@
         "id": "Starstation_UCN-48",
         "name": "Starstation UCN-48",
         "description": "An abandoned Serpent's Crusade era starstation coopted as a covert base of operations by Va'ruun agents.",
-        "type": "OTHER",
+        "type": "STARSTATION",
         "starSystem": "Muphrid",
         "planet": "Muphrid_IV"
     },
@@ -1963,7 +1963,7 @@
         "id": "Storage_A",
         "name": "Storage A",
         "description": "A UC Security-controlled storage facility in New Atlantis Spaceport.",
-        "type": "OTHER",
+        "type": "STORAGE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -1971,7 +1971,7 @@
         "id": "Stroud-Eklund_Corporate_HQ",
         "name": "Stroud-Eklund Corporate HQ",
         "description": "An office in the Trade Tower of Neon that serves as the headquarters of Stroud-Eklund.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1979,7 +1979,7 @@
         "id": "Stroud-Eklund_Showroom",
         "name": "Stroud-Eklund Showroom",
         "description": "A customer sales location on the Bayu Plaza, separate from the nearby Stroud-Eklund corporation headquarters in the Trade Tower on Neon.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -1987,7 +1987,7 @@
         "id": "Stroud-Eklund_Staryard",
         "name": "Stroud-Eklund Staryard",
         "description": "A Staryard operated by Stroud-Eklund that orbits the moon Dalvik in the Narion System.",
-        "type": "OTHER",
+        "type": "STARYARD",
         "starSystem": "Narion",
         "planet": "Dalvik"
     },
@@ -1995,7 +1995,7 @@
         "id": "Subterranean_Mal%27siir_Farm",
         "name": "Subterranean Mal'siir Farm",
         "description": "A facility the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "INDUSTRIAL",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -2003,7 +2003,7 @@
         "id": "Ta%27nis_Groat_Farm",
         "name": "Ta'nis Groat Farm",
         "description": "A farm on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "FARM",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -2011,7 +2011,7 @@
         "id": "Taiyo_Astroneering_Store",
         "name": "Taiyo Astroneering Store",
         "description": "An entire floor in the Ryujin Tower of Neon.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -2019,7 +2019,7 @@
         "id": "Tau_Gourmet_Production_Center",
         "name": "Tau Gourmet Production Center",
         "description": "Is a defunct meat processing facility on Tau Ceti II.",
-        "type": "OTHER",
+        "type": "INDUSTRIAL_OUTPOST",
         "starSystem": "Tau_Ceti",
         "planet": "Tau_Ceti_II"
     },
@@ -2027,7 +2027,7 @@
         "id": "TerraBrew_(Gagarin_Landing)",
         "name": "TerraBrew",
         "description": "TerraBrew's newly opened coffeehouse in Gagarin Landing.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -2035,7 +2035,7 @@
         "id": "TerraBrew_Coffee_(Akila_City)",
         "name": "TerraBrew Coffee",
         "description": "TerraBrew's coffeehouse to the right of The Rock in Akila City, the capital of Akila and the Freestar Collective.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -2043,7 +2043,7 @@
         "id": "TerraBrew_Coffee_(Commercial_District)",
         "name": "TerraBrew Coffee",
         "description": "Located in the Commercial District in between the SSNN building and the Valberg Building. George Saint-George can be found here.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2051,7 +2051,7 @@
         "id": "TerraBrew_Coffee_(Neon)",
         "name": "TerraBrew Coffee",
         "description": "A location of TerraBrew in Neon",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -2059,7 +2059,7 @@
         "id": "TerraBrew_Coffee_(Spaceport)",
         "name": "TerraBrew Coffee",
         "description": "A location of TerraBrew.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2067,7 +2067,7 @@
         "id": "The_Almagest",
         "name": "The Almagest",
         "description": "A starstation in orbit around Nesoi. The station is an abandoned zero-G casino, currently occupied by spacers.",
-        "type": "OTHER",
+        "type": "STARSTATION",
         "starSystem": "Olympus",
         "planet": "Nesoi"
     },
@@ -2075,7 +2075,7 @@
         "id": "The_Astraea",
         "name": "The Astraea",
         "description": "",
-        "type": "OTHER",
+        "type": "SHIP",
         "starSystem": "Sol",
         "planet": "Europa"
     },
@@ -2083,7 +2083,7 @@
         "id": "The_Beagle",
         "name": "The Beagle",
         "description": "",
-        "type": "OTHER",
+        "type": "SHIP",
         "starSystem": "Zelazny",
         "planet": "Zelazny_I"
     },
@@ -2091,7 +2091,7 @@
         "id": "The_Clinic",
         "name": "The Clinic",
         "description": "A state-of-the art medical facility aboard a starstation.",
-        "type": "OTHER",
+        "type": "STARSTATION",
         "starSystem": "Narion",
         "planet": "Deepala"
     },
@@ -2099,7 +2099,7 @@
         "id": "The_Colander",
         "name": "The Colander",
         "description": "An abandoned research ship harboring an unwelcome guest.",
-        "type": "OTHER",
+        "type": "DERELICT_SHIP",
         "starSystem": "Schrodinger",
         "planet": "Schrodinger_III"
     },
@@ -2107,7 +2107,7 @@
         "id": "The_Core",
         "name": "The Core",
         "description": "The oldest and most prestigious district in Akila City.",
-        "type": "OTHER",
+        "type": "DISTRICT",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -2115,7 +2115,7 @@
         "id": "The_Crates",
         "name": "The Crates",
         "description": "A cramped overflow housing area in New Homestead",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Sol",
         "planet": "Titan"
     },
@@ -2123,7 +2123,7 @@
         "id": "The_Den",
         "name": "The Den",
         "description": "A starstation located in the Wolf System.",
-        "type": "OTHER",
+        "type": "STARSTATION",
         "starSystem": "Wolf",
         "planet": "Chthonia"
     },
@@ -2131,7 +2131,7 @@
         "id": "The_Eleos_Retreat",
         "name": "The Eleos Retreat",
         "description": "A settlement on Ixyll II that is under construction as a rehabilitation center for convicts.",
-        "type": "OTHER",
+        "type": "SETTLEMENT",
         "starSystem": "Ixyll",
         "planet": "Ixyll_II"
     },
@@ -2139,7 +2139,7 @@
         "id": "The_Emporium",
         "name": "The Emporium",
         "description": "",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -2147,7 +2147,7 @@
         "id": "The_Empty_Nest_(place)",
         "name": "The Empty Nest",
         "description": "A camp held by the Shaw Gang near Akila City.",
-        "type": "OTHER",
+        "type": "MINING_BASE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -2155,7 +2155,7 @@
         "id": "The_Eye",
         "name": "The Eye",
         "description": "A starstation owned by Constellation and maintained by Vladimir Sall. The Eye serves as a deep space scanner.",
-        "type": "OTHER",
+        "type": "STARSTATION",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2163,7 +2163,7 @@
         "id": "The_Facility",
         "name": "The Facility",
         "description": "",
-        "type": "OTHER",
+        "type": "SETTLEMENT",
         "starSystem": "Charybdis",
         "planet": "Charybdis_III"
     },
@@ -2171,7 +2171,7 @@
         "id": "The_Hitching_Post",
         "name": "The Hitching Post",
         "description": "A bar near Akila City's front gates.",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -2179,7 +2179,7 @@
         "id": "The_Keep",
         "name": "The Keep",
         "description": "The Keep is the central armor of House Va'ruun in Dazra.",
-        "type": "OTHER",
+        "type": "SERVICE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -2187,7 +2187,7 @@
         "id": "The_Key",
         "name": "The Key",
         "description": "",
-        "type": "OTHER",
+        "type": "CITY",
         "starSystem": "Kryx",
         "planet": "Suvorov"
     },
@@ -2195,7 +2195,7 @@
         "id": "The_Lock",
         "name": "The Lock",
         "description": "A former United Colonies prison, now in ruins.",
-        "type": "OTHER",
+        "type": "MILITARY_BASE",
         "starSystem": "Kryx",
         "planet": "Suvorov"
     },
@@ -2203,7 +2203,7 @@
         "id": "The_Lodge",
         "name": "The Lodge",
         "description": "Constellation's headquarters in MAST district of New Atlantis.",
-        "type": "OTHER",
+        "type": "BUILDING",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2211,7 +2211,7 @@
         "id": "The_Low_House",
         "name": "The Low House",
         "description": "",
-        "type": "OTHER",
+        "type": "HOTEL",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -2219,7 +2219,7 @@
         "id": "The_Pit_Stop",
         "name": "The Pit Stop",
         "description": "A bar near the landing pad of HopeTown.",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Valo",
         "planet": "Polvo"
     },
@@ -2227,7 +2227,7 @@
         "id": "The_Rock",
         "name": "The Rock",
         "description": "A large building in the center of Akila City, hosting services and the Freestar Rangers' headquarters.",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -2235,7 +2235,7 @@
         "id": "The_Scow_(Place)",
         "name": "The Scow",
         "description": "",
-        "type": "OTHER",
+        "type": "SHIP",
         "starSystem": "Procyon_A",
         "planet": "Procyon_V-b"
     },
@@ -2243,7 +2243,7 @@
         "id": "The_Sonder",
         "name": "The Sonder",
         "description": "A starstation located in the Bessel System, orbiting Bessel II.",
-        "type": "OTHER",
+        "type": "STARSTATION",
         "starSystem": "Bessel",
         "planet": "Bessel_II"
     },
@@ -2251,7 +2251,7 @@
         "id": "The_Stoneroot_Inn",
         "name": "The Stoneroot Inn",
         "description": "A long-standing traditional location for food and lodging.",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -2259,7 +2259,7 @@
         "id": "The_Stretch",
         "name": "The Stretch",
         "description": "The poorest district of Akila City.",
-        "type": "OTHER",
+        "type": "DISTRICT",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -2267,7 +2267,7 @@
         "id": "The_Stretch_Apartment",
         "name": "The Stretch Apartment",
         "description": "",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -2275,7 +2275,7 @@
         "id": "The_Viewport",
         "name": "The Viewport",
         "description": "A Cafe/Bar located in New Atlantis. It is a place to get food/supplies, or even hire crew for your spaceship.",
-        "type": "OTHER",
+        "type": "BAR",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2283,7 +2283,7 @@
         "id": "The_Volii_Hotel",
         "name": "The Volii Hotel",
         "description": "A hotel operating in Neon",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -2291,7 +2291,7 @@
         "id": "The_Well",
         "name": "The Well",
         "description": "The underbelly of New Atlantis, housing the city's poorer residents.",
-        "type": "OTHER",
+        "type": "DISTRICT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2299,7 +2299,7 @@
         "id": "Tomb_of_the_Fang",
         "name": "Tomb of the Fang",
         "description": "A location on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "TOMB",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -2307,7 +2307,7 @@
         "id": "Town_Hall_(Gagarin_Landing)",
         "name": "Town Hall",
         "description": "A small governmental office, currently closed for renovations.",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -2323,7 +2323,7 @@
         "id": "Trade_Authority_(Akila_City)",
         "name": "Trade Authority",
         "description": "The local Trade Authority building for Akila City.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -2331,7 +2331,7 @@
         "id": "Trade_Authority_(Cydonia)",
         "name": "Trade Authority",
         "description": "A branch of Trade Authority in Cydonia.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -2339,7 +2339,7 @@
         "id": "Trade_Authority_(Neon)",
         "name": "Trade Authority",
         "description": "A location of Trade Authority in Neon",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -2347,7 +2347,7 @@
         "id": "Trade_Authority_(The_Well)",
         "name": "Trade Authority",
         "description": "A branch of the Trade Authority found in the southeastern section of New Atlantis in The Well.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2355,7 +2355,7 @@
         "id": "Trade_Tower",
         "name": "Trade Tower",
         "description": "A building that houses a number of corporate offices on Neon. The Astral Lounge occupies the ground floor.",
-        "type": "OTHER",
+        "type": "TOWER",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -2363,7 +2363,7 @@
         "id": "Tranquilitea_(Neon)",
         "name": "Tranquilitea",
         "description": "A location of Tranquilitea within Ryujin Tower in Neon.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -2371,7 +2371,7 @@
         "id": "Tranquilitea_(Paradiso)",
         "name": "Tranquilitea",
         "description": "A location of the Tranquilitea chain located in the Paradiso Hotel lobby.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Porrima",
         "planet": "Porrima_II"
     },
@@ -2379,7 +2379,7 @@
         "id": "Trident_Luxury_Lines_Staryard",
         "name": "Trident Luxury Lines Staryard",
         "description": "A Staryard orbiting Akila, specializing in luxury ships.",
-        "type": "OTHER",
+        "type": "STARYARD",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -2387,7 +2387,7 @@
         "id": "UC_Distribution",
         "name": "UC Distribution",
         "description": "A UC surplus store in New Atlantis.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2395,7 +2395,7 @@
         "id": "UC_Exchange",
         "name": "UC Exchange",
         "description": "A small weapons and armor store.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -2403,7 +2403,7 @@
         "id": "UC_Marine_Barracks",
         "name": "UC Marine Barracks",
         "description": "Quarters for UC Marines stationed in Cydonia.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -2411,7 +2411,7 @@
         "id": "UC_Office_of_the_Governor-General",
         "name": "UC Office of the Governor-General",
         "description": "The office of the Governor of Cydonia, Glen Hurst.",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -2419,7 +2419,7 @@
         "id": "UC_Security_(Cydonia)",
         "name": "UC Security",
         "description": "The headquarters for UC Security in Cydonia.",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Sol",
         "planet": "Mars"
     },
@@ -2427,7 +2427,7 @@
         "id": "UC_Security_Office",
         "name": "UC Security Office",
         "description": "The headquarters for UC Security in New Atlantis.",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2435,7 +2435,7 @@
         "id": "UC_Security_Office_(Gagarin_Landing)",
         "name": "UC Security Office",
         "description": "The Gagarin Landing branch office for UC Security.",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -2443,7 +2443,7 @@
         "id": "UC_Surplus",
         "name": "UC Surplus",
         "description": "A business found with New Atlantis's Well. It is run by Antonio Bianchi.",
-        "type": "OTHER",
+        "type": "SHOP",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2451,7 +2451,7 @@
         "id": "UC_Vanguard_Office_(Gagarin_Landing)",
         "name": "UC Vanguard Office",
         "description": "A local Vanguard recruitment office in Gagarin Landing.",
-        "type": "OTHER",
+        "type": "GOVERNMENT_OFFICE",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -2459,7 +2459,7 @@
         "id": "UC_Vigilance_(Place)",
         "name": "UC Vigilance",
         "description": "A battlecruiser that serves as the flagship of UC SysDef.",
-        "type": "OTHER",
+        "type": "SHIP",
         "starSystem": "Sol",
         "planet": "Phobos"
     },
@@ -2467,7 +2467,7 @@
         "id": "Underbelly",
         "name": "Underbelly",
         "description": "The lowest level of Neon.",
-        "type": "OTHER",
+        "type": "DISTRICT",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -2475,7 +2475,7 @@
         "id": "United_Transport_Warehouse",
         "name": "United Transport Warehouse",
         "description": "",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     },
@@ -2483,7 +2483,7 @@
         "id": "Va%27ruun_Home",
         "name": "Va'ruun Home",
         "description": "Is a house located House Va'ruuncity of Dazra on Va'ruun'kai.",
-        "type": "OTHER",
+        "type": "HOUSE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -2491,7 +2491,7 @@
         "id": "Vacant_House",
         "name": "Vacant House",
         "description": "A purchasable player home in Dazra, near the top of the city.",
-        "type": "OTHER",
+        "type": "PLAYER_HOUSE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -2499,7 +2499,7 @@
         "id": "Vaifala_Crash_Site",
         "name": "Vaifala Crash Site",
         "description": "The site of a crashed ship on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "CRASHED_STARSHIP",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -2507,7 +2507,7 @@
         "id": "Valberg_Building",
         "name": "Valberg Building",
         "description": "A tower in New Atlantis. Whetstone occupies most of the first floor and Argos Extractors is the only known tenant of the tower.",
-        "type": "OTHER",
+        "type": "TOWER",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2515,7 +2515,7 @@
         "id": "Valerie%27s_Cache",
         "name": "Valerie's Cache",
         "description": "A trap set by Syndicate operative Valerie Mosquera to lure and eliminate Lillian Hart.",
-        "type": "OTHER",
+        "type": "CAMP",
         "starSystem": "Andromas",
         "planet": "Andromas_III"
     },
@@ -2523,7 +2523,7 @@
         "id": "Vanguard_Exam_Center",
         "name": "Vanguard Exam Center",
         "description": "A location within MAST Tower.",
-        "type": "OTHER",
+        "type": "GOVERNMENT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2531,7 +2531,7 @@
         "id": "Vanguard_Orientation_Hall",
         "name": "Vanguard Orientation Hall",
         "description": "A museum located within MAST Tower.",
-        "type": "OTHER",
+        "type": "GOVERNMENT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2539,7 +2539,7 @@
         "id": "Victor_Compound",
         "name": "Victor Compound",
         "description": "A Seokguh Syndicate outpost on McClure II.",
-        "type": "OTHER",
+        "type": "MILITARY_BASE",
         "starSystem": "McClure",
         "planet": "McClure_II"
     },
@@ -2547,7 +2547,7 @@
         "id": "Vlad%27s_Villa",
         "name": "Vlad's Villa",
         "description": "",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Syrma",
         "planet": "Syrma_VII-a"
     },
@@ -2555,7 +2555,7 @@
         "id": "Vulture%27s_Roost",
         "name": "Vulture's Roost",
         "description": "A heavily fortified Ecliptic Mercenary outpost on Jaffa IV.",
-        "type": "OTHER",
+        "type": "MINING_BASE",
         "starSystem": "Jaffa",
         "planet": "Jaffa_IV"
     },
@@ -2563,7 +2563,7 @@
         "id": "Waggoner_Farm",
         "name": "Waggoner Farm",
         "description": "A farm on Montara Luna, Cheyenne System.",
-        "type": "OTHER",
+        "type": "FARM",
         "starSystem": "Cheyenne",
         "planet": "Montara_Luna"
     },
@@ -2571,7 +2571,7 @@
         "id": "Wayshrine_of_Devotion",
         "name": "Wayshrine of Devotion",
         "description": "A wayshrine on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "WAYSHRINE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -2579,7 +2579,7 @@
         "id": "Wayshrine_of_Obedience",
         "name": "Wayshrine of Obedience",
         "description": "A wayshrine on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "WAYSHRINE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -2587,7 +2587,7 @@
         "id": "Wayshrine_of_Perseverance",
         "name": "Wayshrine of Perseverance",
         "description": "A wayshrine on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "WAYSHRINE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -2595,7 +2595,7 @@
         "id": "Wayshrine_of_Redemption",
         "name": "Wayshrine of Redemption",
         "description": "A wayshrine on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "WAYSHRINE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -2603,7 +2603,7 @@
         "id": "Wayshrine_of_Strength",
         "name": "Wayshrine of Strength",
         "description": "A wayshrine on the outskirts of Dazra.",
-        "type": "OTHER",
+        "type": "WAYSHRINE",
         "starSystem": "Kavnyk",
         "planet": "Va%27ruun%27kai"
     },
@@ -2611,7 +2611,7 @@
         "id": "Well_Apartment",
         "name": "Well Apartment",
         "description": "A purchasable player home in The Well, in the under levels of New Atlantis.",
-        "type": "OTHER",
+        "type": "PLAYER_HOUSE",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2619,7 +2619,7 @@
         "id": "Weston_Filburn%27s_House",
         "name": "Weston Filburn's House",
         "description": "In the Midtown Residential section adjacent to Starrett House and across the street from Filburn Agricultural Systems.",
-        "type": "OTHER",
+        "type": "RESIDENCE",
         "starSystem": "Cheyenne",
         "planet": "Akila"
     },
@@ -2627,7 +2627,7 @@
         "id": "Whetstone",
         "name": "Whetstone",
         "description": "A restaurant ran by Alara Katrango in New Atlantis on Jemison in the Alpha Centauri System. It is located within the Commercial District, and is inside the larger Valberg Building.",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Alpha_Centauri",
         "planet": "Jemison"
     },
@@ -2643,7 +2643,7 @@
         "id": "Xenofresh_Corporate_HQ",
         "name": "Xenofresh Corporate HQ",
         "description": "An office in the Trade Tower of Neon that serves as the headquarters of the Xenofresh Corporation.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -2651,7 +2651,7 @@
         "id": "Xenofresh_Seafood",
         "name": "Xenofresh Seafood",
         "description": "",
-        "type": "OTHER",
+        "type": "RESTAURANT",
         "starSystem": "Volii",
         "planet": "Volii_Alpha"
     },
@@ -2659,7 +2659,7 @@
         "id": "Yankton_Law_Offices",
         "name": "Yankton Law Offices",
         "description": "A public law firm run by Ellie Yankton.",
-        "type": "OTHER",
+        "type": "BUSINESS",
         "starSystem": "Alpha_Centauri",
         "planet": "Gagarin"
     }
