@@ -13,7 +13,6 @@ import faunaReference
 import floraReference
 import inMemoryStorage
 import kotlinx.html.*
-import kotlinx.html.js.a
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.HTMLInputElement

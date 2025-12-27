@@ -66,7 +66,7 @@ fun loadAll(progress: HTMLElement): Promise<*> {
                                 progress.innerText = "Loading Research"
                                 loadResearchProjects().then {
                                     progress.innerText = "Loading User Pictures"
-                                    loadPictures().then {
+                                    loadPictures(progress).then {
                                         return@then
                                     }
                                 }
@@ -174,14 +174,10 @@ fun loadMemory(): Promise<*> {
     }
 }
 
-fun loadPictures(): Promise<*> {
+fun loadPictures(status: HTMLElement): Promise<*> {
     return LocalForage.getItem("pictures").then { persisted ->
         if (persisted != null && persisted != undefined) {
-            try {
-                pictureStorage = jsonMapper.decodeFromString(persisted as String)
-            } catch (e: Exception) {
-                println("Failed to parse pictures. Try deleting user data and rebuilding it.")
-            }
+            decodePictures(persisted as String, status)
         }
     }
 }
@@ -202,7 +198,7 @@ private fun exportData(data: String, fileName: String) {
 fun importPlayerInfo(status: HTMLElement) {
     importData { data ->
         try {
-            jsonMapper.decodeFromString<InMemoryStorage>(data).also { inMemoryStorage = it }
+            decodeInMemoryStorage(data, status)
             println("Imported ${inMemoryStorage.planetUserInfo.size} user info pieces")
             persistMemory()
             status.innerText = "Player Info Imported"
@@ -216,7 +212,7 @@ fun importPlayerInfo(status: HTMLElement) {
 fun importPictures(status: HTMLElement) {
     importData { data ->
         try {
-            jsonMapper.decodeFromString<Map<String, String>>(data).also { pictureStorage = it.toMutableMap() }
+            decodePictures(data, status)
             println("Imported ${pictureStorage.keys.size} pictures")
             persistPictures()
             status.innerText = "Pictures Imported"
@@ -268,22 +264,43 @@ fun loadSampleData(status: HTMLElement) {
     try {
         status.innerText = "Loading Player Info"
         loadJson("sample/StarfieldEye.json").then { playerJson ->
-            jsonMapper.decodeFromString<InMemoryStorage>(playerJson).also { inMemoryStorage = it }
-            println("Imported ${inMemoryStorage.planetUserInfo.size} user info pieces")
-            status.innerText = "Loading Pictures"
             loadJson("sample/StarfieldPictures.json").then { pictureJson ->
-                jsonMapper.decodeFromString<Map<String, String>>(pictureJson)
-                    .also { pictureStorage = it.toMutableMap() }
-                println("Imported ${pictureStorage.keys.size} pictures")
-                persistMemory()
-                persistPictures()
-                status.innerText = "Loaded sample data!"
+                try {
+                    decodeInMemoryStorage(playerJson, status)
+                    status.innerText = "Loading Pictures"
+                    decodePictures(pictureJson, status)
+                    println("Imported ${pictureStorage.keys.size} pictures")
+                    persistMemory()
+                    persistPictures()
+                    status.innerText = "Loaded sample data!"
+                } catch (e: Throwable) {
+                    status.innerText = "Loading sample data failed"
+                }
             }
         }
     } catch (e: Exception) {
         status.innerText = "Loading sample data failed"
     }
+}
 
+private fun decodeInMemoryStorage(json: String, status: HTMLElement) {
+    try {
+        jsonMapper.decodeFromString<InMemoryStorage>(json).also { inMemoryStorage = it }
+    } catch (e: Exception) {
+        status.innerText = "Decoding Data Failed. Running migration"
+        migrateInMemoryStorage(json, status)
+    }
+}
+
+private fun decodePictures(json: String, status: HTMLElement) {
+    try {
+        jsonMapper.decodeFromString<Map<String, String>>(json)
+            .also { pictureStorage = it.toMutableMap() }
+        if (isLegacyPictureStorage()) migratePictures(pictureStorage, status)
+    } catch (e: Exception) {
+        status.innerText = "Failed to parse pictures. Try deleting user data and rebuilding it."
+        println("Failed to parse pictures. Try deleting user data and rebuilding it.")
+    }
 }
 
 fun ResearchProject.getProjectState(): ProjectState {
