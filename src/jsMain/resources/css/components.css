@@ -8,7 +8,9 @@
 }
 
 .toggle-wrapper {
-    font-family: Architekt;
+    font-family: Orbitron;
+    text-transform: uppercase;
+    word-spacing: 5px;
 }
 
 .toggle-wrapper input[type=checkbox]{

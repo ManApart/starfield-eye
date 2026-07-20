@@ -1,7 +1,9 @@
 .research {
     background-color: #c8ccc9;
     color: #030303;
-    font-family: Architekt;
+    font-family: Orbitron;
+    text-transform: uppercase;
+    word-spacing: 5px;
     padding: 20px;
     position: relative;
     margin: auto;
