@@ -1,47 +1,55 @@
-@font-face { font-family: Architekt; src: url('../fonts/Architekt-Light.ttf'),  url('/fonts/Architekt-Light.ttf'); }
-@font-face { font-family: Grotesk; src: url('../fonts/Grotesk-R-Semibold.ttf'),  url('/fonts/Grotesk-R-Semibold.ttf'); }
+@font-face {
+    font-family: Orbitron;
+    src: url('../fonts/Orbitron-Thin.ttf'), url('/fonts/Orbitron-Thin.ttf');
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-Regular.ttf'), url('/fonts/Montserrat-Regular.ttf');
+}
 
 
 :root {
-  --background-blue: #0d1727;
-  --red: #c82337;
-  --orange: #e06236;
-  --yellow: #d7ab61;
-  --blue: #2f4c79;
-  --menu-gray: #2d343c;
+    --background-blue: #0d1727;
+    --red: #c82337;
+    --orange: #e06236;
+    --yellow: #d7ab61;
+    --blue: #2f4c79;
+    --menu-gray: #2d343c;
 }
 
 body {
     color: white;
     font-size: large;
     background-color: var(--background-blue);
-    font-family: Grotesk;
+    font-family: Montserrat;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+    width: 5px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-corner {
-  background: var(--background-blue);
+    background: var(--background-blue);
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background-blue);
+    background: var(--background-blue);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--blue);
+    background: var(--blue);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: gray;
+    background: gray;
 }
 
-
 h1, h2, h3, h4 {
-    font-family: Architekt;
+    font-family: Orbitron;
+    text-transform: uppercase;
+    word-spacing: 5px;
 }
 
 h2 {
@@ -66,21 +74,23 @@ button {
     font-size: 1em;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, var(--background-blue) 50%, var(--menu-gray) 50%);
-	border: 1px solid gray;
-	padding: 5px;
-	margin-right: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	cursor: pointer;
-	font-family: Architekt;
+    border: 1px solid gray;
+    padding: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-family: Orbitron;
+    text-transform: uppercase;
+    word-spacing: 5px;
     transition: 1s;
 }
 
-button:hover{
+button:hover {
     background-position: -100% 0%;
 }
 
-.button-pushed{
+.button-pushed {
     background-position: -100% 0%;
 }
 
@@ -89,18 +99,20 @@ button:hover{
     color: white;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, var(--background-blue) 50%, var(--menu-gray) 50%);
-	border: 1px solid gray;
-	padding: 5px;
-	margin-right: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	cursor: pointer;
-	font-family: Architekt;
+    border: 1px solid gray;
+    padding: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-family: Orbitron;
+    text-transform: uppercase;
+    word-spacing: 5px;
     transition: 1s;
     font-size: 1em;
 }
 
-.a-button:hover{
+.a-button:hover {
     background-position: -100% 0%;
 }
 
@@ -115,6 +127,7 @@ textarea {
     border: none;
     outline: none;
 }
+
 input {
     color: white;
     background-color: var(--background-blue);
@@ -140,16 +153,16 @@ blockquote {
 }
 
 details {
-  user-select: none;
+    user-select: none;
 }
 
 summary {
-  display: block;
-  cursor: pointer;
+    display: block;
+    cursor: pointer;
 }
 
 summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
 
 .visible-block {
@@ -160,7 +173,7 @@ summary::-webkit-details-marker {
     display: inline-block;
 }
 
-.section-wrapper{
+.section-wrapper {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -183,7 +196,7 @@ summary::-webkit-details-marker {
 
 #about-view .section-view-box,
 #dock-view .section-view-box,
-#manual-view .section-view-box{
+#manual-view .section-view-box {
     max-height: unset;
 }
 
@@ -193,9 +206,11 @@ summary::-webkit-details-marker {
     background-image: linear-gradient(140deg, var(--blue) 10%, var(--red) 10%, var(--red) 13%, var(--orange) 13%, var(--orange) 15%, var(--yellow) 15%, var(--yellow) 16.5%, white 16.5%);
     text-align: center;
     color: black;
-    font-family: Architekt;
     font-weight: bold;
     padding-top: 5px;
+    font-family: Orbitron;
+    text-transform: uppercase;
+    word-spacing: 5px;
 }
 
 #root {
