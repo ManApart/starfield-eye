@@ -1,9 +1,10 @@
+import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
+
 val ktor_version = "2.2.4"
 
 plugins {
-    kotlin("multiplatform") version "2.0.20"
-    kotlin("plugin.serialization") version "2.0.0"
-    application
+    kotlin("multiplatform") version "2.3.20"
+    kotlin("plugin.serialization") version "2.3.20"
 }
 
 group = "org.manapart"
@@ -16,6 +17,13 @@ repositories {
 
 kotlin {
     jvm {
+        @OptIn(ExperimentalKotlinGradlePluginApi::class)
+        binaries {
+            executable {
+                mainClass.set("MockSFSEServerKt")
+            }
+        }
+
         testRuns.named("test") {
             executionTask.configure {
                 useJUnitPlatform()
@@ -79,9 +87,4 @@ kotlin {
 tasks.named<Copy>("jvmProcessResources") {
     val jsBrowserDistribution = tasks.named("jsBrowserDistribution")
     from(jsBrowserDistribution)
-}
-
-tasks.named<JavaExec>("run") {
-    dependsOn(tasks.named<Jar>("jvmJar"))
-    classpath(tasks.named<Jar>("jvmJar"))
 }
