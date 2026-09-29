@@ -1,4 +1,5 @@
 import LocalForage.config
+import docking.Autosort
 import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.serialization.Serializable
@@ -25,6 +26,7 @@ data class InMemoryStorage(
     var stats: MiscStats = MiscStats(),
     var perks: MutableMap<String, Int> = mutableMapOf(),
     var research: MutableMap<String, Int> = mutableMapOf(),
+    val autoSort: Autosort = Autosort(),
     var showUndiscovered: Boolean? = true,
     var outpostResourceView: Boolean? = false,
     var paintBackgroundStars: Boolean? = null,

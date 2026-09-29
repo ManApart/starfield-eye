@@ -3,6 +3,7 @@ package views
 import components.linkableH2
 import components.toggle
 import deleteUserData
+import docking.connectAutoSort
 import docking.healthCheck
 import docking.poll
 import el
@@ -302,6 +303,7 @@ private fun attemptConnection() {
     CoroutineScope(Dispatchers.Default).launch {
         if (healthCheck()) {
             setStatusDiv("Status: Docked")
+            inMemoryStorage.autoSort.connectAutoSort()
             pollData()
         } else {
             setStatusDiv("Status: Docking Aborted. Please check console and follow installation instructions.")

@@ -55,6 +55,9 @@ private fun mockResponse(command: String): String {
         |Command: sqo
         |$questData
         """.trimMargin()
+        "help autosort 4" -> sortQuestHelp
+        "cqf 04000806 printkeywords" -> keywords
+        "cqf 04000806 printKeywordChests" -> keywordChests
         else -> command
     }
 }
@@ -107,4 +110,26 @@ private val questData = """
     ( Instance: 4 )
     100 Evacuate the Survivalist COMPLETED
 
+""".trimIndent()
+
+private val sortQuestHelp = """
+    ----VIEWER STRINGS NOT AVAILABLE--------
+    ----OTHER FORMS--------------------
+    QUST: AKASAutoSort (04000806) 'Auto Sort'
+""".trimIndent()
+
+private val keywords = """
+    ==All Keywords==
+    000F4AE8 ObjectTypeAmmo
+    002C1C7A ObjectTypeAid
+    0010C416 ObjectTypeAlcohol
+""".trimIndent()
+
+private val keywordChests = """
+    ==Chest==
+    FF01DE6F|Storage Box|Ship
+    000F4AE8|
+    ==Chest==
+    FF01DE70|Happy lil Box|Ship
+    0006FDB2|00299548|
 """.trimIndent()

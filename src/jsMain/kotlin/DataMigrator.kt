@@ -1,3 +1,4 @@
+import docking.Autosort
 import kotlinx.serialization.Serializable
 
 fun starsByLegacy() = galaxy.systems.values.map { it.star }.associateBy { it.rawId }
@@ -51,6 +52,7 @@ fun LegacyInMemoryStorage.migrate(): InMemoryStorage {
         stats,
         perks,
         research,
+        Autosort(),
         showUndiscovered,
         outpostResourceView,
         paintBackgroundStars

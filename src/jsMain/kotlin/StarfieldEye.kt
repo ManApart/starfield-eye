@@ -105,6 +105,7 @@ fun doRouting(windowHash: String) {
         windowHash.startsWith("#misc-stats") -> miscStatView()
         windowHash.startsWith("#perks") -> perkView(section)
         windowHash.startsWith("#research") -> researchView(section)
+        windowHash.startsWith("#sort") -> autoSortView(section)
         windowHash.startsWith("#catalogue") -> {
             val parts = windowHash.replace("#catalogue", "").split("/").filter { it.isNotEmpty() }
             val text = parts.firstOrNull()?.replace("%20", " ") ?: planetSearchOptions.searchText

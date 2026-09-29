@@ -82,6 +82,12 @@ fun TagConsumer<HTMLElement>.navButtons(navClass: String = "header-nav") {
                 title = "View Player Research"
                 onClickFunction = { researchView() }
             }
+            button {
+                id = "autosort-button"
+                +"Sorting"
+                title = "View Auto Sort"
+                onClickFunction = { autoSortView() }
+            }
             div("toggle-wrapper") {
                 +"X-ray"
                 title = "Show all data, or only what you've discovered so far"
