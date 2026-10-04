@@ -113,3 +113,11 @@
 .search-icon {
     margin-left: 5px;
 }
+
+.sort-button {
+    background-color: #c8ccc9;
+}
+
+button[aria-pressed="true"].sort-button {
+    color: green;
+}

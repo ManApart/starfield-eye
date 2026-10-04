@@ -10,7 +10,7 @@ private typealias Id = String
 data class Autosort(var sortQuestId: String? = null, var keywordChests: List<KeywordChest> = listOf(), var keywords: Map<Id, Keyword> = mapOf())
 
 @Serializable
-data class KeywordChest(val id: String, val name: String, val location: String, val keywordIds: List<String>)
+data class KeywordChest(val id: String, val name: String, val location: String, val keywordIds: MutableSet<String>)
 
 @Serializable
 data class Keyword(val id: String, val name: String)
@@ -66,18 +66,21 @@ suspend fun Autosort.sort() {
 }
 
 private fun parseKeywords(lines: List<String>): List<Keyword> {
-    println("Parsing: $lines")
     return lines.drop(1).map { line ->
         val (id, name) = line.split(" ")
-        Keyword(id, name)
+        Keyword(id, name.spaceByCapital())
     }
+}
+
+private fun String.spaceByCapital(): String {
+    return this.split(Regex("(?=[A-Z])")).joinToString(" ").also { println(it) }
 }
 
 private fun parseKeywordChests(textChunk: String): List<KeywordChest> {
     return textChunk.split("==Chest==\n").filter { it.isNotBlank() }.map { rawChest ->
         val (chest, keywords) = rawChest.split("\n").filter { it.isNotBlank() }
         val (id, name, loc) = chest.split("|")
-        val words = keywords.split("|").filter { it.isNotBlank() }
+        val words = keywords.split("|").filter { it.isNotBlank() }.toMutableSet()
         KeywordChest(id, name, loc, words)
     }
 }

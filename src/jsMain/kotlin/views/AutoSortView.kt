@@ -6,6 +6,7 @@ import docking.refreshKeywordChests
 import docking.refreshKeywords
 import docking.sort
 import docking.updateChest
+import el
 import inMemoryStorage
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -14,6 +15,7 @@ import kotlinx.html.*
 import kotlinx.html.button
 import kotlinx.html.js.div
 import kotlinx.html.js.onClickFunction
+import org.w3c.dom.HTMLButtonElement
 import org.w3c.dom.HTMLElement
 import replaceElement
 import updateUrl
@@ -78,7 +80,7 @@ private fun needsRefresh(autosort: Autosort) {
 }
 
 private fun TagConsumer<HTMLElement>.refreshButton(autosort: Autosort) {
-    button {
+    button(classes = "sort-button") {
         +"Refresh"
         onClickFunction = {
             CoroutineScope(Dispatchers.Default).launch {
@@ -94,13 +96,11 @@ private fun displaySorting(autosort: Autosort) {
     replaceElement("header") {
         div {
             refreshButton(autosort)
-            button {
+            button(classes = "sort-button") {
                 +"Sort Now"
                 onClickFunction = {
                     CoroutineScope(Dispatchers.Default).launch {
                         autosort.sort()
-                        autosort.refreshKeywordChests()
-                        drawChests(autosort)
                     }
                 }
             }
@@ -150,16 +150,27 @@ private fun editChest(autosort: Autosort, chest: KeywordChest) {
                     }
                 }
             }
-            p { +"test" }
         }
         replaceElement("keywords") {
             div("research-section") {
                 h2 { +"Keywords" }
-                p { +"Keywords: ${autosort.keywords.values.joinToString { it.name }}" }
+                autosort.keywords.values.forEach { word->
+                    button(classes = "sort-button") {
+                        id = "${word.id}-button"
+                        attributes["aria-pressed"] = if (chest.keywordIds.contains(word.id)) "true" else "false"
+                        +word.name
+                        onClickFunction = {
+                            val og = chest.keywordIds.contains(word.id)
+                            if (og) chest.keywordIds.remove(word.id) else chest.keywordIds.add(word.id)
+                            el<HTMLButtonElement>("${word.id}-button").setAttribute("aria-pressed", (!og).toString())
+                        }
+                    }
+                }
             }
         }
     }
 }
+
 
 private fun persist(chest: KeywordChest) {
 
