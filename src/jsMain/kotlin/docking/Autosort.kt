@@ -13,7 +13,7 @@ data class Autosort(var sortQuestId: String? = null, var keywordChests: List<Key
 data class KeywordChest(val id: String, val name: String, val location: String, val keywordIds: MutableSet<String>)
 
 @Serializable
-data class Keyword(val id: String, val name: String)
+data class Keyword(val id: String, val group: String, val name: String)
 
 //TODO - if no mod, handle error gracefully
 suspend fun Autosort.connectAutoSort() {
@@ -69,13 +69,21 @@ suspend fun Autosort.sort() {
 
 private fun parseKeywords(lines: List<String>): List<Keyword> {
     return lines.drop(1).map { line ->
-        val (id, name) = line.split(" ")
-        Keyword(id, name.spaceByCapital())
+        val (id, rawName) = line.split(" ")
+        val (group, name) = rawName.splitByCapital().splitOutKeywordGroup()
+        Keyword(id, group, name)
     }
 }
 
-private fun String.spaceByCapital(): String {
-    return this.split(Regex("(?=[A-Z])")).joinToString(" ").also { println(it) }
+private fun String.splitByCapital(): String {
+    return this.split(Regex("(?=[A-Z])")).filter { it.isNotBlank() }.joinToString(" ")
+}
+
+private fun String.splitOutKeywordGroup() : Pair<String, String>{
+    return when {
+        startsWith("Object Type") -> Pair("Object Types", replace("Object Type", "").trim())
+        else -> "Other" to this
+    }
 }
 
 private fun parseKeywordChests(textChunk: String): List<KeywordChest> {

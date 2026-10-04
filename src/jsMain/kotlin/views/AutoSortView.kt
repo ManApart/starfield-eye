@@ -1,6 +1,7 @@
 package views
 
 import docking.Autosort
+import docking.Keyword
 import docking.KeywordChest
 import docking.refreshKeywordChests
 import docking.refreshKeywords
@@ -130,8 +131,8 @@ private fun drawChests(autosort: Autosort) {
 private fun editChest(autosort: Autosort, chest: KeywordChest) {
     replaceElement("chests") {
         div("research-section") {
+            h2 { +chest.name }
             div {
-                h2 { +chest.name }
                 button {
                     +"Back"
                     onClickFunction = {
@@ -151,23 +152,23 @@ private fun editChest(autosort: Autosort, chest: KeywordChest) {
                     }
                 }
             }
-            autosort.keywords.values.forEach { word ->
-                button(classes = "keyword-button") {
-                    id = "${word.id}-button"
-                    attributes["aria-pressed"] = if (chest.keywordIds.contains(word.id)) "true" else "false"
-                    +word.name
-                    onClickFunction = {
-                        val og = chest.keywordIds.contains(word.id)
-                        if (og) chest.keywordIds.remove(word.id) else chest.keywordIds.add(word.id)
-                        el<HTMLButtonElement>("${word.id}-button").setAttribute("aria-pressed", (!og).toString())
+            autosort.keywords.values.groupBy { it.group }.forEach { (group, words) ->
+                div("research-section") {
+                    h2 { +group }
+                    words.forEach { word ->
+                        button(classes = "keyword-button") {
+                            id = "${word.id}-button"
+                            attributes["aria-pressed"] = if (chest.keywordIds.contains(word.id)) "true" else "false"
+                            +word.name
+                            onClickFunction = {
+                                val og = chest.keywordIds.contains(word.id)
+                                if (og) chest.keywordIds.remove(word.id) else chest.keywordIds.add(word.id)
+                                el<HTMLButtonElement>("${word.id}-button").setAttribute("aria-pressed", (!og).toString())
+                            }
+                        }
                     }
                 }
             }
         }
     }
-}
-
-
-private fun persist(chest: KeywordChest) {
-
 }
