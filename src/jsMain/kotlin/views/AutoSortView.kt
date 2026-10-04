@@ -32,8 +32,8 @@ fun autoSortView(section: String? = null) {
                 }
                 div { id = "header" }
                 div("research-wrapper") {
-                    div { id = "keywords" }
                     div { id = "chests" }
+                    div { id = "keywords" }
                 }
             }
         }
@@ -105,12 +105,6 @@ private fun displaySorting(autosort: Autosort) {
                 }
             }
         }
-        replaceElement("keywords") {
-            div("research-section") {
-                h2 { +"Keywords" }
-                p { +"Keywords: ${autosort.keywords.values.joinToString { it.name }}" }
-            }
-        }
         drawChests(autosort)
     }
 }
@@ -140,12 +134,16 @@ private fun editChest(autosort: Autosort, chest: KeywordChest) {
             h2 { +"Editing ${chest.name}" }
             button {
                 +"Back"
-                onClickFunction = { drawChests(autosort) }
+                onClickFunction = {
+                    replaceElement("keywords") {}
+                    drawChests(autosort)
+                }
             }
             button {
                 +"Persist"
                 onClickFunction = {
                     CoroutineScope(Dispatchers.Default).launch {
+                        replaceElement("keywords") {}
                         autosort.updateChest(chest)
                         autosort.refreshKeywordChests()
                         drawChests(autosort)
@@ -153,6 +151,12 @@ private fun editChest(autosort: Autosort, chest: KeywordChest) {
                 }
             }
             p { +"test" }
+        }
+        replaceElement("keywords") {
+            div("research-section") {
+                h2 { +"Keywords" }
+                p { +"Keywords: ${autosort.keywords.values.joinToString { it.name }}" }
+            }
         }
     }
 }
