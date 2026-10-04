@@ -35,7 +35,6 @@ fun autoSortView(section: String? = null) {
                 div { id = "header" }
                 div("research-wrapper") {
                     div { id = "chests" }
-                    div { id = "keywords" }
                 }
             }
         }
@@ -80,7 +79,7 @@ private fun needsRefresh(autosort: Autosort) {
 }
 
 private fun TagConsumer<HTMLElement>.refreshButton(autosort: Autosort) {
-    button(classes = "sort-button") {
+    button {
         +"Refresh"
         onClickFunction = {
             CoroutineScope(Dispatchers.Default).launch {
@@ -96,7 +95,7 @@ private fun displaySorting(autosort: Autosort) {
     replaceElement("header") {
         div {
             refreshButton(autosort)
-            button(classes = "sort-button") {
+            button {
                 +"Sort Now"
                 onClickFunction = {
                     CoroutineScope(Dispatchers.Default).launch {
@@ -122,7 +121,7 @@ private fun drawChests(autosort: Autosort) {
                 }
                 p { +"Location: ${chest.location}" }
                 p { +"Type: Keyword" }
-                p { +chest.keywordIds.joinToString { autosort.keywords[it]?.name ?: it } }
+                ul { chest.keywordIds.forEach { li { +(autosort.keywords[it]?.name ?: it) } } }
             }
         }
     }
@@ -131,39 +130,36 @@ private fun drawChests(autosort: Autosort) {
 private fun editChest(autosort: Autosort, chest: KeywordChest) {
     replaceElement("chests") {
         div("research-section") {
-            h2 { +"Editing ${chest.name}" }
-            button {
-                +"Back"
-                onClickFunction = {
-                    replaceElement("keywords") {}
-                    drawChests(autosort)
-                }
-            }
-            button {
-                +"Persist"
-                onClickFunction = {
-                    CoroutineScope(Dispatchers.Default).launch {
+            div {
+                h2 { +chest.name }
+                button {
+                    +"Back"
+                    onClickFunction = {
                         replaceElement("keywords") {}
-                        autosort.updateChest(chest)
-                        autosort.refreshKeywordChests()
                         drawChests(autosort)
                     }
                 }
-            }
-        }
-        replaceElement("keywords") {
-            div("research-section") {
-                h2 { +"Keywords" }
-                autosort.keywords.values.forEach { word->
-                    button(classes = "sort-button") {
-                        id = "${word.id}-button"
-                        attributes["aria-pressed"] = if (chest.keywordIds.contains(word.id)) "true" else "false"
-                        +word.name
-                        onClickFunction = {
-                            val og = chest.keywordIds.contains(word.id)
-                            if (og) chest.keywordIds.remove(word.id) else chest.keywordIds.add(word.id)
-                            el<HTMLButtonElement>("${word.id}-button").setAttribute("aria-pressed", (!og).toString())
+                button {
+                    +"Persist"
+                    onClickFunction = {
+                        CoroutineScope(Dispatchers.Default).launch {
+                            replaceElement("keywords") {}
+                            autosort.updateChest(chest)
+                            autosort.refreshKeywordChests()
+                            drawChests(autosort)
                         }
+                    }
+                }
+            }
+            autosort.keywords.values.forEach { word ->
+                button(classes = "keyword-button") {
+                    id = "${word.id}-button"
+                    attributes["aria-pressed"] = if (chest.keywordIds.contains(word.id)) "true" else "false"
+                    +word.name
+                    onClickFunction = {
+                        val og = chest.keywordIds.contains(word.id)
+                        if (og) chest.keywordIds.remove(word.id) else chest.keywordIds.add(word.id)
+                        el<HTMLButtonElement>("${word.id}-button").setAttribute("aria-pressed", (!og).toString())
                     }
                 }
             }

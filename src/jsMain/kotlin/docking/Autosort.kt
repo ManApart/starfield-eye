@@ -58,11 +58,13 @@ private fun parseQuestId(lines: List<String>): String? {
 }
 
 suspend fun Autosort.updateChest(chest: KeywordChest) {
-
+    //TODO - test
+    postToConsole("cqf $sortQuestId setKeywords ${chest.id} ${chest.keywordIds.joinToString(",")}")
 }
 
 suspend fun Autosort.sort() {
-
+    //TODO - test
+    postToConsole("cqf $sortQuestId sortChests")
 }
 
 private fun parseKeywords(lines: List<String>): List<Keyword> {

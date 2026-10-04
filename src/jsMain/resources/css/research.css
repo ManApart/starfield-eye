@@ -114,10 +114,20 @@
     margin-left: 5px;
 }
 
-.sort-button {
-    background-color: #c8ccc9;
+/* Sorting */
+
+.keyword-button {
+    background-image: none;
+    background-color: #71777a;
+    border-radius: 10px;
+    box-shadow: 0 0.45rem 0 #71777a,
+    0 0.65rem 0.8rem rgb(0 0 0 / 25%);
+    transform: translateY(-0.2rem);
+    transition: none;
 }
 
-button[aria-pressed="true"].sort-button {
-    color: green;
+button[aria-pressed="true"].keyword-button {
+    box-shadow: 0 0.1rem 0 #53565a,
+    inset 0 0.2rem 0.35rem #37383c;
+    transform: translateY(0.15rem);
 }
