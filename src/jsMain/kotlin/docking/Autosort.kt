@@ -57,6 +57,14 @@ private fun parseQuestId(lines: List<String>): String? {
         ?.split("(")?.last()?.split(")")?.first()
 }
 
+suspend fun Autosort.updateChest(chest: KeywordChest) {
+
+}
+
+suspend fun Autosort.sort() {
+
+}
+
 private fun parseKeywords(lines: List<String>): List<Keyword> {
     println("Parsing: $lines")
     return lines.drop(1).map { line ->

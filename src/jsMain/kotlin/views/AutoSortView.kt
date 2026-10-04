@@ -1,15 +1,20 @@
 package views
 
 import docking.Autosort
+import docking.KeywordChest
 import docking.refreshKeywordChests
 import docking.refreshKeywords
+import docking.sort
+import docking.updateChest
 import inMemoryStorage
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.html.*
+import kotlinx.html.button
 import kotlinx.html.js.div
 import kotlinx.html.js.onClickFunction
+import org.w3c.dom.HTMLElement
 import replaceElement
 import updateUrl
 
@@ -20,23 +25,16 @@ fun autoSortView(section: String? = null) {
         div {
             id = "autosort-view"
             navButtons()
-            div("auto-sort") {
+            div("research") {
                 div("research-accent") {
                     id = "autosort-title"
                     +"Sorting"
                 }
-                button {
-                    +"Refresh"
-                    onClickFunction = {
-                        CoroutineScope(Dispatchers.Default).launch {
-                            autosort.refreshKeywords()
-                            autosort.refreshKeywordChests()
-                            displaySorting(autosort)
-                        }
-                    }
+                div { id = "header" }
+                div("research-wrapper") {
+                    div { id = "keywords" }
+                    div { id = "chests" }
                 }
-                div { id = "sections" }
-
             }
         }
     }
@@ -48,7 +46,7 @@ fun autoSortView(section: String? = null) {
 }
 
 private fun needsDocking() {
-    replaceElement("sections") {
+    replaceElement("header") {
         div("section-view-box") {
             id = "sort-explanation"
             h2 { +"Sorting" }
@@ -66,7 +64,8 @@ private fun needsDocking() {
 }
 
 private fun needsRefresh(autosort: Autosort) {
-    replaceElement("sections") {
+    replaceElement("header") {
+        refreshButton(autosort)
         div("section-view-box") {
             id = "sort-explanation"
             h2 { +"Sorting" }
@@ -78,20 +77,86 @@ private fun needsRefresh(autosort: Autosort) {
     }
 }
 
-private fun displaySorting(autosort: Autosort) {
-    replaceElement("sections") {
-        div("section-view-box") {
-            id = "sort-explanation"
-            h2 { +"Sorting" }
-            div("accent-line") { +"Time dances its years forward" }
-
-            p { +"Keywords: ${autosort.keywords.values.joinToString { it.name }}" }
-            autosort.keywordChests.forEach { chest ->
-                div {
-                    h4 { +"${chest.name} - ${chest.location}" }
-                    p { +chest.keywordIds.joinToString { autosort.keywords[it]?.name ?: it } }
-                }
+private fun TagConsumer<HTMLElement>.refreshButton(autosort: Autosort) {
+    button {
+        +"Refresh"
+        onClickFunction = {
+            CoroutineScope(Dispatchers.Default).launch {
+                autosort.refreshKeywords()
+                autosort.refreshKeywordChests()
+                displaySorting(autosort)
             }
         }
     }
+}
+
+private fun displaySorting(autosort: Autosort) {
+    replaceElement("header") {
+        div {
+            refreshButton(autosort)
+            button {
+                +"Sort Now"
+                onClickFunction = {
+                    CoroutineScope(Dispatchers.Default).launch {
+                        autosort.sort()
+                        autosort.refreshKeywordChests()
+                        drawChests(autosort)
+                    }
+                }
+            }
+        }
+        replaceElement("keywords") {
+            div("research-section") {
+                h2 { +"Keywords" }
+                p { +"Keywords: ${autosort.keywords.values.joinToString { it.name }}" }
+            }
+        }
+        drawChests(autosort)
+    }
+}
+
+private fun drawChests(autosort: Autosort) {
+    replaceElement("chests") {
+        autosort.keywordChests.forEach { chest ->
+            div("research-section") {
+                h2 { +chest.name }
+                div {
+                    button {
+                        +"Edit"
+                        onClickFunction = { editChest(autosort, chest) }
+                    }
+                }
+                p { +"Location: ${chest.location}" }
+                p { +"Type: Keyword" }
+                p { +chest.keywordIds.joinToString { autosort.keywords[it]?.name ?: it } }
+            }
+        }
+    }
+}
+
+private fun editChest(autosort: Autosort, chest: KeywordChest) {
+    replaceElement("chests") {
+        div("research-section") {
+            h2 { +"Editing ${chest.name}" }
+            button {
+                +"Back"
+                onClickFunction = { drawChests(autosort) }
+            }
+            button {
+                +"Persist"
+                onClickFunction = {
+                    CoroutineScope(Dispatchers.Default).launch {
+                        autosort.updateChest(chest)
+                        autosort.refreshKeywordChests()
+                        drawChests(autosort)
+                    }
+                }
+            }
+            p { +"test" }
+        }
+    }
+}
+
+private fun persist(chest: KeywordChest) {
+
 }
