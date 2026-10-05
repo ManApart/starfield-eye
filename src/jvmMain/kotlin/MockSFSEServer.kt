@@ -119,6 +119,8 @@ private val sortQuestHelp = """
 """.trimIndent()
 
 private val keywords = """
+    cqf 04000806 printkeywords
+    Command: cqf 04000806 printkeywords
     ==All Keywords==
     000F4AE8 ObjectTypeAmmo
     002C1C7A ObjectTypeAid
@@ -126,6 +128,8 @@ private val keywords = """
 """.trimIndent()
 
 private val keywordChests = """
+    cqf 04000806 printKeywordChests
+    Command: cqf 04000806 printKeywordChests
     ==Chest==
     FF01DE6F|Storage Box|Ship
     000F4AE8|

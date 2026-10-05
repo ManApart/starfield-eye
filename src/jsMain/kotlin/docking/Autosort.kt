@@ -1,6 +1,5 @@
 package docking
 
-import inMemoryStorage
 import kotlinx.serialization.Serializable
 import persistMemory
 
@@ -21,7 +20,7 @@ suspend fun Autosort.connectAutoSort() {
     postToConsole("help autosort 4")
         ?.let { parseQuestId(it.split("\n")) }
         ?.let {
-            inMemoryStorage.autoSort.sortQuestId = it
+            sortQuestId = it
             persistMemory()
         }
 }
@@ -34,7 +33,7 @@ suspend fun Autosort.refreshKeywords() {
     postToConsole("cqf $sortQuestId printkeywords")
         ?.let { parseKeywords(it.split("\n")) }
         ?.let { words ->
-            inMemoryStorage.autoSort.keywords = words.associateBy { it.id }
+            keywords = words.associateBy { it.id }
             persistMemory()
         }
 }
@@ -47,7 +46,7 @@ suspend fun Autosort.refreshKeywordChests() {
     postToConsole("cqf $sortQuestId printKeywordChests")
         ?.let { parseKeywordChests(it) }
         ?.let {
-            inMemoryStorage.autoSort.keywordChests = it
+            keywordChests = it
             persistMemory()
         }
 }
@@ -57,18 +56,17 @@ private fun parseQuestId(lines: List<String>): String? {
         ?.split("(")?.last()?.split(")")?.first()
 }
 
-suspend fun Autosort.updateChest(chest: KeywordChest) {
-    //TODO - test
-    postToConsole("cqf $sortQuestId setKeywords ${chest.id} ${chest.keywordIds.joinToString(",")}")
+suspend fun Autosort.updateChest(i: Int, chest: KeywordChest) {
+    postToConsole("cqf $sortQuestId setKeywords $i \"${chest.keywordIds.joinToString(",")}\"")
 }
 
 suspend fun Autosort.sort() {
-    //TODO - test
-    postToConsole("cqf $sortQuestId sortChests")
+    postToConsole("cqf $sortQuestId sortItems")
 }
 
 private fun parseKeywords(lines: List<String>): List<Keyword> {
-    return lines.drop(1).map { line ->
+    if (lines.size < 3) return emptyList()
+    return lines.drop(3).filter { it.contains(" ") }.map { line ->
         val (id, rawName) = line.split(" ")
         val (group, name) = rawName.splitByCapital().splitOutKeywordGroup()
         Keyword(id, group, name)
@@ -87,7 +85,9 @@ private fun String.splitOutKeywordGroup() : Pair<String, String>{
 }
 
 private fun parseKeywordChests(textChunk: String): List<KeywordChest> {
-    return textChunk.split("==Chest==\n").filter { it.isNotBlank() }.map { rawChest ->
+    println(textChunk)
+    return textChunk.split("==Chest==\n").filter { it.isNotBlank() && it.contains("|") }.map { rawChest ->
+        println(rawChest)
         val (chest, keywords) = rawChest.split("\n").filter { it.isNotBlank() }
         val (id, name, loc) = chest.split("|")
         val words = keywords.split("|").filter { it.isNotBlank() }.toMutableSet()

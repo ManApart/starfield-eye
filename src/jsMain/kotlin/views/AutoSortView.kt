@@ -18,6 +18,7 @@ import kotlinx.html.js.div
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLButtonElement
 import org.w3c.dom.HTMLElement
+import persistMemory
 import replaceElement
 import updateUrl
 
@@ -49,11 +50,8 @@ fun autoSortView(section: String? = null) {
 
 private fun needsDocking() {
     replaceElement("header") {
-        div("section-view-box") {
-            id = "sort-explanation"
-            h2 { +"Sorting" }
-            div("accent-line") { +"Time dances its years forward" }
-
+        div("research-section") {
+            h2 { +"Instructions" }
             p { +"Use dock to connect to the game and see Auto Sorting - TODO link to mod and write more instructions" }
             button {
                 id = "dock-button"
@@ -68,12 +66,9 @@ private fun needsDocking() {
 private fun needsRefresh(autosort: Autosort) {
     replaceElement("header") {
         refreshButton(autosort)
-        div("section-view-box") {
-            id = "sort-explanation"
-            h2 { +"Sorting" }
-            div("accent-line") { +"Time dances its years forward" }
+        div("research-section") {
+            h2 { +"Instructions" }
             p { +"Quest Id: ${autosort.sortQuestId}" }
-
             p { +"Refresh to get chests if they exist" }
         }
     }
@@ -87,6 +82,7 @@ private fun TagConsumer<HTMLElement>.refreshButton(autosort: Autosort) {
                 autosort.refreshKeywords()
                 autosort.refreshKeywordChests()
                 displaySorting(autosort)
+                persistMemory()
             }
         }
     }
@@ -111,13 +107,13 @@ private fun displaySorting(autosort: Autosort) {
 
 private fun drawChests(autosort: Autosort) {
     replaceElement("chests") {
-        autosort.keywordChests.forEach { chest ->
+        autosort.keywordChests.forEachIndexed { i, chest ->
             div("research-section") {
                 h2 { +chest.name }
                 div {
                     button {
                         +"Edit"
-                        onClickFunction = { editChest(autosort, chest) }
+                        onClickFunction = { editChest(autosort, i, chest) }
                     }
                 }
                 p { +"Location: ${chest.location}" }
@@ -128,7 +124,7 @@ private fun drawChests(autosort: Autosort) {
     }
 }
 
-private fun editChest(autosort: Autosort, chest: KeywordChest) {
+private fun editChest(autosort: Autosort, i: Int, chest: KeywordChest) {
     replaceElement("chests") {
         div("research-section") {
             h2 { +chest.name }
@@ -145,9 +141,10 @@ private fun editChest(autosort: Autosort, chest: KeywordChest) {
                     onClickFunction = {
                         CoroutineScope(Dispatchers.Default).launch {
                             replaceElement("keywords") {}
-                            autosort.updateChest(chest)
+                            autosort.updateChest(i, chest)
                             autosort.refreshKeywordChests()
                             drawChests(autosort)
+                            persistMemory()
                         }
                     }
                 }
