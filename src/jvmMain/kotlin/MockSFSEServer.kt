@@ -125,6 +125,10 @@ private val keywords = """
     000F4AE8 ObjectTypeAmmo
     002C1C7A ObjectTypeAid
     0010C416 ObjectTypeAlcohol
+    0006FDB3 ResourceTypeFauna
+    0026C4F2 WeaponTypeFire
+    00077C2A ManufacturerAllied
+    000F4AEC InventoryCategoryAidDrink
 """.trimIndent()
 
 private val keywordChests = """

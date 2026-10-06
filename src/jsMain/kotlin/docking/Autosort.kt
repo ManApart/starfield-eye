@@ -69,7 +69,7 @@ private fun parseKeywords(lines: List<String>): List<Keyword> {
     return lines.drop(3).filter { it.contains(" ") }.map { line ->
         val (id, rawName) = line.split(" ")
         val (group, name) = rawName.splitByCapital().splitOutKeywordGroup()
-        Keyword(id, group, name)
+        Keyword(id.uppercase(), group, name)
     }
 }
 
@@ -79,9 +79,17 @@ private fun String.splitByCapital(): String {
 
 private fun String.splitOutKeywordGroup() : Pair<String, String>{
     return when {
-        startsWith("Object Type") -> Pair("Object Types", replace("Object Type", "").trim())
+        startsWith("Object Type") -> clean("Object Type", "Object Types")
+        startsWith("Resource Type") -> clean("Resource Type", "Resource Types")
+        startsWith("Weapon Type") -> clean("Weapon Type", "Weapon Types")
+        startsWith("Manufacturer") -> clean("Manufacturer", "Manufacturers")
+        startsWith("Inventory Category") -> clean("Inventory Category", "Inventory Categories")
         else -> "Other" to this
     }
+}
+
+private fun String.clean(delete: String, label: String): Pair<String, String> {
+    return Pair(label, replace(delete, "").trim())
 }
 
 private fun parseKeywordChests(textChunk: String): List<KeywordChest> {
@@ -90,7 +98,7 @@ private fun parseKeywordChests(textChunk: String): List<KeywordChest> {
         println(rawChest)
         val (chest, keywords) = rawChest.split("\n").filter { it.isNotBlank() }
         val (id, name, loc) = chest.split("|")
-        val words = keywords.split("|").filter { it.isNotBlank() }.toMutableSet()
-        KeywordChest(id, name, loc, words)
+        val words = keywords.split("|").filter { it.isNotBlank() }.map { it.uppercase() }.toMutableSet()
+        KeywordChest(id.uppercase(), name, loc, words)
     }
 }
