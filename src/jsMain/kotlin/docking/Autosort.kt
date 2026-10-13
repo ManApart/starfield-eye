@@ -1,18 +1,7 @@
 package docking
 
-import kotlinx.serialization.Serializable
 import persistMemory
 
-private typealias Id = String
-
-@Serializable
-data class Autosort(var sortQuestId: String? = null, var keywordChests: List<KeywordChest> = listOf(), var keywords: Map<Id, Keyword> = mapOf())
-
-@Serializable
-data class KeywordChest(val id: String, val name: String, val location: String, val keywordIds: MutableSet<String>)
-
-@Serializable
-data class Keyword(val id: String, val group: String, val name: String)
 
 //TODO - if no mod, handle error gracefully
 suspend fun Autosort.connectAutoSort() {
@@ -25,7 +14,7 @@ suspend fun Autosort.connectAutoSort() {
         }
 }
 
-suspend fun Autosort.refreshKeywords() {
+suspend fun Autosort.refreshKeywords(persist: Boolean = true) {
     if (sortQuestId == null) {
         println("No quest id")
         return
@@ -34,11 +23,24 @@ suspend fun Autosort.refreshKeywords() {
         ?.let { parseKeywords(it.split("\n")) }
         ?.let { words ->
             keywords = words.associateBy { it.id }
-            persistMemory()
+            if (persist) persistMemory()
         }
 }
 
-suspend fun Autosort.refreshKeywordChests() {
+suspend fun Autosort.refreshDrainChests(persist: Boolean = true) {
+    if (sortQuestId == null) {
+        println("No quest id")
+        return
+    }
+    postToConsole("cqf $sortQuestId printDrainChests")
+        ?.let { parseDrainChests(it) }
+        ?.let {
+            drainChests = it
+            if (persist) persistMemory()
+        }
+}
+
+suspend fun Autosort.refreshKeywordChests(persist: Boolean = true) {
     if (sortQuestId == null) {
         println("No quest id")
         return
@@ -47,8 +49,34 @@ suspend fun Autosort.refreshKeywordChests() {
         ?.let { parseKeywordChests(it) }
         ?.let {
             keywordChests = it
-            persistMemory()
+            if (persist) persistMemory()
         }
+}
+
+suspend fun Autosort.refreshExactChests(persist: Boolean = true) {
+    if (sortQuestId == null) {
+        println("No quest id")
+        return
+    }
+    postToConsole("cqf $sortQuestId printExactChests")
+        ?.let { parseExactChests(it) }
+        ?.let {
+            exactChests = it
+            if (persist) persistMemory()
+        }
+}
+
+suspend fun Autosort.removeChest(type: ChestType, i: Int) {
+    if (sortQuestId == null) {
+        println("No quest id")
+        return
+    }
+    postToConsole("cqf $sortQuestId removeNthContainer ${type.id} $i")
+    when (type) {
+        ChestType.KEYWORD -> refreshKeywordChests()
+        ChestType.EXACT -> refreshExactChests()
+        ChestType.DRAIN -> refreshDrainChests()
+    }
 }
 
 private fun parseQuestId(lines: List<String>): String? {
@@ -77,7 +105,7 @@ private fun String.splitByCapital(): String {
     return this.split(Regex("(?=[A-Z])")).filter { it.isNotBlank() }.joinToString(" ")
 }
 
-private fun String.splitOutKeywordGroup() : Pair<String, String>{
+private fun String.splitOutKeywordGroup(): Pair<String, String> {
     return when {
         startsWith("Object Type") -> clean("Object Type", "Object Types")
         startsWith("Resource Type") -> clean("Resource Type", "Resource Types")
@@ -92,6 +120,16 @@ private fun String.clean(delete: String, label: String): Pair<String, String> {
     return Pair(label, replace(delete, "").trim())
 }
 
+private fun parseDrainChests(textChunk: String): List<DrainChest> {
+    println(textChunk)
+    return textChunk.split("==Chest==\n").filter { it.isNotBlank() && it.contains("|") }.map { rawChest ->
+        println(rawChest)
+        val chest = rawChest.split("\n").first { it.isNotBlank() }
+        val (id, name) = chest.split("|")
+        DrainChest(id.uppercase(), name)
+    }
+}
+
 private fun parseKeywordChests(textChunk: String): List<KeywordChest> {
     println(textChunk)
     return textChunk.split("==Chest==\n").filter { it.isNotBlank() && it.contains("|") }.map { rawChest ->
@@ -100,5 +138,15 @@ private fun parseKeywordChests(textChunk: String): List<KeywordChest> {
         val (id, name, loc) = chest.split("|")
         val words = keywords.split("|").filter { it.isNotBlank() }.map { it.uppercase() }.toMutableSet()
         KeywordChest(id.uppercase(), name, loc, words)
+    }
+}
+
+private fun parseExactChests(textChunk: String): List<ExactChest> {
+    println(textChunk)
+    return textChunk.split("==Chest==\n").filter { it.isNotBlank() && it.contains("|") }.map { rawChest ->
+        println(rawChest)
+        val chest = rawChest.split("\n").first { it.isNotBlank() }
+        val (id, name, loc) = chest.split("|")
+        ExactChest(id.uppercase(), name, loc)
     }
 }

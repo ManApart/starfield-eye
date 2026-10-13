@@ -57,7 +57,9 @@ private fun mockResponse(command: String): String {
         """.trimMargin()
         "help autosort 4" -> sortQuestHelp
         "cqf 04000806 printkeywords" -> keywords
+        "cqf 04000806 printDrainChests" -> drainChests
         "cqf 04000806 printKeywordChests" -> keywordChests
+        "cqf 04000806 printExactChests" -> exactChests
         else -> command
     }
 }
@@ -131,6 +133,13 @@ private val keywords = """
     000F4AEC InventoryCategoryAidDrink
 """.trimIndent()
 
+private val drainChests = """
+    cqf 04000806 printDrainChests
+    Command: cqf 04000806 printDrainChests
+    ==Chest==
+    FF01DE6E|Drain Box
+""".trimIndent()
+
 private val keywordChests = """
     cqf 04000806 printKeywordChests
     Command: cqf 04000806 printKeywordChests
@@ -139,5 +148,12 @@ private val keywordChests = """
     000F4AE8|
     ==Chest==
     FF01DE70|Happy lil Box|Ship
-    0006FDB2|00299548|
+    002C1C7A|00299548|
+""".trimIndent()
+
+private val exactChests = """
+    cqf 04000806 printExactChests
+    Command: cqf 04000806 printExactChests
+    ==Chest==
+    FF01DE6F|Mannequin|Home
 """.trimIndent()

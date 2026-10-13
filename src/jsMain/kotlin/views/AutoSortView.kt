@@ -3,6 +3,8 @@ package views
 import docking.Autosort
 import docking.Keyword
 import docking.KeywordChest
+import docking.refreshDrainChests
+import docking.refreshExactChests
 import docking.refreshKeywordChests
 import docking.refreshKeywords
 import docking.sort
@@ -14,6 +16,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.html.*
 import kotlinx.html.button
+import kotlinx.html.div
 import kotlinx.html.js.div
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLButtonElement
@@ -79,8 +82,10 @@ private fun TagConsumer<HTMLElement>.refreshButton(autosort: Autosort) {
         +"Refresh"
         onClickFunction = {
             CoroutineScope(Dispatchers.Default).launch {
-                autosort.refreshKeywords()
-                autosort.refreshKeywordChests()
+                autosort.refreshKeywords(false)
+                autosort.refreshDrainChests(false)
+                autosort.refreshKeywordChests(false)
+                autosort.refreshExactChests(false)
                 displaySorting(autosort)
                 persistMemory()
             }
@@ -107,18 +112,43 @@ private fun displaySorting(autosort: Autosort) {
 
 private fun drawChests(autosort: Autosort) {
     replaceElement("chests") {
-        autosort.keywordChests.forEachIndexed { i, chest ->
-            div("research-section") {
-                h2 { +chest.name }
-                div {
-                    button {
-                        +"Edit"
-                        onClickFunction = { editChest(autosort, i, chest) }
-                    }
+        div {
+            id = "drain-chests"
+            div("accent-line") { +"Drain Chests" }
+            autosort.drainChests.forEachIndexed { i, chest ->
+                div("research-section") {
+                    h2 { +(chest.name.takeIf { it.isNotBlank() } ?: chest.id) }
+                    p { +"Type: Drain" }
                 }
-                p { +"Location: ${chest.location}" }
-                p { +"Type: Keyword" }
-                ul { chest.keywordIds.forEach { li { +(autosort.keywords[it]?.name ?: it) } } }
+            }
+        }
+        div {
+            id = "keyword-chests"
+            div("accent-line") { +"Keyword Chests" }
+            autosort.keywordChests.forEachIndexed { i, chest ->
+                div("research-section") {
+                    h2 { +chest.name }
+                    div {
+                        button {
+                            +"Edit"
+                            onClickFunction = { editChest(autosort, i, chest) }
+                        }
+                    }
+                    p { +"Location: ${chest.location}" }
+                    p { +"Type: Keyword" }
+                    ul { chest.keywordIds.forEach { li { +(autosort.keywords[it]?.name ?: it) } } }
+                }
+            }
+        }
+        div {
+            id = "exact-chests"
+            div("accent-line") { +"Exact Chests" }
+            autosort.exactChests.forEachIndexed { i, chest ->
+                div("research-section") {
+                    h2 { +chest.name }
+                    p { +"Location: ${chest.location}" }
+                    p { +"Type: Exact" }
+                }
             }
         }
     }
