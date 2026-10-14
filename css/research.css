@@ -113,3 +113,21 @@
 .search-icon {
     margin-left: 5px;
 }
+
+/* Sorting */
+
+.keyword-button {
+    background: linear-gradient(#53565a, #71777a);
+    border-radius: 10px;
+    border: 1px solid #535c61;
+    box-shadow: 0 0.45rem 0 #424749, 0 0.65rem 0.8rem rgb(0 0 0 / 25%);
+    transform: translateY(-0.2rem);
+    transition: none;
+}
+
+button[aria-pressed="true"].keyword-button {
+    color: #bdbdbd;
+    background: linear-gradient(#3e4042, #595f61);
+    box-shadow: 0 0.1rem 0 #424749, inset 0 0.2rem 0.35rem #424749;
+    transform: translateY(0.15rem);
+}
