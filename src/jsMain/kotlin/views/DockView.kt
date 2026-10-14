@@ -16,6 +16,7 @@ import keyPressedHook
 import kotlinx.browser.window
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.html.*
 import kotlinx.html.js.onClickFunction
@@ -83,10 +84,17 @@ private fun DIV.connectToGame() {
         }
         input(classes = "connection-input") {
             id = "dock-poll-rate"
-            placeholder = "Poll rate (default: \"10\" seconds)"
+            placeholder = "Poll rate (default: \"5\" minutes)"
             title =
                 "How often to check the game for more data. Lower is more responsive but may affect game performance. 0 Prevents polling but still checks on page load."
             value = inMemoryStorage.connectionSettings.pollRateInSeconds.toString()
+        }
+        input(classes = "connection-input") {
+            id = "dock-timeout"
+            placeholder = "Timeout (default: \"0\" seconds)"
+            title =
+                "Add additional timeout to fetch commands. Use if not getting data from game. Makes the app slower."
+            value = inMemoryStorage.connectionSettings.additionalTimeout.toString()
         }
 
         div {
@@ -295,7 +303,8 @@ private fun attemptConnection() {
     with(inMemoryStorage.connectionSettings) {
         host = el<HTMLInputElement>("dock-host").value
         port = el<HTMLInputElement>("dock-port").value
-        pollRateInSeconds = el<HTMLInputElement>("dock-poll-rate").value.toIntOrNull() ?: 10
+        pollRateInSeconds = el<HTMLInputElement>("dock-poll-rate").value.toIntOrNull() ?: (60*5)
+        additionalTimeout = el<HTMLInputElement>("dock-timeout").value.toIntOrNull() ?: 0
         pollData = true
     }
     persistMemory()
@@ -303,8 +312,9 @@ private fun attemptConnection() {
     CoroutineScope(Dispatchers.Default).launch {
         if (healthCheck()) {
             setStatusDiv("Status: Docked")
-            inMemoryStorage.autoSort.connectAutoSort()
             pollData()
+            delay(500)
+            inMemoryStorage.autoSort.connectAutoSort()
         } else {
             setStatusDiv("Status: Docking Aborted. Please check console and follow installation instructions.")
         }

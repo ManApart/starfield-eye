@@ -1,6 +1,7 @@
 package views
 
 import components.linkableH2
+import el
 import kotlinx.html.*
 import org.w3c.dom.HTMLElement
 import replaceElement
@@ -84,6 +85,16 @@ fun manualView(section: String? = null) {
                     p { +"View most of the stats from the in game stats page, including your progress towards achievements for relevant stats." }
                 }
                 div("section-view-box") {
+                    linkableH2("Auto Sort")
+                    div("accent-line") { +"A home among the stars" }
+                    p {
+                        a(href = "https://www.nexusmods.com/starfield/mods/16431", target = "_blank") { +"Auto Sort" }
+                        +" can be used to sort your loot at the click of a button. (See mod for more details). If you dock with this mod installed, you can use the sorting section of this site."
+                    }
+                    p {+"When you dock and the mod is enabled, this site will find the quest id of the sorting quest, and then start tracking your chests. You can edit keyword chests from the site, delete tracked chests, and even sort from the site. Note that while you can view, edits only work when docked."}
+                    p{+"If sorting is not working, try going to the dock view and adding additional timeout. This gives the game more time to communicate, but also makes the app slower to refresh"}
+                }
+                div("section-view-box") {
                     linkableH2("Connecting to your Game")
                     div("accent-line") { +"Burning helium out there" }
                     p {
@@ -104,6 +115,7 @@ fun manualView(section: String? = null) {
             }
         }
     }
+    section?.let { el<HTMLElement?>(it)?.scrollIntoView() }
 }
 
 private fun TagConsumer<HTMLElement>.linkableH2(text: String) {

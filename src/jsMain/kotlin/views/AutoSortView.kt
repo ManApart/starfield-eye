@@ -1,16 +1,19 @@
 package views
 
 import docking.Autosort
+import docking.ChestType
 import docking.Keyword
 import docking.KeywordChest
 import docking.refreshDrainChests
 import docking.refreshExactChests
 import docking.refreshKeywordChests
 import docking.refreshKeywords
+import docking.removeChest
 import docking.sort
 import docking.updateChest
 import el
 import inMemoryStorage
+import kotlinx.browser.window
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -55,12 +58,14 @@ private fun needsDocking() {
     replaceElement("header") {
         div("research-section") {
             h2 { +"Instructions" }
-            p { +"Use dock to connect to the game and see Auto Sorting - TODO link to mod and write more instructions" }
+            p { +"Use dock to connect to the game and see Auto Sort section in the manual" }
             button {
-                id = "dock-button"
                 +"Dock"
-                title = "Change Settings"
                 onClickFunction = { dockView() }
+            }
+            button {
+                +"Manual"
+                onClickFunction = { manualView("auto_sort") }
             }
         }
     }
@@ -101,7 +106,10 @@ private fun displaySorting(autosort: Autosort) {
                 +"Sort Now"
                 onClickFunction = {
                     CoroutineScope(Dispatchers.Default).launch {
-                        autosort.sort()
+                        val res = autosort.sort()
+                        if (res == null){
+                            window.alert("You must be docked to sort")
+                        }
                     }
                 }
             }
@@ -119,6 +127,10 @@ private fun drawChests(autosort: Autosort) {
                 div("research-section") {
                     h2 { +(chest.name.takeIf { it.isNotBlank() } ?: chest.id) }
                     p { +"Type: Drain" }
+                    button {
+                        +"Del"
+                        onClickFunction = { deleteChest(autosort, ChestType.KEYWORD, i) }
+                    }
                 }
             }
         }
@@ -132,6 +144,10 @@ private fun drawChests(autosort: Autosort) {
                         button {
                             +"Edit"
                             onClickFunction = { editChest(autosort, i, chest) }
+                        }
+                        button {
+                            +"Del"
+                            onClickFunction = { deleteChest(autosort, ChestType.KEYWORD, i) }
                         }
                     }
                     p { +"Location: ${chest.location}" }
@@ -148,6 +164,10 @@ private fun drawChests(autosort: Autosort) {
                     h2 { +chest.name }
                     p { +"Location: ${chest.location}" }
                     p { +"Type: Exact" }
+                    button {
+                        +"Del"
+                        onClickFunction = { deleteChest(autosort, ChestType.KEYWORD, i) }
+                    }
                 }
             }
         }
@@ -171,10 +191,11 @@ private fun editChest(autosort: Autosort, i: Int, chest: KeywordChest) {
                     onClickFunction = {
                         CoroutineScope(Dispatchers.Default).launch {
                             replaceElement("keywords") {}
-                            autosort.updateChest(i, chest)
+                            val res = autosort.updateChest(i, chest)
                             autosort.refreshKeywordChests()
                             drawChests(autosort)
                             persistMemory()
+                            if (res == null) window.alert("You must be docked to persist chests")
                         }
                     }
                 }
@@ -195,6 +216,17 @@ private fun editChest(autosort: Autosort, i: Int, chest: KeywordChest) {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+private fun deleteChest(autosort: Autosort, type: ChestType, i: Int) {
+    if (window.confirm("Are you sure you want to delete this chest?")) {
+        CoroutineScope(Dispatchers.Default).launch {
+            val res = autosort.removeChest(type, i)
+            if (res == null) {
+                window.alert("You must be docked to delete a chest")
             }
         }
     }

@@ -23,6 +23,7 @@ data class GameConnectionSettings(
     var port: String = "55555",
     var pollData: Boolean = false,
     var pollRateInSeconds: Int = 60 * 5,
+    var additionalTimeout: Int = 0,
 )
 
 data class PollResponse(

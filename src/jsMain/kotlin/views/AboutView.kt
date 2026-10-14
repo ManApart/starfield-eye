@@ -142,6 +142,15 @@ fun aboutView(section: String? = null) {
                         li { +"View your stats updating in near real time, or on your phone on the go" }
                         li { +"For many relevant stats, see your progress towards unlocking a related achievement" }
                     }
+                    h3 { +"Sorting" }
+                    ul {
+                        li {
+                            +"Link with my "
+                            a(href = "https://www.nexusmods.com/starfield/mods/16431", target = "_blank") { +"Auto Sort Mod" }
+                            +" to view chests and sort items"
+                            +"Gain more visibility into what chests use what keywords"
+                        }
+                    }
                 }
 
                 div("section-view-box") {
@@ -159,6 +168,7 @@ fun aboutView(section: String? = null) {
             }
         }
     }
+    section?.let { el<HTMLElement?>(it)?.scrollIntoView() }
 }
 
 private fun TagConsumer<HTMLElement>.linkableH2(text: String) {

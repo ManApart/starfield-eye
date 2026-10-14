@@ -6,7 +6,7 @@ import Quest
 import kotlinx.coroutines.delay
 
 suspend fun healthCheck(): Boolean {
-    val response = postToConsole("GetSFSEVersion")
+    val response = postToConsole("GetSFSEVersion", 200)
     val versionLine = response?.split("\n")?.lastOrNull { it.isNotBlank() }
     println(versionLine ?: "Disconnected: $response")
     return versionLine?.contains("SFSE version") ?: false
@@ -18,7 +18,7 @@ suspend fun getQuests(missionReference: Map<String, MissionWikiData>): List<Ques
 }
 
 suspend fun poll(missionReference: Map<String, MissionWikiData>): PollResponse {
-    val lines = postToConsoleJs("bat starfield-eye-poll")
+    val lines = postToConsoleJs("bat starfield-eye-poll", 200)
     return parsePollResponse(lines, missionReference)
 }
 

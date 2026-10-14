@@ -1,12 +1,11 @@
 package docking
 
+import kotlinx.coroutines.delay
 import persistMemory
 
 
-//TODO - if no mod, handle error gracefully
 suspend fun Autosort.connectAutoSort() {
-    println("Auto sort connect")
-    postToConsole("help autosort 4")
+    postToConsole("help autosort 4", 500)
         ?.let { parseQuestId(it.split("\n")) }
         ?.let {
             sortQuestId = it
@@ -66,30 +65,32 @@ suspend fun Autosort.refreshExactChests(persist: Boolean = true) {
         }
 }
 
-suspend fun Autosort.removeChest(type: ChestType, i: Int) {
+suspend fun Autosort.removeChest(type: ChestType, i: Int): String? {
     if (sortQuestId == null) {
         println("No quest id")
-        return
+        return null
     }
-    postToConsole("cqf $sortQuestId removeNthContainer ${type.id} $i")
+    postToConsole("cqf $sortQuestId removeNthContainer ${type.id} $i") ?: return null
+    delay(500)
     when (type) {
         ChestType.KEYWORD -> refreshKeywordChests()
         ChestType.EXACT -> refreshExactChests()
         ChestType.DRAIN -> refreshDrainChests()
     }
+    return ""
 }
 
 private fun parseQuestId(lines: List<String>): String? {
     return lines.firstOrNull { it.startsWith("QUST: AKASAutoSort") }
-        ?.split("(")?.last()?.split(")")?.first()
+        ?.split("(")?.lastOrNull()?.split(")")?.firstOrNull()
 }
 
-suspend fun Autosort.updateChest(i: Int, chest: KeywordChest) {
-    postToConsole("cqf $sortQuestId setKeywords $i \"${chest.keywordIds.joinToString(",")}\"")
+suspend fun Autosort.updateChest(i: Int, chest: KeywordChest): String? {
+    return postToConsole("cqf $sortQuestId setKeywords $i \"${chest.keywordIds.joinToString(",")}\"")
 }
 
-suspend fun Autosort.sort() {
-    postToConsole("cqf $sortQuestId sortItems")
+suspend fun Autosort.sort(): String? {
+    return postToConsole("cqf $sortQuestId sortItems")
 }
 
 private fun parseKeywords(lines: List<String>): List<Keyword> {

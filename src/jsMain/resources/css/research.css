@@ -126,6 +126,8 @@
 }
 
 button[aria-pressed="true"].keyword-button {
+    color: #bdbdbd;
+    background: linear-gradient(#3e4042, #595f61);
     box-shadow: 0 0.1rem 0 #424749, inset 0 0.2rem 0.35rem #424749;
     transform: translateY(0.15rem);
 }
