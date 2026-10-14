@@ -28,7 +28,7 @@ suspend fun postToConsoleJs(body: String): List<String> {
     return try {
         with(inMemoryStorage.connectionSettings) {
             val options = js("""{method: "POST", body:body}""")
-            val raw = promise { fetch("http://$host:$port/console", options) }
+            val raw = promise { fetch("http://$host:$port/console?timeout=500", options) }
             raw?.let { promise { raw.text() } }?.split("\n")?.drop(2) ?: listOf()
         }
     } catch (e: Error) {
