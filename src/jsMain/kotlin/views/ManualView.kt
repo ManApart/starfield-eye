@@ -91,24 +91,29 @@ fun manualView(section: String? = null) {
                         a(href = "https://www.nexusmods.com/starfield/mods/16431", target = "_blank") { +"Auto Sort" }
                         +" can be used to sort your loot at the click of a button. (See mod for more details). If you dock with this mod installed, you can use the sorting section of this site."
                     }
-                    p {+"When you dock and the mod is enabled, this site will find the quest id of the sorting quest, and then start tracking your chests. You can edit keyword chests from the site, delete tracked chests, and even sort from the site. Note that while you can view, edits only work when docked."}
-                    p{+"If sorting is not working, try going to the dock view and adding additional timeout. This gives the game more time to communicate, but also makes the app slower to refresh"}
+                    p { +"When you dock and the mod is enabled, this site will find the quest id of the sorting quest, and then start tracking your chests. You can edit keyword chests from the site, delete tracked chests, and even sort from the site. Note that while you can view, edits only work when docked." }
+                    p { +"If sorting is not working, try going to the dock view and adding additional timeout. This gives the game more time to communicate, but also makes the app slower to refresh" }
+                    p {
+                        +"Finally, I highly recommend "
+                        a(href = "https://www.nexusmods.com/starfield/mods/7358", target = "_blank") { +"Rename Anything" }
+                        +" This mod allows you to rename chests which can make it easier to track what is stored where. Renamed chests should show their new name on this site."
+                    }
                 }
                 div("section-view-box") {
                     linkableH2("Connecting to your Game")
                     div("accent-line") { +"Burning helium out there" }
                     p {
                         +"Thanks to the incredible work of Stonegdi, The Eye can connect to your game and grab all sorts of data. See "
-                        a("#about/advanced_features"){+"Advanced Features"}
+                        a("#about/advanced_features") { +"Advanced Features" }
                         +" to see what it can do today."
                     }
                     p {
                         +"For setup, see "
-                        a("#dock/preparing_to_dock"){+"Preparing to Dock."}
+                        a("#dock/preparing_to_dock") { +"Preparing to Dock." }
                     }
                     p {
                         +"Docking is planned to be much more comprehensive than it is today, but will likely require the release of mod tools to be complete. See "
-                        a("#about/planned_features"){+"Planned Features"}
+                        a("#about/planned_features") { +"Planned Features" }
                         +" for more information."
                     }
                 }
