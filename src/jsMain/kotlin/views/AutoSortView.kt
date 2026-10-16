@@ -107,7 +107,7 @@ private fun displaySorting(autosort: Autosort) {
                 onClickFunction = {
                     CoroutineScope(Dispatchers.Default).launch {
                         val res = autosort.sort()
-                        if (res == null){
+                        if (res == null) {
                             window.alert("You must be docked to sort")
                         }
                     }
@@ -120,53 +120,59 @@ private fun displaySorting(autosort: Autosort) {
 
 private fun drawChests(autosort: Autosort) {
     replaceElement("chests") {
-        div {
-            id = "drain-chests"
-            div("accent-line") { +"Drain Chests" }
-            autosort.drainChests.forEachIndexed { i, chest ->
-                div("research-section") {
-                    h2 { +(chest.name.takeIf { it.isNotBlank() } ?: chest.id) }
-                    p { +"Type: Drain" }
-                    button {
-                        +"Del"
-                        onClickFunction = { deleteChest(autosort, ChestType.KEYWORD, i) }
-                    }
-                }
-            }
-        }
-        div {
-            id = "keyword-chests"
-            div("accent-line") { +"Keyword Chests" }
-            autosort.keywordChests.forEachIndexed { i, chest ->
-                div("research-section") {
-                    h2 { +chest.name }
-                    div {
-                        button {
-                            +"Edit"
-                            onClickFunction = { editChest(autosort, i, chest) }
-                        }
+        if (autosort.drainChests.isNotEmpty()) {
+            div {
+                id = "drain-chests"
+                div("accent-line") { +"Drain Chests" }
+                autosort.drainChests.forEachIndexed { i, chest ->
+                    div("research-section") {
+                        h2 { +(chest.name.takeIf { it.isNotBlank() } ?: chest.id) }
+                        p { +"Type: Drain" }
                         button {
                             +"Del"
                             onClickFunction = { deleteChest(autosort, ChestType.KEYWORD, i) }
                         }
                     }
-                    p { +"Location: ${chest.location}" }
-                    p { +"Type: Keyword" }
-                    ul { chest.keywordIds.forEach { li { +(autosort.keywords[it]?.name ?: it) } } }
                 }
             }
         }
-        div {
-            id = "exact-chests"
-            div("accent-line") { +"Exact Chests" }
-            autosort.exactChests.forEachIndexed { i, chest ->
-                div("research-section") {
-                    h2 { +chest.name }
-                    p { +"Location: ${chest.location}" }
-                    p { +"Type: Exact" }
-                    button {
-                        +"Del"
-                        onClickFunction = { deleteChest(autosort, ChestType.KEYWORD, i) }
+        if (autosort.keywordChests.isNotEmpty()) {
+            div {
+                id = "keyword-chests"
+                div("accent-line") { +"Keyword Chests" }
+                autosort.keywordChests.forEachIndexed { i, chest ->
+                    div("research-section") {
+                        h2 { +chest.name }
+                        div {
+                            button {
+                                +"Edit"
+                                onClickFunction = { editChest(autosort, i, chest) }
+                            }
+                            button {
+                                +"Del"
+                                onClickFunction = { deleteChest(autosort, ChestType.KEYWORD, i) }
+                            }
+                        }
+                        p { +"Location: ${chest.location}" }
+                        p { +"Type: Keyword" }
+                        ul { chest.keywordIds.forEach { li { +(autosort.keywords[it]?.name ?: it) } } }
+                    }
+                }
+            }
+        }
+        if (autosort.exactChests.isNotEmpty()) {
+            div {
+                id = "exact-chests"
+                div("accent-line") { +"Exact Chests" }
+                autosort.exactChests.forEachIndexed { i, chest ->
+                    div("research-section") {
+                        h2 { +chest.name }
+                        p { +"Location: ${chest.location}" }
+                        p { +"Type: Exact" }
+                        button {
+                            +"Del"
+                            onClickFunction = { deleteChest(autosort, ChestType.KEYWORD, i) }
+                        }
                     }
                 }
             }
